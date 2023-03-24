@@ -1,0 +1,19 @@
+body {
+  background-image: url('Images/ThankfulEnchantingDairycow-size_restricted.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+  color: white;
+}
+img{
+width: 300px;
+height: 300px;
+border-radius: 10px;
+margin: 0px 10px 30px 20px;
+}
+p{
+  font-size: 20px;
+  color: white;
+}

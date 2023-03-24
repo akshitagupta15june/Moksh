@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('Images/gameback.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+.bubble {
+  position: absolute;
+  top: 100vh;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #020131,
+    inset 5px 5px 10px #960101, inset -5px 5px 20px #fff,
+    inset 15px -25px 20px #9224ed;
+}
+.bubble-two {
+  box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #06f3df,
+    inset 5px 5px 10px #f8e63e, inset -5px 5px 20px #fff,
+    inset 15px -25px 20px #ed24aa;
+}
+.bubble-three {
+  box-shadow: inset 0 0 10px #010631, inset -10px 10px 15px #1512f3,
+    inset 5px 5px 10px #80036b, inset -5px 5px 20px #fff,
+    inset 15px -25px 20px #33114e;
+}
+.bubble-four {
+  box-shadow: inset 0 0 10px #8b0101, inset -10px 10px 15px #f6f6fc,
+    inset 5px 5px 10px #81f733, inset -5px 5px 20px #fff,
+    inset 15px -25px 20px #0b0822;
+}
+.bubble-five {
+  box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #100dee,
+    inset 5px 5px 10px #f7a120, inset -5px 5px 20px #fff,
+    inset 15px -25px 20px #ed24c1;
+}
+.score-board {
+  background: #fff;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 150px);
+}
+.loser {
+  display: none;
+}
+.winner {
+  display: none;
+}
+.main-game {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button.start-btn {
+  font-size: 20px;
+  border: none;
+  margin-top: 8px;
+  border-radius: 30px;
+  font-weight: bold;
+  height: 30px;
+  width: 5%;
+  margin: 8px auto;
+}
+.shadow {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: relative;
+}
+.total-score {
+  background: #fff;
+  padding: 10px 100px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
