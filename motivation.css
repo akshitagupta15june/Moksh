@@ -4,8 +4,8 @@ html, body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: black;
-  background-image: url('https://cdn.wallpapersafari.com/76/84/1q8I2p.jpg');
+  background-color: #2980B9;
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -13,7 +13,7 @@ html, body {
 }
 
 #display {
-	color: white;
+	color: rgb(0, 0, 0);
 	font-size: 2.9em;
 	top: 10px;
   border-bottom: thin solid;
@@ -23,7 +23,7 @@ html, body {
 }
 
 #date {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.3em;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
@@ -37,7 +37,7 @@ html, body {
   height: 40px;
   position: fixed;
   bottom: -1px;
-  background-color: white;
+  background-color: rgb(4, 4, 4);
   text-align: center;
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
@@ -47,7 +47,7 @@ html, body {
   width: 100%;
   bottom: 4em;
   position: fixed;
-  border-bottom: solid white;
+  border-bottom: solid rgb(0, 0, 0);
   padding: 15px;
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
@@ -74,7 +74,7 @@ span {
   height: 45em;
 } p {
   max-width: 30em;
-  color: white;
+  color: #2980B9;
   font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
   letter-spacing:0.1em;
   text-align:center;
@@ -130,9 +130,9 @@ p :hover {
   padding-top: 5px;
   text-decoration: none;
   opacity: 0.6;
-  background-color: black;
-  color: white;
-  border: thin solid white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 3, 3);
+  border: thin solid rgb(0, 0, 0);
   height: 40px;
   width: 100px;
   border-radius: 2px;
@@ -141,7 +141,7 @@ p :hover {
 }
 
 #gen:hover {
-  background-color: white;
+  background-color: rgb(243, 188, 188);
   color: black;
   border: thin solid black;
   opacity: 0.8;
@@ -152,7 +152,7 @@ p :hover {
 }
 
 #date {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 @media screen 
@@ -168,5 +168,5 @@ p :hover {
 .fa-twitter {
   font-size: 40px !important;
   margin-left: 20px;
-  color: azure;
+  color: rgb(0, 255, 255);
 }
