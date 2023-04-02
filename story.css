@@ -4,3 +4,59 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+/* Styling for the quiz form */
+
+.answer-options {
+	margin: 10px 0;
+}
+
+label {
+	margin-left: 5px;
+}
+
+button {
+	background-color: #1E90FF;
+	color: white;
+	padding
+    : 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    }
+    
+    /* Styling for the container */
+    
+    .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    }
+    
+    .question {
+    margin-bottom: 20px;
+    }
+    
+   
+    
+    /* Styling for the results */
+    
+    #results {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    }
+    
+    .correct {
+    color: green;
+    }
+    
+    .incorrect {
+    color: red;
+    }

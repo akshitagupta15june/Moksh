@@ -17,3 +17,40 @@ p{
   font-size: 20px;
   color: white;
 }
+
+#play-pause0 {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#play-pause0:hover {
+  background-color: #2980b9;
+}
+#play-pause1 {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#play-pause1:hover {
+  background-color: #2980b9;
+}
+#player {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#player1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
