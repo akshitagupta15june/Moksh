@@ -80,7 +80,7 @@ body {
 }
 .navbar-logo img {
   width: 50px;
-  margin-left: 140px;
+  margin-left: 10px;
   background-color: antiquewhite;
 
 }
@@ -88,7 +88,7 @@ body {
 .navbar-logo span {
   font-weight: bold;
   color: white;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 .topnav {
   overflow: hidden;
@@ -222,4 +222,35 @@ body {
     height: 80px;
     margin: 0 5px;
   }
+}
+footer {
+  background-color: #2980B9;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer ul li:first-child {
+  margin-left: 0;
+}
+  
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
 }
