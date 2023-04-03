@@ -1,4 +1,6 @@
-# Moksh (Unlock your potential and achieve true balance in life with Moksh)
+# Moksh 
+
+## (Unlock your potential and achieve true balance in life with Moksh)
 
 # Mental Health Problems
 
