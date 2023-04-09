@@ -98,7 +98,7 @@ body {
 
 /* Links */
 .topnav a {
-  float: left;
+  float: left; 
   display: block;
   color: #ffffff;
   text-align: center;
@@ -147,7 +147,9 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  
 }
 
 .card {
@@ -155,10 +157,12 @@ body {
   background-image: url("https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg");
   background-size:cover;
   color: #2980B9;
-  width: 250px;
+  width: 400px;
+  height:550px;
   margin: 20px;
   text-align: center;
-  border-radius: 10px;
+  border: 0px solid transparent;
+  border-radius: 30px;
   box-shadow: 0px 0px 10px #555;
 }
 
@@ -182,17 +186,25 @@ body {
   background-color: #3ce78f;
   color: #2980B9;
   border: none;
-  
+
   padding: 10px 20px;
   margin-bottom: 10px;
   border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.card button:hover{
+  background-color:#2980B9;
+  color:rgb(43, 2, 2);
+}
 
-
-
-
+.btn-shift{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
 
 .image-container {
   margin-top: 40px;
