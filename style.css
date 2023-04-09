@@ -266,3 +266,12 @@ footer ul li a {
   color: #fff;
   text-decoration: none;
 }
+
+#google_translate_element {
+  position: absolute;
+  left: 5px;
+  z-index: 1;
+}
+#header {
+  margin-top: 10px;
+}
