@@ -4,3 +4,19 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
+.media-scroller {
+    display: grid;
+    gap: 10px;
+    padding-left: 100;
+    grid-auto-flow: column;
+    grid-auto-columns: 35%;
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+
+}
