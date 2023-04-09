@@ -1,6 +1,6 @@
 
 let questions = [
-    {
+  {
     numb: 1,
     question: "Who is Duryodhana's father?",
     answer: "DHRIHASTARA",
@@ -11,7 +11,7 @@ let questions = [
       "KRISHNA"
     ]
   },
-    {
+  {
     numb: 2,
     question: "Who is not a Pandava?",
     answer: "DURYODHANA",
@@ -22,7 +22,7 @@ let questions = [
       "DURYODHANA"
     ]
   },
-    {
+  {
     numb: 3,
     question: "How many Pandava brothers are there?",
     answer: "5",
@@ -33,7 +33,7 @@ let questions = [
       "100"
     ]
   },
-    {
+  {
     numb: 4,
     question: "What is the name for the warrior/prince class in Hindu society?",
     answer: "Kshatriya",
@@ -44,7 +44,7 @@ let questions = [
       "Shudra"
     ]
   },
-    {
+  {
     numb: 5,
     question: "Who is afraid to fight at the outset of the Gita?",
     answer: "ARJUNA",
@@ -55,5 +55,109 @@ let questions = [
       "KRISHNA"
     ]
   },
-  
+  {
+    numb: 6,
+    question: "What is the literary meaning of Bhagavad Gita ?",
+    answer: "Song of the Lord",
+    options: [
+      "Song of the Lord",
+      "Song of Happiness",
+      "God's pasttimes",
+      "Song of the Universe"]
+  },
+  {
+    numb: 7,
+    question: "Who was Sanjaya? ?",
+    answer: "Dhritarashtra's advisor",
+    options: [
+      "Dhritarashtra's advisor",
+      "Arjuna's cousin",
+      "Dhritarashtra's advisor",
+      "Duryodhana's brother"]
+  },
+  {
+    numb: 8,
+    question: "Where did the Lord speak Bhagavad Gita ?",
+    answer: "Kurukshetra",
+    options: [
+      "Vrindaavan",
+      "Kurukshetra",
+      "Mathura",
+      "Ayodhya"]
+  },
+  {
+    numb: 9,
+    question: "How many chapters are there in Bhagavad Gita ?",
+    answer: "18",
+    options: [
+      "18",
+      "16",
+      "20",
+      "22"]
+  },
+  {
+    numb: 10,
+    question: "Who is the speaker of Bhagavad Gita ?",
+    answer: "Lord Krishna",
+    options: [
+      "Lord Krishna",
+      "Lord Shiva",
+      "Lord Vishnu",
+      "Lord Brahma"]
+  },
+  {
+    numb: 11,
+    question: "Which guna is associated with passion ?",
+    answer: "Rajas",
+    options: [
+      "Rajas",
+      "Tamas",
+      "Sattva",
+      "None of the above"]
+  },
+  {
+    numb: 12,
+    question: "What does Karma Yoga mean?",
+    answer: "Dedication your actions to the Lord",
+    options: [
+      "Chasing after money",
+      "Meditating in an ashram",
+      "Dedication your actions to the Lord",
+      "Sacrificing something"]
+  },
+  {
+    numb: 13,
+    question: "Which of these wasn't a reason given by Arjuna, to not fight",
+    answer: "Fear of losing the battle",
+    options: [
+      "Compassion for his relatives",
+      "Destruction of family traditions",
+      "Fear of sinful reactions",
+      "Fear of losing the battle",
+    ]
+  },
+  {
+    numb: 14,
+    question: "Arjuna's chariot was bearing the ﬂag marked with the emblem of ?",
+    answer: "Hanuman",
+    options: [
+      "Hanuman",
+      "Ganesha",
+      "Krishna",
+      "Sun"]
+  },
+  {
+    numb: 15,
+    question: "What does Lord Krishna state as the cause of fear ?",
+    answer: "Forgetfulness of Lord Krishna",
+    options: [
+      "Uncontrolled senses",
+      "Uncertainty of the future",
+      "Forgetfulness of Lord Krishna",
+      "Lack of intelligence"]
+  },
+
+
+
+
 ];
