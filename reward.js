@@ -16,6 +16,11 @@ function timerDisplay(seconds) {
 
 function startTimer() {
   console.log('start button clicked!!!');
+
+  //display pause instead of start
+  startButton.textContent = 'Pause';
+  startButton.removeEventListener('click', startTimer);
+
   timerDisplay(defaultTime);
   countdown = setInterval(() => {
     defaultTime <= 0 ? clearInterval(countdown) : defaultTime--;
@@ -33,6 +38,16 @@ function startTimer() {
       }
     }
   }, 1000);
+
+  startButton.addEventListener('click', pauseTimer);
+}
+
+function pauseTimer() {
+  console.log('pause button clicked!!!');
+  startButton.textContent = 'Start';
+  startButton.removeEventListener('click', pauseTimer);
+  clearInterval(countdown);
+  startButton.addEventListener('click', startTimer);
 }
 
 function startBreakTimer() {
