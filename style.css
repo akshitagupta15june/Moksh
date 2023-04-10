@@ -75,37 +75,52 @@ body {
 .navbar-logo {
   display: flex;
   align-items: center;
+  margin-left: 1%;
   font-size: 1.5rem;
-  margin-right: 80px;
+  /* border-radius: 5px; */
 }
+
 .navbar-logo img {
-  width: 50px;
+  width: 50px; 
   margin-left: 10px;
   background-color: antiquewhite;
-
+  border-radius:10%;
 }
 
 .navbar-logo span {
   font-weight: bold;
   color: white;
   margin-right: 10px;
+  /* padding-top: 0%; */
 }
+
 .topnav {
   overflow: hidden;
   background-color: #2980B9;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 
+#google_translate_element{
+  padding-top: 13rem;
+
+
+}
 /* Links */
 .topnav a {
-  float: left; 
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 18px;
   text-decoration: none;
   font-size: 18px;
 }
+
 
 /* Active Link */
 .topnav a.active {
@@ -114,8 +129,9 @@ body {
 
 /* Hover Link */
 .topnav a:hover {
-  background-color: #9fffc5;
+  background-color: #b1bce0;
   color: #666;
+  text-decoration: none;
 }
 
 /* Mobile Responsive */
@@ -180,6 +196,7 @@ body {
 .card p {
   font-size: 16px;
   margin: 10px;
+  text-align: left;
 }
 
 .card button {
