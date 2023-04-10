@@ -228,15 +228,23 @@ footer .quick-links ul {
   flex-direction: column;
   align-items: flex-start;
   font-size: 18px;
-  
+  margin-top:15px;
+
   
 }
-
+footer ul li {
+  margin-top:5px;
+}
 footer ul li a {
   color: #fff;
   text-decoration: none;
 }
-
+footer .quick-links ul li a:hover{
+  text-decoration: none;
+  padding:5px;
+  background-color: #9fffc5;
+  color: #666;
+}
 
 
 /* Mobile Responsive */
