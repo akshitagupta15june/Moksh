@@ -118,30 +118,6 @@ body {
   color: #666;
 }
 
-/* Mobile Responsive */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav {
-    position: relative;
-  }
-  .topnav a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive {
-    display: block;
-    text-align: center;
-  }
-  .topnav.responsive a {
-    display: inline-block;
-    float: none;
-  }
-}
 
 
 .card-container {
@@ -228,13 +204,12 @@ body {
   object-fit:cover;
 }
 
-@media only screen and (max-width: 768px) {
-  .circle {
-    width: 80px;
-    height: 80px;
-    margin: 0 5px;
-  }
+
+footer .logo{
+  background-color: #000000;
+  border-radius: 50%;
 }
+
 footer {
   background-color: #2980B9;
   color: #fff;
@@ -242,30 +217,63 @@ footer {
   font-size: 14px;
 }
 
-footer p {
-  margin: 0;
-}
+footer .logo-title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ }
 
-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: right;
-}
-
-footer ul li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-footer ul li:first-child {
-  margin-left: 0;
-}
+footer .quick-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
   
+  
+}
+
 footer ul li a {
   color: #fff;
   text-decoration: none;
 }
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    position: relative;
+  }
+  .topnav a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive {
+    display: block;
+    text-align: center;
+  }
+  .topnav.responsive a {
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+  }
+}
+
+
 
 #google_translate_element {
   position: absolute;
