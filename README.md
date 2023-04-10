@@ -19,6 +19,7 @@ A guiding video about Moksh
 https://user-images.githubusercontent.com/100228521/230923658-b7a033a2-ca37-4b58-83f7-9b939a5f523e.mp4
 
 
-embed_url("https://youtu.be/wfdF___qNME") %>%
-  use_align("center")
+library("vembedr")
 
+embed_url("https://www.youtube.com/watch?v=_fZQQ7o16yQ") %>%
+  use_start_time("1m32")
