@@ -18,6 +18,3 @@ A guiding video about Moksh
 
 https://user-images.githubusercontent.com/100228521/230923658-b7a033a2-ca37-4b58-83f7-9b939a5f523e.mp4
 
-## n3ewtest
-<video src="https://youtu.be/wfdF___qNME"> video </video>
-
