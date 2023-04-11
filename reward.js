@@ -67,6 +67,7 @@ function startBreakTimer() {
 
 function resetTimer() {
   console.log('reset clicked!!!!');
+  startButton.textContent = 'Start';
   defaultTime = 25 * 60;
   cycleCount = 0;
   clearInterval(countdown);
