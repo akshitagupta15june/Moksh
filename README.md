@@ -59,7 +59,8 @@ Moksh is a spiritual productivity tool designed for individuals who want to unlo
 
 
 ### Explanation Video
-[Click here to go to the Youtube Video about Moksh](https://youtu.be/wfdF___qNME)
+
+https://user-images.githubusercontent.com/68381641/231157226-43ba926c-f224-4c73-99c2-a7aeeaa66883.mp4
 
 ## Demo
 https://akshitagupta15june.github.io/Moksh/
