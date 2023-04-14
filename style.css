@@ -97,6 +97,11 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
 
 }
 
