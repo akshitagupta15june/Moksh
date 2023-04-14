@@ -75,40 +75,58 @@ body {
 .navbar-logo {
   display: flex;
   align-items: center;
+  margin-left: 1%;
   font-size: 1.5rem;
-  margin-right: 80px;
+  /* border-radius: 5px; */
 }
+
 .navbar-logo img {
-  width: 50px;
+  width: 50px; 
   margin-left: 10px;
   background-color: antiquewhite;
-
+  border-radius:10%;
 }
 
 .navbar-logo span {
   font-weight: bold;
   color: white;
   margin-right: 10px;
+  /* padding-top: 0%; */
 }
+
 .topnav {
   overflow: hidden;
   background-color: #2980B9;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+
   position: fixed;
   top: 0;
   z-index: 1000;
+
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+
 }
 
+#google_translate_element{
+  padding-top: 13rem;
+
+
+}
 /* Links */
 .topnav a {
-  float: left; 
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 18px;
   text-decoration: none;
   font-size: 18px;
 }
+
 
 /* Active Link */
 .topnav a.active {
@@ -117,34 +135,11 @@ body {
 
 /* Hover Link */
 .topnav a:hover {
-  background-color: #9fffc5;
+  background-color: #b1bce0;
   color: #666;
+  text-decoration: none;
 }
 
-/* Mobile Responsive */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav {
-    position: relative;
-  }
-  .topnav a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive {
-    display: block;
-    text-align: center;
-  }
-  .topnav.responsive a {
-    display: inline-block;
-    float: none;
-  }
-}
 
 
 .card-container {
@@ -183,6 +178,7 @@ body {
 .card p {
   font-size: 16px;
   margin: 10px;
+  text-align: left;
 }
 
 .card button {
@@ -231,13 +227,12 @@ body {
   object-fit:cover;
 }
 
-@media only screen and (max-width: 768px) {
-  .circle {
-    width: 80px;
-    height: 80px;
-    margin: 0 5px;
-  }
+
+footer .logo{
+  background-color: #000000;
+  border-radius: 50%;
 }
+
 footer {
   background-color: #2980B9;
   color: #fff;
@@ -245,30 +240,71 @@ footer {
   font-size: 14px;
 }
 
-footer p {
-  margin: 0;
-}
+footer .logo-title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ }
 
-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: right;
-}
+footer .quick-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
+  margin-top:15px;
 
-footer ul li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-footer ul li:first-child {
-  margin-left: 0;
-}
   
+}
+footer ul li {
+  margin-top:5px;
+}
 footer ul li a {
   color: #fff;
   text-decoration: none;
 }
+footer .quick-links ul li a:hover{
+  text-decoration: none;
+  padding:5px;
+  background-color: #9fffc5;
+  color: #666;
+}
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    position: relative;
+  }
+  .topnav a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive {
+    display: block;
+    text-align: center;
+  }
+  .topnav.responsive a {
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+  }
+}
+
+
 
 #google_translate_element {
   position: absolute;
