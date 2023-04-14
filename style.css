@@ -94,6 +94,10 @@ body {
   overflow: hidden;
   background-color: #2980B9;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
 }
 
 /* Links */
