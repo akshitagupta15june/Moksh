@@ -14,7 +14,7 @@ body {
   background-color: #2980B9;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; 
 }
 .header {
   background-color: #2980B9;
@@ -91,7 +91,6 @@ body {
   font-weight: bold;
   color: white;
   margin-right: 10px;
-  /* padding-top: 0%; */
 }
 
 .topnav {
@@ -107,12 +106,10 @@ body {
 
 #google_translate_element{
   padding-top: 13rem;
-
-
 }
 /* Links */
 .topnav a {
-  display: flex;
+  display: flex; 
   justify-content: space-evenly;
   color: #ffffff;
   text-align: center;
@@ -259,7 +256,7 @@ footer ul li a {
 footer .quick-links ul li a:hover{
   text-decoration: none;
   padding:5px;
-  background-color: #9fffc5;
+  background-color: #b1bce0;
   color: #666;
 }
 
