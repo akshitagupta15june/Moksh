@@ -5,7 +5,6 @@ body {
     background-size: cover;
 }
 /* Styling for the quiz form */
-
 .answer-options {
 	margin: 10px 0;
 }
@@ -25,8 +24,7 @@ button {
     cursor: pointer;
     }
     
-    /* Styling for the container */
-    
+    /* Styling for the container. */
     .container {
     max-width: 800px;
     margin: 0 auto;
@@ -42,11 +40,12 @@ button {
     .question {
     margin-bottom: 20px;
     }
+
+
     
-   
     
-    /* Styling for the results */
-    
+
+    /* Styling for the results. */
     #results {
     margin-top: 20px;
     font-size: 1.2em;
@@ -60,3 +59,10 @@ button {
     .incorrect {
     color: red;
     }
+
+
+    
+    
+
+
+    
