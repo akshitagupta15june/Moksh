@@ -125,10 +125,10 @@ git clone https://github.com/<your_github_username>/Moksh.git
 5. Open a Pull Request
 
 
-<h2 align="center"> Social</h2>
-<a href='https://discord.gg/Jmc97prqjb'>For any queries, join this
+<h2 align="center"> Social</h2>For any queries, join this
+<a href='https://discord.gg/Jmc97prqjb'>
    <button class="mybtn">
-      DISCORD CHANNEL
+      <img src="https://discord.com/assets/28174a34e77bb5e5310ced9f95cb480b.png" alt="Discord" height="30" width="30">DISCORD CHANNEL
    </button>
 </a> 
 <h2 align="center"> License</h2>
