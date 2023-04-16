@@ -128,7 +128,7 @@ git clone https://github.com/<your_github_username>/Moksh.git
 <h2 align="center"> Social</h2>For any queries, join this
 <a href='https://discord.gg/Jmc97prqjb'>
    <button class="mybtn">
-      <img src="https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png" alt="Discord" height="30" width="30" align="middle">DISCORD CHANNEL
+      <img src="https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png" alt="Discord" height="30" width="30" align="top">DISCORD CHANNEL
    </button>
 </a> 
 <h2 align="center"> License</h2>
