@@ -126,7 +126,7 @@ git clone https://github.com/<your_github_username>/Moksh.git
 
 
 <h2 align="center"> Social</h2>
-[![Join our Discord server](https://img.shields.io/discord/1234567890?label=Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/Jmc97prqjb)
+[![Join our Discord server](https://img.shields.io/badge/Join-Our%20Discord-blue?style=for-the-badge&logo=discord)](https://discord.com/Jmc97prqjb)
 
 <h2 align="center"> License</h2>
 
