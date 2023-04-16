@@ -126,10 +126,21 @@ git clone https://github.com/<your_github_username>/Moksh.git
 
 
 <h2 align="center"> Social</h2>
-[![Join our Discord server](https://img.shields.io/badge/Join-Our%20Discord-blue?style=for-the-badge&logo=discord)](https://discord.com/Jmc97prqjb)
-
+<a href='https://discord.gg/Jmc97prqjb'>For any queries, join this
+   <button class="mybtn">
+      DISCORD CHANNEL
+   </button>
+</a> 
 <h2 align="center"> License</h2>
-
+<style>
+  .mybtn {
+   background-color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 15px;
+   cursor: pointer;
+} 
+</style>
 Distributed under the MIT License. See [LICENSE](https://github.com/akshitagupta15june/Moksh/blob/main/LICENSE) for more information.
 
 <h2 align="center">Code of Conduct</h2>
