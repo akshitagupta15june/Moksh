@@ -126,12 +126,7 @@ git clone https://github.com/<your_github_username>/Moksh.git
 
 
 <h2 align="center"> Social</h2>
-For any queries, join this 
-<button class="GFG" 
-    onclick="window.location.href = 'https://discord.gg/Jmc97prqjb';">
-       discord channel
-    </button>
-.
+For any queries, join this [DISCORD CHANNEL](https://discord.gg/Jmc97prqjb).
 <h2 align="center"> License</h2>
 
 Distributed under the MIT License. See [LICENSE](https://github.com/akshitagupta15june/Moksh/blob/main/LICENSE) for more information.
