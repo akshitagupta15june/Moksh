@@ -65,6 +65,14 @@ https://user-images.githubusercontent.com/68381641/231157226-43ba926c-f224-4c73-
 ## Demo
 https://akshitagupta15june.github.io/Moksh/
 
+##  Doubts
+
+If there are any doubts you can ask here on discord
+
+Join Your Discord Server and ask your doubts
+
+[![Join our Discord channel](https://img.shields.io/badge/Join%20our-Discord-%237289DA)](https://discord.gg/Jmc97prqjb)
+
 
 ## Built With
 
