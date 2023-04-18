@@ -130,8 +130,12 @@ $ git clone https://github.com/<your_github_username>/Moksh.git
 4. Push to your branch (`git push -u origin main`)
 5. Open a Pull Request
 
+## Thanks to all Contributors 💪 
 
-<h2 align="center"> License</h2>
+Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocking 🍻
+
+![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/Moksh)
+<h2 align="center"> License 🛡️ </h2>
 
 Distributed under the MIT License. See [LICENSE](https://github.com/akshitagupta15june/Moksh/blob/main/LICENSE) for more information.
 
@@ -143,13 +147,13 @@ To maintain a safe and inclusive space for everyone to learn and grow, contribut
 
 Please ensure you follow the [Code of Conduct](https://github.com/akshitagupta15june/Moksh/blob/main/CODE_OF_CONDUCT.md)  -->
 
+<div align="center">
+
 ## Author
 
 [Akshita Gupta](https://github.com/akshitagupta15june) 
 
 
-<div align="center">
-
-### Show some ❤️ by starring this awesome Repository!
+### Show some ❤️ by starring this awesome repository!
 
 </div>
