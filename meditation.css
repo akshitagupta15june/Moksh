@@ -8,51 +8,35 @@ h1{
   color: white;
 }
 img{
-width: 300px;
-height: 300px;
+width: 150px;
+height: 150px;
 border-radius: 10px;
-margin: 0px 10px 30px 20px; 
+margin: 0px 10px 20px 20px; 
 }
 p{
   font-size: 20px;
   color: white;
 }
-
-#play-pause0 {
+.icons{
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#music {
   font-size: 24px;
-  padding: 10px 20px;
+  padding: 10px 5px;
   background-color: #3498db;
   color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-#play-pause0:hover {
-  background-color: #2980b9;
-}
-#play-pause1 {
-  font-size: 24px;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#play-pause1:hover {
-  background-color: #2980b9;
-}
 #player {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-}
-#player1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
 }
 
 .navbar-logo {
@@ -119,4 +103,7 @@ footer .quick-links ul li a:hover{
   padding:5px;
   background-color: #b1bce0;
   color: #666;
+}
+.active{
+  margin: 10px 0px 5px 10px
 }

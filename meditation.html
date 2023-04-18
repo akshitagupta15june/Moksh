@@ -6,6 +6,7 @@
   <title>AR Meditate</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="meditation.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -33,7 +34,6 @@
     <h1>Augmented Reality Meditation</h1>
     <p>You just have to open your google lens and scan the QR code for an ultimate Augmented reality experience in front of your eyes.</p>
    
-    
     <img src="Images/krishnaradha.jpeg">
     <img src="Images/krishnaradha.jpeg">
     <img src="Images/krishnaradha.jpeg">
@@ -41,19 +41,31 @@
     <p><b>Listen to peaceful krishna flute music with AR meditation.</b></p>
     
     <div id="player">
-      <button id="play-pause0">Play deep meditation Music</button>
+      <p id="music">Deep meditation Music</p><button id="play-pause0" class="icons"><i class="bi bi-play-circle-fill"></i></button>
     </div>
-    <div id="player1">
-      <button id="play-pause1">Play Krishna Flute meditation music</button>
+    <div id="player">
+      <p id="music">Krishna Flute meditation music</p><button id="play-pause1" class="icons"><i class="bi bi-play-circle-fill"></i></button>
+    </div>
+    <div id="player">
+      <p id="music">River meditation music</p><button id="play-pause2" class="icons"><i class="bi bi-play-circle-fill"></i></button>
+    </div>
+    <div id="player">
+      <p id="music">Piano meditation music</p><button id="play-pause3" class="icons"><i class="bi bi-play-circle-fill"></i></button>
+    </div>
+    <div id="player">
+      <p id="music">Himalayas meditation music</p><button id="play-pause4" class="icons"><i class="bi bi-play-circle-fill"></i></button>
     </div>
     <br>
-    <audio id="river-sound" src="Images/deep-music.mp3"></audio>
-    <audio id="birds-sound" src="Images/krishna.mp3"></audio>
+    <audio id="river-sound" src="Images/river-music.mp3"></audio>
+    <audio id="flute-sound" src="Images/krishna.mp3"></audio>
+    <audio id="deep-music" src="Images/deep-music.mp3"></audio>
+    <audio id="piano-sound" src="Images/piano-music.mp3"></audio>
+    <audio id="himalayas-sound" src="Images/himalaya-music.mp3"></audio>
   
     <script src="meditation.js"></script>
 
 
-    <div class="sketchfab-embed-wrapper"> <iframe title="Krishna Artifacts" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1120" height="530" src="https://sketchfab.com/models/506d0a8f43884c458e5a78156151ff09/embed"> </iframe> </div>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Krishna Artifacts" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1020" height="530" src="https://sketchfab.com/models/506d0a8f43884c458e5a78156151ff09/embed"> </iframe> </div>
   </div>
 
 
@@ -70,17 +82,8 @@
       <p style="text-align:center;">Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. </p>
     </div>
     <div class="quick-links">
-      <h4 style="margin-left:10px">Quick Links</h4>
-      <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="meditation.html">Augmented Reality Meditation</a></li>
-      <li><a href="event.html">Iskcon Events</a></li>
-      <li><a href="story.html">Divine activities for all Generation</a></li>
-      <li><a href="reward.html">Pomodoro spriritual Break</a></li>
-      <li><a href="motivation.html">Read a Shlok</a></li>
-      <li><a href="rejuvenate.html">Rejuvenate</a></li>
-      </ul>
+      <h4 style="margin-left:10px; margin-bottom: 10px;">Quick Link</h4>
+      <a class="active" href="index.html"><b>HOME</b></a></li>
     </div>
     <hr color="#000" size="1">
     <div class="copyright" style="display:flex; justify-content:space-around">
