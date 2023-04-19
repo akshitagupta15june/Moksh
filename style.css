@@ -94,17 +94,17 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
+  overflow:visible;
   background-color: #2980B9;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   height: 5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 
+  position: fixed;
+  top: 0;
+  z-index:1000;
 }
 
 #google_translate_element{
@@ -201,7 +201,7 @@ body {
 
 
 .image-container {
-  margin-top: 40px;
+  margin-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
