@@ -1,10 +1,10 @@
 <div align="center">
  <h1>MOKSH</h1>
-<!--- <p align="center">
+<p align="center">
  <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/rejuvenate.png" width="150"/>
  <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/moksh.jpeg" width="150"/> 
   <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/rejuvenate.png" width="150"/>
-</p> --->
+</p> 
 
  ### _Unlock your potential and achieve true balance in life with Moksh!_
 </div>
@@ -31,13 +31,13 @@
 ## About The Project 💫
 
 ### Mental Health Problems
-<!--- <p align="center">
+<p align="center">
  <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/anxiety.png" width="150"/>
  <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/ANGRY.png" width="150"/> 
   <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/compare.png" width="150"/>
   <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/fear.png" width="150"/>
   <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/ego.png" width="150"/>
-</p> --->
+</p> 
 
 There are numerous mental problems affecting the people in modern society, including fear, false egos, anxiety, comparisons, competitions, peer pressure and stressful work environment. Mental health issues can lead to physical discomforts such as headaches, stomach aches, difficulty sleeping, irritability, and inability to focus. If left unaddressed, chronic stress can exacerbate these symptoms and give rise to more severe health concerns, including anxiety, hypertension, and reduced immunity.
 
