@@ -102,7 +102,8 @@ body {
   justify-content: space-evenly;
   align-items: center;
 
-  position: fixed;
+  /* position: fixed; */
+  position: sticky;
   top: 0;
   z-index:1000;
 }
@@ -183,7 +184,7 @@ body {
   padding: 10px 20px;
   margin-bottom: 10px;
   border-radius: 20px;
-  cursor: pointer;
+  cursor: pointer; 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -199,9 +200,8 @@ body {
   padding-top: 5%;
 }
 
-
 .image-container {
-  margin-top: 250px;
+  margin-top: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
