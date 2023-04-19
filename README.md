@@ -1,17 +1,16 @@
 <div align="center">
-  <h1>Moksh</h1>
-
+ <h1>MOKSH</h1>
 <p align="center">
  <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/rejuvenate.png" width="150"/>
  <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/moksh.jpeg" width="150"/> 
   <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/rejuvenate.png" width="150"/>
-</p>
+</p> 
 
-  <h2> Unlock your potential and achieve true balance in life with Moksh</h2>
+ ### _Unlock your potential and achieve true balance in life with Moksh!_
 </div>
 
 
-## ⚙️Table Of Contents
+## ⚙️ Table Of Contents 
 
 - [Table Of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
@@ -29,8 +28,7 @@
 - [Code of Conduct](#code-of-conduct)
 - [Author](#author)
 
-## About The Project💫
-
+## About The Project 💫
 
 ### Mental Health Problems
 <p align="center">
@@ -39,23 +37,23 @@
   <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/compare.png" width="150"/>
   <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/fear.png" width="150"/>
   <img src="https://github.com/akshitagupta15june/Moksh/blob/main/Images/ego.png" width="150"/>
-</p>
+</p> 
 
 There are numerous mental problems affecting the people in modern society, including fear, false egos, anxiety, comparisons, competitions, peer pressure and stressful work environment. Mental health issues can lead to physical discomforts such as headaches, stomach aches, difficulty sleeping, irritability, and inability to focus. If left unaddressed, chronic stress can exacerbate these symptoms and give rise to more severe health concerns, including anxiety, hypertension, and reduced immunity.
 
 
-### ✨A Spiritual Productivity Tool for Mental Wellness
+### ✨ A Spiritual Productivity Tool for Mental Wellness
 Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. Our customized spiritual features help you take control of your work, focus on what truly matters, and rejuvenate your mind and spirit. By reading Bhagavad Gita, we become soul conscious and gain the strength to fight life's challenges. With Moksh, you can overcome the mental problems that arise from our body consciousness and find true happiness.
 
-### ✨Features
-* Augmented Reality Bhagavad Gita Medidation🧘‍♂️
-* Connect with ISKCON spiritual events near you🔗
-* Interactive Gita stories for children and students✍️
+### ✨ Features
+* Augmented Reality Bhagavad Gita Medidation 🧘‍♂️
+* Connect with ISKCON spiritual events near you 🔗
+* Interactive Gita stories for children and students ✍️
 * Pomodoro feature(with timer) along with reading Bhagavad Gita shloks in the breaks⌛
-* Stress buster spiritual games🎮
-* Bhagavad Gita quiz🤔
-* Random Bhagavad Gita shlok generator with meaning, along with sharing to twitter functionality🌟
-* Rejuvenate section for watching inspring videos by spiritual leaders☮️
+* Stress buster spiritual games 🎮
+* Bhagavad Gita quiz 🤔
+* Random Bhagavad Gita shlok generator with meaning, along with sharing to twitter functionality 🌟
+* Rejuvenate section for watching inspring videos by spiritual leaders ☮️
 
 
 ### Explanation Video
@@ -76,19 +74,19 @@ Join Your Discord Server and ask your doubts
 
 ## Built With
 
-👉Front-End:
+👉 Front-End:
 * [HTML](https://html.com)
 * [CSS](https://www.css3.com)
 * [Bootstrap](https://getbootstrap.com)
 * [JavaScript](https://www.javascript.com/)
 
-👉AR Medidation integration:
+👉 AR Medidation integration:
 * [Echo-AR](https://www.echo3d.com)
 
-👉Nearest Event Finder:
+👉 Nearest Event Finder:
 * [Google Maps API](https://developers.google.com/maps)
 
-## Getting Started💨
+## Getting Started 💨
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
@@ -98,7 +96,7 @@ To get a local copy up and running follow these simple example steps.
 1. Clone the repo
 
 ```sh
-git clone https://github.com/akshitagupta15june/Moksh.git
+$ git clone https://github.com/akshitagupta15june/Moksh.git
 ```
 
 2. Open the **index.html** file
@@ -125,15 +123,19 @@ See the [open issues](https://github.com/akshitagupta15june/Moksh/issues) for a 
 1. Fork the Project
 2. Clone your forked repository
 ```sh
-git clone https://github.com/<your_github_username>/Moksh.git
+$ git clone https://github.com/<your_github_username>/Moksh.git
 ```
 3. Make the required changes and stage them (`git add .`) or (`git add <file>`)
 4. Commit your Changes (`git commit -m 'Made xyz changes'`)
 4. Push to your branch (`git push -u origin main`)
 5. Open a Pull Request
 
+## Thanks to all Contributors 💪 
 
-<h2 align="center"> License</h2>
+Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocking 🍻
+
+![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/Moksh)
+<h2 align="center"> License 🛡️ </h2>
 
 Distributed under the MIT License. See [LICENSE](https://github.com/akshitagupta15june/Moksh/blob/main/LICENSE) for more information.
 
@@ -145,13 +147,13 @@ To maintain a safe and inclusive space for everyone to learn and grow, contribut
 
 Please ensure you follow the [Code of Conduct](https://github.com/akshitagupta15june/Moksh/blob/main/CODE_OF_CONDUCT.md)  -->
 
+<div align="center">
+
 ## Author
 
 [Akshita Gupta](https://github.com/akshitagupta15june) 
 
 
-<div align="center">
-
-### Show some ❤️ by starring this awesome Repository!
+### Show some ❤️ by starring this awesome repository!
 
 </div>
