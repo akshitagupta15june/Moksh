@@ -95,7 +95,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #2980B9;
+  background-color: rgba(41, 128, 185,0.6);
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   height: 5rem;
   display: flex;
@@ -104,6 +104,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  
+  backdrop-filter: blur(05px);
 
 }
 
