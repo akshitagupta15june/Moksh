@@ -94,13 +94,15 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
+  overflow:visible;
   background-color: rgba(41, 128, 185,0.6);
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   height: 5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  /* position: fixed; */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -185,7 +187,7 @@ body {
   padding: 10px 20px;
   margin-bottom: 10px;
   border-radius: 20px;
-  cursor: pointer;
+  cursor: pointer; 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -201,9 +203,8 @@ body {
   padding-top: 5%;
 }
 
-
 .image-container {
-  margin-top: 40px;
+  margin-top: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
