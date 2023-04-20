@@ -46,14 +46,14 @@ There are numerous mental problems affecting the people in modern society, inclu
 Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. Our customized spiritual features help you take control of your work, focus on what truly matters, and rejuvenate your mind and spirit. By reading Bhagavad Gita, we become soul conscious and gain the strength to fight life's challenges. With Moksh, you can overcome the mental problems that arise from our body consciousness and find true happiness.
 
 ### ✨ Features
-* Augmented Reality Bhagavad Gita Medidation 🧘‍♂️
+* Augmented Reality Bhagavad Gita Meditation 🧘‍♂️
 * Connect with ISKCON spiritual events near you 🔗
 * Interactive Gita stories for children and students ✍️
 * Pomodoro feature(with timer) along with reading Bhagavad Gita shloks in the breaks⌛
 * Stress buster spiritual games 🎮
 * Bhagavad Gita quiz 🤔
 * Random Bhagavad Gita shlok generator with meaning, along with sharing to twitter functionality 🌟
-* Rejuvenate section for watching inspring videos by spiritual leaders ☮️
+* Rejuvenate section for watching inspirational videos by spiritual leaders ☮️
 
 
 ### Explanation Video
