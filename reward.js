@@ -23,7 +23,7 @@ function startTimer() {
 
   timerDisplay(defaultTime);
   countdown = setInterval(() => {
-    defaultTime <= 0 ? clearInterval(countdown) : defaultTime--;
+    defaultTime <= 0 ? (playSpiritualSound(), clearInterval(countdown)) : defaultTime--;
     timerDisplay(defaultTime);
     if (defaultTime === 0) {
       clearInterval(countdown);
@@ -40,6 +40,12 @@ function startTimer() {
   }, 1000);
 
   startButton.addEventListener('click', pauseTimer);
+}
+
+function playSpiritualSound()
+{
+  const Audio = new audio("sounds/bell-sound-timer-end.mp3")
+  audio.play()
 }
 
 function pauseTimer() {
