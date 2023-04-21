@@ -1,117 +1,160 @@
 body {
-    background-color: #2980B9;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-color: #2980b9;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 /* Styling for the quiz form */
 .answer-options {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 
 label {
-	margin-left: 5px;
+  margin-left: 5px;
 }
 
-button 
-{
-	background-color: #1E90FF;
-	color: white;
-	padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
-    transition:background-color 0.3s ease-in-out;
+button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-button:hover{
-    background-color: #005BFF;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-	transform: translateY(-2px);
-    transition-delay: 0.3s;
+button:hover {
+  background-color: #005bff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  transition-delay: 0.3s;
 }
 
-    
-    /* Styling for the container. */
-    .top{
-        width:100%;
-        height:50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-        margin-top: 5rem;
-    }
+/* Styling for the container. */
+.top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
 
-    .top-header{
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 3rem;
-    }
+.top-header {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 3rem;
+}
 
-    .top img{
-        height:28rem;
-        border-radius: 5%;
-    }
+.top img {
+  height: 28rem;
+  border-radius: 5%;
+}
 
-    .bottom{
-        width:100%;
-        height:50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-        margin-top: 5rem;
+.bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
 
-    }
+.bottom-header {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 3rem;
+}
 
-    .bottom-header{
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 3rem;
-    }
+.bottom img {
+  height: 28rem;
+  border-radius: 5%;
+}
 
-    .bottom img{
-        height:28rem;
-        border-radius: 5%;
-    }
-
-
-
-
-    
-    /* h1 {
+/* h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     } */
-    
-    .question {
-    margin-bottom: 20px;
-    }
 
+.question {
+  margin-bottom: 20px;
+}
 
-    
-    
+/* Styling for the results. */
+#results {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
-    /* Styling for the results. */
-    #results {
-    margin-top: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-    }
-    
-    .correct {
-    color: green;
-    }
-    
-    .incorrect {
-    color: red;
-    }
+.correct {
+  color: green;
+}
 
+.incorrect {
+  color: red;
+}
 
-    
-    
+.story-footer {
+  display: flex;
+  flex-direction: column;
+}
 
+.story-footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 10px;
+}
 
-    
+.story-footer-tagline {
+  width: 100%;
+  margin: 18px 0;
+}
+
+.story-footer-intro {
+  display: block;
+}
+
+.story-footer-text {
+  color: white;
+
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.story-footer-quick-links {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  width: 100%;
+  align-items: start;
+}
+
+.story-footer-quick-links a {
+  padding: 0;
+}
+
+.story-footer-line-br {
+  border-top: 1px solid black;
+  margin: 0.4em;
+  width: 100%;
+}
+
+.story-footer-copyright {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.story-footer-copyright-text {
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
