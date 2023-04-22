@@ -9,66 +9,7 @@ body {
 	margin: 10px 0;
 }
 
-label {
-	margin-left: 5px;
-}
 
-button 
-{
-	background-color: #1E90FF;
-	color: white;
-	padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
-    transition:background-color 0.3s ease-in-out;
-}
-
-button:hover{
-    background-color: #005BFF;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-	transform: translateY(-2px);
-    transition-delay: 0.3s;
-}
-
-    
-    /* Styling for the container. */
-    .top-header{
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 3rem;
-        font-weight: 500;
-    }
- .bottom-header{
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 3rem;
-        font-weight: 500;
-    }
-
-  .bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bottom > div {
-  flex: 1;
-  margin: 0 10px;
-}
-
-.bottom > div > img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-   
-    /* h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    } */
     
     .question {
     margin-bottom: 20px;
