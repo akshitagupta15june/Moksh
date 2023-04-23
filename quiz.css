@@ -16,9 +16,9 @@ body{
     color: #2980B9;
     background: #2980B9;
 }
-.start_btn,
+
 .info_box,
-.quiz_box,
+.quiz_box, 
 .result_box{
     position: absolute;
     top: 50%;
@@ -27,6 +27,24 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.start_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s ease-in-out;
+}
+
+.start_btn:hover {
+    transform: translate(-50%, -55%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 
+                0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    transition-delay:0.1s ;
+  }
+  
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult{
@@ -99,7 +117,7 @@ body{
     transition: all 0.3s ease;
 }
 .quiz_box{
-    width: 550px;
+    width: 750px;
     background: #2980B9;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -235,20 +253,25 @@ footer{
     justify-content: space-between;
     border-top: 1px solid lightgrey;
 }
+
 footer .total_que span{
     display: flex;
+    justify-content: flex-start;
     user-select: none;
+    margin-left: 1rem;   
 }
 footer .total_que span p{
     font-weight: 500;
     padding: 0 5px;
 }
 footer .total_que span p:first-child{
-    padding-left: 0px;
+    padding-left: 0px
 }
 footer button{
+    position: relative;
     height: 40px;
     padding: 0 13px;
+    margin-right: 15px;
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
