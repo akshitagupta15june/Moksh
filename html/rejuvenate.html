@@ -5,36 +5,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Rejuvenate</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
 
-  <link href="rejuvenate.css" rel="stylesheet" type="text/css" />
+  <link href="../css/rejuvenate.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg">
+  <link rel="icon" type="image/x-icon" href="../Images/moksh.jpeg">
+  <link href="../theme/LightDarkMode.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
 
   <div class="topnav">
-    <div class="navbar-logo"> 
-       
-      <img src="Images/moksh.png" alt="Moksh Logo">
-      <a href="index.html"><span>Moksh</span></a>
+      <div class="navbar-logo">
+        <img src="../Images/moksh.png" alt="Moksh Logo" />
+        <a class="nav_link" href="index.html">Moksh</a>
+      </div>
+      <a class="nav_link" href="index.html">Home</a>
+      <a class="nav_link" href="meditation.html">Meditation</a>
+      <a class="nav_link" href="event.html">Iskcon Events</a>
+      <a class="nav_link" href="story.html">Divine activities</a>
+      <a class="nav_link" href="reward.html">Spriritual Break</a>
+      <a class="nav_link" href="motivation.html">Shloks</a>
+      <a class="nav_link" href="rejuvenate.html">Rejuvenate</a>
+
+      <!-- Light and Dark Toggle Switch -->
+      <div class="toggleWrapper">
+        <input type="checkbox" class="dn" id="dn" />
+        <label for="dn" class="toggle">
+          <span class="toggle__handler">
+            <span class="crater crater--1"></span>
+            <span class="crater crater--2"></span>
+            <span class="crater crater--3"></span>
+          </span>
+          <span class="star star--1"></span>
+          <span class="star star--2"></span>
+          <span class="star star--3"></span>
+          <span class="star star--4"></span>
+          <span class="star star--5"></span>
+          <span class="star star--6"></span>
+        </label>
+      </div>
+      <!--  -->
     </div>
-
-    <a class="active" href="index.html">Home</a>
-   
-    <a href="meditation.html">Augmented Reality Meditation</a>
-    <a href="event.html">Iskcon Events</a>
-    <a href="story.html">Divine activities for all Generation</a>
-    <a href="reward.html">Pomodoro spriritual Break</a>
-    <a href="motivation.html">Read a Shlok</a>
-    <a href="rejuvenate.html">Rejuvenate</a>
-
-  </div>
 
 
 
@@ -42,7 +58,7 @@
 
 
   <p>
-    <h1 align=center>"Inspirational shorts" to rejuvenate yourself for a productive day</h1>
+    <h1 align=center class="content-header">"Inspirational shorts" to rejuvenate yourself for a productive day</h1>
     </p>
     <div align="center" class="media-scroller">
       <iframe width="420" height="315" src="https://www.youtube.com/embed/XTxbTO_-id4?feature=oembed" frameborder="0"
@@ -56,7 +72,7 @@
     </div>
 
     <p>
-      <h1 align=center>"Inspirational Videos" of Gaur Gopal Das to lead a peaceful life</h1>
+      <h1 align=center class="content-header">"Inspirational Videos" of Gaur Gopal Das to lead a peaceful life</h1>
       </p>
       <div align="center" class="media-scroller">
         <iframe width="420" height="315" src="https://www.youtube.com/embed/YgeCHZfmx50" title="YouTube video player"
@@ -84,17 +100,17 @@
   
 
   <p>
-  <h1 align=center>Srila Prabhupada Stories</h1>
+  <h1 align=center class="content-header">Srila Prabhupada Stories</h1>
   </p>
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
 
   <div id="about1" class="container py-3">
           <a class="float-left mr-3">
-            <img src="Images/eager.jpg" height="200" class="rounded">
+            <img src="../Images/eager.jpg" height="200" class="rounded">
           </a>
           <h2>The enthusiasm to have a glimpse of Krishna.</h2>
-          <p>
+          <p class="container_para">
             To see God, one must first have faith and be sincerely eager to experience His presence. This is not a
             frivolous or magical desire, but a serious one. It is important to understand that if God exists, we must
             seek Him out. There is a story that illustrates this point. A thief attended a public recitation of the
@@ -110,10 +126,10 @@
 
   <div id="about2" class="container py-3">
           <a class="float-left mr-3">
-            <img src="Images/thief.jpg" height="200" class="rounded" >
+            <img src="../Images/thief.jpg" height="200" class="rounded" >
           </a>
           <h2>The Thief and the Householder's Prayers</h2>
-          <p>
+          <p class="container_para">
             It is a fact that nothing can be achieved without God's sanction. However, it is important to understand the
             nature of this sanction. God is the creator and everything exists within Him. Therefore, it is necessary for
             Him to give sanction. There is a story that illustrates this point. A thief prays to God to give him the
@@ -129,10 +145,10 @@
 
   <div id="about3" class="container py-3">
           <a class="float-left mr-3">
-            <img src="Images/yogi.webp" height="200" class="rounded">
+            <img src="../Images/yogi.webp" height="200" class="rounded">
           </a>
           <h2>The Yogi who could Walk on Water</h2>
-          <p>
+          <p class="container_para">
             This is not a fictional tale, but a true incident. Once, a man left his village and returned after ten
             years, boasting that he had achieved success in yoga. The villagers were curious and asked him what yoga
             practice he had learned. He claimed that he could walk on water. This statement attracted a large crowd, as
@@ -147,10 +163,10 @@
 
   <div id="about4" class="container py-3">
           <a class="float-left mr-3">
-            <img src="Images/godar.webp" height="200" class="rounded">
+            <img src="../Images/godar.webp" height="200" class="rounded">
           </a>
           <h2>The Old Lady and the Weekly Market: Trusting in God's Arrangements</h2>
-          <p>
+          <p class="container_para">
             Fair events also take place in Western countries, some in counties and some in villages. In India, weekly
             bazaars called hatta are held where salesmen gather with their goods and many buyers assemble, much like in
             a marketplace. Thousands of people gather in these weekly markets, and one day an old lady from the village
@@ -164,7 +180,7 @@
 
   <footer style="padding:5px 10px;">
     <div class="logo-title">
-      <img class='logo' src="Images/moksh.png" alt="Moksh Logo" style="height: 50px; margin-right: 10px; filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg) brightness(97%) contrast(99%);"/>
+      <img class='logo' src="../Images/moksh.png" alt="Moksh Logo" style="height: 50px; margin-right: 10px; filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg) brightness(97%) contrast(99%);"/>
       <h3 class="title" style="font-size: 28px; text-align: end; color: #fff; margin-top:12px">Moksh</h3>
     </div>
     <div class="tagline">
@@ -192,31 +208,7 @@
       <p style=" font-size: 14px; text-align: center; margin-top: 10px;">&copy; 2023 Moksh. All rights reserved.</p>
     </div>
   </footer>
-
-
-  <script src="story.js">
-    var slider=document.getElementById("slider1")
-    var btn1=document.getElementById("btn1")
-    var btn2=document.getElementById("btn1")
-    var btn3=document.getElementById("btn1")
-    var btn4=document.getElementById("btn1")
-
-    btn1.onclick=function(){
-      slide.style.transform="translateX(0px)";
-    }
-
-    btn2.onclick=function(){
-      slide.style.transform="translateX(-100px)";
-    }
-
-    btn3.onclick=function(){
-      slide.style.transform="translateX(-200px)";
-    }
-
-    btn4.onclick=function(){
-      slide.style.transform="translateX(-300px)";
-    }
-  </script>
+  <script src="../theme/rejuvenate_theme.js"></script>
 
 </body>
 

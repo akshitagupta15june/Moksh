@@ -3,11 +3,10 @@
   padding: 0;
 }
 body {
-  background-color: #2980B9;
+  background-color: #2980b9;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  
 }
 .bubble {
   position: absolute;
@@ -40,7 +39,7 @@ body {
 .bubble-five {
   box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #100dee,
     inset 5px 5px 10px #f7a120, inset -5px 5px 20px #fff,
-    inset 15px -25px 20px #ed24c1; 
+    inset 15px -25px 20px #ed24c1;
 }
 .score-board {
   background: #fff;
@@ -103,7 +102,7 @@ button.start-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2980B9;
+  background-color: #2980b9;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -119,10 +118,10 @@ button.start-btn {
   background-color: #707070;
 }
 
-.topnav a:hover {
+/* .topnav a:hover {
   background-color: #b1bce0;
   color: #666;
-}
+} */
 
 .navbar-logo {
   display: flex;
@@ -139,4 +138,14 @@ button.start-btn {
   font-weight: bold;
   color: white;
   margin-right: 10px;
+}
+.footer_link:hover {
+  text-decoration: none;
+  padding: 5px;
+  background-color: #b1bce0;
+  color: #666;
+}
+.footer_link_hover:hover {
+  color: rgb(246, 247, 249);
+  background-color: rgb(51, 58, 69);
 }

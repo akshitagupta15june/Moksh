@@ -13,7 +13,7 @@ label {
   margin-left: 5px;
 }
 
-button {
+.quizBtn {
   background-color: #1e90ff;
   color: white;
   padding: 10px 20px;
@@ -24,7 +24,7 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
+.quizBtn:hover {
   background-color: #005bff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);

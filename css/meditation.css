@@ -1,23 +1,23 @@
 body {
-  background-image: url('Images/ThankfulEnchantingDairycow-size_restricted.gif');
+  background-image: url("../Images/ThankfulEnchantingDairycow-size_restricted.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-h1{
+h1 {
   color: white;
 }
-img{
-width: 150px;
-height: 150px;
-border-radius: 10px;
-margin: 0px 10px 20px 20px; 
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 0px 10px 20px 20px;
 }
-p{
+p {
   font-size: 20px;
   color: white;
 }
-.icons{
+.icons {
   align-self: center;
   background-color: transparent;
   border: none;
@@ -25,7 +25,7 @@ p{
   margin-left: 5px;
   cursor: pointer;
 }
-#music {
+.music {
   font-size: 24px;
   padding: 10px 5px;
   background-color: #3498db;
@@ -60,50 +60,47 @@ p{
 
 .topnav {
   overflow: hidden;
-  background-color: #2980B9;
+  /* background-color: #2980B9; */
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   height: 5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 footer {
-  background-color: #2980B9;
+  background-color: #2980b9;
   color: #fff;
   padding: 20px 0;
   font-size: 14px;
 }
 
-footer .logo-title{
-  display:flex;
+footer .logo-title {
+  display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
 footer .quick-links ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-size: 18px;
-  margin-top:15px;
-
-  
+  margin-top: 15px;
 }
 footer ul li {
-  margin-top:5px;
+  margin-top: 5px;
 }
 footer ul li a {
   color: #fff;
   text-decoration: none;
 }
-footer .quick-links ul li a:hover{
+footer .quick-links ul li a:hover {
   text-decoration: none;
-  padding:5px;
+  padding: 5px;
   background-color: #b1bce0;
   color: #666;
 }
-.active{
-  margin: 10px 0px 5px 10px
+.active {
+  margin: 10px 0px 5px 10px;
 }

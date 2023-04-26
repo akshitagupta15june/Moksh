@@ -1,14 +1,14 @@
 body {
-  background-color: #2980B9;
+  background-color: #2980b9;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-p{
+p {
   color: rgb(0, 0, 0);
 }
 
-ol{
+ol {
   color: rgb(0, 0, 0);
 }
 
@@ -17,19 +17,21 @@ ol{
   justify-content: center;
   align-items: center;
 }
-
+.aboutMoksh {
+  background-color: #fff;
+}
 .timer {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  background-color: white;
-  height:3rem;
+  background-color: #fff;
+  height: 3rem;
 }
 
-.time-left { 
+.time-left {
   display: flex;
   align-items: center;
   font-size: 22px;
@@ -37,18 +39,18 @@ ol{
   margin-bottom: 25px;
 }
 
-.inline-text{
+.inline-text {
   text-align: center;
   margin: 0 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.inline-image{
+.inline-image {
   display: inline-block;
   margin: 0 10px;
 }
 
-.pomodoro-text{
+.pomodoro-text {
   margin-top: 5rem;
   margin-left: 2rem;
 }
@@ -57,7 +59,7 @@ button {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color:#2980B9;;
+  background-color: #2980b9;
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
@@ -66,19 +68,19 @@ button {
   cursor: pointer;
 }
 
-.start{
+.start {
   border-radius: 10px;
 }
 
-.reset{
-  border-radius:10px;
+.reset {
+  border-radius: 10px;
 }
 
-p a button{
+p a button {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color:#2980B9;
+  background-color: #2980b9;
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
@@ -87,25 +89,22 @@ p a button{
   cursor: pointer;
 }
 
-div p a{
+div p a {
   font-size: 20px;
   font-weight: bold;
   color: white;
   color: rgb(81, 31, 31);
   border: none;
   border-radius: 5px;
-  margin:5px 8px;
+  margin: 5px 8px;
   margin-bottom: 3rem;
   cursor: pointer;
-  height:2rem;
-  
+  height: 2rem;
 }
 
-
-.list-paragraph{
-  font-family: 'Montserrat', sans-serif;
+.list-paragraph {
+  font-family: "Montserrat", sans-serif;
 }
-
 
 button:hover {
   background-color: #2a45f8;
@@ -114,7 +113,3 @@ button:hover {
 button:active {
   background-color: #b71c1c;
 }
-
-
-
-

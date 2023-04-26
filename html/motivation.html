@@ -3,32 +3,49 @@
 
 <head>
   <title>Random Gita Shlok Generator</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="motivation.css" rel="stylesheet" type="text/css" />
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/motivation.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
-   <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg">
+   <link rel="icon" type="image/x-icon" href="../Images/moksh.jpeg">
+   <link href="../theme/LightDarkMode.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="topnav">
-    <div class="navbar-logo"> 
-       
-      <img src="Images/moksh.png" alt="Moksh Logo">
-      <a href="index.html"><span>Moksh</span></a>
-    </div>
+  <body>
+    <div class="topnav">
+      <div class="navbar-logo">
+        <img src="../Images/moksh.png" alt="Moksh Logo" />
+        <a class="nav_link" href="index.html">Moksh</a>
+      </div>
+      <a class="nav_link" href="index.html">Home</a>
+      <a class="nav_link" href="meditation.html">Meditation</a>
+      <a class="nav_link" href="event.html">Iskcon Events</a>
+      <a class="nav_link" href="story.html">Divine activities</a>
+      <a class="nav_link" href="reward.html">Spriritual Break</a>
+      <a class="nav_link" href="motivation.html">Shloks</a>
+      <a class="nav_link" href="rejuvenate.html">Rejuvenate</a>
 
-    <a class="active" href="index.html">Home</a>
-   
-    
-    <a href="meditation.html">Augmented Reality Meditation</a>
-    <a href="event.html">Iskcon Events</a>
-    <a href="story.html">Divine activities for all Generation</a>
-    <a href="reward.html">Pomodoro spriritual Break</a>
-    <a href="motivation.html">Read a Shlok</a>
-    <a href="rejuvenate.html">Rejuvenate</a>
-  </div>
+      <!-- Light and Dark Toggle Switch -->
+      <div class="toggleWrapper">
+        <input type="checkbox" class="dn" id="dn" />
+        <label for="dn" class="toggle">
+          <span class="toggle__handler">
+            <span class="crater crater--1"></span>
+            <span class="crater crater--2"></span>
+            <span class="crater crater--3"></span>
+          </span>
+          <span class="star star--1"></span>
+          <span class="star star--2"></span>
+          <span class="star star--3"></span>
+          <span class="star star--4"></span>
+          <span class="star star--5"></span>
+          <span class="star star--6"></span>
+        </label>
+      </div>
+      <!--  -->
+    </div>
 
 
 
@@ -58,14 +75,11 @@
 
     <footer style="padding:5px 10px;">
       <div class="logo-title">
-        <img class='logo' src="Images/moksh.png" alt="Moksh Logo" style="height: 50px; margin-right: 10px; filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg) brightness(97%) contrast(99%);"/>
+        <img class='logo' src="../Images/moksh.png" alt="Moksh Logo" style="height: 50px; margin-right: 10px; filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg) brightness(97%) contrast(99%);"/>
         <h3 class="title" style="font-size: 28px; text-align: end; color: #fff; margin-top:12px">Moksh</h3>
       </div>
       <div class="tagline">
         <p style="font-size: 18px; text-align: center; color: #fff;">A Spiritual Productivity Tool for Mental Wellness</p>
-      </div>
-      <div class="intro">
-        <p style="text-align:center;">Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. </p>
       </div>
       <div class="quick-links">
         <h4 style="margin-left:10px">Quick Links</h4>
@@ -82,11 +96,13 @@
       </div>
       <hr color="#000" size="10">
       <div class="copyright" style="display:flex; justify-content:space-around">
-        <p style=" font-size: 14px; text-align: center; margin-top: 10px;">Made with ❤️ by Akshita during XPRESSION'23</p>
-        <p style=" font-size: 14px; text-align: center; margin-top: 10px;">&copy; 2023 Moksh. All rights reserved.</p>
+        <p style=" font-size: 14px; text-align: center; margin-top: 10px;"class="footer_para">Made with ❤️ by Akshita during XPRESSION'23</p>
+        <p style=" font-size: 14px; text-align: center; margin-top: 10px;" class="footer_para">&copy; 2023 Moksh. All rights reserved.</p>
       </div>
     </footer>
-    <script src="motivation.js"></script>
+    <script src="../js/motivation.js"></script>
+    <script src="../theme/motivational_theme.js"></script>
+    
   </body>
 
 </html>
