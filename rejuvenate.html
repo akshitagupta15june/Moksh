@@ -13,28 +13,57 @@
   <link rel="stylesheet" href="/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
 
 
-  <div class="topnav">
-    <div class="navbar-logo"> 
-       
-      <img src="Images/moksh.png" alt="Moksh Logo">
+  <script src="script.js"></script>
+  <!-- Navbar Start-->
+
+  <div class="nav">
+    <!-- Nav Logo & Name -->
+    <div class="navbar-logo">
+      <img src="./Images/moksh.png" alt="Moksh Logo" />
       <a href="index.html"><span>Moksh</span></a>
     </div>
 
-    <a class="active" href="index.html">Home</a>
-   
-    <a href="meditation.html">Augmented Reality Meditation</a>
-    <a href="event.html">Iskcon Events</a>
-    <a href="story.html">Divine activities for all Generation</a>
-    <a href="reward.html">Pomodoro spriritual Break</a>
-    <a href="motivation.html">Read a Shlok</a>
-    <a href="rejuvenate.html">Rejuvenate</a>
-
+    <!-- Nav menu -->
+    <ul class="nav-menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li class="about"><a href="#about">About</a></li>
+      <li class="dropdown">
+        <a href="#"
+          >Features
+          <i class="fas fa-caret-down"></i>
+        </a>
+        <!-- Dropdown -->
+        <ul>
+          <li><a href="meditation.html">Augmented Reality Meditation</a></li>
+          <li><a href="event.html">Iskcon Events</a></li>
+          <li>
+            <a href="story.html">Divine Activities for all Generation</a>
+          </li>
+          <li><a href="reward.html">Pomodoro Spritual Break</a></li>
+          <li><a href="motivation.html">Read a Shlok</a></li>
+          <li><a href="rejuvenate.html">Rejuvenate</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Google Translate -->
+    <div id="google_translate_element">
+      <script
+        type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      ></script>
+    </div>
   </div>
+  <!-- Navbar Ends -->
 
 
 
@@ -171,9 +200,9 @@
       <p style="font-size: 18px; text-align: center; color: #fff;">A Spiritual Productivity Tool for Mental Wellness</p>
     </div>
     <div class="intro">
-      <p style="text-align:center;">Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. </p>
+      <p style="text-align:center;color: #fff;">Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. </p>
     </div>
-    <div class="quick-links">
+    <!-- <div class="quick-links">
       <h4 style="margin-left:10px">Quick Links</h4>
       <ul>
       <li><a class="active" href="index.html">Home</a></li>
@@ -186,7 +215,7 @@
       <li><a href="rejuvenate.html">Rejuvenate</a></li>
       </ul>
     </div>
-    <hr color="#000" size="10">
+    <hr color="#000" size="10"> -->
     <div class="copyright" style="display:flex; justify-content:space-around">
       <p style=" font-size: 14px; text-align: center; margin-top: 10px;">Made with ❤️ by Akshita during XPRESSION'23</p>
       <p style=" font-size: 14px; text-align: center; margin-top: 10px;">&copy; 2023 Moksh. All rights reserved.</p>
