@@ -8,10 +8,6 @@ html {
   height: 100%;
   width: 100%;
 }
-<<<<<<< HEAD:css/style.css
-=======
-
->>>>>>> f93028ab44f97117e06097815d9618ee3600d8f1:style.css
 p {
   color: rgb(33, 33, 33);
   font-size: 20px;
@@ -20,61 +16,16 @@ body {
   background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD:css/style.css
-
-=======
->>>>>>> f93028ab44f97117e06097815d9618ee3600d8f1:style.css
   background-color: #2980b9;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
-<<<<<<< HEAD:css/style.css
 a {
   text-decoration: none;
 }
 .aboutMoksh {
   background-color: #fff;
-=======
-/* Navbar Start */
-.nav {
-  height: 70px;
-  background-color: #2980b9;
-  box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 20px;
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  font-family: sans-serif;
-  user-select: none;
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 1px;
-  padding-left: 18px;
-}
-
-.navbar-logo img {
-  width: 60px;
-  background-color: antiquewhite;
-  border-radius: 10%;
-}
-
-.navbar-logo span {
-  font-weight: bold;
-  color: white;
-  margin-left: 10px;
-}
-.navbar-logo a:hover {
-  text-decoration: none;
->>>>>>> f93028ab44f97117e06097815d9618ee3600d8f1:style.css
 }
 .nav ul li {
   display: inline-block;
@@ -175,14 +126,8 @@ a {
   font-size: 20px;
   line-height: 1.5;
   color: #2980b9;
-<<<<<<< HEAD:css/style.css
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-=======
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
->>>>>>> f93028ab44f97117e06097815d9618ee3600d8f1:style.css
 .content img {
   background-color: antiquewhite;
   margin-right: 20px;
@@ -211,7 +156,6 @@ a {
   color: #ffffff;
 }
 
-<<<<<<< HEAD:css/style.css
 /* Add a black background color to the top navigation */
 /* Navbar */
 .navbar-logo {
@@ -283,8 +227,6 @@ a {
   text-decoration: none;
 }
 
-=======
->>>>>>> f93028ab44f97117e06097815d9618ee3600d8f1:style.css
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -294,11 +236,7 @@ a {
 
 .card {
   background-color: #2980b9;
-<<<<<<< HEAD:css/style.css
   background-image: url("https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg");
-=======
-  background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
->>>>>>> f93028ab44f97117e06097815d9618ee3600d8f1:style.css
   background-size: cover;
   color: #2980b9;
   width: 400px;
@@ -343,7 +281,15 @@ a {
   color: #2980b9;
   border: none;
 
-.card button:hover {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
+.cardLink:hover {
+  text-decoration: none;
   background-color: #2980b9;
   color: rgb(43, 2, 2);
 }
@@ -417,11 +363,36 @@ footer ul li a {
   color: #fff;
   text-decoration: none;
 }
-footer .quick-links ul li a:hover {
-  text-decoration: none;
-  padding: 5px;
-  background-color: #b1bce0;
-  color: #666;
+
+.taglinePara {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    position: relative;
+  }
+  .topnav a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive {
+    display: block;
+    text-align: center;
+  }
+  .topnav.responsive a {
+    display: inline-block;
+    float: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -432,6 +403,11 @@ footer .quick-links ul li a:hover {
   }
 }
 
+#google_translate_element {
+  position: absolute;
+  left: 5px;
+  z-index: 1;
+}
 #header {
   margin-top: 10px;
 }

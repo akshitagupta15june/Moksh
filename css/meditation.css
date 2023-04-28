@@ -55,15 +55,7 @@ body {
 .nav ul li {
   display: inline-block;
 }
-.nav-menu {
-  margin-bottom: 0;
-}
-.about {
-  margin-left: 80px;
-  margin-right: 80px;
-}
-
-.nav ul li a {
+h1 {
   color: white;
   display: block;
   padding: 0 15px;
@@ -74,65 +66,7 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
 }
-
-.nav ul li a:hover,
-.nav ul li a.active {
-  color: black;
-  background-color: #8ad0ff;
-  list-style: none;
-  text-decoration: none;
-}
-
-.dropdown:hover > a {
-  color: black;
-  background-color: #8ad0ff;
-}
-
-.nav ul ul {
-  position: absolute;
-  top: 85px;
-  border-top: 3.5px solid #8ad0ff;
-  opacity: 0;
-  visibility: hidden;
-  padding-left: 0;
-}
-
-.nav ul li:hover > ul {
-  top: 70px;
-  opacity: 1;
-  visibility: visible;
-  transition: 0.3s linear;
-  list-style: none;
-}
-
-.nav ul ul li {
-  width: 250px;
-  display: list-item;
-  position: relative;
-  border: 1px solid #8ad0ff;
-  border-top: none;
-}
-
-.nav ul ul li a {
-  line-height: 25px;
-  padding: 10px 15px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
-}
-
-/* Google Translate */
-#google_translate_element select {
-  background-color: #f6edfd;
-  color: black;
-  border: none;
-  border-radius: 3px;
-  padding: 6px 8px;
-}
-/* Navbar Ends */
-
-h1 {
-  color: white;
-}
-.qr-codes img {
+img {
   width: 150px;
   height: 150px;
   border-radius: 10px;
@@ -162,6 +96,35 @@ p {
 #player {
   display: flex;
   justify-content: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  /* margin-top: 1%; */
+  font-size: 1.5rem;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+  margin-top: 15%;
+}
+
+.navbar-logo span {
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  /* background-color: #2980B9; */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 footer {
@@ -198,6 +161,6 @@ footer .quick-links ul li a:hover {
   background-color: #b1bce0;
   color: #666;
 }
-.link {
+.active {
   margin: 10px 0px 5px 10px;
 }

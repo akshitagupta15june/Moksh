@@ -95,3 +95,58 @@ button.start-btn {
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
+/* Add a black background color to the top navigation */
+/* Add a black background color to the top navigation */
+/* Navbar */
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2980b9;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a.active {
+  background-color: #707070;
+}
+
+/* .topnav a:hover {
+  background-color: #b1bce0;
+  color: #666;
+} */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.navbar-logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navbar-logo span {
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}
+.footer_link:hover {
+  text-decoration: none;
+  padding: 5px;
+  background-color: #b1bce0;
+  color: #666;
+}
+.footer_link_hover:hover {
+  color: rgb(246, 247, 249);
+  background-color: rgb(51, 58, 69);
+}
