@@ -1,11 +1,18 @@
-html, body {
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
   overflow-x: hidden;
-  overflow-y: hidden; 
+  overflow-y: hidden;
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #2980B9;
-  
+  background-color: #2980b9;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -13,19 +20,19 @@ html, body {
 }
 
 #display {
-	color: rgb(0, 0, 0);
-	font-size: 2.9em;
-	top: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 2.9em;
+  top: 10px;
   border-bottom: thin solid;
   padding-bottom: 20px;
-  opacity: 0.80;
-  filter: alpha(opacity=80); /* For IE8 and earlier */ 
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
 #date {
   color: rgb(0, 0, 0);
   font-size: 1.3em;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   letter-spacing: 0.2em;
   opacity: 0.6;
@@ -72,12 +79,14 @@ span {
 
 #content {
   height: 45em;
-} p {
+}
+p {
   max-width: 30em;
-  color: #2980B9;
-  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-  letter-spacing:0.1em;
-  text-align:center;
+  color: #2980b9;
+  font-family: 'Adobe Caslon Pro', 'Hoefler Text', Georgia, Garamond, Times,
+    serif;
+  letter-spacing: 0.1em;
+  text-align: center;
   margin: 40px auto;
   text-transform: lowercase;
   line-height: 145%;
@@ -114,7 +123,7 @@ p :hover {
 
 #b-nav ul li a {
   text-decoration: none;
-  padding: .2em 1em;
+  padding: 0.2em 1em;
   background-color: black;
   opacity: 0.4;
   filter: alpha(opacity=40); /* For IE8 and earlier */
@@ -155,14 +164,10 @@ p :hover {
   color: rgb(0, 0, 0);
 }
 
-@media screen 
- and (max-device-width: 800px) 
-  and (max-device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-    p {
-      font-size: 1em;
-    }
+@media screen and (max-device-width: 800px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  p {
+    font-size: 1em;
+  }
 }
 
 .fa-twitter {
