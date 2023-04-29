@@ -27,6 +27,7 @@ function startTimer() {
     timerDisplay(defaultTime);
     if (defaultTime === 0) {
       clearInterval(countdown);
+      playSpiritualSound();
       if (cycleCount < 3) {
         cycleCount++;
         startBreakTimer();
@@ -40,6 +41,13 @@ function startTimer() {
   }, 1000);
 
   startButton.addEventListener('click', pauseTimer);
+}
+
+function playSpiritualSound()
+{
+  console.log('Playing spiritual sound'); 
+  const audio = new Audio("sounds/bell-sound-timer-end.mp3")
+  audio.play()
 }
 
 function pauseTimer() {
@@ -59,7 +67,7 @@ function startBreakTimer() {
     timerDisplay(defaultTime);
     if (defaultTime === 0) {
       clearInterval(countdown);
-      defaultTime = 25 * 60;
+      defaultTime = 1 * 1;
       startTimer();
     }
   }, 1000);
@@ -68,7 +76,7 @@ function startBreakTimer() {
 function resetTimer() {
   console.log('reset clicked!!!!');
   startButton.textContent = 'Start';
-  defaultTime = 25 * 60;
+  defaultTime = 1 * 1;
   cycleCount = 0;
   clearInterval(countdown);
   timerDisplay(defaultTime);
