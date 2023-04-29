@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
 html,
 body {
   overflow-x: hidden;
@@ -26,7 +32,7 @@ body {
 #date {
   color: rgb(0, 0, 0);
   font-size: 1.3em;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   letter-spacing: 0.2em;
   opacity: 0.6;
@@ -77,7 +83,7 @@ span {
 p {
   max-width: 30em;
   color: #2980b9;
-  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times,
+  font-family: 'Adobe Caslon Pro', 'Hoefler Text', Georgia, Garamond, Times,
     serif;
   letter-spacing: 0.1em;
   text-align: center;
@@ -133,6 +139,8 @@ p :hover {
   padding-top: 5px;
   text-decoration: none;
   opacity: 0.6;
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 3, 3);
   border: thin solid rgb(0, 0, 0);
   height: 40px;
   width: 100px;
@@ -166,7 +174,4 @@ p :hover {
   font-size: 40px !important;
   margin-left: 20px;
   color: rgb(0, 255, 255);
-}
-.footer_para {
-  color: #fff;
 }
