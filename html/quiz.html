@@ -6,25 +6,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhagwad Gita Quiz</title>
-    <link rel="stylesheet" href="quiz.css">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg">
+    <link rel="icon" type="image/x-icon" href="../Images/moksh.jpeg">
+    <link href="../theme/LightDarkMode.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
       <!-- Navbar -->
   <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="meditation.html">Augmented Reality Meditation</a>
-    <a href="event.html">Iskcon Events</a>
-    <a href="story.html">Divine activities for all Generation</a>
-    <a href="reward.html">Pomodoro spriritual Break</a>
-    <a href="motivation.html">Read a Shlok</a>
-    <a href="rejuvenate.html">Rejuvenate</a>
-  </div>
+      <div class="navbar-logo">
+        <img src="../Images/moksh.png" alt="Moksh Logo" />
+        <a class="nav_link" href="index.html">Moksh</a>
+      </div>
+      <a class="nav_link" href="index.html">Home</a>
+      <a class="nav_link" href="meditation.html">Meditation</a>
+      <a class="nav_link" href="event.html">Iskcon Events</a>
+      <a class="nav_link" href="story.html">Divine activities</a>
+      <a class="nav_link" href="reward.html">Spriritual Break</a>
+      <a class="nav_link" href="motivation.html">Shloks</a>
+      <a class="nav_link" href="rejuvenate.html">Rejuvenate</a>
+
+      <!-- Light and Dark Toggle Switch -->
+      <div class="toggleWrapper">
+        <input type="checkbox" class="dn" id="dn" />
+        <label for="dn" class="toggle">
+          <span class="toggle__handler">
+            <span class="crater crater--1"></span>
+            <span class="crater crater--2"></span>
+            <span class="crater crater--3"></span>
+          </span>
+          <span class="star star--1"></span>
+          <span class="star star--2"></span>
+          <span class="star star--3"></span>
+          <span class="star star--4"></span>
+          <span class="star star--5"></span>
+          <span class="star star--6"></span>
+        </label>
+      </div>
+      <!--  -->
+    </div>
   
     
-    <div class="start_btn"><button>Start Bhagwad Gita Quiz</button></div>
+    <div class="start_btn"><button class="start_btn_btn">Start Bhagwad Gita Quiz</button></div>
     
     <div class="info_box">
         <div class="info-title"><span>Some Rules of this Quiz</span></div>
@@ -81,9 +105,11 @@
         </div>
     </div>
   
-    <script src="question.js"></script>
+    <script src="../js/question.js"></script>
     
-    <script src="quiz.js"></script>
+    <script src="../js/quiz.js"></script>
+    <script src="../theme/quiz_theme.js"></script>
+    
 </body>
 </html>
 </html>

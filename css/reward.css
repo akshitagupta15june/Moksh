@@ -22,7 +22,9 @@ ol {
   justify-content: center;
   align-items: center;
 }
-
+.aboutMoksh {
+  background-color: #fff;
+}
 .timer {
   display: flex;
   flex-direction: column;
@@ -30,7 +32,7 @@ ol {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  background-color: white;
+  background-color: #fff;
   height: 3rem;
 }
 
@@ -45,7 +47,7 @@ ol {
 .inline-text {
   text-align: center;
   margin: 0 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .inline-image {
@@ -106,7 +108,7 @@ div p a {
 }
 
 .list-paragraph {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 button:hover {
