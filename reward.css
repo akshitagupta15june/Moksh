@@ -21,7 +21,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
 
 .timer {
   display: flex;
@@ -110,7 +110,8 @@ div p a {
 }
 
 button:hover {
-  background-color: #2a45f8;
+  background: #3382F1;
+  color: black;
 }
 
 button:active {
