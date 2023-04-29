@@ -15,10 +15,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../css/event.css" />
-    <link rel="icon" type="image/x-icon" href="../Images/moksh.jpeg" />
-    <link href="../theme/LightDarkMode.css" rel="stylesheet" type="text/css" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="event.css" />
+    <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
     <style>
       .w3-card-4 {
         height: 550px;
@@ -29,38 +34,49 @@
   </head>
 
   <body>
-    <div class="topnav">
-      <div class="navbar-logo">
-        <img src="../Images/moksh.png" alt="Moksh Logo" />
-        <a class="nav_link" href="index.html">Moksh</a>
-      </div>
-      <a class="nav_link" href="index.html">Home</a>
-      <a class="nav_link" href="meditation.html">Meditation</a>
-      <a class="nav_link" href="event.html">Iskcon Events</a>
-      <a class="nav_link" href="story.html">Divine activities</a>
-      <a class="nav_link" href="reward.html">Spriritual Break</a>
-      <a class="nav_link" href="motivation.html">Shloks</a>
-      <a class="nav_link" href="rejuvenate.html">Rejuvenate</a>
+    <script src="script.js"></script>
+    <!-- Navbar Start-->
 
-      <!-- Light and Dark Toggle Switch -->
-      <div class="toggleWrapper">
-        <input type="checkbox" class="dn" id="dn" />
-        <label for="dn" class="toggle">
-          <span class="toggle__handler">
-            <span class="crater crater--1"></span>
-            <span class="crater crater--2"></span>
-            <span class="crater crater--3"></span>
-          </span>
-          <span class="star star--1"></span>
-          <span class="star star--2"></span>
-          <span class="star star--3"></span>
-          <span class="star star--4"></span>
-          <span class="star star--5"></span>
-          <span class="star star--6"></span>
-        </label>
+    <div class="nav">
+      <!-- Nav Logo & Name -->
+      <div class="navbar-logo">
+        <img src="./Images/moksh.png" alt="Moksh Logo" />
+        <a href="index.html"><span>Moksh</span></a>
       </div>
-      <!--  -->
+
+      <!-- Nav menu -->
+      <ul class="nav-menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="about"><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#"
+            >Features
+            <i class="fas fa-caret-down"></i>
+          </a>
+          <!-- Dropdown -->
+          <ul>
+            <li><a href="meditation.html">Augmented Reality Meditation</a></li>
+            <li><a href="event.html">Iskcon Events</a></li>
+            <li>
+              <a href="story.html">Divine Activities for all Generation</a>
+            </li>
+            <li><a href="reward.html">Pomodoro Spritual Break</a></li>
+            <li><a href="motivation.html">Read a Shlok</a></li>
+            <li><a href="rejuvenate.html">Rejuvenate</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Google Translate -->
+      <div id="google_translate_element">
+        <script
+          type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
+      </div>
     </div>
+    <!-- Navbar Ends -->
 
     <!-- The Tour Section -->
     <div id="event">
@@ -89,9 +105,9 @@
 
         <div class="w3-row-padding">
           <div class="w3-col l4 m4 s12">
-            <div class="cardDiv w3-card-4">
+            <div class="w3-card-4">
               <img
-                src="../Images/xpression.jpg"
+                src="Images/xpression.jpg"
                 alt="New Delhi"
                 style="width: 100%"
               />
@@ -113,15 +129,15 @@
           </div>
 
           <div class="w3-col l4 m4 s12">
-            <div class="cardDiv w3-card-4">
-              <img src="../Images/ramn.jpg" alt="Mumbai" style="width: 100%" />
+            <div class="w3-card-4">
+              <img src="Images/ramn.jpg" alt="Mumbai" style="width: 100%" />
               <div class="w3-container w3-center">
                 <h3>Iskcon, Banglore</h3>
                 <p>Sri Rama Navami</p>
                 <p class="w3-opacity">Mar 30, 2023</p>
                 <button
                   class="w3-button w3-black w3-margin-bottom"
-                  onclick="window.location.href='https://www.iskconbangalore.org/sri-rama-navami/';"
+                  onclick="window.location.href='https://www.iskconbangalore.org/sri-rama-navami/'"
                 >
                   Visit
                 </button>
@@ -130,9 +146,9 @@
           </div>
 
           <div class="w3-col l4 m4 s12">
-            <div class="cardDiv w3-card-4">
+            <div class="w3-card-4">
               <img
-                src="../Images/krishnaa.jpg"
+                src="Images/krishnaa.jpg"
                 alt="Chennai"
                 style="width: 100%"
               />
@@ -216,7 +232,7 @@
       <div class="logo-title">
         <img
           class="logo"
-          src="../Images/moksh.png"
+          src="Images/moksh.png"
           alt="Moksh Logo"
           style="
             height: 50px;
@@ -251,14 +267,14 @@
       <div class="quick-links">
         <h4 style="margin-left: 10px">Quick Links</h4>
         <ul>
-          <li><a class="footer_link" href="index.html">Home</ac></li>
-          <li><a class="footer_link"  href="#about">About</a></li>
-          <li><a class="footer_link"  href="meditation.html">Augmented Reality Meditation</a></li>
-          <li><a class="footer_link"  href="event.html">Iskcon Events</a></li>
-          <li><a class="footer_link"  href="story.html">Divine activities for all Generation</a></li>
-          <li><a class="footer_link"  href="reward.html">Pomodoro spriritual Break</a></li>
-          <li><a class="footer_link"  href="motivation.html">Read a Shlok</a></li>
-          <li><a class="footer_link"  href="rejuvenate.html">Rejuvenate</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="meditation.html">Augmented Reality Meditation</a></li>
+          <li><a href="event.html">Iskcon Events</a></li>
+          <li><a href="story.html">Divine activities for all Generation</a></li>
+          <li><a href="reward.html">Pomodoro spriritual Break</a></li>
+          <li><a href="motivation.html">Read a Shlok</a></li>
+          <li><a href="rejuvenate.html">Rejuvenate</a></li>
         </ul>
       </div>
       <hr color="#000" size="10" />
@@ -274,6 +290,5 @@
         </p>
       </div>
     </footer>
-    <script src="../theme/event_theme.js"></script>
   </body>
 </html>

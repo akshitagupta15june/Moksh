@@ -1,33 +1,59 @@
+
 let questions = [
   {
     numb: 1,
     question: "Who is Duryodhana's father?",
     answer: "DHRIHASTARA",
-    options: ["PANDAVA", "DHRIHASTARA", "ARJUN", "KRISHNA"],
+    options: [
+      "PANDAVA",
+      "DHRIHASTARA",
+      "ARJUN",
+      "KRISHNA"
+    ]
   },
   {
     numb: 2,
     question: "Who is not a Pandava?",
     answer: "DURYODHANA",
-    options: ["DRUPADA", "ARJUNA", "YUYUDHANA", "DURYODHANA"],
+    options: [
+      "DRUPADA",
+      "ARJUNA",
+      "YUYUDHANA",
+      "DURYODHANA"
+    ]
   },
   {
     numb: 3,
     question: "How many Pandava brothers are there?",
     answer: "5",
-    options: ["6", "5", "2", "100"],
+    options: [
+      "6",
+      "5",
+      "2",
+      "100"
+    ]
   },
   {
     numb: 4,
     question: "What is the name for the warrior/prince class in Hindu society?",
     answer: "Kshatriya",
-    options: ["Kshatriya", "Arjuna", "Brahman", "Shudra"],
+    options: [
+      "Kshatriya",
+      "Arjuna",
+      "Brahman",
+      "Shudra"
+    ]
   },
   {
     numb: 5,
     question: "Who is afraid to fight at the outset of the Gita?",
     answer: "ARJUNA",
-    options: ["VISHNU", "BHISHMA", "ARJUNA", "KRISHNA"],
+    options: [
+      "VISHNU",
+      "BHISHMA",
+      "ARJUNA",
+      "KRISHNA"
+    ]
   },
   {
     numb: 6,
@@ -37,8 +63,7 @@ let questions = [
       "Song of the Lord",
       "Song of Happiness",
       "God's pasttimes",
-      "Song of the Universe",
-    ],
+      "Song of the Universe"]
   },
   {
     numb: 7,
@@ -48,32 +73,47 @@ let questions = [
       "Dhritarashtra's advisor",
       "Arjuna's cousin",
       "Dhritarashtra's advisor",
-      "Duryodhana's brother",
-    ],
+      "Duryodhana's brother"]
   },
   {
     numb: 8,
     question: "Where did the Lord speak Bhagavad Gita ?",
     answer: "Kurukshetra",
-    options: ["Vrindaavan", "Kurukshetra", "Mathura", "Ayodhya"],
+    options: [
+      "Vrindaavan",
+      "Kurukshetra",
+      "Mathura",
+      "Ayodhya"]
   },
   {
     numb: 9,
     question: "How many chapters are there in Bhagavad Gita ?",
     answer: "18",
-    options: ["18", "16", "20", "22"],
+    options: [
+      "18",
+      "16",
+      "20",
+      "22"]
   },
   {
     numb: 10,
     question: "Who is the speaker of Bhagavad Gita ?",
     answer: "Lord Krishna",
-    options: ["Lord Krishna", "Lord Shiva", "Lord Vishnu", "Lord Brahma"],
+    options: [
+      "Lord Krishna",
+      "Lord Shiva",
+      "Lord Vishnu",
+      "Lord Brahma"]
   },
   {
     numb: 11,
     question: "Which guna is associated with passion ?",
     answer: "Rajas",
-    options: ["Rajas", "Tamas", "Sattva", "None of the above"],
+    options: [
+      "Rajas",
+      "Tamas",
+      "Sattva",
+      "None of the above"]
   },
   {
     numb: 12,
@@ -83,8 +123,7 @@ let questions = [
       "Chasing after money",
       "Meditating in an ashram",
       "Dedication your actions to the Lord",
-      "Sacrificing something",
-    ],
+      "Sacrificing something"]
   },
   {
     numb: 13,
@@ -95,14 +134,17 @@ let questions = [
       "Destruction of family traditions",
       "Fear of sinful reactions",
       "Fear of losing the battle",
-    ],
+    ]
   },
   {
     numb: 14,
-    question:
-      "Arjuna's chariot was bearing the ﬂag marked with the emblem of ?",
+    question: "Arjuna's chariot was bearing the ﬂag marked with the emblem of ?",
     answer: "Hanuman",
-    options: ["Hanuman", "Ganesha", "Krishna", "Sun"],
+    options: [
+      "Hanuman",
+      "Ganesha",
+      "Krishna",
+      "Sun"]
   },
   {
     numb: 15,
@@ -112,7 +154,10 @@ let questions = [
       "Uncontrolled senses",
       "Uncertainty of the future",
       "Forgetfulness of Lord Krishna",
-      "Lack of intelligence",
-    ],
+      "Lack of intelligence"]
   },
+
+
+
+
 ];
