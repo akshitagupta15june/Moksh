@@ -27,6 +27,7 @@ body {
   padding-bottom: 20px;
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
+  text-align: center;
 }
 
 #date {
@@ -37,17 +38,41 @@ body {
   letter-spacing: 0.2em;
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
+  text-align: center;
+}
+footer {
+  background-color: #2980b9;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+  margin: 0;
 }
 
-#footer {
-  width: 100%;
-  height: 40px;
-  position: fixed;
-  bottom: -1px;
-  background-color: rgb(4, 4, 4);
-  text-align: center;
-  opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+footer .logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .quick-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
+  margin-top: 15px;
+}
+footer ul li {
+  margin-top: 5px;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .quick-links ul li a:hover {
+  text-decoration: none;
+  padding: 5px;
+  background-color: #b1bce0;
+  color: #666;
 }
 
 #line {
@@ -80,7 +105,7 @@ span {
 #content {
   height: 45em;
 }
-p {
+#quote {
   max-width: 30em;
   color: #2980b9;
   font-family: 'Adobe Caslon Pro', 'Hoefler Text', Georgia, Garamond, Times,
@@ -93,21 +118,28 @@ p {
   font-size: 2em;
   font-variant: small-caps;
 }
-
+#quote2{
+  color:#fff;
+}
+#quote3{
+  color: #fff;
+}
+#quote4{
+  color: #fff;
+}
 p :hover {
   text-decoration: none;
 }
 
 .container {
   padding-top: 6em;
-  text-align: center;
 }
 
 #b-nav {
   padding-bottom: 5em;
   position: fixed;
   width: 100%;
-  bottom: 2em;
+  bottom: 8em;
 }
 
 #b-nav ul {
@@ -174,4 +206,7 @@ p :hover {
   font-size: 40px !important;
   margin-left: 20px;
   color: rgb(0, 255, 255);
+}
+.link {
+  margin: 10px 0px 5px 10px;
 }
