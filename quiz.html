@@ -13,15 +13,45 @@
 </head>
 <body>
       <!-- Navbar -->
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="meditation.html">Augmented Reality Meditation</a>
-    <a href="event.html">Iskcon Events</a>
-    <a href="story.html">Divine activities for all Generation</a>
-    <a href="reward.html">Pomodoro spriritual Break</a>
-    <a href="motivation.html">Read a Shlok</a>
-    <a href="rejuvenate.html">Rejuvenate</a>
-  </div>
+      <div class="nav">
+        <!-- Nav Logo & Name -->
+        <div class="navbar-logo">
+          <img src="./Images/moksh.png" alt="Moksh Logo" />
+          <a href="index.html"><span>Moksh</span></a>
+        </div>
+  
+        <!-- Nav menu -->
+        <ul class="nav-menu">
+          <li>
+            <a class="active" href="index.html">Home</a>
+          </li>
+          <li class="about"><a href="#about">About</a></li>
+          <li class="dropdown">
+            <a href="#"
+              >Features
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <!-- Dropdown -->
+            <ul style="list-style: none;" >
+              <li><a href="meditation.html">Augmented Reality Meditation</a></li>
+              <li><a href="event.html">Iskcon Events</a></li>
+              <li>
+                <a href="story.html">Divine Activities for all Generation</a>
+              </li>
+              <li><a href="reward.html">Pomodoro Spritual Break</a></li>
+              <li><a href="motivation.html">Read a Shlok</a></li>
+              <li><a href="rejuvenate.html">Rejuvenate</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Google Translate -->
+        <div id="google_translate_element">
+          <script
+            type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          ></script>
+        </div>
+      </div>
   
     
     <div class="start_btn"><button>Start Bhagwad Gita Quiz</button></div>
@@ -37,7 +67,7 @@
         </div>
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
+            <button class="restart">Continue</button> 
         </div>
     </div>
     <!-- Quiz Box -->
