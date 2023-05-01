@@ -3,5 +3,5 @@
 
 ## Awesome Contributors
 
-[Karthik Nadar](https://github.com/karthiknadar1204)
-[Nikhil Mishra](https://github.com/mnik7044)
+- [Karthik Nadar](https://github.com/karthiknadar1204)
+- [Nikhil Mishra](https://github.com/mnik7044)
