@@ -86,14 +86,14 @@ body {
 .nav ul li a:hover,
 .nav ul li a.active {
   color: black;
-  background-color: #8ad0ff;
-  list-style: none;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 
 .dropdown:hover > a {
   color: black;
-  background-color: #8ad0ff;
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 
 .nav ul ul {
