@@ -148,6 +148,7 @@ a.dropdown-item{
   border: none;
   border-radius: 3px;
   padding: 6px 8px;
+  cursor: pointer;
 }
 /* Navbar Ends */
 
