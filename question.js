@@ -156,8 +156,54 @@ let questions = [
       "Forgetfulness of Lord Krishna",
       "Lack of intelligence"]
   },
-
-
-
-
+  {
+    numb: 16,
+    question: "Who was the Father of Pandavas ?",
+    answer: "King Pandu",
+    options: [
+      "King Pandu",
+      "Dhritarashtra",
+      "King Gandhar",
+      "Jarasandha"]
+  },
+  {
+    numb: 17,
+    question: "Karna was the blessed son of which celestial body ?",
+    answer: "The Sun",
+    options: [
+      "The Moon",
+      "Jupiter",
+      "The Sun",
+      "Mars"]
+  },
+  {
+    numb: 18,
+    question: "Who was the writer of the Mahabharata ?",
+    answer: "Ved Vyas",
+    options: [
+      "Ved Vyas",
+      "Valmiki",
+      "Durvas Rishi",
+      "Krupacharya"]
+  },
+  {
+    numb: 19,
+    question: "What was the true name of Bhishma ?",
+    answer: "Devabrata",
+    options: [
+      "Karna",
+      "Arjuna",
+      "Devabrata",
+      "Pallove"]
+  },
+  {
+    numb: 20,
+    question: "Who won the war of Kurukshetra ?",
+    answer: "The Pandavas",
+    options: [
+      "Gandharva Kingdom",
+      "The Kauravas",
+      "The Pandavas",
+      " Magadha Kingdom"]
+  },
 ];
