@@ -7,4 +7,4 @@
 - [Nikhil Mishra](https://github.com/mnik7044)
 - [Harmeet Singh](https://github.com/harmeetsingh11)
 - [Hritik Singhal](https://github.com/hritik1503)
-- [Akshit Agrawal](https://github.com/justAkshitAgrawal/DSA)
+- [Akshit Agrawal](https://github.com/justAkshitAgrawal)
