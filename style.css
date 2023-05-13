@@ -213,7 +213,8 @@ a.dropdown-item{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .card {
@@ -222,11 +223,10 @@ a.dropdown-item{
   background-size: cover;
   color: #2980b9;
   width: 400px;
-  height: 550px;
+  height: 500px;
   margin: 20px;
   text-align: center;
-  border: 0px solid transparent;
-  border-radius: 30px;
+  border: 1px solid transparent;
   box-shadow: 0px 0px 10px #555;
 }
 
@@ -248,20 +248,20 @@ a.dropdown-item{
 }
 
 .card button {
-  background-color: #3ce78f;
+  background-color: #b5ddc9;
   color: #2980b9;
   border: none;
-
   padding: 10px 20px;
   margin-bottom: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
+  color: black;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .card button:hover {
   background-color: #2980b9;
-  color: rgb(43, 2, 2);
+  color: white;
 }
 
 .btn-shift {
