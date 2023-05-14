@@ -104,7 +104,7 @@ body {
 }
 
 .top .img img{
-  width:30rem;
+  width: 23vw;
   border-radius: 10px;
 }
 
@@ -121,6 +121,7 @@ body {
 
 .bottom .img img{
   gap: 5px;
+  width: 32vw;
   border-radius: 10px;
 }
 
