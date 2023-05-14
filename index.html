@@ -18,25 +18,30 @@
   <body>
     <script src="script.js"></script>
 
+    <div class="nav">
+      <!-- Nav Logo & Name -->
+      <div class="navbar-logo">
+        <img src="./Images/moksh.png" alt="Moksh Logo" />
+        <a href="index.html"><span>Moksh</span></a>
+      </div>
 
-    <!-- bootstrp nav start-->
-    <nav class="navbar nav navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class=" navbar-logo" href="index.html">
-          <img src="./Images/moksh.png" alt="Moksh Logo" />
-          <span>Moksh</span>
-      </a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav text-center mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+      <!-- Nav menu -->
+      <ul class="nav-menu">
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li class="about"><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#"
+            >Features
+            <i class="fas fa-caret-down"></i>
+          </a> 
+          <!-- Dropdown -->
+          <ul>
+            <li><a href="meditation.html">Augmented Reality Meditation</a></li>
+            <li><a href="event.html">Iskcon Events</a></li>
+            <li>
+              <a href="story.html">Divine Activities for all Generation</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
