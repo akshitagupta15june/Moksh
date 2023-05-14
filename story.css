@@ -4,11 +4,12 @@
 }
 
 body {
-  background-color: #2980b9;
+  background-color: #b5d3e7;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 /* Styling for the quiz form */
 .answer-options {
   margin: 10px 0;
@@ -89,44 +90,59 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.top-header{
+.top-header {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 50px;
 }
 
-.top{
+.top {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 1050px;
-  margin: 0 auto;
-  gap:15px;
+  margin: auto;
+  padding: 2rem;
+  max-width: 100%;
 }
 
-.top .img img{
-  width:30rem;
+.images {
+  border-radius: 12px;
+  margin-right: 2rem;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-top: 5px;
+  gap: 50px
+}
+
+.top ::-webkit-scrollbar {
+  display: none;
+}
+
+.top img {
+  width: 25rem;
   border-radius: 10px;
 }
 
-.bottom-header{
+.bottom-header {
   text-align: center;
   margin-top: 50px;
+  font-size: 50px;
 }
 
-.bottom{
+.bottom {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
 }
 
-.bottom .img img{
+.bottom .img img {
   gap: 5px;
   border-radius: 10px;
 }
 
-.quiz_btn{
+.quiz_btn {
   padding: 12px 22px;
-  background: #3382F1;
+  background: #a3caff;
   font-size: 1.2rem;
   color: #212529;
   border: none;
@@ -135,7 +151,7 @@ body {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.quiz_btn:hover{
+.quiz_btn:hover {
   background: #3facf4;
   color: black;
   cursor: pointer;
