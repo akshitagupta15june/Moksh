@@ -4,19 +4,16 @@
   padding: 0;
   margin: 0;
 }
+
 html,
 body {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: auto;
   height: 100%;
-  width: 100%;
-  position: absolute;
   background-color: #2980b9;
+}
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  z-index: -2;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 #display {
@@ -24,9 +21,10 @@ body {
   font-size: 2.9em;
   top: 10px;
   border-bottom: thin solid;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   opacity: 0.8;
-  filter: alpha(opacity=80); /* For IE8 and earlier */
+  filter: alpha(opacity=80);
+  /* For IE8 and earlier */
   text-align: center;
 }
 
@@ -37,18 +35,31 @@ body {
   font-weight: normal;
   letter-spacing: 0.2em;
   opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
   text-align: center;
 }
+
+
 footer {
   background-color: #2980b9;
   color: #fff;
-  padding: 20px 0;
+  /* padding: 20px; */
   font-size: 14px;
-  margin-bottom: 0;
-  position: fixed;
-  bottom:0;
+  position: static;
   width: 100%;
+  /* margin-top: 20px; */
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.quote-btn {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
 }
 
 footer .logo-title {
@@ -60,17 +71,19 @@ footer .logo-title {
 footer .quick-links ul {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   font-size: 18px;
   margin-top: 15px;
 }
+
 footer ul li {
   margin-top: 5px;
 }
+
 footer ul li a {
   color: #fff;
   text-decoration: none;
 }
+
 footer .quick-links ul li a:hover {
   text-decoration: none;
   padding: 5px;
@@ -80,19 +93,20 @@ footer .quick-links ul li a:hover {
 
 #line {
   width: 100%;
-  bottom: 4em;
-  position: fixed;
+  /* bottom: 4em; */
   border-bottom: solid rgb(0, 0, 0);
   padding: 15px;
   opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
 }
 
 .navbar {
   position: fixed;
   width: 100%;
   opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
 }
 
 .wrapper {
@@ -102,14 +116,17 @@ footer .quick-links ul li a:hover {
 span {
   border-radius: 100px;
   opacity: 0.75;
-  filter: alpha(opacity=75); /* For IE8 and earlier */
+  filter: alpha(opacity=75);
+  /* For IE8 and earlier */
 }
 
 #content {
-  height: 45em;
+  margin-bottom: 2em; /* Adjust the margin value as needed */
+
 }
+
 #quote {
-  max-width: 30em;
+  /* max-width: 30em; */
   color: #2980b9;
   font-family: 'Adobe Caslon Pro', 'Hoefler Text', Georgia, Garamond, Times,
     serif;
@@ -121,49 +138,53 @@ span {
   font-size: 2em;
   font-variant: small-caps;
 }
-#quote3{
+
+#quote3 {
   color: #fff;
   font-size: 14px;
-  text-align:center;
-  margin-top: 10px
-}
-
-#quote4{
-  color: #fff;
-  font-size: 14px; 
   text-align: center;
   margin-top: 10px
 }
+
+#quote4 {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px
+}
+
 p :hover {
   text-decoration: none;
 }
 
 .container {
-  padding-top: 6em;
+  padding-top: 2em; /* Adjust the padding value as needed */
+  padding-bottom: 2em; /* Adjust the padding value as needed */
+
 }
 
-.logo{
+.logo {
   height: 60px;
   width: 60px;
   margin-right: 10px;
-  filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg)
-    brightness(97%) contrast(99%);
+  filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg) brightness(97%) contrast(99%);
 }
 
-.title{
+.title {
   font-size: 28px;
   text-align: end;
   color: #fff;
   margin-top: 12px;
 }
 
-.tagline>p{
+.tagline>p {
   font-size: 18px;
   text-align:
-  center; color: #fff
+    center;
+  color: #fff
 }
 
-#quote2{
+#quote2 {
   text-align: center
 }
 
@@ -190,7 +211,8 @@ p :hover {
   padding: 0.2em 1em;
   background-color: black;
   opacity: 0.4;
-  filter: alpha(opacity=40); /* For IE8 and earlier */
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
 }
 
 .hold {
@@ -240,6 +262,7 @@ p :hover {
   margin-left: 20px;
   color: rgb(0, 255, 255);
 }
+
 .link {
   margin: 10px 0px 5px 10px;
 }
