@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -21,10 +23,8 @@ body::-webkit-scrollbar {
   font-size: 2.9em;
   top: 10px;
   border-bottom: thin solid;
-  /* padding-bottom: 20px; */
   opacity: 0.8;
   filter: alpha(opacity=80);
-  /* For IE8 and earlier */
   text-align: center;
 }
 
@@ -36,7 +36,6 @@ body::-webkit-scrollbar {
   letter-spacing: 0.2em;
   opacity: 0.6;
   filter: alpha(opacity=60);
-  /* For IE8 and earlier */
   text-align: center;
 }
 
@@ -44,15 +43,15 @@ body::-webkit-scrollbar {
 footer {
   background-color: #2980b9;
   color: #fff;
-  /* padding: 20px; */
   font-size: 14px;
-  position: static;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  /* margin-top: 20px; */
   padding: 0;
   margin: 0;
-
 }
+
 
 
 .quote-btn {
@@ -74,10 +73,10 @@ footer .quick-links ul {
   font-size: 18px;
   margin-top: 15px;
 }
-
+/* 
 footer ul li {
   margin-top: 5px;
-}
+} */
 
 footer ul li a {
   color: #fff;
@@ -93,12 +92,10 @@ footer .quick-links ul li a:hover {
 
 #line {
   width: 100%;
-  /* bottom: 4em; */
   border-bottom: solid rgb(0, 0, 0);
   padding: 15px;
   opacity: 0.5;
   filter: alpha(opacity=50);
-  /* For IE8 and earlier */
 }
 
 .navbar {
@@ -106,7 +103,6 @@ footer .quick-links ul li a:hover {
   width: 100%;
   opacity: 0.6;
   filter: alpha(opacity=60);
-  /* For IE8 and earlier */
 }
 
 .wrapper {
@@ -117,16 +113,14 @@ span {
   border-radius: 100px;
   opacity: 0.75;
   filter: alpha(opacity=75);
-  /* For IE8 and earlier */
 }
 
 #content {
-  margin-bottom: 2em; /* Adjust the margin value as needed */
+  margin-bottom: 2em;
 
 }
 
 #quote {
-  /* max-width: 30em; */
   color: #2980b9;
   font-family: 'Adobe Caslon Pro', 'Hoefler Text', Georgia, Garamond, Times,
     serif;
@@ -158,8 +152,8 @@ p :hover {
 }
 
 .container {
-  padding-top: 2em; /* Adjust the padding value as needed */
-  padding-bottom: 2em; /* Adjust the padding value as needed */
+  padding-top: 2em; 
+  padding-bottom: 2em; 
 
 }
 
@@ -212,7 +206,7 @@ p :hover {
   background-color: black;
   opacity: 0.4;
   filter: alpha(opacity=40);
-  /* For IE8 and earlier */
+  
 }
 
 .hold {
@@ -265,4 +259,4 @@ p :hover {
 
 .link {
   margin: 10px 0px 5px 10px;
-}
+} 
