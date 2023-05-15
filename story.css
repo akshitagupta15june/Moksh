@@ -118,8 +118,10 @@ body {
   display: none;
 }
 
+
 .top img {
   width: 25rem;
+
   border-radius: 10px;
 }
 
@@ -137,6 +139,7 @@ body {
 
 .bottom .img img {
   gap: 5px;
+  width: 32vw;
   border-radius: 10px;
 }
 
