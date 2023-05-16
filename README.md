@@ -1,5 +1,10 @@
 <div align="center">
  <h1>MOKSH</h1>
+ <a href="https://github.com/akshitagupta15june/Moksh/issues"><img src="https://img.shields.io/github/issues/akshitagupta15june/Moksh"></a>
+<a href="https://github.com/akshitagupta15june/Moksh/pulls"><img src="https://img.shields.io/github/issues-pr/akshitagupta15june/Moksh"></a>
+<a href="https://github.com/akshitagupta15june/Moksh/network/members"><img src="https://img.shields.io/github/forks/akshitagupta15june/Moksh"></a>
+<a href="https://github.com/akshitagupta15june/Moksh/stargazers"><img src="https://img.shields.io/github/stars/akshitagupta15june/Moksh"></a>
+<a href="https://github.com/akshitagupta15june/Moksh/blob/master/LICENSE"><img src="https://img.shields.io/github/license/akshitagupta15june/Moksh"></a>
 <p align="center">
  <img src="Images/rejuvenate.png" width="150"/>
  <img src="Images/moksh.jpeg" width="150"/> 
@@ -8,6 +13,7 @@
 
 ### _Unlock your potential and achieve true balance in life with Moksh!_
  <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion</h3>
+ <h2>Watch this <a href="https://youtu.be/wfdF___qNME">Video</a> to know about Moksh</h2>
 
 </div>
 
