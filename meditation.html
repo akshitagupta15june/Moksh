@@ -1,188 +1,228 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>AR Meditate</title>
 
-    <link href="meditation.css" rel="stylesheet" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
-    <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>AR Meditate</title>
 
-  <body>
-    <script src="./script.js"></script>
-    <!-- Navbar Start-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+  <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="./meditation.css" rel="stylesheet" type="text/css" />
 
-    <div class="nav">
-      <!-- Nav Logo & Name -->
-      <div class="navbar-logo">
-        <img src="./Images/moksh.png" alt="Moksh Logo" />
-        <a href="index.html"><span>Moksh</span></a>
-      </div>
+</head>
 
-      <!-- Nav menu -->
-      <ul class="nav-menu">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li class="dropdown">
-          <a href="#"
-            >Features
-            <i class="fas fa-caret-down"></i>
-          </a>
-          <!-- Dropdown -->
-          <ul>
-            <li><a href="meditation.html">Augmented Reality Meditation</a></li>
-            <li><a href="event.html">Iskcon Events</a></li>
-            <li>
-              <a href="story.html">Divine Activities for all Generation</a>
+<body>
+
+  <div class="container-fluid p-0 m-0">
+
+    <!-- Responsive navbar  -->
+    <nav class="navbar navbar-expand-md fixed-top p-2" style="background-color: #2980b9;"
+         aria-label="Fourth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html">
+          <img src="./Images/moksh.png" alt="Moksh Logo" class="logo" />
+          <span>Moksh</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav mb-2 mb-md-0 fw-medium px-3 w-100">
+            <li class="nav-item ms-auto">
+              <a class="nav-link text-white dropItem" aria-current="page" href="index.html">Home</a>
             </li>
-            <li><a href="reward.html">Pomodoro Spritual Break</a></li>
-            <li><a href="motivation.html">Read a Shlok</a></li>
-            <li><a href="rejuvenate.html">Rejuvenate</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!-- Google Translate -->
-      <div id="google_translate_element">
-        <script
-          type="text/javascript"
-          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        ></script>
-      </div>
-    </div>
-    <!-- Navbar Ends -->
+            
+            <li class="nav-item ms-auto">
+              <a class="nav-link text-white dropItem" aria-current="page" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown ms-sm-auto text-end">
+              <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown"
+                 aria-expanded="false">Features</a>
+              <ul class="dropdown-menu dropdown-menu-start p-0 my-1" style="background-color: #2980b9;">
+                <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border"
+                     href="#">Augmented Reality
+                    Meditation</a>
+                </li>
+                <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border" href="#">Iskon
+                    Events</a></li>
+                <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border" href="#">Divine
+                    Activities for
+                    all
+                    Generation</a></li>
+                <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border"
+                     href="#">Pomodoro Spiritual
+                    Break</a>
+                </li>
+                <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border" href="#">Read a
+                    Shlok</a></li>
+                <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border"
+                     href="#">Rejuvenate</a></li>
+              </ul>
+            </li>
+            <!-- Google Translate -->
+            <li class="nav-item ms-auto">
+              <div id="google_translate_element" class="p-0 m-0">
+                <script type="text/javascript"
+                        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+              </div>
 
-    <div align="center">
-      <h1>Augmented Reality Meditation</h1>
-      <p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content  -->
+    <div class="container-fluid p-0 qr-codes text-white" style="margin-top:140px;">
+      <h1 class="text-center">Augmented Reality Meditation</h1>
+      <p class="fw-semibold px-4 fst-italic qr-tagline text-center">
         You just have to open your google lens and scan the QR code for an
         ultimate Augmented reality experience in front of your eyes.
       </p>
-      <div class="qr-codes">
-        <img src="Images/krishnaradha.jpeg" />
-        <img src="Images/krishnaradha.jpeg" />
-        <img src="Images/krishnaradha.jpeg" />
-      </div>
-      <p><b>Listen to peaceful krishna flute music with AR meditation.</b></p>
 
-      <div id="player">
-        <p id="music">Deep meditation Music</p>
-        <button id="play-pause0" class="icons">
-          <i class="bi bi-play-circle-fill"></i>
-        </button>
+      <!-- QR Codes  -->
+      <div class="container-fluid my-5 grid text-center">
+        <div class="row gy-3">
+          <div class="col text-lg-end">
+            <img src="Images/krishnaradha.jpeg" class="rounded-4 border qr-logo" />
+          </div>
+          <div class="col text-lg-center">
+            <img src="Images/krishnaradha.jpeg" class="rounded-4 border qr-logo " />
+          </div>
+          <div class="col text-lg-start">
+            <img src="Images/krishnaradha.jpeg" class="rounded-4 border qr-logo " />
+          </div>
+        </div>
       </div>
-      <div id="player">
-        <p id="music">Krishna Flute meditation music</p>
-        <button id="play-pause1" class="icons">
-          <i class="bi bi-play-circle-fill"></i>
-        </button>
-      </div>
-      <div id="player">
-        <p id="music">River meditation music</p>
-        <button id="play-pause2" class="icons">
-          <i class="bi bi-play-circle-fill"></i>
-        </button>
-      </div>
-      <div id="player">
-        <p id="music">Piano meditation music</p>
-        <button id="play-pause3" class="icons">
-          <i class="bi bi-play-circle-fill"></i>
-        </button>
-      </div>
-      <div id="player">
-        <p id="music">Himalayas meditation music</p>
-        <button id="play-pause4" class="icons">
-          <i class="bi bi-play-circle-fill"></i>
-        </button>
-      </div>
-      <br />
-      <audio id="river-sound" src="Images/river-music.mp3"></audio>
-      <audio id="flute-sound" src="Images/krishna.mp3"></audio>
-      <audio id="deep-music" src="Images/deep-music.mp3"></audio>
-      <audio id="piano-sound" src="Images/piano-music.mp3"></audio>
-      <audio id="himalayas-sound" src="Images/himalaya-music.mp3"></audio>
 
-      <script src="meditation.js"></script>
+      <!-- Audio Clips  -->
+      <div class="container-fluid clips my-5 px-4 text-center">
+        <h4 class="text-center my-5">Listen to peaceful Krishna flute music with AR meditation.</h4>
 
-      <div class="sketchfab-embed-wrapper">
-        <iframe
-          title="Krishna Artifacts"
-          frameborder="0"
-          allowfullscreen
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-          allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
-          width="1020"
-          height="530"
-          src="https://sketchfab.com/models/506d0a8f43884c458e5a78156151ff09/embed"
-        >
+        <div class="container-fluid grid">
+          <div class="row gy-5">
+
+            <div class="col-12 p-0 col-sm-12 col-lg-5  mx-auto" id="play-pause0">
+              <div id="player"
+                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                <p id="music" class="m-0">Deep meditation Music</p>
+                <button class="icons bg-transparent border-0 fs-2">
+                  <i class="bi bi-play-circle-fill" class=""></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 p-0 col-sm-12 col-lg-5  mx-auto" role="button" id="play-pause1">
+              <div id="player"
+                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                <p id="music" class="m-0">Krishna Flute meditation music</p>
+                <button class="icons bg-transparent border-0 fs-2">
+                  <i class="bi bi-play-circle-fill"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="clips p-0 col-12 col-sm-12 col-lg-5 mx-auto" role="button" id="play-pause2">
+              <div id="player"
+                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                <p id="music" class="m-0">River meditation music</p>
+                <button class="icons bg-transparent border-0 fs-2">
+                  <i class="bi bi-play-circle-fill"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="clips p-0 col-12 col-sm-12 col-lg-5  mx-auto" role="button" id="play-pause3">
+              <div id="player"
+                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                <p id="music" class="m-0">Piano meditation music</p>
+                <button class="icons bg-transparent border-0 fs-2">
+                  <i class="bi bi-play-circle-fill"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="clips p-0 col-12 col-sm-12 col-lg-5 mx-auto" role="button" id="play-pause4">
+              <div id="player"
+                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                <p id="music" class="m-0">Himalayas meditation music</p>
+                <button class="icons bg-transparent border-0 fs-2">
+                  <i class="bi bi-play-circle-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <audio id="river-sound" src="Images/river-music.mp3"></audio>
+          <audio id="flute-sound" src="Images/krishna.mp3"></audio>
+          <audio id="deep-music" src="Images/deep-music.mp3"></audio>
+          <audio id="piano-sound" src="Images/piano-music.mp3"></audio>
+          <audio id="himalayas-sound" src="Images/himalaya-music.mp3"></audio>
+        </div>
+
+      </div>
+
+      <!-- Iframe  -->
+      <div class="container-fluid p-0 m-0 d-flex">
+        <iframe title=" Krishna Artifacts" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="530"
+                style="padding: 0; margin: 0;" src="https://sketchfab.com/models/506d0a8f43884c458e5a78156151ff09/embed">
         </iframe>
       </div>
     </div>
 
-    <footer style="padding: 5px 10px">
-      <div class="logo-title">
-        <img
-          class="logo"
-          src="Images/moksh.png"
-          alt="Moksh Logo"
-          style="
-            height: 60px;
-            width: 60px;
-            margin-right: 10px;
-            filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg)
-              brightness(97%) contrast(99%);
-          "
-        />
+    <!-- Footer  -->
+    <footer class="container-fluid py-3 px-5 m-0 " style="background-color: #2980b9;">
+      <div class="container-fluid d-flex align-items-center justify-content-center">
+        <img class="logo" src="Images/moksh.png" alt="Moksh Logo" style="
+              height: 60px;
+              width: 60px;
+              margin-right: 10px;
+              filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg)
+                brightness(97%) contrast(99%);
+            " />
 
-        <h3
-          class="title"
-          style="
-            font-size: 28px;
-            text-align: end;
-            color: #fff;
-            margin-top: 12px;
-          "
-        >
+        <h1 class="title text-white" class="fs-1">
           Moksh
-        </h3>
+        </h1>
       </div>
-      <div class="tagline">
-        <p style="font-size: 18px; text-align: center; color: #fff">
+      <div class="tagline my-3 text-white">
+        <p class="fw-semibold text-center ">
           A Spiritual Productivity Tool for Mental Wellness
         </p>
       </div>
       <div class="intro">
-        <p style="text-align: center">
+        <p class="text-center fw-medium fst-italic">
           Moksh is a spiritual productivity tool designed for individuals who
           want to unlock their potential and achieve true balance in life.
         </p>
       </div>
       <hr color="#000" size="1" />
-      <div
-        class="copyright"
-        style="display: flex; justify-content: space-around"
-      >
-        <p style="font-size: 14px; text-align: center; margin-top: 10px">
+      <div class="copyright d-flex align-items-center justify-content-center text-center flex-column fw-semibold ">
+        <p>
           Made with ❤️ by Akshita during XPRESSION'23
         </p>
-        <p style="font-size: 14px; text-align: center; margin-top: 10px">
+        <p class="p-0">
           &copy; 2023 Moksh. All rights reserved.
         </p>
       </div>
     </footer>
-  </body>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+          crossorigin="anonymous"></script>
+  <script src="meditation.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>

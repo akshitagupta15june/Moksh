@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 * {
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 body {
-  background-image: url('Images/ThankfulEnchantingDairycow-size_restricted.gif');
+
+  background-image: url('./Images/ThankfulEnchantingDairycow-size_restricted.gif');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -12,192 +15,58 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-/* Navbar Start */
-.nav {
-  height: 70px;
-  background-color: #2980b9;
-  box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 20px;
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  font-family: sans-serif;
-  user-select: none;
+
+iframe {
+  min-height: 100% !important;
 }
 
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 1px;
-  padding-left: 18px;
+.logo {
+  height: 50px;
+  width: 50px;
 }
 
-.navbar-logo img {
-  width: 60px;
-  background-color: antiquewhite;
-  border-radius: 10%;
+.qr-logo {
+  height: 140px;
+  width: 140px;
 }
 
-.navbar-logo span {
-  font-weight: bold;
-  color: white;
-  margin-left: 10px;
-  text-decoration: none;
-}
-.nav ul {
-  margin-top: 0;
-}
-.nav ul li {
-  display: inline-block;
-}
-.nav-menu {
-  margin-bottom: 0;
-}
-.about {
-  margin-left: 80px;
-  margin-right: 80px;
+.qr-tagline {
+  text-align: justify;
 }
 
-.nav ul li a {
-  color: white;
-  display: block;
-  padding: 0 15px;
-  line-height: 70px;
-  font-size: 17px;
-  background-color: #2980b9;
-  transition: 0.3s;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-
-.nav ul li a:hover,
-.nav ul li a.active {
-  color: black;
-  background-color: #8ad0ff;
-  list-style: none;
-  text-decoration: none;
-}
-
-.dropdown:hover > a {
-  color: black;
-  background-color: #8ad0ff;
-}
-
-.nav ul ul {
-  position: absolute;
-  top: 85px;
-  border-top: 3.5px solid #8ad0ff;
-  opacity: 0;
-  visibility: hidden;
-  padding-left: 0;
-}
-
-.nav ul li:hover > ul {
-  top: 70px;
-  opacity: 1;
-  visibility: visible;
-  transition: 0.3s linear;
-  list-style: none;
-}
-
-.nav ul ul li {
-  width: 250px;
-  display: list-item;
+.dropItem {
   position: relative;
-  border: 1px solid #8ad0ff;
-  border-top: none;
 }
 
-.nav ul ul li a {
-  line-height: 25px;
-  padding: 10px 15px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+.dropItem:hover::after {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #fff;
+  left: 0;
 }
 
-/* Google Translate */
-#google_translate_element select {
-  background-color: #f6edfd;
-  color: black;
-  border: none;
-  border-radius: 3px;
-  padding: 6px 8px;
-}
-/* Navbar Ends */
-
-h1 {
-  color: white;
-}
-.qr-codes img {
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
-  margin: 0px 10px 20px 20px;
-}
-p {
-  font-size: 20px;
-  color: white;
-}
-.icons {
-  align-self: center;
-  background-color: transparent;
-  border: none;
-  font-size: 26px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-#music {
-  font-size: 24px;
-  padding: 10px 5px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.dropItemFeatures:hover::after {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #fff;
+  left: 0;
 }
 
 #player {
-  display: flex;
-  justify-content: center;
-}
-
-footer {
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+  cursor: pointer;
   background-color: #2980b9;
-  color: #fff;
-  padding: 20px 0;
-  font-size: 14px;
-  margin: 0;
 }
 
-footer .logo-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .quick-links ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 18px;
-  margin-top: 15px;
-}
-footer ul li {
-  margin-top: 5px;
-}
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-footer .quick-links ul li a:hover {
-  text-decoration: none;
-  padding: 5px;
-  background-color: #b1bce0;
-  color: #666;
-}
-.link {
-  margin: 10px 0px 5px 10px;
+#player:hover {
+  color: #000 !important;
+  background-color: #8ad0ff;
+  border-radius: 10px;
 }
