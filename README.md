@@ -45,11 +45,6 @@ Moksh is a spiritual productivity tool designed for individuals who want to unlo
 * Random Bhagavad Gita shlok generator with meaning, along with sharing to twitter functionality 🌟
 * Rejuvenate section for watching inspirational videos by spiritual leaders ☮️
 
-
-### Explanation Video
-
-https://user-images.githubusercontent.com/68381641/231157226-43ba926c-f224-4c73-99c2-a7aeeaa66883.mp4
-
 ## Demo
 
 https://akshitagupta15june.github.io/Moksh/
