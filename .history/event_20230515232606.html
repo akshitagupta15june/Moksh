@@ -333,28 +333,44 @@
         margin-bottom: 10px;
       }
     
-      
-      h4{
-        padding-left: 46.5%;
-        padding-bottom: 1%;
+      .quick-links {
+        text-align: center;
+        margin-bottom: 10px;
       }
 
-      .matrix{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2px;
+      .quick-links h4 {
+         margin-bottom: 10px;
       }
 
-      .matrix-item {
-        padding: 10px;
-        text-align:center;
-      }
-
-      ul {
+      .quick-links ul {
         list-style: none;
         padding: 0;
         margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
+
+      .quick-links li {
+         flex-basis: 20%;
+        max-width: 20%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .quick-links li a {
+         display: block;
+          text-decoration: none;
+          color: #000;
+          padding: 5px;
+          border: 1px solid #000;
+          border-radius: 5px;
+      }
+
+.quick-links li a:hover {
+  background-color: #000;
+  color: #fff;
+}
 
       hr {
         border-color: #fff;
@@ -378,31 +394,18 @@
       <div class="intro">
         <p>Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life.</p>
       </div>
-      <h4>Quick Links</h4>
-      <div class="matrix">
-       
-        <div>
-          <ul>
-            <li class="matrix-item"><a class="active" href="index.html">Home</a></li>
-            <li class="matrix-item"><a href="#about">About</a></li>
-            <li class="matrix-item"><a href="meditation.html">Augmented Reality Meditation</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li class="matrix-item"><a href="event.html">Iskcon Events</a></li>
-            <li class="matrix-item"><a href="story.html">Divine activities for all Generation</a></li>
-            <li class="matrix-item"><a href="reward.html">Pomodoro spriritual Break</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li class="matrix-item"><a href="motivation.html">Read a Shlok</a></li>
-            <li class="matrix-item"><a href="rejuvenate.html">Rejuvenate</a></li>
-          </ul>
-        </div>
-          
-       
+      <div class="quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="meditation.html">Augmented Reality Meditation</a></li>
+          <li><a href="event.html">Iskcon Events</a></li>
+          <li><a href="story.html">Divine activities for all Generation</a></li>
+          <li><a href="reward.html">Pomodoro spriritual Break</a></li>
+          <li><a href="motivation.html">Read a Shlok</a></li>
+          <li><a href="rejuvenate.html">Rejuvenate</a></li>
+        </ul>
       </div>
       <hr>
       <div class="copyright">
