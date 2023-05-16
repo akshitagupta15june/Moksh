@@ -89,8 +89,7 @@ body {
   /* margin: 0 20px; */
 }
 
-.nav ul li a:hover,
-.nav ul li a.active {
+.nav ul li a.active:hover {
   color: black ;
   text-decoration: underline;
   text-decoration-color: black;
