@@ -11,24 +11,6 @@
 
 </div>
 
-## ⚙️ Table Of Contents
-
-- [Table Of Contents](#table-of-contents)
-- [About The Project](#about-the-project)
-  - [Mental Health Problems](#mental-health-problems)
-  - [A Spiritual Productivity Tool for Mental Wellness](#a-spiritual-productivity-tool-for-mental-wellness)
-  - [Features](#features)
-  - [Explanation Video](#explanation-video)
-- [Demo](#demo)
-- [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-- [Contributing](#contributing)
-  - [Creating A Pull Request](#creating-a-pull-request)
-- [License](#license)
-- [Code of Conduct](#code-of-conduct)
-- [Author](#author)
-
 ## About The Project 💫
 
 ### Mental Health Problems
