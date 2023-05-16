@@ -23,7 +23,7 @@ body {
 #results {
   margin-top: 20px;
   font-size: 1.2em;
-  font-weight: bold;
+  font-weight: bold; 
 }
 
 .correct {
@@ -105,13 +105,10 @@ body {
 
 .images {
   border-radius: 12px;
-  margin-right: 2rem;
-  overflow: auto;
   display: flex;
-  align-items: center;
-  list-style: none;
   padding-top: 5px;
-  gap: 50px
+  gap: 50px;
+  margin-left: 8rem;
 }
 
 .top ::-webkit-scrollbar {
