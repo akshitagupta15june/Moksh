@@ -7,6 +7,7 @@
 </p>
 
 ### _Unlock your potential and achieve true balance in life with Moksh!_
+ <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion</h3>
 
 </div>
 
