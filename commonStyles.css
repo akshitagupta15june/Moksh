@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.smallerFontSize {
+  font-size: 12px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+select {
+  padding: 2px 0;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: bold;
+  margin: 0 !important;
+}
+
+.dropItem {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.dropItemFeature {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+
+}
+
+.dropItem:hover::after {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #fff;
+  left: 0;
+}
+
+.dropdown-item {
+  font-weight: bold;
+  color: #fff;
+}
+
+.dropItemFeatures:hover::after {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #fff;
+  left: 0;
+}
