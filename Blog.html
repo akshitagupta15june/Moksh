@@ -1,146 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <!-- <link rel="stylesheet" href="fontawesome.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Blog</title>
 
-    <link rel="stylesheet" href="Blog.css">
-    <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+  <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./commonStyles.css" type="text/css">
+  <link href="./Blog.css" rel="stylesheet" type="text/css" />
+
 </head>
+
 <body>
-    <script src="script.js"></script>
-      <!-- Navbar Start-->
-  <div class="nav">
-    <!-- Nav Logo & Name -->
-    <div class="navbar-logo">
-      <img src="./Images/moksh.png" alt="Moksh Logo" />
-      <a href="index.html"><span>Moksh</span></a>
-    </div>
+  <div class="container-fluid min-vh-100 h-auto p-0 m-0 d-flex flex-column">
 
-    <!-- Nav menu -->
-    <ul class="nav-menu">
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li class="dropdown">
-        <a href="#"
-          >Features
-          <i class="fa fa-caret-down"></i>
-        </a>
-        <!-- Dropdown -->
-        <ul>
-          <li><a href="meditation.html">Augmented Reality Meditation</a></li>
-          <li><a href="event.html">Iskcon Events</a></li>
-          <li>
-            <a href="story.html">Divine Activities for all Generation</a>
-          </li>
-          <li><a href="reward.html">Pomodoro Spritual Break</a></li>
-          <li><a href="motivation.html">Read a Shlok</a></li>
-          <li><a href="rejuvenate.html">Rejuvenate</a></li>
-        </ul>
-      </li>
-    </ul>
-    <!-- Google Translate -->
-    <div id="google_translate_element">
-      <script
-        type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-      ></script>
-    </div>
-  </div>
-  <!-- Navbar End -->
+    <!-- Responsive navbar  -->
+    <div class="customNavbar"></div>
 
-  <div class="blogs">
+    <div class="container blogs flex-grow-1" style="margin-top: 120px;">
 
-    <div class="blog-card">
-      <div class="blog-card-image">
-        <img src="https://user-images.githubusercontent.com/57909583/236841961-6320c35c-a47c-4aab-8e59-c1dc09dc0400.png" alt="Words.img">
+
+      <div class="card" style="width: 18rem;background-color: #2980b9;">
+        <img src="https://user-images.githubusercontent.com/57909583/236841961-6320c35c-a47c-4aab-8e59-c1dc09dc0400.png" class="card-img-top cardImage"
+             alt="...">
+        <div class="card-body text-white">
+          <h5 class="card-title">Power of Knowledge</h5>
+
+          <a href="Words.html" class="btn btn-success">Read More</a>
+        </div>
       </div>
 
-      <div class="blog-card-text">
 
-      </div>
 
-      <div class="blog-card-button">
-        <a href="Words.html">
-          <button>Read More</button>
-        </a>
-      </div>
     </div>
 
+    <!-- Footer  -->
+    <footer class="container-fluid py-3 px-5 m-0 customFooter" style="background-color: #2980b9;">
+
+    </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+          crossorigin="anonymous"></script>
+  <script type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="./commonScript.js"></script>
+  <script src="script.js"></script>
 
-  <!-- Footer Section starts -->
-  <footer style="padding: 5px 10px">
-    <div class="logo-title">
-      <img
-        class="logo"
-        src="Images/moksh.png"
-        alt="Moksh Logo"
-        style="
-          height: 50px;
-          margin-right: 10px;
-          filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg)
-            brightness(97%) contrast(99%);
-        "
-      />
-      <h3
-        class="title"
-        style="
-          font-size: 28px;
-          text-align: end;
-          color: #fff;
-          margin-top: 12px;
-          border-bottom:none;
-        "
-      >
-        Moksh
-      </h3>
-    </div>
-    <div class="tagline">
-      <p style="font-size: 18px; text-align: center; color: #fff">
-        A Spiritual Productivity Tool for Mental Wellness
-      </p>
-    </div>
-    <div class="intro">
-      <p style="text-align: center">
-        Moksh is a spiritual productivity tool designed for individuals who
-        want to unlock their potential and achieve true balance in life.
-      </p>
-    </div>
-
-    <hr color="#000" size="10" />
-    <div
-      class="copyright"
-      style="display: flex; justify-content: space-around"
-    >
-      <p style="font-size: 14px; text-align: center; margin-top: 10px">
-        Made with ❤️ by Akshita during XPRESSION'23
-      </p>
-      <p style="font-size: 14px; text-align: center; margin-top: 10px">
-        &copy; 2023 Moksh. All rights reserved.
-      </p>
-    </div>
-  </footer>
-  <!-- Footer Section ends -->
-
-
-
-
-
-
-
-
-
-
-    
 </body>
+
 </html>
