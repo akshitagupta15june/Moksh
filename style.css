@@ -195,6 +195,11 @@ a.dropdown-item{
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   margin-top: 3.5rem;
+  transition: all 0.55s ease;
+}
+
+.text-container:hover {
+  transform: translateY(-8px);
 }
 
 .title {
@@ -229,6 +234,12 @@ a.dropdown-item{
   text-align: center;
   border: 1px solid transparent;
   box-shadow: 0px 0px 10px #555;
+  transition: all .55s ease;
+}
+
+
+.card:hover{
+  transform: translateY(-8px);
 }
 
 .card img {
@@ -241,6 +252,7 @@ a.dropdown-item{
   font-size: 24px;
   margin-top: 10px;
 }
+
 
 .card p {
   font-size: 16px;
