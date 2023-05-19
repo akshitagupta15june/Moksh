@@ -20,9 +20,7 @@ const customFooter = document.querySelector( ".customFooter" );
                 <li class="nav-item ms-auto">
                   <a class="nav-link text-white dropItem p-sm-0" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item ms-auto">
-                  <a class="nav-link text-white dropItem p-sm-0" aria-current="page" href="about.html">About</a>
-                </li>
+                
                 <li class="nav-item ms-auto">
                   <a class="nav-link text-white dropItem p-sm-0" aria-current="page" href="Blog.html">Blog</a>
                 </li>
