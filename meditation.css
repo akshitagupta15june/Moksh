@@ -1,6 +1,5 @@
 body {
-
-  background-image: url('./meditationgif.gif');
+  background-image: url("./meditationgif.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -13,25 +12,33 @@ iframe {
   min-height: 100% !important;
 }
 
-
 .qr-logo {
-  height: 140px;
-  width: 140px;
+  height: 160px;
+  width: 160px;
+  border-radius: 35px;
 }
 
 .qr-tagline {
-  text-align: justify;
+  text-align: start;
 }
 
 #player {
   transition-timing-function: ease-in-out;
   transition-duration: 200ms;
   cursor: pointer;
-  background-color: #2980b9;
 }
 
 #player:hover {
   color: #000 !important;
-  background-color: #8ad0ff;
-  border-radius: 10px;
+  background-color: #ffffffaf !important;
+  border-radius: 16px;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
