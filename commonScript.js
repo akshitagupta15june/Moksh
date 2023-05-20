@@ -2,63 +2,67 @@ const customNavbar = document.querySelector( ".customNavbar" )
 const customFooter = document.querySelector( ".customFooter" );
 ( () =>
 {
-  let navbarContent = `
-  <nav class="navbar navbar-expand-md fixed-top p-2" style="background-color: #2980b9;"
-          aria-label="Fourth navbar example">
-          <div class="container-fluid">
-            <a class="navbar-brand text-white p-0" href="index.html">
-              <img src="./Images/moksh.png" alt="Moksh Logo" class="logo" />
-              <span>Moksh</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-              aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  let navbarContent =
+    `
+    <nav class="navbar navbar-expand-sm" style="background-color: #2980b9;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white p-0" href="index.html">
+            <img src="./Images/moksh.png" alt="Moksh Logo" class="logo" />
+            <span class="fw-semibold text-uppercase">Moksh</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <ul class="navbar-nav w-100 ">
+              <li class="nav-item ms-auto ">
+                <a class="nav-link text-white text-uppercase fw-semibold fs-6" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item  ms-auto">
+                <a class="nav-link text-white text-uppercase fs-6 fw-semibold" href="./Blog.html">Blog</a>
+              </li>
 
-            <div class="collapse navbar-collapse" id="navbarsExample04">
-              <ul class="navbar-nav mb-2 mt-4 mb-md-0 fw-medium px-3 w-100">
-                <li class="nav-item ms-auto">
-                  <a class="nav-link text-white dropItem p-sm-0" aria-current="page" href="index.html">Home</a>
-                </li>
-                
-                <li class="nav-item ms-auto">
-                  <a class="nav-link text-white dropItem p-sm-0" aria-current="page" href="Blog.html">Blog</a>
-                </li>
-                <li class="nav-item dropdown ms-sm-auto text-end">
-                  <a class="nav-link dropdown-toggle text-white p-sm-0 text-uppercase " href="#" data-bs-toggle="dropdown"
-                    aria-expanded="false">Features</a>
-                  <ul class="dropdown-menu dropdown-menu-end p-0 my-1 text-white" style="background-color: #2980b9;">
-                    <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border"
-                        href="./meditation.html">Augmented Reality Meditation</a>
-                    </li>
-                    <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border" href="#">Iskon
-                        Events</a></li>
-                    <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border"
-                        href="#">Divine
-                        Activities for
-                        all
-                        Generation</a></li>
-                    <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border"
-                        href="#">Pomodoro
-                        Spiritual
-                        Break</a>
-                    </li>
-                    <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border" href="#">Read
-                        a
-                        Shlok</a></li>
-                    <li class="w-100 text-end text-sm-start"><a class="dropdown-item p-2 dropItem border"
-                        href="#">Rejuvenate</a></li>
-                  </ul>
-                </li>
-                <!-- Google Translate -->
-                <li class="nav-item ms-auto ">
-                  <div id="google_translate_element" class="p-0 m-0"></div>
-                </li>
-              </ul>
-            </div>
+              <li class="nav-item dropdown ms-auto">
+
+                <a class="nav-link text-end text-white text-uppercase fw-semibold fs-6 dropdown-toggle" href="#" role="button"
+                   data-bs-toggle="dropdown">Features</a>
+
+                <ul class="dropdown-menu dropdown-menu-start p-0 mx-0 my-2 w-auto" style="background-color:#2980b9;">
+                  <li>
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./meditation.html">Augmented
+                      Reality
+                      Meditation</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./event.html">Iskon Events</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./story.html">Divine Activities
+                      for all
+                      Generation</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./reward.html">Pomodoro
+                      Spiritual Break</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./motivation.html">Read a
+                      Shlok</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4"
+                       href="./rejuvenate.html">Rejuvenate</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ms-auto">
+                <div id="google_translate_element" class=""></div>
+              </li>
+            </ul>
           </div>
-        </nav>
-  `
+        </div>
+      </nav> 
+    `
   customNavbar.innerHTML = navbarContent
 
   let footerContent = `
