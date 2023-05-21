@@ -118,7 +118,49 @@ $ git clone https://github.com/<your_github_username>/Moksh.git
 3. Make the required changes and stage them (`git add .`) or (`git add <file>`)
 4. Commit your Changes (`git commit -m 'Made xyz changes'`)
 5. Push to your branch (`git push -u origin main`)
-6. Open a Pull Request
+6. Open a Pull Request 
+## ❤️ Project Admin
+
+<table>
+	<tr>
+		<td align="center">
+			<a href="https://github.com/akshitagupta15june">
+				<img src="https://avatars0.githubusercontent.com/u/57909583?v=4" width="100px" alt="" />
+				<br /> <sub><b>akshitagupta15june</b></sub>
+			</a>
+			<br /> <a href="https://github.com/akshitagupta15june"> 
+		👩‍💻Admin
+	    </a>
+		</td>
+	</tr>
+</table>
+
+## 👨‍💻👥 Moderators
+<table>
+    <tbody>
+        <tr>
+            <td align="center">
+                <a href="https://github.com/mnik7044">
+                    <img src="https://avatars.githubusercontent.com/u/108953684?v=4" width="100px;" alt="Nikhil Mishra"/>
+                    <br />
+                    <sub><b>Nikhil  Mishra</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/karthiknadar1204">
+                    <img src="https://avatars.githubusercontent.com/u/95973644?v=4" width="100px;" alt="Karthik Nadar"/>
+                    <br />
+                    <sub><b>Karthik  Nadar</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ankitjt">
+                    <img src="https://avatars.githubusercontent.com/u/48979824?v=4" width="100px;" alt="Ankit"/>
+                    <br />
+                    <sub><b>Ankit</b></sub>
+                </a>
+            </td>
+</table>
 
 ## Thanks to all Contributors 💪
 
