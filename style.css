@@ -13,95 +13,90 @@ p {
   color: rgb(33, 33, 33);
   font-size: 20px;
 }
+
 body {
   background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2980b9;
+  /* background-color: #2980b9; */
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 } 
 /* Navbar Start */
 
-.nav {
+.navbar {
   height: 70px;
-  background-color: #2980b9 !important;
-  box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4);
+  width: 100%;
+  background-color: #2980b9;
+  opacity: 0.90;
+  box-shadow: 0 2px 10px #07314d;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-right: 20px;
-  position: sticky;
+  position: fixed;
   z-index: 99;
   top: 0;
   font-family: sans-serif;
   user-select: none;
 }
 
+.navbar ul{
+  background-color: #2980b9;
+}
 .navbar-logo {
   display: flex;
   align-items: center;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 1px;
   padding-left: 18px;
 }
 
-.navbar-logo img {
-  width: 60px;
+ .image-logo {
+  width: 55px;
+  background-position: center center;
+  background-size: cover;
   background-color: antiquewhite;
-  border-radius: 10%;
+  border-radius: 40px;
+  border: 2px solid white;
 }
 
-.navbar-logo span {
-  font-weight: bold;
-  color: white;
-  margin-left: 10px;
+.navbar-toggler-icon{
+  font-size: 10px;
+  size: ;
 }
-.navbar-logo a:hover {
-  text-decoration: none;
-}
-.nav ul li {
-  display: inline-block;
-  padding: auto 20px;
-}
-.nav-menu {
+
+.navbar-nav {
   margin-bottom: 0;
   padding-left: 0;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+  display: flex;
 }
-
-.about {
-  margin-left: 80px;
-  margin-right: 80px;
-}
-
-.nav ul li a {
+.navbar ul li a {
   color: white !important;
+  text-decoration: none;
   display: block;
   padding: 0 15px;
-  line-height: 70px;
+  /* line-height: 70px; */
   font-size: 17px;
-  background-color: #2980b9 !important;
-  transition: 0.3s;
+  background-color: #2980b9 ;
+  transition: 0.4s;
   letter-spacing: 1px;
   margin: 0;
   /* margin: 0 20px; */
 }
 
-.nav ul li a.active:hover {
-  color: black ;
-  text-decoration: underline;
-  text-decoration-color: black;
+.navbar ul li a.active:hover {
+  color: rgb(106, 99, 99) ;
+  text-decoration: none;
 }
 
 .dropdown:hover > a {
   color: black;
-  text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration: none;
 }
 
-.nav ul ul {
+.navbar ul ul {
   position: absolute !important;
   top: 85px;
   border-top: 3.5px solid #8ad0ff;
@@ -111,18 +106,18 @@ body {
   padding-left: 0;
 }
 
-.nav ul li:hover > ul {
-  top: 70px;
+.navbar ul li:hover > ul {
+  top: 29px;
   opacity: 1;
   visibility: visible;
   transition: 0.3s linear;
   list-style: none;
 }
 
-.nav ul ul li {
+.navbar ul ul li {
   width: 310px;
   display: list-item; 
-   position: relative;
+  position: relative;
   border: 1px solid #8ad0ff;
   border-top: none;
 }
@@ -130,10 +125,7 @@ body {
 a.dropdown-item{
   margin: 0 !important;
 }
-/* ul.dropdown-menu.show{
-  margin: 0;
-  padding: 0;
-} */
+
 .nav ul ul li a {
   line-height: 25px;
   padding: 10px 15px;
@@ -141,15 +133,10 @@ a.dropdown-item{
 }
 
 /* Google Translate */
-#google_translate_element select {
-  /* background-color: #2980b9 !important; */
 
-  background-color: #f6edfd;
-  color: black;
-  border: none;
-  border-radius: 3px;
-  padding: 6px 8px;
-  cursor: pointer;
+.google-translate {
+  display: flex ;
+  background-color: #2980b9;
 }
 /* Navbar Ends */
 

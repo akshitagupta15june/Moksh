@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -8,54 +8,57 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head> 
  
   <body> 
-    <script src="script.js"></script>
-    <div class="nav">
-      <!-- Nav Logo & Name -->
-      <div class="navbar-logo">
-        <img src="./Images/moksh.png" alt="Moksh Logo" />
-        <a href="index.html"><span>Moksh</span></a> 
-      </div>
-    
-      <!-- Nav menu -->
-      <ul class="nav-menu">
-        <li>
-          <a class="active" href="index.html">Home</a>
-        </li>
-        <li class="about"><a href="#about">About</a></li>
-        <li class="about"><a href="Blog.html">Power of Knowledge Blogs</a></li>
-        <li class="dropdown">
-          <a href="#">
-            Features
-            <i class="fas fa-caret-down"></i>
-          </a> 
-          <!-- Dropdown -->
-          <ul>
-            <li><a href="meditation.html">Augmented Reality Meditation</a></li>
-            <li><a href="event.html">Iskcon Events</a></li>
-            <li><a href="story.html">Divine Activities for all Generation</a></li>
-            <li><a href="reward.html">Pomodoro Spritual Break</a></li>
-            <li><a href="motivation.html">Read a Shlok</a></li>
-            <li><a href="rejuvenate.html">Rejuvenate</a></li>
-          </ul>
-        </li>
-      </ul>
-    
-      <!-- google translate -->
-      <div id="google_translate_element">
-        <script
-          type="text/javascript"
-          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        ></script>
-      </div>
-    </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <!-- Nav Logo & Name -->
+            <img class="image-logo" src="./Images/moksh.png" alt="Moksh Logo"/>   
+            <!-- Nav menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">&#9776</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navbar-nav" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>  <!--home is an active link -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blogs</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Features<i class="fas fa-caret-down"></i></a> 
+                        <!-- Dropdown -->
+                        <ul>
+                            <li><a href="meditation.html">Augmented Reality Meditation</a></li>
+                            <li><a href="event.html">Iskcon Events</a></li>
+                            <li><a href="story.html">Divine Activities for all Generation</a></li>
+                            <li><a href="reward.html">Pomodoro Spritual Break</a></li>
+                            <li><a href="motivation.html">Read a Shlok</a></li>
+                            <li><a href="rejuvenate.html">Rejuvenate</a></li>
+                        </ul>
+                    </li>             
+                </ul>
+                <span class="google-translate d-flex">
+                  <div id="google_translate_element">
+                      <script
+                      type="text/javascript"
+                      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                  </div>
+                </span>
+            </div>  
+            <!-- google translate -->
+            
+        </div>
+    </nav>
     
     <!-- bootstrp nav end -->
 
@@ -111,7 +114,7 @@
               <p><b>A Spiritual Productivity Tool for Mental Wellness</b></p>
             </div>
             <div class="content">
-              <img src="Images/moksh.png" height="170" align="left" />
+              <img src="Images/moksh.png" height="170" alt="img" align="left" />
               <p>
                 <i
                   ><b>Moksh</b> is a spiritual productivity tool designed for
@@ -282,6 +285,7 @@
     </footer>
 
     <!-- bootstrap js -->
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
