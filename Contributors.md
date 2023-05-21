@@ -8,3 +8,4 @@
 - [Harmeet Singh](https://github.com/harmeetsingh11)
 - [Hritik Singhal](https://github.com/hritik1503)
 - [Akshit Agrawal](https://github.com/justAkshitAgrawal)
+- [Harsh Soni](https://github.com/Harsh-s0ni)
