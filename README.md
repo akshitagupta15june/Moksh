@@ -119,7 +119,7 @@ $ git clone https://github.com/<your_github_username>/Moksh.git
 4. Commit your Changes (`git commit -m 'Made xyz changes'`)
 5. Push to your branch (`git push -u origin main`)
 6. Open a Pull Request 
-## ❤️ Project Admin
+## 👩‍💻 Project Admin
 
 <table>
 	<tr>
