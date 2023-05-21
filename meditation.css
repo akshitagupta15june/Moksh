@@ -17,9 +17,23 @@ iframe {
   width: 160px;
   border-radius: 35px;
 }
+.qr-container {
+  width: auto;
+}
+@media screen and (max-width: 1200px) {
+  .qr-container {
+    width: 100% !important;
+  }
+}
 
 .qr-tagline {
   text-align: start;
+}
+@media screen and (max-width: 500px) {
+  .qr-tagline {
+    width: 100% !important;
+    text-align: center;
+  }
 }
 
 #player {
