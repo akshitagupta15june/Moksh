@@ -23,7 +23,7 @@ body {
 #results {
   margin-top: 20px;
   font-size: 1.2em;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .correct {
@@ -155,4 +155,13 @@ body {
   background: #3facf4;
   color: black;
   cursor: pointer;
+}
+
+.carousel-item img.d-block.w-100 {
+  max-width: 45%;
+  height: auto;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
