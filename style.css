@@ -213,6 +213,10 @@ a.dropdown-item{
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
+  margin-top: 20px;
+  max-width: 700px;
+  text-align: center;
+  margin-left: 30px;
 }
 
 .card-container {
@@ -229,46 +233,72 @@ a.dropdown-item{
   background-size: cover;
   color: #2980b9;
   width: 400px;
-  height: 500px;
+  /* height: 500px; */
   margin: 20px;
   text-align: center;
-  border: 1px solid transparent;
-  box-shadow: 0px 0px 10px #555;
+  /* border: 1px solid transparent; */
+  box-shadow: 0px 0px 5px 0 #494949;
   transition: all .55s ease;
-}
 
-
-.card:hover{
-  transform: translateY(-8px);
+  border-radius: 10px !important;
+  overflow: hidden;
 }
 
 .card img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  
+}
+
+.feature-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.25s ease-in-out;
+}
+
+.feature-wrapper .feature-description {
+  overflow: hidden;
 }
 
 .card h3 {
   font-size: 24px;
-  margin-top: 10px;
+  margin: 5px 0 0 0;
+
+  padding: 4px 0;
+  background-color: rgb(74, 103, 164);
+  color: white;
+  
 }
 
 
 .card p {
-  font-size: 16px;
+  font-size: 18px;
   margin: 10px;
   text-align: left;
+
+  text-align: center;
 }
 
-.card button {
-  background-color: #b5ddc9;
-  color: #2980b9;
-  border: none;
+.card:hover{
+  transform: translateY(-8px);
+}
+
+.card:hover .feature-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.card .feature-description button {
+  background-color: #0e1f2b;
+  border: 1px solid black;
+
+
   padding: 10px 20px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  color: black;
+  color: rgb(255, 255, 255);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

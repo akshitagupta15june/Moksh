@@ -52,9 +52,65 @@ body {
   flex-direction: column;
   align-items: center;
   margin-right: 5%;
-  background-color: #fff;
+  background-color: #fff; 
   border-radius: 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   margin-bottom: 20px;
   width: 45%;
+}
+
+/* Rest of the CSS code */
+
+#about1,
+#about2,
+#about3,
+#about4 {
+  overflow: hidden;
+}
+
+#about1 p,
+#about2 p,
+#about3 p,
+#about4 p {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.7s ease, opacity 0.7s ease, margin-top 0.7s ease;
+  margin-top: 0;
+}
+
+#about1:hover p,
+#about2:hover p,
+#about3:hover p,
+#about4:hover p {
+  max-height: 1000px;
+  opacity: 1;
+  z-index: 1;
+  margin-top: 3rem;
+}
+
+#about1 span,
+#about2 span,
+#about3 span,
+#about4 span {
+  width: 100%;
+  background-color: #01BAEF;
+  border-radius: 0 0 40px 40px;
+  position: relative;
+  top: 25px;
+  z-index: 0;
+  transition: border-radius 0.3s ease;
+}
+
+#about1:hover span,
+#about2:hover span,
+#about3:hover span,
+#about4:hover span {
+  border-radius: 5px;
+}
+
+#about1 h2,
+#about2 h2,
+#about3 h2,
+#about4 h2{
+  text-align: center;
 }

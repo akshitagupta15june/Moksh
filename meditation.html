@@ -1,143 +1,203 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>AR Meditate</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>AR Meditate</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./commonStyles.css" type="text/css" />
+    <link href="./meditation.css" rel="stylesheet" type="text/css" />
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-  <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="./commonStyles.css" type="text/css">
-  <link href="./meditation.css" rel="stylesheet" type="text/css" />
+  <body>
+    <div class="container-fluid min-vh-100 h-auto p-0 m-0">
+      <!-- Responsive navbar  -->
+      <div class="customNavbar"></div>
 
-</head>
+      <!-- Content  -->
+      <div class="container-fluid p-0 text-white" style="margin-top: 140px">
+        <h1 class="text-center display-2">Augmented Reality Meditation</h1>
 
-<body>
-
-  <div class="container-fluid min-vh-100 h-auto p-0 m-0">
-
-    <!-- Responsive navbar  -->
-    <div class="customNavbar"></div>
-
-    <!-- Content  -->
-    <div class="container-fluid p-0 qr-codes text-white" style="margin-top:140px;">
-      <h1 class="text-center">Augmented Reality Meditation</h1>
-      <p class="fw-semibold px-4 fst-italic qr-tagline text-center">
-        You just have to open your google lens and scan the QR code for an
-        ultimate Augmented reality experience in front of your eyes.
-      </p>
-
-      <!-- QR Codes  -->
-      <div class="container-fluid my-5 grid text-center">
-        <div class="row gy-3">
-          <div class="col text-lg-end">
-            <img src="Images/krishnaradha.jpeg" class="rounded-4 border qr-logo" />
+        <!-- QR Code and Content  -->
+        <div class="my-5 container w-50 qr-container">
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <img src="Images/krishnaradha.jpeg" class="qr-logo" />
+            </div>
+            <div class="col-8 qr-tagline">
+              <p class="fw-semibold fs-4 fst-italic qr-tagline">
+                You just have to open your google lens <br />
+                and scan the QR code for an ultimate <br />
+                Augmented reality experience in front of your eyes.
+              </p>
+            </div>
           </div>
-          <div class="col text-lg-center">
-            <img src="Images/krishnaradha.jpeg" class="rounded-4 border qr-logo " />
+        </div>
+
+        <!-- Audio Clips  -->
+        <div class="container clips my-5 px-4 text-center">
+          <h4 class="text-center my-5">
+            Listen to peaceful Krishna flute music with AR meditation.
+          </h4>
+
+          <div class="container-fluid grid">
+            <div class="row gy-5">
+              <div class="col-12 p-0 col-sm-12 col-lg-5 mx-auto glassmorphism">
+                <div
+                  id="player"
+                  class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                  <img
+                    src="Images/Deep_meditation.jpg"
+                    alt=""
+                    height="80px"
+                    style="border-radius: 16px" />
+                  <p id="music" class="m-0">Deep meditation Music</p>
+                  <button
+                    class="icons bg-transparent border-0 text-danger-emphasis fs-2"
+                    id="play-pause0">
+                    <i class="bi bi-play-circle-fill" class=""></i>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="col-12 p-0 col-sm-12 col-lg-5 mx-auto glassmorphism"
+                role="button">
+                <div
+                  id="player"
+                  class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                  <img
+                    src="Images/Krishna.jpg"
+                    alt=""
+                    height="80px"
+                    style="border-radius: 16px" />
+                  <p id="music" class="m-0">Krishna Flute meditation music</p>
+                  <button
+                    class="icons bg-transparent border-0 text-danger-emphasis fs-2"
+                    id="play-pause1">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="clips p-0 col-12 col-sm-12 col-lg-5 mx-auto glassmorphism"
+                role="button">
+                <div
+                  id="player"
+                  class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                  <img
+                    src="Images/River.jpg"
+                    alt=""
+                    height="80px"
+                    style="border-radius: 16px" />
+                  <p id="music" class="m-0">River meditation music</p>
+                  <button
+                    class="icons bg-transparent border-0 fs-2 text-danger-emphasis"
+                    id="play-pause2">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="clips p-0 col-12 col-sm-12 col-lg-5 mx-auto glassmorphism"
+                role="button">
+                <div
+                  id="player"
+                  class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                  <img
+                    src="Images/Piano.jpg"
+                    alt=""
+                    height="80px"
+                    style="border-radius: 16px" />
+                  <p id="music" class="m-0">Piano meditation music</p>
+                  <button
+                    class="icons bg-transparent border-0 fs-2 text-danger-emphasis"
+                    id="play-pause3">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="clips p-0 col-12 col-sm-12 col-lg-5 mx-auto glassmorphism"
+                role="button">
+                <div
+                  id="player"
+                  class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
+                  <img
+                    src="Images/Himalayas.jpg"
+                    alt=""
+                    height="80px"
+                    style="border-radius: 16px" />
+                  <p id="music" class="m-0">Himalayas meditation music</p>
+                  <button
+                    class="icons bg-transparent border-0 fs-2 text-danger-emphasis"
+                    id="play-pause4">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <br />
+            <audio id="river-sound" src="Images/river-music.mp3"></audio>
+            <audio id="flute-sound" src="Images/krishna.mp3"></audio>
+            <audio id="deep-music" src="Images/deep-music.mp3"></audio>
+            <audio id="piano-sound" src="Images/piano-music.mp3"></audio>
+            <audio id="himalayas-sound" src="Images/himalaya-music.mp3"></audio>
           </div>
-          <div class="col text-lg-start">
-            <img src="Images/krishnaradha.jpeg" class="rounded-4 border qr-logo " />
-          </div>
+        </div>
+
+        <!-- Iframe  -->
+        <div class="container-fluid p-0 m-0 d-flex">
+          <iframe
+            title=" Krishna Artifacts"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            width="100%"
+            height="530"
+            style="padding: 0; margin: 0"
+            src="https://sketchfab.com/models/506d0a8f43884c458e5a78156151ff09/embed">
+          </iframe>
         </div>
       </div>
 
-      <!-- Audio Clips  -->
-      <div class="container clips my-5 px-4 text-center">
-        <h4 class="text-center my-5">Listen to peaceful Krishna flute music with AR meditation.</h4>
-
-        <div class="container-fluid grid">
-          <div class="row gy-5">
-
-            <div class="col-12 p-0 col-sm-12 col-lg-5  mx-auto" id="play-pause0">
-              <div id="player"
-                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
-                <p id="music" class="m-0">Deep meditation Music</p>
-                <button class="icons bg-transparent border-0 text-danger-emphasis fs-2">
-                  <i class="bi bi-play-circle-fill" class=""></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="col-12 p-0 col-sm-12 col-lg-5  mx-auto" role="button" id="play-pause1">
-              <div id="player"
-                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
-                <p id="music" class="m-0">Krishna Flute meditation music</p>
-                <button class="icons bg-transparent border-0 text-danger-emphasis fs-2">
-                  <i class="bi bi-play-circle-fill"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="clips p-0 col-12 col-sm-12 col-lg-5 mx-auto" role="button" id="play-pause2">
-              <div id="player"
-                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
-                <p id="music" class="m-0">River meditation music</p>
-                <button class="icons bg-transparent border-0 fs-2 text-danger-emphasis">
-                  <i class="bi bi-play-circle-fill"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="clips p-0 col-12 col-sm-12 col-lg-5  mx-auto" role="button" id="play-pause3">
-              <div id="player"
-                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
-                <p id="music" class="m-0">Piano meditation music</p>
-                <button class="icons bg-transparent border-0 fs-2 text-danger-emphasis">
-                  <i class="bi bi-play-circle-fill"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="clips p-0 col-12 col-sm-12 col-lg-5 mx-auto" role="button" id="play-pause4">
-              <div id="player"
-                   class="d-flex align-items-center rounded-4 justify-content-between p-3 text-uppercase text-white fw-medium">
-                <p id="music" class="m-0">Himalayas meditation music</p>
-                <button class="icons bg-transparent border-0 fs-2 text-danger-emphasis">
-                  <i class="bi bi-play-circle-fill"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <br />
-          <audio id="river-sound" src="Images/river-music.mp3"></audio>
-          <audio id="flute-sound" src="Images/krishna.mp3"></audio>
-          <audio id="deep-music" src="Images/deep-music.mp3"></audio>
-          <audio id="piano-sound" src="Images/piano-music.mp3"></audio>
-          <audio id="himalayas-sound" src="Images/himalaya-music.mp3"></audio>
-        </div>
-
-      </div>
-
-      <!-- Iframe  -->
-      <div class="container-fluid p-0 m-0 d-flex">
-        <iframe title=" Krishna Artifacts" frameborder="0" allowfullscreen mozallowfullscreen="true"
-                webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
-                execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="530"
-                style="padding: 0; margin: 0;" src="https://sketchfab.com/models/506d0a8f43884c458e5a78156151ff09/embed">
-        </iframe>
-      </div>
+      <!-- Footer  -->
+      <footer
+        class="customFooter container-fluid py-3 py-sm-5 h-25 d-flex px-5 flex-column justify-content-between"
+        style="background-color: #2980b9"></footer>
     </div>
 
-    <!-- Footer  -->
-    <footer class="customFooter container-fluid py-3 py-sm-5 h-25 d-flex px-5 flex-column justify-content-between"
-            style="background-color: #2980b9;"></footer>
-
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-          crossorigin="anonymous"></script>
-  <script type="text/javascript"
-          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script src="./commonScript.js"></script>
-  <script src="meditation.js"></script>
-  <script src="./script.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./commonScript.js"></script>
+    <script src="meditation.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

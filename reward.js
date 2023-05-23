@@ -74,13 +74,13 @@ function startBreakTimer() {
 }
 
 function resetTimer() {
-  console.log('reset clicked!!!!');
-  startButton.textContent = 'Start';
-  defaultTime = 1 * 1;
-  cycleCount = 0;
-  clearInterval(countdown);
-  timerDisplay(defaultTime);
-}
+    console.log('reset clicked!!!!');
+    startButton.textContent = 'Start';
+    defaultTime = 0; // Set defaultTime to 0
+    cycleCount = 0;
+    clearInterval(countdown);
+    timerDisplay(defaultTime);
+  }
 
 startButton.addEventListener('click', startTimer);
 resetButton.addEventListener('click', resetTimer);
