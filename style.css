@@ -25,7 +25,7 @@ body {
 /* Navbar Start */
 
 .nav {
-  height: 70px;
+  height: 100px;
   background-color: #2980b9 !important;
   box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4);
   display: flex;
@@ -37,6 +37,22 @@ body {
   top: 0;
   font-family: sans-serif;
   user-select: none;
+  padding-left: 1rem;
+}
+.navbar
+{
+  border: none;
+  height: 10vh;
+}
+.navbar li
+{
+  padding: 2rem;
+}
+
+.collapse
+{
+  display: none;
+  border: none;
 }
 
 .navbar-logo {
