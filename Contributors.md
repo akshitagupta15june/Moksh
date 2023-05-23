@@ -8,3 +8,5 @@
 - [Harmeet Singh](https://github.com/harmeetsingh11)
 - [Hritik Singhal](https://github.com/hritik1503)
 - [Akshit Agrawal](https://github.com/justAkshitAgrawal)
+- [Sayantan Choudhury](https://github.com/Sch476)
+

@@ -62,7 +62,7 @@ let questions = [
     options: [
       "Song of the Lord",
       "Song of Happiness",
-      "God's pasttimes",
+      "God's past times",
       "Song of the Universe"]
   },
   {
@@ -72,7 +72,7 @@ let questions = [
     options: [
       "Dhritarashtra's advisor",
       "Arjuna's cousin",
-      "Dhritarashtra's advisor",
+      "Arjuna's advisor",
       "Duryodhana's brother"]
   },
   {
