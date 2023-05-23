@@ -60,9 +60,12 @@ body {
 }
 .navbar-nav
 {
-  margin: 0 9rem;
   display: flex;
-  justify-content: space-between;
+}
+.nav-link
+{
+  font-size: larger;
+  font-weight: 400;
 }
 li
 {
@@ -74,6 +77,7 @@ li
   color: #ffffff;
   font-size: 1rem;
 }
+
 .navbar-logo {
   display: flex;
   align-items: center;
