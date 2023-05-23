@@ -24,7 +24,7 @@ body {
 } 
 /* Navbar Start */
 
-.nav {
+/* .nav {
   height: 100px;
   background-color: #2980b9 !important;
   box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4);
@@ -51,10 +51,29 @@ body {
 
 .collapse
 {
-  display: none;
   border: none;
+  width: 100vw;
+  background-color: #2980b9;
+} */
+.navbar{
+ background: #2980b9;
 }
-
+.navbar-nav
+{
+  margin: 0 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+li
+{
+  margin: 0 1rem;
+ 
+}
+.nav-item
+{
+  color: #ffffff;
+  font-size: 1rem;
+}
 .navbar-logo {
   display: flex;
   align-items: center;
