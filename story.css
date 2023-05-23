@@ -19,7 +19,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Styling for the results. */
+/* Styling for the results */
 #results {
   margin-top: 20px;
   font-size: 1.2em;
@@ -58,18 +58,14 @@ body {
 
 .story-footer-sm-text {
   margin-top: -22px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .story-footer-text {
   font-weight: 400;
   color: #212529;
   font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .story-footer-line-br {
@@ -80,7 +76,6 @@ body {
 
 .story-footer-copyright {
   width: 100%;
-
   display: flex;
   justify-content: space-around;
 }
@@ -115,10 +110,8 @@ body {
   display: none;
 }
 
-
 .top img {
   width: 25rem;
-
   border-radius: 10px;
 }
 
@@ -163,5 +156,45 @@ body {
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+}
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .images {
+    margin: 0;
+  }
+
+  .top img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .bottom {
+    flex-wrap: wrap;
+  }
+
+  .bottom .img img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-header,
+  .bottom-header {
+    font-size: 40px;
+  }
+
+  .quiz_btn {
+    font-size: 1rem;
+  }
 }
