@@ -399,7 +399,10 @@ footer {
   padding: 20px 0;
   font-size: 18px;
 }
-
+.logo {
+  height: 54px;
+  margin-right: 10px;
+  filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg) brightness(97%) contrast(99%);}
 footer .logo-title {
   display: flex;
   justify-content: center;
@@ -432,6 +435,42 @@ footer .quick-links ul li a:hover {
   padding: 5px;
   background-color: #b1bce0;
   color: #666;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 10px;
+}
+h4{
+  padding-left: 46.5%;
+  padding-bottom: 1%;
+}
+
+.matrix{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+}
+
+.matrix-item {
+  padding: 10px;
+  text-align:center;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border-color: #fff;
+  margin: 20px 0;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
