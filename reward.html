@@ -8,6 +8,10 @@
   <title>Pomodoro Rule</title>
 
   <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="fontawesome.min.css">
@@ -27,47 +31,57 @@
 
 <body>
   <script src="script.js"></script>
-  <!-- Navbar Start-->
+  
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
 
-  <div class="nav">
     <!-- Nav Logo & Name -->
-    <div class="navbar-logo">
-      <img src="./Images/moksh.png" alt="Moksh Logo" />
-      <a href="index.html"><span>Moksh</span></a>
-    </div>
+    <img src="./Images/moksh.png" class="d-inline-block align-top" alt="Moksh Logo" />
+    <!-- <a href="index.html"><span>Moksh</span></a>  -->
 
-    <!-- Nav menu -->
-    <ul class="nav-menu">
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li class="dropdown">
-        <a href="#"
-          >Features
-          <i class="fas fa-caret-down"></i>
-        </a>
-        <!-- Dropdown -->
-        <ul>
-          <li><a href="meditation.html">Augmented Reality Meditation</a></li>
-          <li><a href="event.html">Iskcon Events</a></li>
-          <li>
-            <a href="story.html">Divine Activities for all Generation</a>
-          </li>
-          <li><a href="reward.html">Pomodoro Spritual Break</a></li>
-          <li><a href="motivation.html">Read a Shlok</a></li>
-          <li><a href="rejuvenate.html">Rejuvenate</a></li>
-        </ul>
-      </li>
-    </ul>
-    <!-- Google Translate -->
-    <div id="google_translate_element">
-      <script
-        type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-      ></script>
+    <a class="navbar-brand" href="index.html"><span>Moksh</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto me-auto">
+        <li class="nav-item active about ">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle features" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="meditation.html">Augmented Reality Meditation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="event.html">Iskcon Events</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="story.html">Divine Activities for all Generation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="reward.html">Pomodoro Spritual Break</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="motivation.html">Read a Shlok</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="rejuvenate.html">Rejuvenate</a>
+          </div>
+        </li>
+
+      </ul>
+      <!-- Google Translate -->
+      <div id="google_translate_element">
+        <script type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+
     </div>
-  </div>
-  <!-- Navbar Ends -->
+  </nav>
+
+  <!-- Bootstrap Navbar ends -->
 
   <div class="inline-text">
     <h1><b>Pomodoro Feature</b></h1>
@@ -161,7 +175,11 @@
       </div>
     </footer>
     
- 
+ <!-- bootstrap js -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+ crossorigin="anonymous"></script>
+   
 
 
 </body>

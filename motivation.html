@@ -5,6 +5,10 @@
   <title>Random Gita Shlok Generator</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="motivation.css" rel="stylesheet" type="text/css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
@@ -13,93 +17,114 @@
 
 <body>
   <script src="script.js"></script>
-  <!-- Navbar Start-->
 
-  <div class="nav">
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+
     <!-- Nav Logo & Name -->
-    <div class="navbar-logo">
-      <img src="./Images/moksh.png" alt="Moksh Logo" />
-      <a href="index.html"><span>Moksh</span></a>
-    </div>
+    <img src="./Images/moksh.png" class="d-inline-block align-top" alt="Moksh Logo" />
+    <!-- <a href="index.html"><span>Moksh</span></a>  -->
 
-    <!-- Nav menu -->
-    <ul class="nav-menu">
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li class="dropdown">
-        <a href="#">Features
-          <i class="fas fa-caret-down"></i>
-        </a>
-        <!-- Dropdown -->
-        <ul>
-          <li><a href="meditation.html">Augmented Reality Meditation</a></li>
-          <li><a href="event.html">Iskcon Events</a></li>
-          <li>
-            <a href="story.html">Divine Activities for all Generation</a>
-          </li>
-          <li><a href="reward.html">Pomodoro Spritual Break</a></li>
-          <li><a href="motivation.html">Read a Shlok</a></li>
-          <li><a href="rejuvenate.html">Rejuvenate</a></li>
-        </ul>
-      </li>
-    </ul>
-    <!-- Google Translate -->
-    <div id="google_translate_element">
-      <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </div>
-  </div>
-  <!-- Navbar Ends -->
+    <a class="navbar-brand" href="index.html"><span>Moksh</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  
+    <!-- Navbar Menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto me-auto">
+        <li class="nav-item active about ">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle features" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="meditation.html">Augmented Reality Meditation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="event.html">Iskcon Events</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="story.html">Divine Activities for all Generation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="reward.html">Pomodoro Spritual Break</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="motivation.html">Read a Shlok</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="rejuvenate.html">Rejuvenate</a>
+          </div>
+        </li>
+
+      </ul>
+      <!-- Google Translate -->
+      <div id="google_translate_element">
+        <script type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Bootstrap Navbar ends -->
+
+
   <!-- Shloka Section -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <body onload="startTime(); startDate()">
-    
 
-      <div id="date"></div>
-      <div id="display"></div>
 
-      <div id="content">
-        <p id="quote">"Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful
-          reactions. Do not fear." <br />- Lord Sri Krishna - Bhagvad-gita 18.66</p>
-          <button id="gen" onclick="genQuote()">New Quote</button>
-          <a id="twitter-share-button" class="twitter-share-button" target="_blank"
-            href="https://twitter.com/intent/tweet?text=Abandon%20all%20varieties%20of%20religion%20and%20just%20surrender%20unto%20me.%20I%20shall%20deliver%20you%20from%20all%20sinful%20reactions.%20Do%20not%20fear.%20-%20Lord%20sri%20Krishna-%20Bhagvad-Gita%2018.66"><i
-              class="fa fa-twitter" aria-hidden="true"></i></a>
+    <div id="date"></div>
+    <div id="display"></div>
+
+    <div id="content">
+      <p id="quote">"Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful
+        reactions. Do not fear." <br />- Lord Sri Krishna - Bhagvad-gita 18.66</p>
+      <button id="gen" onclick="genQuote()">New Quote</button>
+      <a id="twitter-share-button" class="twitter-share-button" target="_blank"
+        href="https://twitter.com/intent/tweet?text=Abandon%20all%20varieties%20of%20religion%20and%20just%20surrender%20unto%20me.%20I%20shall%20deliver%20you%20from%20all%20sinful%20reactions.%20Do%20not%20fear.%20-%20Lord%20sri%20Krishna-%20Bhagvad-Gita%2018.66"><i
+          class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+
+    <footer class="footer">
+      <div class="logo-title">
+        <img class="logo" src="Images/moksh.png" alt="Moksh Logo" />
+        <h3 class="title">
+          Moksh
+        </h3>
+      </div>
+      <div class="tagline">
+        <p>
+          A Spiritual Productivity Tool for Mental Wellness
+        </p>
+      </div>
+      <div class="intro">
+        <p id="quote2">
+          Moksh is a spiritual productivity tool designed for individuals who
+          want to unlock their potential and achieve true balance in life.
+        </p>
+      </div>
+      <hr color="#000" size="1" />
+      <div class="copyright" style="display: flex; justify-content: space-around">
+        <p id="quote3">
+          Made with ❤️ by Akshita during XPRESSION'23
+        </p>
+        <p id="quote4">
+          &copy; 2023 Moksh. All rights reserved.
+        </p>
       </div>
 
-      <footer class="footer">
-        <div class="logo-title">
-          <img class="logo" src="Images/moksh.png" alt="Moksh Logo" />
-          <h3 class="title">
-            Moksh
-          </h3>
-        </div>
-        <div class="tagline">
-          <p>
-            A Spiritual Productivity Tool for Mental Wellness
-          </p>
-        </div>
-        <div class="intro">
-          <p id="quote2">
-            Moksh is a spiritual productivity tool designed for individuals who
-            want to unlock their potential and achieve true balance in life.
-          </p>
-        </div>
-        <hr color="#000" size="1" />
-        <div class="copyright" style="display: flex; justify-content: space-around">
-          <p id="quote3">
-            Made with ❤️ by Akshita during XPRESSION'23
-          </p>
-          <p id="quote4">
-            &copy; 2023 Moksh. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <!-- bootstrap js -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+    </footer>
     </div>
 
     <!-- <div id="b-nav">
@@ -107,6 +132,6 @@
     </div> -->
 
     <script src="motivation.js"></script>
-  
+
 
 </html>
