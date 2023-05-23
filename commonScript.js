@@ -5,7 +5,7 @@ const customFooter = document.querySelector(".customFooter");
     <nav class="navbar navbar-expand-sm" style="background-color: #2980b9;">
         <div class="container-fluid">
           <a class="navbar-brand text-white p-0" href="index.html">
-            <img src="./Images/moksh.png" alt="Moksh Logo" class="logo" />
+            <img src="./Images/moksh.jpeg" alt="Moksh Logo" class="logo" />
             <span class="fw-semibold text-uppercase">Moksh</span>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
