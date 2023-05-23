@@ -270,6 +270,16 @@ a.dropdown-item{
   /* opacity: 0; */
   transform: translateY(82%);
   transition: all 0.3s ease-in;
+  width: 400px;
+  /* height: 500px; */
+  margin: 20px;
+  text-align: center;
+  /* border: 1px solid transparent; */
+  box-shadow: 0px 0px 5px 0 #494949;
+  transition: all .55s ease;
+
+  border-radius: 10px !important;
+  overflow: hidden;
 }
 
 .card img {
@@ -310,30 +320,35 @@ a.dropdown-item{
   margin-top: 12px;
   margin-bottom: 14px;
   color: aliceblue;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
 }
 
+.feature-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
 
+  transition: grid-template-rows 0.25s ease-in-out;
+}
 
-.card p {
-  font-size: 14px;
-  padding: 10px 5px;
+.feature-wrapper .feature-description {
+  overflow: hidden;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin: 5px 0 0 0;
+
+  padding: 4px 0;
+  background-color: rgb(74, 103, 164);
   color: white;
-  text-align: center;
+  
 }
 
-.card button {
-  background-color: aliceblue;
-  color: #2980b9;
-  border: 2px solid aliceblue;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: black;
-  font-size: 15px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+
+
+
 
 .card button:hover {
   background-color: transparent;
