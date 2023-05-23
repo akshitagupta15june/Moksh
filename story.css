@@ -109,6 +109,7 @@ body {
   padding-top: 5px;
   gap: 50px;
   margin-left: 8rem;
+  overflow-x: scroll;
 }
 
 .top ::-webkit-scrollbar {
