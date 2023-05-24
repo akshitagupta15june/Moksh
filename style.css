@@ -175,6 +175,10 @@ a.features {
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
+  margin-top: 20px;
+  max-width: 700px;
+  text-align: center;
+  margin-left: 30px;
 }
 
 .card-container {
