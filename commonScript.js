@@ -1,11 +1,12 @@
-const customNavbar = document.querySelector(".customNavbar");
-const customFooter = document.querySelector(".customFooter");
-(() => {
+const customNavbar = document.querySelector( ".customNavbar" )
+const customFooter = document.querySelector( ".customFooter" );
+( () =>
+{
   let navbarContent = `
     <nav class="navbar navbar-expand-sm" style="background-color: #2980b9;">
         <div class="container-fluid">
           <a class="navbar-brand text-white p-0" href="index.html">
-            <img src="./Images/moksh.jpeg" alt="Moksh Logo" class="logo" />
+            <img src="../Images/moksh.png" alt="Moksh Logo" class="logo" />
             <span class="fw-semibold text-uppercase">Moksh</span>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -14,10 +15,10 @@ const customFooter = document.querySelector(".customFooter");
           <div class="collapse navbar-collapse " id="collapsibleNavbar">
             <ul class="navbar-nav w-100 ">
               <li class="nav-item ms-auto ">
-                <a class="nav-link text-white text-uppercase fw-semibold fs-6" href="./index.html">Home</a>
+                <a class="nav-link text-white text-uppercase fw-semibold fs-6" href="../index.html">Home</a>
               </li>
               <li class="nav-item  ms-auto">
-                <a class="nav-link text-white text-uppercase fs-6 fw-semibold" href="./Blog.html">Blog</a>
+                <a class="nav-link text-white text-uppercase fs-6 fw-semibold" href="../Blogs/Blog.html">Blog</a>
               </li>
 
               <li class="nav-item dropdown ms-auto">
@@ -27,29 +28,29 @@ const customFooter = document.querySelector(".customFooter");
 
                 <ul class="dropdown-menu dropdown-menu-start p-0 mx-0 my-2 w-auto" style="background-color:#2980b9;">
                   <li>
-                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./meditation.html">Augmented
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="../AR_Meditate/meditation.html">Augmented
                       Reality
                       Meditation</a>
                   </li>
                   <li>
-                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./event.html">Iskon Events</a>
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="../Iskcon/event.html">Iskon Events</a>
                   </li>
                   <li>
-                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./story.html">Divine Activities
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="../Divine_page/story.html">Divine Activities
                       for all
                       Generation</a>
                   </li>
                   <li>
-                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./reward.html">Pomodoro
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="../Pomodro_page/reward.html">Pomodoro
                       Spiritual Break</a>
                   </li>
                   <li>
-                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="./motivation.html">Read a
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="../shlok_page/motivation.html">Read a
                       Shlok</a>
                   </li>
                   <li>
                     <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4"
-                       href="./rejuvenate.html">Rejuvenate</a>
+                       href="../Rejuvenate_page/rejuvenate.html">Rejuvenate</a>
                   </li>
                 </ul>
               </li>
@@ -60,15 +61,15 @@ const customFooter = document.querySelector(".customFooter");
           </div>
         </div>
       </nav> 
-    `;
-  customNavbar.innerHTML = navbarContent;
+    `
+  customNavbar.innerHTML = navbarContent
 
   let footerContent = `
      <!-- Row 1  -->
         <div class="container-fluid d-flex align-items-center px-0 justify-content-sm-between flex-column flex-sm-row">
 
           <div class='d-flex align-items-center justify-content-center'>
-            <img class="logo" src="Images/moksh.png" alt="Moksh Logo" style="
+            <img class="logo" src="../Images/moksh.png" alt="Moksh Logo" style="
                                   height: 60px;
                                   width: 60px;
                                   margin-right: 10px;
@@ -103,6 +104,6 @@ const customFooter = document.querySelector(".customFooter");
             &copy; 2023 Moksh. All rights reserved.
           </p>
         </div>
-  `;
-  customFooter.innerHTML = footerContent;
-})();
+  `
+  customFooter.innerHTML = footerContent
+} )()
