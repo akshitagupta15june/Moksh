@@ -66,6 +66,9 @@ body {
 #about3,
 #about4 {
   overflow: hidden;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #about1 p,
