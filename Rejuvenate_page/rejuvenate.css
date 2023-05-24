@@ -3,6 +3,29 @@
   text-decoration: none;
 }
 
+.return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #4ade80;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.return-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 body {
   background-color: #2980b9;
   background-repeat: no-repeat;
