@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!-- editted by thealonemusk -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhagwad Gita Quiz</title>
+    <title>Bhagavad Gita Quiz</title>
     <link rel="stylesheet" href="quiz.css">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg">
 </head>
 <body>
-      <!-- Navbar -->
-      <div class="nav">
+    <!-- Navbar -->
+    <div class="nav">
         <!-- Nav Logo & Name -->
         <div class="navbar-logo">
-          <img src="./Images/moksh.png" alt="Moksh Logo" />
-          <a href="index.html"><span>Moksh</span></a>
+            <img src="./Images/moksh.png" alt="Moksh Logo">
+            <a href="index.html"><span>Moksh</span></a>
         </div>
-  
+
         <!-- Nav menu -->
         <ul class="nav-menu">
-          <li>
-            <a class="active" href="index.html">Home</a>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              >Features
-              <i class="fas fa-caret-down"></i>
-            </a>
-            <!-- Dropdown -->
-            <ul style="list-style: none;" >
-              <li><a href="meditation.html">Augmented Reality Meditation</a></li>
-              <li><a href="event.html">Iskcon Events</a></li>
-              <li>
-                <a href="story.html">Divine Activities for all Generation</a>
-              </li>
-              <li><a href="reward.html">Pomodoro Spritual Break</a></li>
-              <li><a href="motivation.html">Read a Shlok</a></li>
-              <li><a href="rejuvenate.html">Rejuvenate</a></li>
-            </ul>
-          </li>
+            <li>
+                <a class="active" href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Features <i class="fas fa-caret-down"></i></a>
+                <!-- Dropdown -->
+                <ul style="list-style: none;">
+                    <li><a href="meditation.html">Augmented Reality Meditation</a></li>
+                    <li><a href="event.html">Iskcon Events</a></li>
+                    <li><a href="story.html">Divine Activities for all Generations</a></li>
+                    <li><a href="reward.html">Pomodoro Spiritual Break</a></li>
+                    <li><a href="motivation.html">Read a Shlok</a></li>
+                    <li><a href="rejuvenate.html">Rejuvenate</a></li>
+                </ul>
+            </li>
         </ul>
         <!-- Google Translate -->
         <div id="google_translate_element">
-          <script
-            type="text/javascript"
-            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          ></script>
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
-      </div>
+    </div>
   
-    
-    <div class="start_btn"><button>Start Bhagwad Gita Quiz</button></div>
+    <div class="start_btn">
+        <button>Start Bhagavad Gita Quiz</button>
+    </div>
     
     <div class="info_box">
         <div class="info-title"><span>Some Rules of this Quiz</span></div>
         <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">1. You will have only <span>15 seconds</span> for each question.</div>
             <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">3. You can't select any option once time is up.</div>
+            <div class="info">4. You can't exit from the Quiz while playing.</div>
+            <div class="info">5. You'll get points based on your correct answers.</div>
         </div>
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
             <button class="restart">Continue</button> 
         </div>
     </div>
+    
     <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
-            <div class="title">Bhagwad Gita Quiz</div>
+            <div class="title">Bhagavad Gita Quiz</div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
                 <div class="timer_sec">15</div>
@@ -80,19 +75,12 @@
             <div class="time_line"></div>
         </header>
         <section>
-            <div class="que_text">
-                
-            </div>
-            <div class="option_list">
-                
-            </div>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
         </section>
-       
         <footer>
-            <div class="total_que"> 
-           
-            </div>
-            <button class="next_btn">Next Ques</button>
+            <div class="total_que"></div>
+            <button class="next_btn">Next Question</button>
         </footer>
     </div>
    
@@ -101,9 +89,7 @@
             <i class="fas fa-crown"></i>
         </div>
         <div class="complete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-           
-        </div>
+        <div class="score_text"></div>
         <div class="buttons">
             <button class="restart">Replay Quiz</button>
             <button class="quit">Quit Quiz</button>
@@ -111,8 +97,6 @@
     </div>
   
     <script src="question.js"></script>
-    
     <script src="quiz.js"></script>
 </body>
-</html>
 </html>
