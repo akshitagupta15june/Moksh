@@ -215,26 +215,29 @@ p :hover {
 }
 
 #gen {
-  outline: none;
-  padding-top: 5px;
-  text-decoration: none;
-  opacity: 0.6;
-  background-color: rgb(255, 255, 255);
-  color: rgb(3, 3, 3);
-  border: thin solid rgb(0, 0, 0);
-  height: 40px;
-  width: 100px;
-  border-radius: 2px;
-  transition: 0.5s;
-  padding-bottom: 5px;
+  width:120px;
+  height:35px;
+  background-color: rgba(70,145,250);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bolder;
+  
+}
+#gen img{
+  width: 20px;
+  float: right;
+  transform: translateY(-15%);
+  
+  
 }
 
 #gen:hover {
-  background-color: rgb(70, 145, 250);
+  background-color: rgb(70, 145, 250,0.8);
   color: black;
   border: thin solid black;
-  opacity: 0.8;
   cursor: pointer;
+  
 }
 
 #gen a {
