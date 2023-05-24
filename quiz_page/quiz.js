@@ -79,7 +79,7 @@ next_btn.onclick = ()=>{
     }
 }
 
-function showQuetions(index){
+function showQuetions(index){ 
     const que_text = document.querySelector(".que_text");
     
     let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';

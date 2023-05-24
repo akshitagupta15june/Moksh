@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
   <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="./commonStyles.css" type="text/css">
+  <link rel="stylesheet" href="../commonStyles.css" type="text/css">
   <link href="./Blog.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -20,32 +20,39 @@
   <div class="container-fluid min-vh-100 h-auto p-0 m-0 d-flex flex-column">
 
     <!-- Responsive navbar  -->
-    <div class="customNavbar">
+    <div class="customNavbar"></div>
 
+    <!-- Blog Cards  -->
+    <div class="container-fluid px-4 py-5 d-flex align-items-center flex-grow-1">
 
-    </div>
+      <div class="blog w-100 d-flex flex-sm-row flex-column align-items-sm-start align-items-center">
 
-    <div class="container-fluid p-4 blogs flex-grow-1 grid">
-
-      <div class="row gap-5">
-
-        <div class="rounded-2 col-12 col-sm-5 col-lg-6 p-3 d-flex align-items-center m-0" style="border: 2px solid #2980b9;">
-          <img src="https://user-images.githubusercontent.com/57909583/236841961-6320c35c-a47c-4aab-8e59-c1dc09dc0400.png" alt="blogImage"
-               style="height: 100px; width: 100px;">
-          <div class="content ps-4">
-            <p class="fs-5 p-0 m-0" style="color: #2980b9;">Power of Knowledge</p>
-            <a href="Words.html" class="btn btn-success mt-3 fs-6">Read More</a>
+        <!-- Blog - 1  -->
+        <div class="blogCardWrapper text-dark p-0 me-5">
+          <img src="../Images/blogImage1.webp" alt="" />
+          <div class="blogCardContent">
+            <p class="m-0 fw-semibold text-uppercase">Words</p>
+            <a href="./Words.html" class="blog-card-button">Read More</a>
           </div>
         </div>
 
+        <!-- Blog - 2  -->
+        <div class="blogCardWrapper text-dark p-0 me-5">
+          <img src="../Images/blogImage2.webp" alt="" />
+          <div class="blogCardContent ">
+            <p class="m-0 fw-semibold text-uppercase">Weakness is death, Strength is life.</p>
+            <a href="./Strength.html" class="blog-card-button">Read More</a>
+          </div>
+        </div>
 
       </div>
 
     </div>
 
     <!-- Footer  -->
-    <footer class="customFooter container-fluid py-3 py-sm-5 h-25 d-flex px-5 flex-column justify-content-between"
+    <footer class="customFooter container-fluid py-3 py-sm-5 h-25 d-flex px-3 flex-column justify-content-between"
             style="background-color: #2980b9;"></footer>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -53,8 +60,8 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript"
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script src="./commonScript.js"></script>
-  <script src="script.js"></script>
+  <script src="../commonScript.js"></script>
+  <script src="../script.js"></script>
 
 </body>
 
