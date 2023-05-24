@@ -9,19 +9,20 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
 p {
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 ol {
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 .pomodoro-timer {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 .timer {
   display: flex;
@@ -30,7 +31,7 @@ ol {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  background-color: white;
+  background-color: #fff;
   height: 3rem;
 }
 
@@ -61,20 +62,17 @@ ol {
 button {
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   background-color: #2980b9;
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
   margin: 5px;
-  margin-right: 10;
+  margin-right: 10px;
   cursor: pointer;
 }
 
-.start {
-  border-radius: 10px;
-}
-
+.start,
 .reset {
   border-radius: 10px;
 }
@@ -82,20 +80,20 @@ button {
 p a button {
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   background-color: #2980b9;
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
   margin: 5px;
-  margin-right: 10;
+  margin-right: 10px;
   cursor: pointer;
 }
 
 div p a {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   color: rgb(81, 31, 31);
   border: none;
   border-radius: 5px;
@@ -110,8 +108,8 @@ div p a {
 }
 
 button:hover {
-  background: #3382F1;
-  color: black;
+  background: #3382f1;
+  color: #000;
 }
 
 button:active {
