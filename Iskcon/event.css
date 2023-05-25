@@ -98,3 +98,10 @@ button.start-btn {
 .cards{
   display: flex;
 }
+
+.nav-menu>li a{
+  /* position: relative; */
+  display: flex;
+  justify-content: space-around;
+  
+}
