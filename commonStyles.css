@@ -72,5 +72,5 @@ select {
 
   border: 0;
   cursor: pointer;
-  box-shadow: 0px 0px 10px 1px palevioletred;
+  box-shadow: 0px 0px 10px 1px #2980b9;
 }
