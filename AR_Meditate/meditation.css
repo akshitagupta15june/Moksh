@@ -21,7 +21,7 @@ iframe {
 .qr-container {
   width: auto;
 }
-
+ 
 @media screen and (max-width: 1200px) {
   .qr-container {
     width: 100% !important;
