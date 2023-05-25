@@ -10,8 +10,9 @@
 }
 
 .logo {
-  height: 50px;
-  width: 50px;
+  background-color: white;
+ border-radius: 10%;
+  width: 60px;
 }
 
 select {
