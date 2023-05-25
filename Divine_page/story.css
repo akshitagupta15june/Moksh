@@ -58,18 +58,18 @@ body {
 
 .story-footer-sm-text {
   margin-top: -22px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .story-footer-text {
   font-weight: 400;
   color: #212529;
   font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .story-footer-line-br {
@@ -115,7 +115,6 @@ body {
 .top ::-webkit-scrollbar {
   display: none;
 }
-
 
 .top img {
   width: 25rem;
@@ -164,5 +163,26 @@ body {
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+}
+/* scroll to top */
+.scrollToTopContainer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 2rem 2rem 0;
 
+  height: fit-content;
+  width: fit-content;
+  z-index: 100000;
+}
+
+.scrollToTopButton {
+  border-radius: 100%;
+  height: 42px;
+  width: 42px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px palevioletred;
 }

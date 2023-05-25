@@ -271,6 +271,15 @@
   <p>A spirtual productivity tool for mental wellness</p>
   
 </div> -->
+  <div class="scrollToTopContainer">
+        <button
+          id="scrollToButton"
+          class="HideElement scrollToTopButton"
+          title="Click to scroll top"
+        >
+          <img src="./Images/Chevron.svg" alt="Scroll-To-Top" />
+        </button>
+      </div>
 
   <footer style="padding: 5px 10px">
     <div class="logo-title">
@@ -325,5 +334,22 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 </body>
+<script>
+  const scrollToTopHandler = () => {
+  let btn = document.getElementById("scrollToButton");
+  if (window.scrollY > 500) {
+    btn.className = "scrollToTopButton";
+  } else {
+    btn.className = "HideElement scrollToTopButton";
+  }
+};
+window.addEventListener("scroll", scrollToTopHandler);
+document.getElementById("scrollToButton").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
+</script>
 </html>

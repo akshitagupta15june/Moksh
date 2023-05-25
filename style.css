@@ -14,14 +14,14 @@ p {
   font-size: 20px;
 }
 body {
-  background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
+  background-image: url("https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2980b9;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-} 
+}
 /* Navbar Start */
 
 .nav {
@@ -90,7 +90,7 @@ body {
 }
 
 .nav ul li a.active:hover {
-  color: black ;
+  color: black;
   text-decoration: underline;
   text-decoration-color: black;
 }
@@ -121,13 +121,13 @@ body {
 
 .nav ul ul li {
   width: 310px;
-  display: list-item; 
-   position: relative;
+  display: list-item;
+  position: relative;
   border: 1px solid #8ad0ff;
   border-top: none;
 }
 
-a.dropdown-item{
+a.dropdown-item {
   margin: 0 !important;
 }
 /* ul.dropdown-menu.show{
@@ -177,7 +177,7 @@ a.dropdown-item{
   font-size: 20px;
   line-height: 1.5;
   color: #2980b9;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .content img {
@@ -229,7 +229,7 @@ a.dropdown-item{
 
 .card {
   background-color: #2980b9;
-  background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
+  background-image: url("https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg");
   background-size: cover;
   color: #2980b9;
   width: 400px;
@@ -238,7 +238,7 @@ a.dropdown-item{
   text-align: center;
   /* border: 1px solid transparent; */
   box-shadow: 0px 0px 5px 0 #494949;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
 
   border-radius: 10px !important;
   overflow: hidden;
@@ -248,7 +248,6 @@ a.dropdown-item{
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
 }
 
 .feature-wrapper {
@@ -269,9 +268,7 @@ a.dropdown-item{
   padding: 4px 0;
   background-color: rgb(74, 103, 164);
   color: white;
-  
 }
-
 
 .card p {
   font-size: 18px;
@@ -281,7 +278,7 @@ a.dropdown-item{
   text-align: center;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-8px);
 }
 
@@ -292,7 +289,6 @@ a.dropdown-item{
 .card .feature-description button {
   background-color: #0e1f2b;
   border: 1px solid black;
-
 
   padding: 10px 20px;
   margin-bottom: 10px;
@@ -330,7 +326,7 @@ a.dropdown-item{
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  left:8rem;
+  left: 8rem;
 }
 
 .circle1 .img1 {
@@ -347,7 +343,7 @@ a.dropdown-item{
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  right:10rem;
+  right: 10rem;
 }
 
 .circle2 .img2 {
@@ -364,8 +360,8 @@ a.dropdown-item{
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top:15rem;
-  right:4rem;
+  top: 15rem;
+  right: 4rem;
 }
 
 .circle3 .img3 {
@@ -382,8 +378,8 @@ a.dropdown-item{
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top:18rem;
-  left:1.5rem;
+  top: 18rem;
+  left: 1.5rem;
 }
 
 .circle4 .img4 {
@@ -400,7 +396,7 @@ a.dropdown-item{
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top:-8rem;
+  top: -8rem;
 }
 
 .circle5 .img5 {

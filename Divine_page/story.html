@@ -174,9 +174,35 @@
     </div>
   </footer>
 
+       <div class="scrollToTopContainer">
+        <button
+          id="scrollToButton"
+          class="HideElement scrollToTopButton"
+          title="Click to scroll top"
+        >
+          <img src="../Images/Chevron.svg" alt="Scroll-To-Top" />
+        </button>
+      </div>
 
   <script src="./story.js"></script>
+<script>
+  const scrollToTopHandler = () => {
+  let btn = document.getElementById("scrollToButton");
+  if (window.scrollY > 500) {
+    btn.className = "scrollToTopButton";
+  } else {
+    btn.className = "HideElement scrollToTopButton";
+  }
+};
+window.addEventListener("scroll", scrollToTopHandler);
+document.getElementById("scrollToButton").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
+</script>
 </body>
 
 </html>

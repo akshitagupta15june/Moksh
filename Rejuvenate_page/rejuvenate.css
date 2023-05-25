@@ -6,10 +6,9 @@
 body {
   background-color: #2980b9;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-size: cover;
 }
-
 
 body {
   background-color: #2980b9;
@@ -52,7 +51,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-right: 5%;
-  background-color: #fff; 
+  background-color: #fff;
   border-radius: 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   margin-bottom: 20px;
@@ -93,7 +92,7 @@ body {
 #about3 span,
 #about4 span {
   width: 100%;
-  background-color: #01BAEF;
+  background-color: #01baef;
   border-radius: 0 0 40px 40px;
   position: relative;
   top: 25px;
@@ -111,6 +110,29 @@ body {
 #about1 h2,
 #about2 h2,
 #about3 h2,
-#about4 h2{
+#about4 h2 {
   text-align: center;
+}
+
+/* scroll to top */
+.scrollToTopContainer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 2rem 2rem 0;
+
+  height: fit-content;
+  width: fit-content;
+  z-index: 100000;
+}
+
+.scrollToTopButton {
+  border-radius: 100%;
+  height: 42px;
+  width: 42px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px palevioletred;
 }

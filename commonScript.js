@@ -1,7 +1,6 @@
-const customNavbar = document.querySelector( ".customNavbar" )
-const customFooter = document.querySelector( ".customFooter" );
-( () =>
-{
+const customNavbar = document.querySelector(".customNavbar");
+const customFooter = document.querySelector(".customFooter");
+(() => {
   let navbarContent = `
     <nav class="navbar navbar-expand-sm" style="background-color: #2980b9;">
         <div class="container-fluid">
@@ -61,8 +60,8 @@ const customFooter = document.querySelector( ".customFooter" );
           </div>
         </div>
       </nav> 
-    `
-  customNavbar.innerHTML = navbarContent
+    `;
+  customNavbar.innerHTML = navbarContent;
 
   let footerContent = `
      <!-- Row 1  -->
@@ -104,6 +103,22 @@ const customFooter = document.querySelector( ".customFooter" );
             &copy; 2023 Moksh. All rights reserved.
           </p>
         </div>
-  `
-  customFooter.innerHTML = footerContent
-} )()
+  `;
+  customFooter.innerHTML = footerContent;
+})();
+
+const scrollToTopHandler = () => {
+  let btn = document.getElementById("scrollToButton");
+  if (window.scrollY > 500) {
+    btn.className = "scrollToTopButton";
+  } else {
+    btn.className = "HideElement scrollToTopButton";
+  }
+};
+window.addEventListener("scroll", scrollToTopHandler);
+document.getElementById("scrollToButton").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

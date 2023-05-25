@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@
 select {
   padding: 2px 0;
   border-radius: 5px;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: bold;
   margin: 0 !important;
 }
@@ -48,7 +48,29 @@ select {
   bottom: -1px;
   width: 100%;
   height: 2px;
-  content: '';
+  content: "";
   background-color: #fff;
   left: 0;
+}
+/* scroll to top */
+.scrollToTopContainer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 2rem 2rem 0;
+
+  height: fit-content;
+  width: fit-content;
+  z-index: 100000;
+}
+
+.scrollToTopButton {
+  border-radius: 100%;
+  height: 42px;
+  width: 42px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px palevioletred;
 }

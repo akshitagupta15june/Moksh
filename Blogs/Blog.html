@@ -1,68 +1,88 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Blog</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../commonStyles.css" type="text/css" />
+    <link href="./Blog.css" rel="stylesheet" type="text/css" />
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-  <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="../commonStyles.css" type="text/css">
-  <link href="./Blog.css" rel="stylesheet" type="text/css" />
+  <body>
+    <div class="container-fluid min-vh-100 h-auto p-0 m-0 d-flex flex-column">
+      <!-- Responsive navbar  -->
+      <div class="customNavbar"></div>
 
-</head>
+      <!-- Blog Cards  -->
+      <div
+        class="container-fluid px-4 py-5 d-flex align-items-center flex-grow-1"
+      >
+        <div
+          class="blog w-100 d-flex flex-sm-row flex-column align-items-sm-start align-items-center"
+        >
+          <!-- Blog - 1  -->
+          <div class="blogCardWrapper text-dark p-0 me-5">
+            <img src="../Images/blogImage1.webp" alt="" />
+            <div class="blogCardContent">
+              <p class="m-0 fw-semibold text-uppercase">Words</p>
+              <a href="./Words.html" class="blog-card-button">Read More</a>
+            </div>
+          </div>
 
-<body>
-  <div class="container-fluid min-vh-100 h-auto p-0 m-0 d-flex flex-column">
-
-    <!-- Responsive navbar  -->
-    <div class="customNavbar"></div>
-
-    <!-- Blog Cards  -->
-    <div class="container-fluid px-4 py-5 d-flex align-items-center flex-grow-1">
-
-      <div class="blog w-100 d-flex flex-sm-row flex-column align-items-sm-start align-items-center">
-
-        <!-- Blog - 1  -->
-        <div class="blogCardWrapper text-dark p-0 me-5">
-          <img src="../Images/blogImage1.webp" alt="" />
-          <div class="blogCardContent">
-            <p class="m-0 fw-semibold text-uppercase">Words</p>
-            <a href="./Words.html" class="blog-card-button">Read More</a>
+          <!-- Blog - 2  -->
+          <div class="blogCardWrapper text-dark p-0 me-5">
+            <img src="../Images/blogImage2.webp" alt="" />
+            <div class="blogCardContent">
+              <p class="m-0 fw-semibold text-uppercase">
+                Weakness is death, Strength is life.
+              </p>
+              <a href="./Strength.html" class="blog-card-button">Read More</a>
+            </div>
           </div>
         </div>
-
-        <!-- Blog - 2  -->
-        <div class="blogCardWrapper text-dark p-0 me-5">
-          <img src="../Images/blogImage2.webp" alt="" />
-          <div class="blogCardContent ">
-            <p class="m-0 fw-semibold text-uppercase">Weakness is death, Strength is life.</p>
-            <a href="./Strength.html" class="blog-card-button">Read More</a>
-          </div>
-        </div>
-
       </div>
-
+      <div class="scrollToTopContainer">
+        <button
+          id="scrollToButton"
+          class="HideElement scrollToTopButton"
+          title="Click to scroll top"
+        >
+          <img src="../Images/Chevron.svg" alt="Scroll-To-Top" />
+        </button>
+      </div>
+      <!-- Footer  -->
+      <footer
+        class="customFooter container-fluid py-3 py-sm-5 h-25 d-flex px-3 flex-column justify-content-between"
+        style="background-color: #2980b9"
+      ></footer>
     </div>
 
-    <!-- Footer  -->
-    <footer class="customFooter container-fluid py-3 py-sm-5 h-25 d-flex px-3 flex-column justify-content-between"
-            style="background-color: #2980b9;"></footer>
-
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-          crossorigin="anonymous"></script>
-  <script type="text/javascript"
-          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script src="../commonScript.js"></script>
-  <script src="../script.js"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script src="../commonScript.js"></script>
+    <script src="../script.js"></script>
+  </body>
 </html>

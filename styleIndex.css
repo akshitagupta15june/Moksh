@@ -14,14 +14,14 @@ p {
   font-size: 20px;
 }
 body {
-  background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
+  background-image: url("https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2980b9;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-} 
+}
 
 /* Navbar Start */
 
@@ -57,7 +57,7 @@ body {
   margin-right: 100px;
 }
 
-.about a{
+.about a {
   color: white !important;
   font-size: large;
 }
@@ -85,7 +85,6 @@ body {
     padding: 6px 8px;
     cursor: pointer;
   }
-
 }
 
 a.features {
@@ -97,7 +96,7 @@ a.features {
 }
 
 .navbar-nav li a:hover {
-  color: black ;
+  color: black;
   text-decoration: underline;
   text-decoration-color: black;
 }
@@ -139,7 +138,7 @@ a.features {
   font-size: 20px;
   line-height: 1.5;
   color: #2980b9;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .content img {
@@ -191,7 +190,7 @@ a.features {
 
 .card {
   background-color: #2980b9;
-  background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
+  background-image: url("https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg");
   background-size: cover;
   color: #2980b9;
   width: 400px;
@@ -200,7 +199,7 @@ a.features {
   text-align: center;
   /* border: 1px solid transparent; */
   box-shadow: 0px 0px 5px 0 #494949;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
 
   border-radius: 10px !important;
   overflow: hidden;
@@ -210,7 +209,6 @@ a.features {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
 }
 
 .feature-wrapper {
@@ -231,9 +229,7 @@ a.features {
   padding: 4px 0;
   background-color: rgb(74, 103, 164);
   color: white;
-  
 }
-
 
 .card p {
   font-size: 18px;
@@ -243,7 +239,7 @@ a.features {
   text-align: center;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-8px);
 }
 
@@ -254,7 +250,6 @@ a.features {
 .card .feature-description button {
   background-color: #0e1f2b;
   border: 1px solid black;
-
 
   padding: 10px 20px;
   margin-bottom: 10px;
@@ -292,7 +287,7 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  left:8rem;
+  left: 8rem;
 }
 
 .circle1 .img1 {
@@ -309,7 +304,7 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  right:10rem;
+  right: 10rem;
 }
 
 .circle2 .img2 {
@@ -326,8 +321,8 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top:15rem;
-  right:4rem;
+  top: 15rem;
+  right: 4rem;
 }
 
 .circle3 .img3 {
@@ -344,8 +339,8 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top:18rem;
-  left:1.5rem;
+  top: 18rem;
+  left: 1.5rem;
 }
 
 .circle4 .img4 {
@@ -362,7 +357,7 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top:-8rem;
+  top: -8rem;
 }
 
 .circle5 .img5 {
@@ -428,4 +423,26 @@ footer .quick-links ul li a:hover {
 
 #header {
   margin-top: 10px;
+}
+/* scroll to top */
+.scrollToTopContainer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 2rem 2rem 0;
+
+  height: fit-content;
+  width: fit-content;
+  z-index: 100000;
+}
+
+.scrollToTopButton {
+  border-radius: 100%;
+  height: 42px;
+  width: 42px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px palevioletred;
 }
