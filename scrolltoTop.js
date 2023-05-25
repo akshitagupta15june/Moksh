@@ -1,5 +1,5 @@
 // Get the "return to top" button element
-let returnToTopButton = document.getElementById('returnToTop');
+var returnToTopButton = document.getElementById('returnToTop');
 
 // Function to scroll to the top of the page
 function scrollToTop() {
