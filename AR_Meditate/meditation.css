@@ -1,5 +1,5 @@
 body {
-  background-image: url("./meditationgif.gif");
+  background-image: url("../Images/meditationgif.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -17,9 +17,11 @@ iframe {
   width: 160px;
   border-radius: 35px;
 }
+
 .qr-container {
   width: auto;
 }
+ 
 @media screen and (max-width: 1200px) {
   .qr-container {
     width: 100% !important;
@@ -29,6 +31,7 @@ iframe {
 .qr-tagline {
   text-align: start;
 }
+
 @media screen and (max-width: 500px) {
   .qr-tagline {
     width: 100% !important;

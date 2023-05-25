@@ -1,325 +1,329 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Moksh</title>
 
-    <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Moksh</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+  <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-  <body>
-    <script src="script.js"></script>
-    <div class="nav">
-      <!-- Nav Logo & Name -->
-      <div class="navbar-logo">
-        <img src="./Images/moksh.png" alt="Moksh Logo" />
-        <a href="index.html"><span>Moksh</span></a>
-      </div>
 
-      <!-- Nav menu -->
-      <ul class="nav-menu">
-        <li>
-          <a class="active" href="index.html">Home</a>
+  <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="styleIndex.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  
+   <!-- Bootstrap Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+
+    <!-- Nav Logo & Name -->
+    <img src="./Images/moksh.png" class="d-inline-block align-top" alt="Moksh Logo" />
+    <!-- <a href="index.html"><span>Moksh</span></a>  -->
+
+    <a class="navbar-brand" href="index.html"><span>MOKSH</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto me-auto">
+        
+        <li class="active about nav-item">
+          <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="about"><a href="#about">About</a></li>
-        <li class="about"><a href="Blog.html">Power of Knowledge Blogs</a></li>
-        <li class="dropdown">
-          <a href="#">
+        <li class="about nav-item">
+          <a class="nav-link" href="./Blogs/Blog.html">Power of Knowledge Blogs</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle features" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Features
-            <i class="fas fa-caret-down"></i>
           </a>
-          <!-- Dropdown -->
-          <ul>
-            <li><a href="meditation.html">Augmented Reality Meditation</a></li>
-            <li><a href="./Iskcon/event.html">Iskcon Events</a></li>
-            <li>
-              <a href="./Divine_page/story.html">Divine Activities for all Generation</a>
-            </li>
-            <li><a href="reward.html">Pomodoro Spritual Break</a></li>
-            <li><a href="motivation.html">Read a Shlok</a></li>
-            <li><a href="./Rejuvenate_page/rejuvenate.html">Rejuvenate</a></li>
-          </ul>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./AR_Meditate/meditation.html">Augmented Reality Meditation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./Iskcon/event.html">Iskcon Events</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./Divine_page/story.html">Divine Activities for all Generation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./Pomodro_page/reward.html">Pomodoro Spritual Break</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./shlok_page/motivation.html">Read a Shlok</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./Rejuvenate_page/rejuvenate.html">Rejuvenate</a>
+          </div>
         </li>
+
       </ul>
-
-      <!-- google translate -->
+      <!-- Google Translate -->
       <div id="google_translate_element">
-        <script
-          type="text/javascript"
-          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        ></script>
+        <script type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
       </div>
+
     </div>
+  </nav>
 
-    <!-- bootstrp nav end -->
+  <!-- Bootstrap Navbar ends -->
 
-    <div class="image-container">
-      <div class="circle1">
-        <img src="Images/anxiety.png" alt="Image 2" class="img1" />
-      </div>
-      <div class="circle2">
-        <img src="Images/ego.png" alt="Image 3" class="img2" />
-      </div>
-      <div class="circle3">
-        <img src="Images/fear.png" alt="Image 1" class="img3" />
-      </div>
-      <div class="circle4">
-        <img src="Images/peerpres.png" alt="Image 4" class="img4" />
-      </div>
-      <div class="circle5">
-        <img src="Images/ANGRY.png" alt="Image 5" class="img5" />
-      </div>
+  <div class="image-container">
+    <div class="circle1">
+      <img src="Images/anxiety.png" alt="Image 2" class="img1" />
     </div>
-
-    <br />
-    <div class="text-container">
-      <h2 class="title">Mental Health Problems</h2>
-      <iframe width="680" height="385" src="https://www.youtube.com/embed/BEsKgEGRjYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </iframe>
-      <p class="description">
-        There are numerous mental problems affecting the people in modern
-        society, including fear, false egos, anxiety, comparisons, competitions,
-        peer pressure and stressful work environment. Mental health issues can
-        lead to physical discomforts such as headaches, stomach aches,
-        difficulty sleeping, irritability, and inability to focus. If left
-        unaddressed, chronic stress can exacerbate these symptoms and give rise
-        to more severe health concerns, including anxiety, hypertension, and
-        reduced immunity.
-      </p>
+    <div class="circle2">
+      <img src="Images/ego.png" alt="Image 3" class="img2" />
     </div>
+    <div class="circle3">
+      <img src="Images/fear.png" alt="Image 1" class="img3" />
+    </div>
+    <div class="circle4">
+      <img src="Images/peerpres.png" alt="Image 4" class="img4" />
+    </div>
+    <div class="circle5">
+      <img src="Images/ANGRY.png" alt="Image 5" class="img5" />
+    </div>
+  </div>
 
-    <br />
+  <br />
+  <div class="text-container">
+    <h2 class="title">Mental Health Problems</h2>
+    <iframe width="680" height="385" src="https://www.youtube.com/embed/BEsKgEGRjYU" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </iframe>
+    <p class="description">
+      There are numerous mental problems affecting the people in modern
+      society, including fear, false egos, anxiety, comparisons, competitions,
+      peer pressure and stressful work environment. Mental health issues can
+      lead to physical discomforts such as headaches, stomach aches,
+      difficulty sleeping, irritability, and inability to focus. If left
+      unaddressed, chronic stress can exacerbate these symptoms and give rise
+      to more severe health concerns, including anxiety, hypertension, and
+      reduced immunity.
+    </p>
+  </div>
 
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <br />
 
-    <div id="about" class="container py-3">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="d-block clearfix bg-light p-3 shadow">
-            <a class="float-left mr-3"> </a>
-            <div class="header">
-              <h1>Moksh</h1>
-              <p><b>A Spiritual Productivity Tool for Mental Wellness</b></p>
-            </div>
-            <div class="content">
-              <img src="Images/moksh.png" height="170" align="left" />
-              <p>
-                <i
-                  ><b>Moksh</b> is a spiritual productivity tool designed for
-                  individuals who want to unlock their potential and achieve
-                  true balance in life. Our customized spiritual features help
-                  you take control of your work, focus on what truly matters,
-                  and rejuvenate your mind and spirit. By reading Bhagavad Gita,
-                  we become <b>soul conscious</b> and gain the strength to fight
-                  life's challenges. With Moksh, you can overcome the mental
-                  problems that arise from our body consciousness and find true
-                  happiness.</i
-                >
-              </p>
-            </div>
+  <link
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        rel="stylesheet" />
+
+  <div id="about" class="container py-3">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="d-block clearfix bg-light p-3 shadow">
+          <a class="float-left mr-3"> </a>
+          <div class="header">
+            <h1>Moksh</h1>
+            <p><b>A Spiritual Productivity Tool for Mental Wellness</b></p>
+          </div>
+          <div class="content">
+            <img src="Images/moksh.png" height="170" align="left" />
+            <p>
+              <i><b>Moksh</b> is a spiritual productivity tool designed for
+                individuals who want to unlock their potential and achieve
+                true balance in life. Our customized spiritual features help
+                you take control of your work, focus on what truly matters,
+                and rejuvenate your mind and spirit. By reading Bhagavad Gita,
+                we become <b>soul conscious</b> and gain the strength to fight
+                life's challenges. With Moksh, you can overcome the mental
+                problems that arise from our body consciousness and find true
+                happiness.</i>
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <br />
+  <br />
 
-    <h1 align="center">Moksh Features</h1>
-    <div class="card-container">
-      <div class="card">
-        <img src="Images/armed.png" height="200" alt="Image 1" />
-        <h3>Augmented Reality Meditation</h3>
-        <div class="feature-wrapper">
-          <div class="feature-description">
-            <p>
-              AR meditation combines ancient teachings of the Gita with AR
-              technology, making it more accessible and engaging for modern
-              practitioners. This unique and immersive meditation experience
-              helps people connect more deeply with their inner self and the
-              divine.
-            </p>
-            <div class="btn-shift">
-              <a href="meditation.html"><button>Try it out</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="Images/iskon.png" height="200" alt="Image 2" />
-        <h3>Connect with Iskcon Events</h3>
-        <div class="feature-wrapper">
-          <div class="feature-description">
-            <p>
-              Moksh platform offers information on local ISKCON events such as
-              youth festivals, kirtans and lectures, including details on
-              location, date, time,tickets, website and requirements. It's ideal
-              for those seeking to deepen their spiritual practice or connect
-              with the local ISKCON community.
-            </p>
-            <div class="btn-shift">
-              <a href="event.html"><button>Connect</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="Images/krisarj.png" height="200" alt="Image 3" />
-        <h3>Divine Activities for All Generation</h3>
-        <div class="feature-wrapper">
-          <div class="feature-description">
-            <p>
-              Moksh offers interactive activities for all generation to reduce
-              stress and also learn about our holy book BhagwadGita and its
-              principles. It contains eye exercises to reduces eye stress while
-              working and also some desk exercises to reduce back pain while
-              working.
-            </p>
-            <div class="btn-shift">
-              <a href="story.html"><button>Read More</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="Images/pomo.png" height="200" alt="Image 4" />
-        <h3>Pomodoro Spritual Break</h3>
-        <div class="feature-wrapper">
-          <div class="feature-description">
-            <p>
-              This feature promotes spiritual learning and work-life balance by
-              allowing users to set a Pomodoro timer and receive alerts to take
-              a break and read a Bhagavad Gita shloka from the website.This
-              Pomodoro feature on the website supports users in their journey
-              towards personal growth and well-being.
-            </p>
-            <div class="btn-shift-2">
-              <a href="reward.html"><button>Take a Break</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="Images/read-a-shlok.png" height="200" alt="Image 4" />
-        <h3>Read a Shlok</h3>
-        <div class="feature-wrapper">
-          <div class="feature-description">
-            <p>
-              Meaningful and motivational quotations can help spark inspiration
-              and create a sense of purpose. This feature enables users to read
-              several thought-provoking spiritual quotes, which can provide a
-              sense of comfort as well as encourage a connection with the
-              divine.
-            </p>
-            <div class="btn-shift-2">
-              <a href="motivation.html"><button>Read a Shlok</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="Images/rejuvenate.png" height="200" alt="Image 4" />
-        <h3>Rejuvenate</h3>
-        <div class="feature-wrapper">
-          <div class="feature-description">
-            <p>
-              Here, users may watch inspirational short videos and read Srila
-              Prabhupada stories to rejuvenate the mind, increase productivity
-              and focus, and feel more at peace in today's busy world.
-              Additionally, these stories offer hope in stressful times and can
-              uplift the spirit.
-            </p>
-            <div class="btn-shift-2">
-              <a href="rejuvenate.html"><button>Get Inspired</button></a>
-            </div>
+  <h1 align="center">Moksh Features</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="Images/armed.png" height="200" alt="Image 1" />
+      <h3>Augmented Reality Meditation</h3>
+      <div class="feature-wrapper">
+        <div class="feature-description">
+          <p>
+            AR meditation combines ancient teachings of the Gita with AR
+            technology, making it more accessible and engaging for modern
+            practitioners. This unique and immersive meditation experience
+            helps people connect more deeply with their inner self and the
+            divine.
+          </p>
+          <div class="btn-shift">
+            <a href="./AR_Meditate/meditation.html"><button>Try it out</button></a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div  class='official-logo'style="background-color: #ffffff; padding:5px; color:#2980B9; padding-bottom:1px;">
+    <div class="card">
+      <img src="Images/iskon.png" height="200" alt="Image 2" />
+      <h3>Connect with Iskcon Events</h3>
+      <div class="feature-wrapper">
+        <div class="feature-description">
+          <p>
+            Moksh platform offers information on local ISKCON events such as
+            youth festivals, kirtans and lectures, including details on
+            location, date, time,tickets, website and requirements. It's ideal
+            for those seeking to deepen their spiritual practice or connect
+            with the local ISKCON community.
+          </p>
+          <div class="btn-shift">
+            <a href="./Iskcon/event.html"><button>Connect</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/krisarj.png" height="200" alt="Image 3" />
+      <h3>Divine Activities for All Generation</h3>
+      <div class="feature-wrapper">
+        <div class="feature-description">
+          <p>
+            Moksh offers interactive activities for all generation to reduce
+            stress and also learn about our holy book BhagwadGita and its
+            principles. It contains eye exercises to reduces eye stress while
+            working and also some desk exercises to reduce back pain while
+            working.
+          </p>
+          <div class="btn-shift">
+            <a href="./Divine_page/story.html"><button>Read More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/pomo.png" height="200" alt="Image 4" />
+      <h3>Pomodoro Spritual Break</h3>
+      <div class="feature-wrapper">
+        <div class="feature-description">
+          <p>
+            This feature promotes spiritual learning and work-life balance by
+            allowing users to set a Pomodoro timer and receive alerts to take
+            a break and read a Bhagavad Gita shloka from the website.This
+            Pomodoro feature on the website supports users in their journey
+            towards personal growth and well-being.
+          </p>
+          <div class="btn-shift-2">
+            <a href="./Pomodro_page/reward.html"><button>Take a Break</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/read-a-shlok.png" height="200" alt="Image 4" />
+      <h3>Read a Shlok</h3>
+      <div class="feature-wrapper">
+        <div class="feature-description">
+          <p>
+            Meaningful and motivational quotations can help spark inspiration
+            and create a sense of purpose. This feature enables users to read
+            several thought-provoking spiritual quotes, which can provide a
+            sense of comfort as well as encourage a connection with the
+            divine.
+          </p>
+          <div class="btn-shift-2">
+            <a href="./shlok_page/motivation.html"><button>Read a Shlok</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/rejuvenate.png" height="200" alt="Image 4" />
+      <h3>Rejuvenate</h3>
+      <div class="feature-wrapper">
+        <div class="feature-description">
+          <p>
+            Here, users may watch inspirational short videos and read Srila
+            Prabhupada stories to rejuvenate the mind, increase productivity
+            and focus, and feel more at peace in today's busy world.
+            Additionally, these stories offer hope in stressful times and can
+            uplift the spirit.
+          </p>
+          <div class="btn-shift-2">
+            <a href="./Rejuvenate_page/rejuvenate.html"><button>Get Inspired</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div  class='official-logo'style="background-color: #ffffff; padding:5px; color:#2980B9; padding-bottom:1px;">
   <div style="display: flex; align-items: center;  border:2px solid">
   </div>
   <p>A spirtual productivity tool for mental wellness</p>
   
 </div> -->
 
-    <footer style="padding: 5px 10px">
-      <div class="logo-title">
-        <img
-          class="logo"
-          src="Images/moksh.png"
-          alt="Moksh Logo"
-          style="
+  <footer style="padding: 5px 10px">
+    <div class="logo-title">
+      <img
+           class="logo"
+           src="Images/moksh.png"
+           alt="Moksh Logo"
+           style="
             height: 50px;
             margin-right: 10px;
             filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg)
               brightness(97%) contrast(99%);
-          "
-        />
-        <h3
+          " />
+      <h3
           class="title"
           style="
             font-size: 28px;
             text-align: end;
             color: #fff;
             margin-top: 12px;
-          "
-        >
-          Moksh
-        </h3>
-      </div>
-      <div class="tagline">
-        <p style="font-size: 18px; text-align: center; color: #fff">
-          A Spiritual Productivity Tool for Mental Wellness
-        </p>
-      </div>
-      <div class="intro">
-        <p style="text-align: center">
-          Moksh is a spiritual productivity tool designed for individuals who
-          want to unlock their potential and achieve true balance in life.
-        </p>
-      </div>
+          ">
+        Moksh
+      </h3>
+    </div>
+    <div class="tagline">
+      <p style="font-size: 18px; text-align: center; color: #fff">
+        A Spiritual Productivity Tool for Mental Wellness
+      </p>
+    </div>
+    <div class="intro">
+      <p style="text-align: center">
+        Moksh is a spiritual productivity tool designed for individuals who
+        want to unlock their potential and achieve true balance in life.
+      </p>
+    </div>
 
-      <hr color="#000" size="10" />
-      <div
-        class="copyright"
-        style="display: flex; justify-content: space-around"
-      >
-        <p style="font-size: 14px; text-align: center; margin-top: 10px">
-          Made with ❤️ by Akshita during XPRESSION'23
-        </p>
-        <p style="font-size: 14px; text-align: center; margin-top: 10px">
-          &copy; 2023 Moksh. All rights reserved.
-        </p>
-      </div>
-    </footer>
+    <hr color="#000" size="10" />
+    <div
+         class="copyright"
+         style="display: flex; justify-content: space-around">
+      <p style="font-size: 14px; text-align: center; margin-top: 10px">
+        Made with ❤️ by Akshita during XPRESSION'23
+      </p>
+      <p style="font-size: 14px; text-align: center; margin-top: 10px">
+        &copy; 2023 Moksh. All rights reserved.
+      </p>
+    </div>
+  </footer>
 
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
