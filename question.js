@@ -206,4 +206,59 @@ let questions = [
       "The Pandavas",
       " Magadha Kingdom"]
   },
+  {
+    numb: 21,
+    question: "In which battlefield does the conversation between Arjuna and Krishna take place?",
+    answer: "Kurukshetra",
+    options: [
+      "Kurukshetra",
+      "Kashi",
+      "Ayodhya",
+      "Dwarka"
+    ]
+  },
+  {
+    numb: 22,
+    question: "Which of the following paths of yoga is emphasized in the Bhagavad Gita?",
+    answer: "All of the above",
+    options: [
+      "Bhakti Yoga (path of devotion)",
+      "Karma Yoga (path of selfless action)",
+      "Jnana Yoga (path of knowledge)",
+      "All of the above"
+    ]
+  },
+  {
+    numb: 23,
+    question: "What does Krishna teach Arjuna about the nature of the soul?",
+    answer: "The soul is eternal and indestructible",
+    options: [
+      "The soul is temporary and perishable",
+      "The soul is eternal and indestructible",
+      "The soul doesn't exist",
+      "The soul is an illusion"
+    ]
+  },
+  {
+    numb: 24,
+    question: "According to the Bhagavad Gita, what is the ultimate goal of life?",
+    answer: "Enlightenment and liberation",
+    options: [
+      "Wealth and power",
+      "Pleasure and enjoyment",
+      "Enlightenment and liberation",
+      "Fame and recognition"
+    ]
+  },
+  {
+    numb: 25,
+    question: "What is the famous verse in the Bhagavad Gita that encapsulates its teachings?",
+    answer: "Do your duty without attachment to the results",
+    options: [
+      "Surrender all your actions to God",
+      "Do your duty without attachment to the results",
+      "Know that I am the eternal soul within all beings.",
+      "Renounce all desires and attain liberation"
+    ]
+  },
 ];
