@@ -33,7 +33,7 @@ const customFooter = document.querySelector( ".customFooter" );
                       Meditation</a>
                   </li>
                   <li>
-                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="../Iskcon/event.html">Iskon Events</a>
+                    <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="../Iskcon/event.html">Iskcon Events</a>
                   </li>
                   <li>
                     <a class="dropdown-item dropItem text-white fw-semibold text-uppercase border border-white py-3 px-4" href="../Divine_page/story.html">Divine Activities
