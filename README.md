@@ -168,9 +168,14 @@ $ git clone https://github.com/<your_github_username>/Moksh.git
             </td>
 </table>
 
-## Thanks to all Contributors 💪
+## Thanks to all Moksh Contributors 💪
 
 Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocking 🍻
+	 
+<p>
+  <img src="https://api.vaunt.dev/v1/github/entities/Moksh/contributors?format=svg&limit=15" width="600" height"250" />
+</p>
+
 
 ![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/Moksh)
 
