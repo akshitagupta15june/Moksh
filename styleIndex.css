@@ -3,6 +3,29 @@
   padding: 0; */
   box-sizing: border-box;
 }
+/* styles for scroll to top button */
+.return-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #4ade80;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.return-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
 
 html {
   height: 100%;
@@ -13,6 +36,7 @@ p {
   color: rgb(33, 33, 33);
   font-size: 20px;
 }
+
 body {
   background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
   background-repeat: no-repeat;
@@ -429,3 +453,4 @@ footer .quick-links ul li a:hover {
 #header {
   margin-top: 10px;
 }
+
