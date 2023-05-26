@@ -442,6 +442,17 @@ footer .quick-links ul li a:hover {
   color: #666;
 }
 
+footer .copyright a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+footer .copyright a i{
+  color: black;
+  font-size: 30px;
+}
+
 @media only screen and (max-width: 768px) {
   .circle {
     width: 80px;
