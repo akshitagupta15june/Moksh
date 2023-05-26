@@ -123,6 +123,7 @@ body{
     transition: all 0.3s ease;
 }
 .quiz_box{
+    margin-top: 40px;
     width: 750px;
     background: #2980B9;
     border-radius: 5px;
