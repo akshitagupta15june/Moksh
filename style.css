@@ -1,8 +1,11 @@
 * {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+
+
 
 html {
   height: 100%;
@@ -333,10 +336,27 @@ a.dropdown-item{
   left:8rem;
 }
 
-.circle1 .img1 {
+@keyframes animate {
+  0%{
+    opacity: 0;
+    scale: 0;
+}
+  50%{
+    opacity: .8;
+  }
+  100%{
+    opacity: 1;
+    scale: 1;
+}
+}
+
+
+.circle1 .imgs {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation: animate 2s;
+  -webkit-animation: animate 2s;
 }
 
 .circle2 {
@@ -350,10 +370,12 @@ a.dropdown-item{
   right:10rem;
 }
 
-.circle2 .img2 {
+.circle2 .imgs {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation: animate 2s;
+  -webkit-animation: animate 2s;
 }
 
 .circle3 {
@@ -368,10 +390,12 @@ a.dropdown-item{
   right:4rem;
 }
 
-.circle3 .img3 {
+.circle3 .imgs {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation: animate 2s;
+  -webkit-animation: animate 2s;
 }
 
 .circle4 {
@@ -386,10 +410,12 @@ a.dropdown-item{
   left:1.5rem;
 }
 
-.circle4 .img4 {
+.circle4 .imgs {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation: animate 2s;
+  -webkit-animation: animate 2s;
 }
 
 .circle5 {
@@ -403,10 +429,12 @@ a.dropdown-item{
   top:-8rem;
 }
 
-.circle5 .img5 {
+.circle5 .imgs {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation: animate 2s;
+  -webkit-animation: animate 2s;
 }
 
 @media only screen and (max-width: 768px) {
