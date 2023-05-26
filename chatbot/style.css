@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  margin-right: 0.8em;
+  font-size: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GLOBAL STYLES */
+:root {
+	--blue: #914141;
+	--grey: #ffffff;
+	--grey-d-1: #ffffff;
+	--grey-d-2: #DDD;
+	--grey-d-3: #ffffff;
+	--white: #0b1e39;
+	--dark: #cb2f2f;
+}
+/* GLOBAL STYLES */
+
+
+
+
+
+
+
+/* CHATBOX */
+.chatbox-wrapper {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	width: 4rem;
+	height: 4rem;
+}
+.chatbox-toggle {
+	width: 100%;
+	height: 100%;
+	background: var(--blue);
+	color: var(--white);
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.chatbox-toggle:hover{
+    box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+
+.chatbox-toggle:active {
+	transform: scale(.9);
+}
+.chatbox-message-wrapper {
+	position: absolute;
+	bottom: calc(100% + 1rem);
+	right: 0;
+	width: 420px;
+	border-radius: .5rem;
+	overflow: hidden;
+	box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .1);
+	transform: scale(0);
+	transform-origin: bottom right;
+	transition: .2s;
+}
+.chatbox-message-wrapper.show {
+	transform: scale(1);
+}
+.chatbox-message-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(76, 171, 226);
+	padding: .75rem 1.5rem;
+}
+.chatbox-message-profile {
+	display: flex;
+	align-items: center;
+	grid-gap: .5rem;
+}
+.chatbox-message-image {
+	width: 3rem;
+	height: 3rem;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.chatbox-message-name {
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+.chatbox-message-status {
+	font-size: .875rem;
+	color: var(--grey-d-3);
+}
+.chatbox-message-dropdown {
+	position: relative;
+}
+.chatbox-message-dropdown-toggle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 1.25rem;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.chatbox-message-dropdown-toggle:hover {
+	background: var(--grey);
+}
+.chatbox-message-dropdown-menu {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background: var(--white);
+	padding: .5rem 0;
+	width: 120px;
+	box-shadow: .25rem .25rem 1.5rem rgba(0, 0, 0, .1);
+	transform: scale(0);
+	transform-origin: top right;
+	transition: .2s;
+	border-radius: .5rem;
+}
+.chatbox-message-dropdown-menu.show {
+	transform: scale(1);
+}
+.chatbox-message-dropdown-menu a {
+	font-size: .875rem;
+	font-weight: 500;
+	color: var(--dark);
+	text-decoration: none;
+	padding: .5rem 1rem;
+	display: block;
+}
+.chatbox-message-dropdown-menu a:hover {
+	background: var(--grey);
+}
+.chatbox-message-content {
+	background-color: rgb(124, 199, 245);
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	grid-row-gap: 1rem;
+	max-height: 300px;
+	overflow-y: auto;
+}
+.chatbox-message-item {
+	width: 90%;
+	padding: 1rem;
+}
+.chatbox-message-item.sent {
+	align-self: flex-end;
+	background: var(--blue);
+	color: var(--white);
+	border-radius: .75rem 0 .75rem .75rem;
+}
+.chatbox-message-item.received {
+	background: var(--white);
+	border-radius: 0 .75rem .75rem .75rem;
+	box-shadow: .25rem .25rem 1.5rem rgba(0, 0, 0, .05);
+}
+.chatbox-message-item-time {
+	font-size: .75rem;
+	margin-top: .5rem;
+	display: inline-block;
+}
+.chatbox-message-bottom {
+	background-color: rgb(76, 171, 226);
+	padding: .75rem 1.5rem;
+}
+.chatbox-message-form {
+	display: flex;
+	align-items: center;
+	background: var(--grey);
+	border-radius: .5rem;
+	padding: .5rem 1.25rem;
+}
+.chatbox-message-input {
+	background: transparent;
+    width: 100%;
+	outline: none;
+	border: none;
+	resize: none;
+	scrollbar-width: none;
+}
+
+.chatbox-message-input::-webkit-scrollbar {
+	display: none;
+}
+.chatbox-message-submit {
+	font-size: 1.25rem;
+	color: var(--blue);
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.chatbox-message-no-message {
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+#dots-nav{
+	font-size: 1.5em;
+	display: flex;
+}
+
+/* CHATBOX */
+
+
+
+
+
+
+
+/* BREAKPOINTS */
+@media screen and (max-width: 576px) {
+	.chatbox-message-wrapper {
+		width: calc(100vw - 2rem);
+	}
+	.chatbox-wrapper {
+		bottom: 1rem;
+		right: 1rem;
+	}
+}
+/* BREAKPOINTS */

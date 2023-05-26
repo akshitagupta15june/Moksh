@@ -7,6 +7,13 @@
   <title>Moksh</title>
 
   <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="chatbot/style.css">
+
+  <!-- icon link -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -71,6 +78,10 @@
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
       </div>
 
+    <!-- google translate -->
+    <div id="google_translate_element">
+      <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
   </nav>
 
@@ -97,8 +108,10 @@
   <br />
   <div class="text-container">
     <h2 class="title">Mental Health Problems</h2>
-    <iframe width="680" height="385" src="https://www.youtube.com/embed/BEsKgEGRjYU" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="680" height="385" src="https://www.youtube.com/embed/BEsKgEGRjYU" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
     </iframe>
     <p class="description">
       There are numerous mental problems affecting the people in modern
@@ -114,9 +127,7 @@
 
   <br />
 
-  <link
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
 
   <div id="about" class="container py-3">
     <div class="row">
@@ -274,19 +285,13 @@
 
   <footer style="padding: 5px 10px">
     <div class="logo-title">
-      <img
-           class="logo"
-           src="Images/moksh.png"
-           alt="Moksh Logo"
-           style="
+      <img class="logo" src="Images/moksh.png" alt="Moksh Logo" style="
             height: 50px;
             margin-right: 10px;
             filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg)
               brightness(97%) contrast(99%);
           " />
-      <h3
-          class="title"
-          style="
+      <h3 class="title" style="
             font-size: 28px;
             text-align: end;
             color: #fff;
@@ -308,9 +313,7 @@
     </div>
 
     <hr color="#000" size="10" />
-    <div
-         class="copyright"
-         style="display: flex; justify-content: space-around">
+    <div class="copyright" style="display: flex; justify-content: space-around">
       <p style="font-size: 14px; text-align: center; margin-top: 10px">
         Made with ❤️ by Akshita during XPRESSION'23
       </p>
@@ -320,10 +323,62 @@
     </div>
   </footer>
 
+
+  <!-- chat bot -->
+
+  <div class="chatbox-wrapper">
+    <div class="chatbox-toggle">
+      <i class='bx bx-message-dots'></i>
+    </div>
+    <div class="chatbox-message-wrapper">
+      <div class="chatbox-message-header">
+        <div class="chatbox-message-profile">
+          <img src="/Images/moksh.png" alt="" class="chatbox-message-image">
+          <div>
+            <h4 class="chatbox-message-name">Moksh AI</h4>
+            <p class="chatbox-message-status">online</p>
+          </div>
+        </div>
+        <div class="chatbox-message-dropdown">
+          <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle' id="dots-nav"></i>
+          <ul class="chatbox-message-dropdown-menu">
+            <li>
+              <a href="#">Report</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chatbox-message-content">
+        <h4 class="chatbox-message-no-message">Ask me anything !</h4>
+        <!-- <div class="chatbox-message-item sent">
+					<span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div>
+				<div class="chatbox-message-item received">
+					<span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div> -->
+      </div>
+      <div class="chatbox-message-bottom">
+        <form action="#" class="chatbox-message-form">
+          <textarea rows="1" placeholder="Enter your message..." class="chatbox-message-input"></textarea>
+          <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
   <!-- bootstrap js -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+  <script src="chatbot/script.js"></script>
 </body>
 
 </html>
