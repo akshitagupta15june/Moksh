@@ -16,104 +16,117 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
+  overflow: hidden;
 }
 
 .media-scroller {
+  width: 90%;
   display: grid;
   gap: 10px;
-  padding-left: 100;
+  padding: 10px 0;
   grid-auto-flow: column;
-  grid-auto-columns: 35%;
-
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-
-  overflow-x: scroll;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow-x: auto;
+  
   overscroll-behavior-inline: contain;
 }
 
-#about1,
-#about3 {
+/* changing scrollbar style */
+
+*::-webkit-scrollbar {
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(151, 149, 149);
+  border-radius: 20px;
+  border: 3px solid rgba(175, 166, 166, 0);
+}
+
+/* Rest of the CSS code */
+
+#about {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 5%;
   background-color: #fff;
-  border-radius: 40px;
+  border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  margin-bottom: 20px;
-  width: 45%;
-}
 
-#about2,
-#about4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 5%;
-  background-color: #fff; 
-  border-radius: 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  margin-bottom: 20px;
-  width: 45%;
-}
-
-/* Rest of the CSS code */
-
-#about1,
-#about2,
-#about3,
-#about4 {
   overflow: hidden;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  margin: 20px auto;
+
+  width: 45%;
+
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.464);
 }
 
-#about1 p,
-#about2 p,
-#about3 p,
-#about4 p {
+#about p {
   max-height: 0;
   opacity: 0;
   transition: max-height 0.7s ease, opacity 0.7s ease, margin-top 0.7s ease;
   margin-top: 0;
 }
 
-#about1:hover p,
-#about2:hover p,
-#about3:hover p,
-#about4:hover p {
+#about:hover p {
   max-height: 1000px;
   opacity: 1;
   z-index: 1;
   margin-top: 3rem;
 }
 
-#about1 span,
-#about2 span,
-#about3 span,
-#about4 span {
+#about span {
   width: 100%;
   background-color: #01BAEF;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 20px 20px;
   position: relative;
   top: 25px;
   z-index: 0;
   transition: border-radius 0.3s ease;
 }
 
-#about1:hover span,
-#about2:hover span,
-#about3:hover span,
-#about4:hover span {
+#about:hover span {
   border-radius: 5px;
 }
 
-#about1 h2,
-#about2 h2,
-#about3 h2,
-#about4 h2{
+#about h2 {
   text-align: center;
+}
+
+iframe {
+  width: 420px;
+  height: 315px;
+
+  border-radius: 10px;
+}
+
+/* dark carorousel control icons */
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+@media  (max-width: 620px) {
+  .media-scroller {
+    grid-auto-columns: 100%;
+  }
+  #about {
+    width: 65%;
+  }
+  iframe {
+    width: 100%;
+  }
 }
