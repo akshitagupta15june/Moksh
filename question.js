@@ -148,7 +148,7 @@ let questions = [
       "Fear of sinful reactions",
       "Fear of losing the battle",
     ], 
-    inf:"Both as friend and philosopher to Arjuna, Lord Kṛiṣhṇa  gave His final judgment regarding Arjuna's The Lord says, “Arjuna, if you leave the battlefield before the battle even begins, people will call , then My advice is that you'd do better to die in the battle. So, you should not flee for fear of your life; better to die in the battle.“"
+    inf:"Both as friend and philosopher to Arjuna, Lord Kṛiṣhṇa  gave His final judgment regarding Arjuna's fear. The Lord says, “Arjuna, if you leave the battlefield before the battle even begins, people will call , then My advice is that you'd do better to die in the battle. So, you should not flee for fear of your life; better to die in the battle.“"
   },
   {
     numb: 14,
