@@ -74,6 +74,12 @@ Join Your Discord Server and ask your doubts
 
 - [Google Maps API](https://developers.google.com/maps)
 
+## TECH STACK USED
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 ## Getting Started 💨
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -162,9 +168,14 @@ $ git clone https://github.com/<your_github_username>/Moksh.git
             </td>
 </table>
 
-## Thanks to all Contributors 💪
+## Thanks to all Moksh Contributors 💪
 
 Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocking 🍻
+	 
+<p>
+  <img src="https://api.vaunt.dev/v1/github/entities/Moksh/contributors?format=svg&limit=15" width="600" height"250" />
+</p>
+
 
 ![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/Moksh)
 
