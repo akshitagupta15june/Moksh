@@ -16,9 +16,9 @@ let questions = [
     question: "Who is not a Pandava?",
     answer: "DURYODHANA",
     options: [
-      "DRUPADA",
+      "BHIMA",
       "ARJUNA",
-      "YUYUDHANA",
+      "YUDHISHTHIRA",
       "DURYODHANA"
     ]
   },
