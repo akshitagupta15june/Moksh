@@ -173,7 +173,7 @@ $ git clone https://github.com/<your_github_username>/Moksh.git
 Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocking 🍻
 	 
 <p>
-  <img src="https://api.vaunt.dev/v1/github/entities/Moksh/contributors?format=svg&limit=15" width="600" height"250" />
+  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Moksh/contributors?format=svg&limit=54" width="600" height"250" />
 </p>
 
 
