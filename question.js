@@ -17,9 +17,9 @@ let questions = [
     question: "Who is not a Pandava?",
     answer: "DURYODHANA",
     options: [
-      "DRUPADA",
+      "BHIMA",
       "ARJUNA",
-      "YUYUDHANA",
+      "YUDHISHTHIRA",
       "DURYODHANA"
     ],
     inf:"DURYODHANA was the leader of the Kauravas. From childhood he formed an enmity with the Pāṇḍavas, which later resulted in the Kurukṣetra war."
