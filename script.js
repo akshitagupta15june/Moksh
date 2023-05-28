@@ -28,3 +28,4 @@ function toggleReturnToTopButton() {
 // Add event listeners
 window.addEventListener('scroll', toggleReturnToTopButton);
 returnToTopButton.addEventListener('click', scrollToTop);
+
