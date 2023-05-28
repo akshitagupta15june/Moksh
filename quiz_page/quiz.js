@@ -10,7 +10,7 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-
+const infm=quiz_box.querySelector(".info");
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo");
 }
@@ -78,6 +78,7 @@ next_btn.onclick = ()=>{
         clearInterval(counterLine);
         showResult();
     }
+    infm.innerHTML="";
 }
 
 function showQuetions(index){ 
@@ -107,6 +108,7 @@ function optionSelected(answer){
     let userAns = answer.textContent; 
     let correcAns = questions[que_count].answer; 
     const allOptions = option_list.children.length; 
+    let infor=questions[que_count].inf; 
     
     if(userAns == correcAns){ 
         userScore += 1; 
@@ -123,6 +125,7 @@ function optionSelected(answer){
                 option_list.children[i].setAttribute("class", "option correct"); 
                 option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); 
                 console.log("Auto selected correct answer.");
+                infm.innerHTML=infor;
             }
         }
     }
