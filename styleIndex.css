@@ -465,3 +465,8 @@ footer .copyright a i{
   margin-top: 10px;
 }
 
+.footer .copyright a i:hover{
+  color: red;
+  transition: 0.9s;
+  transform: rotateY(180deg);
+  }
