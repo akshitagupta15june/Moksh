@@ -3,7 +3,7 @@ const customFooter = document.querySelector( ".customFooter" );
 ( () =>
 {
   let navbarContent = `
-    <nav class="navbar navbar-expand-sm" style="background-color: #2980b9;">
+    <nav class="navbar navbar-expand-sm" style="background-color: transparent;">
         <div class="container-fluid">
           <a class="navbar-brand text-white p-0" href="../index.html">
             <img src="../Images/moksh.png" alt="Moksh Logo" class="logo" />

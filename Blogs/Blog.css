@@ -1,5 +1,39 @@
-/* Blog Cards  */
+.heroSectionWrapper {
+  height: 100vh;
+  background-color: #123456;
+  background-image: url('../Images/heroImageBlog2.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  padding: 20px 10px;
+  backdrop-filter: hue-rotate(120deg);
+}
+
+.heroImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.readMore {
+  background-color: #2980b9;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.arrow {
+  background-color: yellow;
+  font-size: 30px;
+  padding: 0 14px;
+}
+
+
+
+/* Blog Cards  */
 .blogCardWrapper {
   border: 1px solid lightgray;
   padding: 5px;

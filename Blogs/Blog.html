@@ -19,16 +19,52 @@
 <body>
   <div class="container-fluid min-vh-100 h-auto p-0 m-0 d-flex flex-column">
 
-    <!-- Responsive navbar  -->
-    <div class="customNavbar"></div>
+    <div class="heroSectionWrapper container-fluid d-flex align-items-center justify-content-between flex-column">
+
+      <!-- <img src="../Images/heroImageBlog.webp" alt="heroImage" class="heroImage"> -->
+
+      <!-- Responsive navbar  -->
+      <div class="customNavbar w-100"></div>
+
+      <!-- Featured Blog  -->
+      <div class="featuredBlog container-fluid px-4 d-flex flex-column text-dark  fw-semibold">
+        <div class="featured pb-2 fs-6">
+          <span>FEATURED</span>
+          <span class="text-danger">
+            <span>&#x2605;</span>
+            <span>&#x2605;</span>
+            <span>&#x2605;</span>
+          </span>
+        </div>
+        <div class="blogTitle ">
+          <h1 class="text-danger fs-1">The Absolute Power of Knowledge</h1>
+          <p class="titleTagLine fw-medium fs-3">
+            In the era of computers that know it all people need something natural...
+          </p>
+        </div>
+        <div class="mt-4">
+          <a href="#" class="readMore text-center d-flex align-items-center w-75 justify-content-between">
+            <span class="flex-grow-1">Read More</span>
+            <span class="arrow">&#x2192;</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="publishedDate container-fluid text-white fs-6 fw-semibold text-end text-uppercase">
+        <span>Published on</span>
+        <span>29-05-2023</span>
+      </div>
+
+    </div>
+
 
     <!-- Blog Cards  -->
-    <div class="container-fluid px-4 py-5 d-flex align-items-center flex-grow-1">
+    <div class="container-fluid px-0 py-5 d-flex align-items-center flex-grow-1">
 
-      <div class="blog w-100 d-flex flex-sm-row flex-column align-items-sm-start align-items-center">
+      <div class="blog container-fluid p-0 w-100 d-flex flex-sm-row flex-column align-items-center justify-center align-items-sm-start">
 
         <!-- Blog - 1  -->
-        <div class="blogCardWrapper text-dark p-0 me-5">
+        <div class="blogCardWrapper text-dark p-0 me-sm-5 w-100 mb-5">
           <img src="../Images/blogImage1.webp" alt="" />
           <div class="blogCardContent">
             <p class="m-0 fw-semibold text-uppercase">Words</p>
@@ -37,7 +73,7 @@
         </div>
 
         <!-- Blog - 2  -->
-        <div class="blogCardWrapper text-dark p-0 me-5">
+        <div class="blogCardWrapper text-dark p-0 me-sm-5 w-100 mb-5">
           <img src="../Images/blogImage2.webp" alt="" />
           <div class="blogCardContent ">
             <p class="m-0 fw-semibold text-uppercase">Weakness is death, Strength is life.</p>
@@ -51,7 +87,8 @@
 
     <!-- Footer  -->
     <footer class="customFooter container-fluid py-3 py-sm-5 h-25 d-flex px-3 flex-column justify-content-between"
-            style="background-color: #2980b9;"></footer>
+            style="background-color: #2980b9 ">
+    </footer>
 
   </div>
 
