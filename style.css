@@ -24,10 +24,10 @@ body {
 } 
 /* Navbar Start */
 
-.nav {
+.tab {
   height: 70px;
   background-color: #2980b9 !important;
-  box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4);
+  /* box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4); */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,6 +37,16 @@ body {
   top: 0;
   font-family: sans-serif;
   user-select: none;
+}
+
+.nav-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link{
+  align-items: center;
 }
 
 .navbar-logo {
@@ -72,13 +82,13 @@ body {
 }
 
 .about {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .nav ul li a {
   color: white !important;
-  display: block;
+  display: flex;
   padding: 0 15px;
   line-height: 70px;
   font-size: 17px;
@@ -86,7 +96,7 @@ body {
   transition: 0.3s;
   letter-spacing: 1px;
   margin: 0;
-  /* margin: 0 20px; */
+  margin: 0 20px;
 }
 
 .nav ul li a.active:hover {
@@ -101,7 +111,7 @@ body {
   text-decoration-color: black;
 }
 
-.nav ul ul {
+.navbar-nav ul ul {
   position: absolute !important;
   top: 85px;
   border-top: 3.5px solid #8ad0ff;
