@@ -19,7 +19,11 @@
 
 ## About The Project 💫
 
-### Mental Health Problems
+### What is Moksh ?
+Moksh or 'moksha' is a Sanskrit word which means " to be free from the cycle of worldly concerns". 
+With the aim of normalizing the discussion of mental health problems and allowing everyone to "be free enough" to take care of their minds, we have created "Moksh", a user-friendly productivity tool which supports the cause of addressing, healing and improving mental health.
+
+### What are Mental Health Problems?
 
 <p align="center">
   <img src="Images/anxiety.png" width="150"/>
@@ -29,21 +33,24 @@
   <img src="Images/ego.png" width="150"/>
 </p>
 
-There are numerous mental problems affecting the people in modern society, including fear, false egos, anxiety, comparisons, competitions, peer pressure and stressful work environment. Mental health issues can lead to physical discomforts such as headaches, stomach aches, difficulty sleeping, irritability, and inability to focus. If left unaddressed, chronic stress can exacerbate these symptoms and give rise to more severe health concerns, including anxiety, hypertension, and reduced immunity.
+Any emotion or a thought which can disrupt one's thought process is considered to be a mental health problem.
+This includes anxiety, comparisons, competitions, fear, false egos, peer pressure and chronic stress. 
+Mental health issues can lead to physical discomforts such as headaches, stomach aches, difficulty sleeping, irritability, and inability to focus. If left unaddressed, it can exacerbate these symptoms and give rise to more severe health concerns, including anxiety, hypertension, and reduced immunity.
 
-### ✨ A Spiritual Productivity Tool for Mental Wellness
+### ✨ Purpose of Moksh
 
-Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. Our customized spiritual features help you take control of your work, focus on what truly matters, and rejuvenate your mind and spirit. By reading Bhagavad Gita, we become soul conscious and gain the strength to fight life's challenges. With Moksh, you can overcome the mental problems that arise from our body consciousness and find true happiness.
+Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. Our customized spiritual features help you take control of your work, focus on what truly matters, and rejuvenate your mind and spirit. By reading the scriptures of Bhagavad Gita, we become aware of our soul's consciousness and gain strength to fight the challenges of life. 
+With Moksh, your journey to improve the quality of thoughts in your mind becomes easy, efficient and enjoyable and you find a way leading to your happiness and peacefulness.
 
 ### ✨ Features
 * Augmented Reality Bhagavad Gita Meditation 🧘‍♂️
 * Connect with ISKCON spiritual events near you 🔗
-* Interactive Gita stories for children and students ✍️
+* Interactive stories from the Gita for children and students ✍️
 * Pomodoro feature(with timer) along with reading Bhagavad Gita shloks in the breaks⌛
 * Stress buster spiritual games 🎮
 * Bhagavad Gita quiz 🤔
-* Random Bhagavad Gita shlok generator with meaning, along with sharing to twitter functionality 🌟
-* Rejuvenate section for watching inspirational videos by spiritual leaders ☮️
+* Random Bhagavad Gita Shlok generator with meaning, along with sharing to twitter functionality 🌟
+* "Rejuvenate" section for watching inspirational videos by spiritual leaders ☮️
 
 ## Demo
 
@@ -51,9 +58,9 @@ https://akshitagupta15june.github.io/Moksh/
 
 ## Doubts
 
-If there are any doubts you can ask here on discord
+If there are any doubts, you can ask here on Discord.
 
-Join Your Discord Server and ask your doubts
+Join our Discord Server and get your doubts clarified!
 
 [![Join our Discord channel](https://img.shields.io/badge/Join%20our-Discord-%237289DA)](https://discord.gg/Jmc97prqjb)
 
