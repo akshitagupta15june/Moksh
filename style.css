@@ -186,7 +186,7 @@ a.dropdown-item{
 }
 
 .text-container {
-  max-width: 800px;
+  max-width: 6rem;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
