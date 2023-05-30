@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <title>Blog</title>
+  <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+  <link rel="stylesheet" href="newBlogStyle.css">
+</head>
+
+<body>
+  <div class="blogWrapper h-screen overflow-hidden">
+    <div class="contentWrapper h-full overflow-y-auto">
+
+      <!-- Featured Blog  -->
+      <div
+           class="featuredBlog bg-indigo-600 h-[80vh] flex px-12 text-2xl flex-col justify-center bg-[url('../Images/heroImageBlog2.webp')] bg-no-repeat bg-cover bg-right">
+        <div class="uppercase font-semibold flex items-center">
+          <span>Featured</span>
+          <div class="stars flex items-center ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+              <path fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                    clip-rule="evenodd" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+              <path fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                    clip-rule="evenodd" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+              <path fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                    clip-rule="evenodd" />
+            </svg>
+
+          </div>
+        </div>
+        <p class="py-8">This is a featured Blog</p>
+        <a href="#" class="uppercase tracking-wider">Read more</a>
+      </div>
+
+      <!-- Blog Cards  -->
+      <div class="blogCards h-auto flex items-center flex-col py-16">
+
+        <h1 class="font-semibold text-2xl uppercase tracking-widest border-double border-b-4 border-indigo-600 pb-2">Articles</h1>
+
+        <!-- Card -1  -->
+        <div class="card-1 mt-16 mb-8 h-[500px] text-2xl flex items-center flex-col justify-between">
+          <img src="../Images/blogImage1.webp" alt="blogImage1">
+          <h1 class=" uppercase font-semibold text-indigo-600">The power of words.</h1>
+          <a href="#" class="py-3 px-8 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest">Read</a>
+          <div class="publishedOn text-base tracking-wider text-slate-500 font-semibold uppercase w-full text-center px-8">
+            <span>Published on: 30-05-2023</span>
+          </div>
+          <div class="forBorder w-5/6  py-1 bg-indigo-900"></div>
+        </div>
+
+        <!-- Card -2  -->
+        <div class="card-1 mt-16 mb-8 h-[500px] text-2xl flex items-center flex-col justify-between">
+          <img src="../Images/blogImage2.webp" alt="blogImage1">
+          <h1 class=" uppercase font-semibold text-indigo-600">The power of words.</h1>
+          <a href="#" class="py-3 px-8 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest">Read</a>
+          <div class="publishedOn text-base tracking-wider text-slate-500 font-semibold uppercase w-full text-center px-8">
+            <span>Published on: 30-05-2023</span>
+          </div>
+          <div class="forBorder w-5/6  py-1 bg-indigo-900"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
