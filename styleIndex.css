@@ -1,3 +1,5 @@
+/*...............................................*/
+
 * {
   /* margin: 0;
   padding: 0; */
@@ -465,3 +467,24 @@ footer .copyright a i{
   margin-top: 10px;
 }
 
+/*From line: 471-490, it contains the code of contributors section modified design to override bootstrap styling */
+.contributor_section_customization{
+  margin-right: -15px;
+  margin-left: -15px;
+  background: #2980b9;
+}
+
+.para_customization{
+font-size: 23px;
+margin: 0;
+padding-top: 10px;
+color: azure;
+margin: auto;
+}
+
+.heading_customization{
+font-size: 50px;
+margin: 0;
+font-weight: 700;
+color: #28357d;
+}
