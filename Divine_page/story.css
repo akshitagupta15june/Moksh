@@ -4,10 +4,11 @@
 }
 
 body {
-  background-color: #b5d3e7;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #b5d3e7 !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  
 }
 
 /* Styling for the quiz form */
@@ -129,7 +130,21 @@ body {
   font-size: 50px;
 }
 
+
 .bottom {
+  display: flex;
+  justify-content: center;
+  gap:35px;
+  flex-wrap: wrap;
+}
+
+.bottom .img img {
+  gap: 5px;
+  width: 30rem;
+  border-radius: 10px;
+}
+
+/* .bottom {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
@@ -139,7 +154,7 @@ body {
   gap: 5px;
   width: 32vw;
   border-radius: 10px;
-}
+} */
 
 .quiz_btn {
   padding: 12px 22px;
