@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
   color: black;
   top: 100px;
   font-size: 1em;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   letter-spacing: 0.2em;
   opacity: 0.6;
@@ -52,13 +52,6 @@ footer {
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-.quote-btn {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-color: black;
 }
 
 footer .logo-title {
@@ -111,24 +104,14 @@ span {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
-
+#content {
+  margin-top: 320px;
+}
 #content p {
   margin-bottom: 2em;
   height: 180px;
   position: relative;
   margin: 40px auto;
-}
-
-#quote {
-  color: #2980b9;
-  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times,
-    serif;
-  letter-spacing: 0.1em;
-  text-align: center;
-  text-transform: lowercase;
-  line-height: 145%;
-  font-size: 2em;
-  font-variant: small-caps;
 }
 
 #quote3 {
@@ -184,43 +167,12 @@ p:hover {
   text-align: left;
 }
 
-#quote {
-  margin-bottom: 20px; /* Add spacing below the quote */
-}
 .buttons {
-  margin-top: 200px;
+  /* margin-top: 200px; */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-#gen {
-  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times,
-    serif;
-  font-size: 18px;
-  font-weight: bold;
-  outline: none;
-  padding: 20px;
-  width: 250px;
-  text-align: center;
-  text-decoration: none;
-  background-color: white;
-  color: black;
-  border: thin solid rgb(0, 0, 0);
-  border-radius: 10px;
-  transition: 0.5s;
-  position: absolute;
-}
-
-#gen:hover {
-  background-color: rgb(70, 145, 250);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-  color: white;
-  cursor: pointer;
-}
-#twitter-share-button {
-  margin-left: 500px; /* Adjust the margin as needed */
 }
 
 @media screen and (max-device-width: 800px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -229,12 +181,113 @@ p:hover {
   }
 }
 
-.fa-twitter {
-  font-size: 65px !important;
-  margin-left: 20px;
-  color: rgb(8 190 190);
-}
-
 .link {
   margin: 10px 0px 5px 10px;
+}
+
+/* CSS for quotes box */
+.fa-twitter {
+  /* font-size: 65px !important; */
+  margin-left: 5px;
+  color: rgb(255, 255, 255);
+}
+.quote-box {
+  padding: 3rem;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.text {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  font-family: 'Roboto', sans-serif;
+  color: #14486b;
+  -webkit-background-clip: text;
+}
+
+.quote {
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.new-quote {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-top: 5px;
+  background-color: #2980b9;
+  transition: all 0.2s ease-in-out;
+}
+.new-quote:hover {
+  transform: scale(1.1);
+  border: none;
+}
+.text-center {
+  text-align: center;
+  text-decoration: none;
+}
+
+.tweet-btn {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: transparent;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-top: 5px;
+  background-color: #55acee;
+  transition: all 0.2s ease-in-out;
+}
+.tweet-btn:hover {
+  transform: scale(1.1);
+  border: none;
+}
+.author {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: rgb(105, 104, 104);
+  -webkit-background-clip: text;
+}
+
+.block {
+  perspective: 150rem;
+  position: absolute;
+  top: 22%;
+  left: 20%;
+  right: 20%;
+}
+
+.block__main {
+  min-width: 60vw;
+  position: absolute;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.47);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.block__back {
+  transform: rotateY(180deg);
+}
+
+.rotateF {
+  transform: rotateY(-180deg);
+}
+
+.rotateB {
+  transform: rotateY(0deg);
 }

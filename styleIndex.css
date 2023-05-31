@@ -1,6 +1,9 @@
-* {
-  /* margin: 0;
-  padding: 0; */
+
+
+ {
+  margin: 0;
+  padding: 0; 
+
   box-sizing: border-box;
 }
 /* styles for scroll to top button */
@@ -67,12 +70,7 @@ p {
   background-image: url("https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?cs=srgb&dl=pexels-sohail-nachiti-807598.jpg&fm=jpg");
   background-size:cover;
 }
-.title-home{
-  color: #ffffff;
-  font-family: 'Righteous', cursive;
-  font-size: 5.5rem;
-  font-weight: bolder;
-  text-align: center;
+
 }
 .title-home-2{
   color: white;
@@ -80,6 +78,7 @@ p {
   text-align: center;
   font-size: 1.9rem;
   text-shadow: 2px 2px darkgreen;
+
 
 }
 /* Navbar Ends */
@@ -414,6 +413,4 @@ footer .copyright a i{
 #header {
   margin-top: 10px;
 }
-.copyright{
-  color: white;
-}
+
