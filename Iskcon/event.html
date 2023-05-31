@@ -99,7 +99,30 @@
   margin-top: 3.5rem;
   transition: all 0.55s ease;
 }
-    </style>
+
+@media only screen and (max-width:700px) {
+    .header{
+      margin-top: 84px;
+    padding-top: 71px;
+    margin-left: -326px;
+    }
+
+    .header h1{
+      font-size: 30px;
+    }
+
+    .text-container{
+      margin-top: 84px;
+    padding-top: 71px;
+    margin-left: -326px;
+    }
+
+    .innerevent h1{
+      padding-top: 188px;
+    }
+  }
+   </style>
+
     <div class ="about" >
     <div class="header">
       <h1>Learn About ISKCON</h1>
@@ -126,25 +149,28 @@
 </div>
   <!-- The Tour Section -->
   <div id="event">
-    <div
-         class="w3-container w3-content w3-padding-64"
-         style="max-width: 800px">
-         <br>
-         <br>
-      <h1 class="w3-container" class="w3-wide w3-center"><b>EVENTS</b></h1>
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">
-          XPRESSION 2023 Kanpur<span class="w3-tag w3-red w3-margin-left">UpComing Events</span>
-        </li>
-        <li class="w3-padding">
-          Sri Rama Navami Celebrations<span
-                class="w3-tag w3-red w3-margin-left">UpComing Events</span>
-        </li>
-        <li class="w3-padding">
-          silver jublie
-          <span class="w3-tag w3-yellow w3-margin-left">Coming Up!</span>
-        </li>
-      </ul>
+            <div  class="w3-container w3-content w3-padding-64"
+            style="max-width: 800px;">
+            
+        <div class="innerevent" style="margin-top: 20%; margin-bottom: 10px;">
+              <div>  <h1 class="w3-container" class="w3-wide w3-center" style="padding-bottom: 10px; text-align: center;"><b>EVENTS</b></h1></div>
+            <div>
+                <ul class="w3-ul w3-border w3-white w3-text-grey">
+                  <li class="w3-padding">
+                    XPRESSION 2023 Kanpur<span class="w3-tag w3-red w3-margin-left">UpComing Events</span>
+                  </li>
+                  <li class="w3-padding">
+                    Sri Rama Navami Celebrations<span
+                          class="w3-tag w3-red w3-margin-left">UpComing Events</span>
+                  </li>
+                  <li class="w3-padding">
+                    silver jublie
+                    <span class="w3-tag w3-yellow w3-margin-left">Coming Up!</span>
+                  </li>
+                </ul>
+            </div>
+        </div>
+
       <!--cards-->
       <div class="cards">
         <div class="card" style="width: 30rem; height:500px">
@@ -370,6 +396,16 @@
       display: flex;
       justify-content: center;
     }
+
+    .featureslink{
+      font-size: 16px;
+    }
+    .featureslink:hover{
+      text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    }
   </style>
 
   <footer>
@@ -388,22 +424,22 @@
 
       <div>
         <ul>
-          <li class="matrix-item"><a class="active" href="index.html">Home</a></li>
-          <li class="matrix-item"><a href="#about">About</a></li>
-          <li class="matrix-item"><a href="meditation.html">Augmented Reality Meditation</a></li>
+          <li class="matrix-item"><a class="active featureslink" href="../index.html">Home</a></li>
+          <li class="matrix-item"><a href="#about" class="featureslink">About</a></li>
+          <li class="matrix-item"><a href="../AR_Meditate/meditation.html" class="featureslink">Augmented Reality Meditation</a></li>
         </ul>
       </div>
       <div>
         <ul>
-          <li class="matrix-item"><a href="event.html">Iskcon Events</a></li>
-          <li class="matrix-item"><a href="story.html">Divine activities for all Generation</a></li>
-          <li class="matrix-item"><a href="reward.html">Pomodoro spriritual Break</a></li>
+          <li class="matrix-item"><a href="event.html" class="featureslink">Iskcon Events</a></li>
+          <li class="matrix-item"><a href="../Divine_page/story.html" class="featureslink">Divine activities for all Generation</a></li>
+          <li class="matrix-item"><a href="../Pomodro_page/reward.html" class="featureslink">Pomodoro spriritual Break</a></li>
         </ul>
       </div>
       <div>
         <ul>
-          <li class="matrix-item"><a href="motivation.html">Read a Shlok</a></li>
-          <li class="matrix-item"><a href="rejuvenate.html">Rejuvenate</a></li>
+          <li class="matrix-item"><a href="../shlok_page/motivation.html">Read a Shlok</a></li>
+          <li class="matrix-item"><a href="../Rejuvenate_page/rejuvenate.html" class="featureslink">Rejuvenate</a></li>
         </ul>
       </div>
 
