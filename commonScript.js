@@ -1,4 +1,4 @@
-const customNavbar = document.querySelector( ".customNavbar" )
+// const customNavbar = document.querySelector( ".customNavbar" )
 const customFooter = document.querySelector( ".customFooter" );
 ( () =>
 {
@@ -62,48 +62,43 @@ const customFooter = document.querySelector( ".customFooter" );
         </div>
       </nav> 
     `
-  customNavbar.innerHTML = navbarContent
+  // customNavbar.innerHTML = navbarContent
 
   let footerContent = `
-     <!-- Row 1  -->
-        <div class="container-fluid d-flex align-items-center px-0 justify-content-sm-between flex-column flex-sm-row">
+  <!-- Row - 1  -->
+          <div class="row-1 flex items-center justify-center">
 
-          <div class='d-flex align-items-center justify-content-center'>
-            <img class="logo" src="../Images/moksh.png" alt="Moksh Logo" style="
-                                  height: 60px;
-                                  width: 60px;
-                                  margin-right: 10px;
-                                  filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg)
-                                    brightness(97%) contrast(99%);
-                                " />
-
-            <h1 class="title text-white" class="fs-1">
-              Moksh
-            </h1>
+            <div class="flex items-center justify-center">
+              <img src="../Images/moksh.png" alt="Moksh Logo" />
+              <div class="flex flex-col pl-8 w-1/2">
+                <span class="w-fit italic font-bold text-indigo-600 mb-1 border-double border-b-4 border-indigo-600">
+                  A Spiritual Productivity Tool for Mental Wellness
+                </span>
+                <span class="text-xs font-semibold text-justify">
+                  Moksh is a spiritual productivity tool designed for individuals who
+                  want to unlock their potential and achieve true balance in life.
+                </span>
+              </div>
+            </div>
           </div>
 
-          <div class="tagline text-white text-center my-3 my-sm-0 text-sm-end d-flex flex-column sm-w-50 ">
-            <p class="fw-semibold m-0 fs-5">
-              A Spiritual Productivity Tool for Mental Wellness
-            </p>
-            <p class="intro fw-medium smallerFontSize text-sm-end fst-italic m-0 ps-sm-3">
-              Moksh is a spiritual productivity tool designed for individuals who
-              want to unlock their potential and achieve true balance in life.
-            </p>
+          <!-- Row - 2 Footer Socials  -->
+          <div class="socials my-8 row-2 flex justify-between sm:w-1/2 capitalize font-semibold  text-[11px]">
+            <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Twitter</a>
+            <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Facebook</a>
+            <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Instagram</a>
+            <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Github</a>
           </div>
 
-        </div>
-
-        <!-- Row 2  -->
-        <div
-          class="copyright d-flex align-items-center mt-5 flex-column flex-sm-row justify-content-sm-between justify-content-center text-center smallerFontSize fw-semibold">
-          <p class="m-0">
-            Made with ❤️ by Akshita during XPRESSION'23
-          </p>
-          <p class="m-0">
-            &copy; 2023 Moksh. All rights reserved.
-          </p>
-        </div>
+          <!-- Row - 3  -->
+          <div class="row-3 copyright text-center font-semibold text-xs ">
+            <p>
+              Made with ❤️ by Akshita during XPRESSION'23
+            </p>
+            <p>
+              &copy; 2023 Moksh. All rights reserved.
+            </p>
+          </div>
   `
   customFooter.innerHTML = footerContent
 } )()
