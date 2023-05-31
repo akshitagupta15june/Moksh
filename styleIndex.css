@@ -10,8 +10,8 @@
   right: 30px;
   width: 60px;
   height: 60px;
-  background-color: #4ade80;
-  color: #fff;
+  background-color:#ffffff;
+  color: rgb(4, 109, 4);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -36,111 +36,56 @@ p {
   color: rgb(33, 33, 33);
   font-size: 20px;
 }
-
-body {
-  background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #2980b9;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-} 
-
+.moksh-png-bg{
+  background-color: transparent;
+  height: 150px;
+  margin-bottom: 0px;
+}
 /* Navbar Start */
+.container-fluid
+{
+  padding: 3% 15%;
+}
+.nav-item{
+  padding:0 10px;
+  font-family: 'Amaranth', sans-serif;
+}
+.nav-text{
+  color: #2980b9;
 
-.navbar {
-  z-index: 100;
-  height: 70px;
-  background-color: #2980b9 !important;
+}
+.nav-link{
+  font-size: 1.3rem;
+}
+.navbar{
+  padding:0 4.5rem;
+  background-color: rgba(255,255,255);
+  border-radius: 10px;
 }
 
-.navbar img {
-  width: 60px;
-  background-color: antiquewhite;
-  border-radius: 10%;
+.page-title-container{
+  background-image: url("https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?cs=srgb&dl=pexels-sohail-nachiti-807598.jpg&fm=jpg");
+  background-size:cover;
 }
-
-.navbar span {
-  font-weight: bold;
+.title-home{
+  color: #ffffff;
+  font-family: 'Righteous', cursive;
+  font-size: 5.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.title-home-2{
   color: white;
-  margin-left: 10px;
-}
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 1.9rem;
+  text-shadow: 2px 2px darkgreen;
 
-.navbar a:hover {
-  text-decoration: none;
-}
-
-.navbar-nav {
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.about {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.about a{
-  color: white !important;
-  font-size: large;
-}
-
-.features {
-  /* margin-left: 100px; */
-  /* margin-right: 80px; */
-  color: white !important;
-}
-
-@media screen and (max-width: 1000px) {
-  .features {
-    margin-left: 100px;
-    /* margin-right: 80px; */
-    color: white !important;
-  }
-  #google_translate_element select {
-    /* background-color: #2980b9 !important; */
-    margin-left: 100px;
-
-    background-color: #f6edfd;
-    color: black;
-    border: none;
-    border-radius: 3px;
-    padding: 6px 8px;
-    cursor: pointer;
-  }
-
-}
-
-a.features {
-  font-size: large;
-}
-
-.navbar-collapse {
-  background-color: #2980b9;
-}
-
-.navbar-nav li a:hover {
-  color: black ;
-  text-decoration: underline;
-  text-decoration-color: black;
-}
-
-/* Google Translate */
-#google_translate_element select {
-  /* background-color: #2980b9 !important; */
-
-  background-color: #f6edfd;
-  color: black;
-  border: none;
-  border-radius: 3px;
-  padding: 6px 8px;
-  cursor: pointer;
 }
 /* Navbar Ends */
 
 .header {
-  background-color: #2980b9;
+  background-color: rgb(4, 109, 4);
   color: #fff;
   text-align: center;
   padding: 50px;
@@ -170,18 +115,75 @@ a.features {
   background-color: antiquewhite;
   margin-right: 20px;
 }
+#about-section,.about-section-1-para,.about-section-2-para{
+  background-color: rgb(4, 109, 4);
+  padding: 3.9% 5%;
+  text-align: center;
+  color: whitesmoke;
+}
+.about-section-heading{
+  margin-bottom: 50px;
+  font-family: 'Righteous';
+}
+.about-section-1-para,.about-section-2-para{
+  text-align: justify;
+  font-family: 'Amaranth';
+  padding: 3% 10%;
+}
+.about-intro-line{
+  border-top: 10px dotted ;
+  width: 500px;
+  color: rgb(255, 255, 255);
+
+}
+.about-section-img{
+  height:380px;
+  width:380px;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.flex-nested-container{
+  display: flex;
+  flex-direction: column;
+}
+.flex-img{
+  margin:50px ;
+  height:200px;
+} 
+.flex-img {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+@media all and (max-width: 500px){
+  iframe{
+    height:300px;
+    width:350px;
+  }
+  .contributor-inner-tile{
+    height:300px;
+    width:350px;
+  }
+}
 
 .text-container {
   max-width: 800px;
-  margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
-  background-color: #2980b9;
+  background-color: rgb(4, 109, 4);
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   margin-top: 3.5rem;
   transition: all 0.55s ease;
+  margin-bottom: 60px;
 }
 
 .text-container:hover {
@@ -192,7 +194,7 @@ a.features {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #363636;
+  color: rgb(255, 255, 255);
 }
 
 .description {
@@ -210,15 +212,13 @@ a.features {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  
+  
 }
 
 .card {
-  background-color: #2980b9;
-  background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
-  background-size: cover;
-  color: #2980b9;
-  width: 400px;
+  background-color: white;
+  width: 350px;
   /* height: 500px; */
   margin: 20px;
   text-align: center;
@@ -229,6 +229,9 @@ a.features {
   border-radius: 10px !important;
   overflow: hidden;
 }
+.feature-sec-img{
+  height: 300px;
+}
 
 .card img {
   width: 100%;
@@ -236,7 +239,15 @@ a.features {
   border-top-right-radius: 10px;
   
 }
-
+.prime-card-container{
+  background-color: rgb(4, 109, 4);
+}
+.feature-heading{
+  color: white;
+  font-family: 'Amaranth';
+  font-size: 4.3rem ;
+  padding-top: 4%;
+}
 .feature-wrapper {
   display: grid;
   grid-template-rows: 0fr;
@@ -253,7 +264,7 @@ a.features {
   margin: 5px 0 0 0;
 
   padding: 4px 0;
-  background-color: rgb(74, 103, 164);
+  background-color: rgb(4, 109, 4);
   color: white;
   
 }
@@ -263,7 +274,6 @@ a.features {
   font-size: 18px;
   margin: 10px;
   text-align: left;
-
   text-align: center;
 }
 
@@ -276,8 +286,8 @@ a.features {
 }
 
 .card .feature-description button {
-  background-color: #0e1f2b;
-  border: 1px solid black;
+  background-color: rgb(4, 109, 4);
+  border: 1px solid white;
 
 
   padding: 10px 20px;
@@ -289,7 +299,7 @@ a.features {
 }
 
 .card button:hover {
-  background-color: #2980b9;
+  background-color: #dddddd;
   color: white;
 }
 
@@ -301,99 +311,36 @@ a.features {
 }
 
 .image-container {
-  margin-top: 140px;
+  margin-top: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  
+}
+.moksh-intro{
+  background-color: #fff;
+  padding: 6% 15%;
+
+}
+.moksh-intro-subheading{
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 2.9rem;
+  color: #2980b9;
+
+}
+.moksh-intro-para{
+  font-family: 'Lobster', cursive;
+  margin-top: 50px;
+  text-align: center;
+}
+.moksh-intro-line{
+  border-top: 10px dotted ;
+  width: 300px;
+  color: rgb(45, 112, 220);
 }
 
-.circle1 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 20px;
-  overflow: hidden;
-  border: 0px solid #ffffff;
-  position: absolute;
-  left:8rem;
-}
-
-.circle1 .img1 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.circle2 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 20px;
-  overflow: hidden;
-  border: 0px solid #ffffff;
-  position: absolute;
-  right:10rem;
-}
-
-.circle2 .img2 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.circle3 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 20px;
-  overflow: hidden;
-  border: 0px solid #ffffff;
-  position: absolute;
-  top:15rem;
-  right:4rem;
-}
-
-.circle3 .img3 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.circle4 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 20px;
-  overflow: hidden;
-  border: 0px solid #ffffff;
-  position: absolute;
-  top:18rem;
-  left:1.5rem;
-}
-
-.circle4 .img4 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.circle5 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 20px;
-  overflow: hidden;
-  border: 0px solid #ffffff;
-  position: absolute;
-  top:-8rem;
-}
-
-.circle5 .img5 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 @media only screen and (max-width: 768px) {
   .circle {
@@ -403,13 +350,14 @@ a.features {
   }
 }
 
+
 footer .logo {
   background-color: #000000;
   border-radius: 50%;
 }
 
 footer {
-  background-color: #2980b9;
+  background-color: rgb(4, 109, 4);
   color: #fff;
   padding: 20px 0;
   font-size: 14px;
@@ -460,8 +408,12 @@ footer .copyright a i{
     margin: 0 5px;
   }
 }
-
+.contributor-text{
+  color: white;
+}
 #header {
   margin-top: 10px;
 }
-
+.copyright{
+  color: white;
+}
