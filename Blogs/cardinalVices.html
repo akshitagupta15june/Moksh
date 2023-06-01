@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <title>Blog</title>
+  <title>Blog- 5 Cardinal Vices</title>
   <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
   <link rel="stylesheet" href="newBlogStyle.css">
 </head>
@@ -15,24 +15,7 @@
 
     <!-- Site Menu Links  -->
     <div
-         class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between  h-screen z-50 absolute top-0 sm:-right-[2000px] overflow-y-auto bg-white w-screen sm:w-1/2  p-8">
-
-      <!-- Row - 1  -->
-      <div class="row-1 flex items-center justify-between">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-             class="w-6 h-6 closeDropDown cursor-pointer ease-in-out duration-300 hover:text-indigo-600">
-          <path fill-rule="evenodd"
-                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
-                clip-rule="evenodd" />
-        </svg>
-        <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1>
-      </div>
-
-      <img src="../Images/moksh.png" alt="" class="h-36 w-36 mx-auto my-4">
-
-      <!-- Row - 2  -->
-      <div class="navLinks"></div>
-
+         class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between  h-screen z-50 absolute top-0 -right-[2000px] bg-white w-screen sm:w-1/2 overflow-y-auto p-8">
     </div>
 
     <div class="contentWrapper h-full overflow-y-auto flex flex-col justify-between">
@@ -43,17 +26,18 @@
 
         <!-- Navbar   -->
         <div
-             class="fixed navbar text-indigo-700 top-0 px-6 py-2 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
+             class="fixed navbar text-indigo-700 top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
           <div class="leftSection">
-            <a class="flex items-center" href="./index.html">
+            <a class="flex items-center" href="../index.html">
               <img src="../Images/moksh.png" alt="Moksh Logo" class="w-16 h-16" />
-              <span class="ml-3 text-2xl uppercase font-semibold projectName tracking-widest">Moksh</span>
+              <span
+                    class="ml-3 text-xl sm:text-2xl uppercase font-semibold text-indigo-600 projectName tracking-widest ease-in-out duration-300 hover:text-slate-900">Moksh</span>
             </a>
           </div>
           <div class="rightSection">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor"
-                 class="openDropDown h-10 w-10 text-indigo-600 cursor-pointer ease-in-out duration-300 p-2 hover:text-indigo-900">
+                 class="openDropDown h-10 w-10 text-indigo-600 cursor-pointer ease-in-out duration-300 p-2 hover:text-slate-900">
               <path stroke-linecap="round" stroke-linejoin="round"
                     d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
             </svg>
@@ -64,7 +48,7 @@
       </div>
 
       <div class="blogWrapper mt-28 py-8 h-auto bg-slate-100 flex flex-col items-center">
-        <div class="title">
+        <div class="title px-3">
           <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold ">
             <span class="pb-1 border-double border-b-4 border-b-indigo-600">5 Cardinal Vices</span>
           </h1>
@@ -400,14 +384,14 @@
             <!-- Question -1  -->
             <div class="questionWrapper question-1 bg-white border border-gray-400 mb-4 rounded-md overflow-hidden">
               <button
-                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center justify-between cursor-pointer ">
-                <p>How is attachment karma?</p>
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How is attachment karma?</p>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="w-6 h-6 arrows">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                 </svg>
               </button>
-              <div class="answer p-3 hidden ease-in-out duration-300">
+              <div class="answer p-3 hidden">
                 <p class="">
                   When we are attached , we believe that we are doing something for someone. Just the fact that you
                   are doing or you are
@@ -419,8 +403,8 @@
             <!-- Question - 2  -->
             <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
               <button
-                      class="question w-full bg-gray-100 text-md p-3 font-semibold flex items-center justify-between cursor-pointer ">
-                <p>How can we change ourself?</p>
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How can we change ourself?</p>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="w-6 h-6 arrows">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -437,19 +421,309 @@
               </div>
             </div>
 
+            <!-- Question - 3  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">Ego, Money, Attitude and Power end at one place - graveyard. Can you
+                  guide us about
+                  the bitter
+                  truth about this?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  Change is inevitable in everything you see today or have today or will have have in the future.
+                  You have to understand that all these things are with you today, they might not be with you
+                  tomorrow.
+                </p>
+                <p class="my-1">
+                  Gyaan is what prepares you to accept this change in life.
+                  Change is inevitable and the sooner we accept this truth , the easier it is to accept any situation
+                  that arises in life.
+                </p>
+                <p class="my-1">
+                  If you have money and power - don’t misuse it - that’s where the ego and attitude come into play -
+                  use it to grow and
+                  help others grow. Understand that this is not yours, but for you.
+                  Accept the temporary nature of everything in life and you will learn to sail through life
+                  beautifully.
+                </p>
+
+
+              </div>
+            </div>
+
+            <!-- Question - 4  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How do we get rid of the habit of gossiping?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  This need for gossip stems from the fact that you want to prove yourself right and the other person
+                  wrong.
+                  It’s best to keep quiet and ignore such gossip if it has nothing to do with you.
+                  Ask yourself-
+                </p>
+                <ol class="list-decimal px-4">
+                  <li>
+                    <p>Is it necessary?</p>
+                  </li>
+                  <li>
+                    <p>Is it going to help me move forward in life?</p>
+                  </li>
+                  <li>
+                    <p>Is it the truth or has it been fabricated to look like the truth?</p>
+                  </li>
+                </ol>
+                <p class="my-1">
+                  Also know that - If I pass on the gossip - it will lead to me making karma which I will have to pay
+                  for.
+                  It will come with self- realization and practice .
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 5  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How do you get over the fear of social anxiety?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  Go out and face this fear. Try going with a friend or someone who is aware of your anxiety and
+                  choose a place where it’s
+                  easy for you to leave if you have to.
+                </p>
+                <p class="my-1">
+                  You will feel less anxious if you talk or engage with people you are comfortable talking to.
+                </p>
+                <p class="my-1">Try not focusing on yourself or your behaviour and enjoy your surroundings.
+                </p>
+                <p class="my-1">Facing this fear will help you build confidence in who you are.
+                </p>
+                <p class="my-1">Don’t be scared or shy.</p>
+              </div>
+            </div>
+
+            <!-- Question - 6  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">If someone suddenly misbehaves with us what do I do?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  Misbehavior can be of various kinds.
+                </p>
+                <p class="my-1">
+                  If it’s a General misbehavior- try and talk to the person and communicate that you are not
+                  comfortable with what they
+                  did and would appreciate that they don’t do it in the future.
+
+                </p>
+                <p class="my-1">If it’s sudden - something you did could’ve triggered it. Find out the reason through
+                  cordial
+                  communication and try and
+                  sort it out.
+
+                </p>
+                <p class="my-1">If it’s misbehavior of an inappropriate kind or sexual kind - please speak to someone
+                  who has the
+                  authority in that
+                  organization or situation to do something about it. If it’s this kind of misbehavior please don’t be
+                  scared to voice
+                  out.
+
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 7  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How do you love yourself if you are not physically healthy and therefore
+                  you don’t
+                  have a good feeling for others as
+                  well?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  If you are not physically healthy and you don’t like yourself as you are now - try bringing a change
+                  in your routine -
+                  move from being unhealthy to healthy by making certain lifestyle changes. It’s entirely in your
+                  hands to change what you
+                  don’t like about yourself.
+                </p>
+                <p class="my-1">
+                  At the same time, don’t use drastic measures and hurt yourself , take it one day at a time.
+                </p>
+                <p class="my-1">When you learn to accept yourself as you are , you will accept everything around you.
+                </p>
+                <p class="my-1">
+                  Don’t body shame yourself , but don’t be hesitant to change your lifestyle to a healthier one
+                  either. The ball is in
+                  your court.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 8  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">
+                  What is the difference between goal and desire?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  A goal is a commitment you make - something you want to achieve for your betterment. Something you
+                  work towards. It’s
+                  usually long- term.
+                </p>
+                <p class="my-1">
+                  A desire is usually momentary and keeps changing with your wants and situations.
+                </p>
+                <p class="my-1">
+                  For example - your goal is being fit , but your desire is to eat tasty and junk food -
+                  So you decide whether your goal is important or your desire.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 9  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">
+                  If I’m not good at something is it good to have hope or expectation that I will be better?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  You can’t be the best at everything. But if it’s something you are passionate about and you practice
+                  enough you can make
+                  yourself better.
+                </p>
+                <p class="my-1">
+                  However, if that doesn’t happen even after you put in your best don’t be ashamed to find something
+                  that you are better
+                  at.
+                </p>
+                <p class="my-1">
+                  Hope for the best, but be prepared for the worst.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 10  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">
+                  How do you develop good bonds as sisters?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  You work on every relationship with communication and love and nurture it.
+                </p>
+                <p class="my-1">
+                  Be open and honest and be yourself in every situation.
+                </p>
+                <p class="my-1">
+                  Don’t let small issues or your ego get in the way of your relationship.
+
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 11  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">
+                  If you get anxious and tense is that your karma?
+
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  If you get anxious and tense it’s usually your fears coming to the surface. So work on facing your
+                  fears or situations
+                  that make you tense or anxious.
+                </p>
+                <p class="my-1">
+                  What you do as a reaction to these fears works toward making your karma.
+                </p>
+
+              </div>
+            </div>
+
           </div>
 
         </div>
+
+        <a href="../Blogs/Blog.html"
+           class="my-5 p-6 rounded-md uppercase font-semibold bg-rose-600 text-white ease-in-out duration-300 hover:bg-gray-900">Back
+          to
+          Blogs</a>
+
       </div>
+
+
 
       <!-- Footer  -->
       <footer class="customFooter flex flex-col items-center py-4"></footer>
-
-
     </div>
-    <script src="../commonScript.js"></script>
-    <script src="./blogs.js"></script>
-    <script src="../script.js"></script>
+
+  </div>
+
+  <script src="./blogs.js"></script>
+  <script src="../script.js"></script>
+  <script src="../commonScript.js"></script>
 
 </body>
 

@@ -6,6 +6,28 @@ function googleTranslateElementInit ()
   )
 
 }
+
+// All pages menu interaction 
+let openDropDown = document.querySelector( '.openDropDown' ),
+  dropMenuLinks = document.querySelector( '.dropMenuLinks' ),
+  contentWrapper = document.querySelector( '.contentWrapper' ),
+  navbar = document.querySelector( '.navbar' )
+
+
+contentWrapper.onscroll = () =>
+{
+  contentWrapper.scrollTop > 5 ? navbar.classList.add( 'bg-white' ) : navbar.classList.remove( 'bg-white' )
+}
+
+openDropDown.onclick = () =>
+{
+  dropMenuLinks.style.right = 0
+}
+
+
+
+// Ends all pages menu interaction 
+
 // Get the "return to top" button element
 let returnToTopButton = document.getElementById( 'returnToTop' )
 
@@ -31,29 +53,7 @@ function toggleReturnToTopButton ()
 }
 
 // Add event listeners
-window.addEventListener( 'scroll', toggleReturnToTopButton )
-// returnToTopButton.addEventListener('click', scrollToTop);
+window.addEventListener( 'scroll', toggleReturnToTopButton );
+// returnToTopButton.addEventListener( 'click', scrollToTop );
 
-let contentWrapper = document.querySelector( '.contentWrapper' ),
-  dropMenuLinks = document.querySelector( '.dropMenuLinks' ),
-  openDropDown = document.querySelector( '.openDropDown' ),
-  closeDropDown = document.querySelector( '.closeDropDown' ),
-  navbar = document.querySelector( '.navbar' )
 
-contentWrapper.onscroll = () =>
-{
-  contentWrapper.scrollTop > 5 ? navbar.classList.add( 'bg-indigo-600', 'text-white' ) : navbar.classList.remove( 'bg-indigo-600', 'text-white' )
-  contentWrapper.scrollTop > 5 ? openDropDown.classList.add( 'text-white' ) : ''
-}
-
-openDropDown.onclick = () =>
-{
-  dropMenuLinks.classList.add( 'right-0' )
-  dropMenuLinks.classList.remove( 'sm:-right-[2000px]' )
-}
-
-closeDropDown.onclick = () =>
-{
-  dropMenuLinks.classList.remove( 'right-0' )
-  dropMenuLinks.classList.add( 'sm:-right-[2000px]' )
-}
