@@ -1,10 +1,5 @@
 <div align="center">
- 
- <style>
-.moksh {
-  vertical-align: middle;
-}
-</style>
+
 <h1><img src="https://media.tenor.com/R6A1Nc-beKwAAAAj/rose-flower.gif" class="moksh" height="40px" width="40px"> MOKSH  <img src="https://media.tenor.com/R6A1Nc-beKwAAAAj/rose-flower.gif" class="moksh" height="40px" width="40px"></h1>
 <a href="https://github.com/akshitagupta15june/Moksh/issues"><img src="https://img.shields.io/github/issues/akshitagupta15june/Moksh"></a>
 <a href="https://github.com/akshitagupta15june/Moksh/pulls"><img src="https://img.shields.io/github/issues-pr/akshitagupta15june/Moksh"></a>
