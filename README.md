@@ -13,9 +13,15 @@
 
 ### _Unlock your potential and achieve true balance in life with Moksh!_
  <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion</h3>
- <h2>Watch this <a href="https://youtu.be/wfdF___qNME">Video</a> to know about Moksh</h2>
+ <h2></h2>
 
 </div>
+
+## Watch this to know about Moksh (Demo Video)
+
+<h3>Demo Video on Youtube - <a href="https://youtu.be/wfdF___qNME">Link</a> (In case there is an error loading the embedded video below 👇)<h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wfdF___qNME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## About The Project 💫
 
