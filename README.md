@@ -43,7 +43,7 @@ Moksh is a spiritual productivity tool designed for individuals who want to unlo
 * Stress buster spiritual games 🎮
 * Bhagavad Gita quiz 🤔
 * Random Bhagavad Gita shlok generator with meaning, along with sharing to twitter functionality 🌟
-* Rejuvenate section for watching inspirational videos by spiritual leaders ☮️
+* Rejuvenation section for watching inspirational videos by spiritual leaders ☮️
 
 ## Demo
 
@@ -66,7 +66,7 @@ Join Your Discord Server and ask your doubts
 - [Bootstrap](https://getbootstrap.com)
 - [JavaScript](https://www.javascript.com/)
 
-👉 AR Medidation integration:
+👉 AR Meditation integration:
 
 - [Echo-AR](https://www.echo3d.com)
 
