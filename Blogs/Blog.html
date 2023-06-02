@@ -22,7 +22,7 @@
 
       <!-- Hero Section & Navbar  -->
       <div
-           class="heroSection h-fit md:h-[100vh] flex px-6 sm:px-8  text-2xl sm:text-lg flex-col bg-no-repeat bg-contain md:bg-right">
+           class="heroSection h-fit md:h-[100vh] flex px-6 sm:px-8 text-2xl sm:text-lg flex-col bg-no-repeat items-center bg-contain md:bg-right">
 
         <!-- Navbar   -->
         <div
@@ -47,9 +47,9 @@
 
         <!-- Featured Blog  -->
         <div
-             class="featuredBlog grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-0 mt-24 h-auto md:h-[calc(100vh-70px)] w-full  text-slate-900 bg-top bg-cover bg-no-repeat">
+             class="featuredBlog grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-0 mt-24 h-auto md:h-[calc(100vh-70px)] w-full md:w-5/6 shadow-2xl text-slate-900 bg-top bg-cover bg-no-repeat">
 
-          <div class="featuredBlogWrapper order-2 md:order-1 pr-4 flex flex-col justify-center">
+          <div class="featuredBlogWrapper order-2 md:order-1 px-8 flex flex-col justify-center">
             <div class="uppercase text-xs font-semibold flex items-center">
               <span class="tracking-widest">Featured</span>
               <div class="stars flex items-center ml-1">
@@ -90,8 +90,46 @@
                class="w-fit text-xs py-3 px-4 sm:py-2 sm:px-3 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest ease-in-out duration-300 sm:hover:bg-gray-900">Read
               more</a>
 
+            <!-- Social Share links  -->
+            <div class="social-share my-4 flex items-center justify-between w-2/3 md:w-1/3">
+              <a href="#" title="Share">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                     class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                  <path fill-rule="evenodd"
+                        d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+                        clip-rule="evenodd" />
+                </svg>
+              </a>
+
+              <a href="#" title="Save">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                </svg>
+              </a>
+
+              <a href="#" title="Download">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+                </svg>
+              </a>
+
+              <a href="#" title="Print">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z" />
+                </svg>
+              </a>
+
+            </div>
+
           </div>
           <img src="../Images/blog-vices.webp" alt="" class="md:h-[calc(100vh-100px)] w-full order-1 md:order-2">
+
         </div>
 
       </div>
@@ -110,12 +148,12 @@
           <div
                class="mt-16 mb-8 sm:p-3 sm:h-[500px] text-xl sm:text-sm flex items-center flex-col justify-between sm:shadow-2xl group rounded-md">
             <img src="../Images/blogImage1.webp" alt="blogImage1"
-                 class="h-full w-full sm:h-2/3 sm:rounded-md sm:group-hover:scale-110 ease-in-out duration-700">
+                 class="h-full w-full sm:h-2/3 sm:rounded-md group-hover:scale-110 ease-in-out duration-700">
 
             <div class="cardDescription text-center">
               <h1 class="uppercase font-semibold text-indigo-600 py-8">The power of words.</h1>
               <a href="./Words.html"
-                 class="py-3 my-4 px-8 sm:py-2 sm:px-6 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest ease-in-out duration-300 sm:group-hover:bg-gray-900">Read</a>
+                 class="py-3 my-4 px-8 sm:py-2 sm:px-6 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest ease-in-out duration-300 group-hover:bg-gray-900">Read</a>
             </div>
             <div
                  class="publishedOn text-base sm:text-sm tracking-wider text-slate-500 font-semibold uppercase w-full text-center px-8 pt-8">
@@ -128,12 +166,12 @@
           <div
                class="mt-16 mb-8 sm:p-3 sm:h-[500px] text-xl sm:text-sm flex items-center flex-col justify-between sm:shadow-2xl  group rounded-md">
             <img src="../Images/blogImage2.webp" alt="blogImage1"
-                 class="h-full w-full sm:h-2/3 sm:rounded-md sm:group-hover:scale-110 ease-in-out duration-700">
+                 class="h-full w-full sm:h-2/3 sm:rounded-md group-hover:scale-110 ease-in-out duration-700">
 
             <div class="description text-center">
               <h1 class="uppercase font-semibold text-indigo-600 py-8">Weakness is death, Strength is life.</h1>
               <a href="./Strength.html"
-                 class="py-3 px-8 my-4 sm:py-2 sm:px-6 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest ease-in-out duration-300 sm:group-hover:bg-gray-900">Read</a>
+                 class="py-3 px-8 my-4 sm:py-2 sm:px-6 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest ease-in-out duration-300 group-hover:bg-gray-900">Read</a>
             </div>
 
             <div
