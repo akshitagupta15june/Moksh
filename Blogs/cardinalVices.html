@@ -1,0 +1,770 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <title>Blog- 5 Cardinal Vices</title>
+  <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
+  <link rel="stylesheet" href="newBlogStyle.css">
+</head>
+
+<body>
+  <div class="blogWrapper h-screen overflow-hidden relative">
+
+    <!-- Site Menu Links  -->
+    <div
+         class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between  h-screen z-50 absolute top-0 -right-[2000px] bg-white w-screen sm:w-1/2 overflow-y-auto p-8">
+    </div>
+
+    <div class="contentWrapper h-full overflow-y-auto flex flex-col justify-between">
+
+      <!-- Hero Section & Navbar  -->
+      <div
+           class="heroSection bg-[#4E88BD] h-auto flex px-12 text-2xl sm:text-lg flex-col justify-center bg-[url('../Images/blog-vices.webp')] bg-no-repeat bg-contain bg-right">
+
+        <!-- Navbar   -->
+        <div
+             class="fixed navbar text-indigo-700 top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
+          <div class="leftSection">
+            <a class="flex items-center" href="../index.html">
+              <img src="../Images/moksh.png" alt="Moksh Logo" class="w-16 h-16" />
+              <span
+                    class="ml-3 text-xl sm:text-2xl uppercase font-semibold text-indigo-600 projectName tracking-widest ease-in-out duration-300 hover:text-slate-900">Moksh</span>
+            </a>
+          </div>
+          <div class="rightSection">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="openDropDown h-10 w-10 text-indigo-600 cursor-pointer ease-in-out duration-300 p-2 hover:text-slate-900">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="blogWrapper mt-28 py-8 h-auto flex flex-col items-center">
+
+        <div class="title px-3 flex flex-col items-center w-full">
+
+          <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold ">
+            <span class="pb-1 border-double border-b-4 border-b-indigo-600">5 Cardinal Vices</span>
+          </h1>
+
+          <p class="tagline text-xs font-semibold text-slate-800  italic">
+            Five vices are the five thieves we are always trying to find happiness from.
+          </p>
+
+          <!-- Social Share links  -->
+          <div class="social-share mt-4 flex items-center justify-between w-2/3 md:w-1/6">
+            <a href="#" title="Share">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                   class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                <path fill-rule="evenodd"
+                      d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+                      clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="#" title="Save">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                   class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+              </svg>
+            </a>
+
+            <a href="#" title="Download">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                   class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+              </svg>
+            </a>
+
+            <a href="#" title="Print">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                   class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z" />
+              </svg>
+            </a>
+
+          </div>
+
+          <p class="pulishedOn font-semibold text-center mt-8 uppercase text-slate-500 text-[11px]">Published on: 31-05-2023</p>
+
+        </div>
+
+        <div class="blogImage my-3">
+          <img src="../Images/blog-vices.webp" alt="">
+        </div>
+
+        <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
+          <p class="mb-4">
+            <span class=" firstWord font-bold text-3xl text-indigo-800">F</span>
+            ive vices are the five thieves we are always trying to find happiness from. However, the happiness we
+            obtain from them
+            is very temporary. Out of all the worthy things we pursue outside ourselves, we only experience temporary
+            happiness.
+            This creates a void inside us, and that void generates emotions, which are our vices.
+
+          </p>
+          <p class="mb-4">
+            The five vices are known as the "vikar" in Hindi. They are "kam" (desire or lust), "krodh" (anger), "lobh"
+            (greed),
+            "moh" (worldly attraction), and "ahankar" (false ego). Today, we will address these five vices.
+          </p>
+          <p class="mb-4">
+            Firstly, there is desire or lust. When this desire is unfulfilled, it leads to anger. Anger arises when we
+            don't obtain
+            what we want. This anger then turns into frustration and becomes a form of greed. Once we acquire what we
+            desire, we
+            become attached to worldly possessions, thinking that they belong to us. Finally, there is the ego, the
+            false sense of
+            self-importance that arises when we believe we have earned or achieved something. These five vices are
+            like poisons.
+          </p>
+          <p class="mb-4">
+            When discussing Ravana, a pious and religious man, we learn that his desire for Sita, the most beautiful
+            woman, led to
+            his downfall and death. All of us have these five vices within us, although some people may have more
+            anger, attachment,
+            or other specific tendencies. These vices are referred to as "thieves" because, like thieves, they steal
+            something from
+            us. When we recognize that they are attacking us, we naturally try to distance ourselves from them.
+            Although it may seem
+            natural to experience anger, greed, attachment, or ego, our Guru teaches us that these are all things
+            attacking us.
+            Therefore, we must separate ourselves from these vices.
+          </p>
+          <p class="mb-4">
+            These vices are the reason why they are called thieves. They steal away our happiness, providing only
+            temporary
+            happiness in return. They rob us of our inner peace. For example, if we become angry, expressing our
+            emotions may
+            provide temporary satisfaction and happiness. However, these vices prevent us from experiencing lasting
+            happiness, which
+            is what I am referring to as the "everlasting happiness" that the Guru helps us channelize.
+          </p>
+          <p class="mb-4">
+            <span class="heading font-semibold text-indigo-600 mb-4 block">
+              <span class="pb-1 border-b-4 border-double border-b-indigo-600">Lust or Desire (Kam)</span>
+            </span>
+            Now, let's focus on the first vice, lust or desire. When we speak about lust, we often associate it with
+            sexual desire.
+            However, if we consider the religious aspect, having excessive sexual desire is considered a sin.
+            Psychologically,
+            though, a healthy sexual desire is considered normal. Today, we will examine the spiritual aspect of lust.
+            Sexual desire
+            itself is natural and normal. For instance, if you are married, sexual desire is necessary for
+            procreation. However,
+            when it overpowers and becomes an addiction, it is called lust. Lust is not limited to sexual desire; it
+            can apply to
+            any form of desire. It refers to any desire that overwhelms and hypnotizes us, leading to blind obsession
+            and craving.
+            It clouds our judgment and makes it difficult to say no to those desires. Lust can manifest as an
+            overpowering desire
+            for another person, an obsession with food or certain experiences, or a craving for visual or sensory
+            stimuli.
+          </p>
+          <p class="mb-4">
+            When it comes to lust, we are never satisfied. We always want more and more. It's like a pot with holes;
+            when you fill
+            it, you temporarily have water, but it will eventually drain out through the holes. So, the water becomes
+            useless.
+            Similarly, our bodies are like pots, and desires are like the holes in our bodies. When we fulfill one
+            desire, we
+            experience temporary happiness, but more desires arise. It's a continuous cycle of wanting more in our
+            lives. For
+            example, a cricketer worked their entire life to receive a certain award and when asked how are you
+            feeling so he said
+            so what? Once you have a desire to get a big house when u get it now you need a servant for maintenance so
+            you see it's
+            a circle of desire.So, there is no end to this desire. We need to channelize it. Don't desire only
+            material things, but
+            start desiring knowledge.
+
+          </p>
+          <p class="mb-4">
+            <span class="heading font-semibold text-indigo-600 mb-4 block">
+              <span class="pb-1 border-b-4 border-double border-b-indigo-600">Anger (Krodh)</span>
+            </span>
+            Now, coming to the second vice, which is anger. What is the main cause of anger? Desire. So, if any desire
+            is
+            unfulfilled, you are bound to get angry. If you are hurt in any way or something has hurt you, you are
+            going to get
+            angry. Another reason why we get angry is because we believe we are right and others are wrong. We
+            constantly try to
+            prove that we are right and the other person is wrong. Many times, we blame others for our anger, but most
+            of the time
+            it is due to unfulfilled desires. We get angry when someone is rude to us or frustrates us. We either
+            remove the
+            frustration or take it out on someone else. There is a constant need to prove that I am right and you are
+            wrong.
+            However, when someone is angry, instead of attacking them, we should try to stop being angry ourselves.
+            When we see
+            someone angry, we try to provoke them, and in the process, we also become angry. It becomes a vicious
+            cycle. Our Guru
+            teaches us that when we are getting angry, we need to channelize ourselves and ask why our mind is not
+            working properly,
+            why our ego is getting hurt, and why our desires are causing anger. So, instead of blaming others for our
+            anger, we
+            should target ourselves and not believe others.
+
+          </p>
+
+          <p class="mb-4">
+            <span class="heading font-semibold text-indigo-600 mb-4 block">
+              <span class="pb-1 border-b-4 border-double border-b-indigo-600">Greed (Lobh)</span>
+            </span>
+            The third vice is greed. What is greed? It is basically wanting more and more, and it should not be earned
+            through
+            unfair means. For example, if someone is in business and they have a monopoly on a certain product, they
+            may charge five
+            times the amount. Their conscience might tell them that this is greed. So, they asked Guruji if the amount
+            they are
+            charging is greed. Guruji told them that it is their right and not greed, as long as they are not cheating
+            others or
+            using unfair means. Greed comes into play when we see others following unfair means and succeeding, so we
+            are tempted to
+            do the same. However, Guru teaches us that greed is unethical earning and not the right way to earn. This
+            greed will
+            create karma, and whatever harm it causes in the future will come back to us. For example, if someone
+            injects water
+            instead of medicine to earn more, it is greed. They played with people's health because of their own
+            greed. In the end,
+            their greed backfired and they ended up behind bars. To channelize this greed, if you have a desire for
+            outward progress
+            or knowledge, you can redirect that greed towards wanting to learn more and progress on the spiritual
+            path.
+          </p>
+          <p class="mb-4">
+            <span class="heading font-semibold text-indigo-600 mb-4 block">
+              <span class="pb-1 border-b-4 border-double border-b-indigo-600">Attachment (Moh)</span>
+            </span>
+            The fourth vice is worldly attachments. Some people feel that emotional attachment is kind of okay. For
+            example, as a
+            mother, I have an attachment to my child, and it's fine. As a wife, it's normal to be attached. However,
+            the Guru
+            teaches us that this worldly attachment will keep us stuck and bring us back again and again. The minute
+            we become
+            attached to someone, we have to be born again and again. So what the Guru tells us is to turn this
+            attachment into love.
+            When we get attached to the people around us, the Guru tells us to bring in respect and start loving the
+            entire world.
+            Transform that attachment into love.
+          </p>
+          <p class="mb-4">
+            Somebody once asked Guruji, "What is the difference between attachment and love?" Guruji explained that
+            attachment will
+            bind your life in such a way that the decisions you make based on attachment will be harmful for you and
+            the people you
+            love. She gave a very good example. She said, "If your child has diabetes and is eating something very
+            sweet, as a
+            parent, if you are attached to the child, that is attachment. But if you truly love him, you will realize
+            that this is
+            poison. In attachment, we become blind, but love helps us make the right decision at the right time."
+          </p>
+          <p class="mb-4">
+            Another example is when a child needs cough syrup, but instead, the parent gives vinegar and the child
+            dies. This
+            happens because the parent was attached to the child, so they were in a hurry and worried, and were not
+            able to think
+            properly. Now, let's come to the difference. Love makes you think in a broader perspective because out of
+            attachment, we
+            create a lot of Karma. Our attachment also increases when we are attached to someone. We become greedy and
+            angry, so all
+            these vices increase with attachment. There is more desire inside you, so your vice is increased. Karma is
+            made on the
+            basis of attachment, and it limits you. But when you love, you love unconditionally.
+          </p>
+          <p class="mb-4">
+            Some may say that this is impossible to do, but if you look at Guruji's life, you will see that it's not
+            so impossible.
+            Just like how Bhagwan ji is loving everyone in this world, it can be done. When we get attached to people,
+            we start
+            expecting from them. But in love, there is no expectation, and these expectations hurt and disappoint us
+            because we
+            can't live up to everybody's expectations, and not everyone can live up to ours. When you truly love
+            someone, you don't
+            expect anything in return. Attachment is when we love with conditions. Attachment makes you weak, whereas
+            love makes you
+            strong. When you are attached to somebody or something, you are performing your duty, helping them, and
+            doing
+            everything, but it makes you weak. Love makes you make decisions in the right manner and makes you
+            stronger.
+          </p>
+          <p class="mb-4">
+            Attachment increases fear, whereas true love makes you fearless. When you have attachment and somebody
+            comes home late,
+            you constantly fear what happens to that person. You are constantly worried. But with true love, you
+            become fearless.
+            Whatever has to happen, has to happen. I have faith in my God. Attachment increases dependency, whereas
+            love makes you
+            independent.
+          </p>
+          <p class="mb-4">
+            Guruji teaches us how to be independent. Guruji transforms our worldly attachment into true love for each
+            other. We
+            should strive for this beautiful transformation and not confine ourselves to a small world where we are
+            only attached to
+            a few people. Instead, we should embrace the bigger world, a world filled with love vibrating everywhere.
+            However, it's
+            important not to misunderstand this message. Don't think that you won't be able to fulfill your duties.
+            The only
+            difference is that attachment will make you fall, whereas true love will make you rise. When faced with a
+            significant
+            decision, ask yourself whether you are making it out of attachment or because it is the right thing to do.
+            By doing so,
+            you will start to notice the difference between attachment and true love. This awareness will help you
+            progress because
+            attachment doesn't disappear overnight. But with consistent practice, you can let go of attachment and
+            spread true love
+            unconditionally. To overcome attachment, we need a Guru and a strong connection with God.
+          </p>
+          <p class="mb-4">
+            <span class="heading font-semibold text-indigo-600 mb-4 block">
+              <span class="pb-1 border-b-4 border-double border-b-indigo-600">Ego (Ahankar)</span>
+            </span>
+            Now, let's talk about the fifth vice, ego (ahankar).
+          </p>
+          <p class="mb-4">
+            Each one of us has this ego or false sense of self. We exhibit ego when we refer to our body as "me." For
+            example,
+            saying "I have money" or "I don't have money" both stem from ego. It's similar to playing the game of
+            snakes and
+            ladders, where snakes bring you down when they bite you. In life, when you do good things, show
+            compassion, and love,
+            you climb up the ladder. However, when any of these vices, such as ego, come into play, they act like
+            snakes, biting and
+            causing you to fall down. One of the biggest snakes is ego, represented by the 99th place in the game. You
+            may achieve
+            great success and reach new heights in life, but the moment you let pride take over and touch that 99th
+            place, your ego
+            brings you crashing down. Ego is extremely harmful, and we must realize that whatever we have achieved in
+            life is due to
+            God's grace. When we get caught up in ego, everything shatters. The constant use of the word "I" is a
+            manifestation of
+            ego. We need to let go of the idea that we exist as separate individuals.
+          </p>
+          <p class="mb-4">
+            So, what is this ego that claims "I am so-and-so" and "I have achieved"? When someone says, "my body is
+            hurting," it
+            implies that they are separate from their body. But when you realize the truth, that you are not separate
+            from your
+            body, the ego naturally diminishes. We must transform this ego into awareness of who we truly are. We are
+            not merely our
+            bodies; we are souls. If I were to ask you, "Who are you?" you might initially respond with your name,
+            gender, city,
+            occupation, and other external aspects. These are the bricks that make up your life. However, these bricks
+            shine because
+            of the divine light within you, not because of their own inherent existence. We are born into this world
+            without
+            choosing our name, occupation, city, or even our family. We didn't choose our gender. So, what is there to
+            be proud of?
+            What is this false sense of self, ego, all about? We mistakenly believe that these shining external
+            aspects are our true
+            existence, and we polish them, unaware that they shine because of the divine light within us.
+          </p>
+          <p class="mb-4">
+            Within each of us, there is peace, but these five vices rob us of our happiness and peace of mind. Lust,
+            greed,
+            attachment, ego, and anger are the five vices that overpower us. To regain our natural state, we need to
+            channelize
+            these vices in the right direction. It is up to us to transform each vice into a virtue.
+          </p>
+          <p class="mb-4">
+            <span class="heading font-semibold text-rose-600 mb-4 block">
+              <span class="pb-1 border-b-4 border-double border-b-rose-600">Conclusion</span>
+            </span>
+            Every time you feel proud, greedy, angry, or attached, just talk to yourself and ask why you are feeling
+            proud or why
+            these emotions are arising. Forget the external factors and focus on the divine light within you. Often,
+            we become
+            attached to material things that may be present in our lives today but can disappear tomorrow, such as
+            money. If we
+            understand that the divine light resides within us, we will not be swayed by these temporary voices and
+            distractions.
+            The Guru helps us avoid falling into the trap of these emotions by making us aware of our anger and
+            attachments, which
+            can ultimately lead to our downfall.
+          </p>
+          <p class="mb-4">
+            Now, the question arises: should we eliminate these emotions entirely? Is it wrong to have a little anger
+            or greed, or
+            are these feelings natural? Consider this: even a small amount of poison can be detrimental and lead to
+            harm. Similarly,
+            even a drop of these negative emotions can lead to our downfall if we let them overpower us. They have the
+            potential to
+            destroy us. Therefore, we must channelize these emotions in a productive manner.
+          </p>
+          <p class="mb-4">
+            The Guru teaches us to channelize these vices and transform them into virtues. Instead of blindly
+            fulfilling our desires
+            or suppressing them completely, we should seek guidance from wise individuals and be self-aware in order
+            to defend
+            ourselves against these vices. Our goal now is to redirect and harness these vices, turning them into
+            virtuous actions.
+          </p>
+
+          <p class="mb-4">
+            <span class="heading font-semibold text-indigo-600 mb-4 block">
+              <span class="pb-1 border-b-4 border-double border-b-indigo-600">Q & A</span>
+            </span>
+          </p>
+
+          <!-- Q & A accordion  -->
+          <div class="qAndA flex flex-col">
+
+            <!-- Question -1  -->
+            <div class="questionWrapper question-1 bg-white border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How is attachment karma?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="">
+                  When we are attached , we believe that we are doing something for someone. Just the fact that you
+                  are doing or you are
+                  the doer leads to making new karma.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 2  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How can we change ourself?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p>
+                  Listening to the Guru’s Vaani with full faith and applying it in our daily lives. The first step to
+                  bring change within
+                  yourself is to realize you need to change. Applying and Practicing the Guru’s vachan in our daily
+                  lives will bring about
+                  this change.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 3  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">Ego, Money, Attitude and Power end at one place - graveyard. Can you
+                  guide us about
+                  the bitter
+                  truth about this?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  Change is inevitable in everything you see today or have today or will have have in the future.
+                  You have to understand that all these things are with you today, they might not be with you
+                  tomorrow.
+                </p>
+                <p class="my-1">
+                  Gyaan is what prepares you to accept this change in life.
+                  Change is inevitable and the sooner we accept this truth , the easier it is to accept any situation
+                  that arises in life.
+                </p>
+                <p class="my-1">
+                  If you have money and power - don’t misuse it - that’s where the ego and attitude come into play -
+                  use it to grow and
+                  help others grow. Understand that this is not yours, but for you.
+                  Accept the temporary nature of everything in life and you will learn to sail through life
+                  beautifully.
+                </p>
+
+
+              </div>
+            </div>
+
+            <!-- Question - 4  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How do we get rid of the habit of gossiping?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  This need for gossip stems from the fact that you want to prove yourself right and the other person
+                  wrong.
+                  It’s best to keep quiet and ignore such gossip if it has nothing to do with you.
+                  Ask yourself-
+                </p>
+                <ol class="list-decimal px-4">
+                  <li>
+                    <p>Is it necessary?</p>
+                  </li>
+                  <li>
+                    <p>Is it going to help me move forward in life?</p>
+                  </li>
+                  <li>
+                    <p>Is it the truth or has it been fabricated to look like the truth?</p>
+                  </li>
+                </ol>
+                <p class="my-1">
+                  Also know that - If I pass on the gossip - it will lead to me making karma which I will have to pay
+                  for.
+                  It will come with self- realization and practice .
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 5  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How do you get over the fear of social anxiety?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  Go out and face this fear. Try going with a friend or someone who is aware of your anxiety and
+                  choose a place where it’s
+                  easy for you to leave if you have to.
+                </p>
+                <p class="my-1">
+                  You will feel less anxious if you talk or engage with people you are comfortable talking to.
+                </p>
+                <p class="my-1">Try not focusing on yourself or your behaviour and enjoy your surroundings.
+                </p>
+                <p class="my-1">Facing this fear will help you build confidence in who you are.
+                </p>
+                <p class="my-1">Don’t be scared or shy.</p>
+              </div>
+            </div>
+
+            <!-- Question - 6  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">If someone suddenly misbehaves with us what do I do?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  Misbehavior can be of various kinds.
+                </p>
+                <p class="my-1">
+                  If it’s a General misbehavior- try and talk to the person and communicate that you are not
+                  comfortable with what they
+                  did and would appreciate that they don’t do it in the future.
+
+                </p>
+                <p class="my-1">If it’s sudden - something you did could’ve triggered it. Find out the reason through
+                  cordial
+                  communication and try and
+                  sort it out.
+
+                </p>
+                <p class="my-1">If it’s misbehavior of an inappropriate kind or sexual kind - please speak to someone
+                  who has the
+                  authority in that
+                  organization or situation to do something about it. If it’s this kind of misbehavior please don’t be
+                  scared to voice
+                  out.
+
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 7  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">How do you love yourself if you are not physically healthy and therefore
+                  you don’t
+                  have a good feeling for others as
+                  well?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  If you are not physically healthy and you don’t like yourself as you are now - try bringing a change
+                  in your routine -
+                  move from being unhealthy to healthy by making certain lifestyle changes. It’s entirely in your
+                  hands to change what you
+                  don’t like about yourself.
+                </p>
+                <p class="my-1">
+                  At the same time, don’t use drastic measures and hurt yourself , take it one day at a time.
+                </p>
+                <p class="my-1">When you learn to accept yourself as you are , you will accept everything around you.
+                </p>
+                <p class="my-1">
+                  Don’t body shame yourself , but don’t be hesitant to change your lifestyle to a healthier one
+                  either. The ball is in
+                  your court.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 8  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">
+                  What is the difference between goal and desire?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  A goal is a commitment you make - something you want to achieve for your betterment. Something you
+                  work towards. It’s
+                  usually long- term.
+                </p>
+                <p class="my-1">
+                  A desire is usually momentary and keeps changing with your wants and situations.
+                </p>
+                <p class="my-1">
+                  For example - your goal is being fit , but your desire is to eat tasty and junk food -
+                  So you decide whether your goal is important or your desire.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 9  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">
+                  If I’m not good at something is it good to have hope or expectation that I will be better?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  You can’t be the best at everything. But if it’s something you are passionate about and you practice
+                  enough you can make
+                  yourself better.
+                </p>
+                <p class="my-1">
+                  However, if that doesn’t happen even after you put in your best don’t be ashamed to find something
+                  that you are better
+                  at.
+                </p>
+                <p class="my-1">
+                  Hope for the best, but be prepared for the worst.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 10  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">
+                  How do you develop good bonds as sisters?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  You work on every relationship with communication and love and nurture it.
+                </p>
+                <p class="my-1">
+                  Be open and honest and be yourself in every situation.
+                </p>
+                <p class="my-1">
+                  Don’t let small issues or your ego get in the way of your relationship.
+
+                </p>
+              </div>
+            </div>
+
+            <!-- Question - 11  -->
+            <div class="questionWrapper bg-white question-2 border border-gray-400 mb-4 rounded-md overflow-hidden">
+              <button
+                      class="question w-full bg-gray-200 text-md p-3 font-semibold flex items-center text-left justify-between cursor-pointer ">
+                <p class="w-3/4 text-justify">
+                  If you get anxious and tense is that your karma?
+
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6 arrows">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div class="answer p-3 hidden">
+                <p class="my-1">
+                  If you get anxious and tense it’s usually your fears coming to the surface. So work on facing your
+                  fears or situations
+                  that make you tense or anxious.
+                </p>
+                <p class="my-1">
+                  What you do as a reaction to these fears works toward making your karma.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <a href="../Blogs/Blog.html"
+           class="my-5 p-6 rounded-md uppercase font-semibold bg-rose-600 text-white ease-in-out duration-300 hover:bg-gray-900">Back
+          to
+          Blogs</a>
+
+      </div>
+
+
+
+      <!-- Footer  -->
+      <footer class="customFooter flex flex-col items-center py-4"></footer>
+    </div>
+
+  </div>
+
+  <script src="./blogs.js"></script>
+  <script src="../script.js"></script>
+  <script src="../commonScript.js"></script>
+
+</body>
+
+</html>
