@@ -40,6 +40,7 @@ let customFooter = document.querySelector( ".customFooter" );
             <span class="text-sm ml-2">Blog</span>
           </a>
 
+
           <div class="features flex flex-col">
             <a href="#" class="flex items-center font-semibold ease-in-out duration-300 p-2">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
@@ -116,6 +117,7 @@ let customFooter = document.querySelector( ".customFooter" );
               <div id="google_translate_element" class=""></div>
             </div>
 
+       
           </div>
 
         </div>

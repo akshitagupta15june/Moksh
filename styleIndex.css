@@ -1,6 +1,9 @@
-* {
-  /* margin: 0;
-  padding: 0; */
+
+
+ {
+  margin: 0;
+  padding: 0; 
+
   box-sizing: border-box;
 }
 /* styles for scroll to top button */
@@ -120,11 +123,50 @@ a.features {
   background-color: #2980b9;
 }
 
-.navbar-nav li a:hover {
-  color: black ;
-  text-decoration: underline;
+.dropdown-menu.show{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.dropdown-menu a{
+  text-decoration: none;
+  text-decoration-color: #ffffff;
+  background-color: #2980b9;
+}
+
+.dropdown-menu .dropdown-divider{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.nav-item .dropdown-menu a{
+  text-decoration:none;
+  color: #ffffff;
+  padding:12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
+  font-weight: 400px;
+}
+
+.nav-item .dropdown-menu a:hover{
+  text-decoration:none;
+  color: black;
+}
+
+.nav-item .dropdown-menu a>{
+  text-decoration:none;
   text-decoration-color: black;
 }
+
+.navbar-nav li:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+  background-color: #white;
+}
+
 
 /* Google Translate */
 #google_translate_element select {
@@ -465,3 +507,24 @@ footer .copyright a i{
   margin-top: 10px;
 }
 
+/*From line: 471-490, it contains the code of contributors section modified design to override bootstrap styling */
+.contributor_section_customization{
+  margin-right: -15px;
+  margin-left: -15px;
+  background: #2980b9;
+}
+
+.para_customization{
+font-size: 23px;
+margin: 0;
+padding-top: 10px;
+color: azure;
+margin: auto;
+}
+
+.heading_customization{
+font-size: 50px;
+margin: 0;
+font-weight: 700;
+color: #28357d;
+}
