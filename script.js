@@ -4,24 +4,42 @@ function googleTranslateElementInit ()
     { pageLanguage: 'en' },
     'google_translate_element'
   )
-
 }
 
-// All pages menu interaction 
 let openDropDown = document.querySelector( '.openDropDown' ),
   dropMenuLinks = document.querySelector( '.dropMenuLinks' ),
   contentWrapper = document.querySelector( '.contentWrapper' ),
-  navbar = document.querySelector( '.navbar' )
+  navbar = document.querySelector( '.navbar' ),
+  cardAr = document.querySelector( '.cardAr' ),
+  cardIskon = document.querySelector( '.cardIskon' ),
+  cardStory = document.querySelector( '.cardStory' ),
+  cardClock = document.querySelector( '.cardClock' ),
+  cardShlok = document.querySelector( '.cardShlok' ),
+  cardRejuvenate = document.querySelector( '.cardRejuvenate' )
 
 
 contentWrapper.onscroll = () =>
 {
-  contentWrapper.scrollTop > 5 ? navbar.classList.add( 'bg-white' ) : navbar.classList.remove( 'bg-white' )
+  contentWrapper.scrollTop > 5 ? navbar.classList.add( 'bg-white' ) : navbar.classList.add( 'transparent' )
+  contentWrapper.scrollTop > 1100 ? cardAr.classList.add( 'right-0' ) : ''
+  contentWrapper.scrollTop > 1600 ? cardIskon.classList.add( 'left-0' ) : ''
+  contentWrapper.scrollTop > 2300 ? cardStory.classList.add( 'right-0' ) : ''
+  contentWrapper.scrollTop > 3100 ? cardClock.classList.add( 'left-0' ) : ''
+  contentWrapper.scrollTop > 3850 ? cardShlok.classList.add( 'right-0' ) : ''
+  contentWrapper.scrollTop > 4500 ? cardRejuvenate.classList.add( 'left-0' ) : ''
+
 }
 
 openDropDown.onclick = () =>
 {
   dropMenuLinks.style.right = 0
+
+}
+
+let closeDropDown = document.querySelector( ".closeDropDown" )
+closeDropDown.onclick = () =>
+{
+  dropMenuLinks.style.right = '-2000px'
 }
 
 

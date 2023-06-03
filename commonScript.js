@@ -163,9 +163,3 @@ let customFooter = document.querySelector( ".customFooter" );
   `
   customFooter.innerHTML = footerContent
 } )()
-
-let closeDropDown = document.querySelector( ".closeDropDown" )
-closeDropDown.onclick = () =>
-{
-  dropMenuLinks.style.right = '-2000px'
-}
