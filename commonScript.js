@@ -135,10 +135,10 @@ let customFooter = document.querySelector( ".customFooter" ),
                   class="ml-3 text-xl sm:text-2xl uppercase font-semibold text-indigo-600 projectName tracking-widest ease-in-out duration-300 hover:text-slate-900">Moksh</span>
               </a>
             </div>
-            <div class="rightSection pr-4">
+            <div class="rightSection">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor"
-                class="openDropDown h-6 w-6 text-indigo-600 cursor-pointer ease-in-out duration-300 hover:text-slate-900">
+                class="openDropDown h-8 md:h-6 w-8 md:w-6 pr-2 md:pr-0 text-indigo-600 cursor-pointer ease-in-out duration-300 hover:text-slate-900">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
               </svg>
@@ -155,36 +155,43 @@ let customFooter = document.querySelector( ".customFooter" ),
 
                 <div class="flex flex-col w-full sm:flex-row items-center justify-between">
                   <img src="../Images/moksh.png" alt="Moksh Logo" class='w-32 h-32 my-2' />
+                  
                   <div class="flex flex-col px-4 items-center sm:px-0 w-full sm:w-2/3">
-                    <span
-                      class="text-center italic font-bold text-indigo-600 mb-1 sm:border-double sm:border-b-4 sm:border-indigo-600">
-                      A Spiritual Productivity Tool for Mental Wellness
-                    </span>
-                    <span class="text-md mt-1 sm:text-xs font-semibold text-justify">
+                  <span
+                        class="text-center italic font-bold text-indigo-600 mb-1 sm:border-double sm:border-b-4 sm:border-indigo-600">
+                    A Spiritual Productivity Tool for Mental Wellness
+                  </span>
+
+                  <div class=" mt-1  w-full font-semibold flex items-center justify-center flex-col">
+                    <span class="sm:text-xs text-md text-justify">
                       Moksh is a spiritual productivity tool designed for individuals who
                       want to unlock their potential and achieve true balance in life.
-                    </span>
 
+                    </span>
                     <!-- Footer Socials  -->
                     <div
-                      class="socials mt-4 row-2 w-full flex justify-between px-4 sm:px-0 capitalize font-semibold text-md  sm:text-[11px]">
+                         class="socials mt-4 row-2 w-full flex justify-evenly capitalize font-semibold text-md  sm:text-[11px]">
                       <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Twitter</a>
                       <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Facebook</a>
                       <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Instagram</a>
                       <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Github</a>
                     </div>
-
-                    <!-- Copyright  -->
-                    <div class="row-3 copyright text-center font-semibold text-md sm:text-xs mt-4">
-                      <p>
-                        Made with ❤️ by Akshita during XPRESSION'23
-                      </p>
-                      <p class='text-rose-600 text-xs font-bold'>
-                        &copy; 2023 Moksh. All rights reserved.
-                      </p>
-                    </div>
-
                   </div>
+
+
+
+                  <!-- Copyright  -->
+                  <div class="row-3 copyright text-center font-semibold text-md sm:text-xs mt-4">
+                    <p>
+                      Made with ❤️ by Akshita during XPRESSION'23
+                    </p>
+                    <p class='text-rose-600 text-xs font-bold'>
+                      &copy; 2023 Moksh. All rights reserved.
+                    </p>
+                  </div>
+
+                </div>
+
                 </div>
 
               </div>
