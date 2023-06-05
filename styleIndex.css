@@ -6,7 +6,6 @@
 
   box-sizing: border-box;
 }
-
 /* styles for scroll to top button */
 .return-to-top {
   position: fixed;
@@ -20,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor:pointer;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -49,7 +48,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-}
+} 
 
 /* Navbar Start */
 
@@ -85,7 +84,7 @@ body {
   margin-right: 100px;
 }
 
-.about a {
+.about a{
   color: white !important;
   font-size: large;
 }
@@ -102,7 +101,6 @@ body {
     /* margin-right: 80px; */
     color: white !important;
   }
-
   #google_translate_element select {
     /* background-color: #2980b9 !important; */
     margin-left: 100px;
@@ -125,9 +123,6 @@ a.features {
   background-color: #2980b9;
 }
 
-.navbar-nav li a:hover {
-  color: black;
-  
 .dropdown-menu.show{
   padding-top: 1px;
   padding-bottom: 1px;
@@ -184,7 +179,6 @@ a.features {
   padding: 6px 8px;
   cursor: pointer;
 }
-
 /* Navbar Ends */
 
 .header {
@@ -240,7 +234,7 @@ a.features {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: white;
+  color: #363636;
 }
 
 .description {
@@ -282,7 +276,7 @@ a.features {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
+  
 }
 
 .feature-wrapper {
@@ -303,7 +297,7 @@ a.features {
   padding: 4px 0;
   background-color: rgb(74, 103, 164);
   color: white;
-
+  
 }
 
 
@@ -315,7 +309,7 @@ a.features {
   text-align: center;
 }
 
-.card:hover {
+.card:hover{
   transform: translateY(-8px);
 }
 
@@ -364,7 +358,7 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  left: 8rem;
+  left:8rem;
 }
 
 .circle1 .img1 {
@@ -381,7 +375,7 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  right: 10rem;
+  right:10rem;
 }
 
 .circle2 .img2 {
@@ -398,8 +392,8 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top: 15rem;
-  right: 4rem;
+  top:15rem;
+  right:4rem;
 }
 
 .circle3 .img3 {
@@ -416,8 +410,8 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top: 18rem;
-  left: 1.5rem;
+  top:18rem;
+  left:1.5rem;
 }
 
 .circle4 .img4 {
@@ -434,7 +428,7 @@ a.features {
   overflow: hidden;
   border: 0px solid #ffffff;
   position: absolute;
-  top: -8rem;
+  top:-8rem;
 }
 
 .circle5 .img5 {
@@ -476,16 +470,13 @@ footer .quick-links ul {
   font-size: 18px;
   margin-top: 15px;
 }
-
 footer ul li {
   margin-top: 5px;
 }
-
 footer ul li a {
   color: #fff;
   text-decoration: none;
 }
-
 footer .quick-links ul li a:hover {
   text-decoration: none;
   padding: 5px;
@@ -512,18 +503,6 @@ footer .copyright a i{
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #youtubeVideo {
-    margin: 10px 10px;
-    width: 500px;
-  }
-
-  .text-container {
-    margin: 5.5rem 10px 10px 10px;
-  }
-}
-
-
 #header {
   margin-top: 10px;
 }
@@ -549,4 +528,3 @@ margin: 0;
 font-weight: 700;
 color: #28357d;
 }
-
