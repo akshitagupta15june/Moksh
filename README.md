@@ -13,11 +13,7 @@
 </p>
 
 ### _Unlock your potential and achieve true balance in life with Moksh!_
-<style>
-.discordlogo {
-  vertical-align: middle;
-}
-</style>
+
 
 <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord <img src="https://media.tenor.com/5a7v-p3E5pkAAAAM/discord.gif" class="discordlogo" height="40px" width="40px"></a> for discussion</h3>
 <h2></h2>
@@ -29,7 +25,7 @@
 
 <h5>Demo Video on Youtube - <a href="https://youtu.be/wfdF___qNME">Link</a> (In case there is an error loading the embedded video below 👇)<h5>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wfdF___qNME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://github.com/Pratik-11/Moksh/assets/72139212/9a1cad69-7829-4d2b-94e8-9eadb2128b0b
 
 ## About The Project 💫
 
