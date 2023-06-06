@@ -28,7 +28,7 @@ function startTimer() {
     if (defaultTime === 0) {
       clearInterval(countdown);
       playSpiritualSound();
-      if (cycleCount < 3) {
+      if (cycleCount < 1) {
         cycleCount++;
         startBreakTimer();
       } else {
@@ -76,7 +76,8 @@ function startBreakTimer() {
 function resetTimer() {
     console.log('reset clicked!!!!');
     startButton.textContent = 'Start';
-    defaultTime = 0; // Set defaultTime to 0
+    startButton.addEventListener('click', startTimer);
+    defaultTime = 25*60; // Set defaultTime to 0
     cycleCount = 0;
     clearInterval(countdown);
     timerDisplay(defaultTime);
