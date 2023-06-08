@@ -26,6 +26,17 @@
 <h5>Demo Video on Youtube - <a href="https://youtu.be/wfdF___qNME">Link</a> (In case there is an error loading the embedded video below 👇)<h5>
 
 https://github.com/Pratik-11/Moksh/assets/72139212/9a1cad69-7829-4d2b-94e8-9eadb2128b0b
+	
+		
+## 🐦 Latest Tweet
+
+
+<p>
+  <a href="https://www.twitter.com/ExperienceMoksh">
+    <img src="https://gtce.itsvg.in/api?username=ExperienceMoksh" alt="Latest Tweet">
+  </a>
+</p>
+
 
 ## About The Project 💫
 
