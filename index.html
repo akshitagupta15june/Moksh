@@ -1,470 +1,689 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Moksh</title>
+    <link rel="icon" type="image/x-icon" href="Images/moksh.png" />
+    <link rel="stylesheet" href="newStyle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <title>Moksh</title>
-  <link rel="icon" type="image/x-icon" href="Images/moksh.png" />
-  <link rel="stylesheet" href="newStyle.css">
-</head>
-
-<body>
-  <div class="blogWrapper h-screen overflow-hidden relative">
-
-    <!-- Site Menu Links  -->
-    <div
-         class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] bg-white w-screen sm:w-1/2 p-8 sm:border-l sm:border-l-gray-900">
-
-      <!-- Row - 1  -->
-      <div class="row-1 flex items-center justify-between">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-             class="w-6 h-6 closeDropDown cursor-pointer ease-in-out duration-300 hover:text-indigo-600">
-          <path fill-rule="evenodd"
-                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
-                clip-rule="evenodd" />
-        </svg>
-        <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1>
-      </div>
-
-      <img src="./Images/moksh.png" alt="" class="h-36 w-36 mx-auto">
-
-      <!-- Row - 2  -->
-      <div class="navLinks">
-
-        <a class="flex items-center font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
-           href="./index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-            <path fill-rule="evenodd"
-                  d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
-                  clip-rule="evenodd" />
+  <body>
+    <div class="blogWrapper h-screen overflow-hidden relative">
+      <!-- Site Menu Links  -->
+      <div
+        class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] bg-white w-screen sm:w-1/2 p-8 sm:border-l sm:border-l-gray-900"
+      >
+        <!-- Row - 1  -->
+        <div class="row-1 flex items-center justify-between">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6 closeDropDown cursor-pointer ease-in-out duration-300 hover:text-indigo-600"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
+              clip-rule="evenodd"
+            />
           </svg>
-          <span class="text-sm ml-2">Home</span>
+          <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1>
+        </div>
 
-        </a>
+        <img src="./Images/moksh.png" alt="" class="h-36 w-36 mx-auto" />
 
-        <a class="flex items-center my-2 font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
-           href="./Blogs/Blog.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-            <path fill-rule="evenodd"
-                  d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
-                  clip-rule="evenodd" />
-          </svg>
-          <span class="text-sm ml-2">Blog</span>
-        </a>
-
-
-        <div class="features flex flex-col">
-          <a href="#" class="flex items-center font-semibold ease-in-out duration-300 p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-              <path fill-rule="evenodd"
-                    d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
-                    clip-rule="evenodd" />
+        <!-- Row - 2  -->
+        <div class="navLinks">
+          <a
+            class="flex items-center font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
+            href="./index.html"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-3 w-3"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
+                clip-rule="evenodd"
+              />
             </svg>
-            <span class="text-sm ml-2">Features</span>
+            <span class="text-sm ml-2">Home</span>
           </a>
 
-          <!-- Nested Links for features  -->
-          <div class="nestedLinks flex flex-col ml-4">
-
-            <a class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
-               href="./AR_Meditate/meditation.html">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-                <path fill-rule="evenodd"
-                      d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                      clip-rule="evenodd" />
-              </svg>
-              <span class="text-xs ml-2">Augmented Reality Meditation</span>
-            </a>
-
-            <a class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
-               href="./Iskcon/event.html">
-
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-                <path fill-rule="evenodd"
-                      d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                      clip-rule="evenodd" />
-              </svg>
-              <span class="text-xs ml-2">Iskon Events</span>
-            </a>
-
-            <a class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
-               href="./Divine_page/story.html">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-                <path fill-rule="evenodd"
-                      d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                      clip-rule="evenodd" />
-              </svg>
-              <span class="text-xs ml-2">Divine Activities for all Generation </span>
-            </a>
-
-            <a class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
-               href="./Pomodro_page/reward.html">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-                <path fill-rule="evenodd"
-                      d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                      clip-rule="evenodd" />
-              </svg>
-              <span class="text-xs ml-2">Pomodoro Spiritual Break</span>
-            </a>
-
-            <a class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
-               href="./shlok_page/motivation.html">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-                <path fill-rule="evenodd"
-                      d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                      clip-rule="evenodd" />
-              </svg>
-              <span class="text-xs ml-2">Read a Shlok</span>
-            </a>
-
-            <a class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
-               href="./Rejuvenate_page/rejuvenate.html">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
-                <path fill-rule="evenodd"
-                      d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                      clip-rule="evenodd" />
-              </svg>
-              <span class="text-xs ml-2">Rejuvenate</span>
-            </a>
-            <div id="google_translate_element" class=""></div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="contentWrapper h-full overflow-y-auto overflow-x-hidden flex flex-col justify-between">
-
-      <!-- Hero Section & Navbar  -->
-      <div class="heroSection h-[100vh] flex px-0 sm:px-8 text-2xl sm:text-lg flex-col items-center">
-
-        <!-- Navbar   -->
-        <div
-             class="fixed indexNavbar top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
-
-          <div class="leftSection ">
-            <a class="flex items-center " href="./index.html">
-              <img src="./Images/moksh.png" alt="Moksh Logo" class="w-16 h-16" />
-              <span
-                    class="ml-3 text-xl sm:text-2xl uppercase font-semibold text-indigo-600 projectName tracking-widest ease-in-out duration-300 hover:text-slate-900">Moksh</span>
-            </a>
-          </div>
-          <div class="rightSection pr-4">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="currentColor"
-                 class="indexOpenDropDown h-6 w-6 text-indigo-600 cursor-pointer ease-in-out duration-300 hover:text-slate-900">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+          <a
+            class="flex items-center my-2 font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
+            href="./Blogs/Blog.html"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-3 w-3"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
+                clip-rule="evenodd"
+              />
             </svg>
+            <span class="text-sm ml-2">Blog</span>
+          </a>
 
-          </div>
+          <div class="features flex flex-col">
+            <a
+              href="#"
+              class="flex items-center font-semibold ease-in-out duration-300 p-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-3 w-3"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="text-sm ml-2">Features</span>
+            </a>
 
-        </div>
+            <!-- Nested Links for features  -->
+            <div class="nestedLinks flex flex-col ml-4">
+              <a
+                class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
+                href="./AR_Meditate/meditation.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-3 w-3"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-xs ml-2">Augmented Reality Meditation</span>
+              </a>
 
-        <!-- Hero Section  -->
-        <div
-             class="heroSectionContent mt-24 h-[calc(90vh-80px)] bg-[url('./Images/testHero2.jpg')] w-full bg-center bg-no-repeat bg-cover flex items-center  justify-between flex-col text-white py-8">
-          <div class="top text-center pt-8">
-            <p class="projectName text-[4em]">Moksh</p>
-            <span class="text-xs italic mt-8 block sm:font-semibold">
-              A Spiritual Productivity Tool for Mental Wellness.
-            </span>
-          </div>
-          <div class="bottom text-center w-full px-8 sm:px-0 sm:w-1/3 mt-4 sm:mt-8">
-            <p class="text-sm leading-6 text-justify font-semibold">It is a spiritual productivity tool designed
-              for
-              individuals who want to unlock their potential and achieve
-              true balance in life.</p>
+              <a
+                class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
+                href="./Iskcon/event.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-3 w-3"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-xs ml-2">Iskon Events</span>
+              </a>
 
-            <a href="#knowMore"
-               class="text-xs px-3 py-2 font-semibold tracking-widest border-4 border-white hover:border-indigo-600 text-white ease-in-out duration-300 hover:bg-indigo-600 uppercase mt-2 inline-block">Know
-              More</a>
+              <a
+                class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
+                href="./Divine_page/story.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-3 w-3"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-xs ml-2"
+                  >Divine Activities for all Generation
+                </span>
+              </a>
+
+              <a
+                class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
+                href="./Pomodro_page/reward.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-3 w-3"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-xs ml-2">Pomodoro Spiritual Break</span>
+              </a>
+
+              <a
+                class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
+                href="./shlok_page/motivation.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-3 w-3"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-xs ml-2">Read a Shlok</span>
+              </a>
+
+              <a
+                class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
+                href="./Rejuvenate_page/rejuvenate.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-3 w-3"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-xs ml-2">Rejuvenate</span>
+              </a>
+              <div id="google_translate_element" class=""></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="contentSection flex flex-col items-center pt-12 md:py-0 bg-gray-100 ">
-
-        <!-- Mental Health Problems  -->
-        <div class="mentalHealthVideo  my-8 md:w-3/4">
-          <h1 class="text-indigo-600 text-center mb-10 uppercase font-semibold">
-            <span class="pb-2 border-double border-b-4 border-indigo-600">Mental Health Problems</span>
-          </h1>
-          <iframe src="https://www.youtube.com/embed/BEsKgEGRjYU" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen="" class=" h-[400px] w-full my-12 mx-auto"></iframe>
-          <p class="text-justify px-8 sm:px-0">
-            There are numerous mental problems affecting the people in modern society, including fear, false egos,
-            anxiety, comparisons, competitions, peer
-            pressure and
-            stressful work environment. Mental health issues can lead to physical discomforts such as headaches,
-            stomach aches, difficulty sleeping,
-            irritability, and
-            inability to focus. If left unaddressed, chronic stress can exacerbate these symptoms and give rise to
-            more severe health concerns, including
-            anxiety,
-            hypertension, and reduced immunity.
-          </p>
-        </div>
-
-        <!-- Moksh Features  -->
-        <div class="features w-full md:w-3/4 flex flex-col justify-center items-center md:pb-8">
-
-          <h1 class="text-indigo-600 text-center mb-10 uppercase font-semibold">
-            <span class="pb-2 border-double border-b-4 border-indigo-600">Features</span>
-          </h1>
-
-          <div class="features-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ease-in-out duration-700">
-
-            <!-- Card AR -->
-            <div
-                 class="card cardAr mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden ease-in-out duration-700 relative -right-[2000px] sm:right-0 md:hover:scale-95 hover:scale-100">
-              <img src="./Images/armed.png" alt="armed" class="md:h-[300px] w-full">
-
-              <div class="card-details flex flex-col items-center justify-center px-4">
-
-                <div class="card-heading py-8 md:py-4 text-indigo-600 font-semibold">
-                  <span>Augmented Reality Meditation</span>
-                </div>
-
-                <div class="card-description flex flex-col items-center justify-center font-medium w-full md:pb-8">
-                  <p class="text-justify">
-                    AR meditation combines ancient teachings of the Gita with AR
-                    technology, making it more accessible and engaging for modern
-                    practitioners. This unique and immersive meditation experience
-                    helps people connect more deeply with their inner self and the
-                    divine.
-                  </p>
-                  <a href="./AR_Meditate/meditation.html"
-                     class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase ease-in-out duration-300 hover:bg-slate-900 tracking-widest">Try
-                    it out</a>
-                </div>
-                <div class=" forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 sm:hidden">
-                </div>
-              </div>
+      <div
+        class="contentWrapper h-full overflow-y-auto overflow-x-hidden flex flex-col justify-between"
+      >
+        <!-- Hero Section & Navbar  -->
+        <div
+          class="heroSection h-[100vh] flex px-0 sm:px-8 text-2xl sm:text-lg flex-col items-center"
+        >
+          <!-- Navbar   -->
+          <div
+            class="fixed indexNavbar top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0"
+          >
+            <div class="leftSection">
+              <a class="flex items-center" href="./index.html">
+                <img
+                  src="./Images/moksh.png"
+                  alt="Moksh Logo"
+                  class="w-16 h-16"
+                />
+                <span
+                  class="ml-3 text-xl sm:text-2xl uppercase font-semibold text-indigo-600 projectName tracking-widest ease-in-out duration-300 hover:text-slate-900"
+                  >Moksh</span
+                >
+              </a>
             </div>
-
-            <!-- Card Iskon -->
-            <div
-                 class="card cardIskon mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden relative ease-in-out duration-700 -left-[2000px] sm:left-0 md:hover:scale-95 hover:scale-100">
-              <img src="./Images/modernIskon.jpeg" alt="modernIskon" class="md:h-[300px] w-full">
-
-              <div class="card-details flex flex-col items-center justify-center px-4">
-
-                <div class="card-heading py-8 md:py-4 text-indigo-600 font-semibold">
-                  <span>Connect with Iskcon Events</span>
-                </div>
-
-                <div class="card-description flex flex-col items-center justify-center font-medium w-full md:pb-8">
-                  <p class="text-justify">
-                    Moksh platform offers information on local ISKCON events such as
-                    youth festivals, kirtans and lectures, including details on
-                    location, date, time,tickets, website and requirements. It's ideal
-                    for those seeking to deepen their spiritual practice or connect
-                    with the local ISKCON community.
-                  </p>
-                  <a href="./Iskcon/event.html"
-                     class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase  ease-in-out duration-300 hover:bg-slate-900 tracking-widest">Connect</a>
-                </div>
-                <div class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 sm:hidden"></div>
-              </div>
+            <div class="rightSection pr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="indexOpenDropDown h-6 w-6 text-indigo-600 cursor-pointer ease-in-out duration-300 hover:text-slate-900"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
+                />
+              </svg>
             </div>
+          </div>
 
-            <!-- Card Story -->
-            <div
-                 class="card cardStory mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden ease-in-out duration-700 relative -right-[2000px] sm:right-0 md:hover:scale-95 hover:scale-100">
-              <img src="./Images/modernDivine.webp" alt="modernDivine" class="md:h-[300px] w-full">
-
-              <div class="card-details flex flex-col items-center justify-center px-4">
-
-                <div class="card-heading py-8 md:py-4 text-indigo-600 font-semibold">
-                  <span>Divine Activities for All Generation</span>
-                </div>
-
-                <div class="card-description flex flex-col items-center justify-center font-medium md:pb-8">
-                  <p class="text-justify">
-                    Moksh offers interactive activities for all generations to reduce
-                    stress and also learn about our holy book BhagwadGita and its
-                    principles. It contains eye exercises to reduce eye stress while
-                    working and also some desk exercises to reduce back pain while
-                    working.
-                  </p>
-                  <a href="./Divine_page/story.html"
-                     class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase  ease-in-out duration-300 hover:bg-slate-900 tracking-widest">Read
-                    More</a>
-                </div>
-                <div class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 md:hidden"></div>
-              </div>
+          <!-- Hero Section  -->
+          <div
+            class="heroSectionContent mt-24 h-[calc(90vh-80px)] bg-[url('./Images/testHero2.jpg')] w-full bg-center bg-no-repeat bg-cover flex items-center justify-between flex-col text-white py-8"
+          >
+            <div class="top text-center pt-8">
+              <p class="projectName text-[4em]">Moksh</p>
+              <span class="text-xs italic mt-8 block sm:font-semibold">
+                A Spiritual Productivity Tool for Mental Wellness.
+              </span>
             </div>
-
-            <!-- Card Pomodoro -->
             <div
-                 class="card cardClock mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden relative ease-in-out duration-700 -left-[2000px] sm:left-0 md:hover:scale-95 hover:scale-100">
-              <img src="./Images/modernPomodoro.webp" alt="modernClock" class="md:h-[300px] w-full">
+              class="bottom text-center w-full px-8 sm:px-0 sm:w-1/3 mt-4 sm:mt-8"
+            >
+              <p class="text-sm leading-6 text-justify font-semibold">
+                It is a spiritual productivity tool designed for individuals who
+                want to unlock their potential and achieve true balance in life.
+              </p>
 
-              <div class="card-details flex flex-col items-center justify-center px-4">
-
-                <div class="card-heading py-8 md:py-4 text-indigo-600 font-semibold">
-                  <span>Pomodoro Spiritual Break</span>
-                </div>
-
-                <div class="card-description flex flex-col items-center justify-center font-medium md:pb-8">
-                  <p class="text-justify">
-                    This feature promotes spiritual learning and work-life balance by
-                    allowing users to set a Pomodoro timer and receive alerts to take
-                    a break and read a Bhagavad Gita shloka from the website.This
-                    feature on the website supports users in their journey
-                    towards personal growth and well-being.
-                  </p>
-                  <a href="./Pomodro_page/reward.html"
-                     class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase  ease-in-out duration-300 hover:bg-slate-900 tracking-widest">Take
-                    a Break</a>
-                </div>
-                <div class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 md:hidden"></div>
-              </div>
+              <a
+                href="#knowMore"
+                class="text-xs px-3 py-2 font-semibold tracking-widest border-4 border-white hover:border-indigo-600 text-white ease-in-out duration-300 hover:bg-indigo-600 uppercase mt-2 inline-block"
+                >Know More</a
+              >
             </div>
-
-            <!-- Card Shlok -->
-            <div
-                 class="card cardShlok mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden ease-in-out duration-700 relative -right-[2000px] sm:right-0 md:hover:scale-95 hover:scale-100">
-              <img src="./Images/modernShlok.webp" alt="modernShlok" class="md:h-[300px] w-full">
-
-              <div class="card-details flex flex-col items-center justify-center px-4">
-
-                <div class="card-heading py-8 md:py-4 text-indigo-600 font-semibold">
-                  <span>Read a Shlok</span>
-                </div>
-
-                <div class="card-description flex flex-col items-center justify-center font-medium md:pb-8">
-                  <p class="text-justify">
-                    Meaningful and motivational quotations can help spark inspiration
-                    and create a sense of purpose. This feature enables users to read
-                    several thought-provoking spiritual quotes, which can provide a
-                    sense of comfort as well as encourage a connection with the
-                    divine.
-                  </p>
-                  <a href="./shlok_page/motivation.html"
-                     class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase  ease-in-out duration-300 hover:bg-slate-900 tracking-widest">Read</a>
-                </div>
-                <div class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 md:hidden"></div>
-              </div>
-            </div>
-
-            <!-- Card Rejuvenate -->
-            <div
-                 class="card cardRejuvenate mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden relative ease-in-out duration-700 -left-[2000px] sm:left-0 md:hover:scale-95 hover:scale-100">
-              <img src="./Images/modernRejuvenate.webp" alt="modernRejuvenate" class="md:h-[300px] w-full">
-
-              <div class="card-details flex flex-col items-center justify-center px-4">
-
-                <div class="card-heading py-8 md:py-4 text-indigo-600 font-semibold">
-                  <span>Rejuvenate</span>
-                </div>
-
-                <div class="card-description flex flex-col items-center justify-center font-medium md:pb-8">
-                  <p class="text-justify">
-                    Here, users may watch inspirational short videos and read Srila
-                    Prabhupada stories to rejuvenate the mind, increase productivity
-                    and focus, and feel more at peace in today's busy world.
-                    Additionally, these stories offer hope in stressful times and can
-                    uplift the spirit.
-                  </p>
-                  <a href="./Rejuvenate_page/rejuvenate.html"
-                     class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase  ease-in-out duration-300 hover:bg-slate-900 tracking-widest">Get
-                    Inspired</a>
-                </div>
-                <div class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 md:hidden"></div>
-              </div>
-            </div>
-
           </div>
         </div>
 
-        <!-- Contributors List  -->
-        <div class="contributors flex-col overflow-x-auto flex items-center justify-center bg-blue-100 w-full py-8">
-
-          <div class="text-indigo-600 text-center font-semibold w-full sm:w-2/3 p-4">
-            <span class="pb-2 border-double border-b-4 border-indigo-600 uppercase">Moksh Contributors</span>
-
-            <p class="normal mt-4 text-slate-900"><b>We extend our heartfelt gratitude to these incredible
-                contributors whose efforts have played a
-                pivotal role in the
-                success of the Moksh project. ❤️</b></p>
-          </div>
-
-          <div class="content flex justify-center">
-            <p>
-              <img
-                   src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Moksh/contributors?format=svg&limit=54"
-                   class="w-full h-full scale-75" />
+        <div
+          class="contentSection flex flex-col items-center pt-12 md:py-0 bg-gray-100"
+        >
+          <!-- Mental Health Problems  -->
+          <div class="mentalHealthVideo my-8 md:w-3/4">
+            <h1
+              class="text-indigo-600 text-center mb-10 uppercase font-semibold"
+            >
+              <span class="pb-2 border-double border-b-4 border-indigo-600"
+                >Mental Health Problems</span
+              >
+            </h1>
+            <iframe
+              src="https://www.youtube.com/embed/BEsKgEGRjYU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen=""
+              class="h-[400px] w-full my-12 mx-auto"
+            ></iframe>
+            <p class="text-justify px-8 sm:px-0">
+              There are numerous mental problems affecting the people in modern
+              society, including fear, false egos, anxiety, comparisons,
+              competitions, peer pressure and stressful work environment. Mental
+              health issues can lead to physical discomforts such as headaches,
+              stomach aches, difficulty sleeping, irritability, and inability to
+              focus. If left unaddressed, chronic stress can exacerbate these
+              symptoms and give rise to more severe health concerns, including
+              anxiety, hypertension, and reduced immunity.
             </p>
           </div>
 
-        </div>
+          <!-- Moksh Features  -->
+          <div
+            class="features w-full md:w-3/4 flex flex-col justify-center items-center md:pb-8"
+          >
+            <h1
+              class="text-indigo-600 text-center mb-10 uppercase font-semibold"
+            >
+              <span class="pb-2 border-double border-b-4 border-indigo-600"
+                >Features</span
+              >
+            </h1>
 
-        <!-- Footer  -->
-        <footer class="indexFooter md:w-full flex flex-col h-fit items-center justify-center py-12 bg-white">
-          <div class="footerWrapper w-full px-12 lg:px-0 sm:w-2/3">
+            <div
+              class="features-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ease-in-out duration-700"
+            >
+              <!-- Card AR -->
+              <div
+                class="card cardAr mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden ease-in-out duration-700 relative -right-[2000px] sm:right-0 md:hover:scale-95 hover:scale-100"
+              >
+                <img
+                  src="./Images/armed.png"
+                  alt="armed"
+                  class="md:h-[300px] w-full"
+                />
 
-            <!-- Row - 1  -->
-            <div class="row-1 flex w-full items-center justify-center sm:justify-between flex-col">
-
-              <div class="flex flex-col w-full sm:flex-row items-center justify-between ">
-                <img src="./Images/moksh.png" alt="Moksh Logo" class='w-32 h-32 my-2' />
-
-                <div class="flex flex-col px-4 items-center sm:px-0 w-full sm:w-2/3">
-                  <span
-                        class="text-center italic font-bold text-indigo-600 mb-1 sm:border-double sm:border-b-4 sm:border-indigo-600">
-                    A Spiritual Productivity Tool for Mental Wellness
-                  </span>
-
-                  <div class=" mt-1  w-full font-semibold flex items-center justify-center flex-col">
-                    <span class="sm:text-xs text-md text-justify">
-                      Moksh is a spiritual productivity tool designed for individuals who
-                      want to unlock their potential and achieve true balance in life.
-
-                    </span>
-                    <!-- Footer Socials  -->
-                    <div
-                         class="socials mt-4 row-2 w-full flex justify-evenly capitalize font-semibold text-md  sm:text-[11px]">
-                      <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Twitter</a>
-                      <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Facebook</a>
-                      <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Instagram</a>
-                      <a href="#" class="ease-in-out duration-300 hover:text-indigo-600">Github</a>
-                    </div>
+                <div
+                  class="card-details flex flex-col items-center justify-center px-4"
+                >
+                  <div
+                    class="card-heading py-8 md:py-4 text-indigo-600 font-semibold"
+                  >
+                    <span>Augmented Reality Meditation</span>
                   </div>
 
-
-
-                  <!-- Copyright  -->
-                  <div class="row-3 copyright text-center font-semibold text-md sm:text-xs mt-4">
-                    <p>
-                      Made with ❤️ by Akshita during XPRESSION'23
+                  <div
+                    class="card-description flex flex-col items-center justify-center font-medium w-full md:pb-8"
+                  >
+                    <p class="text-justify">
+                      AR meditation combines ancient teachings of the Gita with
+                      AR technology, making it more accessible and engaging for
+                      modern practitioners. This unique and immersive meditation
+                      experience helps people connect more deeply with their
+                      inner self and the divine.
                     </p>
-                    <p class='text-rose-600 text-xs font-bold'>
-                      &copy; 2023 Moksh. All rights reserved.
-                    </p>
+                    <a
+                      href="./AR_Meditate/meditation.html"
+                      class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase ease-in-out duration-300 hover:bg-slate-900 tracking-widest"
+                      >Try it out</a
+                    >
                   </div>
-
+                  <div
+                    class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 sm:hidden"
+                  ></div>
                 </div>
-
               </div>
 
+              <!-- Card Iskon -->
+              <div
+                class="card cardIskon mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden relative ease-in-out duration-700 -left-[2000px] sm:left-0 md:hover:scale-95 hover:scale-100"
+              >
+                <img
+                  src="./Images/modernIskon.jpeg"
+                  alt="modernIskon"
+                  class="md:h-[300px] w-full"
+                />
+
+                <div
+                  class="card-details flex flex-col items-center justify-center px-4"
+                >
+                  <div
+                    class="card-heading py-8 md:py-4 text-indigo-600 font-semibold"
+                  >
+                    <span>Connect with Iskcon Events</span>
+                  </div>
+
+                  <div
+                    class="card-description flex flex-col items-center justify-center font-medium w-full md:pb-8"
+                  >
+                    <p class="text-justify">
+                      Moksh platform offers information on local ISKCON events
+                      such as youth festivals, kirtans and lectures, including
+                      details on location, date, time,tickets, website and
+                      requirements. It's ideal for those seeking to deepen their
+                      spiritual practice or connect with the local ISKCON
+                      community.
+                    </p>
+                    <a
+                      href="./Iskcon/event.html"
+                      class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase ease-in-out duration-300 hover:bg-slate-900 tracking-widest"
+                      >Connect</a
+                    >
+                  </div>
+                  <div
+                    class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 sm:hidden"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Card Story -->
+              <div
+                class="card cardStory mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden ease-in-out duration-700 relative -right-[2000px] sm:right-0 md:hover:scale-95 hover:scale-100"
+              >
+                <img
+                  src="./Images/modernDivine.webp"
+                  alt="modernDivine"
+                  class="md:h-[300px] w-full"
+                />
+
+                <div
+                  class="card-details flex flex-col items-center justify-center px-4"
+                >
+                  <div
+                    class="card-heading py-8 md:py-4 text-indigo-600 font-semibold"
+                  >
+                    <span>Divine Activities for All Generation</span>
+                  </div>
+
+                  <div
+                    class="card-description flex flex-col items-center justify-center font-medium md:pb-8"
+                  >
+                    <p class="text-justify">
+                      Moksh offers interactive activities for all generations to
+                      reduce stress and also learn about our holy book
+                      BhagwadGita and its principles. It contains eye exercises
+                      to reduce eye stress while working and also some desk
+                      exercises to reduce back pain while working.
+                    </p>
+                    <a
+                      href="./Divine_page/story.html"
+                      class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase ease-in-out duration-300 hover:bg-slate-900 tracking-widest"
+                      >Read More</a
+                    >
+                  </div>
+                  <div
+                    class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 md:hidden"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Card Pomodoro -->
+              <div
+                class="card cardClock mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden relative ease-in-out duration-700 -left-[2000px] sm:left-0 md:hover:scale-95 hover:scale-100"
+              >
+                <img
+                  src="./Images/modernPomodoro.webp"
+                  alt="modernClock"
+                  class="md:h-[300px] w-full"
+                />
+
+                <div
+                  class="card-details flex flex-col items-center justify-center px-4"
+                >
+                  <div
+                    class="card-heading py-8 md:py-4 text-indigo-600 font-semibold"
+                  >
+                    <span>Pomodoro Spiritual Break</span>
+                  </div>
+
+                  <div
+                    class="card-description flex flex-col items-center justify-center font-medium md:pb-8"
+                  >
+                    <p class="text-justify">
+                      This feature promotes spiritual learning and work-life
+                      balance by allowing users to set a Pomodoro timer and
+                      receive alerts to take a break and read a Bhagavad Gita
+                      shloka from the website.This feature on the website
+                      supports users in their journey towards personal growth
+                      and well-being.
+                    </p>
+                    <a
+                      href="./Pomodro_page/reward.html"
+                      class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase ease-in-out duration-300 hover:bg-slate-900 tracking-widest"
+                      >Take a Break</a
+                    >
+                  </div>
+                  <div
+                    class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 md:hidden"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Card Shlok -->
+              <div
+                class="card cardShlok mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden ease-in-out duration-700 relative -right-[2000px] sm:right-0 md:hover:scale-95 hover:scale-100"
+              >
+                <img
+                  src="./Images/modernShlok.webp"
+                  alt="modernShlok"
+                  class="md:h-[300px] w-full"
+                />
+
+                <div
+                  class="card-details flex flex-col items-center justify-center px-4"
+                >
+                  <div
+                    class="card-heading py-8 md:py-4 text-indigo-600 font-semibold"
+                  >
+                    <span>Read a Shlok</span>
+                  </div>
+
+                  <div
+                    class="card-description flex flex-col items-center justify-center font-medium md:pb-8"
+                  >
+                    <p class="text-justify">
+                      Meaningful and motivational quotations can help spark
+                      inspiration and create a sense of purpose. This feature
+                      enables users to read several thought-provoking spiritual
+                      quotes, which can provide a sense of comfort as well as
+                      encourage a connection with the divine.
+                    </p>
+                    <a
+                      href="./shlok_page/motivation.html"
+                      class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase ease-in-out duration-300 hover:bg-slate-900 tracking-widest"
+                      >Read</a
+                    >
+                  </div>
+                  <div
+                    class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 md:hidden"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Card Rejuvenate -->
+              <div
+                class="card cardRejuvenate mb-8 md:shadow-2xl h-full md:rounded-md md:overflow-hidden relative ease-in-out duration-700 -left-[2000px] sm:left-0 md:hover:scale-95 hover:scale-100"
+              >
+                <img
+                  src="./Images/modernRejuvenate.webp"
+                  alt="modernRejuvenate"
+                  class="md:h-[300px] w-full"
+                />
+
+                <div
+                  class="card-details flex flex-col items-center justify-center px-4"
+                >
+                  <div
+                    class="card-heading py-8 md:py-4 text-indigo-600 font-semibold"
+                  >
+                    <span>Rejuvenate</span>
+                  </div>
+
+                  <div
+                    class="card-description flex flex-col items-center justify-center font-medium md:pb-8"
+                  >
+                    <p class="text-justify">
+                      Here, users may watch inspirational short videos and read
+                      Srila Prabhupada stories to rejuvenate the mind, increase
+                      productivity and focus, and feel more at peace in today's
+                      busy world. Additionally, these stories offer hope in
+                      stressful times and can uplift the spirit.
+                    </p>
+                    <a
+                      href="./Rejuvenate_page/rejuvenate.html"
+                      class="px-3 py-3 text-xs mt-3 bg-indigo-600 rounded-md text-white uppercase ease-in-out duration-300 hover:bg-slate-900 tracking-widest"
+                      >Get Inspired</a
+                    >
+                  </div>
+                  <div
+                    class="forBorder my-4 w-full py-2 border-b-4 border-b-indigo-600 md:hidden"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contributors List  -->
+          <div
+            class="contributors flex-col overflow-x-auto flex items-center justify-center bg-blue-100 w-full py-8"
+          >
+            <div
+              class="text-indigo-600 text-center font-semibold w-full sm:w-2/3 p-4"
+            >
+              <span
+                class="pb-2 border-double border-b-4 border-indigo-600 uppercase"
+                >Moksh Contributors</span
+              >
+
+              <p class="normal mt-4 text-slate-900">
+                <b
+                  >We extend our heartfelt gratitude to these incredible
+                  contributors whose efforts have played a pivotal role in the
+                  success of the Moksh project. ❤️</b
+                >
+              </p>
             </div>
 
+            <div class="content flex justify-center">
+              <p>
+                <img
+                  src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Moksh/contributors?format=svg&limit=54"
+                  class="w-full h-full scale-75"
+                />
+              </p>
+            </div>
           </div>
-        </footer>
 
+          <!-- Footer  -->
+          <footer
+            class="indexFooter md:w-full flex flex-col h-fit items-center justify-center py-12 bg-white"
+          >
+            <div class="footerWrapper w-full px-12 lg:px-0 sm:w-2/3">
+              <!-- Row - 1  -->
+              <div
+                class="row-1 flex w-full items-center justify-center sm:justify-between flex-col"
+              >
+                <div
+                  class="flex flex-col w-full sm:flex-row items-center justify-between"
+                >
+                  <img
+                    src="./Images/moksh.png"
+                    alt="Moksh Logo"
+                    class="w-32 h-32 my-2"
+                  />
+
+                  <div
+                    class="flex flex-col px-4 items-center sm:px-0 w-full sm:w-2/3"
+                  >
+                    <span
+                      class="text-center italic font-bold text-indigo-600 mb-1 sm:border-double sm:border-b-4 sm:border-indigo-600"
+                    >
+                      A Spiritual Productivity Tool for Mental Wellness
+                    </span>
+
+                    <div
+                      class="mt-1 w-full font-semibold flex items-center justify-center flex-col"
+                    >
+                      <span class="sm:text-xs text-md text-justify">
+                        Moksh is a spiritual productivity tool designed for
+                        individuals who want to unlock their potential and
+                        achieve true balance in life.
+                      </span>
+                      <!-- Footer Socials  -->
+                      <div
+                        class="socials mt-4 row-2 w-full flex justify-evenly capitalize font-semibold text-md sm:text-[11px]"
+                      >
+                        <a
+                          href="https://twitter.com/ExperienceMoksh"
+                          class="ease-in-out duration-300 hover:text-indigo-600"
+                          >Twitter</a
+                        >
+                        <a
+                          href="https://github.com/akshitagupta15june/Moksh"
+                          class="ease-in-out duration-300 hover:text-indigo-600"
+                          >Github</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Copyright  -->
+                    <div
+                      class="row-3 copyright text-center font-semibold text-md sm:text-xs mt-4"
+                    >
+                      <p>Made with ❤️ by Akshita during XPRESSION'23</p>
+                      <p class="text-rose-600 text-xs font-bold">
+                        &copy; 2023 Moksh. All rights reserved.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
       </div>
-
     </div>
-  </div>
 
-  <script src="./script.js"></script>
-
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
