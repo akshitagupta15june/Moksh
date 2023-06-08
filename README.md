@@ -1,6 +1,7 @@
 <div align="center">
- <h1>MOKSH</h1>
- <a href="https://github.com/akshitagupta15june/Moksh/issues"><img src="https://img.shields.io/github/issues/akshitagupta15june/Moksh"></a>
+
+<h1><img src="https://media.tenor.com/R6A1Nc-beKwAAAAj/rose-flower.gif" class="moksh" height="40px" width="40px"> MOKSH  <img src="https://media.tenor.com/R6A1Nc-beKwAAAAj/rose-flower.gif" class="moksh" height="40px" width="40px"></h1>
+<a href="https://github.com/akshitagupta15june/Moksh/issues"><img src="https://img.shields.io/github/issues/akshitagupta15june/Moksh"></a>
 <a href="https://github.com/akshitagupta15june/Moksh/pulls"><img src="https://img.shields.io/github/issues-pr/akshitagupta15june/Moksh"></a>
 <a href="https://github.com/akshitagupta15june/Moksh/network/members"><img src="https://img.shields.io/github/forks/akshitagupta15june/Moksh"></a>
 <a href="https://github.com/akshitagupta15june/Moksh/stargazers"><img src="https://img.shields.io/github/stars/akshitagupta15june/Moksh"></a>
@@ -12,10 +13,19 @@
 </p>
 
 ### _Unlock your potential and achieve true balance in life with Moksh!_
- <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion</h3>
- <h2>Watch this <a href="https://youtu.be/wfdF___qNME">Video</a> to know about Moksh</h2>
+
+
+<h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord <img src="https://media.tenor.com/5a7v-p3E5pkAAAAM/discord.gif" class="discordlogo" height="40px" width="40px"></a> for discussion</h3>
+<h2></h2>
+
 
 </div>
+
+## Watch this to know about Moksh (Demo Video)
+
+<h5>Demo Video on Youtube - <a href="https://youtu.be/wfdF___qNME">Link</a> (In case there is an error loading the embedded video below 👇)<h5>
+
+https://github.com/Pratik-11/Moksh/assets/72139212/9a1cad69-7829-4d2b-94e8-9eadb2128b0b
 
 ## About The Project 💫
 
@@ -43,7 +53,7 @@ Moksh is a spiritual productivity tool designed for individuals who want to unlo
 * Stress buster spiritual games 🎮
 * Bhagavad Gita quiz 🤔
 * Random Bhagavad Gita shlok generator with meaning, along with sharing to twitter functionality 🌟
-* Rejuvenate section for watching inspirational videos by spiritual leaders ☮️
+* Rejuvenation section for watching inspirational videos by spiritual leaders ☮️
 
 ## Demo
 
@@ -66,7 +76,7 @@ Join Your Discord Server and ask your doubts
 - [Bootstrap](https://getbootstrap.com)
 - [JavaScript](https://www.javascript.com/)
 
-👉 AR Medidation integration:
+👉 AR Meditation integration:
 
 - [Echo-AR](https://www.echo3d.com)
 
@@ -249,6 +259,7 @@ Please ensure you follow the [Code of Conduct](https://github.com/akshitagupta15
 
 [Akshita Gupta](https://github.com/akshitagupta15june)
 
-### Show some ❤️ by starring this awesome repository!
+###  Show some ❤️ by starring this awesome repository! <img src="https://imgur.com/o7ncZFp.jpg" height=35px width=35px>
+
 
 </div>
