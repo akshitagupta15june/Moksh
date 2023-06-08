@@ -123,6 +123,23 @@ body {
 
   border-radius: 10px;
 }
+.new-header {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.new {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.new .img img {
+  gap: 5px;
+  width: 32vw;
+  border-radius: 10px;
+}
 
 .bottom-header {
   text-align: center;
