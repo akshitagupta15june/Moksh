@@ -30,11 +30,13 @@ https://github.com/Pratik-11/Moksh/assets/72139212/9a1cad69-7829-4d2b-94e8-9eadb
 		
 ## 🐦 Latest Tweet
 
+
 <p>
-  <a href="https://github.com/VishwaGauravIn/github-twitter-card-embed">
+  <a href="https://www.twitter.com/ExperienceMoksh">
     <img src="https://gtce.itsvg.in/api?username=ExperienceMoksh" alt="Latest Tweet">
   </a>
 </p>
+
 
 ## About The Project 💫
 
