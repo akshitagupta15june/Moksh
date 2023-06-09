@@ -55,3 +55,13 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.arrow {
+  border: solid rgb(18, 41, 185);
+  border-width: 0 2.5px 2.5px 0;
+  display: inline-block;
+  padding: 5px;
+}
+.down {
+  transform: rotate(44deg);
+  -webkit-transform: rotate(45deg);
+}
