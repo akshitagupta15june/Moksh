@@ -9,3 +9,7 @@
 .projectName {
   font-family: 'Arizonia', cursive;
 }
+
+.blogContentDetails {
+  align-items: center;
+}
