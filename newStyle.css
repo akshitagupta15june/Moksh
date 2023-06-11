@@ -84,3 +84,7 @@ a.text-xs.px-3.py-2.font-semibold.tracking-widest.border-4.border-white.hover\:b
   font-weight: 900;
   transform:scale(1.05);
 }
+
+.word-spacing {
+  margin-right: -7px;
+}
