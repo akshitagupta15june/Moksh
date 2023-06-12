@@ -14,7 +14,7 @@
     <div class="blogWrapper h-screen overflow-hidden relative">
       <!-- Site Menu Links  -->
       <div
-        class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] bg-white w-screen sm:w-1/2 p-8 sm:border-l sm:border-l-gray-900"
+        class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm bg-white/30 w-screen sm:w-1/5 p-8 sm:border-l sm:border-l-gray-900"
       >
         <!-- Row - 1  -->
         <div class="row-1 flex items-center justify-between">
@@ -36,7 +36,7 @@
         <img src="./Images/moksh.png" alt="" class="h-36 w-36 mx-auto" />
 
         <!-- Row - 2  -->
-        <div class="navLinks">
+        <div class="navLinks  divide-y divide-slate-700 ">
           <a
             class="flex items-center font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
             href="./index.html"
@@ -92,11 +92,11 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span class="text-sm ml-2">Features</span>
+              <span class="text-sm ml-2 divide-y divide-slate-700 ">Features</span>
             </a>
 
             <!-- Nested Links for features  -->
-            <div class="nestedLinks flex flex-col ml-4">
+            <div class="nestedLinks flex flex-col ml-4 divide-y divide-slate-700">
               <a
                 class="flex my-2 items-center capitalize font-semibold ease-in-out duration-300 p-2 hover:text-white rounded-md hover:bg-indigo-500"
                 href="AR_Meditate/meditation.html"
@@ -227,7 +227,7 @@
         >
           <!-- Navbar   -->
           <div
-            class="fixed indexNavbar top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0"
+            class="fixed indexNavbar top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0 backdrop-blur-sm bg-white/30 bg-white"
           >
             <div class="leftSection">
               <a class="flex items-center" href="./index.html">
@@ -244,33 +244,91 @@
               
             </div>
             <style>
-              .navi{
-                  font-family: Montes;
-                }
-                
-            </style>
-            <div>
-              <ul class="nav-menu" style="float: left;">
-                <li style="float: left;  display: inline; height: 10px;  margin: 0 50px 0 0;"> <a href="./index.html" <span
-                  class="ml-3 text-xl sm:text-2xl font-semibold text-indigo-600 navi tracking-widest ease-in-out duration-300 hover:text-slate-900">      Home</span>
-               </a></li>
-                <li style="float: left;  display: inline; height: 10px; margin: 0 50px 0 0;"><a href="./Blogs/Blog.html" <span
-                      class="ml-3 text-xl sm:text-2xl font-semibold text-indigo-600 navi tracking-widest ease-in-out duration-300 hover:text-slate-900">Power of Knowledge Blogs   </span>
-                   </a></li>
-                   <li style="float: left;  display: inline; height: 10px;">  <div class="dropdown">
-                    <span
-                       class="ml-3 text-xl sm:text-2xl font-semibold text-indigo-600 navi tracking-widest ease-in-out duration-300 hover:text-slate-900 font-montserrat">     Features <p style="display: inline;""><i class="arrow down"> </i>  </p> <i style="color: transparent;">i</i> </span>
-                       
-                       <div class="dropdown-content">
-                        <a href="AR_Meditate/meditation.html"><i>Augmented Reality Meditation</i></a>
-                        <a href="Iskcon/event.html"><i>Iskcon Events</i></a>
-                        <a href="Divine_page/story.html"><i>Divine Activities for all Generation</i></a>
-                        <a href="Pomodro_page/reward.html"><i>Pomodoro Spritual Break</i></a>
-                        <a href="shlok_page/motivation.html"><i>Read a Shlok</i></a>
-                        <a href="Rejuvenate_page/rejuvenate.html"><i>Rejuvenate</i></a>
-                      </div>
-                    </div></li></ul>
-            </div>
+             
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .nav-menu li {
+    float: left;
+    margin-right: 50px;
+  }
+
+  .nav-menu li:last-child {
+    margin-right: 0;
+  }
+
+  .nav-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #3f51b5;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav-menu li a:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-menu li {
+      margin-right: 20px;
+    }
+  }
+</style>
+
+<div>
+  <ul class="nav-menu">
+    <li>
+      <a href="./index.html">Home</a>
+    </li>
+    <li>
+      <a href="./Blogs/Blog.html">Power of Knowledge Blogs </a>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle">Features</a>
+      <div class="dropdown-content">
+        <a href="AR_Meditate/meditation.html">Augmented Reality Meditation</a>
+        <a href="Iskcon/event.html">Iskcon Events</a>
+        <a href="Divine_page/story.html">Divine Activities for all Generation</a>
+        <a href="Pomodro_page/reward.html">Pomodoro Spiritual Break</a>
+        <a href="shlok_page/motivation.html">Read a Shlok</a>
+        <a href="Rejuvenate_page/rejuvenate.html">Rejuvenate</a>
+      </div>
+    </li>
+  </ul>
+</div>
+
             
    
             <div class="rightSection pr-4">
@@ -554,7 +612,11 @@
                     class="card-description flex flex-col items-center justify-center font-medium md:pb-8"
                   >
                     <p class="text-justify">
-                      Meaningful and motivational quotations can help spark
+                      <span class="word-spacing">Meaningful</span> 
+                     <span class="word-spacing">and</span> 
+                     <span class="word-spacing">motivational</span>
+                     <span class="word-spacing">quotations</span> 
+                      can help spark
                       inspiration and create a sense of purpose. This feature
                       enables users to read several thought-provoking spiritual
                       quotes, which can provide a sense of comfort as well as

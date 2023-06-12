@@ -1,4 +1,4 @@
-
+*
 
  {
   margin: 0;
@@ -164,7 +164,7 @@ a.features {
 .navbar-nav li:hover {
   text-decoration: underline;
   text-decoration-color: black;
-  background-color: #white;
+  background-color: white;
 }
 
 
