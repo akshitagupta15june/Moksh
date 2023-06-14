@@ -38,7 +38,7 @@ const audioToInsert = audios.map((item,index)=>{
          src="${item.thumbnail}"
          alt=""
          height="80px"
-         style="border-radius: 16px" />
+         style="border-radius: 16px; height:80px;" />
     <p id="music" class="m-0">${item.title}</p>
     <button class="icons bg-transparent border-0 text-danger-emphasis fs-2 play-pause-btn" data-id="${index}">
       <i class="bi bi-play-circle-fill" data-id="${index}"></i>
