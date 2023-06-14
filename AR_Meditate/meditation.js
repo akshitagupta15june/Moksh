@@ -4,27 +4,27 @@ const audios=[
   {
     title: "Deep meditation Music",
     path:"../Images/deep-music.mp3",
-    thumbnail:"../Images/Deep_meditation.jpg"
+    thumbnail:"./Images/Deep_meditation.jpg"
   },
   {
     title: "Krishna Flute meditation music",
     path:"../Images/krishna.mp3",
-    thumbnail:"../Images/Krishna.jpg"
+    thumbnail:"./Images/Krishna.jpg"
   },
   {
     title: "River meditation music",
     path:"../Images/river-music.mp3",
-    thumbnail:"../Images/River.jpg"
+    thumbnail:"./Images/River.jpg"
   },
   {
     title: "Piano meditation music",
     path:"../Images/piano-music.mp3",
-    thumbnail:"../Images/Piano.jpg"
+    thumbnail:"./Images/Piano.jpg"
   },
   {
     title: "Himalayas meditation music",
     path:"../Images/himalaya-music.mp3",
-    thumbnail:"../Images/Himalayas.jpg"
+    thumbnail:"./Images/Himalayas.jpg"
   }
 ]
 
