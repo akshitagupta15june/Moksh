@@ -1,6 +1,18 @@
 <!doctype html>
 <html>
-
+<div id="google_translate_button"></div>
+  <script
+    type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateInit"
+  ></script>
+  <script type="text/javascript">
+    function googleTranslateInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'en' },
+        'google_translate_button'
+      );
+    }
+  </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
