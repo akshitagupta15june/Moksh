@@ -20,7 +20,7 @@ let dropMenuLinks = document.querySelector( '.dropMenuLinks' ),
 
 contentWrapper.onscroll = () =>
 {
-  contentWrapper.scrollTop > 5 ? indexNavbar.classList.add( 'bg-white', 'border-b', 'border-b-gray-900' ) : indexNavbar.classList.remove( 'bg-white', 'border-b', 'border-b-gray-900' )
+  contentWrapper.scrollTop > 5 ? indexNavbar.classList.add( 'bg-slate-900', 'shadow-2xl' ) : indexNavbar.classList.remove( 'bg-slate-900', 'shadow-2xl' )
   contentWrapper.scrollTop > 1100 ? cardAr.classList.add( 'right-0' ) : ''
   contentWrapper.scrollTop > 1600 ? cardIskon.classList.add( 'left-0' ) : ''
   contentWrapper.scrollTop > 2300 ? cardStory.classList.add( 'right-0' ) : ''
@@ -69,5 +69,3 @@ function toggleReturnToTopButton ()
 // Add event listeners
 window.addEventListener( 'scroll', toggleReturnToTopButton );
 // returnToTopButton.addEventListener( 'click', scrollToTop );
-
-
