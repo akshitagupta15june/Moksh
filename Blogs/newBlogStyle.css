@@ -10,6 +10,10 @@
   font-family: 'Arizonia', cursive;
 }
 
+<<<<<<< HEAD
+.blogContentDetails {
+  align-items: center;
+=======
 /*From line 13 to 29 is the code contributed to style the scrollbar*/
 ::-webkit-scrollbar{
   width: 12px;
@@ -26,4 +30,5 @@
 
 ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(transparent, antiquewhite);
+>>>>>>> 08dd95f11612d4275284b62bed547f8144412bac
 }
