@@ -9,6 +9,7 @@
     <title>Blog- Depression & Suicide</title>
     <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" href="../index.html" />
     <link rel="stylesheet" href="newBlogStyle.css">
+ <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
@@ -109,13 +110,19 @@
              
 <div id="google_translate_element"></div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
+  <p>Translate in your preferred language</p>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Add the script for initializing the translation widget -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({  
+        pageLanguage: 'en',  // Set the default language of your website
+        includedLanguages: 'es,fr',  // Set the languages you want to include
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE  // Choose the display layout
+      }, 'google_translate_element');
+    }
+  </script>
            
 
                 <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
