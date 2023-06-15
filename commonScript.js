@@ -131,7 +131,7 @@ let customFooter = document.querySelector( ".customFooter" ),
 
   let navbarContent = `
        <div class="leftSection">
-              <a class="flex items-center" href="./index.html">
+              <a class="flex items-center" href="../index.html">
                 <img src="../Images/moksh.png" alt="Moksh Logo" class="lg:w-14 lg:h-14 w-12 h-12 hover:animate-spin " />
                 <span
                   class="ml-3 text-base lg:text-2xl uppercase font-semibold projectName tracking-widest ease-in-out duration-300 hover:text-indigo-600">Moksh</span>
