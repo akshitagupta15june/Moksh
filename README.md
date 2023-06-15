@@ -26,6 +26,17 @@
 <h5>Demo Video on Youtube - <a href="https://youtu.be/wfdF___qNME">Link</a> (In case there is an error loading the embedded video below 👇)<h5>
 
 https://github.com/Pratik-11/Moksh/assets/72139212/9a1cad69-7829-4d2b-94e8-9eadb2128b0b
+	
+		
+## 🐦 Latest Tweet
+
+
+<p>
+  <a href="https://www.twitter.com/ExperienceMoksh">
+    <img src="https://gtce.itsvg.in/api?username=ExperienceMoksh" alt="Latest Tweet">
+  </a>
+</p>
+
 
 ## About The Project 💫
 
@@ -61,9 +72,7 @@ https://akshitagupta15june.github.io/Moksh/
 
 ## Doubts
 
-If there are any doubts you can ask here on discord
-
-Join Your Discord Server and ask your doubts
+If there are any doubts, you can ask here on Discord. <br>Join your Discord server and ask your doubts.
 
 [![Join our Discord channel](https://img.shields.io/badge/Join%20our-Discord-%237289DA)](https://discord.gg/Jmc97prqjb)
 
@@ -225,7 +234,7 @@ $ git clone https://github.com/<your_github_username>/Moksh.git
 <h3> Points - 45 </h3>
 	
 	
-- Core contributions, uch as implementing major features or refactoring significant parts of the codebase. This needs a deep understanding of the codebase and its patterns.
+- Core contributions, such as implementing major features or refactoring significant parts of the codebase. This needs a deep understanding of the codebase and its patterns.
 	
 	
 

@@ -10,20 +10,27 @@
   font-family: 'Arizonia', cursive;
 }
 
+
+.blogContentDetails {
+  align-items: center;
+
+}
+
 /*From line 13 to 29 is the code contributed to style the scrollbar*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: rgb(7, 31, 48);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: linear-gradient(transparent, #09a0f1);
   border-radius: 6px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, antiquewhite);
+
 }
