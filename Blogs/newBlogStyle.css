@@ -5,12 +5,18 @@
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
-
+body{
+  background-image: url("../Images/wallpaper8.gif");
+}
 .projectName {
   font-family: 'Arizonia', cursive;
 }
-
-
+.featuredBlog span{
+  color: white;
+}
+.title p{
+  color: white;
+}
 .blogContentDetails {
   align-items: center;
 
@@ -29,8 +35,28 @@
   background: linear-gradient(transparent, #09a0f1);
   border-radius: 6px;
 }
-
+/*
 ::-webkit-scrollbar-thumb:hover {
+  
   background: linear-gradient(transparent, antiquewhite);
-
+   
 }
+*/
+.heroSection{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.depressed-image{
+  width: 600px;
+  height: 70vh;
+  border-radius: 100%;
+}
+.blogCards{
+  background: rgba(255, 255, 255, 0.6);
+}
+.text-base{
+  color: white;
+}   

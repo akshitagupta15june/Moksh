@@ -9,3 +9,12 @@
 .projectName {
   font-family: 'Arizonia', cursive;
 }
+
+.heroSectionContent{
+  background-image: url("../Images/wallpaper6.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}

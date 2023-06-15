@@ -98,10 +98,24 @@ button.start-btn {
 .cards{
   display: flex;
 }
-
+@media only screen and (max-width: 600px){
+  a{
+      font-size: 0.8em !important;
+  }
+}
 .nav-menu>li a{
   /* position: relative; */
   display: flex;
   justify-content: space-around;
-  
+}
+
+.heading1{
+  font-family: 'Arizonia', cursive;
+}
+.header{
+  background: rgb(216,185,227);
+  background: radial-gradient(circle, rgba(216,185,227,1) 0%, rgba(41,128,185,1) 100%);
+}
+.header h1{
+  font-family: 'Arizonia', cursive;
 }

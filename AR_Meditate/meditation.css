@@ -1,5 +1,6 @@
 body {
-  background-image: url("../Images/meditationgif.gif");
+  /* background-image: url("../Images/meditationgif.gif"); */
+  background-image: url("../Images/wallpaper3.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -58,4 +59,11 @@ iframe {
   backdrop-filter: blur(4.4px);
   -webkit-backdrop-filter: blur(4.4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.text-center{
+  color: whitesmoke;
+}
+footer{
+   background: rgba(255, 255, 255, 0.13);
+
 }
