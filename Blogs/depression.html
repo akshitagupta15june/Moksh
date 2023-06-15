@@ -110,7 +110,6 @@
              
 <div id="google_translate_element"></div>
 
-  <p>Translate in your preferred language</p>
 
 
   <!-- Add the script for initializing the translation widget -->
@@ -379,9 +378,21 @@
         </div>
 
     </div>
+ <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
 
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
     <script src="./blogs.js"></script>
-
+<script src="../script.js"></script>
     <script src="../commonScript.js"></script>
 
 </body>
