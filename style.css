@@ -321,7 +321,9 @@ a.dropdown-item{
   align-items: center;
   position: relative;
 }
-
+img, video {
+    height: 100%;
+}
 .circle1 {
   width: 200px;
   height: 200px;
