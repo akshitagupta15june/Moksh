@@ -198,3 +198,11 @@ body {
   margin-right: auto;
 
 }
+
+.navbar-logo img {
+  width: 60px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
