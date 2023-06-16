@@ -105,3 +105,10 @@ button.start-btn {
   justify-content: space-around;
   
 }
+
+.navbar-logo img {
+  width: 60px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  object-fit: cover;
+}

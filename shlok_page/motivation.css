@@ -298,3 +298,10 @@ p:hover {
   padding-left: 3px;
   padding-right: 3px;
 }
+
+.navbar-logo img {
+  width: 60px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  object-fit: cover;
+}

@@ -126,6 +126,14 @@ iframe {
   filter: invert(100%);
 }
 
+.navbar-logo img {
+  width: 60px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
 @media (max-width: 620px) {
   .media-scroller {
     grid-auto-columns: 100%;
