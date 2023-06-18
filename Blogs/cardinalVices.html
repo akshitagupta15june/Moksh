@@ -104,7 +104,7 @@
         <div class="blogImage my-3">
           <img src="../Images/blog-vices.webp" alt="">
         </div>
-
+        <div id="google_translate_element"></div>
         <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
           <p class="mb-4">
             <span class=" firstWord font-bold text-3xl text-indigo-800">F</span>
@@ -759,7 +759,24 @@
       <!-- Footer  -->
       <footer class="customFooter flex flex-col items-center py-4"></footer>
     </div>
+    <script type="text/javascript"
+    src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
 
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+  );
+}
+</script>
   </div>
 
   <script src="./blogs.js"></script>
