@@ -9,3 +9,78 @@
 .projectName {
   font-family: 'Arizonia', cursive;
 }
+
+/* Footer  */
+.footer{
+}
+
+.footer-items{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+
+.footer-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.copyright{
+  color: black;
+  font-size: small;
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.footer-items:hover::after{
+  transform: scale(1.1);
+  transition: 400ms;
+  width: 100%;
+  color: blue;
+}
+
+.footer-items::after{
+  content:'';
+  display:block;
+  height: 4px;
+  width:0;
+  background: blue;
+  transition:all .5
+}
+
+.footer-divide {
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  gap: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.footer-divide-text{
+  text-align: left;
+  padding-top: 30px;
+}
+
+.footer-socials{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.made-by{
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
