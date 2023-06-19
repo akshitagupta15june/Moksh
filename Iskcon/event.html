@@ -81,8 +81,8 @@
   margin-top: 10px;
 }
   .about{
-  margin-left: 350px;
-  margin-right: 350px;
+  width:45%;
+  margin:0 25.5%;
   padding: 10px 20px 85px;
   height: 100px;
   }
@@ -100,11 +100,39 @@
   transition: all 0.55s ease;
 }
 
+.card{
+  width:30rem;
+}
+
+@media only screen and (max-width:1000px){
+  .about{
+    width: 68%;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (max-width:760px){
+  .innerevent h1{
+      padding-top: 40px;
+    }
+  
+  .cards{
+      flex-direction: column;
+  }
+
+  .card{
+    width:60%;
+    margin: 2rem auto;
+  }
+}
+
+
 @media only screen and (max-width:700px) {
     .header{
       margin-top: 84px;
     padding-top: 71px;
-    margin-left: -326px;
+    
     }
 
     .header h1{
@@ -114,16 +142,39 @@
     .text-container{
       margin-top: 84px;
     padding-top: 71px;
-    margin-left: -326px;
     }
 
-    .innerevent h1{
-      padding-top: 188px;
-    }
   }
+@media only screen and (max-width:625px){
+  .about{
+    width: 88%;
+  }
+  }
+
+@media only screen and (max-width:585px){
+  .innerevent h1{
+      padding-top: 22%;
+    }
+
+  .card{
+    width:80%;
+  }
+}
+
+@media only screen and (max-width:460px){
+  .innerevent h1{
+      padding-top: 54%;
+    }
+}
+
+@media only screen and (max-width:400px){
+  .innerevent h1{
+      padding-top: 82%;
+    }
+}
    </style>
 
-    <div class ="about" >
+  <div class ="about" >
     <div class="header">
       <h1>Learn About ISKCON</h1>
       <p><b> International Society for Krishna Consciousness (ISKCON)</b></p>
@@ -146,7 +197,7 @@
         </p>
     </div>
   </div>
-</div>
+
   <!-- The Tour Section -->
   <div id="event">
             <div  class="w3-container w3-content w3-padding-64"
@@ -173,7 +224,7 @@
 
       <!--cards-->
       <div class="cards">
-        <div class="card" style="width: 30rem; height:500px">
+        <div class="card" style="height:500px">
           <img class="card-img-top" style="height:200px" src="../Images/xpression.jpg" alt="new delhi">
           <div class="card-body">
             <h5 class="card-title" style="color:#000;height: 50px;">Learning Mental Wellness</h5>
@@ -183,7 +234,7 @@
             <a href="https://xpression.co.in/" class="btn btn-primary">Book Tickets</a>
           </div>
         </div>
-        <div class="card" style="width: 30rem; height:500px">
+        <div class="card" style="height:500px">
           <img class="card-img-top" style="height:200px" src="../Images/ramn.jpg" alt="new delhi">
           <div class="card-body">
             <h5 class="card-title" style="color:#000; height: 50px;">Iskcon, Banglore</h5>
@@ -192,7 +243,7 @@
             <a href="https://www.iskconbangalore.org/sri-rama-navami/" class="btn btn-primary">Visit</a>
           </div>
         </div>
-        <div class="card" style="width: 30rem; height:500px">
+        <div class="card" style="height:500px">
           <img class="card-img-top" style="height:200px" src="../Images/krishnaa.jpg" alt="new delhi">
           <div class="card-body">
             <h5 class="card-title" style="color:#000; height: 50px;">Vedic Cultural Centre, New Delhi</h5>
