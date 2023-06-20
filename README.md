@@ -137,12 +137,34 @@ See the [open issues](https://github.com/akshitagupta15june/Moksh/issues) for a 
 2. Clone your forked repository
 
 ```sh
-$ git clone https://github.com/<your_github_username>/Moksh.git
+ git clone https://github.com/<your_github_username>/Moksh.git
 ```
+3. Now go ahead and create a new branch and move to the branch
+   ```sh
+   git checkout -b fix-issue-<ISSUE-NUMBER>
+   ```
+4. After you have added your changes, follow the following command chain
+   * Check the changed files
+    ```sh
+     git status -s
+     ```
 
-3. Make the required changes and stage them (`git add .`) or (`git add <file>`)
-4. Commit your Changes (`git commit -m 'Made xyz changes'`)
-5. Push to your branch (`git push -u origin main`)
+   * Add all the files to the staging area
+      ```sh
+     git add .
+     ```
+     or
+     ```sh
+     git add <file_name1> <file_name2>
+     ```
+   * Commit your changes
+    ```sh
+     git commit -m "<EXPLAIN-YOUR_CHANGES>"
+     ```
+5. Push your changes
+   ```sh
+   git push origin fix-issue-<ISSUE-NUMBER>
+   ```
 6. Open a Pull Request 
 ## 👩‍💻 Project Admin
 
