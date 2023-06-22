@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact-box {
+    display: flex;
+    background: linear-gradient(to left top, rgb(4, 18, 46), rgb(105, 163, 201));
+    /* margin-top: 0.3vh; */
+    height: 100vh;
+}
+
+.contact-sec-1 {
+    width: 50%;
+}
+
+.contact-sec-1 img{
+    width: 50vw;
+}
+
+.contact-sec-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.contact-sec-2 h1{
+    font-size: 4em;
+    margin: 2vh 0;
+    color: white;
+}
+
+.contact-sec-2 input{
+    margin: 1vh 0;
+    border-radius: 3px;
+    height: 5vh;
+    width: 20vw;
+    padding: 0.4em;
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid white;
+    font-size: 1.1em;
+}
+
+.contact-sec-2 input::placeholder{
+    color: white;
+}
+
+.contact-sec-2 textarea{
+    margin: 1vh 0;
+    padding: 0.3em;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.contact-sec-2 textarea::placeholder{
+    color: white;
+}
+
+.contact-sec-2 button{
+    width: 5.5vw;
+    font-size: 1em;
+    height: 4vh;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.contact-sec-2 button:hover{
+    background-color: rgb(9, 31, 73);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.copyright span{
+    font-family: monospace !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/* responsive */
+@media only screen and (max-width:600px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .sec-1 h3 {
+        width: 50%;
+        float: left;
+        flex-wrap: wrap;
+        font-size: 0.9em;
+    }
+
+    .sec-2 {
+        display: none;
+    }
+
+    main{
+        height: 1000%;
+        margin: 0.2vh 0;
+    }
+
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-sec-1{
+        width: 100%;
+    }
+    .contact-sec-1 img{
+        width: 50vw;
+        display: flex;
+        margin: auto;
+    }
+
+    .contact-sec-2{
+        width: 100%;
+    }
+
+    .contact-sec-2 h1{
+        font-size: 2em;
+    }
+
+    .contact-sec-2 input{
+        width: 60vw;
+        font-size: 0.9em;
+    }
+
+    .contact-sec-2 input::placeholder{
+        color: #fff;
+    }
+
+    .contact-sec-2 textarea::placeholder{
+        color: white;
+    }
+
+    .contact-sec-2 textarea{
+        width: 70vw;
+    }
+
+    .contact-sec-2 button{
+        width: 30vw;
+        height: 5vh;
+        margin: 1.5vh 0;
+    }
+}
