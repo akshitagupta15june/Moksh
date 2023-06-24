@@ -1,5 +1,5 @@
 body {
-  background-image: url("../Images/meditationgif.gif");
+  background-image: url("../Images/meditate3.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -64,7 +64,7 @@ iframe {
 
 .nav {
   height: 70px;
-  background-color: #2980b9 !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
   box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4);
   display: flex;
   align-items: center;
@@ -116,12 +116,12 @@ iframe {
 }
 
 .nav ul li a {
-  color: white !important;
+  color: black !important;
   display: block;
   padding: 0 15px;
   line-height: 70px;
   font-size: 17px;
-  background-color: #2980b9 !important;
+  /* background-color: rgba(255, 255, 255, 0.5) !important; */
   transition: 0.3s;
   letter-spacing: 1px;
   margin: 0;
@@ -143,7 +143,7 @@ iframe {
 .nav ul ul {
   position: absolute !important;
   top: 85px;
-  border-top: 3.5px solid #8ad0ff;
+  border-top: 3.5px solid  rgba(255, 255, 255, 0.5);
   background-color: none;
   opacity: 0;
   visibility: hidden;
@@ -161,8 +161,9 @@ iframe {
 .nav ul ul li {
   width: 310px;
   display: list-item; 
-   position: relative;
-  border: 1px solid #8ad0ff;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5); 
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-top: none;
 }
 
@@ -191,3 +192,6 @@ a.dropdown-item{
   cursor: pointer;
 }
 /* Navbar Ends */
+.customFooter{
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
