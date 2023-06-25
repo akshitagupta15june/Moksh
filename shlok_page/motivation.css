@@ -305,3 +305,13 @@ p:hover {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.footer-logo{
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-divide{
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
