@@ -9,3 +9,19 @@
 .projectName {
   font-family: 'Arizonia', cursive;
 }
+.OmSymbol{
+  position: relative;
+  height: 20vh;
+  width: 15vw;
+  left: 40vw;
+  bottom: 3vh;
+}
+
+@media screen and (min-width: 280px) and (max-width: 912px) {
+  .OmSymbol{
+    position: relative;
+    height: 100px;
+    width: 120px;
+    left: 55vw;
+  }
+}
