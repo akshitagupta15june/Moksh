@@ -61,7 +61,7 @@
 
           <!-- Social Share links  -->
           <div class="social-share mt-4 flex items-center justify-between w-2/3 md:w-1/6">
-            <a href="#" title="Share">
+            <a href="#" title="Share" onclick="copyLink()">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                    class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
                 <path fill-rule="evenodd"
@@ -78,7 +78,7 @@
               </svg>
             </a>
 
-            <a href="#" title="Download">
+            <a href="./cardinalVices.html" title="Download" download>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                    class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -86,7 +86,7 @@
               </svg>
             </a>
 
-            <a href="#" title="Print">
+            <a href="#" title="Print" onclick="initiatePrint()">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                    class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -95,6 +95,7 @@
             </a>
 
           </div>
+          <p id="copyMessage" class="text-xs text-green-500"></p>
 
           <p class="pulishedOn font-semibold text-center mt-8 uppercase text-slate-500 text-[11px]">Published on: 31-05-2023</p>
 
@@ -103,7 +104,7 @@
         <div class="blogImage my-3">
           <img src="../Images/blog-vices.webp" alt="">
         </div>
-
+        <div id="google_translate_element"></div>
         <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
           <p class="mb-4">
             <span class=" firstWord font-bold text-3xl text-indigo-800">F</span>
@@ -758,12 +759,52 @@
       <!-- Footer  -->
       <footer class="customFooter flex flex-col items-center py-4"></footer>
     </div>
+    <script type="text/javascript"
+    src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
 
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+  );
+}
+</script>
   </div>
 
   <script src="./blogs.js"></script>
   <script src="../script.js"></script>
   <script src="../commonScript.js"></script>
+  <script>
+    function initiatePrint() {
+      window.print()
+    }
+    function copyLink() {
+      var dummy = document.createElement("textarea");
+      document.body.appendChild(dummy);
+      dummy.value = window.location.href;
+      dummy.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+      document.getElementById("copyMessage").textContent = "Link copied!";
+
+
+      var copyMessage = document.getElementById("copyMessage");
+      copyMessage.textContent = "Link copied!";
+      copyMessage.classList.add("fade-out");
+      setTimeout(function () {
+        copyMessage.textContent = "";
+        copyMessage.classList.remove("fade-out");
+      }, 1000);
+    }
+  </script>
 
 </body>
 

@@ -373,3 +373,11 @@ footer button.show{
     left:38rem;
     bottom: 0.7rem;
 }
+
+.navbar-logo img {
+    width: 60px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

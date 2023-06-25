@@ -12,10 +12,10 @@
   <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="../commonStyles.css" type="text/css">
-  <link href="./Blog.css" rel="stylesheet" type="text/css" />
+  <link href="newBlogStyle.css" rel="stylesheet" type="text/css" />
   <style>
-    h1 {
-      
+    .blogPageThumbnail {
+      text-align: center;
     }
   </style>
 
@@ -31,7 +31,7 @@
       <div class="container-fluid py-3 px-4 mh-auto rounded-4">
 
         <a href="./Blog.html" class="blogPageArrow fs-3 text-decoration-none">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 25" fill="currentColor">
             <path fill-rule="evenodd"
                   d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
                   clip-rule="evenodd" />
@@ -42,7 +42,8 @@
 
           <div class="blogContentDetails">
             <div class="blogPageThumbnail">
-              <img src="../Images/blogImage2.webp" alt="">
+              <img src="../Images/blogImage2.webp" height="500px" alt="" >
+              <div id="google_translate_element"></div>
             </div>
 
             <div>
@@ -174,6 +175,25 @@
     <footer class="customFooter container-fluid py-3 py-sm-5 h-25 d-flex px-3 flex-column justify-content-between"
             style="background-color: #2980b9;"></footer>
   </div>
+  
+  <script type="text/javascript"
+          src=
+  "https://translate.google.com/translate_a/element.js?
+  cb=googleTranslateElementInit">
+  </script>
+  
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {
+              pageLanguage: 'en',
+              includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            },
+            'google_translate_element'
+        );
+    }
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

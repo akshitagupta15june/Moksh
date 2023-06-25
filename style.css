@@ -86,7 +86,6 @@ body {
   transition: 0.3s;
   letter-spacing: 1px;
   margin: 0;
-  /* margin: 0 20px; */
 }
 
 .nav ul li a.active:hover {
@@ -418,7 +417,7 @@ a.dropdown-item{
 }
 
 footer .logo {
-  background-color: #000000;
+  /* background-color: #000000; */
   border-radius: 50%;
 }
 
