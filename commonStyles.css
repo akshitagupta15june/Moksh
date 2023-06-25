@@ -59,6 +59,7 @@
 
 .footer-divide {
   display: flex;
+  flex-direction: column;
   justify-self: center;
   text-align: center;
   gap: 4rem;
