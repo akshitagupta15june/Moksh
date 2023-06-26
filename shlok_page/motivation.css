@@ -258,6 +258,7 @@ p:hover {
   object-fit: cover;
 }
 
+
 .nav {
   height: 70px;
   background-color: #2980b9 !important;
@@ -590,3 +591,14 @@ footer .quick-links ul li a:hover {
   position: relative;
   top:8rem;
 }
+
+.footer-logo{
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-divide{
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
