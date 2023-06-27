@@ -125,3 +125,9 @@ button:active {
   object-fit: cover;
 }
 
+
+
+footer img {
+  width: 128px;
+  border-radius: 50%;
+}
