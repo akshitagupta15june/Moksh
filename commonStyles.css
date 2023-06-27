@@ -90,9 +90,9 @@
 .OmSymbol{
   position: relative;
   height: 18vh;
-  width: 13vw;
+  width: 11vw;
   left: 40vw;
-  bottom: 7vh;
+  bottom: 5vh;
 }
 
 @media screen and (min-width: 280px) and (max-width: 912px) {
