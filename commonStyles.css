@@ -88,10 +88,10 @@
 }
 .OmSymbol{
   position: relative;
-  height: 20vh;
-  width: 15vw;
+  height: 18vh;
+  width: 13vw;
   left: 40vw;
-  bottom: 14vh;
+  bottom: 7vh;
 }
 
 @media screen and (min-width: 280px) and (max-width: 912px) {
