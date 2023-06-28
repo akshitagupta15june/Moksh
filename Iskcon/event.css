@@ -387,6 +387,12 @@ footer {
   border-radius: 50%;
 }
 
+.footer-divide-text {
+  text-align: center;
+  padding: 15px 0 30px;
+
+}
+
 .footer-divide {
   gap: 0;
 
