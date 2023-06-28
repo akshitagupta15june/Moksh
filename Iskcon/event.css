@@ -3,11 +3,13 @@
   padding: 0;
   text-decoration: none;
 }
+
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 .bubble {
   position: absolute;
   top: 100vh;
@@ -18,29 +20,34 @@ body {
   background-repeat: no-repeat;
   border-radius: 50%;
   box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #020131,
-    inset 5px 5px 10px #960101, inset -5px 5px 20px #fff, 
+    inset 5px 5px 10px #960101, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #9224ed;
 }
+
 .bubble-two {
   box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #06f3df,
     inset 5px 5px 10px #f8e63e, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #ed24aa;
 }
+
 .bubble-three {
   box-shadow: inset 0 0 10px #010631, inset -10px 10px 15px #1512f3,
     inset 5px 5px 10px #80036b, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #33114e;
 }
+
 .bubble-four {
   box-shadow: inset 0 0 10px #8b0101, inset -10px 10px 15px #f6f6fc,
     inset 5px 5px 10px #81f733, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #0b0822;
 }
+
 .bubble-five {
   box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #100dee,
     inset 5px 5px 10px #f7a120, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #ed24c1;
 }
+
 .score-board {
   background: #fff;
   width: 300px;
@@ -53,12 +60,15 @@ body {
   bottom: 0;
   left: calc(50% - 150px);
 }
+
 .loser {
   display: none;
 }
+
 .winner {
   display: none;
 }
+
 .main-game {
   width: 100vw;
   height: 100vh;
@@ -67,16 +77,18 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 button.start-btn {
   font-size: 20px;
   border: none;
   margin-top: 8px;
   border-radius: 30px;
   font-weight: bold;
-  height: 30px; 
+  height: 30px;
   width: 5%;
   margin: 8px auto;
 }
+
 .shadow {
   width: 100vw;
   height: 100vh;
@@ -87,6 +99,7 @@ button.start-btn {
   z-index: 1000;
   position: relative;
 }
+
 .total-score {
   background: #fff;
   padding: 10px 100px 40px;
@@ -94,7 +107,8 @@ button.start-btn {
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
-.cards{
+
+.cards {
   display: flex;
 }
 
@@ -134,13 +148,16 @@ button.start-btn {
   color: white;
   margin-left: 10px;
 }
+
 .navbar-logo a:hover {
   text-decoration: none;
 }
+
 .nav ul li {
   display: inline-block;
   padding: auto 20px;
 }
+
 .nav-menu {
   margin-bottom: 0;
   padding-left: 0;
@@ -165,12 +182,12 @@ button.start-btn {
 }
 
 .nav ul li a.active:hover {
-  color: black ;
+  color: black;
   text-decoration: underline;
   text-decoration-color: black;
 }
 
-.dropdown:hover > a {
+.dropdown:hover>a {
   color: black;
   text-decoration: underline;
   text-decoration-color: black;
@@ -186,7 +203,7 @@ button.start-btn {
   padding-left: 0;
 }
 
-.nav ul li:hover > ul {
+.nav ul li:hover>ul {
   top: 70px;
   opacity: 1;
   visibility: visible;
@@ -196,15 +213,16 @@ button.start-btn {
 
 .nav ul ul li {
   width: 310px;
-  display: list-item; 
-   position: relative;
+  display: list-item;
+  position: relative;
   border: 1px solid #8ad0ff;
   border-top: none;
 }
 
-a.dropdown-item{
+a.dropdown-item {
   margin: 0 !important;
 }
+
 /* ul.dropdown-menu.show{
   margin: 0;
   padding: 0;
@@ -227,81 +245,82 @@ a.dropdown-item{
 }
 
 /* Mid-section */
-.firstWord{
+.firstWord {
   font-size: 7rem;
-  color:rgb(11, 6, 16);
+  color: rgb(11, 6, 16);
   font-weight: 300;
 }
 
-.header p{
+.header p {
   font-size: 1.5rem;
-  color:rgb(11, 6, 16);
+  color: rgb(11, 6, 16);
   font-weight: 300;
 }
 
-.text-container{
+.text-container {
   margin: 1.5rem;
   background-color: #fefae0;
   height: 25rem;
-  width:auto;
+  width: auto;
   padding: 1rem;
   border-radius: 5%;
 }
 
-.first_para_word{
+.first_para_word {
   font-size: 1.6rem;
-  color:rgb(11, 6, 16);
+  color: rgb(11, 6, 16);
   font-weight: 300;
 }
 
-.first_para{
+.first_para {
   font-size: 1.3rem;
   margin-left: 1rem;
 }
 
-.priest{
-  height:140px;
-  margin:0.4rem;
+.priest {
+  height: 140px;
+  margin: 0.4rem;
 }
 
-.second_container{
-  position:absolute;
+.second_container {
+  position: absolute;
   top: 28rem;
 }
 
-.second_para_word{
+.second_para_word {
   font-size: 30px;
 }
 
-.achievements>ol>li{
+.achievements>ol>li {
   font-size: 1.5rem;
   margin-left: 2rem;
 }
+
 /* Mid section ends */
 
 /* Upcoming events container*/
-.upcoming_events{
+.upcoming_events {
   margin: 2rem;
   position: relative;
-  left:1.5rem;
+  left: 1.5rem;
 }
 
-.upcoming_events_h1{
+.upcoming_events_h1 {
   font-size: 4rem;
   font-weight: 200;
 }
 
-.card{
+.card {
   margin: 1rem;
   border-radius: 5%;
-  width: 30rem; 
-  height:300px;
+  width: 30rem;
+  height: 300px;
   transition: height 0.3s ease-in-out;
   overflow: hidden;
 }
 
-.card:hover{
-  height:500px;
+.card:hover {
+  height: 500px;
 }
 
 .card .card-overlay {
@@ -343,45 +362,55 @@ a.dropdown-item{
   transform: translateY(0);
 }
 
-.card-details{
+.card-details {
   font-size: 1.5rem;
   font-weight: 200;
 }
 
-.p1{
-  color:white;
+.p1 {
+  color: white;
 }
 
-.card a{
+.card a {
   padding: 1rem;
   width: 14rem;
 }
 
-.logo-container {
-  width: 9rem;
-  height: 9rem;
+footer {
+  margin-top: 20px;
 }
 
-.logo-container img {
-  width: 100%;
-  height: 100%;
+.moksh-logo {
+  margin-top: 20px;
+  width: 9rem;
   object-fit: contain;
   border-radius: 50%;
 }
 
+.footer-divide-text {
+  text-align: center;
+  padding: 15px 0 30px;
+
+}
+
+.footer-divide {
+  gap: 0;
+
+}
+
 .footer-socials a {
   color: #000;
-  text-decoration: none; 
+  text-decoration: none;
   transition: transform 0.3s eas-in-out;
 }
 
-.footer-socials ul:hover{
+.footer-socials ul:hover {
   transform: scale(1.1);
 }
 
-@media (max-width: 767px){
-  .text-container{
-    height:40rem;
+@media (max-width: 767px) {
+  .text-container {
+    height: 40rem;
   }
 
   .cards {
@@ -396,7 +425,7 @@ a.dropdown-item{
 
   .second_container {
     position: relative;
-    top:-3rem;
+    top: -3rem;
   }
 
   .second_para {
