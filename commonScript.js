@@ -17,7 +17,7 @@ let customFooter = document.querySelector( ".customFooter" ),
           <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1>
         </div>
 
-        <img src="../Images/moksh.png" alt="" class="h-36 w-36 mx-auto" />
+        <img src="../Images/New_Logo_2.png" alt="" class="h-36 w-36 mx-auto" />
 
         <!-- Row - 2  -->
         <div class="">
@@ -132,7 +132,7 @@ let customFooter = document.querySelector( ".customFooter" ),
   let navbarContent = `
        <div class="leftSection">
               <a class="flex items-center" href="../index.html">
-                <img src="../Images/moksh.png" alt="Moksh Logo" class="lg:w-14 lg:h-14 w-12 h-12 hover:animate-spin " />
+                <img src="../Images/New_Logo_2.png" alt="Moksh Logo" class="lg:w-14 lg:h-14 w-12 h-12 hover:animate-spin " />
                 <span
                   class="ml-3 text-base lg:text-2xl uppercase font-semibold projectName tracking-widest ease-in-out duration-300 hover:text-indigo-600">Moksh</span>
               </a>
@@ -207,7 +207,7 @@ let customFooter = document.querySelector( ".customFooter" ),
               <!-- Row - 1  -->
               <div class="row-1 flex w-full items-center justify-center sm:justify-between flex-col">
                 <div class="flex flex-col w-full sm:flex-row items-center justify-between">
-                  <img src="../Images/moksh.png" alt="Moksh Logo" class="w-32 h-32 my-2" />
+                  <img src="../Images/New_Logo_2.png" alt="Moksh Logo" class="w-32 h-32 my-2" />
 
                   <div class="flex flex-col px-4 items-center sm:px-0 w-full sm:w-2/3">
                     <span
