@@ -90,6 +90,30 @@ footer{
   align-items: center;
 }
 
+.footer-socials ul a{
+  display:flex;
+  height: 45px;
+  width: 45px;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+.footer-socials ul a svg{
+  display:flex;
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 35px;
+  width: 35px;
+  transition: all 0.5s ease-in-out;
+}
+.footer-socials ul:nth-child(1):hover a{
+  background: #333;
+}
+.footer-socials ul:nth-child(2):hover a{
+    background: #1DA1F2;
+}
+.footer-socials ul:hover a svg{
+  color: #ffffff;
+}
 .made-by{
   text-align: center;
   font-weight: 500;
