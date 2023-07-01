@@ -213,7 +213,7 @@ See the [open issues](https://github.com/akshitagupta15june/Moksh/issues) for a 
 <h1>GSSOC'23 Issue TimeLine</h1>
 	
 	
-- Once an issue is assigned,the assignee is expected to submit a pr for review withing a week of the assignment. 
+- Once an issue is assigned,the assignee is expected to submit a pr for review within a week of the assignment. 
 	
 - If the assignee fails to comply with the deadline, the issue will be assigned to the next person who had who had requested to be assigned.
 	
