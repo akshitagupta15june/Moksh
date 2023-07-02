@@ -10,11 +10,33 @@
   font-family: 'Arizonia', cursive;
 }
 
+.title{
+  font-size: 20px;
+}
+.title:hover{
+  color: #034304;
+}
+
+.nav-link:hover{
+  color: #034304;
+}
+
+.nav-grp-item{
+  color: #056b07;
+}
+
+.nav-grp-item:hover{
+  color: #034304;
+}
+
+.contributors{
+  margin-bottom: 110px;
+}
+
 /* Footer  */
 footer{
   background-color: rgb(243 244 246 / 1);
   color: black;
-
   padding: 0;
 }
 
@@ -32,11 +54,16 @@ footer{
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-top: 40px;
 }
 
 .footer-list ul, .footer-socials ul {
   margin: 0;
   padding: 0;
+}
+
+.footer-socials{
+  margin-bottom: 40px;
 }
 
 .copyright{
