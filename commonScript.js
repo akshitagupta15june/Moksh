@@ -203,19 +203,23 @@ let customFooter = document.querySelector( ".customFooter" ),
   navbar.innerHTML = navbarContent
 
   let footerContent = `
-   <!-- NewsLetter  -->
-          <div class="mt-8 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
+    <!-- NewsLetter  -->
+          <div
+               class="mt-8 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
 
-            <div class="mb-1 text-center lg:text-left">
+            <div class="mb-1 text-center lg:text-left w-1/2">
               <p class="capitalize text-[11px] font-semibold tracking-wider">Sign Up for our newsletter:</p>
               <p>Get weekly updates regarding Moksh.</p>
             </div>
 
-            <div class="newsLetter flex group ease-in-out duration-300">
-              <input type="email" name="email" id="" placeholder="your email"
-                     class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0">
-              <button
-                      class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600">Subscribe</button>
+            <div class="newsLetter flex group ease-in-out duration-300 w-full lg:w-1/2">
+              <div class="flex group ease-in-out duration-300 w-full lg:w-2/3">
+                <input type="email" name="email" id="" placeholder="your email"
+                       class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0">
+                <button
+                        class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600">Subscribe</button>
+
+              </div>
             </div>
 
           </div>
@@ -257,62 +261,63 @@ let customFooter = document.querySelector( ".customFooter" ),
 
             </div>
 
-            <div class="site--links capitalize text-xs text-slate-300 grid sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-y-4 lg:w-1/2">
+            <div
+                 class="site--links capitalize text-xs text-slate-300 grid sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-y-4 lg:w-1/2">
 
-              <a href="../index.html"
+              <a href="./index.html"
                  class="w-full text-center lg:text-left">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
               </a>
 
-              <a href="../Blogs/Blog.html"
+              <a href="./Blogs/Blog.html"
                  class="w-full text-center lg:text-right">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Power
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Power
                   of Knowledge blogs</span>
               </a>
 
-              <a href=" ../AR_Meditate/meditation.html"
+              <a href=" ./AR_Meditate/meditation.html"
                  class="w-full text-center lg:text-left">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Augmented
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Augmented
                   Reality
                   Meditation</span>
               </a>
 
-              <a href=" ../Iskcon/event.html"
+              <a href=" ./Iskcon/event.html"
                  class="w-full text-center lg:text-right">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Iskon
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Iskon
                   Events</span>
               </a>
 
-              <a href=" ../Divine_page/story.html"
+              <a href=" ./Divine_page/story.html"
                  class="w-full text-center lg:text-left">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Divine
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Divine
                   Activities for all
                   Generation
                 </span>
               </a>
 
-              <a href=" ../Pomodro_page/reward.html"
+              <a href=" ./Pomodro_page/reward.html"
                  class="w-full text-center lg:text-right">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
                   Spiritual
                   Break</span>
               </a>
 
-              <a href=" ../shlok_page/motivation.html"
+              <a href=" ./shlok_page/motivation.html"
                  class="w-full text-center lg:text-left">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Read
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Read
                   a Shlok</span> </a>
 
-              <a href=" ../Rejuvenate_page/rejuvenate.html"
+              <a href=" ./Rejuvenate_page/rejuvenate.html"
                  class="w-full text-center lg:text-right"><span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate</span></a>
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate</span></a>
 
             </div>
 
@@ -325,7 +330,6 @@ let customFooter = document.querySelector( ".customFooter" ),
               &copy; 2023 Moksh. All rights reserved.
             </p>
           </div>
-
   `
   customFooter.innerHTML = footerContent
 
