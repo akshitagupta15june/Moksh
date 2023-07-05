@@ -416,8 +416,7 @@ a.dropdown-item{
   }
 }
 
-footer .logo {
-  /* background-color: #000000; */
+/* footer .logo {
   border-radius: 50%;
 }
 
@@ -453,7 +452,7 @@ footer .quick-links ul li a:hover {
   padding: 5px;
   background-color: #b1bce0;
   color: #666;
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .circle {
