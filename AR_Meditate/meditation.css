@@ -89,8 +89,7 @@ iframe {
 .navbar-logo img {
   width: 60px;
   background-color: antiquewhite;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 10%;
 }
 
 .navbar-logo span {
@@ -125,19 +124,24 @@ iframe {
   transition: 0.3s;
   letter-spacing: 1px;
   margin: 0;
-  /* margin: 0 20px; */
 }
 
 .nav ul li a.active:hover {
   color: black ;
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+.nav ul li:hover > a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 255, 255);
 }
 
 .dropdown:hover > a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: rgb(255, 255, 255);
 }
 
 .nav ul ul {
@@ -156,6 +160,9 @@ iframe {
   visibility: visible;
   transition: 0.3s linear;
   list-style: none;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  text-decoration-color: #2980b9;
 }
 
 .nav ul ul li {
@@ -178,6 +185,11 @@ a.dropdown-item{
   padding: 10px 15px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
 }
+.about {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 
 /* Google Translate */
 #google_translate_element select {
@@ -190,4 +202,6 @@ a.dropdown-item{
   padding: 6px 8px;
   cursor: pointer;
 }
+
+
 /* Navbar Ends */
