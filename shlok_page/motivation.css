@@ -263,3 +263,9 @@ p:hover {
   border-radius: 50%;
   object-fit: cover;
 }
+footer p{
+  color: white;
+  opacity: 0.75;
+  font-size: 14px;
+  text-align: left;
+}
