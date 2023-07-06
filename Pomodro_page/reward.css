@@ -171,6 +171,7 @@ a.dropdown-item{
 .inline-text {
   margin-top: 2rem;
   margin-left: 2rem;
+  font-size: 2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -180,18 +181,27 @@ a.dropdown-item{
 }
 
 .pomodoro-text {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 2rem;
+}
+
+.pomodoro-text h4{
+  font-size: 1.5rem!important;
+}
+
+.pomodoro-text ol{
+  font-size: 1.3rem;
+}
+
+.pomodoro-text h2{
+  font-size: 1.5rem!important;
 }
 
 button {
   font-size: 16px;
-  font-weight: bold;
-  color: white;
   background-color: #023e8a;
   border: none;
   border-radius: 5px;
-  padding: 10px 30px;
   margin: 5px;
   margin-right: 10px;
   cursor: pointer;
@@ -202,6 +212,10 @@ button {
 .start,.reset{
   border-radius: 0.2cm;
   font-size: 1.4rem;
+  background-color: #023e8a;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
 }
 
 .start::after,
@@ -263,12 +277,13 @@ button:hover {
   object-fit: cover;
 }
 
-footer img {
+/* footer img {
   width: 128px;
   border-radius: 50%;
-}
+} */
 .pomodoro{
   font-family: cursive;
+  font-size: 2rem;
 }
 .pomodoro_container{
   margin: 2rem;
@@ -318,7 +333,7 @@ footer img {
   margin-right: 20px;
 }
 
-footer .logo {
+/* footer .logo {
   border-radius: 50%;
 }
 
@@ -328,5 +343,5 @@ footer img{
   height:7rem;
   width: 7rem;
 }
-
+ */
 

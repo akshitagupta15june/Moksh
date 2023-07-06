@@ -416,45 +416,6 @@ a.dropdown-item{
   }
 }
 
-footer .logo {
-  /* background-color: #000000; */
-  border-radius: 50%;
-}
-
-footer {
-  background-color: #2980b9;
-  color: #fff;
-  padding: 20px 0;
-  font-size: 14px;
-}
-
-footer .logo-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .quick-links ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 18px;
-  margin-top: 15px;
-}
-footer ul li {
-  margin-top: 5px;
-}
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-footer .quick-links ul li a:hover {
-  text-decoration: none;
-  padding: 5px;
-  background-color: #b1bce0;
-  color: #666;
-}
-
 @media only screen and (max-width: 768px) {
   .circle {
     width: 80px;
