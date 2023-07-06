@@ -42,48 +42,6 @@ body::-webkit-scrollbar {
   position: absolute;
 }
 
-footer {
-  background-color: #2980b9;
-  color: #fff;
-  font-size: 14px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-footer .logo-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .quick-links ul {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  margin-top: 15px;
-}
-
-/* 
-footer ul li {
-  margin-top: 5px;
-}  */
-
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer .quick-links ul li a:hover {
-  text-decoration: none;
-  padding: 5px;
-  background-color: #b1bce0;
-  color: #666;
-}
-
 #line {
   width: 100%;
   border-bottom: solid rgb(0, 0, 0);
@@ -304,14 +262,4 @@ p:hover {
   background-color: antiquewhite;
   border-radius: 50%;
   object-fit: cover;
-}
-
-.footer-logo{
-  max-width: 100%;
-  height: auto;
-}
-
-.footer-divide{
-  margin-left: 10rem;
-  margin-right: 10rem;
 }
