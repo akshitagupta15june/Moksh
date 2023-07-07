@@ -209,6 +209,11 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+.bottom-header{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ 
 
 /* Footer Section */
 
