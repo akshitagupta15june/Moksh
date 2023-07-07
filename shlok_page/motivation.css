@@ -263,9 +263,18 @@ p:hover {
   border-radius: 50%;
   object-fit: cover;
 }
+footer{
+  position: fixed;
+  bottom: 0;
+}
 footer p{
   color: white;
   opacity: 0.75;
   font-size: 14px;
   text-align: left;
+}
+@media (max-width:1023px){
+ footer p{
+text-align: center;
+ } 
 }
