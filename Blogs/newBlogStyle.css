@@ -9,6 +9,29 @@
 .projectName {
   font-family: 'Arizonia', cursive;
 }
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.image1{
+  margin-left: 70px;
+  /* margin-right: 100px; */
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
 
 
 .blogContentDetails {
