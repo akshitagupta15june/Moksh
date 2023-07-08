@@ -63,7 +63,7 @@ span {
   filter: alpha(opacity=75);
 }
 #content {
-  margin-top: 320px;
+  margin-top: 340px;
 }
 #content p {
   margin-bottom: 2em;
@@ -90,6 +90,11 @@ p:hover {
   text-decoration: none;
 }
 
+.card-container
+
+{
+  margin-top:130px;
+}
 .container {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -263,18 +268,4 @@ p:hover {
   border-radius: 50%;
   object-fit: cover;
 }
-footer{
-  position: fixed;
-  bottom: 0;
-}
-footer p{
-  color: white;
-  opacity: 0.75;
-  font-size: 14px;
-  text-align: left;
-}
-@media (max-width:1023px){
- footer p{
-text-align: center;
- } 
-}
+
