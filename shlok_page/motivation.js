@@ -1,31 +1,13 @@
 function startTime() {
   var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  var ampm = '';
-  m = checkTime(m);
-
-  if (h > 12) {
-    h = h - 12;
-    ampm = ' PM';
-  } else if (h == 12) {
-    ampm = ' PM';
-  } else if (h < 12) {
-    ampm = ' AM';
-  } else {
-    ampm = ' PM';
-  }
-
-  if (h == 0) {
-    h = 12;
-  }
-
-  document.getElementById('display').innerHTML = h + ':' + m + ampm;
-  var t = setTimeout(function () {
-    startTime();
-  }, 500);
+  var time = today.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true });
+  
+  document.getElementById('display').innerHTML = time;
+  
+  requestAnimationFrame(startTime);
 }
+
+startTime();
 
 var quotes = [
   {
