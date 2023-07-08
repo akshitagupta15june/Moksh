@@ -298,3 +298,20 @@ width:90px;
 /* margin-top:20px; */
 
 }
+footer{
+  position: absolute;
+  top: 100vh;
+}
+
+footer p{
+  color: white;
+  opacity: 0.75;
+  font-size: 14px;
+  text-align: left;
+}
+@media (max-width:1023px){
+  footer p{
+ text-align: center;
+  } 
+
+}
