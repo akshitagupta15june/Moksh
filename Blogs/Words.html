@@ -164,18 +164,17 @@
               Published on: 26-05-2023
             </p>
           </div>
-
           <div class="blogImage my-3 center">
             <img src="../Images/blogImage1.webp" alt="blogImage" />
           </div>
           <div
-            id="google_element"
-            class="translation-container"
-            style="display: flex; justify-content: center"
-          ></div>
-          <div
             class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium"
           >
+            <div
+              id="google_element"
+              class="translation-container"
+              style="display: flex; justify-content: center"
+            ></div>
             <p class="mb-4">
               <span class="firstWord font-bold text-3xl text-indigo-800"
                 >W</span
@@ -479,9 +478,8 @@
         ></footer>
       </div>
     </div>
-
+  
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-
     <script>
       function loadGoogleTranslate() {
         new google.translate.TranslateElement(
@@ -507,8 +505,9 @@
         html2pdf().set(options).from(element).save();
       }
 
-      function initiatePrint() {
-        window.print();
+      function initiatePrint ()
+      {
+        window.print()
       }
       function copyLink() {
         var dummy = document.createElement("textarea");
