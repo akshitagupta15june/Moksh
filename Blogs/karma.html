@@ -103,16 +103,17 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/EndlessKnot03d.png" width="400" alt="blogImage" class="rounded-md">
           </div>
           <!-- <div> -->
-          <div id="google_translate_element"></div>
-
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi,fr,en'}, 'google_translate_element');
-            }
+            <div id="google_element" class="translation-container"></div>
+            <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+            <script>
+              function loadGoogleTranslate() {
+                new google.translate.TranslateElement({
+                  pageLanguage: 'en',
+                  includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur,zh-CN,fr,ja,ko,ar',
+                }, 'google_element');
+              }
             </script>
-
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    
           <!-- </div> -->
           <!-- Add the script for initializing the translation widget -->
           <script type="text/javascript">
