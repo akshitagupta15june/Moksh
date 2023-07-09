@@ -112,7 +112,11 @@
           <div class="blogImage my-3 center">
             <img src="../Images/blogImage1.webp" alt="blogImage" />
           </div>
-          <div id="google_translate_element"></div>
+
+        </div>
+        
+        <div id ="google_element" class="translation-container" style="display: flex; justify-content: center; align-items: center; height: 100vh;"></div>
+
           <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
             <p class="mb-4">
               <span class="firstWord font-bold text-3xl text-indigo-800">W</span>
@@ -359,8 +363,8 @@
       </div>
     </div>
 
-    <script type="text/javascript"
-            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
 
     <script>
       function convertToPDF ()
@@ -378,13 +382,15 @@
           .from( element )
           .save();
       }
-      function googleTranslateElementInit ()
-      {
-        new google.translate.TranslateElement(
-          { pageLanguage: "en" },
-          "google_translate_element"
-        );
+
+        function loadGoogleTranslate() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+                includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
+        }, 'google_element');
+        
       }
+
       function initiatePrint ()
       {
         window.print()
