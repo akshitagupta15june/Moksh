@@ -9,8 +9,7 @@
         <title>Blog- Depression & Suicide</title>
         <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.avif" href="../index.html" />
         <link rel="stylesheet" href="newBlogStyle.css">
-        <script type="text/javascript"
-                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     </head>
 
     <body>
@@ -103,23 +102,7 @@
                         <img src="../Images/depression2.webp" alt="blogImage">
                     </div>
 
-
-                    <div id="google_translate_element"></div>
-
-
-
-                    <!-- Add the script for initializing the translation widget -->
-                    <script type="text/javascript">
-                        function googleTranslateElementInit ()
-                        {
-                            new google.translate.TranslateElement( {
-                                pageLanguage: 'en',  // Set the default language of your website
-                                includedLanguages: 'es,fr,hi',  // Set the languages you want to include
-                                layout: google.translate.TranslateElement.InlineLayout.SIMPLE  // Choose the display layout
-                            }, 'google_translate_element' );
-                        }
-                    </script>
-
+                    <div id="google_element"></div>
 
                     <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
                         <p class="mb-4">
@@ -457,19 +440,16 @@
             </div>
 
         </div>
-        <script
-                type="text/javascript"
-                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         <script>
-            function googleTranslateElementInit ()
-            {
-                new google.translate.TranslateElement(
-                    { pageLanguage: "en" },
-                    "google_translate_element"
-                );
+            function loadGoogleTranslate() {
+              new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,fr,ja,ko,ar,id,it,de',
+              }, 'google_element');
             }
-        </script>
+          </script>
+
         <script src="./blogs.js"></script>
         <script src="../commonScript.js"></script>
 
