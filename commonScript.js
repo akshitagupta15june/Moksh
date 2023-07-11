@@ -17,7 +17,7 @@ let customFooter = document.querySelector( ".customFooter" ),
           <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1>
         </div>
 
-        <img src="../Images/New_Logo_2.webp" alt="" class="h-36 w-36 mx-auto" />
+        <img src="../Images/logoBgRemoved.avif" alt="" class="h-36 w-36 mx-auto" />
 
         <!-- Row - 2  -->
         <div class="">
@@ -337,7 +337,7 @@ let customFooter = document.querySelector( ".customFooter" ),
 
 contentWrapper.onscroll = () =>
 {
-  contentWrapper.scrollTop > 5 ? navbar.classList.add( 'bg-slate-900', 'shadow-2xl' ) : navbar.classList.remove( 'bg-slate-900', 'shadow-2xl' )
+  contentWrapper.scrollTop > 5 ? navbar.classList.add( 'bg-slate-100', 'shadow-2xl' ) : navbar.classList.remove( 'bg-slate-100', 'shadow-2xl' )
 }
 
 let subscribeBtn = document.querySelector( '.subscribeBtn' )
