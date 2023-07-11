@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <title>Blog</title>
-  <link rel="icon" type="image/x-icon" href="Images/New_Logo.svg" />
+  <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
+  <link rel="stylesheet" href="../commonStyles.css">
   <link rel="stylesheet" href="newBlogStyle.css">
 </head>
 
@@ -26,14 +28,14 @@
 
         <!-- Navbar   -->
         <div
-             class="navbar fixed top-0 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-30 items-center justify-between w-full left-0 ">
+             class="navbar fixed top-0 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-50 items-center justify-between w-full left-0 ">
         </div>
 
         <!-- Featured Blog  -->
         <div
-             class="featuredBlog grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-0 mt-24 h-auto md:h-[calc(100vh-70px)] w-full text-slate-900">
+             class="featuredBlog grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-0 mt-24 h-auto md:h-[calc(100vh-70px)] w-full text-slate-900 ">
 
-          <div class="featuredBlogWrapper order-2 md:order-1 px-4  flex flex-col justify-center">
+          <div class="featuredBlogWrapper order-2 md:order-1 px-4 flex flex-col justify-center">
             <div class="uppercase text-xs font-semibold flex items-center">
               <span class="tracking-widest">Featured</span>
               <div class="stars flex items-center ml-1">
@@ -62,21 +64,23 @@
             </div>
 
             <div class="title w-full mb-3">
-              <p class="sm:text-3xl text-2xl uppercase mt-3">Depression & Suicide</p>
-              <span class="sm:text-xs text-sm text-justify font-semibold">
-                Friends, before I begin, let me confess that whatever is going to be presented, nothing is mine. I am not that learned, I am not a professional
-                in this subject...
+              <p class="sm:text-3xl text-2xl uppercase my-3">Karma</p>
+              <span class="sm:text-xs text-sm text-justify font-semibold block w-2/3">
+                Today, we are addressing one of the most confusing topics: karma. Many people are confused about its
+                very
+                basic
+                definition or foundation...
               </span>
 
             </div>
 
-            <a href="./depression.html"
+            <a href="./karma.html"
                class="w-fit text-xs py-3 px-4 sm:py-2 sm:px-3 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest ease-in-out duration-300 sm:hover:bg-gray-900">Read
               more</a>
 
             <!-- Social Share links  -->
             <div class="social-share my-4 flex items-center justify-between w-2/3 md:w-1/3">
-              <a href="#" title="Share">
+              <a href="#" title="Share" onclick="copyLink()">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                      class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
                   <path fill-rule="evenodd"
@@ -94,7 +98,7 @@
                 </svg>
               </a>
 
-              <a href="#" title="Download">
+              <a href="./depression.html" download title="Download">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor"
                      class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
@@ -103,7 +107,7 @@
                 </svg>
               </a>
 
-              <a href="#" title="Print">
+              <a href="#" title="Print" onclick="initiatePrint()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor"
                      class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
@@ -113,140 +117,130 @@
               </a>
 
             </div>
+            <p id="copyMessage" class="text-xs text-green-500"></p>
+
 
           </div>
-          <img src="../Images/depression2.webp" alt="" class="md:h-[calc(100vh-100px)] w-full order-1 md:order-2">
+          <img src="../Images/Karma.png" alt="background-image"
+               class="md:h-[calc(100vh-200px)] my-auto md:rounded-md w-full order-1 md:order-2">
 
         </div>
 
       </div>
 
       <!-- Blog Cards  -->
-      <div class="blogCards h-fit flex items-center sm:justify-center flex-col py-16 bg-slate-100">
+      <div class="blogCards h-fit flex items-center sm:justify-center flex-col py-16 bg-slate-50">
 
         <h1
             class="font-semibold text-indigo-600 text-2xl uppercase tracking-widest border-double border-b-4 border-indigo-600 pb-2">
           Articles</h1>
 
         <div
-             class="cards p-10 gap-10 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 justify-items-center sm:justify-items-start ">
+             class="cards p-10 gap-10 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 justify-items-center ">
 
-
-          <!-- Card - 1  -->
+          <!-- Card  -->
           <div
-               class="card-2 h-[450px] w-[350px] relative bg-white rounded-[30px] group shadow-2xl ease-in-out duration-500 rounded-[30px] flex flex-col justify-between">
-
-            <!-- Card Image  -->
-            <div
-                 class="imageWrapper rounded-tr-[30px] rounded-tl-[30px] h-full w-full flex items-center justify-center bg-indigo-600 rounded-bl-[30px] relative before:content-[''] after:content-[''] after:absolute before:absolute before:h-12 before:w-12 after:h-12 after:w-12 after:right-0 after:-bottom-12 before:right-0 before:-bottom-12 after:bg-white before:bg-indigo-600 after:rounded-tr-[30px]">
-              <img src="../Images/blog-vices.webp" alt=""
-                   class="h-44 w-44 md:h-52 md:w-52 group-hover:h-44 group-hover:w-44 rounded-full border-4 border-white p-1">
-            </div>
+               class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/lifeBlog.jpg')] bg-center bg-bottom">
 
             <!-- Card Content  -->
             <div
-                 class="bg-white w-full h-36 hover:h-auto flex justify-center flex-col text-justify rounded-b-[30px] px-4 py-4 text-sm font-semibold">
+                 class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
 
               <!-- Heading  -->
-              <div class="heading">
-                <p class="text-rose-600 z-10 font-semibold uppercase text-left text-[12px]">
+              <div class="heading text-white">
+                <p class="uppercase text-sm">
+                  Life
+                </p>
+                <p class="uppercase">26-06-2023</p>
+              </div>
+              <a href="./life.html"
+                 class="uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
+            </div>
+
+          </div>
+
+          <!-- Card  -->
+          <div
+               class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/depression2.webp')] bg-center bg-bottom">
+
+            <!-- Card Content  -->
+            <div
+                 class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
+
+              <!-- Heading  -->
+              <div class="heading text-white">
+                <p class="uppercase text-sm">
+                  DEPRESSION & SUICIDE
+                </p>
+                <p class="uppercase text-xs">20-06-2023</p>
+              </div>
+              <a href="./depression.html"
+                 class="uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
+            </div>
+
+          </div>
+
+          <!-- Card  -->
+          <div
+               class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blog-vices.webp')] bg-center bg-bottom">
+
+            <!-- Card Content  -->
+            <div
+                 class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
+
+              <!-- Heading  -->
+              <div class="heading text-white">
+                <p class="uppercase text-left">
                   5 cardinal vices
                 </p>
-                <p class="text-gray-400 text-[10px] font-semibold uppercase">02-06-2023</p>
+                <p class="uppercase text-xs">20-06-2023</p>
               </div>
-
-              <!-- Show More  -->
-              <div class="grid md:grid-rows-[0fr] md:group-hover:grid-rows-1 px-2 ease-in-out duration-500">
-                <div class="overflow-hidden px-0 py-3 ">
-                  <span class="text-justify text-sm block">
-
-                  </span>
-                  <a href="./cardinalVices.html"
-                     class=" block uppercase py-3 mt-3 bg-indigo-600 text-white font-semibold text-center rounded-md">Read</a>
-
-                </div>
-
-              </div>
-
+              <a href="./cardinalVices.html"
+                 class="uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
             </div>
+
           </div>
 
-          <!-- Card - 2  -->
+          <!-- Card  -->
           <div
-               class="card-2 h-[450px] w-[350px] relative bg-white rounded-[30px] group shadow-2xl ease-in-out duration-500 rounded-[30px] flex flex-col justify-between">
-
-            <!-- Card Image  -->
-            <div
-                 class="imageWrapper rounded-tr-[30px] rounded-tl-[30px] h-full w-full flex items-center justify-center bg-indigo-600 rounded-bl-[30px] relative before:content-[''] after:content-[''] after:absolute before:absolute before:h-12 before:w-12 after:h-12 after:w-12 after:right-0 after:-bottom-12 before:right-0 before:-bottom-12 after:bg-white before:bg-indigo-600 after:rounded-tr-[30px]">
-              <img src="../Images/blogImage2.webp" alt=""
-                   class="h-44 w-44 md:h-52 md:w-52 group-hover:h-44 group-hover:w-44 rounded-full border-4 border-white p-1">
-            </div>
+               class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blogImage2.webp')] bg-center bg-bottom">
 
             <!-- Card Content  -->
             <div
-                 class="bg-white w-full h-36 hover:h-auto flex justify-center flex-col text-justify rounded-b-[30px] px-4 py-4 text-sm font-semibold">
+                 class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
 
               <!-- Heading  -->
-              <div class="heading">
-                <p class="text-rose-600 z-10 font-semibold uppercase text-left text-[12px]">
-                  Weakness is death, Strength is life.
+              <div class="heading text-white">
+                <p class="uppercase text-left text-xs">
+                  WEAKNESS IS DEATH, STRENGTH IS LIFE.
                 </p>
-                <p class="text-gray-400 text-[10px] font-semibold uppercase">31-05-2023</p>
+                <p class="uppercase text-xs">31-05-2023</p>
               </div>
-
-              <!-- Show More  -->
-              <div class="grid md:grid-rows-[0fr] md:group-hover:grid-rows-1 px-2 ease-in-out duration-500">
-                <div class="overflow-hidden px-0 py-3 ">
-                  <span class="text-justify text-sm block">
-
-                  </span>
-                  <a href="./Strength.html"
-                     class=" block uppercase py-3 mt-3 bg-indigo-600 text-white font-semibold text-center rounded-md">Read</a>
-
-                </div>
-
-              </div>
-
+              <a href="./Strength.html"
+                 class="uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
             </div>
+
           </div>
 
-          <!-- Card - 3  -->
+          <!-- Card  -->
           <div
-               class="card-1 h-[450px] w-[350px] relative bg-white rounded-[30px] group shadow-2xl ease-in-out duration-500 rounded-[30px] flex flex-col justify-between">
-
-            <!-- Card Image  -->
-            <div
-                 class="imageWrapper rounded-tr-[30px] rounded-tl-[30px] h-full w-full flex items-center justify-center bg-indigo-600 rounded-bl-[30px] relative before:content-[''] after:content-[''] after:absolute before:absolute before:h-12 before:w-12 after:h-12 after:w-12 after:right-0 after:-bottom-12 before:right-0 before:-bottom-12 after:bg-white before:bg-indigo-600 after:rounded-tr-[30px]">
-              <img src="../Images/blogImage1.webp" alt=""
-                   class="h-44 w-44 md:h-52 md:w-52 group-hover:h-44 group-hover:w-44 rounded-full border-4 border-white p-1">
-            </div>
+               class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blogImage1.webp')] bg-center bg-bottom">
 
             <!-- Card Content  -->
             <div
-                 class="bg-white w-full h-36 hover:h-auto flex justify-center flex-col text-justify rounded-b-[30px] px-4 py-4 text-sm font-semibold">
+                 class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
 
               <!-- Heading  -->
-              <div class="heading text-left">
-                <p class="text-rose-600 z-10 font-semibold uppercase text-[12px] ">
-                  The power of words.
+              <div class="heading text-white">
+                <p class="uppercase text-left">
+                  power of words
                 </p>
-                <p class="text-gray-400 text-[10px] font-semibold uppercase">30-05-2023</p>
+                <p class="uppercase text-xs">30-05-2023</p>
               </div>
-
-              <!-- Show More  -->
-              <div class="grid md:grid-rows-[0fr] md:group-hover:grid-rows-1 px-2 ease-in-out duration-500">
-                <div class="overflow-hidden px-0 py-3 ">
-                  <span class="text-justify text-sm block">
-
-                  </span>
-                  <a href="./Words.html"
-                     class="block uppercase py-3 mt-3 bg-indigo-600 text-white font-semibold text-center rounded-md">Read</a>
-
-                </div>
-
-              </div>
-
+              <a href="./Words.html"
+                 class="uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
             </div>
+
           </div>
 
 
@@ -255,14 +249,40 @@
       </div>
 
       <!-- Footer  -->
-      <footer class="customFooter w-full flex flex-col h-fit items-center justify-center  bg-gray-100"></footer>
+      <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col"></footer>
 
     </div>
   </div>
 
-  <!-- <script src="../script.js"></script> -->
-  <script src="../commonScript.js"></script>
 
+  <script>
+    function initiatePrint ()
+    {
+      window.print()
+    }
+    function copyLink ()
+    {
+      var dummy = document.createElement( "textarea" );
+      document.body.appendChild( dummy );
+      dummy.value = window.location.href;
+      dummy.select();
+      document.execCommand( "copy" );
+      document.body.removeChild( dummy );
+      document.getElementById( "copyMessage" ).textContent = "Link copied!";
+
+
+      var copyMessage = document.getElementById( "copyMessage" );
+      copyMessage.textContent = "Link copied!";
+      copyMessage.classList.add( "fade-out" );
+      setTimeout( function ()
+      {
+        copyMessage.textContent = "";
+        copyMessage.classList.remove( "fade-out" );
+      }, 1000 );
+    }
+
+  </script>
+  <script src="../commonScript.js"></script>
 </body>
 
 </html>
