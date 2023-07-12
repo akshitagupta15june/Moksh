@@ -8,14 +8,14 @@
   <link href="../style.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <link href="./rejuvenate.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Include Bootstrap JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Include Bootstrap JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="/fontawesome.min.css">
@@ -24,12 +24,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
-    <link rel="stylesheet" href="commonStyles.css" />
+  <link rel="stylesheet" href="commonStyles.css" />
 </head>
 
 <body>
 
-  
+
   <script src="script.js"></script>
   <!-- Navbar Start-->
 
@@ -46,8 +46,7 @@
         <a href="../index.html">Home</a>
       </li>
       <li class="dropdown">
-        <a href="#"
-          >Features
+        <a href="#">Features
           <i class="fas fa-caret-down"></i>
         </a>
         <!-- Dropdown -->
@@ -63,18 +62,135 @@
         </ul>
       </li>
     </ul>
-    <div class="menu-button">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="indexOpenDropDown md:hidden h-6 w-6 text-indigo-600 cursor-pointer ease-in-out duration-300 hover:text-indigo-600">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"></path>
+    <!--Side scrool menu start-->
+    <div id="side-scroll"
+      class="side-scroll ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 -right-[2000px] absolute top-0 sm:p-12 p-8 bg-white w-screen">
+      <div class="row-1 flex items-center justify-between text-indigo-600 ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+          class="w-6 h-6 closeDropDown cursor-pointer ease-in-out duration-300 hover:text-indigo-600">
+          <path fill-rule="evenodd"
+            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
+            clip-rule="evenodd"></path>
         </svg>
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"></path>
+        <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1>
+      </div>
+      <img src="../Images/logoBgRemoved.avif" alt="" class="h-36 w-36 mx-auto">
+      <div class="">
+
+        <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+          href="../index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="h-3 w-3 group-hover:text-indigo-600">
+            <path fill-rule="evenodd"
+              d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-md p-3 group-hover:text-indigo-600">Home</span>
+        </a>
+        <div class="features flex flex-col">
+          <a href="#" class="flex items-center font-semibold ease-in-out duration-300 p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
+              <path fill-rule="evenodd"
+                d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-md p-3">Features</span>
+          </a>
+
+          <!-- Nested Links for features  -->
+          <div class="nestedLinks flex flex-col ml-4">
+            <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+              href="../AR_Meditate/meditation.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-indigo-600">
+                <path fill-rule="evenodd"
+                  d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-sm p-3 group-hover:text-indigo-600">Augmented Reality Meditation</span>
+            </a>
+
+            <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+              href="../Iskcon/event.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-indigo-600">
+                <path fill-rule="evenodd"
+                  d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-sm p-3 group-hover:text-indigo-600">Iskon Events</span>
+            </a>
+
+            <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+              href="../Divine_page/story.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-indigo-600">
+                <path fill-rule="evenodd"
+                  d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-sm p-3 group-hover:text-indigo-600">Divine Activities for all Generation
+              </span>
+            </a>
+
+            <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+              href="../Pomodro_page/reward.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-indigo-600">
+                <path fill-rule="evenodd"
+                  d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-sm p-3 group-hover:text-indigo-600">Pomodoro Spiritual Break</span>
+            </a>
+
+            <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+              href="../shlok_page/motivation.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-indigo-600">
+                <path fill-rule="evenodd"
+                  d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-sm p-3 group-hover:text-indigo-600">Read a Shlok</span>
+            </a>
+
+            <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+              href="../Rejuvenate_page/rejuvenate.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-indigo-600">
+                <path fill-rule="evenodd"
+                  d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-sm p-3 group-hover:text-indigo-600">Rejuvenate</span>
+            </a>
+            <div id="google_translate_element" class=""></div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!--Side scroll menu end-->
+    <div class="menu-button">
+      <button id="btn5">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="indexOpenDropDown md:hidden h-6 w-6 text-indigo-600 cursor-pointer ease-in-out duration-300 hover:text-indigo-600">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z">
+          </path>
+        </svg>
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z">
+        </path>
+      </button>
+    </div>
+
+
     <!-- Google Translate -->
     <div id="google_translate_element">
-      <script
-        type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-      ></script>
+      <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
   </div>
   <!-- Navbar Ends -->
@@ -85,46 +201,46 @@
 
 
   <p class="para">
-    <h1 align=center>"Inspirational shorts" to rejuvenate yourself for a productive day</h1>
-    </p>
-    <div align="center" class="media-scroller">
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/XTxbTO_-id4?feature=oembed" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/MYZPSptT98g?feature=oembed" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/93yZx3BVRyY?feature=oembed" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/E6Z6L8yAcrE?feature=oembed" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+  <h1 align=center>"Inspirational shorts" to rejuvenate yourself for a productive day</h1>
+  </p>
+  <div align="center" class="media-scroller">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/XTxbTO_-id4?feature=oembed" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/MYZPSptT98g?feature=oembed" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/93yZx3BVRyY?feature=oembed" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/E6Z6L8yAcrE?feature=oembed" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
-    <p>
-      <h1 align=center>"Inspirational Videos" of Gaur Gopal Das to lead a peaceful life</h1>
-      </p>
-      <div align="center" class="media-scroller">
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/YgeCHZfmx50" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/0eEq3hk4umc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/7VHyvyUeyfE" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/-hFrRLvvDTQ" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/1gSfL6DV-bc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-    
-      </div>
-  
+  <p>
+  <h1 align=center>"Inspirational Videos" of Gaur Gopal Das to lead a peaceful life</h1>
+  </p>
+  <div align="center" class="media-scroller">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/YgeCHZfmx50" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/0eEq3hk4umc" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/7VHyvyUeyfE" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/-hFrRLvvDTQ" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/1gSfL6DV-bc" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+  </div>
+
 
   <p>
   <h1 align=center>Srila Prabhupada Stories</h1>
@@ -153,13 +269,15 @@
               seek Him out. There is a story that illustrates this point. A thief attended a public recitation of the
               Srimad-Bhagavatam and became interested in the description of Krishna, who was said to be adorned with
               valuable jewels while tending the cows in the forest. The thief decided to travel to Vrindavana to rob
-              Krishna of his jewels. However, his real qualification was his intense desire to see Krishna. This eagerness
-              led him to actually see Krishna, who played with him like a child. Through Krishna's association, the thief
+              Krishna of his jewels. However, his real qualification was his intense desire to see Krishna. This
+              eagerness
+              led him to actually see Krishna, who played with him like a child. Through Krishna's association, the
+              thief
               was purified and became a devotee. Therefore, it is essential to somehow come into contact with Krishna,
               which will lead to purification.
             </p>
           </section>
-       </div>
+        </div>
       </div>
 
 
@@ -167,26 +285,29 @@
         <div id="about" class="carousel-content">
           <a class="float-left mr-3">
             <div class="img-section">
-              <img src="../Images/thief.jpg" height="200" class="rounded" >
+              <img src="../Images/thief.jpg" height="200" class="rounded">
             </div>
-            
+
           </a>
           <section>
 
             <span>
               <h2>The Thief and the Householder's Prayers</h2>
             </span>
-            
+
             <!-- <button>Read more</button> -->
             <p>
-              It is a fact that nothing can be achieved without God's sanction. However, it is important to understand the
-              nature of this sanction. God is the creator and everything exists within Him. Therefore, it is necessary for
+              It is a fact that nothing can be achieved without God's sanction. However, it is important to understand
+              the
+              nature of this sanction. God is the creator and everything exists within Him. Therefore, it is necessary
+              for
               Him to give sanction. There is a story that illustrates this point. A thief prays to God to give him the
               opportunity to steal from a particular house, while the homeowner prays for protection. God, being
               intelligent, is able to please both of them. He can give the thief the opportunity to steal while also
               protecting the homeowner's property. This is because both of them are praying and God must deal with their
               petitions. This is the position of God, who is situated in the hearts of all beings. Therefore, it is
-              important to understand that everything happens according to God's will and we should always pray to Him for
+              important to understand that everything happens according to God's will and we should always pray to Him
+              for
               guidance and protection. Hare Krishna.
             </p>
           </section>
@@ -200,7 +321,7 @@
             <div class="img-section">
               <img src="../Images/yogi.webp" height="200" class="rounded">
             </div>
-            
+
           </a>
           <section>
 
@@ -211,9 +332,10 @@
             <p>
               This is not a fictional tale, but a true incident. Once, a man left his village and returned after ten
               years, boasting that he had achieved success in yoga. The villagers were curious and asked him what yoga
-              practice he had learned. He claimed that he could walk on water. This statement attracted a large crowd, as
+              practice he had learned. He claimed that he could walk on water. This statement attracted a large crowd,
+              as
               it would even today if someone made such a claim.
-  
+
               When it was time for him to demonstrate his ability to walk on water, an old man approached him and said,
               "Sir, it's worth only two paisa." The yogi was puzzled and asked why. The old man explained that he could
               simply take a boat across the river for the same price, so there was no real value in walking on water.
@@ -229,7 +351,7 @@
             <div class="img-section">
               <img src="../Images/godar.webp" height="200" class="rounded">
             </div>
-            
+
           </a>
           <section>
 
@@ -239,12 +361,16 @@
             <!-- <button>Read More</button> -->
             <p>
               Fair events also take place in Western countries, some in counties and some in villages. In India, weekly
-              bazaars called hatta are held where salesmen gather with their goods and many buyers assemble, much like in
-              a marketplace. Thousands of people gather in these weekly markets, and one day an old lady from the village
-              began to cry because she was worried about how she would accommodate all these people who needed a place to
+              bazaars called hatta are held where salesmen gather with their goods and many buyers assemble, much like
+              in
+              a marketplace. Thousands of people gather in these weekly markets, and one day an old lady from the
+              village
+              began to cry because she was worried about how she would accommodate all these people who needed a place
+              to
               sleep at night. Her son reassured her that everything would be arranged, but she continued to worry. Later
               that evening, her son showed her that all the people had been accommodated and provided with a place to
-              sleep and eat. Just like this, even though there may be millions of living beings, God has made arrangements
+              sleep and eat. Just like this, even though there may be millions of living beings, God has made
+              arrangements
               for their well-being.
             </p>
           </section>
@@ -264,26 +390,27 @@
 
     <!-- NewsLetter  -->
     <div
-         class="mt-6 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
+      class="mt-6 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
 
-         <div class="mb-1 lg:text-left">
-          <p class="capitalize mb-0 text-[11px] font-semibold tracking-wider text-white">Sign Up for our newsletter:</p>
-          <p class="text-white mb-0 text-[11px]">Get weekly updates regarding Moksh.</p>
-        </div>
-        
+      <div class="mb-1 lg:text-left">
+        <p class="capitalize mb-0 text-[11px] font-semibold tracking-wider text-white">Sign Up for our newsletter:</p>
+        <p class="text-white mb-0 text-[11px]">Get weekly updates regarding Moksh.</p>
+      </div>
+
 
       <div class="newsLetter flex group ease-in-out duration-300 lg:w-1/2">
         <div class="flex group ease-in-out duration-300 w-full lg:w-2/3">
           <input type="email" name="email" id="" placeholder="your email"
-                class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0">
+            class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0">
           <button
-                  class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600">Subscribe</button>
+            class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600">Subscribe</button>
         </div>
       </div>
 
     </div>
 
     <!-- Site Nav  -->
+
     <div class="mt-8 siteNav flex flex-col lg:flex-row ">
 
       <div class="flex flex-col lg:flex-row items-center text-center lg:text-left lg:w-1/2">
@@ -301,18 +428,16 @@
           <div class="social flex justify-center lg:justify-start items-center gap-x-4 mt-4">
             <a href="https://github.com/akshitagupta15june/Moksh">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                   class="bi bi-github text-slate-300 ease-in-out duration-300 hover:text-indigo-600"
-                   viewBox="0 0 16 16">
+                class="bi bi-github text-slate-300 ease-in-out duration-300 hover:text-indigo-600" viewBox="0 0 16 16">
                 <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
               </svg>
             </a>
             <a href="https://twitter.com/ExperienceMoksh">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                   class="bi bi-twitter text-slate-300 ease-in-out duration-300 hover:text-indigo-600"
-                   viewBox="0 0 16 16">
+                class="bi bi-twitter text-slate-300 ease-in-out duration-300 hover:text-indigo-600" viewBox="0 0 16 16">
                 <path
-                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
               </svg>
             </a>
           </div>
@@ -323,62 +448,54 @@
       </div>
 
       <div
-           class="site--links capitalize text-xs text-slate-300 grid sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-y-4 lg:w-1/2">
+        class="site--links capitalize text-xs text-slate-300 grid sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-y-4 lg:w-1/2">
 
-        <a href="./index.html"
-           class="w-full lg:text-left text-center">
+        <a href="./index.html" class="w-full lg:text-left text-center">
           <span
-                class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
+            class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
         </a>
 
-        <a href="./Blogs/Blog.html"
-           class="w-full lg:text-right text-center">
+        <a href="./Blogs/Blog.html" class="w-full lg:text-right text-center">
           <span
-                class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Power
+            class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Power
             of Knowledge blogs</span>
         </a>
 
-        <a href=" ./AR_Meditate/meditation.html"
-           class="w-full lg:text-left text-center">
+        <a href=" ./AR_Meditate/meditation.html" class="w-full lg:text-left text-center">
           <span
-                class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Augmented
+            class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Augmented
             Reality
             Meditation</span>
         </a>
 
-        <a href=" ./Iskcon/event.html"
-           class="w-full lg:text-right text-center">
+        <a href=" ./Iskcon/event.html" class="w-full lg:text-right text-center">
           <span
-                class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Iskon
+            class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Iskon
             Events</span>
         </a>
 
-        <a href=" ./Divine_page/story.html"
-           class="w-full lg:text-left text-center">
+        <a href=" ./Divine_page/story.html" class="w-full lg:text-left text-center">
           <span
-                class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Divine
+            class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Divine
             Activities for all
             Generation
           </span>
         </a>
 
-        <a href=" ./Pomodro_page/reward.html"
-           class="w-full lg:text-right text-center">
+        <a href=" ./Pomodro_page/reward.html" class="w-full lg:text-right text-center">
           <span
-                class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
+            class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
             Spiritual
             Break</span>
         </a>
 
-        <a href=" ./shlok_page/motivation.html"
-           class="w-full lg:text-left text-center">
+        <a href=" ./shlok_page/motivation.html" class="w-full lg:text-left text-center">
           <span
-                class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Read
+            class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Read
             a Shlok</span> </a>
 
-        <a href=" ./Rejuvenate_page/rejuvenate.html"
-           class="w-full lg:text-right text-center"><span
-                class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate</span></a>
+        <a href=" ./Rejuvenate_page/rejuvenate.html" class="w-full lg:text-right text-center"><span
+            class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate</span></a>
 
       </div>
 
@@ -395,27 +512,27 @@
   </footer>
 
   <script src="story.js">
-    var slider=document.getElementById("slider1")
-    var btn1=document.getElementById("btn1")
-    var btn2=document.getElementById("btn1")
-    var btn3=document.getElementById("btn1")
-    var btn4=document.getElementById("btn1")
-    var nav=document.getElementById("nav");
+    var slider = document.getElementById("slider1")
+    var btn1 = document.getElementById("btn1")
+    var btn2 = document.getElementById("btn1")
+    var btn3 = document.getElementById("btn1")
+    var btn4 = document.getElementById("btn1")
+    var nav = document.getElementById("nav");
 
-    btn1.onclick=function(){
-      slide.style.transform="translateX(0px)";
+    btn1.onclick = function () {
+      slide.style.transform = "translateX(0px)";
     }
 
-    btn2.onclick=function(){
-      slide.style.transform="translateX(-100px)";
+    btn2.onclick = function () {
+      slide.style.transform = "translateX(-100px)";
     }
 
-    btn3.onclick=function(){
-      slide.style.transform="translateX(-200px)";
+    btn3.onclick = function () {
+      slide.style.transform = "translateX(-200px)";
     }
 
-    btn4.onclick=function(){
-      slide.style.transform="translateX(-300px)";
+    btn4.onclick = function () {
+      slide.style.transform = "translateX(-300px)";
     }
   </script>
 

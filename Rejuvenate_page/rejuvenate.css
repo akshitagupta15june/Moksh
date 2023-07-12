@@ -67,13 +67,17 @@ body {
     width: 60%;
   }
 }
-@media (max-width: 422px) {
+@media (max-width: 442px) {
   .menu-button {
     display: flex;
     width: 40%;
   }
 }
-  
+@media (max-width: 300px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .dropdown-sub-element {
   position: relative;
