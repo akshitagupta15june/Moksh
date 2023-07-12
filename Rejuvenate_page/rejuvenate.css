@@ -51,7 +51,7 @@ body {
 }
 .menu-button {
   display: none;
-  width: fit-content;
+  width: 30%;
   height: 2rem;
   flex-direction: row;
   justify-content: end;
@@ -64,8 +64,16 @@ body {
   }
   .menu-button {
     display: flex;
+    width: 60%;
   }
 }
+@media (max-width: 422px) {
+  .menu-button {
+    display: flex;
+    width: 40%;
+  }
+}
+  
 
 .dropdown-sub-element {
   position: relative;
