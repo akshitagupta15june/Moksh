@@ -18,7 +18,61 @@ body {
 
   overflow: hidden;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 10px;
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.464) ;
+  box-sizing: border-box;
+  border: 0px solid #e5e7eb;
+  transition-duration: 300ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.para {
+  padding-top: 5rem;
+}
+.nav-menu {
+  display: flex;
+  background-color: transparent !important;
+  justify-content: end;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+}
+.home {
+  background-color: transparent !important;
+}
+.menu-button {
+  display: none;
+  width: fit-content;
+  height: 2rem;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+  }
+}
 
+.dropdown-sub-element {
+  position: relative;
+  display: inline-block;
+  transform: translateX(-70%);
+  
+}
 .media-scroller {
   width: 90%;
   display: grid;

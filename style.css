@@ -8,11 +8,6 @@ html {
   height: 100%;
   width: 100%;
 }
-
-p {
-  color: rgb(33, 33, 33);
-  font-size: 20px;
-}
 body {
   background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
   background-repeat: no-repeat;
