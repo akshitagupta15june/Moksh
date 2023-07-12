@@ -19,6 +19,9 @@
   margin-left: 70px;
   /* margin-right: 100px; */
 }
+
+
+
 .previous {
   background-color: #f1f1f1;
   color: black;
@@ -56,4 +59,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, antiquewhite);
 
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1250px) {
+  .karma_image{
+    object-fit: contain;
+  }
 }
