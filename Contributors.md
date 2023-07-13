@@ -9,4 +9,5 @@
 - [Hritik Singhal](https://github.com/hritik1503)
 - [Akshit Agrawal](https://github.com/justAkshitAgrawal)
 - [Sayantan Choudhury](https://github.com/Sch476)
+- [Avdhesh Varshney](https://github.com/Avdhesh-Varshney)
 

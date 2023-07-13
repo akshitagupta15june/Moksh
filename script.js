@@ -75,3 +75,14 @@ subscribeBtn.onclick = () =>
 {
   alert( 'It will be functional soon!!' )
 }
+
+// Adding functioning of back to top button
+const toTop = document.getElementById('toTop');
+
+toTop.addEventListener('click', ()=> {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+});

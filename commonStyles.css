@@ -121,3 +121,37 @@ footer {
 .md\:hover\:scale-95:hover{
   box-shadow: 5px 4px 20px 0px rgba(0,0,0,0.5);
 }
+
+/* Styling of back to top arrow button */
+#toTop {
+  background-color: white;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #093;
+  text-decoration: none;
+  /* opacity: 0;
+  pointer-events: none; */
+  transition: all 0.4s;
+  box-shadow: 0px 0px 30px 2px white;
+}
+
+#toTop:hover {
+  box-shadow: 0px 0px 60px 30px #093;
+  background-color: #093;
+  color: white;
+}
+
+.active {
+  pointer-events: auto;
+  opacity: 1;
+  bottom: 32px;
+}
