@@ -20,13 +20,13 @@ body::-webkit-scrollbar {
   font-size: 1.5em;
   text-align: end;
   position: relative;
-  top: 100px;
+  top: 80px;
 }
 
 #date {
   width: 250px;
   color: black;
-  top: 100px;
+  top: 90px;
   font-size: 1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
@@ -226,7 +226,7 @@ p:hover {
   opacity: 1;
 }
 .block{
-  height: 90vh;
+  height: 85vh;
   width: 100%;
 }
 
@@ -257,15 +257,6 @@ p:hover {
 .block__back {
   transform: rotateY(180deg);
 }
-
-.rotateF {
-  transform: rotateY(-150deg);
-}
-
-.rotateB {
-  transform: rotateY(0deg);
-}
-
 .learn-more{
   margin-bottom: 25px;
   border-radius: 3px;
