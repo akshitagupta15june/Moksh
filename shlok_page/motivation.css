@@ -8,8 +8,7 @@
 html,
 body {
   overflow: auto;
-  height: 120vh;
-  background-color: #2980b9;
+  /* background-color: #ffe4e6; */
 }
 
 body::-webkit-scrollbar {
@@ -19,13 +18,9 @@ body::-webkit-scrollbar {
 #display {
   color: black;
   font-size: 1.5em;
-  top: 30px;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  text-align: center;
-  width: 100px;
+  text-align: end;
   position: relative;
-  left: 1100px;
+  top: 100px;
 }
 
 #date {
@@ -53,8 +48,6 @@ body::-webkit-scrollbar {
 .navbar {
   position: fixed;
   width: 100%;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
 }
 
 span {
@@ -134,7 +127,7 @@ p:hover {
   /* margin-top: 200px; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -181,13 +174,13 @@ p:hover {
   font-size: 1.5rem;
   border-radius: 5px;
   border: transparent;
-  color: white;
   cursor: pointer;
   padding: 8px 12px;
   margin-top: 5px;
   background-color: #2980b9;
   transition: all 0.2s ease-in-out;
 }
+
 .new-quote:hover {
   transform: scale(1.1);
   border: none;
@@ -199,14 +192,12 @@ p:hover {
 
 .tweet-btn {
   font-size: 1.5rem;
-  color: white;
   letter-spacing: 1px;
   border-radius: 5px;
   border: transparent;
   cursor: pointer;
   padding: 8px 12px;
   margin-top: 5px;
-  background-color: #55acee;
   transition: all 0.2s ease-in-out;
 }
 .tweet-btn:hover {
@@ -224,17 +215,9 @@ p:hover {
   -webkit-background-clip: text;
 }
 
-.block {
-  perspective: 150rem;
-  position: absolute;
-  top: 22%;
-  left: 20%;
-  right: 20%;
-}
-
 .block__main {
-  min-width: 60vw;
-  position: absolute;
+  margin: auto;
+  width: 100%;
   transition: all 0.8s ease;
   backface-visibility: hidden;
   box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.47);
@@ -242,6 +225,31 @@ p:hover {
   background-color: transparent;
   opacity: 1;
 }
+
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+  .block__main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .block{
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+}
+
 
 .block__back {
   transform: rotateY(180deg);
@@ -269,23 +277,16 @@ p:hover {
   object-fit: cover;
 }
 
-#google_translate_element{
-  margin-top:69px;
-  
-
-
-  
-  
+#google_element{
+  margin-top:45px;
 }
-#google_translate_element select{
-background-color:#f6edfd;
-color:#383ffa;
-border: none;
-border-radius:3px;
-border-color: black;
-padding:6px 8px;
-
-
+#google_element select{
+  background-color:#f6edfd;
+  color:#383ffa;
+  border: none;
+  border-radius:3px;
+  border-color: black;
+  padding:6px 8px;
 }
 
 
@@ -314,4 +315,56 @@ footer p{
  text-align: center;
   } 
 
+}
+
+.dropdown-menu {
+  min-width: 12rem;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #4a5568;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #edf2f7;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  z-index: 10;
+  display: none;
+  min-width: 15rem;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+a {
+  cursor: pointer;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

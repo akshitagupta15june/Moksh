@@ -14,10 +14,10 @@ p {
   font-size: 20px;
 }
 body {
-  background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg');
+  /* background-image: url('https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2980b9;
+  /* background-color: #2980b9; */
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
