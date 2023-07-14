@@ -207,9 +207,9 @@ let customFooter = document.querySelector( ".customFooter" ),
           <div
                class="mt-8 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
 
-            <div class="mb-1 text-center lg:text-left w-1/2">
-              <p class="capitalize text-[11px] font-semibold tracking-wider">Sign Up for our newsletter:</p>
-              <p>Get weekly updates regarding Moksh.</p>
+          <div class="mb-1 text-center lg:text-left w-1/2">
+              <p class="capitalize text-[11px] font-semibold tracking-wider" style="color:grey">Sign Up for our newsletter:</p>
+              <p style = "color:white">Get weekly updates regarding Moksh.</p>
             </div>
 
             <div class="newsLetter flex group ease-in-out duration-300 w-full lg:w-1/2">
@@ -325,7 +325,7 @@ let customFooter = document.querySelector( ".customFooter" ),
 
           <!-- Copyright  -->
           <div class="mt-8 copyRight flex items-center justify-center text-xs text-slate-300 flex-col">
-            <p class='text-center'>Made with ❤️ by Akshita during XPRESSION'23</p>
+            <p class='text-center' style = "color:white;" >Made with ❤️ by Akshita during XPRESSION'23</p>
             <p class="text-indigo-900 font-bold">
               &copy; 2023 Moksh. All rights reserved.
             </p>
