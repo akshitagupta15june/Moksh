@@ -99,10 +99,17 @@ If there are any doubts, you can ask here on Discord. <br>Join your Discord serv
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Getting Started 💨
+
+
+## Getting Started 👩‍💻
+
+> ⚠️Prerequisites
+>
+> - Before getting into it, make sure you have live server installed.
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
 
 ### Installation
 
@@ -154,18 +161,18 @@ git status -s
 git add .
 ```
  or
-   * Commit your changes
 ```sh
 git add <file_name1> <file_name2>
 ```
+5. Commit your changes
 ```sh
 git commit -m "<EXPLAIN-YOUR_CHANGES>"
 ```
-5. Push your changes
+6. Push your changes
 ```sh
 git push origin fix-issue-<ISSUE-NUMBER>
 ```
-6. Open a Pull Request 
+7. Open a Pull Request 
 ## 👩‍💻 Project Admin
 
 <table>
