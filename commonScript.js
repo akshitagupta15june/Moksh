@@ -327,11 +327,15 @@ let customFooter = document.querySelector( ".customFooter" ),
           <div class="mt-8 copyRight flex items-center justify-center text-xs text-slate-300 flex-col">
             <p class='text-center'>Made with ❤️ by Akshita during XPRESSION'23</p>
             <p class="text-indigo-900 font-bold">
-              &copy; 2023 Moksh. All rights reserved.
+              &copy; <span id="copyright-year"></span> Moksh. All rights reserved.
             </p>
           </div>
   `
-  customFooter.innerHTML = footerContent
+  customFooter.innerHTML = footerContent;
+  let copyRightYear = document.getElementById("copyright-year");
+  let currentDate = new Date();
+  let currentYear = currentDate.getFullYear();
+  copyRightYear.innerText = currentYear;
 
 } )()
 
