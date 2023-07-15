@@ -120,3 +120,19 @@
     object-fit: cover;
   }
   
+  /* html, body {
+    margin: 0 auto;
+    border: 0;
+    width: 100%;
+} */
+
+  .blogContentDetails{
+    margin: 0 auto;
+    border: 0;
+    width: 100%;
+    padding: 2% ;
+  }
+
+  p{
+    padding: 2%;
+  }
