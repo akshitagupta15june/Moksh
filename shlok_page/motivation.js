@@ -204,7 +204,8 @@ const genQuote = () => {
 
   front = !front;
 };
-genQuote();
+var newQuoteButton = button[0];
+newQuoteButton.addEventListener('click', genQuote);
 function newQuote() {
   // Rotating the Quote Box
   blockBack.classList.toggle('rotateB');
