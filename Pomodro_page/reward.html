@@ -1,124 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-      <title>Pomodoro Break</title>
-      <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
-      <link rel = "stylesheet" href="reward.css">
-      <link rel="stylesheet" href="../commonStyles.css">
-      
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <title>Pomodoro Break</title>
+  <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
+  <link rel="stylesheet" href="reward.css">
+  <link rel="stylesheet" href="../commonStyles.css">
+
 </head>
+
 <body style="background-color: white;">
-      <body>
-            <div class="blogWrapper h-screen overflow-hidden relative">
+
+  <div class="blogWrapper h-screen overflow-hidden relative">
+
+    <!-- Site Menu Links  -->
+    <div
+      class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen ">
+    </div>
+
+    <div class="contentWrapper h-full overflow-y-auto">
+
+      <!-- Hero Section & Navbar  -->
+      <div class="heroSection w-full h-auto lg:h-[80vh] flex px-0 md:px-4 text-2xl sm:text-lg  ">
+
+        <!-- Navbar   -->
+        <div
+          class="navbar fixed top-0 h-20 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-40 items-center justify-between w-full left-0 ">
+        </div>
+
+        <section class="mt-20 py-4 w-full flex  flex-col  ">
+
+          <div class="pomodoro_container">
+            <h1 class="pomodoro">What is Pomodoro?</h1>
+
+            <p style="margin-top: 5px;">
+              The Pomodoro Technique is a time management method.The main idea behind the Pomodoro Technique is to
+              break
+              work into manageable intervals, allowing you to maintain focus and avoid burnout.By using the
+              Pomodoro
+              Technique, you can improve your productivity and manage your time more effectively. The structured
+              intervals help you work with greater concentration while the breaks provide opportunities for rest
+              and
+              rejuvenation.
+            </p>
+          </div>
+
+
+          <div class="pomodoro-timer">
+            <button class="start">Start</button>
+            <div class="timer">
+              <div class="time-left">25:00</div>
+            </div>
+            <button class="reset">Reset</button>
+          </div>
+        </section>
+      </div>
+
+      <section>
+          <div class="inline-text">
+            <h1><b>How to use the Pomodoro Feature</b></h1>
+          </div>
         
-              <!-- Site Menu Links  -->
-              <div
-                   class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen ">
-              </div>
+        <div class="pomodoro-text">
+          <h4>This is an excellent feature that can help users integrate spiritual learning into their daily
+            routine and
+            promote a healthier work-life balance.</h4>
+          <p>
+          <ol type="1">
+            <li>
+              <p class="list-paragraph">1. Set a timer for 25 minutes and work on your task.</p>
+            </li>
+            <li>
+              <p class="list-paragraph">2. After 25 minutes, take a 5-minute break. An alert will be there to
+                read a Bhagavad
+                Gita <a href="../shlok_page/motivation.html">shloka</a> with explanation.</p>
+            </li>
+            <li>
+              <p class="list-paragraph">3. After 4 breaks, take a 30-minute break.</p>
+            </li>
+            <li>
+              <p class="list-paragraph">4. Repeat the process until you complete all the tasks.</p>
+            </li>
+          </ol>
+          </p>
+          <h2>Good Luck!</h2>
+        </div>
+
+
+
+
+        </section>
+
         
-              <body>
-                  <div class="blogWrapper h-screen overflow-hidden relative">
-              
-                    <!-- Site Menu Links  -->
-                    <!-- <div
-                         class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen ">
-                    </div> -->
-              
-                    <div class="contentWrapper h-full overflow-y-auto">
-              
-                      <!-- Hero Section & Navbar  -->
-                      <div
-                           class="heroSection w-full h-auto lg:h-[80vh] flex px-0 md:px-4 text-2xl sm:text-lg  ">
-              
-                        <!-- Navbar   -->
-                        <div
-                             class="navbar fixed top-0 h-20 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-40 items-center justify-between w-full left-0 ">
-                        </div>
-              
-                        <section
-                                 class="mt-20 py-4 w-full flex  flex-col  ">
-              
-                                 <div class="pomodoro_container">
-                                    <h1 class="pomodoro" >What is Pomodoro?</h1>
+      <!-- Footer  -->
 
-                                    <p style="margin-top: 5px;">
-                                      The Pomodoro Technique is a time management method.The main idea behind the Pomodoro Technique is to break
-                                      work into manageable intervals, allowing you to maintain focus and avoid burnout.By using the Pomodoro
-                                      Technique, you can improve your productivity and manage your time more effectively. The structured
-                                      intervals help you work with greater concentration while the breaks provide opportunities for rest and
-                                      rejuvenation.
-                                    </p>
-                                  </div>
+      <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col"></footer>
+    </div>
+  </div>
+  <script src="reward.js"></script>
 
-
-                                  <div class="pomodoro-timer">
-                                    <button class="start">Start</button>
-                                    <div class="timer">
-                                      <div class="time-left">25:00</div>
-                                    </div>
-                                    <button class="reset">Reset</button>
-                                  </div>
-
-                                  <div class="inline-text">
-                                    <h1><b>How to use the Pomodoro Feature</b></h1>
-                                  </div>
-                                
-                                  <script src="reward.js"></script>
-
-                                  <div class="pomodoro-text">
-                                    <h4>This is an excellent feature that can help users integrate spiritual learning into their daily routine and
-                                      promote a healthier work-life balance.</h4>
-                                      <p>
-                                    <ol type="1">
-                                      <li>
-                                       <p class="list-paragraph">1. Set a timer for 25 minutes and work on your task.</p>
-                                      </li>
-                                      <li>
-                                         <p class="list-paragraph">2. After 25 minutes, take a 5-minute break. An alert will be there to read a Bhagavad
-                                          Gita <a href="../shlok_page/motivation.html">shloka</a> with explanation.</p>
-                                        </li>
-                                        <li>
-                                           <p class="list-paragraph">3. After 4 breaks, take a 30-minute break.</p>
-                                        </li>
-                                        <li>
-                                         <p class="list-paragraph">4. Repeat the process until you complete all the tasks.</p>
-                                        </li>
-                                      </ol>
-                                    </p>
-                                    <h2>Good Luck!</h2>
-                                  </div>
-
-
-                                  
-
-                        </section>
-              
-              
-                      </div>
-
-                  
-              
-                      
-              
-                      <!-- Footer  -->
-                      
-                      <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col">
-
-
-
-                      </footer>
-                    </div>
-                    
-                  </div>
-              
-              
-              
-                  <script src="../commonScript.js"></script>
-         
+  <script src="../commonScript.js"></script>
 
 </body>
 </html>
