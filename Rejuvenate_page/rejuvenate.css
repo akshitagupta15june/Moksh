@@ -18,7 +18,48 @@ body {
 
   overflow: hidden;
 }
+.navbar {
+  position: fixed !important;
+}
+.home {
+  background-color: transparent !important;
+}
+.menu-button {
+  display: none;
+  width: 30%;
+  height: 2rem;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    width: 60%;
+  }
+}
+@media (max-width: 442px) {
+  .menu-button {
+    display: flex;
+    width: 40%;
+  }
+}
+@media (max-width: 300px) {
+  .menu-button {
+    display: none;
+  }
+}
 
+.dropdown-sub-element {
+  position: relative;
+  display: inline-block;
+  transform: translateX(-70%);
+  
+}
 .media-scroller {
   width: 90%;
   display: grid;
@@ -125,6 +166,14 @@ iframe {
 .carousel-control-prev {
   filter: invert(100%);
 }
+
+.navbar-logo img {
+  width: 60px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 
 @media (max-width: 620px) {
   .media-scroller {
