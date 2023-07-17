@@ -69,3 +69,9 @@ function toggleReturnToTopButton ()
 // Add event listeners
 window.addEventListener( 'scroll', toggleReturnToTopButton );
 // returnToTopButton.addEventListener( 'click', scrollToTop );
+
+let subscribeBtn = document.querySelector( '.subscribeBtn' )
+subscribeBtn.onclick = () =>
+{
+  alert( 'It will be functional soon!!' )
+}

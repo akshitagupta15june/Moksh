@@ -1,0 +1,534 @@
+
+<!doctype html>
+<html>
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Blog- Life</title>
+    <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" href="../index.html" />
+    <link rel="stylesheet" href="newBlogStyle.css">
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+    <div class="blogWrapper h-screen overflow-hidden relative">
+
+        <!-- Site Menu Links  -->
+        <div
+            class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] bg-white w-screen sm:w-1/2  p-8">
+        </div>
+
+        <div class="contentWrapper h-full overflow-y-auto flex flex-col justify-between">
+
+            <!-- Hero Section & Navbar  -->
+            <div
+                class="heroSection bg-[#4E88BD] h-auto flex px-12 text-2xl sm:text-lg flex-col justify-center bg-[url('../Images/blog-vices.webp')] bg-no-repeat bg-contain bg-right">
+
+                <!-- Navbar   -->
+                <div
+                    class="fixed navbar text-indigo-700 top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
+                    <div class="leftSection">
+                        <a class="flex items-center" href="../index.html">
+                            <img src="../Images/logoBgRemoved.webp" alt="Moksh Logo" class="w-16 h-16" />
+                            <span
+                                class="ml-3 text-xl sm:text-2xl uppercase font-semibold text-indigo-600 projectName tracking-widest ease-in-out duration-300 hover:text-slate-900">Moksh</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="blogWrapper mt-28 py-8 h-auto flex flex-col">
+                <div> <a href="../Blogs/Blog.html"><img src="https://cdn-icons-png.flaticon.com/512/8636/8636668.png" /
+                            height="50px" width="50px" class="image1"> </a></div>
+                <div class="title px-3 flex flex-col items-center w-full">
+
+                    <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold ">
+                        <span class="pb-1 border-double border-b-4 border-b-indigo-600">Life</span>
+                    </h1>
+
+                    <p class="tagline text-xs font-semibold text-slate-800 italic">
+                        Power of Knowledge Group.
+                    </p>
+
+                    <!-- Social Share links  -->
+                    <div class="social-share my-4 flex items-center justify-between w-2/3 md:w-1/6">
+                        <a href="#" title="Share">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                                <path fill-rule="evenodd"
+                                    d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <a href="#" title="Save">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                            </svg>
+                        </a>
+
+                        <a href="#" title="Download">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+                            </svg>
+                        </a>
+
+                        <a href="#" title="Print">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z" />
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <p class="pulishedOn font-semibold text-center mt-8 uppercase text-slate-500 text-[11px]">
+                        Published on:
+                        23-06-2023</p>
+                </div>
+
+                <div class="blogImage my-3">
+                    <img src="../Images/lifeBlog.jpg" alt="blogImage" class="rounded-md center">
+                </div>
+
+
+                <div id="google_element" class="translation-container"
+                    style="display: flex; justify-content: center; align-items: center; height: 30vh;"></div>
+
+
+
+                <!-- Add the script for initializing the translation widget -->
+                <script>
+                    function loadGoogleTranslate() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
+                        }, 'google_element');
+
+                    }
+                </script>
+
+                <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
+                    <p class="mb-4">
+                        <span class=" firstWord font-bold text-3xl text-indigo-800">O</span>
+                        ur topic for today is life. When this topic arises, everyone's interpretation of it is likely to
+                        be
+                        different. Kids may
+                        think life is full of homework and play, teenagers may associate life with friends, enjoying a
+                        cup of
+                        coffee, and
+                        witnessing beautiful sunsets. Later on in life, it becomes about settling down, finding
+                        financial
+                        security, and
+                        eventually, it revolves around raising and ensuring the well-being of our children. So, life
+                        holds
+                        different meanings
+                        for each individual at different stages. However, if we look at life from a spiritual
+                        perspective, what
+                        does it truly
+                        mean? When we refer to life, we are referring to the entirety of it, as a series of changeable
+                        events.
+                        Life is
+                        constantly changing; it is not a singular thing, but rather a process that we must live through.
+
+
+                    </p>
+                    <p class="mb-4">
+                        If we compare a photograph of ourselves as a kid to our present selves, we will notice numerous
+                        physical
+                        changes. We may
+                        feel that the person we were back then and the person we are now are completely different. Life
+                        is a
+                        continuous series
+                        of constant changes; it is always evolving. Every minute, there is a new definition of life,
+                        always
+                        presenting something
+                        new for us to experience. During certain periods, we may feel that homework is important, while
+                        at other
+                        times, family
+                        or work takes priority. However, when we consider life as a whole, it is an ever-changing
+                        sequence of
+                        events. Our
+                        priorities, perspectives, and everything else in life are in a constant state of flux.
+
+
+                    </p>
+
+                    <img src="../images/butterfly.jpg" alt="">
+                    <p class="mb-4">
+                        Let's take the example of a caterpillar transforming into a butterfly. The process of change may
+                        appear
+                        painful, but
+                        once it becomes a butterfly, it gains the ability to fly. Life presents similar changes that we
+                        may not
+                        always be
+                        prepared for, making us feel lost or stuck. During such times, having a guru or mentor becomes
+                        crucial. A
+                        guru works
+                        like Google Maps, guiding us and showing us the right direction in life. They also warn us when
+                        we are on
+                        the wrong
+                        path, constantly providing guidance and suggesting alternative routes.
+
+
+                    </p>
+                    <p class="mb-4">
+                        Whether we choose to follow the right path or not is ultimately our decision. As we discussed
+                        earlier,
+                        life is
+                        constantly changing, and the guru teaches us to adapt to these changes. Today may be beautiful,
+                        but
+                        tomorrow will bring
+                        something different. Situations around us are always changing, and if we become rigid and resist
+                        change,
+                        we are like a
+                        tree in a storm that falls first. On the other hand, grass is flexible and bends with the
+                        direction of the
+                        wind. The
+                        guru teaches us not to be rigid like a tree but to be like the grass—learning to adjust and bend
+                        ourselves
+                        according to
+                        the circumstances.
+
+                    </p>
+                    <p class="mb-4">
+                        Often, we try to change the scenarios around us, but that is not always within our control. What
+                        we can
+                        change is our
+                        reaction to the situation. Our guru teaches us not to change our face but to face the change
+                        itself. When
+                        something
+                        changes in our life or doesn't go as planned, we may instantly feel upset, sad, extremely happy,
+                        or
+                        express emotions
+                        such as crying or anger through our facial expressions. However, in such situations, the guru
+                        advises us
+                        to maintain
+                        composure, face the change with courage, and remember that we have our "Google Maps" guiding us.
+                        With this
+                        guidance,
+                        there's no need to be afraid, as we know our destination. Life is meant to change, and we don't
+                        have to be
+                        happy all the
+                        time. Circumstances are always changing, and we need to adapt to these changes.
+
+
+                    </p>
+                    <p class="mb-4">
+                        To quote Charles Darwin, <i> "It is not the strongest species that survive, nor the most
+                            intelligent, but
+                            the one most
+                            responsive to change."</i>
+
+
+
+                    </p>
+                    <p class="mb-4">
+                        We cannot control the changes that are happening outside, but we can control the inner changes
+                        occurring
+                        within us. We
+                        can change our reactions and our way of speaking and living. We have control over our behavior
+                        and our
+                        actions. All of
+                        these things are within our power. So, instead of trying to change the external circumstances,
+                        we should
+                        focus on
+                        changing ourselves. Otherwise, we become increasingly sad and angry.
+
+
+                    </p>
+                    <p class="mb-4">
+                        One of the biggest fears that most of us have is the fear of aging or losing loved ones. These
+                        changes are
+                        inevitable
+                        and part of life. We are afraid of losing someone we depend on. However, it's important to
+                        realize that
+                        nothing truly
+                        dies. It's just a change in form. Our physical bodies may perish, but our essence continues to
+                        exist.
+                        Understanding this
+                        truth about death can help us find peace.
+
+                    </p>
+                    <p class="mb-4">
+                        Death is simply a transformation of our physical form. If we comprehend this truth about life,
+                        we will be
+                        able to live
+                        life to the fullest without being affected by change. Therefore, having a Guru in our life is
+                        crucial for
+                        living a
+                        fulfilled life. Now that we have this precious human life, do we truly value it?
+
+
+
+                    </p>
+                    <p class="mb-4">
+                        We could have been born as insects, dogs, or cockroaches. The reason we have received this human
+                        life is
+                        far more
+                        significant. Even animals drink, eat, produce offspring, and care for their young ones before
+                        eventually
+                        dying. So, why
+                        have we been granted this human life? It is considered the highest form of life. We have been
+                        given this
+                        life to attain
+                        inner peace.
+
+                    </p>
+                    <p class="mb-4">
+                        As humans, we have the power of reasoning and the ability to find peace of mind through all the
+                        circumstances that occur
+                        in our lives. We can still be at peace, regardless of the external situations. What is your goal
+                        in life?
+                        What is your
+                        purpose? The purpose of life is peace of mind, not money.
+
+                    </p>
+                    <p class="mb-4">
+                        Just like a fish finds peace in water and not in honey, even if you place the fish in the most
+                        expensive
+                        alcohol, it
+                        will only find peace in water. Similarly, in life, we chase after various things, constantly
+                        changing our
+                        minds.
+                        Sometimes we chase after money or other desires. However, we forget that we can only truly
+                        thrive in life
+                        if we have
+                        peace of mind. So, no matter where we are in life, our first priority should be to attain peace
+                        of mind.
+                        Only then can
+                        we go on to achieve whatever we desire, but always ensuring that we maintain that inner peace.
+                        With peace
+                        of mind, we
+                        can survive and thrive in any situation.
+
+
+
+                    </p>
+                    <p class="mb-4">
+                        There will be a lot of duality in life, encompassing aspects such as death, happiness, sadness,
+                        comfort,
+                        insult, and
+                        praise. All of these qualities are part of life, so it is important to maintain a balance amidst
+                        this
+                        duality. We should
+                        remain the same whether experiencing sadness or happiness, birth or death, discomfort or
+                        comfort. Guruji
+                        and teachers
+                        guide us on how not to become excessively happy or too sad. Now, we must follow the neutral
+                        path, as
+                        learning to balance
+                        in life is crucial for achieving our desired direction. We must let go of the past and embrace
+                        neutrality
+                        and balance.
+                        You are the captain of your life, with control over the direction it takes. Guruji can provide
+                        guidance if
+                        we are headed
+                        in the wrong direction, but ultimately, the decision to change rests with us. Think of your life
+                        as a boat
+                        with you as
+                        the captain; your decisions determine the direction you sail. Similarly, your body is like
+                        another
+                        metaphorical boat,
+                        separate from your true self. Sometimes, life's challenges come in strong waves, and Guruji
+                        teaches us how
+                        to navigate
+                        them. Remember, you are the captain of your ship, and you should row gently, not forcefully.
+                        There will
+                        always be two
+                        paths in front of us, and whichever path we choose may involve depression or sadness. It is
+                        essential to
+                        learn how to
+                        face these challenges with consciousness and awareness.
+
+
+                    </p>
+                    <p class="mb-4">
+                        Our Guruji's mantra is "shukrana" and "muskurana," which means that we need to be genuinely
+                        happy and
+                        thankful to God at
+                        all times. We should find joy in life and not burden ourselves with unnecessary stress. No
+                        matter what the
+                        external
+                        circumstances are, our Guruji always tells us to thank God because He has a better plan for all
+                        of us.
+                        Even in the
+                        Bhagavad Gita, it is written, "Prasannchit Wale Ko main shighra hi Darshan deta hun," which
+                        means that
+                        when you are
+                        truly happy, God is present. We should strive to be genuinely happy, regardless of the
+                        situation. Although
+                        we cannot
+                        change the outer circumstances, we can change our reactions to them. We should not fear the
+                        future because
+                        our God is
+                        with us, and with faith, we can find strength and happiness in every situation.
+
+
+
+                    </p>
+                    <p class="mb-4">
+                        Life is like a dream, an illusion. Our Guruji always emphasizes "Jagat mithya, Brahma Satya,"
+                        meaning that
+                        the world is
+                        like an illusion, constantly changing, while the truth remains constant. When we are dreaming,
+                        we believe
+                        the dream to
+                        be real, but upon waking up, we realize it was just a dream. Similarly, when we live our lives,
+                        we
+                        perceive them as real
+                        and happening to us. However, Guruji comes and wakes us up, reminding us that life is like a
+                        dream.
+
+                    </p>
+                    <p class="mb-4">
+                        "Arise, awake, and stop not till your goal is achieved." Don't perceive life as real; it is akin
+                        to a
+                        dream. If I were
+                        to ask you about your life, you would introduce yourself and perhaps share a brief overview of
+                        your
+                        childhood, which
+                        would take a few minutes at most. Despite living for 30 or 40 years, you can summarize your life
+                        in just a
+                        few hours.
+                        Life is like a play; observe and experience it.
+
+
+                    </p>
+
+                    <p class="mb-4">
+                        Whatever situation there is in our life, whether good or bad, it will always pass. You will not
+                        always
+                        have happy
+                        scenarios, nor will you always be in sad situations. This is another thing that Guruji says:
+                        "This too
+                        shall pass." Life
+                        is just a passing show. What we need to do is watch it like a spectator without getting attached
+                        to it. We
+                        need to
+                        realize that we are the creators of the dream play and not get stuck in this illusion. Life is
+                        like a
+                        dream.
+
+                    </p>
+
+                    <p class="mb-4">
+                        Our Guruji tells the story of Raja Janak, a king who had a dream. Despite living a life of
+                        riches and
+                        luxury, one day he
+                        dreamed of being a beggar, hungry and desperately begging for food. After a great struggle, he
+                        finally
+                        managed to get a
+                        little porridge, but just as he was about to eat it, a dog came and took it away. Raja Janak
+                        woke up in
+                        turmoil and
+                        called all the saints and learned men of his kingdom. He didn't tell them what he had seen, but
+                        simply
+                        asked, "Is this
+                        the truth or that the truth?" No one could answer this question except for one child,
+                        Ashtavakra, a
+                        12-year-old boy with
+                        eight twists in his body. He said, "This is not true, and that is also not true." He meant that
+                        the dream
+                        was not true,
+                        and neither was reality. Both were just illusions. In conclusion, a true Guru comes and wakes us
+                        up from
+                        the dreamy
+                        state. When we believe that our life is real and everything happening around us is real, in
+                        reality life
+                        is an illusion.
+                        It is a passing show.
+
+                    </p>
+
+                    <p class="mb-4">
+                        If you adopt the behavior of accepting everything in your life, you will live life to the
+                        fullest. There
+                        are two
+                        principles to live life to the fullest. First, live your life as if today is your last day. If
+                        today were
+                        your last day,
+                        would you waste it or hold grudges? Would you be rude to anyone? No, you would be kind and nice
+                        and not
+                        waste time. The
+                        second principle is to live as if you are going to live forever. Would you be scared of living
+                        if you were
+                        going to live
+                        forever? Any problem that comes in your life would seem insignificant because you are going to
+                        live
+                        forever. These two
+                        principles may seem contradictory, but they make great sense. We have to think about it. Live as
+                        if it's
+                        your last day,
+                        meaning live in the present moment and don't dwell on the past or future. Live happily in this
+                        moment. The
+                        second
+                        principle is to live as if you will live forever, so don't waste time worrying about future
+                        challenges and
+                        problems.
+                        Face them with a positive attitude and behavior towards life. Don't hold on to fears or be
+                        scared of the
+                        future, and all
+                        your problems will seem insignificant and small because you know you are going to live on
+                        forever.
+
+                    </p>
+
+                    <p class="mb-4">
+                        We often think that we are human beings going through a spiritual experience, but the truth is
+                        that we are
+                        spiritual
+                        beings going through a human experience. Whatever problems we face are insignificant and small.
+                        If we keep
+                        these two
+                        principles in mind, we need to value this human form of life. Life, in general, is very rare,
+                        and not
+                        everyone gets it.
+                        If we have a Guru in our life, we should make the most of it and value this human life. Don't
+                        waste it.
+
+                    </p>
+                    <p class="mb-4">
+                        Sometimes we say we are killing time or we are bored, but we don't realize that time is actually
+                        killing
+                        us. We waste
+                        our lives on trivial and insignificant things, burdening ourselves with the weight of life.
+                        Instead,
+                        accept whatever
+                        comes and move forward. With the grace of God, we will reach a beautiful destination.
+                    </p>
+
+                </div>
+
+                <a href="../Blogs/Blog.html"
+                    class="my-5 p-6 rounded-md uppercase font-semibold bg-rose-600 text-white ease-in-out duration-300 hover:bg-gray-900">Back
+                    to
+                    Blogs</a>
+
+            </div>
+
+            <!-- Footer  -->
+            <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col"></footer>
+
+        </div>
+
+    </div>
+    <script src="./blogs.js"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script src="../commonScript.js"></script>
+
+</body>
+</html>

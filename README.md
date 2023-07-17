@@ -99,10 +99,17 @@ If there are any doubts, you can ask here on Discord. <br>Join your Discord serv
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Getting Started 💨
+
+
+## Getting Started 👩‍💻
+
+> ⚠️Prerequisites
+>
+> - Before getting into it, make sure you have live server installed.
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
 
 ### Installation
 
@@ -137,35 +144,35 @@ See the [open issues](https://github.com/akshitagupta15june/Moksh/issues) for a 
 2. Clone your forked repository
 
 ```sh
- git clone https://github.com/<your_github_username>/Moksh.git
+git clone https://github.com/<your_github_username>/Moksh.git
 ```
 3. Now go ahead and create a new branch and move to the branch
-   ```sh
-   git checkout -b fix-issue-<ISSUE-NUMBER>
-   ```
+```sh
+git checkout -b fix-issue-<ISSUE-NUMBER>
+```
 4. After you have added your changes, follow the following command chain
-   * Check the changed files
-    ```sh
-     git status -s
-     ```
+   Check the changed files
+```sh
+git status -s
+```
 
-   * Add all the files to the staging area
-      ```sh
-     git add .
-     ```
-     or
-     ```sh
-     git add <file_name1> <file_name2>
-     ```
-   * Commit your changes
-    ```sh
-     git commit -m "<EXPLAIN-YOUR_CHANGES>"
-     ```
-5. Push your changes
-   ```sh
-   git push origin fix-issue-<ISSUE-NUMBER>
-   ```
-6. Open a Pull Request 
+  * Add all the files to the staging area
+```sh
+git add .
+```
+ or
+```sh
+git add <file_name1> <file_name2>
+```
+5. Commit your changes
+```sh
+git commit -m "<EXPLAIN-YOUR_CHANGES>"
+```
+6. Push your changes
+```sh
+git push origin fix-issue-<ISSUE-NUMBER>
+```
+7. Open a Pull Request 
 ## 👩‍💻 Project Admin
 
 <table>

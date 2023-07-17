@@ -4,10 +4,12 @@
 * {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+  outline: none;
 }
 
 .projectName {
   font-family: 'Arizonia', cursive;
+  text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
 }
 
 .title{
@@ -34,13 +36,13 @@
 }
 
 /* Footer  */
-footer{
+footer {
   background-color: rgb(243 244 246 / 1);
   color: black;
   padding: 0;
 }
 
-.footer-items{
+.footer-items {
   color: black;
   text-decoration: none;
   font-size: 18px;
@@ -48,7 +50,7 @@ footer{
 }
 
 
-.footer-list{
+.footer-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -57,16 +59,20 @@ footer{
   margin-top: 40px;
 }
 
-.footer-list ul, .footer-socials ul {
+.footer-list ul,
+.footer-socials ul {
   margin: 0;
   padding: 0;
 }
+
 
 .footer-socials{
   margin-bottom: 40px;
 }
 
-.copyright{
+
+
+.copyright {
   color: black;
   font-size: small;
   text-align: center;
@@ -75,20 +81,20 @@ footer{
   font-size: 13px;
 }
 
-.footer-items:hover::after{
+.footer-items:hover::after {
   transform: scale(1.1);
   transition: 400ms;
   width: 100%;
   color: blue;
 }
 
-.footer-items::after{
-  content:'';
-  display:block;
+.footer-items::after {
+  content: '';
+  display: block;
   height: 4px;
-  width:0;
+  width: 0;
   background: blue;
-  transition:all .5
+  transition: all .5
 }
 
 .footer-divide {
@@ -102,13 +108,13 @@ footer{
   font-size: 16px;
 }
 
-.footer-divide-text{
+.footer-divide-text {
   text-align: left;
   padding-top: 30px;
   font-size: 16px !important;
 }
 
-.footer-socials{
+.footer-socials {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -117,14 +123,15 @@ footer{
   align-items: center;
 }
 
-.made-by{
+.made-by {
   text-align: center;
   font-weight: 500;
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 16px;
 }
-.OmSymbol{
+
+.OmSymbol {
   position: relative;
   height: 18vh;
   width: 11vw;
@@ -150,10 +157,33 @@ div.skiptranslate a{
   display: none;
 }
 @media screen and (min-width: 280px) and (max-width: 912px) {
-  .OmSymbol{
+  .OmSymbol {
     position: relative;
     height: 100px;
     width: 120px;
     left: 40vw;
   }
+}
+
+.md\:hover\:scale-95:hover{
+  box-shadow: 5px 4px 20px 0px rgba(0,0,0,0.5);
+}
+
+/*From line 126 to 142 is the code contributed to style the scrollbar*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(250, 250, 250);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #04AA6D );
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, rgb(0, 13, 6));
+
 }
