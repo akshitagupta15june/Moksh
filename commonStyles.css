@@ -131,7 +131,24 @@ footer{
   left: 40vw;
   bottom: 5vh;
 }
+#google_element{
+  width: 151px;
+  overflow: hidden;
+  display: flex;
+}
 
+div.skiptranslate{
+  display: flex;
+}
+
+#google_element select{
+  margin: 0;
+  padding: .2rem .5rem;
+}
+
+div.skiptranslate a{
+  display: none;
+}
 @media screen and (min-width: 280px) and (max-width: 912px) {
   .OmSymbol{
     position: relative;

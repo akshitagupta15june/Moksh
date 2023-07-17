@@ -190,30 +190,29 @@
             <a href="Pomodro_page/reward.html" class="relative pt-5 pb-1 nav-grp-item">Pomodoro Spiritual Break</a>
             <a href="shlok_page/motivation.html" class="relative pt-5 pb-1 nav-grp-item">Read Rejuvenate</a>
           </div>
-        </li>
+          </li>
+
+          <li>
+            <!-- Google Translate -->
+            <div id="google_element" class="translation-container flex"></div>
+       <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" ></script>
+       <script>
+        function loadGoogleTranslate() {
+           new google.translate.TranslateElement({
+             pageLanguage: 'en',  
+           }, 'google_element');
+         }
+       </script>
+       </li>
+
       </ul>
     </div>
-
-    <div id="google_translate_element"></div>
-
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="indexOpenDropDown md:hidden h-6 w-6 text-white cursor-pointer ease-in-out duration-300 hover:text-indigo-600">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
     </svg>
-  </div>
-</div>
-
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-      autoDisplay: false,
-    }, 'google_translate_element');
-  }
-</script>
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
+       </div>
+        </div>
+        
         <!-- Hero Section  -->
         <div
              class="heroSectionContent mt-20 h-[calc(90vh-0px)]  w-full  flex items-center flex-col text-white py-8 relative">
