@@ -278,6 +278,43 @@ p:hover {
   }
 }
 
+=======
+}
+
+@media screen and (max-width: 414px){
+  section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+  .block__main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .block{
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+}
 
 .block__back {
   transform: rotateY(180deg);
@@ -385,4 +422,24 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+/*Adding style to scrollbar*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(250, 250, 250);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #c193b0  )!important;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, rgb(0, 13, 6));
+
 }
