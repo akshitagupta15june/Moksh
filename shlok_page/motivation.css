@@ -8,8 +8,7 @@
 html,
 body {
   overflow: auto;
-  height: 120vh;
-  background-color: #2980b9;
+  /* background-color: #ffe4e6; */
 }
 
 body::-webkit-scrollbar {
@@ -19,19 +18,15 @@ body::-webkit-scrollbar {
 #display {
   color: black;
   font-size: 1.5em;
-  top: 30px;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  text-align: center;
-  width: 100px;
+  text-align: end;
   position: relative;
-  left: 1100px;
+  top: 80px;
 }
 
 #date {
   width: 250px;
   color: black;
-  top: 100px;
+  top: 90px;
   font-size: 1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
@@ -40,48 +35,6 @@ body::-webkit-scrollbar {
   filter: alpha(opacity=60);
   text-align: center;
   position: absolute;
-}
-
-footer {
-  background-color: #2980b9;
-  color: #fff;
-  font-size: 14px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-footer .logo-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .quick-links ul {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  margin-top: 15px;
-}
-
-/* 
-footer ul li {
-  margin-top: 5px;
-}  */
-
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer .quick-links ul li a:hover {
-  text-decoration: none;
-  padding: 5px;
-  background-color: #b1bce0;
-  color: #666;
 }
 
 #line {
@@ -95,8 +48,6 @@ footer .quick-links ul li a:hover {
 .navbar {
   position: fixed;
   width: 100%;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
 }
 
 span {
@@ -105,7 +56,7 @@ span {
   filter: alpha(opacity=75);
 }
 #content {
-  margin-top: 320px;
+  margin-top: 340px;
 }
 #content p {
   margin-bottom: 2em;
@@ -132,6 +83,11 @@ p:hover {
   text-decoration: none;
 }
 
+.card-container
+
+{
+  margin-top:130px;
+}
 .container {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -171,7 +127,7 @@ p:hover {
   /* margin-top: 200px; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -218,13 +174,13 @@ p:hover {
   font-size: 1.5rem;
   border-radius: 5px;
   border: transparent;
-  color: white;
   cursor: pointer;
   padding: 8px 12px;
   margin-top: 5px;
   background-color: #2980b9;
   transition: all 0.2s ease-in-out;
 }
+
 .new-quote:hover {
   transform: scale(1.1);
   border: none;
@@ -236,14 +192,12 @@ p:hover {
 
 .tweet-btn {
   font-size: 1.5rem;
-  color: white;
   letter-spacing: 1px;
   border-radius: 5px;
   border: transparent;
   cursor: pointer;
   padding: 8px 12px;
   margin-top: 5px;
-  background-color: #55acee;
   transition: all 0.2s ease-in-out;
 }
 .tweet-btn:hover {
@@ -261,17 +215,9 @@ p:hover {
   -webkit-background-clip: text;
 }
 
-.block {
-  perspective: 150rem;
-  position: absolute;
-  top: 22%;
-  left: 20%;
-  right: 20%;
-}
-
 .block__main {
-  min-width: 60vw;
-  position: absolute;
+  margin: auto;
+  width: 100%;
   transition: all 0.8s ease;
   backface-visibility: hidden;
   box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.47);
@@ -279,22 +225,183 @@ p:hover {
   background-color: transparent;
   opacity: 1;
 }
+.block{
+  height: 85vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+  .block__main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .block{
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+  .block__main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .block{
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+}
+
 
 .block__back {
   transform: rotateY(180deg);
 }
-
-.rotateF {
-  transform: rotateY(-180deg);
-}
-
-.rotateB {
-  transform: rotateY(0deg);
-}
-
 .learn-more{
   margin-bottom: 25px;
   border-radius: 3px;
   padding-left: 3px;
   padding-right: 3px;
+}
+
+.navbar-logo img {
+  width: 60px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#google_element{
+  margin-top:45px;
+}
+#google_element select{
+  background-color:#f6edfd;
+  color:#383ffa;
+  border: none;
+  border-radius:3px;
+  border-color: black;
+  padding:6px 8px;
+}
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+/* display:flex; */
+text-align: center;
+height:50px;
+width:90px;
+
+/* margin-top:20px; */
+
+}
+footer{
+  position: absolute;
+  top: 100vh;
+}
+
+footer p{
+  color: white;
+  opacity: 0.75;
+  font-size: 14px;
+  text-align: left;
+}
+@media (max-width:1023px){
+  footer p{
+ text-align: center;
+  } 
+
+}
+
+.dropdown-menu {
+  min-width: 12rem;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #4a5568;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #edf2f7;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  z-index: 10;
+  display: none;
+  min-width: 15rem;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+a {
+  cursor: pointer;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Adding style to scrollbar*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(250, 250, 250);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #c193b0  )!important;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, rgb(0, 13, 6));
+
 }
