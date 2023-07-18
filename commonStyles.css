@@ -140,3 +140,11 @@ footer {
   background: linear-gradient(transparent, rgb(0, 13, 6));
 
 }
+
+@media (min-width: 700px) {
+  .md\:flex{
+  display: flex;
+  margin-left: 40px;
+  text-align: center;
+}
+}
