@@ -17,16 +17,19 @@ body::-webkit-scrollbar {
 
 #display {
   color: black;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  opacity: 0.6;
   text-align: end;
   position: relative;
-  top: 80px;
+  margin-bottom:3 px;
 }
 
 #date {
   width: 250px;
   color: black;
-  top: 90px;
+  margin-bottom: 70px;
   font-size: 1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
@@ -34,7 +37,7 @@ body::-webkit-scrollbar {
   opacity: 0.6;
   filter: alpha(opacity=60);
   text-align: center;
-  position: absolute;
+  position: relative;
 }
 
 #line {
@@ -45,10 +48,7 @@ body::-webkit-scrollbar {
   filter: alpha(opacity=50);
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-}
+
 
 span {
   border-radius: 100px;
@@ -278,8 +278,6 @@ p:hover {
   }
 }
 
-=======
-}
 
 @media screen and (max-width: 414px){
   section{
@@ -326,12 +324,7 @@ p:hover {
   padding-right: 3px;
 }
 
-.navbar-logo img {
-  width: 60px;
-  background-color: antiquewhite;
-  border-radius: 50%;
-  object-fit: cover;
-}
+
 
 #google_element{
   margin-top:45px;
@@ -354,66 +347,10 @@ width:90px;
 /* margin-top:20px; */
 
 }
-footer{
-  position: absolute;
-  top: 100vh;
-}
 
-footer p{
-  color: white;
-  opacity: 0.75;
-  font-size: 14px;
-  text-align: left;
-}
-@media (max-width:1023px){
-  footer p{
- text-align: center;
-  } 
 
-}
 
-.dropdown-menu {
-  min-width: 12rem;
-}
 
-.dropdown-menu a {
-  display: block;
-  padding: 0.75rem 1.5rem;
-  color: #4a5568;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.dropdown-menu a:hover {
-  background-color: #edf2f7;
-}
-
-.dropdown-container {
-  position: relative;
-}
-
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  right: 10px;
-  z-index: 10;
-  display: none;
-  min-width: 15rem;
-  background-color: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown-container:hover .dropdown-content {
-  display: block;
-}
-.nav-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-}
 a {
   cursor: pointer;
 }
