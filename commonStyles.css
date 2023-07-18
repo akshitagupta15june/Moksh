@@ -12,33 +12,11 @@
   text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
 }
 
-.title{
-  font-size: 20px;
-}
-.title:hover{
-  color: #034304;
-}
-
-.nav-link:hover{
-  color: #034304;
-}
-
-.nav-grp-item{
-  color: #056b07;
-}
-
-.nav-grp-item:hover{
-  color: #034304;
-}
-
-.contributors{
-  margin-bottom: 110px;
-}
-
 /* Footer  */
 footer {
   background-color: rgb(243 244 246 / 1);
   color: black;
+
   padding: 0;
 }
 
@@ -56,7 +34,6 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-top: 40px;
 }
 
 .footer-list ul,
@@ -64,13 +41,6 @@ footer {
   margin: 0;
   padding: 0;
 }
-
-
-.footer-socials{
-  margin-bottom: 40px;
-}
-
-
 
 .copyright {
   color: black;
@@ -138,24 +108,7 @@ footer {
   left: 40vw;
   bottom: 5vh;
 }
-#google_element{
-  width: 151px;
-  overflow: hidden;
-  display: flex;
-}
 
-div.skiptranslate{
-  display: flex;
-}
-
-#google_element select{
-  margin: 0;
-  padding: .2rem .5rem;
-}
-
-div.skiptranslate a{
-  display: none;
-}
 @media screen and (min-width: 280px) and (max-width: 912px) {
   .OmSymbol {
     position: relative;
