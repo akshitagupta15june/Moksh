@@ -3,6 +3,21 @@ function startTime() {
   var time = today.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true });
   
   document.getElementById('display').innerHTML = time;
+
+  
+  const day = today.getDate();
+  const month = today.toLocaleString('default', { month: 'long' });
+  const year = today.getFullYear();
+
+  const dayOfWeekIndex = today.getDay();
+
+  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const dayOfWeek = daysOfWeek[dayOfWeekIndex];
+
+
+  const formattedDate = `${dayOfWeek} | ${day} ${month} ${year}`;
+
+  document.getElementById('date').innerHTML = formattedDate;
   
   requestAnimationFrame(startTime);
 }
