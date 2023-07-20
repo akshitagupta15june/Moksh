@@ -14,7 +14,7 @@ let customFooter = document.querySelector( ".customFooter" ),
               d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
               clip-rule="evenodd" />
           </svg>
-          <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1>
+          <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1> 
         </div>
 
         <img src="../Images/logoBgRemoved.avif" alt="" class="h-36 w-36 mx-auto" />
@@ -264,20 +264,20 @@ let customFooter = document.querySelector( ".customFooter" ),
             <div
                  class="site--links capitalize text-xs text-slate-300 grid sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-y-4 lg:w-1/2">
 
-              <a href="./index.html"
+              <a href="../index.html"
                  class="w-full text-center lg:text-left">
                 <span
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
               </a>
 
-              <a href="./Blogs/Blog.html"
+              <a href="../Blogs/Blog.html"
                  class="w-full text-center lg:text-right">
                 <span
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Power
                   of Knowledge blogs</span>
               </a>
 
-              <a href=" ./AR_Meditate/meditation.html"
+              <a href=" ../AR_Meditate/meditation.html"
                  class="w-full text-center lg:text-left">
                 <span
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Augmented
@@ -285,14 +285,14 @@ let customFooter = document.querySelector( ".customFooter" ),
                   Meditation</span>
               </a>
 
-              <a href=" ./Iskcon/event.html"
+              <a href=" ../Iskcon/event.html"
                  class="w-full text-center lg:text-right">
                 <span
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Iskon
                   Events</span>
               </a>
 
-              <a href=" ./Divine_page/story.html"
+              <a href=" ../Divine_page/story.html"
                  class="w-full text-center lg:text-left">
                 <span
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Divine
@@ -301,7 +301,7 @@ let customFooter = document.querySelector( ".customFooter" ),
                 </span>
               </a>
 
-              <a href=" ./Pomodro_page/reward.html"
+              <a href=" ../Pomodro_page/reward.html"
                  class="w-full text-center lg:text-right">
                 <span
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
@@ -309,13 +309,13 @@ let customFooter = document.querySelector( ".customFooter" ),
                   Break</span>
               </a>
 
-              <a href=" ./shlok_page/motivation.html"
+              <a href=" ../shlok_page/motivation.html"
                  class="w-full text-center lg:text-left">
                 <span
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Read
                   a Shlok</span> </a>
 
-              <a href=" ./Rejuvenate_page/rejuvenate.html"
+              <a href=" ../Rejuvenate_page/rejuvenate.html"
                  class="w-full text-center lg:text-right"><span
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate</span></a>
 

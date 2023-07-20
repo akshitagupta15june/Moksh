@@ -332,6 +332,9 @@ button:hover {
   background-color: antiquewhite;
   margin-right: 20px;
 }
+footer{
+  margin-top: 50px;
+}
 
 /* footer .logo {
   border-radius: 50%;
@@ -344,4 +347,3 @@ footer img{
   width: 7rem;
 }
  */
-
