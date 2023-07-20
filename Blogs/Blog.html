@@ -10,6 +10,11 @@
     <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
     <link rel="stylesheet" href="../commonStyles.css">
     <link rel="stylesheet" href="newBlogStyle.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Rubik&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -37,7 +42,7 @@
 
             <div class="featuredBlogWrapper order-2 md:order-1 px-4 flex flex-col justify-center">
               <div class="uppercase text-xs font-semibold flex items-center">
-                <span class="tracking-widest">Featured</span>
+                <span id="featureHeader" class="tracking-widest">Featured Blog: </span>
                 <div class="stars flex items-center ml-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                        class="w-3 h-3 text-rose-600">
@@ -63,13 +68,19 @@
                 </div>
               </div>
 
-              <div class="title w-full mb-3">
-                <p class="sm:text-3xl text-2xl uppercase my-3">Karma</p>
-                <span class="sm:text-xs text-sm text-justify font-semibold block w-2/3">
-                  Today, we are addressing one of the most confusing topics: karma. Many people are confused about its
+              <div id="karmaBox" class="title w-full mb-3">
+                <p id="karmaHeader" class="sm:text-3xl text-2xl uppercase my-3">Karma</p>
+                <span style="padding-bottom: 200px;" id="karmaPara" class="sm:text-xs text-sm text-justify font-semibold block w-2/3">
+                  Today, we are addressing one of the most 
+                  <hr style="padding-top: 5px;">
+                  confusing topics: karma. Many people 
+                  <hr style="padding-top: 5px;">
+                  are confused about its
+                  <hr style="padding-top: 5px;">
                   very
                   basic
                   definition or foundation...
+                  <hr style="padding-top: 5px;">
                 </span>
 
               </div>
@@ -121,8 +132,8 @@
 
 
             </div>
-            <img src="../Images/Karma.png" alt="background-image"
-                 class="md:h-[calc(100vh-200px)] my-auto md:rounded-md w-full order-1 md:order-2 karma_image">
+            <!-- <img src="../Images/Karma.png" alt="background-image"
+                 class="md:h-[calc(100vh-200px)] my-auto md:rounded-md w-full order-1 md:order-2 karma_image"> -->
 
 
 

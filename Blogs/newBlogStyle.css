@@ -1,6 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 
+body {
+  background-image: url("https://cdn.dribbble.com/users/760340/screenshots/2864194/karma.gif");
+  background-repeat: no-repeat;
+  background-size: 1300px, 300px;
+  color: whitesmoke;
+  
+}
+ #karmaHeader{
+  color: whitesmoke;
+  font-family: 'Lumanosimo', cursive;
+  font-size: 50px;
+ }
+
+ #karmaPara {
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  justify-content: center;
+ }
+
+ #featureHeader {
+  color: whitesmoke;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+ }
+
+ #blogDetails {
+  color: white;
+ }
+
 * {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
@@ -69,3 +100,4 @@
     object-fit: contain;
   }
 }
+
