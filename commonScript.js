@@ -113,6 +113,17 @@ let customFooter = document.querySelector( ".customFooter" ),
               </a>
 
               <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+               href="./Gita-Storyline/storyline.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                   class="h-3 w-3 group-hover:text-indigo-600">
+                <path fill-rule="evenodd"
+                      d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                      clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm p-3 group-hover:text-indigo-600">Gita StoryLine</span>
+            </a>
+
+              <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
                 href="../Rejuvenate_page/rejuvenate.html">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                   class="h-3 w-3 group-hover:text-indigo-600">
