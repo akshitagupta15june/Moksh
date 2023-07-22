@@ -205,3 +205,12 @@ iframe {
     object-fit: cover;
   }
 }
+
+.customFooter a {
+  color: rgb(203 213 225);
+ }
+
+.customFooter a:hover {
+  text-decoration: none;
+ 
+}
