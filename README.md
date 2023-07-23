@@ -156,7 +156,7 @@ git checkout -b fix-issue-<ISSUE-NUMBER>
 git status -s
 ```
 
-  * Add all the files to the staging area
+5. Add all the files to the staging area
 ```sh
 git add .
 ```
@@ -164,15 +164,15 @@ git add .
 ```sh
 git add <file_name1> <file_name2>
 ```
-5. Commit your changes
+6. Commit your changes
 ```sh
 git commit -m "<EXPLAIN-YOUR_CHANGES>"
 ```
-6. Push your changes
+7. Push your changes
 ```sh
 git push origin fix-issue-<ISSUE-NUMBER>
 ```
-7. Open a Pull Request 
+8. Open a Pull Request 
 ## 👩‍💻 Project Admin
 
 <table>
