@@ -229,7 +229,7 @@ let customFooter = document.querySelector( ".customFooter" ),
             <div class="rightSection pr-4">
 
               <div>
-                <ul class="hidden md:flex items-center gap-10 uppercase text-xs font-semibold tracking-wider ">
+                <ul class="hidden md:flex items-center gap-10 uppercase text-xs font-semibold tracking-wider text-indigo-600 ">
                   <li>
                     <a href="../index.html"
                       class="pb-3 hover:text-indigo-600 relative font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Home</a>
@@ -292,21 +292,20 @@ let customFooter = document.querySelector( ".customFooter" ),
   let footerContent = `
   <!-- NewsLetter  -->
   <div
-    class="mt-6 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
+  class="mt-8 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
 
     <div class="mb-1 lg:text-left">
-      <p class="capitalize mb-0 text-[11px] font-semibold tracking-wider text-white">Sign Up for our newsletter:
-      </p>
-      <p class="text-white mb-0 text-[11px]">Get weekly updates regarding Moksh.</p>
+    <p class="capitalize text-[11px] font-semibold tracking-wider" style="color:grey">Sign Up for our newsletter:</p>
+    <p style = "color:white">Get weekly updates regarding Moksh.</p>
     </div>
 
 
     <div class="newsLetter flex group ease-in-out duration-300 lg:w-1/2">
       <div class="flex group ease-in-out duration-300 w-full lg:w-2/3">
-        <input type="email" name="email" id="" placeholder="your email"
-          class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0">
-        <button
-          class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600">Subscribe</button>
+      <input type="email" name="email" id="" placeholder="your email"
+      class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0">
+<button
+       class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600">Subscribe</button>
       </div>
     </div>
 
@@ -318,7 +317,7 @@ let customFooter = document.querySelector( ".customFooter" ),
 
     <div class="flex flex-col lg:flex-row items-center text-center lg:text-left lg:w-1/2">
       <!-- <img src="../Images/New_Logo.svg" alt="Moksh Logo" class="h-24 w-24 lg:mr-4" /> -->
-      <img src="../Images/New_Logo.svg" alt="Moksh Logo" class="h-24 w-24 lg:mr-4 rounded-full" />
+      <img src="../Images/logoBgRemoved.webp" alt="Moksh Logo" class="h-24 w-24 lg:mr-4 rounded-full" />
 
       <div class="py-3 font-medium text-white w-2/3 flex flex-col text-xs lg:text-left ">
         <h1 class="text-3xl projectName ">Moksh</h1>
@@ -355,64 +354,64 @@ let customFooter = document.querySelector( ".customFooter" ),
     <div
       class="site--links capitalize text-xs text-slate-300 grid sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-y-4 lg:w-1/2">
 
-      <a href="../index.html" class="w-full lg:text-left text-center">
-        <span
-          class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
+      <a href="../index.html" class="w-full lg:text-left text-left">
+      <span
+      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
       </a>
 
-      <a href="../Blogs/Blog.html" class="w-full lg:text-right text-center">
-        <span
-          class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Power
-          of Knowledge blogs</span>
+      <a href="../Blogs/Blog.html" class="w-full lg:text-right text-right">
+      <span
+      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Power
+  of Knowledge blogs</span>
       </a>
 
-      <a href=" ../AR_Meditate/meditation.html" class="w-full lg:text-left text-center">
-        <span
-          class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Augmented
-          Reality
-          Meditation</span>
+      <a href=" ../AR_Meditate/meditation.html" class="w-full lg:text-left text-left">
+      <span
+      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Augmented
+  Reality
+  Meditation</span>
       </a>
 
-      <a href=" ../Iskcon/event.html" class="w-full lg:text-right text-center">
-        <span
-          class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Iskon
-          Events</span>
+      <a href=" ../Iskcon/event.html" class="w-full lg:text-right text-right">
+      <span
+      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Iskon
+  Events</span>
       </a>
 
-      <a href=" ../Divine_page/story.html" class="w-full lg:text-left text-center">
-        <span
-          class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Divine
-          Activities for all
-          Generation
-        </span>
+      <a href=" ../Divine_page/story.html" class="w-full lg:text-left text-left">
+      <span
+      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Divine
+  Activities for all
+  Generation
+</span>
       </a>
 
-      <a href=" ../Pomodro_page/reward.html" class="w-full lg:text-right text-center">
-        <span
-          class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
-          Spiritual
-          Break</span>
+      <a href=" ../Pomodro_page/reward.html" class="w-full lg:text-right text-right">
+      <span
+      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
+  Spiritual
+  Break</span>
       </a>
 
-      <a href=" ../shlok_page/motivation.html" class="w-full lg:text-left text-center">
-        <span
-          class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Read
-          a Shlok</span> </a>
+      <a href=" ../shlok_page/motivation.html" class="w-full lg:text-left text-left">
+      <span
+      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Read
+  a Shlok</span> </a>
 
-      <a href=" ../Rejuvenate_page/rejuvenate.html" class="w-full lg:text-right text-center"><span
-          class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate</span></a>
+      <a href=" ../Rejuvenate_page/rejuvenate.html" class="w-full lg:text-right text-right"><span
+      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate</span></a>
 
     </div>
 
   </div>
 
   <!-- Copyright  -->
-  <div id="copyRight" class="copyRight mt-8  flex items-center justify-center text-xs text-slate-300 flex-col">
-    <p class='text-center mb-0'>Made with ❤️ by Akshita during XPRESSION'23</p>
-    <p class="text-indigo-900 font-bold">
-      &copy; <span id="copyright-year"></span> Moksh. All rights reserved.
-    </p>
-  </div>
+          <div class="mt-8 copyRight flex items-center justify-center text-xs text-slate-300 flex-col">
+            <p class='text-center' style = "color:white;" >Made with ❤️ by Akshita during XPRESSION'23</p>
+            <p class="text-indigo-900 font-bold">
+              &copy; <span id="copyright-year"></span> Moksh. All rights reserved.
+            </p>
+          </div>
 </div>
 </footer>
   `
