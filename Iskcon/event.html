@@ -91,8 +91,6 @@
             </div>
 
           </section>
-
-
         </div>
 
         <section
@@ -101,23 +99,27 @@
             <span class="border-b-4 pb-1 border-double border-b-indigo-600 ">Upcoming Events</span>
           </h1>
 
+          
+
 
           <!-- Iskcon cards data start -->
+          <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search by state">
+            <button id="search-button" class="font-semibold bg-emerald-500 py-3 text-center uppercase tracking-widest ease-in-out duration-300 hover:bg-indigo-900 rounded-md w-24 ">
+              Search
+            </button>
+            
+          </div>
           <div
                class="cards my-8 lg:my-0 w-full justify-center place-items-center">
                <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="cards"></div>
+                  <!-- The dynamically generated card elements will be appended here -->
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
           </div>
-
           <!-- Iskcon cards data end -->
-
-
-
-
         </section>
 
 
