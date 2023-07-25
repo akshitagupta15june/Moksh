@@ -82,7 +82,7 @@ ol {
 }
 
 .nav ul li a.active:hover {
-  color: black ;
+  color: black;
   text-decoration: underline;
   text-decoration-color: black;
 }
@@ -113,13 +113,13 @@ ol {
 
 .nav ul ul li {
   width: 310px;
-  display: list-item; 
-   position: relative;
+  display: list-item;
+  position: relative;
   border: 1px solid #8ad0ff;
   border-top: none;
 }
 
-a.dropdown-item{
+a.dropdown-item {
   margin: 0 !important;
 }
 
@@ -144,7 +144,7 @@ a.dropdown-item{
   margin: 2rem;
   align-items: center;
   justify-content: center;
-} 
+}
 
 .timer {
   display: flex;
@@ -172,7 +172,7 @@ a.dropdown-item{
   margin-top: 2rem;
   margin-left: 2rem;
   font-size: 2rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .inline-image {
@@ -185,16 +185,16 @@ a.dropdown-item{
   margin-left: 2rem;
 }
 
-.pomodoro-text h4{
-  font-size: 1.5rem!important;
+.pomodoro-text h4 {
+  font-size: 1.5rem !important;
 }
 
-.pomodoro-text ol{
+.pomodoro-text ol {
   font-size: 1.3rem;
 }
 
-.pomodoro-text h2{
-  font-size: 1.5rem!important;
+.pomodoro-text h2 {
+  font-size: 1.5rem !important;
 }
 
 button {
@@ -209,7 +209,8 @@ button {
   overflow: hidden;
 }
 
-.start,.reset{
+.start,
+.reset {
   border-radius: 0.2cm;
   font-size: 1.4rem;
   background-color: #023e8a;
@@ -261,12 +262,12 @@ div p a {
 }
 
 .list-paragraph {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.4rem;
 }
 
 button:hover {
-  background: #3382F1;
+  background: #3382f1;
   color: black;
 }
 
@@ -281,11 +282,11 @@ button:hover {
   width: 128px;
   border-radius: 50%;
 } */
-.pomodoro{
+.pomodoro {
   font-family: cursive;
   font-size: 2rem;
 }
-.pomodoro_container{
+.pomodoro_container {
   margin: 2rem;
   background-color: #faedcd;
   border-radius: 0.4cm;
@@ -295,11 +296,10 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.pomodoro_container p{
+.pomodoro_container p {
   font-size: 1.5rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 
 .header {
   background-color: #2980b9;
@@ -325,15 +325,54 @@ button:hover {
   font-size: 20px;
   line-height: 1.5;
   color: #2980b9;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .content img {
   background-color: antiquewhite;
   margin-right: 20px;
 }
-footer{
+footer {
   margin-top: 50px;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: white;
+}
+.updates {
+  color: white;
+}
+.flex {
+  display: flex;
+}
+
+button {
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+  border-radius: 0%;
+}
+
+.subscribeBtn {
+  min-width: auto;
+  min-height: auto;
+  width: 150px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.subscribeInput {
+  height: 40px;
+  margin-top: 5px;
 }
 
 /* footer .logo {
