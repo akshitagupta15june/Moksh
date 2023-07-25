@@ -9,6 +9,8 @@
     <title>Iskcon Events</title>
     <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
     <link rel="stylesheet" href="../commonStyles.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
   </head>
 
@@ -89,8 +91,6 @@
             </div>
 
           </section>
-
-
         </div>
 
         <section
@@ -98,49 +98,27 @@
           <h1 class="font-semibold uppercase text-md text-indigo-600">
             <span class="border-b-4 pb-1 border-double border-b-indigo-600 ">Upcoming Events</span>
           </h1>
-          <div
-               class="cards grid grid-cols-1 my-8 lg:my-0 gap-y-10 lg:gap-y-0 lg:grid-cols-3 w-full justify-center place-items-center ">
 
-            <div
-                 class="card bg-indigo-600 w-[300px] h-[480px] p-4 text-slate-100 rounded-md ease-in-out duration-300 hover:shadow-2xl hover:scale-110 flex flex-col justify-between gap-y-5  ">
-              <img src="../Images/xpression.jpg" alt="xpression" class="card-image w-full h-[210px] rounded-md">
-              <div class="card-body flex flex-col justify-evenly gap-y-4 text-sm grow">
-                <p class="card-title text-center font-semibold">Learning Mental Wellness</p>
-                <p>Xpression is UP’s biggest youth festival organized by ISKCON E.A.S.Y</p>
-                <span class="text-slate-400 font-semibold text-xs  ">Fri 7 Apr 2023
-                </span>
-                <a href="https://xpression.co.in/" target="_blank"
-                   class="font-semibold w-full bg-emerald-500 py-3 text-center uppercase tracking-widest ease-in-out duration-300 hover:bg-indigo-900 rounded-md">Book
-                  Tickets</a>
-              </div>
-            </div>
+          
 
-            <div
-                 class="card bg-indigo-600 w-[300px] h-[480px] p-4 text-slate-100 rounded-md ease-in-out duration-300 hover:shadow-2xl hover:scale-110 flex flex-col justify-between gap-y-5 ">
-              <img src="../Images/ramn.jpg" alt="ramn" class="card-image w-full h-[210px] rounded-md">
-              <div class="card-body flex flex-col justify-evenly gap-y-4 text-sm grow">
-                <p class="card-title  text-center font-semibold">Iskcon, Banglore</p>
-                <p>Sri Rama Navami</p>
-                <p class="text-slate-400 font-semibold text-xs ">Mar 30, 2023</p>
-                <a href="https://www.iskconbangalore.org/sri-rama-navami/" target="_blank"
-                   class="font-semibold w-full bg-emerald-500 py-3 text-center uppercase tracking-widest ease-in-out duration-300 hover:bg-indigo-900 rounded-md">Visit</a>
-              </div>
-            </div>
 
-            <div
-                 class="card bg-indigo-600 w-[300px] h-[480px] p-4 text-slate-100 rounded-md ease-in-out duration-300 hover:shadow-2xl hover:scale-110 flex flex-col justify-between gap-y-5 ">
-              <img src="../Images/krishna.jpeg" alt="krishna" class="card-image w-full h-[210px] rounded-md">
-              <div class="card-body flex flex-col justify-evenly gap-y-4 text-sm grow ">
-                <p class="card-title  text-center font-semibold">Vedic Cultural Centre, New Delhi</p>
-                <p>ISKCON Temple Delhi-Glory Of India & Vedic Cultural Centre,
-                  New Delhi</p>
-                <p class="text-slate-400 font-semibold text-xs ">March 28, 2023</p>
-                <a href="https://allevents.in/mobile/amp-event.php?event_id=10000514670141247" target="_blank"
-                   class="font-semibold w-full bg-emerald-500 py-3 text-center uppercase tracking-widest ease-in-out duration-300 hover:bg-indigo-900 rounded-md">Visit</a>
-              </div>
-            </div>
-
+          <!-- Iskcon cards data start -->
+          <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search by state">
+            <button id="search-button" class="font-semibold bg-emerald-500 py-3 text-center uppercase tracking-widest ease-in-out duration-300 hover:bg-indigo-900 rounded-md w-24 ">
+              Search
+            </button>
+            
           </div>
+          <div
+               class="cards my-8 lg:my-0 w-full justify-center place-items-center">
+               <div class="swiper-container">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+          </div>
+          <!-- Iskcon cards data end -->
         </section>
 
 
@@ -282,7 +260,23 @@
 
 
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../commonScript.js"></script>
+    <script src="./event.js"></script>
+
   </body>
+  <style>
+    .swiper-container {
+      margin-bottom: 20px; /* Add the desired gap (in pixels) between cards */
+    }
+    .card {
+      width: 340px; /* Adjust the width as needed */
+    }
+  
+    .card-image {
+      width: 100%; /* Set the image width to 100% of the card */
+    }
+  </style>
+  
 
 </html>

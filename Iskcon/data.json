@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "image": "../Images/Govardhan.jpeg",
+      "heading": "Govardhana Puja",
+      "description": "Govardhana Puja is a festival celebrating the Govardhana lila of Lord Krishna. On this day, Go-Puja is also performed as part of the festival.",
+      "date": "Tue 14th November 2023",
+      "btnText": "Book Tickets",
+      "link": "https://www.iskconbangalore.org/govardhana-puja/",
+      "state": "Bangalore"
+    },
+    {
+      "id": 2,
+      "image": "../Images/padmini.jpeg",
+      "heading": "Padmini Ekadashi",
+      "description": "The date of Padmini Ekadashi also comes only once every three years.",
+      "date": "Sat 29th July 2023",
+      "btnText": "Book Tickets",
+      "state": "Bangalore"
+    },
+    {
+      "id": 3,
+      "image": "../Images/krishna_iskcon.jpeg",
+      "heading": "Sri Krishna Janmashtami",
+      "description": "Sri Krishna Janmashtami (August 19, 2022) is the most important festival to celebrate the birth of Lord Krishna.",
+      "date": "Sun 6th September 2023",
+      "btnText": "Book Tickets",
+      "link": "https://www.iskconbangalore.org/sri-krishna-janmashtami/",
+      "state": "Mumbai"
+    },
+    {
+      "id": 4,
+      "image": "../Images/Jhulan.jpeg",
+      "heading": "Jhulan Utsava",
+      "description": "Jhulan utsava is celebrated for five days in the month of Shravana. Deities of Radha and Krishna are gently swayed on the swing.",
+      "date": "Sun 27th August 2023",
+      "btnText": "Book Tickets",
+      "link": "https://www.iskconbangalore.org/jhulan-utsava/",
+      "state": "Vellore"
+    },
+    {
+      "id": 5,
+      "image": "../Images/Gita_Jayanti.jpeg",
+      "heading": "Gita Jayanti Mahotsava",
+      "description": "Gita Jayanti is the auspicious day of the advent of Srimad Bhagavad-gita. This is the day on which Lord Krishna imparted the essence of Vedic.",
+      "date": "Sat 23rd December 2023",
+      "btnText": "Book Tickets",
+      "link": "https://www.iskconbangalore.org/gita-jayanti/",
+      "state": "Delhi"
+    }
+  ]
+  
