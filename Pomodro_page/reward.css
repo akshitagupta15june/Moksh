@@ -719,6 +719,7 @@ footer img{
 }
  */
 
+fix-issue-1191
  body {
   font-family: sans-serif;
   display: grid;
@@ -777,4 +778,7 @@ footer img{
   align-items: center;
   justify-content: center;
   font-size: 48px;
+}
+#footerline{
+  color: #CBD5E1;
 }
