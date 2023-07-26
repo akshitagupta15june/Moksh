@@ -37,64 +37,8 @@ body {
 .incorrect {
   color: red;
 }
-/* 
-.story-footer {
-  display: flex;
-  flex-direction: column;
-}
 
-.story-footer-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 5px 10px;
-}
-
-.story-footer-tagline {
-  width: 100%;
-  margin: 18px 0;
-}
-
-.story-footer-intro {
-  display: block;
-}
-
-.story-footer-sm-text {
-  margin-top: -22px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-.story-footer-text {
-  font-weight: 400;
-  color: #212529;
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-.story-footer-line-br {
-  border-top: 1px solid black;
-  margin: 0.4em;
-  width: 100%;
-}
-
-.story-footer-copyright {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-around;
-}
-
-.story-footer-copyright-text {
-  margin: 10px;
-  font-family: Arial, sans-serif;
-} */
 footer .logo {
-  /* background-color: #000000; */
   border-radius: 50%;
 }
 
@@ -214,19 +158,6 @@ footer .copyright a i{
   border-radius: 10px;
 }
 
-/* .bottom {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.bottom .img img {
-  gap: 5px;
-  width: 32vw;
-  border-radius: 10px;
-} */
-
-
 .quiz_btn {
   padding: 12px 22px;
   background: #a3caff;
@@ -243,11 +174,7 @@ footer .copyright a i{
   color: black;
   cursor: pointer;
 }
-/*
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
-}*/
+
 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234F46E5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
@@ -263,92 +190,6 @@ footer .copyright a i{
 
 }
 
-
-/* Footer Section */
-
-/* .footer {
-  width: 100vw;
-  height: 100%;
-  margin-top: 30px;
-  background-color: transparent;
-
-  border-top: 3px solid black;
-
-}
-
-.footer__section1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-
-.footer__section1 img {
-  margin-top: 20px;
-  width: 9rem;
-  object-fit: contain;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.footer__section1 p {
-  text-align: center;
-  font-size: 18px;
-}
-
-.footer__section2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.footer__section2-pages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 10px;
-}
-
-.footer__section2-pages a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
-}
-
-
-.footer__section2-logos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 10px;
-}
-
-.footer__section2-logos a {
-  color: #000;
-}
-
-.footer__section2-madeby {
-
-  margin-bottom: 5px;
-}
-
-.footer__section2-copyright {
-
-  text-align: center;
-  padding-bottom: 10px;
-  font-weight: 700;
-  font-size: 13px;
-
-  margin-bottom: 20px;
-} */
 * {
   margin: 0;
   padding: 0;
