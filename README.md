@@ -99,10 +99,17 @@ If there are any doubts, you can ask here on Discord. <br>Join your Discord serv
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Getting Started 💨
+
+
+## Getting Started 👩‍💻
+
+> ⚠️Prerequisites
+>
+> - Before getting into it, make sure you have live server installed.
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
 
 ### Installation
 
@@ -137,13 +144,35 @@ See the [open issues](https://github.com/akshitagupta15june/Moksh/issues) for a 
 2. Clone your forked repository
 
 ```sh
-$ git clone https://github.com/<your_github_username>/Moksh.git
+git clone https://github.com/<your_github_username>/Moksh.git
+```
+3. Now go ahead and create a new branch and move to the branch
+```sh
+git checkout -b fix-issue-<ISSUE-NUMBER>
+```
+4. After you have added your changes, follow the following command chain
+   Check the changed files
+```sh
+git status -s
 ```
 
-3. Make the required changes and stage them (`git add .`) or (`git add <file>`)
-4. Commit your Changes (`git commit -m 'Made xyz changes'`)
-5. Push to your branch (`git push -u origin main`)
-6. Open a Pull Request 
+5. Add all the files to the staging area
+```sh
+git add .
+```
+ or
+```sh
+git add <file_name1> <file_name2>
+```
+6. Commit your changes
+```sh
+git commit -m "<EXPLAIN-YOUR_CHANGES>"
+```
+7. Push your changes
+```sh
+git push origin fix-issue-<ISSUE-NUMBER>
+```
+8. Open a Pull Request 
 ## 👩‍💻 Project Admin
 
 <table>
@@ -186,57 +215,6 @@ $ git clone https://github.com/<your_github_username>/Moksh.git
                 </a>
             </td>
 </table>
-	
-	
-<h1>GSSOC'23 Issue TimeLine</h1>
-	
-	
-- Once an issue is assigned,the assignee is expected to submit a pr for review withing a week of the assignment. 
-	
-- If the assignee fails to comply with the deadline, the issue will be assigned to the next person who had who had requested to be assigned.
-	
-	
-
-<h1>GSSOC'23 Pointer System</h1>
-<h2> Level 1 - Documentation/Minor bug fix </h2>
-<h3> Points - 10 </h3>
-	
-	
-- Contributors can update existing documentation, write new documentation for features or code and improve the overall organisation and clarity of the projects documentation.  
-	
-	
-- Minor bug fixes refer to fixing small isolated issues in the codebase.  
-	
-	
-- Fixing issues such as typos, brokel links, or minor performance problems.
-	
-	
-- Bug fixes are an important part of maintaining stability of and reliability of of an open-source project and every bug fix, no matter how small, contributes to the overall health of the project. 
-	
-	
-
-	
-	
-<h2> Level 2 - Enhancement of existing features </h2>
-<h3> Points - 25 </h3>
-	
-	
--  Feature or enhancement contributions refer to adding new functionality to an open source project.  
-	
-- Contributors can add new features, improve existing features, or add new functionality to existing features.
-	
-
-	
-	
-	
-	
-<h2> Level 3 - Refactoring/ Adding functionalities </h2>
-<h3> Points - 45 </h3>
-	
-	
-- Core contributions, such as implementing major features or refactoring significant parts of the codebase. This needs a deep understanding of the codebase and its patterns.
-	
-	
 
 ## Thanks to all Moksh Contributors 💪
 
@@ -244,6 +222,10 @@ Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocki
 	 
 <p>
   <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Moksh/contributors?format=svg&limit=54" width="600" height"250" />
+</p>
+
+<p>
+  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/achievements?format=svg&limit=3" width="350" />
 </p>
 
 

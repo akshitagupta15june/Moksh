@@ -60,6 +60,7 @@ iframe {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+
 /* Footer CSS */
 footer {
   margin-top: 10px;
@@ -91,3 +92,4 @@ footer {
 .footer-socials ul:hover {
   transform: scale(1.1);
 }
+

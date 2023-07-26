@@ -17,19 +17,21 @@
 
     <!-- Site Menu Links  -->
     <div
-      class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen ">
-    </div>
+           class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen ">
+      </div>
 
-    <div class="contentWrapper h-full overflow-y-auto">
 
       <!-- Hero Section & Navbar  -->
       <div class="heroSection w-full h-auto lg:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg bg-gradient-to-r from-yellow-50 to-rose-100">
 
-        <!-- Navbar   -->
-        <div
-          class="navbar fixed top-0 h-20 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-40 items-center justify-between w-full left-0 ">
-        </div>
+      <div class="contentWrapper h-full overflow-y-auto">
 
+
+
+          <!-- Navbar   -->
+          <div
+               class="navbar fixed top-0 h-14 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-30 items-center justify-between w-full left-0  bg-gradient-to-r from-yellow-50 to-rose-100  " style="color: blue;">
+          </div>
         <section class="mt-20 py-4 w-full flex  flex-col ">
 
           <div class="pomodoro_container">
@@ -50,7 +52,7 @@
 
           <div class="pomodoro-timer">
             <button class="start">Start</button>
-            <div class="timer">
+            <div class="timer" id="app">
               <div class="time-left">25:00</div>
             </div>
             <button class="reset">Reset</button>
@@ -104,16 +106,16 @@
              class="mt-8 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
   
           <div class="mb-1 text-center lg:text-left">
-            <p class="capitalize text-[11px] font-semibold tracking-wider">Sign Up for our newsletter:</p>
-            <p>Get weekly updates regarding Moksh.</p>
+            <p class="capitalize text-[11px] font-semibold tracking-wider" id="footerline">Sign Up for our newsletter:</p>
+            <p class="updates">Get weekly updates regarding Moksh.</p>
           </div>
   
           <div class="newsLetter flex group ease-in-out duration-300">
-            <input type="email" name="email" id="" placeholder="your email"
-                   class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0">
-            <button
-                    class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600">Subscribe</button>
-          </div>
+              <input type="email" name="email" id="" placeholder="your email" class="bg-transparent subscribeInput  border-emerald-600  rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0" fdprocessedid="1vzvs">
+              <button class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600" fdprocessedid="hq0vgh">
+                Subscribe
+              </button>
+            </div>
   
         </div>
   
@@ -220,7 +222,7 @@
   
         <!-- Copyright  -->
         <div class="mt-8 copyRight flex items-center justify-center text-xs text-slate-300 flex-col">
-          <p class='text-center'>Made with ❤️ by Akshita during XPRESSION'23</p>
+          <p class='text-center' id="footerline">Made with ❤️ by Akshita during XPRESSION'23</p>
           <p class="text-indigo-900 font-bold">
             &copy; <span id="copyright-year"></span> Moksh. All rights reserved.
           </p>
@@ -229,6 +231,7 @@
       </footer>
     </div>
   </div>
+  <script src="scroll.js"></script>
   <script src="reward.js"></script>
 
   <script src="../commonScript.js"></script>
