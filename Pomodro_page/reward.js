@@ -57,6 +57,7 @@ function timerDisplay(seconds) {
 `;
 }
 
+
 function startTimer() {
   console.log('start button clicked!!!');
 
