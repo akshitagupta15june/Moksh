@@ -9,7 +9,16 @@ body {
 }
 /* Navbar CSS */
 .navbar {
-  background-color: white;
+  background-color: transparent; 
+  /* Existing styles for the navbar */
+}
+
+.navbar .nav-link {
+  color: white; 
+}
+
+.navbar .nav-link:hover {
+  color: #f8f8f8; 
 }
 
 iframe {
