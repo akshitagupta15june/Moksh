@@ -6,302 +6,397 @@
   <meta name="viewport" content="width=device-width">
   <title>Rejuvenate</title>
   <link href="../style.css" rel="stylesheet" type="text/css" />
-
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <link href="./rejuvenate.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <!-- <link rel="stylesheet" href="../event.css"> -->
   <!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Include Bootstrap JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Include Bootstrap JavaScript -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script> -->
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> 
   <link rel="stylesheet" href="/fontawesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
+  <link rel="stylesheet" href="../commonStyles.css" />
+  <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
 </head>
 
-<body>
+<body style="background-color:lightgoldenrodyellow">
+  <div class="blogWrapper h-screen overflow-hidden relative">
 
-  
-  <script src="script.js"></script>
-  <!-- Navbar Start-->
-
-  <div class="nav">
-    <!-- Nav Logo & Name -->
-    <div class="navbar-logo">
-      <img src="../Images/New_Logo.svg" alt="Moksh Logo" />
-      <a href="../index.html"><span>Moksh</span></a>
+    <!-- Site Menu Links  -->
+    <div
+      class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen ">
     </div>
 
-    <!-- Nav menu -->
-    <ul class="nav-menu">
-      <li>
-        <a href="../index.html">Home</a>
-      </li>
-      <li class="dropdown">
-        <a href="#"
-          >Features
-          <i class="fas fa-caret-down"></i>
-        </a>
-        <!-- Dropdown -->
-        <ul>
-          <li><a href="../AR_Meditate/meditation.html">Augmented Reality Meditation</a></li>
-          <li><a href="../Iskcon/event.html">Iskcon Events</a></li>
-          <li>
-            <a href="../Divine_page/story.html">Divine Activities for all Generation</a>
-          </li>
-          <li><a href="../Pomodro_page/reward.html">Pomodoro Spritual Break</a></li>
-          <li><a href="../shlok_page/motivation.html">Read a Shlok</a></li>
-          <li><a href="./rejuvenate.html">Rejuvenate</a></li>
-        </ul>
-      </li>
-    </ul>
-    <!-- Google Translate -->
-    <div id="google_translate_element">
-      <script
-        type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-      ></script>
-    </div>
-  </div>
-  <!-- Navbar Ends -->
+    <div class="contentWrapper h-full overflow-y-auto">
 
+      <!-- Hero Section & Navbar  -->
+      <div
+        class="heroSection w-full h-auto lg:h-[10vh] flex px-0 md:px-4 text-2xl sm:text-lg bg-gradient-to-r from-yellow-50 to-rose-100 ">
 
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <!-- Navbar Start-->
+        <div
+          class="navbar fixed top-0 h-14 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-30 items-center justify-between w-full left-0  bg-gradient-to-r from-yellow-50 to-rose-100 ">
+          
 
+          <div class="leftSection">
+            <a class="flex items-center" href="../index.html">
+              <img src="../Images/logoBgRemoved.webp" alt="Moksh Logo" class="w-12 h-12 hover:animate-spin ">
+              <span
+                class="ml-3 text-base lg:text-2xl uppercase font-semibold projectName tracking-widest ease-in-out duration-300 hover:text-indigo-600">Moksh</span>
+            </a>
 
+          </div>
 
+          <div class="rightSection pr-4">
 
-  <p>
-    <h1 align=center>"Inspirational shorts" to rejuvenate yourself for a productive day</h1>
-    </p>
-    <div align="center" class="media-scroller">
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/XTxbTO_-id4?feature=oembed" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/MYZPSptT98g?feature=oembed" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/93yZx3BVRyY?feature=oembed" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/E6Z6L8yAcrE?feature=oembed" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+            <div>
+              <ul class="hidden md:flex items-center gap-10 uppercase text-xs font-semibold tracking-wider ">
+                <li>
+                  <a href="../index.html"
+                    class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300  ">Home</a>
+                </li>
+                <li>
+                  <a href="../Blogs/Blog.html"
+                    class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300  ">Power
+                    of
+                    Knowledge Blogs </a>
+                </li>
 
-    <p>
-      <h1 align=center>"Inspirational Videos" of Gaur Gopal Das to lead a peaceful life</h1>
+                <li class="relative group">
+                  <a href="#"
+                    class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">
+                    <span>Features</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="ml-2 w-3 h-3 group-hover:rotate-180 ease-in-out group-hover:text-indigo-600 duration-300 ">
+                      <path fill-rule="evenodd"
+                        d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+
+                  </a>
+                  <div
+                    class="absolute hidden group-hover:flex bg-white text-indigo-600 p-4 w-80  shadow-2xl right-0 top-10 flex-col">
+                    <a href="../AR_Meditate/meditation.html"
+                      class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Augmented
+                      Reality
+                      Meditation</a>
+                    <a href="../Iskcon/event.html"
+                      class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300  ">Iskcon
+                      Events</a>
+                    <a href="../Divine_page/story.html"
+                      class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Divine
+                      Activities for all Generation</a>
+                    <a href="../Pomodro_page/reward.html"
+                      class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Pomodoro
+                      Spiritual Break</a>
+                    <a href="../shlok_page/motivation.html"
+                      class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300  ">Read
+                      a
+                      Shlok</a>
+                    <a href="../Rejuvenate_page/rejuvenate.html"
+                      class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Rejuvenate</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor"
+              class="indexOpenDropDown md:hidden h-6 w-6 text-indigo-600 cursor-pointer ease-in-out duration-300 hover:text-indigo-600">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <!-- Navbar Ends -->
+      </div>
+      <p class="para pt-20">
+      <h1 align=center>"Inspirational shorts" to rejuvenate yourself for a productive day</h1>
       </p>
       <div align="center" class="media-scroller">
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/YgeCHZfmx50" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/0eEq3hk4umc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/7VHyvyUeyfE" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/-hFrRLvvDTQ" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/1gSfL6DV-bc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-    
-      </div>
-  
-
-  <p>
-  <h1 align=center>Srila Prabhupada Stories</h1>
-  </p>
-
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div id="about" class="carousel-content">
-          <a class="float-left mr-3">
-            <div class="img-section">
-
-              <img src="../Images/eager.jpg" height="200" class="rounded">
-            </div>
-          </a>
-          <section>
-
-            <span>
-              <h2>The enthusiasm to have a glimpse of Krishna.</h2>
-            </span>
-            <!-- <button>Read more</button> -->
-            <p>
-              To see God, one must first have faith and be sincerely eager to experience His presence. This is not a
-              frivolous or magical desire, but a serious one. It is important to understand that if God exists, we must
-              seek Him out. There is a story that illustrates this point. A thief attended a public recitation of the
-              Srimad-Bhagavatam and became interested in the description of Krishna, who was said to be adorned with
-              valuable jewels while tending the cows in the forest. The thief decided to travel to Vrindavana to rob
-              Krishna of his jewels. However, his real qualification was his intense desire to see Krishna. This eagerness
-              led him to actually see Krishna, who played with him like a child. Through Krishna's association, the thief
-              was purified and became a devotee. Therefore, it is essential to somehow come into contact with Krishna,
-              which will lead to purification.
-            </p>
-          </section>
-       </div>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/XTxbTO_-id4?feature=oembed" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/MYZPSptT98g?feature=oembed" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/93yZx3BVRyY?feature=oembed" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/E6Z6L8yAcrE?feature=oembed" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
+      <p>
+      <h1 align=center>Srila Prabhupada Stories</h1>
+      </p>
 
-      <div class="carousel-item">
-        <div id="about" class="carousel-content">
-          <a class="float-left mr-3">
-            <div class="img-section">
-              <img src="../Images/thief.jpg" height="200" class="rounded" >
+      <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" /> -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="about" class="carousel-content">
+              <a class="float-left mr-3">
+                <div class="img-section">
+
+                  <img src="../Images/eager.jpg" height="200" class="rounded">
+                </div>
+              </a>
+
+              <section>
+
+                <span>
+                  <h2>The enthusiasm to have a glimpse of Krishna.</h2>
+                </span>
+                <!-- <button>Read more</button> -->
+                <p>
+                  To see God, one must first have faith and be sincerely eager to experience His presence. This is not
+                  a
+                  frivolous or magical desire, but a serious one. It is important to understand that if God exists, we
+                  must
+                  seek Him out. There is a story that illustrates this point. A thief attended a public recitation of
+                  the
+                  Srimad-Bhagavatam and became interested in the description of Krishna, who was said to be adorned
+                  with
+                  valuable jewels while tending the cows in the forest. The thief decided to travel to Vrindavana to
+                  rob
+                  Krishna of his jewels. However, his real qualification was his intense desire to see Krishna. This
+                  eagerness
+                  led him to actually see Krishna, who played with him like a child. Through Krishna's association,
+                  the
+                  thief
+                  was purified and became a devotee. Therefore, it is essential to somehow come into contact with
+                  Krishna,
+                  which will lead to purification.
+                </p>
+              </section>
             </div>
-            
-          </a>
-          <section>
+          </div>
 
-            <span>
-              <h2>The Thief and the Householder's Prayers</h2>
-            </span>
-            
-            <!-- <button>Read more</button> -->
-            <p>
-              It is a fact that nothing can be achieved without God's sanction. However, it is important to understand the
-              nature of this sanction. God is the creator and everything exists within Him. Therefore, it is necessary for
-              Him to give sanction. There is a story that illustrates this point. A thief prays to God to give him the
-              opportunity to steal from a particular house, while the homeowner prays for protection. God, being
-              intelligent, is able to please both of them. He can give the thief the opportunity to steal while also
-              protecting the homeowner's property. This is because both of them are praying and God must deal with their
-              petitions. This is the position of God, who is situated in the hearts of all beings. Therefore, it is
-              important to understand that everything happens according to God's will and we should always pray to Him for
-              guidance and protection. Hare Krishna.
-            </p>
-          </section>
+
+          <div class="carousel-item">
+            <div id="about" class="carousel-content">
+              <a class="float-left mr-3">
+                <div class="img-section">
+                  <img src="../Images/thief.jpg" height="200" class="rounded">
+                </div>
+
+              </a>
+              <section>
+
+                <span>
+                  <h2>The Thief and the Householder's Prayers</h2>
+                </span>
+
+                <!-- <button>Read more</button> -->
+                <p>
+                  It is a fact that nothing can be achieved without God's sanction. However, it is important to
+                  understand
+                  the
+                  nature of this sanction. God is the creator and everything exists within Him. Therefore, it is
+                  necessary
+                  for
+                  Him to give sanction. There is a story that illustrates this point. A thief prays to God to give him
+                  the
+                  opportunity to steal from a particular house, while the homeowner prays for protection. God, being
+                  intelligent, is able to please both of them. He can give the thief the opportunity to steal while
+                  also
+                  protecting the homeowner's property. This is because both of them are praying and God must deal with
+                  their
+                  petitions. This is the position of God, who is situated in the hearts of all beings. Therefore, it
+                  is
+                  important to understand that everything happens according to God's will and we should always pray to
+                  Him
+                  for
+                  guidance and protection. Hare Krishna.
+                </p>
+              </section>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div id="about" class="carousel-content">
+              <a class="float-left mr-3">
+                <div class="img-section">
+                  <img src="../Images/yogi.webp" height="200" class="rounded">
+                </div>
+
+              </a>
+              <section>
+
+                <span>
+                  <h2>The Yogi who could Walk on Water</h2>
+                </span>
+                <p>
+                  This is not a fictional tale, but a true incident. Once, a man left his village and returned after
+                  ten
+                  years, boasting that he had achieved success in yoga. The villagers were curious and asked him what
+                  yoga
+                  practice he had learned. He claimed that he could walk on water. This statement attracted a large
+                  crowd,
+                  as
+                  it would even today if someone made such a claim.
+
+                  When it was time for him to demonstrate his ability to walk on water, an old man approached him and
+                  said,
+                  "Sir, it's worth only two paisa." The yogi was puzzled and asked why. The old man explained that he
+                  could
+                  simply take a boat across the river for the same price, so there was no real value in walking on
+                  water.
+                </p>
+              </section>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div id="about" class="carousel-content">
+              <a class="float-left mr-3">
+                <div class="img-section">
+                  <img src="../Images/godar.webp" height="200" class="rounded">
+                </div>
+
+              </a>
+              <section>
+
+                <span>
+                  <h2>The Old Lady and the Weekly Market: Trusting in God's Arrangements</h2>
+                </span>
+                <p>
+                  Fair events also take place in Western countries, some in counties and some in villages. In India,
+                  weekly
+                  bazaars called hatta are held where salesmen gather with their goods and many buyers assemble, much
+                  like
+                  in
+                  a marketplace. Thousands of people gather in these weekly markets, and one day an old lady from the
+                  village
+                  began to cry because she was worried about how she would accommodate all these people who needed a
+                  place
+                  to
+                  sleep at night. Her son reassured her that everything would be arranged, but she continued to worry.
+                  Later
+                  that evening, her son showed her that all the people had been accommodated and provided with a place
+                  to
+                  sleep and eat. Just like this, even though there may be millions of living beings, God has made
+                  arrangements
+                  for their well-being.
+                </p>
+              </section>
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
 
 
-      <div class="carousel-item">
-        <div id="about" class="carousel-content">
-          <a class="float-left mr-3">
-            <div class="img-section">
-              <img src="../Images/yogi.webp" height="200" class="rounded">
-            </div>
-            
-          </a>
-          <section>
+      <p>
+      <h1 align=center>Bhagavad Gita Playlist</h1>
+      </p>
+      <div align="center" class="media-scroller">
+        1.<iframe width="420" height="315" src="https://www.youtube.com/embed/9kckxCiyD9I" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        2.<iframe width="420" height="315" src="https://www.youtube.com/embed/oJBmMkI3oRQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        3.<iframe width="420" height="315" src="https://www.youtube.com/embed/747_KYaFAfw" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        4.<iframe width="420" height="315" src="https://www.youtube.com/embed/xwSCskfuafQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        5.<iframe width="420" height="315" src="https://www.youtube.com/embed/eune8VYDhlc" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        6.<iframe width="420" height="315" src="https://www.youtube.com/embed/ZE6pPdec_b0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        7.<iframe width="420" height="315" src="https://www.youtube.com/embed/ciiwUJUebAg" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        8.<iframe width="420" height="315" src="https://www.youtube.com/embed/DzOlI-touYA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        9.<iframe width="420" height="315" src="https://www.youtube.com/embed/RyWhaFtpFeo" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        10.<iframe width="420" height="315" src="https://www.youtube.com/embed/cnA2xoUV1w8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        11.<iframe width="420" height="315" src="https://www.youtube.com/embed/PVeylyONQgc" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        12.<iframe width="420" height="315" src="https://www.youtube.com/embed/sZ5rZRBzCW8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        13.<iframe width="420" height="315" src="https://www.youtube.com/embed/05h7CANq7Ms" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        14.<iframe width="420" height="315" src="https://www.youtube.com/embed/6hti0KgJSLk" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        15.<iframe width="420" height="315" src="https://www.youtube.com/embed/j-AuxtlXYeE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        16.<iframe width="420" height="315" src="https://www.youtube.com/embed/xf2LFDUhbgU" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        17.<iframe width="420" height="315" src="https://www.youtube.com/embed/uu6o6YGC_ww" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        18.<iframe width="420" height="315" src="https://www.youtube.com/embed/fU-HVVMu4rw" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
 
-            <span>
-              <h2>The Yogi who could Walk on Water</h2>
-            </span>
-            <!-- <button>Read More</button> -->
-            <p>
-              This is not a fictional tale, but a true incident. Once, a man left his village and returned after ten
-              years, boasting that he had achieved success in yoga. The villagers were curious and asked him what yoga
-              practice he had learned. He claimed that he could walk on water. This statement attracted a large crowd, as
-              it would even today if someone made such a claim.
-  
-              When it was time for him to demonstrate his ability to walk on water, an old man approached him and said,
-              "Sir, it's worth only two paisa." The yogi was puzzled and asked why. The old man explained that he could
-              simply take a boat across the river for the same price, so there was no real value in walking on water.
-            </p>
-          </section>
-        </div>
       </div>
 
 
-      <div class="carousel-item">
-        <div id="about" class="carousel-content">
-          <a class="float-left mr-3">
-            <div class="img-section">
-              <img src="../Images/godar.webp" height="200" class="rounded">
-            </div>
-            
-          </a>
-          <section>
 
-            <span>
-              <h2>The Old Lady and the Weekly Market: Trusting in God's Arrangements</h2>
-            </span>
-            <!-- <button>Read More</button> -->
-            <p>
-              Fair events also take place in Western countries, some in counties and some in villages. In India, weekly
-              bazaars called hatta are held where salesmen gather with their goods and many buyers assemble, much like in
-              a marketplace. Thousands of people gather in these weekly markets, and one day an old lady from the village
-              began to cry because she was worried about how she would accommodate all these people who needed a place to
-              sleep at night. Her son reassured her that everything would be arranged, but she continued to worry. Later
-              that evening, her son showed her that all the people had been accommodated and provided with a place to
-              sleep and eat. Just like this, even though there may be millions of living beings, God has made arrangements
-              for their well-being.
-            </p>
-          </section>
-        </div>
-      </div>
+      <!-- Footer  -->
+      <footer class="customFooter bg-slate-900 py-0.5 px-8 lg:px-24 flex flex-col"></footer>
+
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-  <footer style="padding:5px 10px;">
-    <div class="logo-title">
-      <img class='logo' src="../Images/moksh.png" alt="Moksh Logo"
-        style="height: 60px;width:60px; margin-right: 10px; filter: invert(84%) sepia(28%) saturate(30%) hue-rotate(195deg) brightness(97%) contrast(99%);" />
-  
-      <h3 class="title" style="font-size: 28px; text-align: end; color: #fff; margin-top:12px">Moksh</h3>
-    </div>
-    <div class="tagline">
-      <p style="font-size: 18px; text-align: center; color: #fff; margin-top: 20px;">A Spiritual Productivity Tool for Mental Wellness</p>
-    </div>
-    <div class="intro">
-
-      <p style="text-align:center;color: #fff;">Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life. </p>
-    </div>
-  
-    </div>
-
-
-    <div class="copyright" style="display:flex; justify-content:space-around">
-      <p style=" font-size: 14px; text-align: center; margin-top: 10px;">Made with ❤️ by Akshita during XPRESSION'23</p>
-      <p style=" font-size: 14px; text-align: center; margin-top: 10px;">&copy; 2023 Moksh. All rights reserved.</p>
-    </div>
-  </footer>
-
-
-  <script src="story.js">
-    var slider=document.getElementById("slider1")
-    var btn1=document.getElementById("btn1")
-    var btn2=document.getElementById("btn1")
-    var btn3=document.getElementById("btn1")
-    var btn4=document.getElementById("btn1")
-
-    btn1.onclick=function(){
-      slide.style.transform="translateX(0px)";
-    }
-
-    btn2.onclick=function(){
-      slide.style.transform="translateX(-100px)";
-    }
-
-    btn3.onclick=function(){
-      slide.style.transform="translateX(-200px)";
-    }
-
-    btn4.onclick=function(){
-      slide.style.transform="translateX(-300px)";
-    }
-  </script>
+    <script src="./rejuvenate.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="../commonScript.js"></script>
 
 </body>
 
