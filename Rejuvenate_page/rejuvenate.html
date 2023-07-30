@@ -85,6 +85,15 @@
         </div>
       
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Add integrity attribute to jQuery script tag -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-your-computed-hash" crossorigin="anonymous"></script>
+
+<!-- Add integrity attribute to Bootstrap JavaScript script tag -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-your-computed-hash" crossorigin="anonymous"></script>
+
+<!-- Add integrity attribute to Bootstrap bundle script tag -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha256-your-computed-hash" crossorigin="anonymous"></script>
+
         <script>
           $(document).ready(() => {
             $.getJSON("carouselData.json", function (data) {
