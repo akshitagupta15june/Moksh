@@ -7,7 +7,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
- 
+/* Navbar CSS */
+.navbar {
+  background-color: white; 
+  /* Existing styles for the navbar */
+}
+
 iframe {
   min-height: 100% !important;
 }
