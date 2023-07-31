@@ -67,6 +67,9 @@ body {
   display: inline-block;
   transform: translateX(-70%);
 
+  padding-top: 1rem!important;
+
+
 }
 
 .media-scroller {
