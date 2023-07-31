@@ -156,7 +156,7 @@ git checkout -b fix-issue-<ISSUE-NUMBER>
 git status -s
 ```
 
-  * Add all the files to the staging area
+5. Add all the files to the staging area
 ```sh
 git add .
 ```
@@ -164,15 +164,15 @@ git add .
 ```sh
 git add <file_name1> <file_name2>
 ```
-5. Commit your changes
+6. Commit your changes
 ```sh
 git commit -m "<EXPLAIN-YOUR_CHANGES>"
 ```
-6. Push your changes
+7. Push your changes
 ```sh
 git push origin fix-issue-<ISSUE-NUMBER>
 ```
-7. Open a Pull Request 
+8. Open a Pull Request 
 ## 👩‍💻 Project Admin
 
 <table>
@@ -215,57 +215,6 @@ git push origin fix-issue-<ISSUE-NUMBER>
                 </a>
             </td>
 </table>
-	
-	
-<h1>GSSOC'23 Issue TimeLine</h1>
-	
-	
-- Once an issue is assigned,the assignee is expected to submit a pr for review within a week of the assignment. 
-	
-- If the assignee fails to comply with the deadline, the issue will be assigned to the next person who had who had requested to be assigned.
-	
-	
-
-<h1>GSSOC'23 Pointer System</h1>
-<h2> Level 1 - Documentation/Minor bug fix </h2>
-<h3> Points - 10 </h3>
-	
-	
-- Contributors can update existing documentation, write new documentation for features or code and improve the overall organisation and clarity of the projects documentation.  
-	
-	
-- Minor bug fixes refer to fixing small isolated issues in the codebase.  
-	
-	
-- Fixing issues such as typos, brokel links, or minor performance problems.
-	
-	
-- Bug fixes are an important part of maintaining stability of and reliability of of an open-source project and every bug fix, no matter how small, contributes to the overall health of the project. 
-	
-	
-
-	
-	
-<h2> Level 2 - Enhancement of existing features </h2>
-<h3> Points - 25 </h3>
-	
-	
--  Feature or enhancement contributions refer to adding new functionality to an open source project.  
-	
-- Contributors can add new features, improve existing features, or add new functionality to existing features.
-	
-
-	
-	
-	
-	
-<h2> Level 3 - Refactoring/ Adding functionalities </h2>
-<h3> Points - 45 </h3>
-	
-	
-- Core contributions, such as implementing major features or refactoring significant parts of the codebase. This needs a deep understanding of the codebase and its patterns.
-	
-	
 
 ## Thanks to all Moksh Contributors 💪
 
@@ -273,6 +222,10 @@ Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocki
 	 
 <p>
   <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Moksh/contributors?format=svg&limit=54" width="600" height"250" />
+</p>
+
+<p>
+  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/achievements?format=svg&limit=3" width="350" />
 </p>
 
 

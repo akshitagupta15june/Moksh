@@ -8,7 +8,6 @@
 html,
 body {
   overflow: auto;
-  /* background-color: #ffe4e6; */
 }
 
 body::-webkit-scrollbar {
