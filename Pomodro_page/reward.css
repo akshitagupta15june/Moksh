@@ -279,9 +279,10 @@ button:hover {
   font-size: 1.2rem;
 }
 
-
-
-
+.container-header{
+  margin: 100px auto 100px auto; 
+  padding: 50px;
+}
 
 /* footer .logo {
   border-radius: 50%;
