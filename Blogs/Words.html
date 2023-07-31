@@ -70,7 +70,7 @@
             </a>
           </div>
           <div class="title px-3 flex flex-col items-center w-full">
-            <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold">
+            <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold titleBlog">
               <span class="pb-1 border-double border-b-4 border-b-indigo-600"
                 >Words</span
               >
@@ -117,10 +117,11 @@
               </a>
 
               <a
-                href="#"
+                href="./Words.html"
                 title="Download"
                 id="download"
-                onclick="convertToPDF( )"
+                onclick="generateAndDownloadPDF()"    
+                download
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -493,18 +494,6 @@
       }
     </script>
     <script>
-      function convertToPDF() {
-        const element = document.getElementById("html2pdf");
-        const options = {
-          margin: 10,
-          filename: "webpage.pdf",
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-        };
-        html2pdf().set(options).from(element).save();
-      }
-
       function initiatePrint ()
       {
         window.print()
@@ -530,5 +519,8 @@
 
     <script src="./blogs.js"></script>
     <script src="../commonScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="./download.js"></script>
   </body>
 </html>

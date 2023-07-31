@@ -1,7 +1,6 @@
-
 <!doctype html>
 <html>
-  
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +46,7 @@
                             height="50px" width="50px" class="image1"> </a></div>
                 <div class="title px-3 flex flex-col items-center w-full">
 
-                    <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold ">
+                    <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold titleBlog ">
                         <span class="pb-1 border-double border-b-4 border-b-indigo-600">Life</span>
                     </h1>
 
@@ -75,7 +74,7 @@
                             </svg>
                         </a>
 
-                        <a href="#" title="Download">
+                        <a href="./life.html" title="Download" onclick="generateAndDownloadPDF()" download>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor"
                                 class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
@@ -529,6 +528,10 @@
     <script src="./blogs.js"></script>
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <script src="../commonScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="./download.js"></script>
 
 </body>
+
 </html>
