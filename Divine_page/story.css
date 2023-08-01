@@ -38,6 +38,52 @@ body {
   color: red;
 }
 
+.story-footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.story-footer-tagline {
+  width: 100%;
+  margin: 18px 0;
+}
+
+.story-footer-intro {
+  display: block;
+}
+
+.story-footer-sm-text {
+  margin-top: -22px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.story-footer-text {
+  font-weight: 400;
+  color: #212529;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.story-footer-line-br {
+  border-top: 1px solid black;
+  margin: 0.4em;
+  width: 100%;
+}
+
+.story-footer-copyright {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
 footer .logo {
   border-radius: 50%;
 }
@@ -159,21 +205,86 @@ footer .copyright a i{
 }
 
 .quiz_btn {
+  /* Existing styles */
   padding: 12px 22px;
-  background: #a3caff;
-  font-size: 1.2rem;
+  background: transparent;
+  border: 3px solid; /* Increased border width */
+  border-radius: 12px; /* Larger border radius */
+  font: inherit;
+  font-size: 1.4rem; /* Larger font size */
   color: #212529;
-  border: none;
   outline: none;
-  border-radius: 10px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, font-size 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
 }
 
 .quiz_btn:hover {
-  background: #3facf4;
-  color: black;
-  cursor: pointer;
+  border: 4px solid #1fc7a0; /* Match border color to the background on hover */
+  transform: translateY(-8px); /* Increased upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+  font-size: 1.6rem; /* Larger font size on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* More noticeable text shadow */
+  animation: pulse 1s infinite; /* Add pulse animation on hover */
 }
+
+.quiz_btn span {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.quiz_btn:hover span {
+  transform: rotateY(180deg);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Increased scaling */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+.quiz_btn span {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.quiz_btn:hover span {
+  transform: rotateY(180deg);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Increased scaling */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
 
 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234F46E5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
