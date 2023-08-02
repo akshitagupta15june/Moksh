@@ -191,6 +191,13 @@ iframe {
 }
 
 
+.video-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}
+
+
 @media (max-width: 620px) {
   .media-scroller {
     grid-auto-columns: 100%;
