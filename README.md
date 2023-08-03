@@ -116,7 +116,7 @@ To get a local copy up and running follow these simple example steps.
 1. Clone the repo
 
 ```sh
-$ git clone https://github.com/akshitagupta15june/Moksh.git
+ git clone https://github.com/akshitagupta15june/Moksh.git
 ```
 
 2. Open the **index.html** file
