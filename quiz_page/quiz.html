@@ -1,61 +1,29 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhagwad Gita Quiz</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="./quiz.css">
     <link href="../style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="icon" type="image/x-icon" href="Images/moksh.jpeg">
+    <link rel="stylesheet" href="../commonStyles.css">
 </head>
 <body>
-      <!-- Navbar -->
-      <div class="nav">
-        <!-- Nav Logo & Name --> 
-        <div class="navbar-logo">
-          <img src="../Images/New_Logo.svg" alt="Moksh Logo" />
-          <a href="../index.html"><span>Moksh</span></a>
-        </div>
-  
-        <!-- Nav menu -->
-        <ul class="nav-menu">
-          <li>
-            <a class="active" href="../index.html">Home</a>
-          </li>
-          <li>
-            <a class="active" href="../Blogs/Blog.html">Blog</a>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              >Features
-              <i class="fas fa-caret-down"></i>
-            </a>
-            <!-- Dropdown -->
-            <ul style="list-style: none;" >
-              <li><a href="../AR_Meditate/meditation.html">Augmented Reality Meditation</a></li>
-              <li><a href="../Iskcon/event.html">Iskcon Events</a></li>
-              <li>
-                <a href="../Divine_page/story.html">Divine Activities for all Generation</a>
-              </li>
-              <li><a href="../Pomodro_page/reward.html">Pomodoro Spritual Break</a></li>
-              <li><a href="../shlok_page/motivation.html">Read a Shlok</a></li>
-              <li><a href="../Rejuvenate_page/rejuvenate.html">Rejuvenate</a></li>
-            </ul>
-          </li>
-        </ul>
-        <!-- Google Translate -->
-        <div id="google_translate_element">
-          <script
-            type="text/javascript"
-            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          ></script>
-        </div>
-      </div>
-  
-    
+  <div class="blogWrapper h-screen overflow-hidden relative">
+    <div
+      class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen ">
+    </div>
+    <div class="contentWrapper h-full overflow-y-auto">
+  <div class="heroSection w-full h-auto lg:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg bg-gradient-to-r from-yellow-50 to-rose-100 "> 
+    <!-- Navbar   -->
+    <div
+      class="navbar fixed top-0 h-14 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-30 items-center justify-between w-full left-0  bg-gradient-to-r from-yellow-50 to-rose-100  ">
+    </div>
+     
     <div class="start_btn"><button>Start Bhagwad Gita Quiz</button></div>
     
     <div class="info_box">
@@ -116,8 +84,12 @@
             <button class="quit">Quit Quiz</button>
         </div>
     </div>
+  </div>
+  </div>
+</div>
   
     <script src="../question.js"></script>
+    <script src="../commonScript.js"></script>
     
     <script src="./quiz.js"></script>
 </body>

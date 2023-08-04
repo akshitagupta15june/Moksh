@@ -7,10 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #2980B9;
-    background-image: url("https://t4.ftcdn.net/jpg/00/81/27/35/360_F_81273592_SCPKoalnhA1V4dPaMds8Q70q352NH7ua.jpg");
     background-repeat: no-repeat;
-  background-size:cover;
+    background-size:cover;
+    background-image: linear-gradient(to right, #fefce8, #ffe4e6);
 } 
 ::selection{
     color: #2980B9;

@@ -37,11 +37,6 @@ body {
 .incorrect {
   color: red;
 }
-/* 
-.story-footer {
-  display: flex;
-  flex-direction: column;
-}
 
 .story-footer-title {
   display: flex;
@@ -89,12 +84,7 @@ body {
   justify-content: space-around;
 }
 
-.story-footer-copyright-text {
-  margin: 10px;
-  font-family: Arial, sans-serif;
-} */
 footer .logo {
-  /* background-color: #000000; */
   border-radius: 50%;
 }
 
@@ -214,36 +204,94 @@ footer .copyright a i{
   border-radius: 10px;
 }
 
-/* .bottom {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.bottom .img img {
-  gap: 5px;
-  width: 32vw;
-  border-radius: 10px;
-} */
-
-
 .quiz_btn {
+  /* Existing styles */
   padding: 12px 22px;
-  background: #a3caff;
-  font-size: 1.2rem;
+  background: transparent;
+  border: 3px solid; /* Increased border width */
+  border-radius: 12px; /* Larger border radius */
+  font: inherit;
+  font-size: 1.4rem; /* Larger font size */
   color: #212529;
-  border: none;
   outline: none;
-  border-radius: 10px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, font-size 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
 }
 
 .quiz_btn:hover {
-  background: #3facf4;
-  color: black;
-  cursor: pointer;
+  border: 4px solid #1fc7a0; /* Match border color to the background on hover */
+  transform: translateY(-8px); /* Increased upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+  font-size: 1.6rem; /* Larger font size on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* More noticeable text shadow */
+  animation: pulse 1s infinite; /* Add pulse animation on hover */
 }
 
+.quiz_btn span {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.quiz_btn:hover span {
+  transform: rotateY(180deg);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Increased scaling */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+.quiz_btn span {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.quiz_btn:hover span {
+  transform: rotateY(180deg);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Increased scaling */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234F46E5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234F46E5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 .carousel-item img.d-block.w-100 {
   max-width: 45%;
   height: auto;
@@ -253,92 +301,6 @@ footer .copyright a i{
 
 }
 
-
-/* Footer Section */
-
-/* .footer {
-  width: 100vw;
-  height: 100%;
-  margin-top: 30px;
-  background-color: transparent;
-
-  border-top: 3px solid black;
-
-}
-
-.footer__section1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-
-.footer__section1 img {
-  margin-top: 20px;
-  width: 9rem;
-  object-fit: contain;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.footer__section1 p {
-  text-align: center;
-  font-size: 18px;
-}
-
-.footer__section2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.footer__section2-pages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 10px;
-}
-
-.footer__section2-pages a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
-}
-
-
-.footer__section2-logos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 10px;
-}
-
-.footer__section2-logos a {
-  color: #000;
-}
-
-.footer__section2-madeby {
-
-  margin-bottom: 5px;
-}
-
-.footer__section2-copyright {
-
-  text-align: center;
-  padding-bottom: 10px;
-  font-weight: 700;
-  font-size: 13px;
-
-  margin-bottom: 20px;
-} */
 * {
   margin: 0;
   padding: 0;

@@ -32,18 +32,6 @@
 
       <!-- Row - 2  -->
       <div class="">
-
-        <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
-           href="./index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-               class="h-3 w-3 group-hover:text-indigo-600">
-            <path fill-rule="evenodd"
-                  d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
-                  clip-rule="evenodd" />
-          </svg>
-          <span class="text-md p-3 group-hover:text-indigo-600">Home</span>
-        </a>
-
         <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
            href="#mental">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -133,7 +121,16 @@
               </svg>
               <span class="text-sm p-3 group-hover:text-indigo-600">Read a Shlok</span>
             </a>
-
+            <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
+               href="./Gita-Storyline/storyline.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                   class="h-3 w-3 group-hover:text-indigo-600">
+                <path fill-rule="evenodd"
+                      d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                      clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm p-3 group-hover:text-indigo-600">Gita StoryLine</span>
+            </a>
             <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 "
                href="./Rejuvenate_page/rejuvenate.html">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -218,6 +215,8 @@
                        class="relative pt-5 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Read
                       a
                       Shlok</a>
+                      <a href="./Gita-Storyline/storyline.html"
+                       class="relative pt-5 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Gita StoryLine</a>
                     <a href="Rejuvenate_page/rejuvenate.html"
                        class="relative pt-5 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Rejuvenate</a>
                   </div>
@@ -273,16 +272,11 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen="" class="h-[400px] w-full my-12 lg:mx-auto"></iframe>
           <!-- <p class="text-justify px-1 font-base text-lg font-serif mb-6"> -->
-          <p class="text-base leading-8 text-center font-semibold mb-10">
-            There are numerous mental problems affecting the people in modern
-            society, including fear, false egos, anxiety, comparisons,
-            competitions, peer pressure and stressful work environment. Mental
-            health issues can lead to physical discomforts such as headaches,
-            stomach aches, difficulty sleeping, irritability, and inability to
-            focus. If left unaddressed, chronic stress can exacerbate these
-            symptoms and give rise to more severe health concerns, including
-            anxiety, hypertension, and reduced immunity.
-          </p>
+          <div style="text-align: center;">
+           <p class="text-base leading-8 text-center font-semibold mb-10">
+           There are numerous mental problems affecting the people in modern society, including fear, false egos, anxiety, comparisons, competitions, peer pressure, and a stressful work environment. Mental health issues can lead to physical discomforts such as headaches, stomach aches, difficulty sleeping, irritability, and an inability to focus. If left unaddressed, chronic stress can exacerbate these symptoms and give rise to more severe health concerns, including anxiety, hypertension, and reduced immunity.
+           </p>
+          </div>
         </div>
 
         <!-- Moksh Features  -->
@@ -489,6 +483,15 @@
           <!-- NewsLetter  -->
           <div
                class="mt-8 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
+               <!-- Scroll to top -->
+               <div class="md:pr-8">
+                    
+                <button id="bttbutton" title="backtotop">
+                  <img src="image.svg" class="w-6 md:w-10 md:object-left"/>
+                </button>
+                
+            </div>
+          <!-- Scroll to top -->
 
             <div class="mb-1 text-center lg:text-left w-1/2">
               <p class="capitalize text-[11px] font-semibold tracking-wider">Sign Up for our newsletter:</p>
@@ -620,7 +623,7 @@
 
     </div>
   </div>
-
+  <script src="./scrollUp.js"></script>
   <script src="./script.js"></script>
   <!-- Copyright Year js file -->
   <script src="./copyrightYear.js"></script>

@@ -4,7 +4,6 @@
 body{
 margin: 0;
 padding: 0;
-/* background-color: #000; */
 background-image: url("image4.jpg");
 background-size: cover;
 overflow: hidden;
@@ -32,18 +31,16 @@ overflow-y: hidden;
     }
 }
 
-@media (max-width: 200px) {
+@media screen and (max-width: 540px) {
     .milky-way {
         background: #000 url(https://cdn.spacetelescope.org/archives/images/screen/heic0602a.jpg) no-repeat center center /cover;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        border-radius: 50%;
+        width: 100vw;
+        height: 60vh;
+        margin: 170px auto auto;
+        border-radius: 66%;
         box-shadow: inset 0 0 40px #000, inset 0 0 40px #000;
         transform: rotateX(-50deg);
         animation: animate 60s linear infinite;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }
