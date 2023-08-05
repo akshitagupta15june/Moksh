@@ -1,6 +1,6 @@
-*{
+* {
     box-sizing: border-box;
-}
+  }
 body{
 margin: 0;
 padding: 0;
@@ -44,3 +44,75 @@ overflow-y: hidden;
         position: relative;
     }
 }
+
+
+#left-arrow, #right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+}
+
+
+#left-arrow,
+#right-arrow {
+  position: absolute;
+  top: calc(50% + 16%);
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#left-arrow {
+  left: calc(20px + 10%);
+}
+
+#right-arrow {
+  right: calc(20px + 10%);
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#arjuna-image {
+
+    z-index: 2;
+    position: absolute;
+    top: calc(50% + 24%);
+    left: calc(50% - 20%);
+    transform: translateY(-50%);
+}
+
+
+#krishna-image {
+    z-index: 2;
+    position: absolute;
+    top: calc(50% + 19%);
+    left: calc(50% + 4%);
+    transform: translateY(-50%);
+}
+/* ... (existing CSS rules above) ... */
+
+/* Styles for the conversation boxes */
+.conversation-box {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    z-index: 3;
+  }
