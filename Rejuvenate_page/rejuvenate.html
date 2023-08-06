@@ -119,17 +119,19 @@
       <p class="para pt-20">
       <h1 align=center>"Inspirational shorts" to rejuvenate yourself for a productive day</h1>
       </p>
-      <div class="video-container">
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/XTxbTO_-id4?feature=oembed" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/MYZPSptT98g?feature=oembed" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/93yZx3BVRyY?feature=oembed" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/E6Z6L8yAcrE?feature=oembed" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video-carousel-container">
+        <div class="video-carousel carousel slide" data-bs-ride="carousel" id="videoCarousel">
+          <div class="carousel-inner"></div>
+          <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-      
       <p>
       <h1 align=center>Srila Prabhupada Stories</h1>
       </p>
@@ -210,6 +212,24 @@
             $.getJSON("videos.json", function (data) {
               videosData = data;
               renderVideos();
+            });
+          });
+
+          $(document).ready(() => {
+            $.getJSON("videoData.json", function (data) {
+              const videoCarousel = $("#videoCarousel .carousel-inner");
+              data.forEach((item, index) => {
+                const activeClass = index === 0 ? "active" : "";
+                const videoItem = `
+                  <div class="carousel-item ${activeClass}">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <iframe width="420" height="315" src="${item.url}" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                `;
+                videoCarousel.append(videoItem);
+              });
             });
           });
         </script>
