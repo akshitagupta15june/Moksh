@@ -50,7 +50,7 @@ https://github.com/Pratik-11/Moksh/assets/72139212/9a1cad69-7829-4d2b-94e8-9eadb
   <img src="Images/ego.png" width="150"/>
 </p>
 
-There are numerous mental problems affecting the people in modern society, including fear, false egos, anxiety, comparisons, competitions, peer pressure and stressful work environment. Mental health issues can lead to physical discomforts such as headaches, stomach aches, difficulty sleeping, irritability, and inability to focus. If left unaddressed, chronic stress can exacerbate these symptoms and give rise to more severe health concerns, including anxiety, hypertension, and reduced immunity.
+There are numerous mental problems affecting people in modern society, including fear, false egos, anxiety, comparisons, competition, peer pressure and stressful work environment. Mental health issues can lead to physical discomforts such as headaches, stomach aches, difficulty sleeping, irritability, and inability to focus. If left unaddressed, chronic stress can exacerbate these symptoms and give rise to more severe health concerns, including anxiety, hypertension, and reduced immunity.
 
 ### ✨ A Spiritual Productivity Tool for Mental Wellness
 
@@ -60,7 +60,7 @@ Moksh is a spiritual productivity tool designed for individuals who want to unlo
 * Augmented Reality Bhagavad Gita Meditation 🧘‍♂️
 * Connect with ISKCON spiritual events near you 🔗
 * Interactive Gita stories for children and students ✍️
-* Pomodoro feature(with timer) along with reading Bhagavad Gita shloks in the breaks⌛
+* Pomodoro feature(with timer) along with reading Bhagavad Gita shlokas in the breaks⌛
 * Stress buster spiritual games 🎮
 * Bhagavad Gita quiz 🤔
 * Random Bhagavad Gita shlok generator with meaning, along with sharing to twitter functionality 🌟
@@ -130,11 +130,11 @@ To get a local copy up and running follow these simple example steps.
 
 </div>
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what makes the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 See the [open issues](https://github.com/akshitagupta15june/Moksh/issues) for a list of proposed features (and known issues). You can start by solving the issues marked as **good first issue**.
 
-- If you have any suggestions in the projects, like reporting a bug, improving UI, or improving the README.md file, feel free to **open an issue** to discuss it, or directly create a pull request with the necessary changes.
+- If you have any suggestions for the projects, like reporting a bug, improving UI, or improving the README.md file, feel free to **open an issue** to discuss it, or directly create a pull request with the necessary changes.
 - Please make sure you check your spelling and grammar.
 - Create individual PR for each suggestion.
 
