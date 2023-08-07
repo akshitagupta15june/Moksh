@@ -10,7 +10,7 @@ Below you will find the process and workflow used to review and merge your chang
 
 - Take a look at the Existing Issues or create your **own** Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
-- Note : Every change in this project should/must have an associated issue.
+- Note: Every change in this project should/must have an associated issue.
 
 
 
@@ -39,10 +39,10 @@ git rebase upstream/<branch-name>
 
 ### Step 2 : Branch
 
-Create a new branch. Use its name to identify the issue your addressing.
+Create a new branch. Use its name to identify the issue you are addressing.
 
 ```bash
-# It will create a new branch with name Branch_Name and switch to that branch 
+# It will create a new branch with the name Branch_Name and switch to that branch 
 git checkout -b branch_name
 ```
 
@@ -65,7 +65,7 @@ git add <some files>
 - To commit give a descriptive message for the convenience of reviewer by:
 
 ```bash
-# This message get associated with all files you have changed  
+# This message gets associated with all files you have changed  
 git commit -m "message"  
 ```
 
@@ -84,7 +84,7 @@ git push -u origin Branch_Name
 
 ### Step 6 : Pull Request
 
-- Go to your repository in browser and click on compare and pull requests.
+- Go to your repository in the browser and click on compare and pull requests.
 Then add a title and description to your pull request that explains your contribution.  
 <img src="https://github.com/akshitagupta15june/Face-X/blob/master/.github/user/compare.jpeg">
 
@@ -119,7 +119,7 @@ Then add a title and description to your pull request that explains your contrib
 
 ### Need more help?🤔
 
-You can refer to the following articles on basics of Git and Github and also contact the Project Mentors,
+You can refer to the following articles on the basics of Git and GitHub and also contact the Project Mentors,
 in case you are stuck:
 
 - [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
@@ -130,4 +130,4 @@ in case you are stuck:
 - [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
 
 
-Hope you will learn something new while contributing in this project!!😇😇😇😇
+Hope you will learn something new while contributing to this project!!😇😇😇😇
