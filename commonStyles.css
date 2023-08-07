@@ -150,12 +150,35 @@ footer {
 }
 
 
-#bttbutton{
+#bttbutton {
   position: fixed;
-    bottom: 20px;
-    right: 40px;
-    z-index: 9999;
-    border: none;
-    outline: none;
-    width: 55px;
+  bottom: 20px;
+  right: 40px;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  width: 55px;
+  transition: all 0.5s ease;
+}
+
+.hover-effect img {
+  transition: opacity 0.3s ease;
+}
+
+.hover-effect img:hover {
+  opacity: 0.75;
+}
+
+.size{
+  width: 1.5rem;
+}
+@media (max-width: 767px) {
+  #bttbutton {
+    right: 5px; 
+    bottom: 11px;
+    width: 50px;
+  }
+  .size{
+    width: 2rem;
+  }
 }
