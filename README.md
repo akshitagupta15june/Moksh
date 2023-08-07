@@ -224,11 +224,6 @@ Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocki
   <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Moksh/contributors?format=svg&limit=54" width="600" height"250" />
 </p>
 
-<p>
-  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/achievements?format=svg&limit=3" width="350" />
-</p>
-
-
 ![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/Moksh)
 
 <h2 align="center"> License 🛡️ </h2>
