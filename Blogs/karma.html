@@ -105,30 +105,8 @@
             alt="blogImage" class="rounded-md center">
         </div>
         <!-- <div> -->
-        <div id="google_element" class="translation-container"></div>
-        <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-        <script>
-          function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-              pageLanguage: 'en',
-              includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur,zh-CN,fr,ja,ko,ar',
-            }, 'google_element');
-          }
-        </script>
-
-        <!-- </div> -->
-        <!-- Add the script for initializing the translation widget -->
-        <script type="text/javascript">
-          function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-              pageLanguage: 'en',  // Set the default language of your website
-              includedLanguages: 'es,fr,hi',  // Set the languages you want to include
-              layout: google.translate.TranslateElement.InlineLayout.SIMPLE  // Choose the display layout
-            }, 'google_translate_element');
-          }
-        </script>
-
-
+        <div id="google_element" style="margin-left: 45%;" class="translation-container"></div>
+  
         <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
           <p class="mb-4">
             <span class=" firstWord font-bold text-3xl text-indigo-800">T</span>
@@ -359,6 +337,15 @@
         { pageLanguage: "en" },
         "google_translate_element"
       );
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <script>
+    function loadGoogleTranslate() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur,zh-CN,fr,ja,ko,ar',
+      }, 'google_element');
     }
   </script>
   <script src="./blogs.js"></script>

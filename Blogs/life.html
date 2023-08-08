@@ -103,22 +103,9 @@
                     <img src="../Images/lifeBlog.jpg" alt="blogImage" class="rounded-md center">
                 </div>
 
-
-                <div id="google_element" class="translation-container"
-                    style="display: flex; justify-content: center; align-items: center; height: 30vh;"></div>
-
-
+                <div id="google_element" style="margin-left: 45%;"></div>
 
                 <!-- Add the script for initializing the translation widget -->
-                <script>
-                    function loadGoogleTranslate() {
-                        new google.translate.TranslateElement({
-                            pageLanguage: 'en',
-                            includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
-                        }, 'google_element');
-
-                    }
-                </script>
 
                 <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
                     <p class="mb-4">
@@ -525,6 +512,15 @@
         </div>
 
     </div>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
+            }, 'google_element');
+
+        }
+    </script>
     <script src="./blogs.js"></script>
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <script src="../commonScript.js"></script>
