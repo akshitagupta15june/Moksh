@@ -84,15 +84,14 @@ overflow-y: hidden;
 }
 
 
-#arjuna-image {
 
+#arjuna-image {
     z-index: 2;
     position: absolute;
     top: calc(50% + 24%);
     left: calc(50% - 20%);
     transform: translateY(-50%);
 }
-
 
 #krishna-image {
     z-index: 2;
@@ -101,18 +100,114 @@ overflow-y: hidden;
     left: calc(50% + 4%);
     transform: translateY(-50%);
 }
-/* ... (existing CSS rules above) ... */
 
-/* Styles for the conversation boxes */
-.conversation-box {
-    position: absolute;
-    width: 200px;
-    height: 80px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 14px;
-    text-align: left;
-    z-index: 3;
-  }
+@media screen and (max-width: 540px) {
+    #arjuna-image,
+    #krishna-image {
+        z-index: 4; /* Adjust the z-index to make sure images are above the milky-way */
+        position: absolute;
+        top: calc(50% + 34%); /* Adjust the top position as needed */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #arjuna-image {
+        width: 25%; /* Increase the width by 15% */
+        top: 68%; /* Adjust the top position */
+        left: 25%; /* Adjust the left position */
+    }
+
+    #krishna-image {
+        width: 26%; /* Increase the width by 15% */
+        top: 65%; /* Adjust the top position */
+        left: 70%; /* Adjust the left position */
+    }
+
+    #left-arrow,
+    #right-arrow {
+        top: calc(50% + 16%); /* Adjust the top position for smaller screens */
+        transform: translateY(-50%);
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    #left-arrow {
+        left: 5%; /* Move the left arrow more left */
+    }
+
+    #right-arrow {
+        right: 5%; /* Move the right arrow more right */
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    #arjuna-image,
+    #krishna-image {
+        top: calc(50% + 40%); /* Adjust the top position for smaller screens */
+        width: 30%; /* Increase the size of arjuna and krishna by 5% */
+    }
+
+    #krishna-image {
+        top: 67%; /* Move the krishna image top by 15% */
+        left: 70%; /* Move the krishna image right by 15% */
+    }
+
+    #arjuna-image {
+        top: 69%; /* Move the krishna image top by 15% */
+        left: 27%; /* Move the krishna image right by 15% */
+    }
+
+    #left-arrow,
+    #right-arrow {
+        top: calc(50% + 14%); /* Adjust the top position for smaller screens */
+        transform: translateY(-50%);
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    #left-arrow {
+        left: 5%; /* Move the left arrow more left */
+    }
+
+    #right-arrow {
+        right: 5%; /* Move the right arrow more right */
+    }
+}
+
+@media only screen and (min-width : 550px) and (max-width: 767px) {
+    #arjuna-image,
+    #krishna-image {
+        top: calc(50% + 40%); /* Adjust the top position for smaller screens */
+        width: 23%; /* Increase the size of arjuna and krishna by 5% */
+    }
+
+    #krishna-image {
+        top: 85%; /* Move the krishna image top by 15% */
+        left: 65%; /* Move the krishna image right by 15% */
+    }
+
+    #arjuna-image {
+        top: 85%; /* Move the krishna image top by 15% */
+        left: 12%; /* Move the krishna image right by 15% */
+    }
+
+    #left-arrow,
+    #right-arrow {
+        top: calc(50% + 25%); /* Adjust the top position for smaller screens */
+        transform: translateY(-50%);
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    #left-arrow {
+        left: 5%; /* Move the left arrow more left */
+    }
+
+    #right-arrow {
+        right: 5%; /* Move the right arrow more right */
+    }
+}
