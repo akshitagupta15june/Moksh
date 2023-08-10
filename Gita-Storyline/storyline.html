@@ -12,6 +12,7 @@
     html,
     body {
       overflow-x: hidden;
+      overflow-y: hidden;
     }
     nav {
       width: 100vw;
@@ -70,7 +71,7 @@
   <body>
     <header>
       <nav
-        style="z-index: 10000"
+        style="z-index: 10000; padding-left: 40px; padding-right: 40px"
         class="nav bg-gray-950 text-white flex justify-between items-center py-2"
       >
         <div class="leftSection">
@@ -202,9 +203,19 @@
       <img id="right" src="right.png" alt="right-arrow" />
     </div>
 
-    <div class="conversation-box" id="arjuna-conversation"></div>
+    <div class="conversation-box">
+      <div class="content">
+        <div id="arjuna-conversation"></div>
+        <div class="arrow"></div>
+      </div>
+    </div>
     <img id="arjuna-image" src="./Arjuna/arjuna1.png" alt="Arjuna" />
-    <div class="conversation-box" id="krishna-conversation"></div>
+    <div class="conversation-box">
+      <div class="content">
+        <div id="krishna-conversation"></div>
+        <div class="arrow"></div>
+      </div>
+    </div>
     <img id="krishna-image" src="./Krishna/krishna1.png" alt="Krishna" />
 
     <script>
