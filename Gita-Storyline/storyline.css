@@ -290,3 +290,11 @@ background-size: cover;
         padding: 18px;
     }
 }
+.music{
+    
+        position: absolute;
+        right: 50px;
+        width: 300px;
+        
+    
+}
