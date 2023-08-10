@@ -290,11 +290,15 @@ background-size: cover;
         padding: 18px;
     }
 }
-.music{
-    
-        position: absolute;
-        right: 50px;
-        width: 300px;
-        
-    
+#play,
+#pause {
+	float: left;
+	width: 40px;
+}
+#play:hover,
+#pause:hover {
+	cursor: pointer;
+}
+#pause {
+	display: none;
 }
