@@ -211,3 +211,29 @@ overflow-y: hidden;
         right: 5%; /* Move the right arrow more right */
     }
 }
+
+#arjuna-conversation{
+  background-color: antiquewhite;
+  height: 10rem;
+  width: 15rem;
+  position: absolute;
+  bottom: 21rem;
+  left: 30rem;
+  text-align: center;
+  border-radius: 10px;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+#krishna-conversation{
+  background-color: antiquewhite;
+  height: 10rem;
+  width: 30rem;
+  position: absolute;
+  bottom: 30rem;
+  left: 55rem;
+  text-align: center;
+  border-radius: 10px;
+  overflow-y: auto;
+  padding: 15px;
+}
