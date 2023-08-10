@@ -186,6 +186,7 @@ let customFooter = document.querySelector( ".customFooter" ),
                       <a href="../shlok_page/motivation.html" class="relative cursor-pointer hover:no-underline pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Read
                         a
                         Shlok</a>
+                        <a href="../Gita-Storyline/storyline.html" class="relative cursor-pointer hover:no-underline pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Gita Storyline</a>
                       <a href="../Rejuvenate_page/rejuvenate.html" class="relative cursor-pointer hover:no-underline pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">Rejuvenate</a>
                     </div>
                   </li>
@@ -362,3 +363,25 @@ closeDropDown.onclick = () =>
   dropMenuLinks.style.right = '-2000px'
 }
 
+
+
+const topButton = document.getElementById("bttbutton");
+      
+
+      function scrollUp() {
+        if (contentWrapper.scrollTop > 100) {
+          topButton.style.display = "block";
+        } else {
+          topButton.style.display = "none";
+        }
+      }
+
+      function getTop() {
+        contentWrapper.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      contentWrapper.addEventListener("scroll", scrollUp);
+      topButton.addEventListener("click", getTop);

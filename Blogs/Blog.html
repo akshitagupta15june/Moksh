@@ -15,6 +15,11 @@
   <body>
     <div class="blogWrapper h-screen overflow-hidden relative">
 
+      <div class="md:pr-8 hover-effect">
+        <button id="bttbutton" title="Back to Top">
+          <img src="./image.svg" class="size md:w-10 md:object-left" alt="Scroll to Top">
+        </button>
+      </div>
       <!-- Site Menu Links  -->
       <div
            class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-screen ">
@@ -256,7 +261,7 @@
       </div>
     </div>
 
-
+    
     <script>
       function initiatePrint ()
       {
@@ -288,6 +293,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="./download.js"></script>
+    
   </body>
 
 </html>

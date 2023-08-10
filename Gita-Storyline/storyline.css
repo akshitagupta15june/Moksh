@@ -6,9 +6,6 @@ margin: 0;
 padding: 0;
 background-image: url("image4.jpg");
 background-size: cover;
-overflow: hidden;
-overflow-x: hidden;
-overflow-y: hidden;
 }
 .milky-way
 {
@@ -209,5 +206,87 @@ overflow-y: hidden;
 
     #right-arrow {
         right: 5%; /* Move the right arrow more right */
+    }
+}
+#arjuna-conversation {
+    background-color: antiquewhite;
+    height: 10rem;
+    width: 20rem;
+    position: relative;
+    bottom: 35rem;
+    left: 30%; /* Center the box horizontally */
+    transform: translateX(-50%); /* Center the box horizontally */
+    text-align: center;
+    overflow-y: auto;
+    padding: 18px;
+}
+  
+#krishna-conversation {
+    background-color: antiquewhite;
+    height: 10rem;
+    width: 20rem; /* Adjust width as needed */
+    position: relative;
+    bottom: 54rem;
+    left: 60%; /* Center the box horizontally */
+    transform: translateX(-50%); /* Center the box horizontally */
+    text-align: center;
+    overflow-y: auto;
+    padding: 18px;
+}
+
+@media screen and (max-width: 540px) {
+    #arjuna-conversation {
+        background-color: antiquewhite;
+        height: 7rem;
+        width: 14rem;
+        position: relative;
+        bottom: 25rem;
+        left: 27%;
+        transform: translateX(-50%);
+        text-align: center;
+    
+        overflow-y: auto;
+        padding: 18px;
+    }
+    #krishna-conversation {
+        background-color: antiquewhite;
+        height: 7rem;
+        width: 18rem;
+        position: relative;
+        bottom: 40rem;
+        left: 65%; 
+        transform: translateX(-50%); 
+        text-align: center;
+    
+        overflow-y: auto;
+        padding: 18px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 912px) {
+    #arjuna-conversation {
+        background-color: antiquewhite;
+        height: 7rem;
+        width: 14rem;
+        position: relative;
+        bottom: 20rem;
+        left: 27%;
+        transform: translateX(-50%);
+        text-align: center;
+        overflow-y: auto;
+        padding: 18px;
+    }
+    #krishna-conversation {
+        background-color: antiquewhite;
+        height: 7rem;
+        width: 18rem;
+        position: relative;
+        bottom: 40rem;
+        left: 65%; 
+        transform: translateX(-50%); 
+        text-align: center;
+        overflow-y: auto;
+        padding: 18px;
     }
 }
