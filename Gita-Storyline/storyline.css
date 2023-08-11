@@ -290,3 +290,15 @@ background-size: cover;
         padding: 18px;
     }
 }
+#play,
+#pause {
+	float: left;
+	width: 40px;
+}
+#play:hover,
+#pause:hover {
+	cursor: pointer;
+}
+#pause {
+	display: none;
+}
