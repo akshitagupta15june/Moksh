@@ -6,6 +6,7 @@
 <a href="https://github.com/akshitagupta15june/Moksh/network/members"><img src="https://img.shields.io/github/forks/akshitagupta15june/Moksh"></a>
 <a href="https://github.com/akshitagupta15june/Moksh/stargazers"><img src="https://img.shields.io/github/stars/akshitagupta15june/Moksh"></a>
 <a href="https://github.com/akshitagupta15june/Moksh/blob/master/LICENSE"><img src="https://img.shields.io/github/license/akshitagupta15june/Moksh"></a>
+<a href="https://community.vaunt.dev/board/akshitagupta15june/repository/Moksh"><img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Moksh/badges/community"></a>
 <p align="center">
  <img src="Images/rejuvenate.png" width="150"/>
  <img src="Images/moksh.jpeg" width="150"/> 
