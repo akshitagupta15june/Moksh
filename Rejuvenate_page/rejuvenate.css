@@ -66,7 +66,10 @@ body {
   position: relative;
   display: inline-block;
   transform: translateX(-70%);
+
   padding-top: 1rem!important;
+
+
 }
 
 .media-scroller {
@@ -185,6 +188,13 @@ iframe {
   background-color: antiquewhite;
   border-radius: 50%;
   object-fit: cover;
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
 }
 
 

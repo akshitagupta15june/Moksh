@@ -11,14 +11,17 @@
   <link href="./rejuvenate.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
   <!-- <link rel="stylesheet" href="../event.css"> -->
+
   <!-- Include jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+ 
   <!-- Include Bootstrap JavaScript -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> 
   <link rel="stylesheet" href="/fontawesome.min.css">
@@ -33,33 +36,34 @@
 
 <body style="background-color:lightgoldenrodyellow">
   <div class="blogWrapper h-screen overflow-hidden relative">
-
     <!-- Site Menu Links  -->
     <div
       class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen ">
     </div>
-
     <div class="contentWrapper h-full overflow-y-auto">
-
+      <!-- Scroll to top -->
+      <div class="md:pr-8 hover-effect">
+                    
+        <button id="bttbutton" title="backtotop">
+          <img src="image.svg" class="size md:w-10 md:object-left"/>
+        </button>
+        
+    </div>
+  <!-- Scroll to top -->
       <!-- Hero Section & Navbar  -->
       <div
         class="heroSection w-full h-auto lg:h-[10vh] flex px-0 md:px-4 text-2xl sm:text-lg bg-gradient-to-r from-yellow-50 to-rose-100 ">
-
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
         <!-- Navbar Start-->
         <div
           class="navbar fixed top-0 h-14 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-30 items-center justify-between w-full left-0  bg-gradient-to-r from-yellow-50 to-rose-100 ">
-          
-
           <div class="leftSection">
             <a class="flex items-center" href="../index.html">
               <img src="../Images/logoBgRemoved.webp" alt="Moksh Logo" class="w-12 h-12 hover:animate-spin ">
               <span
                 class="ml-3 text-base lg:text-2xl uppercase font-semibold projectName tracking-widest ease-in-out duration-300 hover:text-indigo-600">Moksh</span>
             </a>
-
           </div>
-
           <div class="rightSection pr-4">
 
             <div>
@@ -74,7 +78,6 @@
                     of
                     Knowledge Blogs </a>
                 </li>
-
                 <li class="relative group">
                   <a href="#"
                     class="relative pt-3 pb-1 font-semibold after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 ">
@@ -85,7 +88,6 @@
                         d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
                         clip-rule="evenodd"></path>
                     </svg>
-
                   </a>
                   <div
                     class="absolute hidden group-hover:flex bg-white text-indigo-600 p-4 w-80  shadow-2xl right-0 top-10 flex-col">
@@ -112,7 +114,6 @@
                 </li>
               </ul>
             </div>
-
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor"
               class="indexOpenDropDown md:hidden h-6 w-6 text-indigo-600 cursor-pointer ease-in-out duration-300 hover:text-indigo-600">
@@ -127,277 +128,129 @@
       <p class="para pt-20">
       <h1 align=center>"Inspirational shorts" to rejuvenate yourself for a productive day</h1>
       </p>
-      <div align="center" class="media-scroller">
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/XTxbTO_-id4?feature=oembed" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/MYZPSptT98g?feature=oembed" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/93yZx3BVRyY?feature=oembed" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/E6Z6L8yAcrE?feature=oembed" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video-carousel-container">
+        <div class="video-carousel carousel slide" data-bs-ride="carousel" id="videoCarousel">
+          <div class="carousel-inner"></div>
+          <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-
       <p>
       <h1 align=center>Srila Prabhupada Stories</h1>
       </p>
-
-      <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" /> -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div id="about" class="carousel-content">
-              <a class="float-left mr-3">
-                <div class="img-section">
-
-                  <img src="../Images/eager.jpg" height="200" class="rounded">
-                </div>
-              </a>
-
-              <section>
-
-                <span>
-                  <h2>The enthusiasm to have a glimpse of Krishna.</h2>
-                </span>
-                <!-- <button>Read more</button> -->
-                <p>
-                  To see God, one must first have faith and be sincerely eager to experience His presence. This is not
-                  a
-                  frivolous or magical desire, but a serious one. It is important to understand that if God exists, we
-                  must
-                  seek Him out. There is a story that illustrates this point. A thief attended a public recitation of
-                  the
-                  Srimad-Bhagavatam and became interested in the description of Krishna, who was said to be adorned
-                  with
-                  valuable jewels while tending the cows in the forest. The thief decided to travel to Vrindavana to
-                  rob
-                  Krishna of his jewels. However, his real qualification was his intense desire to see Krishna. This
-                  eagerness
-                  led him to actually see Krishna, who played with him like a child. Through Krishna's association,
-                  the
-                  thief
-                  was purified and became a devotee. Therefore, it is essential to somehow come into contact with
-                  Krishna,
-                  which will lead to purification.
-                </p>
-              </section>
-            </div>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+        <div class="carousel slide" data-bs-ride="carousel" id="carouselDataContainer">
+          <div class="carousel-inner">
           </div>
-
-
-          <div class="carousel-item">
-            <div id="about" class="carousel-content">
-              <a class="float-left mr-3">
-                <div class="img-section">
-                  <img src="../Images/thief.jpg" height="200" class="rounded">
-                </div>
-
-              </a>
-              <section>
-
-                <span>
-                  <h2>The Thief and the Householder's Prayers</h2>
-                </span>
-
-                <!-- <button>Read more</button> -->
-                <p>
-                  It is a fact that nothing can be achieved without God's sanction. However, it is important to
-                  understand
-                  the
-                  nature of this sanction. God is the creator and everything exists within Him. Therefore, it is
-                  necessary
-                  for
-                  Him to give sanction. There is a story that illustrates this point. A thief prays to God to give him
-                  the
-                  opportunity to steal from a particular house, while the homeowner prays for protection. God, being
-                  intelligent, is able to please both of them. He can give the thief the opportunity to steal while
-                  also
-                  protecting the homeowner's property. This is because both of them are praying and God must deal with
-                  their
-                  petitions. This is the position of God, who is situated in the hearts of all beings. Therefore, it
-                  is
-                  important to understand that everything happens according to God's will and we should always pray to
-                  Him
-                  for
-                  guidance and protection. Hare Krishna.
-                </p>
-              </section>
-            </div>
-          </div>
-
-
-          <div class="carousel-item">
-            <div id="about" class="carousel-content">
-              <a class="float-left mr-3">
-                <div class="img-section">
-                  <img src="../Images/yogi.webp" height="200" class="rounded">
-                </div>
-
-              </a>
-              <section>
-
-                <span>
-                  <h2>The Yogi who could Walk on Water</h2>
-                </span>
-                <p>
-                  This is not a fictional tale, but a true incident. Once, a man left his village and returned after
-                  ten
-                  years, boasting that he had achieved success in yoga. The villagers were curious and asked him what
-                  yoga
-                  practice he had learned. He claimed that he could walk on water. This statement attracted a large
-                  crowd,
-                  as
-                  it would even today if someone made such a claim.
-
-                  When it was time for him to demonstrate his ability to walk on water, an old man approached him and
-                  said,
-                  "Sir, it's worth only two paisa." The yogi was puzzled and asked why. The old man explained that he
-                  could
-                  simply take a boat across the river for the same price, so there was no real value in walking on
-                  water.
-                </p>
-              </section>
-            </div>
-          </div>
-
-
-          <div class="carousel-item">
-            <div id="about" class="carousel-content">
-              <a class="float-left mr-3">
-                <div class="img-section">
-                  <img src="../Images/godar.webp" height="200" class="rounded">
-                </div>
-
-              </a>
-              <section>
-
-                <span>
-                  <h2>The Old Lady and the Weekly Market: Trusting in God's Arrangements</h2>
-                </span>
-                <p>
-                  Fair events also take place in Western countries, some in counties and some in villages. In India,
-                  weekly
-                  bazaars called hatta are held where salesmen gather with their goods and many buyers assemble, much
-                  like
-                  in
-                  a marketplace. Thousands of people gather in these weekly markets, and one day an old lady from the
-                  village
-                  began to cry because she was worried about how she would accommodate all these people who needed a
-                  place
-                  to
-                  sleep at night. Her son reassured her that everything would be arranged, but she continued to worry.
-                  Later
-                  that evening, her son showed her that all the people had been accommodated and provided with a place
-                  to
-                  sleep and eat. Just like this, even though there may be millions of living beings, God has made
-                  arrangements
-                  for their well-being.
-                </p>
-              </section>
-            </div>
-          </div>
+          <a class="carousel-control-prev" href="#carouselDataContainer" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselDataContainer" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+        <br><br><br><br><br><br><br><br>
+        <br><br>
+          <p>
+            <h1 align=center>Bhagavad Gita Playlist</h1>
+            </p>
+            <div align="center" class="media-scroller">
+            </div>
+                <br><br><br><br><br>
+      <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" /> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-your-computed-hash" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-your-computed-hash" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha256-your-computed-hash" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(() => {
+            $.getJSON("carouselData.json", function (data) {
+              const carouselDataContainer = $("#carouselDataContainer .carousel-inner");
+              data.forEach((item, index) => {
+                const activeClass = index === 0 ? "active" : "";
+                const carouselItem = `
+                  <div class="carousel-item ${activeClass}">
+                    <div id="about" class="carousel-content">
+                      <a class="float-left mr-3">
+                        <div class="img-section">
+                          <img src="${item.image}" height="200" class="rounded">
+                        </div>
+                      </a>
+                      <section>
+                        <span>
+                          <h2>${item.title}</h2>
+                        </span>
+                        <p>${item.description}</p>
+                      </section>
+                    </div>
+                  </div>
+                `;
+                carouselDataContainer.append(carouselItem);
+              });
+            });
+          });
+          function renderVideos() {
+            const mediaScroller = document.querySelector(".media-scroller");
+            mediaScroller.innerHTML = "";
+            
+            videosData.forEach((video) => {
+              const iframeElement = document.createElement("iframe");
+              iframeElement.setAttribute("width", "420");
+              iframeElement.setAttribute("height", "315");
+              iframeElement.setAttribute("src", video.url);
+              iframeElement.setAttribute("title", video.title);
+              iframeElement.setAttribute("frameborder", "0");
+              iframeElement.setAttribute(
+                "allow",
+                "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              );
+              iframeElement.setAttribute("allowfullscreen", "");
+              mediaScroller.appendChild(iframeElement);
+            });
+          }
+        
+          $(document).ready(() => {
+            $.getJSON("videos.json", function (data) {
+              videosData = data;
+              renderVideos();
+            });
+          });
 
-
-      <p>
-      <h1 align=center>Bhagavad Gita Playlist</h1>
-      </p>
-      <div align="center" class="media-scroller">
-        1.<iframe width="420" height="315" src="https://www.youtube.com/embed/9kckxCiyD9I" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        2.<iframe width="420" height="315" src="https://www.youtube.com/embed/oJBmMkI3oRQ" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        3.<iframe width="420" height="315" src="https://www.youtube.com/embed/747_KYaFAfw" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        4.<iframe width="420" height="315" src="https://www.youtube.com/embed/xwSCskfuafQ" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        5.<iframe width="420" height="315" src="https://www.youtube.com/embed/eune8VYDhlc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        6.<iframe width="420" height="315" src="https://www.youtube.com/embed/ZE6pPdec_b0" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        7.<iframe width="420" height="315" src="https://www.youtube.com/embed/ciiwUJUebAg" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        8.<iframe width="420" height="315" src="https://www.youtube.com/embed/DzOlI-touYA" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        9.<iframe width="420" height="315" src="https://www.youtube.com/embed/RyWhaFtpFeo" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        10.<iframe width="420" height="315" src="https://www.youtube.com/embed/cnA2xoUV1w8" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        11.<iframe width="420" height="315" src="https://www.youtube.com/embed/PVeylyONQgc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        12.<iframe width="420" height="315" src="https://www.youtube.com/embed/sZ5rZRBzCW8" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        13.<iframe width="420" height="315" src="https://www.youtube.com/embed/05h7CANq7Ms" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        14.<iframe width="420" height="315" src="https://www.youtube.com/embed/6hti0KgJSLk" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        15.<iframe width="420" height="315" src="https://www.youtube.com/embed/j-AuxtlXYeE" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        16.<iframe width="420" height="315" src="https://www.youtube.com/embed/xf2LFDUhbgU" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        17.<iframe width="420" height="315" src="https://www.youtube.com/embed/uu6o6YGC_ww" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        18.<iframe width="420" height="315" src="https://www.youtube.com/embed/fU-HVVMu4rw" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-
-      </div>
-
-
-
+          $(document).ready(() => {
+            $.getJSON("videoData.json", function (data) {
+              const videoCarousel = $("#videoCarousel .carousel-inner");
+              data.forEach((item, index) => {
+                const activeClass = index === 0 ? "active" : "";
+                const videoItem = `
+                  <div class="carousel-item ${activeClass}">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <iframe width="420" height="315" src="${item.url}" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                `;
+                videoCarousel.append(videoItem);
+              });
+            });
+          });
+        </script>
       <!-- Footer  -->
       <footer class="customFooter bg-slate-900 py-0.5 px-8 lg:px-24 flex flex-col"></footer>
-
     </div>
+    <script src="../commonScript.js"></script>
+    <script src="videos.json"></script>
     <script src="./rejuvenate.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script src="../commonScript.js"></script>
 
 </body>
-
 </html>
+
