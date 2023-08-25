@@ -1,6 +1,6 @@
 *
 
- {
+ *{
   margin: 0;
   padding: 0; 
 
@@ -446,7 +446,7 @@ a.features {
 }
 
 footer .logo {
-  background-color: #000000;
+  /* background-color: #000000; */
   border-radius: 50%;
 }
 

@@ -3,18 +3,19 @@
   padding: 0;
   text-decoration: none;
 }
+
 body {
-  background-color: #2980b9;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 .bubble {
   position: absolute;
   top: 100vh;
   width: 150px;
   height: 150px;
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -22,26 +23,31 @@ body {
     inset 5px 5px 10px #960101, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #9224ed;
 }
+
 .bubble-two {
   box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #06f3df,
     inset 5px 5px 10px #f8e63e, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #ed24aa;
 }
+
 .bubble-three {
   box-shadow: inset 0 0 10px #010631, inset -10px 10px 15px #1512f3,
     inset 5px 5px 10px #80036b, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #33114e;
 }
+
 .bubble-four {
   box-shadow: inset 0 0 10px #8b0101, inset -10px 10px 15px #f6f6fc,
     inset 5px 5px 10px #81f733, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #0b0822;
 }
+
 .bubble-five {
   box-shadow: inset 0 0 10px #fff, inset -10px 10px 15px #100dee,
     inset 5px 5px 10px #f7a120, inset -5px 5px 20px #fff,
     inset 15px -25px 20px #ed24c1;
 }
+
 .score-board {
   background: #fff;
   width: 300px;
@@ -54,12 +60,15 @@ body {
   bottom: 0;
   left: calc(50% - 150px);
 }
+
 .loser {
   display: none;
 }
+
 .winner {
   display: none;
 }
+
 .main-game {
   width: 100vw;
   height: 100vh;
@@ -68,16 +77,18 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 button.start-btn {
   font-size: 20px;
   border: none;
   margin-top: 8px;
   border-radius: 30px;
   font-weight: bold;
-  height: 30px; 
+  height: 30px;
   width: 5%;
   margin: 8px auto;
 }
+
 .shadow {
   width: 100vw;
   height: 100vh;
@@ -88,6 +99,7 @@ button.start-btn {
   z-index: 1000;
   position: relative;
 }
+
 .total-score {
   background: #fff;
   padding: 10px 100px 40px;
@@ -95,13 +107,249 @@ button.start-btn {
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
-.cards{
+
+.cards {
   display: flex;
 }
 
-.nav-menu>li a{
-  /* position: relative; */
+
+
+.about {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+
+
+/* ul.dropdown-menu.show{
+  margin: 0;
+  padding: 0;
+} */
+
+
+/* Google Translate */
+#google_translate_element select {
+  background-color: #f6edfd;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+/* Mid-section */
+.firstWord {
+  font-size: 7rem;
+  color: rgb(11, 6, 16);
+  font-weight: 300;
+}
+
+.firstWord_secondPart{
+  font-size:2rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: rgb(11, 6, 16);
+  font-weight: 300;
+}
+
+.text-container {
+  margin: 1.5rem;
+  background-color: #fefae0;
+  height: 25rem;
+  width: auto;
+  padding: 1rem;
+  border-radius: 5%;
+}
+
+.first_para_word {
+  font-size: 1.6rem;
+  color: rgb(11, 6, 16);
+  font-weight: 300;
+}
+
+.first_para {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+.priest {
+  height: 140px;
+  margin: 0.4rem;
+}
+
+.second_container {
+  position: absolute;
+  top: 28rem;
+}
+
+.second_para_word {
+  font-size: 30px;
+}
+
+.achievements>ol>li {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+/* Mid section ends */
+
+/* Upcoming events container*/
+.upcoming_events {
+  margin: 2rem;
+  position: relative;
+  left: 1.5rem;
+}
+
+.upcoming_events_h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.card {
+  margin: 1rem;
+  border-radius: 5%;
+  width: 30rem;
+  height: 300px;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover {
+  height: 500px;
+}
+
+.card .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   display: flex;
-  justify-content: space-around;
-  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+
+.card:hover .card-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card .card-overlay .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card .card-overlay .card-details {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover .card-overlay .card-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-details {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.p1 {
+  color: white;
+}
+
+.card a {
+  padding: 1rem;
+  width: 14rem;
+}
+
+
+
+.moksh-logo {
+  margin-top: 20px;
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .text-container {
+    height: 40rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .second_container {
+    position: relative;
+    top: -3rem;
+  }
+
+  .second_para {
+    margin-top: 1rem;
+  }
+
+}
+
+
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+  font-size: 4.2rem;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
 }
