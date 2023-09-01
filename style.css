@@ -124,10 +124,7 @@ body {
 a.dropdown-item{
   margin: 0 !important;
 }
-/* ul.dropdown-menu.show{
-  margin: 0;
-  padding: 0;
-} */
+
 .nav ul ul li a {
   line-height: 25px;
   padding: 10px 15px;
@@ -136,8 +133,6 @@ a.dropdown-item{
 
 /* Google Translate */
 #google_translate_element select {
-  /* background-color: #2980b9 !important; */
-
   background-color: #f6edfd;
   color: black;
   border: none;
