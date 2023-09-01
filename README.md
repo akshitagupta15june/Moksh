@@ -15,11 +15,11 @@
 
 ### _Unlock your potential and achieve true balance in life with Moksh!_
 
-
-<h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord <img src="https://media.tenor.com/5a7v-p3E5pkAAAAM/discord.gif" class="discordlogo" height="40px" width="40px"></a> for discussion</h3>
-<h2></h2>
-
-
+<p align="center">
+  <a href="https://discord.com/invite/Jmc97prqjb">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Discord-blue?style=for-the-badge&logo=discord&label=%20Join%20Official%20">
+  </a>
+</p>
 </div>
 
 ## Watch this to know about Moksh (Demo Video)
