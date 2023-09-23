@@ -49,6 +49,7 @@ background-size: cover;
     transform: translateY(-50%);
     height: 30px;
     width: 30px;
+    z-index: 2;
 }
 
 
@@ -210,11 +211,11 @@ background-size: cover;
 }
 #arjuna-conversation {
     background-color: antiquewhite;
-    height: 10rem;
+    height: auto;
     width: 20rem;
     position: relative;
     bottom: 35rem;
-    left: 30%; /* Center the box horizontally */
+    left: 21%; /* Center the box horizontally */
     transform: translateX(-50%); /* Center the box horizontally */
     text-align: center;
     overflow-y: auto;
@@ -223,11 +224,11 @@ background-size: cover;
   
 #krishna-conversation {
     background-color: antiquewhite;
-    height: 10rem;
+    height: auto;
     width: 20rem; /* Adjust width as needed */
     position: relative;
     bottom: 54rem;
-    left: 60%; /* Center the box horizontally */
+    left: 75%; /* Center the box horizontally */
     transform: translateX(-50%); /* Center the box horizontally */
     text-align: center;
     overflow-y: auto;
