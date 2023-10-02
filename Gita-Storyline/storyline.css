@@ -53,6 +53,7 @@ background-size: cover;
 }
 
 
+
 #left-arrow,
 #right-arrow {
   position: absolute;
@@ -220,15 +221,16 @@ background-size: cover;
     text-align: center;
     overflow-y: auto;
     padding: 18px;
+   
 }
   
 #krishna-conversation {
     background-color: antiquewhite;
-    height: auto;
+    height: 7rem;
     width: 20rem; /* Adjust width as needed */
     position: relative;
-    bottom: 54rem;
-    left: 75%; /* Center the box horizontally */
+    bottom: 50rem;
+    left: 71%; /* Center the box horizontally */
     transform: translateX(-50%); /* Center the box horizontally */
     text-align: center;
     overflow-y: auto;
@@ -271,8 +273,7 @@ background-size: cover;
         height: 7rem;
         width: 14rem;
         position: relative;
-        bottom: 20rem;
-        left: 27%;
+        bottom: 38rem;
         transform: translateX(-50%);
         text-align: center;
         overflow-y: auto;
@@ -283,18 +284,32 @@ background-size: cover;
         height: 7rem;
         width: 18rem;
         position: relative;
-        bottom: 40rem;
-        left: 65%; 
+        bottom: 56rem;
         transform: translateX(-50%); 
         text-align: center;
         overflow-y: auto;
         padding: 18px;
     }
 }
+@media screen and (max-width: 320px){
+    #arjuna-conversation {
+        transform: scale(0.7);
+        left: -8%;
+        bottom: 22rem;
+    }
+    #krishna-conversation {
+        transform: scale(0.9);
+        left: 12%;
+        bottom:37rem
+    }
+}
 #play,
 #pause {
 	float: left;
 	width: 40px;
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
 }
 #play:hover,
 #pause:hover {
