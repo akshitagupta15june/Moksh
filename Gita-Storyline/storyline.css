@@ -226,11 +226,11 @@ background-size: cover;
   
 #krishna-conversation {
     background-color: antiquewhite;
-    height: fit-content;
+    height: 7rem;
     width: 20rem; /* Adjust width as needed */
     position: relative;
-    bottom: 54rem;
-    left: 75%; /* Center the box horizontally */
+    bottom: 50rem;
+    left: 71%; /* Center the box horizontally */
     transform: translateX(-50%); /* Center the box horizontally */
     text-align: center;
     overflow-y: auto;
