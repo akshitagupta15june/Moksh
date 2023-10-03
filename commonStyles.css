@@ -107,13 +107,15 @@ footer {
   width: 11vw;
   left: 40vw;
   bottom: 5vh;
+
+  margin-right: 30px;
 }
 
 @media screen and (min-width: 280px) and (max-width: 912px) {
   .OmSymbol {
     position: relative;
     height: 100px;
-    width: 120px;
+    width: 100px;
     left: 40vw;
   }
 }
