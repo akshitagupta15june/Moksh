@@ -781,3 +781,87 @@ footer {
   99%   {color: var(--color-3)}
   100%  {color: var(--color-1)}
 }
+
+.first_button {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.button-75 {
+  margin: 50px;
+  align-items: center ; 
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  height: 104px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-75:active {
+  outline: 0;
+}
+
+.button-75:hover {
+  outline: 0;
+}
+
+.button-75 span {
+  transition: all 200ms;
+}
+
+.button-75:hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+  .button-75 {
+    font-size: 14px;
+    height: 70px;
+  }
+
+  .button-75 span {
+    line-height: 50px;
+  }
+}
