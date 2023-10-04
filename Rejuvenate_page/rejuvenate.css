@@ -24,6 +24,10 @@ body {
   background-color: lightgoldenrodyellow;
 }
 
+.leftSection {
+  margin-top: -37px; /* Adjust this value as to cover the logo and image with Navbar component */
+}
+
 .home {
   background-color: transparent !important;
 }
@@ -193,7 +197,7 @@ iframe {
 
 .video-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 20px;
 }
 
