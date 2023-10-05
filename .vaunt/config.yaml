@@ -2,7 +2,7 @@ version: 0.0.1
 achievements:
   - achievement:
       name: Pull Request Hero
-      icon: https://github.com/akshitagupta15june/Moksh/blob/main/.vaunt/ach1.jpeg
+      icon: https://raw.githubusercontent.com/akshitagupta15june/Moksh/main/.vaunt/ach1.jpeg
       description: Recognized for achieving the highest number of pull requests in Moksh Repo!
       triggers:
         - trigger:
@@ -11,7 +11,7 @@ achievements:
             condition: count() >= 10
   - achievement:
       name: Every Bit Counts
-      icon: https://github.com/akshitagupta15june/Moksh/blob/main/.vaunt/ach2.jpeg
+      icon: https://raw.githubusercontent.com/akshitagupta15june/Moksh/main/.vaunt/ach2.jpeg
       description: No commit is to small!
       triggers:
         - trigger:
@@ -20,7 +20,7 @@ achievements:
             condition: count() >= 1
   - achievement:
       name: Issue Hunter
-      icon: https://github.com/akshitagupta15june/Moksh/blob/main/.vaunt/ach3.jpeg
+      icon: https://raw.githubusercontent.com/akshitagupta15june/Moksh/main/.vaunt/ach3.jpeg
       description: Keep up the fantastic work that makes our projects better
       triggers:
         - trigger:
@@ -29,7 +29,7 @@ achievements:
             condition: count() >= 10
   - achievement:
       name: Community Guardian
-      icon: https://github.com/akshitagupta15june/Moksh/blob/main/.vaunt/ach4.jpeg
+      icon: https://raw.githubusercontent.com/akshitagupta15june/Moksh/main/.vaunt/ach4.jpeg
       description: You're the best moderator, safeguarding our vibrant and friendly atmosphere!
       triggers:
         - trigger:
