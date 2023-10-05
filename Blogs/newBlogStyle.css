@@ -25,6 +25,13 @@
   position: relative;
 }
 
+ .read-button:hover {
+  background-color: white;
+  color: #353686;
+  background: rgb(255,255,255);
+  background: linear-gradient(107deg, rgba(255,255,255,1) 0%, rgba(128,128,128,1) 72%);
+} 
+
 .read-button:hover::before {
   content: '';
   position: absolute;
@@ -32,7 +39,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid white; /* Adjust the border size as needed */
+  /* border: 2px solid white; Adjust the border size as needed */
   border-radius: 5px; /* Adjust the border radius as needed */
   }
 
