@@ -164,7 +164,7 @@
             </div>
           </div>
 
-  <div align=center class="quiz">
+  <div class="quiz">
     <p>
     <!-- <h1>Bhagwadgita Trivia</h1>s -->
     <br/>
@@ -353,6 +353,25 @@
       </div>
     </div>
 
-    <script src="../commonScript.js"></script>
+    <script>
+      var scbtn=document.querySelector("#bttbutton");
+      var contentWrapper=document.querySelector(".contentWrapper");
+      function scrollUp() {
+  if (contentWrapper.scrollTop > 100) {
+    scbtn.style.display = "block";
+  } else {
+    scbtn.style.display = "none";
+  }
+}
+
+      scbtn.addEventListener('click',()=>{
+        contentWrapper.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    console.log(contentWrapper);
+      })
+      contentWrapper.addEventListener("scroll", scrollUp);
+    </script>
   </body>
 </html>

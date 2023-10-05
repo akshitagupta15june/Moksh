@@ -23,7 +23,14 @@ body {
   position: fixed !important;
   background-color: lightgoldenrodyellow;
 }
-
+.leftSection{
+  position: relative;
+  bottom: 65%;
+}
+.rightSection{
+  position: relative;
+  bottom: 62%;
+}
 .home {
   background-color: transparent !important;
 }
