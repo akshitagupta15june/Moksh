@@ -24,8 +24,14 @@ body {
   background-color: lightgoldenrodyellow;
 }
 
-.leftSection {
-  margin-top: -37px; /* Adjust this value as to cover the logo and image with Navbar component */
+.leftSection{
+  position: relative;
+  bottom: 65%;
+  
+}
+.rightSection{
+  position: relative;
+  bottom: 62%;
 }
 
 .home {
