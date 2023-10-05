@@ -97,7 +97,7 @@ body {
   background-color: #fff;
   border-radius: 2px;
   overflow: hidden;
-  margin: 20px auto;
+  margin: 35px auto;
   width: 90%; /* Increase the width for a larger box */
   height: auto; /* Let the height adjust to content */
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.464);
