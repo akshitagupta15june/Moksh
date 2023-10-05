@@ -8,14 +8,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-
-body {
-  background-color: #2980b9;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
   overflow: hidden;
 }
 
@@ -66,10 +58,7 @@ body {
   position: relative;
   display: inline-block;
   transform: translateX(-70%);
-
   padding-top: 1rem!important;
-
-
 }
 
 .media-scroller {
@@ -81,12 +70,10 @@ body {
   margin: 0 auto;
   margin-bottom: 50px;
   overflow-x: auto;
-
   overscroll-behavior-inline: contain;
 }
 
 /* changing scrollbar style */
-
 *::-webkit-scrollbar {
   height: 6px;
 }
@@ -102,21 +89,25 @@ body {
 }
 
 /* Rest of the CSS code */
-
 #about {
-  display: flex;
+  display: justift;
+  flex-direction: column; /* Change to column to place content below the image */
   justify-content: center;
+  align-items: center; /* Center content horizontally and vertically */
   background-color: #fff;
   border-radius: 2px;
   overflow: hidden;
   margin: 20px auto;
-  width: 60%;
+  width: 90%; /* Increase the width for a larger box */
+  height: auto; /* Let the height adjust to content */
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.464);
   box-sizing: border-box;
   border: 0px solid #e5e7eb;
-  transition: scale 1s;
-  padding: 0;
+  transition: transform 1s; /* Increase scale duration */
+  padding: 20px; /* Add padding for spacing */
 }
+
+
 
 #about p {
   max-height: 0;
@@ -129,7 +120,7 @@ body {
 }
 
 #about:hover {
-  scale: 0.95;
+  transform: scale(0.95); /* Increase scale duration */
 }
 
 #about span {
@@ -150,34 +141,23 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .img-section {
   margin: 0;
   padding: 0;
-  height: 28rem;
+  height: 20rem; /* Set a fixed height for all images */
+  width: 100%; /* Maintain aspect ratio */
+  overflow: hidden; /* Hide overflow to maintain box size */
 }
 
 .img-section img {
   height: 100%;
-  width: 110%;
-  object-fit: cover;
-}
-
-#about section {
   width: 100%;
-  height: 100%;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  object-fit: cover;
+  transition: transform 0.8s ease; /* Increase transition duration */
 }
 
-iframe {
-  width: 420px;
-  height: 315px;
-  border-radius: 10px;
-}
 
-/* dark carorousel control icons */
-
+/* dark carousel control icons */
 .carousel-control-next,
 .carousel-control-prev {
   filter: invert(100%);
@@ -190,13 +170,11 @@ iframe {
   object-fit: cover;
 }
 
-
 .video-container {
   display: flex;
   justify-content: center; 
   gap: 20px;
 }
-
 
 @media (max-width: 620px) {
   .media-scroller {
@@ -226,21 +204,19 @@ iframe {
   .img-section {
     margin: 0;
     padding: 0;
-    height: 18rem;
+    height: 12rem;
   }
 
   .img-section img {
-    width: 110%;
+    width: 100%; /* Set to 100% to maintain aspect ratio */
     object-fit: cover;
   }
-
 }
 
 .customFooter a {
   color: rgb(203 213 225);
- }
+}
 
 .customFooter a:hover {
   text-decoration: none;
-
 }
