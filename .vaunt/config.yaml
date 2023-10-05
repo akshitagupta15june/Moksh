@@ -1,17 +1,17 @@
 version: 0.0.1
 achievements:
   - achievement:
-      name: Shooting Star
-      icon: https://raw.githubusercontent.com/vauntdev/example/main/.vaunt/shooting_star.png
-      description: Awarded for staring our repository, make a wish!
+      name: Pull Request Hero
+      icon: https://raw.githubusercontent.com/akshitagupta15june/Moksh/main/.vaunt/ach1.jpeg
+      description: Recognized for achieving the highest number of pull requests in Moksh Repo!
       triggers:
         - trigger:
             actor: author
-            action: star
-            condition: starred = true
+            action: pull_request
+            condition: count() >= 10
   - achievement:
       name: Every Bit Counts
-      icon: https://raw.githubusercontent.com/vauntdev/example/main/.vaunt/every_bit_counts.png
+      icon: https://raw.githubusercontent.com/akshitagupta15june/Moksh/main/.vaunt/ach2.jpeg
       description: No commit is to small!
       triggers:
         - trigger:
@@ -19,20 +19,20 @@ achievements:
             action: commit
             condition: count() >= 1
   - achievement:
-      name: Pull Request Hero
-      icon: https://raw.githubusercontent.com/vauntdev/example/main/.vaunt/pull_request_hero.png
-      description: You're a PR hero, rock on!
-      triggers:
-        - trigger:
-            actor: author
-            action: pull_request
-            condition: merged = true
-  - achievement:
-      name: Closer
-      icon: https://raw.githubusercontent.com/vauntdev/example/main/.vaunt/closer.png
-      description: Only closers get coffee!
+      name: Issue Hunter
+      icon: https://raw.githubusercontent.com/akshitagupta15june/Moksh/main/.vaunt/ach3.jpeg
+      description: Keep up the fantastic work that makes our projects better
       triggers:
         - trigger:
             actor: author
             action: issue
-            condition: closed = true
+            condition: count() >= 10
+  - achievement:
+      name: Community Guardian
+      icon: https://raw.githubusercontent.com/akshitagupta15june/Moksh/main/.vaunt/ach4.jpeg
+      description: You're the best moderator, safeguarding our vibrant and friendly atmosphere!
+      triggers:
+        - trigger:
+            actor: assignees
+            action: issue
+            condition: closed = true & labels in ['moderator']
