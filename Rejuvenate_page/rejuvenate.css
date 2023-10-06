@@ -158,10 +158,26 @@ body {
 
 
 /* dark carousel control icons */
-.carousel-control-next,
+/* Increase the width and adjust the placement of arrow buttons */
+/* Add space between the arrow buttons */
 .carousel-control-prev {
+  font-size: 3rem;
   filter: invert(100%);
+  width: 4rem;
+  height: 4rem;
+  margin-top: -2rem;
+  margin-right: 1rem; /* Adjust the right margin as needed */
 }
+
+.carousel-control-next {
+  font-size: 3rem;
+  filter: invert(100%);
+  width: 4rem;
+  height: 4rem;
+  margin-top: -2rem;
+  margin-left: 1rem; /* Adjust the left margin as needed */
+}
+
 
 .navbar-logo img {
   width: 60px;
