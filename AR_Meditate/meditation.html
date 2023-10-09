@@ -1,266 +1,338 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>AR Meditate</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <title>AR Meditate</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../commonStyles.css" type="text/css" />
+    <link href="./meditation.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-  <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="../commonStyles.css" type="text/css" />
-  <link href="./meditation.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-</head>
-
-<body>
-  <div class="container-fluid min-vh-100 h-auto p-0 m-0">
-    <div class="blogWrapper h-screen overflow-hidden relative">
-
-      <!-- Site Menu Links  -->
-      <div
-
-        class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-screen ">
-      </div>
-
-      <div class="contentWrapper h-full overflow-y-auto">
-        <!-- Scroll to top -->
-        <div class="md:pr-8 hover-effect">
-                    
-          <button id="bttbutton" title="backtotop">
-            <img src="./image.svg" class="size md:w-10 md:object-left"/>
-          </button>
-          
-      </div>
-    <!-- Scroll to top -->
-        <!-- Hero Section & Navbar  -->
+  <body>
+    <div class="container-fluid min-vh-100 h-auto p-0 m-0">
+      <div class="blogWrapper h-screen overflow-hidden relative">
+        <!-- Site Menu Links  -->
         <div
-          class="heroSection h-fit md:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg flex-col bg-no-repeat items-center bg-contain md:bg-right">
-
-          <!-- Navbar   -->
+          class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-screen"
+        ></div>
+        <div class="contentWrapper h-full overflow-y-auto">
+          <!-- Scroll to top -->
+          <div class="md:pr-8 hover-effect">
+            <button id="bttbutton" title="backtotop">
+              <img src="./image.svg" class="size md:w-10 md:object-left" />
+            </button>
+          </div>
+          <!-- Scroll to top -->
+          <!-- Hero Section & Navbar  -->
           <div
-            class="navbar fixed top-0 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-40 items-center justify-between w-full left-0 ">
-          </div>
-
-
-
-          <div class="container-fluid p-0 text-white" style="margin-top: 200px">
-            <h1 class="text-center display-2">Augmented Reality Meditation</h1>
-
-            <!-- QR Code and Content  -->
-            <div class="my-5 container w-50 qr-container">
-              <div class="row">
-                <div class="col d-flex justify-content-center">
-                  <img src="../Images/krishna.jpeg" class="qr-logo" />
-                </div>
-                <div class="col-8 qr-tagline">
-                  <p class="fw-semibold fs-4 fst-italic qr-tagline">
-                    You just have to open your google lens <br />
-                    and scan the QR code for an ultimate <br />
-                    Augmented reality experience in front of your eyes.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Audio Clips  -->
-            <div class="container clips my-5 px-4 text-center">
-              <h4 class="text-center my-5">
-                Listen to peaceful Krishna flute music with AR meditation.
-              </h4>
-
-              <div class="container-fluid grid">
-                <div class="row gy-5 audio-container">
-                  <!-- Dynamicaly adding audios in this section using javascript from meditation.js file -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Iframe  -->
-          <div class="container-fluid p-0 m-0 d-flex justify-content-center align-items-center">
-            <iframe title="Krishna Artifacts" frameborder="0" allowfullscreen mozallowfullscreen="true"
-              webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
-              execution-while-out-of-viewport execution-while-not-rendered web-share width="80%" height="570"
-              style="padding: 0; margin: 0" src="https://sketchfab.com/models/506d0a8f43884c458e5a78156151ff09/embed">
-            </iframe>
-          </div>
-          <br>
-          
-        
-
-        <!-- Footer  -->
-
-        <!-- <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col" style="margin-top: 990px ; "></footer> -->
-        <footer class="bg-slate-900 py-4 px-8 lg:px-24 flex flex-col">
-
-          <!-- NewsLetter  -->
-          <div
-               class="mt-8 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center">
-
-               
-    
-            <div class="mb-1 text-center lg:text-left">
-              <p class="capitalize text-[11px] font-semibold tracking-wider">Sign Up for our newsletter:</p>
-              <p>Get weekly updates regarding Moksh.</p>
-            </div>
-    
-            <div class="newsLetter flex group ease-in-out duration-300">
-              <input type="email" name="email" id="" placeholder="your email"
-                     class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0">
-              <button
-                      class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600">Subscribe</button>
-            </div>
-    
-          </div>
-    
-          <!-- Site Nav  -->
-          <div class="mt-8 siteNav flex flex-col lg:flex-row ">
-    
-            <div class="flex flex-col lg:flex-row items-center text-center lg:text-left lg:w-1/2">
-              <img src="../Images/New_Logo.svg" alt="Moksh Logo" class="h-24 w-24 lg:mr-4 rounded-full" />
-              <div class="py-3 font-medium text-white w-2/3 flex flex-col text-xs">
-                <h1 class="text-3xl projectName">Moksh</h1>
-                <span>
-                  It is a spiritual productivity tool designed for
-                  individuals who want to unlock their potential and
-                  achieve true balance in life. Join us on our journey to empower the world with spiritual knowledge.
-                </span>
-    
-                <div class="social flex justify-center lg:justify-start items-center gap-x-4 mt-4">
-                  <a href="https://github.com/akshitagupta15june/Moksh">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                         class="bi bi-github text-slate-300 ease-in-out duration-300 hover:text-indigo-600"
-                         viewBox="0 0 16 16">
-                      <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                    </svg>
-                  </a>
-                  <a href="https://twitter.com/ExperienceMoksh">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                         class="bi bi-twitter text-slate-300 ease-in-out duration-300 hover:text-indigo-600"
-                         viewBox="0 0 24 24" version="1.1">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                  </a>
-                </div>
-    
-              </div>
-    
-    
-            </div>
-    
+            class="heroSection h-fit md:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg flex-col bg-no-repeat items-center bg-contain md:bg-right"
+          >
+            <!-- Navbar   -->
             <div
-                 class="site--links capitalize text-xs text-slate-300 grid sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-y-4 lg:w-1/2">
-    
-              <a href="./index.html"
-                 class="w-full text-center lg:text-left">
-                <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
-              </a>
-    
-              <a href="../Blogs/Blog.html"
-                 class="w-full text-center lg:text-right">
-                <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Power
-                  of Knowledge blogs</span>
-              </a>
-    
-              <a href="../AR_Meditate/meditation.html"
-                 class="w-full text-center lg:text-left">
-                <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Augmented
-                  Reality
-                  Meditation</span>
-              </a>
-    
-              <a href="../Iskcon/event.html"
-                 class="w-full text-center lg:text-right">
-                <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Iskon
-                  Events</span>
-              </a>
-    
-              <a href="../Divine_page/story.html"
-                 class="w-full text-center lg:text-left">
-                <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Divine
-                  Activities for all
-                  Generation
-                </span>
-              </a>
-    
-              <a href="../Pomodro_page/reward.html"
-                 class="w-full text-center lg:text-right">
-                <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
-                  Spiritual
-                  Break</span>
-              </a>
-    
-              <a href="../shlok_page/motivation.html"
-                 class="w-full text-center lg:text-left">
-                <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Read
-                  a Shlok</span> </a>
-    
-              <a href="../Rejuvenate_page/rejuvenate.html"
-                 class="w-full text-center lg:text-right">
-                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate
-                    </span></a>
-    
+              class="navbar fixed top-0 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-30 items-center justify-between w-full left-0 bg-gradient-to-r from-yellow-50 to-rose-100"
+            ></div>
+
+            <div
+              class="container-fluid p-0 text-white"
+              style="margin-top: 200px"
+            >
+              <h1 class="text-center display-2">
+                Augmented Reality Meditation
+              </h1>
+
+              <!-- QR Code and Content  -->
+              <div class="my-5 container w-50 qr-container">
+                <div class="row">
+                  <div class="col d-flex justify-content-center">
+                    <img src="../Images/krishna.jpeg" class="qr-logo" />
+                  </div>
+                  <div class="col-8 qr-tagline">
+                    <p class="fw-semibold fs-4 fst-italic qr-tagline">
+                      You just have to open your google lens <br />
+                      and scan the QR code for an ultimate <br />
+                      Augmented reality experience in front of your eyes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Audio Clips  -->
+              <div class="container clips my-5 px-4 text-center">
+                <h4 class="text-center my-5">
+                  Listen to peaceful Krishna flute music with AR meditation.
+                </h4>
+
+                <div class="container-fluid grid">
+                  <div class="row gy-5 audio-container">
+                    <!-- Dynamicaly adding audios in this section using javascript from meditation.js file -->
+                  </div>
+                </div>
+              </div>
             </div>
-    
+            <!-- Iframe  -->
+            <div
+              class="container-fluid p-0 m-0 d-flex justify-content-center align-items-center"
+            >
+              <iframe
+                title="Krishna Artifacts"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                width="80%"
+                height="570"
+                style="padding: 0; margin: 0"
+                src="https://sketchfab.com/models/506d0a8f43884c458e5a78156151ff09/embed"
+              >
+              </iframe>
+            </div>
+            <br />
+
+            <!-- Footer  -->
+
+            <!-- <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col" style="margin-top: 990px ; "></footer> -->
+            <footer class="bg-slate-900 py-4 px-8 lg:px-24 flex flex-col">
+              <!-- NewsLetter  -->
+              <div
+                class="mt-8 newsLetter text-slate-300 flex text-xs flex-col justify-center lg:flex-row lg:justify-between items-center"
+              >
+                <div class="mb-1 text-center lg:text-left">
+                  <p
+                    class="capitalize text-[11px] font-semibold tracking-wider"
+                  >
+                    Sign Up for our newsletter:
+                  </p>
+                  <p>Get weekly updates regarding Moksh.</p>
+                </div>
+
+                <div class="newsLetter flex group ease-in-out duration-300">
+                  <input
+                    type="email"
+                    name="email"
+                    id=""
+                    placeholder="your email"
+                    class="bg-transparent border border-emerald-600 py-2 rounded-l-md placeholder:text-slate-300 placeholder:text-xs w-full group-hover:border-indigo-600 ease-in-out duration-300 text-sm outline-0"
+                  />
+                  <button
+                    class="bg-emerald-600 text-slate-300 rounded-r-md px-4 py-2 text-white uppercase subscribeBtn tracking-wider ease-in-out duration-300 group-hover:bg-indigo-600"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+
+              <!-- Site Nav  -->
+              <div class="mt-8 siteNav flex flex-col lg:flex-row">
+                <div
+                  class="flex flex-col lg:flex-row items-center text-center lg:text-left lg:w-1/2"
+                >
+                  <img
+                    src="../Images/New_Logo.svg"
+                    alt="Moksh Logo"
+                    class="h-24 w-24 lg:mr-4 rounded-full"
+                  />
+                  <div
+                    class="py-3 font-medium text-white w-2/3 flex flex-col text-xs"
+                  >
+                    <h1 class="text-3xl projectName">Moksh</h1>
+                    <span>
+                      It is a spiritual productivity tool designed for
+                      individuals who want to unlock their potential and achieve
+                      true balance in life. Join us on our journey to empower
+                      the world with spiritual knowledge.
+                    </span>
+
+                    <div
+                      class="social flex justify-center lg:justify-start items-center gap-x-4 mt-4"
+                    >
+                      <a href="https://github.com/akshitagupta15june/Moksh">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-github text-slate-300 ease-in-out duration-300 hover:text-indigo-600"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                          />
+                        </svg>
+                      </a>
+                      <a href="https://twitter.com/ExperienceMoksh">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-twitter text-slate-300 ease-in-out duration-300 hover:text-indigo-600"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="site--links capitalize text-xs text-slate-300 grid sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-y-4 lg:w-1/2"
+                >
+                  <a
+                    href="./index.html"
+                    class="w-full text-center lg:text-left"
+                  >
+                    <span
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300"
+                      >Home</span
+                    >
+                  </a>
+
+                  <a
+                    href="../Blogs/Blog.html"
+                    class="w-full text-center lg:text-right"
+                  >
+                    <span
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300"
+                      >Power of Knowledge blogs</span
+                    >
+                  </a>
+
+                  <a
+                    href="../AR_Meditate/meditation.html"
+                    class="w-full text-center lg:text-left"
+                  >
+                    <span
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300"
+                      >Augmented Reality Meditation</span
+                    >
+                  </a>
+
+                  <a
+                    href="../Iskcon/event.html"
+                    class="w-full text-center lg:text-right"
+                  >
+                    <span
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300"
+                      >Iskon Events</span
+                    >
+                  </a>
+
+                  <a
+                    href="../Divine_page/story.html"
+                    class="w-full text-center lg:text-left"
+                  >
+                    <span
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300"
+                      >Divine Activities for all Generation
+                    </span>
+                  </a>
+
+                  <a
+                    href="../Pomodro_page/reward.html"
+                    class="w-full text-center lg:text-right"
+                  >
+                    <span
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300"
+                      >Pomodoro Spiritual Break</span
+                    >
+                  </a>
+
+                  <a
+                    href="../shlok_page/motivation.html"
+                    class="w-full text-center lg:text-left"
+                  >
+                    <span
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300"
+                      >Read a Shlok</span
+                    >
+                  </a>
+
+                  <a
+                    href="../Rejuvenate_page/rejuvenate.html"
+                    class="w-full text-center lg:text-right"
+                  >
+                    <span
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-slate-300 hover:after:w-full after:ease-in-out after:duration-300"
+                      >Rejuvenate
+                    </span></a
+                  >
+                </div>
+              </div>
+
+              <!-- Copyright  -->
+              <div
+                class="mt-8 copyRight flex items-center justify-center text-xs text-slate-300 flex-col"
+              >
+                <p class="text-center">
+                  Made with ❤️ by Akshita during XPRESSION'23
+                </p>
+                <p class="text-indigo-900 font-bold">
+                  &copy; <span id="copyright-year"></span> Moksh. All rights
+                  reserved.
+                </p>
+              </div>
+            </footer>
           </div>
-    
-          <!-- Copyright  -->
-          <div class="mt-8 copyRight flex items-center justify-center text-xs text-slate-300 flex-col">
-            <p class='text-center'>Made with ❤️ by Akshita during XPRESSION'23</p>
-            <p class="text-indigo-900 font-bold">
-              &copy; <span id="copyright-year"></span> Moksh. All rights reserved.
-            </p>
-          </div>
-    
-        </footer>
-      </div>
+        </div>
       </div>
     </div>
-  </div>
-         
-  <!-- <script src="../commonScript.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+
+    <script src="../commonScript.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script> -->
     <!-- <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-  <script src="./meditation.js"></script>
-  <script src="../script.js"></script>
-  <!-- Copyright Year js file -->
-  <script src="../copyrightYear.js"></script>
-  <script>
-    var scbtn=document.querySelector("#bttbutton");
-    var contentWrapper=document.querySelector(".contentWrapper");
-    function scrollUp() {
-if (contentWrapper.scrollTop > 100) {
-  scbtn.style.display = "block";
-} else {
-  scbtn.style.display = "none";
-}
-}
+    <script src="./meditation.js"></script>
+    <script src="../script.js"></script>
+    <!-- Copyright Year js file -->
+    <script src="../copyrightYear.js"></script>
+    <script>
+      var scbtn = document.querySelector("#bttbutton");
+      var contentWrapper = document.querySelector(".contentWrapper");
+      function scrollUp() {
+        if (contentWrapper.scrollTop > 100) {
+          scbtn.style.display = "block";
+        } else {
+          scbtn.style.display = "none";
+        }
+      }
 
-    scbtn.addEventListener('click',()=>{
-      contentWrapper.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-  console.log(contentWrapper);
-    })
-    contentWrapper.addEventListener("scroll", scrollUp);
-  </script>
-</body>
-
+      scbtn.addEventListener("click", () => {
+        contentWrapper.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+        console.log(contentWrapper);
+      });
+      contentWrapper.addEventListener("scroll", scrollUp);
+    </script>
+  </body>
 </html>
