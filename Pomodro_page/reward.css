@@ -188,6 +188,7 @@ button:hover {
 .pomodoro_container p{
   font-size: 1.5rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: -200px;
 }
 
 
@@ -281,7 +282,7 @@ button:hover {
 
 .container-header{
   margin: 100px auto 100px auto; 
-  padding: 50px;
+  padding: 150px;
 }
 
 /* footer .logo {
@@ -295,3 +296,4 @@ footer img{
   width: 7rem;
 }
  */
+
