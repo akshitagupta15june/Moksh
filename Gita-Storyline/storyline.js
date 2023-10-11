@@ -53,6 +53,34 @@ const question = [
   {
     Arjuna:"What is Soul?",
     Krishna:"The soul is the true self of each individual. It is the immortal essence of who we are, and it is not subject to the changes and vicissitudes of this world. The soul is our innermost being, our true nature. It is the source of our consciousness and our individuality."
+  },
+  {
+    Arjuna: "What basic changes should we make?",
+    Krishna: "Instead of changing the world you can change yourself, when the mind changes the man is changed.When the man is changed automatically the world is changed"
+  },
+  {
+    Arjuna: "What is bondage what is liberation?",
+    Krishna: "Intellect is bondage and faith is liberation"
+  },
+  {
+    Arjuna: "What is self realization?",
+    Krishna: "When our ego is vanished the self shines When yourself is realized there is end to all efforts and exploration"
+  },
+  {
+    Arjuna: "What is the root cause of all evils",
+    Krishna: "Love of money is the route cause of all evils"
+  },
+  {
+    Arjuna: "What is self enquiry? Who am I?",
+    Krishna: "I am not this body I am a blessed, holy ,peaceful soul"
+  },
+  {
+    Arjuna:"What can cure a parient?",
+    Krishna:"Not allopathy homeopathy or naturopathy but sympathy can cure the patient"
+  },
+  {
+    Arjuna: "Why we are sad?",
+    Krishna: "By over thinking we destroy present happiness by a distant misery which may never come at all"
   }
 ]
 
