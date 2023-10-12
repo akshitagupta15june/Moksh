@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet'>
+  <title>Iskcon Events</title>
+  <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
+  <link rel="stylesheet" href="../commonStyles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <style>
+    @media only screen and (max-width: 600px) {
+      .swiper-wrapper {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .card {
+        width: 300px !important;
+      }
+
+      .search-container {
+        margin-top: 30px;
+      }
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Font size updates */
+    h1 {
+      font-size: 2rem; /* Increase the heading font size */
+    }
+
+    h2 {
+      font-size: 1.5rem; /* Increase the subheading font size */
+    }
+
+    p {
+      font-size: 1rem; /* Increase the paragraph font size */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blogWrapper h-screen overflow-hidden relative">
+    <!-- Site Menu Links  -->
+    <div class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] sm:p-12 p-8 bg-white w-screen">
+    </div>
+
+    <div class="contentWrapper h-full overflow-y-auto">
+      <!-- Scroll to top -->
+      <div class="md:pr-8 hover-effect">
+        <button id="bttbutton" title="backtotop">
+          <img src="image.svg" class="size md:w-10 md:object-left" />
+        </button>
+      </div>
+      <!-- Scroll to top -->
+
+      <!-- Hero Section & Navbar  -->
+      <div class="heroSection w-full h-auto lg:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg bg-gradient-to-r from-yellow-50 to-rose-100 ">
+        <!-- Navbar   -->
+        <div class="navbar fixed top-0 h-14 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-30 items-center justify-between w-full left-0  bg-gradient-to-r from-yellow-50 to-rose-100  ">
+        </div>
+
+        <section class="mt-20 py-4 w-full flex lg:items-center flex-col relative  ">
+          <div class="topSection text-center my-4">
+            <h1 class="text-xl md:text-3xl mt-2 uppercase tracking-widest text-indigo-600 font-semibold">
+              Learn About
+              Iskcon</h1>
+            <p class="text-indigo-600 text-sm font-semibold">International Society for Krishna Consciousness (ISKCON)</p>
+          </div>
+
+          <div class="text w-full h-full flex flex-col lg:flex-row items-center justify-between text-slate-800 px-4">
+            <div class="about lg:w-96 text-center">
+              <p class="text-indigo-600 font-semibold my-4 text-sm uppercase">International Society for Krishna
+                Consciousness
+                (ISKCON)
+              </p>
+              <p class="font-semibold text-sm leading-6 ">
+                <b class="text-indigo-600">ISKCON</b>, also known as the International Society for Krishna
+                Consciousness, is a worldwide
+                spiritual movement rooted in
+                the teachings of Bhakti yoga, a path of devotion to Lord Krishna. Founded in 1966 by A.C.
+                Bhaktivedanta
+                Swami
+                Prabhupada, ISKCON aims to spread the teachings and practices of Krishna consciousness to individuals.
+              </p>
+            </div>
+
+            <div class="showImageWrapper py-12 flex flex-col font-bold ">
+              <div class="showImage bg-yellow-50  rounded-full  shadow-2xl  grow">
+                <img src="../Images/iskonfounder.webp" alt="iskconFounder"
+                     class="  w-full h-full p-12 rounded-full shadow-2xl " />
+              </div>
+              <div class="about text-xs mt-4 text-center text-indigo-600">
+                <p>Shri Abhay Charanaravinda Bhaktivedanta Swami Prabhupada</p>
+                <p>1 September 1896 – 14 November 1977</p>
+                <br><br>
+                <br><br>
+              </div>
+            </div>
+
+            <div class="achivements  lg:w-96">
+              <p class="font-bold  text-indigo-600 mb-1 text-center text-sm uppercase">Achievements</p>
+              <ul class="w-full font-semibold text-sm  list-disc ml-4">
+                <li class="my-1">Five hundred major centers temples and rural communities.</li>
+                <li class="my-1">Nearly one hundred affiliated vegetarian restaurants.</li>
+                <li class="my-1">Thousands of namahattas or local meeting group.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="upcomingEvents h-auto lg:h-screen flex flex-col px-8 py-8 lg:my-0 items-center justify-evenly ">
+        <h2 class="font-semibold uppercase text-md text-indigo-600">
+          <span class="border-b-4 pb-1 border-double border-b-indigo-600 ">Upcoming Events</span>
+        </h2>
+
+        <!-- Iskcon cards data start -->
+        <div class="search-container flex items-center justify-center space-x-4">
+          <input type="text" id="search-bar" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+                 placeholder="Search by state">
+          <button id="search-button" class="px-4 py-2 bg-emerald-400 text-white uppercase tracking-widest rounded-md hover:bg-indigo-900 transition duration-300 ease-in-out">
+            Search
+          </button>
+        </div>
+
+        <div class="cards my-8 lg:my-0 w-full justify-center place-items-center">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- Iskcon cards data end -->
+      </section>
+
+      <!-- Footer  -->
+      <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col">
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../commonScript.js"></script>
+  <script src="./event.js"></script>
+</body>
+
+</html>
