@@ -2,7 +2,7 @@
 
 ## Related Issue
 
-Closes #issue_number
+Closes: #issue_number
 
 <!-- If there is no issue number, the PR will not be merged. Therefore, please ensure that the issue number is added -->
 
