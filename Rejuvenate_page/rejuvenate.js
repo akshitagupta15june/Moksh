@@ -1,79 +1,79 @@
 const carousel = document.querySelector(".carousel"),
-    firstIframe = carousel.querySelectorAll("iframe")[0],
-    arrowIcons = document.querySelectorAll(".wrapper i");
+  firstIframe = carousel.querySelectorAll("iframe")[0],
+  arrowIcons = document.querySelectorAll(".wrapper i");
 
 let isDragStart = false,
-    isDragging = false,
-    prevPageX,
-    prevScrollLeft,
-    positionDiff;
+  isDragging = false,
+  prevPageX,
+  prevScrollLeft,
+  positionDiff;
 
 const showHideIcons = () => {
-    // showing and hiding prev/next icon according to carousel scroll left value
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
-    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
-    arrowIcons[1].style.display =
-        carousel.scrollLeft == scrollWidth ? "none" : "block";
+  // showing and hiding prev/next icon according to carousel scroll left value
+  let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+  arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+  arrowIcons[1].style.display =
+    carousel.scrollLeft == scrollWidth ? "none" : "block";
 };
 
 arrowIcons.forEach((icon) => {
-    icon.addEventListener("click", () => {
-        let firstIframeWidth = firstIframe.clientWidth + 14; // getting first iframe width & adding 14 margin value
-        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
-        carousel.scrollLeft += icon.id == "left" ? -firstIframeWidth : firstIframeWidth;
-        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
-    });
+  icon.addEventListener("click", () => {
+    let firstIframeWidth = firstIframe.clientWidth + 14; // getting first iframe width & adding 14 margin value
+    // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+    carousel.scrollLeft +=
+      icon.id == "left" ? -firstIframeWidth : firstIframeWidth;
+    setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+  });
 });
 
 const autoSlide = () => {
-    // if there is no iframe left to scroll then return from here
-    if (
-        carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) >
-        -1 ||
-        carousel.scrollLeft <= 0
-    )
-        return;
+  // if there is no iframe left to scroll then return from here
+  if (
+    carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 ||
+    carousel.scrollLeft <= 0
+  )
+    return;
 
-    positionDiff = Math.abs(positionDiff); // making positionDiff value positive
-    let firstIframeWidth = firstIframe.clientWidth + 14;
-    // getting difference value that needs to be added or reduced from carousel left to take the middle iframe center
-    let valDifference = firstIframeWidth - positionDiff;
+  positionDiff = Math.abs(positionDiff); // making positionDiff value positive
+  let firstIframeWidth = firstIframe.clientWidth + 14;
+  // getting difference value that needs to be added or reduced from carousel left to take the middle iframe center
+  let valDifference = firstIframeWidth - positionDiff;
 
-    if (carousel.scrollLeft > prevScrollLeft) {
-        // if user is scrolling to the right
-        return carousel.scrollLeft +=
-            positionDiff > firstIframeWidth / 3 ? valDifference : -positionDiff;
-    }
-    // if user is scrolling to the left
-    carousel.scrollLeft -=
-        positionDiff > firstIframeWidth / 3 ? valDifference : -positionDiff;
+  if (carousel.scrollLeft > prevScrollLeft) {
+    // if user is scrolling to the right
+    return (carousel.scrollLeft +=
+      positionDiff > firstIframeWidth / 3 ? valDifference : -positionDiff);
+  }
+  // if user is scrolling to the left
+  carousel.scrollLeft -=
+    positionDiff > firstIframeWidth / 3 ? valDifference : -positionDiff;
 };
 
 const dragStart = (e) => {
-    // updating global variables value on mouse down event
-    isDragStart = true;
-    prevPageX = e.pageX || e.touches[0].pageX;
-    prevScrollLeft = carousel.scrollLeft;
+  // updating global variables value on mouse down event
+  isDragStart = true;
+  prevPageX = e.pageX || e.touches[0].pageX;
+  prevScrollLeft = carousel.scrollLeft;
 };
 
 const dragging = (e) => {
-    // scrolling images/carousel to the left according to the mouse pointer
-    if (!isDragStart) return;
-    e.preventDefault();
-    isDragging = true;
-    carousel.classList.add("dragging");
-    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-    carousel.scrollLeft = prevScrollLeft - positionDiff;
-    showHideIcons();
+  // scrolling images/carousel to the left according to the mouse pointer
+  if (!isDragStart) return;
+  e.preventDefault();
+  isDragging = true;
+  carousel.classList.add("dragging");
+  positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+  carousel.scrollLeft = prevScrollLeft - positionDiff;
+  showHideIcons();
 };
 
 const dragStop = () => {
-    isDragStart = false;
-    carousel.classList.remove("dragging");
+  isDragStart = false;
+  carousel.classList.remove("dragging");
 
-    if (!isDragging) return;
-    isDragging = false;
-    autoSlide();
+  if (!isDragging) return;
+  isDragging = false;
+  autoSlide();
 };
 
 carousel.addEventListener("mousedown", dragStart);
@@ -85,13 +85,12 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-let customFooter = document.querySelector( ".customFooter" ),
-  dropMenuLinks = document.querySelector( '.dropMenuLinks' ),
-  contentWrapper = document.querySelector( '.contentWrapper' ),
-  navbar = document.querySelector( '.navbar' );
+let customFooter = document.querySelector(".customFooter"),
+  dropMenuLinks = document.querySelector(".dropMenuLinks"),
+  contentWrapper = document.querySelector(".contentWrapper"),
+  navbar = document.querySelector(".navbar");
 
-( () =>
-{
+(() => {
   let dropMenuLinksContent = `
      <!-- Row - 1  -->
         <div class="row-1 flex items-center justify-between text-indigo-600 ">
@@ -213,8 +212,8 @@ let customFooter = document.querySelector( ".customFooter" ),
             </div>
           </div>
         </div>
-  `
-  dropMenuLinks.innerHTML = dropMenuLinksContent
+  `;
+  dropMenuLinks.innerHTML = dropMenuLinksContent;
 
   let navbarContent = `
        <div class="leftSection">
@@ -286,8 +285,8 @@ let customFooter = document.querySelector( ".customFooter" ),
                   d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
               </svg>
             </div>
-  `
-  navbar.innerHTML = navbarContent
+  `;
+  navbar.innerHTML = navbarContent;
 
   let footerContent = `
   <!-- NewsLetter  -->
@@ -414,38 +413,31 @@ let customFooter = document.querySelector( ".customFooter" ),
           </div>
 </div>
 </footer>
-  `
+  `;
   customFooter.innerHTML = footerContent;
   let copyRightYear = document.getElementById("copyright-year");
   let currentDate = new Date();
   let currentYear = currentDate.getFullYear();
   copyRightYear.innerText = currentYear;
+})();
 
-} )()
+contentWrapper.onscroll = () => {
+  contentWrapper.scrollTop > 5
+    ? navbar.classList.add("bg-slate-100", "shadow-2xl")
+    : navbar.classList.remove("bg-slate-100", "shadow-2xl");
+};
 
-contentWrapper.onscroll = () =>
-{
-  contentWrapper.scrollTop > 5 ? navbar.classList.add( 'bg-slate-100', 'shadow-2xl' ) : navbar.classList.remove( 'bg-slate-100', 'shadow-2xl' )
-}
+let subscribeBtn = document.querySelector(".subscribeBtn");
+subscribeBtn.onclick = () => {
+  alert("It will be functional soon!!");
+};
 
-let subscribeBtn = document.querySelector( '.subscribeBtn' )
-subscribeBtn.onclick = () =>
-{
-  alert( 'It will be functional soon!!' )
-}
+let indexOpenDropDown = document.querySelector(".indexOpenDropDown");
+indexOpenDropDown.onclick = () => {
+  dropMenuLinks.style.right = 0;
+};
 
-let indexOpenDropDown = document.querySelector( '.indexOpenDropDown' )
-indexOpenDropDown.onclick = () =>
-{
-  dropMenuLinks.style.right = 0
-}
-
-let closeDropDown = document.querySelector( ".closeDropDown" )
-closeDropDown.onclick = () =>
-{
-  dropMenuLinks.style.right = '-2000px'
-
-
-}
-
-
+let closeDropDown = document.querySelector(".closeDropDown");
+closeDropDown.onclick = () => {
+  dropMenuLinks.style.right = "-2000px";
+};
