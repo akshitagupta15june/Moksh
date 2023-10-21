@@ -124,6 +124,13 @@ To get a local copy up and running follow these simple example steps.
 
 3. Have fun!
 
+Run prettier:(Optional)
+Run the watch script
+
+'''sh
+npm run format:watch
+'''
+
 ## Contributing
 
 <div>

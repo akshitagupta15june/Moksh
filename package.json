@@ -1,0 +1,13 @@
+{
+  "name": "moksh",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "commonScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.js\"",
+    "format:watch": "onchange '**/*.js' -- npm run format"
+  },
+  "author": "",
+  "license": "ISC"
+}
