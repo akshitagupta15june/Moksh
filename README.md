@@ -79,12 +79,21 @@ If there are any doubts, you can ask here on Discord. <br>Join your Discord serv
 
 ## Built With
 
-👉 Front-End:
-
-- [HTML](https://html.com)
-- [CSS](https://www.css3.com)
-- [Bootstrap](https://getbootstrap.com)
-- [JavaScript](https://www.javascript.com/)
+👉 Front-End Stacks:
+<p align="left">
+  <a href="](https://html.com">
+    <img src="https://skillicons.dev/icons?i=html" />
+  </a>
+ <a href="https://www.css3.com">
+    <img src="https://skillicons.dev/icons?i=css" />
+  </a>
+ <a href="https://getbootstrap.com">
+    <img src="https://skillicons.dev/icons?i=bootstrap" />
+  </a>
+ <a href="https://www.javascript.com/">
+    <img src="https://skillicons.dev/icons?i=js" />
+  </a>
+</p>
 
 👉 AR Meditation integration:
 
@@ -95,13 +104,11 @@ If there are any doubts, you can ask here on Discord. <br>Join your Discord serv
 - [Google Maps API](https://developers.google.com/maps)
 
 ## TECH STACK USED
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-
-
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js" />
+  </a>
+</p>
 ## Getting Started 👩‍💻
 
 > ⚠️Prerequisites
