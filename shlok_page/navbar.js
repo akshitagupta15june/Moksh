@@ -354,7 +354,7 @@ let customFooter = document.querySelector( ".customFooter" ),
           <!-- Copyright  -->
           <div class="mt-8 copyRight flex items-center justify-center text-xs text-slate-300 flex-col">
             <p class='text-center' style = "color:white;" >Made with ❤️ by Akshita during XPRESSION'23</p>
-            <p class="text-indigo-900 font-bold">
+            <p class="text-slate-300 font-bold">
               &copy; <span id="copyright-year"></span> Moksh. All rights reserved.
             </p>
           </div>
