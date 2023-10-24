@@ -18,6 +18,10 @@ body {
   font-family: Arial, sans-serif;
 } 
 /* Navbar Start */
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+}
 
 .nav {
   height: 70px;
@@ -350,6 +354,7 @@ a.dropdown-item{
   height: 100%;
   object-fit: cover;
 }
+
 
 .circle3 {
   width: 200px;
