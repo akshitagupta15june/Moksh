@@ -109,6 +109,7 @@ If there are any doubts, you can ask here on Discord. <br>Join your Discord serv
     <img src="https://skillicons.dev/icons?i=html,css,js" />
   </a>
 </p>
+
 ## Getting Started 👩‍💻
 
 > ⚠️Prerequisites
