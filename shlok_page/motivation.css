@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
   opacity: 0.6;
   text-align: end;
   position: relative;
-  margin-bottom:3 px;
+  margin-bottom:3px;
 }
 
 #date {
@@ -106,6 +106,22 @@ p:hover {
   color: #fff;
   margin-top: 12px;
 }
+.common-button {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-top: 5px;
+  transition: all 0.2s ease-in-out;
+
+  background-color: #2980b9;
+}
+
+.common-button:hover {
+  transform: scale(1.1);
+  border: none;
+}
+
 
 .tagline > p {
   font-size: 18px;
