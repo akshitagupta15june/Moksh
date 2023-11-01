@@ -53,7 +53,28 @@ const question = [
   {
     Arjuna:"What is Soul?",
     Krishna:"The soul is the true self of each individual. It is the immortal essence of who we are, and it is not subject to the changes and vicissitudes of this world. The soul is our innermost being, our true nature. It is the source of our consciousness and our individuality."
+  },
+  {
+    Arjuna: "How can one find their purpose and fulfill it?",
+    Krishna: "Your purpose is often tied to your inherent qualities and inclinations. By understanding your dharma, or duty, and following it with dedication and righteousness, you can fulfill your life's purpose and contribute to the greater good."
+  },
+  {
+    Arjuna: "How can one overcome the duality of good and bad, pleasure and pain?",
+    Krishna: "Recognize that the dualities of life are transient and part of the material world. By maintaining equanimity and understanding that both pleasure and pain are temporary, you can rise above them and attain a state of inner peace."
+  },
+  {
+    Arjuna: "How can one attain self-realization and union with the Divine (Yoga)?",
+    Krishna: "Yoga is the path to union with the Divine. By practicing self-discipline, self-control, and meditation, you can attain self-realization and experience oneness with the Supreme."
+  },
+  {
+    Arjuna: "How can one deal with the challenges and adversities of life with resilience?",
+    Krishna: "By developing inner strength, faith, and unwavering determination, you can face life's challenges with resilience. Understand that challenges are opportunities for growth and learning."
+  },
+  {
+    Arjuna: "How can one overcome the ego and attain humility?",
+    Krishna: "Overcoming the ego requires self-awareness and self-effacement. By recognizing the false identification with the ego and cultivating humility, you can progress on the path to self-realization."
   }
+  
 ]
 
 let currentQuestionIndex=0;
