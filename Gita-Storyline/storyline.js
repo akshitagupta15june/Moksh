@@ -53,7 +53,20 @@ const question = [
   {
     Arjuna:"What is Soul?",
     Krishna:"The soul is the true self of each individual. It is the immortal essence of who we are, and it is not subject to the changes and vicissitudes of this world. The soul is our innermost being, our true nature. It is the source of our consciousness and our individuality."
+  },
+  {
+    Arjuna: "What is the significance of selfless action in one's spiritual journey?",
+    Krishna: "Selfless action, known as Karma Yoga, is a path to spiritual growth. By performing your duties without attachment to the results, you can purify your mind and progress on the spiritual path. This leads to a deeper understanding of the Self."
+  },
+  {
+    Arjuna: "How can one control the restless mind and attain inner peace?",
+    Krishna: "Meditation and constant practice are essential. By focusing your mind on the divine and detaching it from worldly desires, you can attain inner peace. It requires discipline and patience, but it is a powerful tool for spiritual growth."
+  },
+  {
+    Arjuna: "What is the nature of the eternal soul (Atman)?",
+    Krishna: "The Atman is eternal and indestructible. It is beyond the physical body and the mind. It is the source of consciousness and exists in all living beings. Recognizing the eternal nature of the Atman is essential for self-realization."
   }
+
 ]
 
 let currentQuestionIndex=0;
