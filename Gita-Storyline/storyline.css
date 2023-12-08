@@ -176,20 +176,20 @@ background-size: cover;
     }
 }
 
-@media only screen and (min-width : 550px) and (max-width: 767px) {
+@media only screen and (min-width : 541px) and (max-width: 767px) {
     #arjuna-image,
     #krishna-image {
-        top: calc(50% + 40%); /* Adjust the top position for smaller screens */
+        top: calc(30% + 50%); /* Adjust the top position for smaller screens */
         width: 23%; /* Increase the size of arjuna and krishna by 5% */
     }
 
     #krishna-image {
-        top: 85%; /* Move the krishna image top by 15% */
+        top: 70%; /* Move the krishna image top by 15% */
         left: 65%; /* Move the krishna image right by 15% */
     }
 
     #arjuna-image {
-        top: 85%; /* Move the krishna image top by 15% */
+        top: 70%; /* Move the krishna image top by 15% */
         left: 12%; /* Move the krishna image right by 15% */
     }
 
@@ -203,10 +203,12 @@ background-size: cover;
     }
 
     #left-arrow {
+        top:70%;
         left: 5%; /* Move the left arrow more left */
     }
 
     #right-arrow {
+        top:70%;
         right: 5%; /* Move the right arrow more right */
     }
 }
@@ -215,8 +217,8 @@ background-size: cover;
     height: auto;
     width: 20rem;
     position: relative;
-    bottom: 35rem;
-    left: 21%; /* Center the box horizontally */
+    bottom: 40rem;
+    left: 25%; /* Center the box horizontally */
     transform: translateX(-50%); /* Center the box horizontally */
     text-align: center;
     overflow-y: auto;
@@ -229,7 +231,7 @@ background-size: cover;
     height: 7rem;
     width: 20rem; /* Adjust width as needed */
     position: relative;
-    bottom: 50rem;
+    bottom: 54rem;
     left: 71%; /* Center the box horizontally */
     transform: translateX(-50%); /* Center the box horizontally */
     text-align: center;
@@ -267,6 +269,30 @@ background-size: cover;
 }
 
 
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    #arjuna-conversation {
+        background-color: antiquewhite;
+        height: 7rem;
+        width: 14rem;
+        position: relative;
+        bottom: 42rem;
+        transform: translateX(-50%);
+        text-align: center;
+        overflow-y: auto;
+        padding: 18px;
+    }
+    #krishna-conversation {
+        background-color: antiquewhite;
+        height: 7rem;
+        width: 18rem;
+        position: relative;
+        bottom: 55rem;
+        transform: translateX(-50%); 
+        text-align: center;
+        overflow-y: auto;
+        padding: 18px;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 912px) {
     #arjuna-conversation {
         background-color: antiquewhite;
@@ -310,6 +336,7 @@ background-size: cover;
     position: absolute;
     bottom: 2%;
     left: 1%;
+    z-index: 99;
 }
 #play:hover,
 #pause:hover {
