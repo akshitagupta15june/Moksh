@@ -194,8 +194,40 @@
         </ul>
       </nav>
     </header>
-    <img id="play" onclick="toggleAudio()" src="https://res.cloudinary.com/dchan630/image/upload/v1481676817/play_ierlvl.png" class="img-fluid" alt="Responsive image"><audio id='player' src='flute_music.mp3'></audio>
-    <img id="pause" onclick="toggleAudio()" src="https://res.cloudinary.com/dchan630/image/upload/v1481676820/pause_nqfaht.png" class="img-fluid" alt="Responsive image">
+    <img
+      id="play"
+      onclick="toggleAudio()"
+      src="https://res.cloudinary.com/dchan630/image/upload/v1481676817/play_ierlvl.png"
+      class="img-fluid"
+      alt="Responsive image"
+    /><audio id="player" src="flute_music.mp3"></audio>
+    <img
+      id="pause"
+      onclick="toggleAudio()"
+      src="https://res.cloudinary.com/dchan630/image/upload/v1481676820/pause_nqfaht.png"
+      class="img-fluid"
+      alt="Responsive image"
+    />
+    <!-- Add the audio toggle button for conversation -->
+    <button
+      onclick="toggleConversationAudio()"
+      id="conversation-audio-toggle"
+      style="
+        background-color: #5a4fcf;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        margin: 7px 7px -10px 30px;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-8%);
+      "
+    >
+      Play Conversation Audio
+    </button>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <div class="milky-way"></div>
