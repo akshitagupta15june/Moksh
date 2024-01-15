@@ -92,7 +92,7 @@ background-size: cover;
     z-index: 2;
     position: absolute;
     top: calc(50% + 19%);
-    left: calc(50% + 4%);
+    left: calc(50% - 2%);
     transform: translateY(-50%);
 }
 
