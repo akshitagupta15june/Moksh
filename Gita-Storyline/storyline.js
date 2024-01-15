@@ -1,5 +1,5 @@
-const arjunaConversation = document.getElementById("arjuna-conversation");
-const krishnaConversation = document.getElementById("krishna-conversation");
+const arjunaConversation = document.querySelector(".arjuna-conversation");   // making this two classes arjuna and krishna
+const krishnaConversation = document.querySelector(".krishna-conversation");
 
 const question = [
   {
