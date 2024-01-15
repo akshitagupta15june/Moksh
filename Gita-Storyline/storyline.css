@@ -9,7 +9,7 @@ background-size: cover;
 }
 
 /* milkway start*/  
-.milky-way
+/* .milky-way
 {
     background: #000 url(https://cdn.spacetelescope.org/archives/images/screen/heic0602a.jpg) no-repeat center center /cover;
     width: 700px;
@@ -42,7 +42,7 @@ background-size: cover;
         animation: animate 60s linear infinite;
         position: relative;
     }
-}
+} */
 /* milkway end */
 
 
