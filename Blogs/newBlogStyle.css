@@ -23,26 +23,39 @@
 /* Add this CSS rule to create a white outline on hover */
 .read-button {
   position: relative;
+  padding: 10px 20px;
+  background: linear-gradient(107deg, rgba(255, 255, 255, 1) 0%, rgba(128, 128, 128, 1) 72%);
+  color: #353686;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
  .read-button:hover {
-  background-color: white;
-  color: #353686;
-  background: rgb(255,255,255);
-  background: linear-gradient(107deg, rgba(255,255,255,1) 0%, rgba(128,128,128,1) 72%);
+  background-color: #353686;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
 } 
 
 .read-button:hover::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* border: 2px solid white; Adjust the border size as needed */
-  border-radius: 5px; /* Adjust the border radius as needed */
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(107deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 72%);
+  transition: left 0.3s;
   }
 
+  .read-button:hover::before {
+    left: 100%;
+  }
+  
 .previous {
   background-color: #f1f1f1;
   color: black;
