@@ -546,3 +546,26 @@ color: #28357d;
 ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(transparent, antiquewhite);
 }
+
+::selection {
+  background-color: green;
+  color: white;
+}
+
+/* Vendor-specific syntax for Firefox */
+::-moz-selection {
+  background-color: green;
+  color: white;
+}
+
+/* WebKit browsers (Chrome, Safari) */
+::-webkit-selection {
+  background-color: green;
+  color: white;
+}
+
+/* Microsoft browsers (Edge) */
+::-ms-selection {
+  background-color: green;
+  color: white;
+}
