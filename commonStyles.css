@@ -12,6 +12,27 @@
   text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
 }
 
+
+::selection {
+  background-color: green;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: green;
+  color: white;
+}
+
+::-webkit-selection {
+  background-color: green;
+  color: white;
+}
+
+::-ms-selection {
+  background-color: green;
+  color: white;
+}
+
 /* Footer  */
 footer {
   background-color: rgb(243 244 246 / 1);
