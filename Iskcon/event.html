@@ -11,21 +11,6 @@
     <link rel="stylesheet" href="../commonStyles.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-<style>
-  @media only screen and (max-width: 600px) {
-    .swiper-wrapper{
-    flex-direction: column;
-    gap:20px;
-  }
-  .card{
-    width: 300px !important;
-  }
-  .search-container{
-    margin-top: 30px;
-  }
-}
-
-</style>
   </head>
 
   <body>
@@ -118,13 +103,13 @@
         </div>
 
         <section
-                 class="upcomingEvents h-auto lg:h-screen flex flex-col px-8 py-8 lg:my-0 items-center justify-evenly ">
+                 class="upcomingEvents h-fit lg:h-fit flex flex-col px-8 py-8 lg:my-0 items-center justify-evenly ">
           <h1 class="font-semibold uppercase text-md text-indigo-600">
             <span class="border-b-4 pb-1 border-double border-b-indigo-600 ">Upcoming Events</span>
           </h1>
 
           <!-- Iskcon cards data start -->
-          <div class="search-container flex items-center justify-center space-x-4">
+          <div class="search-container mt-4 flex items-center justify-center space-x-4">
             <input type="text" id="search-bar" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search by state">
             <button id="search-button" class="px-4 py-2 bg-emerald-400 text-white uppercase tracking-widest rounded-md hover:bg-indigo-900 transition duration-300 ease-in-out">
               Search
@@ -132,9 +117,9 @@
           </div>
           
           <div
-               class="cards my-8 lg:my-0 w-full justify-center place-items-center">
+               class="cards my-8 w-full justify-center place-items-center">
                <div class="swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper flex-wrap justify-center gap-4">
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -158,18 +143,4 @@
     <script src="./event.js"></script>
 
   </body>
-  <style>
-    .swiper-container {
-      margin-bottom: 20px;
-    }
-    .card {
-      width: 340px;
-    }
-  
-    .card-image {
-      width: 100%;
-    }
-  </style>
-  
-
 </html>
