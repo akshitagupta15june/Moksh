@@ -53,8 +53,7 @@ function createEventCard(event, swiper, container) {
   const { image, heading, description, date, btnText, link, state } = event;
 
   const card = document.createElement('div');
-  card.classList.add('card', 'bg-indigo-600', 'w-[340px]', 'h-[480px]', 'p-4', 'text-slate-100', 'rounded-md', 'ease-in-out', 'duration-300', 'hover:shadow-2xl', 'hover:scale-110', 'flex', 'flex-col', 'justify-between', 'gap-y-5');
-  card.style.marginRight = '20px';
+  card.classList.add('card', 'bg-indigo-600', 'w-[270px]', 'h-[480px]', 'p-4', 'text-slate-100', 'rounded-md', 'ease-in-out', 'duration-300', 'hover:shadow-2xl', 'hover:scale-110', 'flex', 'flex-col', 'justify-between', 'gap-y-5');
   const imageElement = document.createElement('img');
   imageElement.src = image;
   imageElement.alt = heading;

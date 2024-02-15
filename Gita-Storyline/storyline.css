@@ -7,7 +7,9 @@ padding: 0;
 background-image: url("image4.jpg");
 background-size: cover;
 }
-.milky-way
+
+/* milkway start*/  
+/* .milky-way
 {
     background: #000 url(https://cdn.spacetelescope.org/archives/images/screen/heic0602a.jpg) no-repeat center center /cover;
     width: 700px;
@@ -40,7 +42,8 @@ background-size: cover;
         animation: animate 60s linear infinite;
         position: relative;
     }
-}
+} */
+/* milkway end */
 
 
 #left-arrow, #right-arrow {
@@ -51,8 +54,6 @@ background-size: cover;
     width: 30px;
     z-index: 2;
 }
-
-
 
 #left-arrow,
 #right-arrow {
@@ -72,8 +73,6 @@ background-size: cover;
   right: calc(20px + 10%);
 }
 
-
-
 .image-container {
     display: flex;
     justify-content: center;
@@ -81,9 +80,6 @@ background-size: cover;
     align-items: center;
     height: 100vh;
 }
-
-
-
 #arjuna-image {
     z-index: 2;
     position: absolute;
@@ -96,7 +92,7 @@ background-size: cover;
     z-index: 2;
     position: absolute;
     top: calc(50% + 19%);
-    left: calc(50% + 4%);
+    left: calc(50% - 2%);
     transform: translateY(-50%);
 }
 
@@ -212,112 +208,258 @@ background-size: cover;
         right: 5%; /* Move the right arrow more right */
     }
 }
-#arjuna-conversation {
-    background-color: antiquewhite;
-    height: auto;
-    width: 20rem;
-    position: relative;
-    bottom: 40rem;
-    left: 25%; /* Center the box horizontally */
-    transform: translateX(-50%); /* Center the box horizontally */
-    text-align: center;
-    overflow-y: auto;
-    padding: 18px;
-   
+
+
+/* speech bubble for arjun --> by Anupam aka Rygeen*/  
+.pos-arjuna{
+    margin-left: 2.5rem;
+    margin-top:7rem;
 }
+.bubble1 {
+    --r: 25px; /* the radius */
+    --t: 40px; /* the size of the tail */
+    
+    max-width: 300px;
+    max-height: 200px;
+    padding: calc(2*var(--r)/3);
+    -webkit-mask: 
+      radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+        var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+      conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+        calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+      radial-gradient(50% 50%,#000 98%,#0000 101%) 
+        0 0/var(--r) var(--r) space padding-box;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+    color: #ffffff;
+    font-weight: 500;
+    
+  }
+  .right {
+    --_d: 100%;
+    border-right: var(--t) solid #0000;
+    margin-left: var(--t);
+    place-self: end;
+  }
   
-#krishna-conversation {
-    background-color: antiquewhite;
-    height: 7rem;
-    width: 20rem; /* Adjust width as needed */
-    position: relative;
-    bottom: 54rem;
-    left: 71%; /* Center the box horizontally */
-    transform: translateX(-50%); /* Center the box horizontally */
-    text-align: center;
-    overflow-y: auto;
-    padding: 18px;
-}
+/* for krishna bubble */
 
-@media screen and (max-width: 540px) {
-    #arjuna-conversation {
-        background-color: antiquewhite;
-        height: 7rem;
-        width: 14rem;
-        position: relative;
-        bottom: 25rem;
-        left: 27%;
-        transform: translateX(-50%);
-        text-align: center;
+.pos-krishna{
+    margin-left: 46rem;
+    margin-top: -11rem;
+}
+.bubble2 {    
     
-        overflow-y: auto;
-        padding: 18px;
-    }
-    #krishna-conversation {
-        background-color: antiquewhite;
-        height: 7rem;
-        width: 18rem;
-        position: relative;
-        bottom: 40rem;
-        left: 65%; 
-        transform: translateX(-50%); 
-        text-align: center;
+      margin-bottom: 8rem;
+      overflow-wrap: break-word;
+      overflow-y: auto;
+    --r: 25px; /* the radius */
+    --t: 40px; /* the size of the tail */
     
-        overflow-y: auto;
-        padding: 18px;
+    max-width: 400px;
+    max-height: 170px;
+    padding: calc(2*var(--r)/3);
+    -webkit-mask: 
+      radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+        var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+      conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+        calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+      radial-gradient(50% 50%,#000 98%,#0000 101%) 
+        0 0/var(--r) var(--r) space padding-box;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+.bubble2::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+.bubble2::-webkit-scrollbar {
+    display: none;
+}
+  .left {
+    --_d: 0%;
+    border-left: var(--t) solid #0000;
+    margin-right: var(--t);
+    place-self: start;
+  }
+  
+ /*krishna bubble end here*/
+
+ @media screen and (max-width: 540px) {  /* for smartphone*/
+    .pos-arjuna{
+        margin-left: 0;
+        margin-top:17rem;
     }
+    
+    .bubble1 {
+        overflow-wrap: break-word;
+          overflow-y: auto;
+     --r: 20px; /* the radius */
+    --t: 10px; /* the size of the tail */
+    
+    max-width: 150px;
+    max-height: 100px;
+    padding: calc(2*var(--r)/3);
+    -webkit-mask: 
+      radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+        var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+      conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+        calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+      radial-gradient(50% 50%,#000 98%,#0000 101%) 
+        0 0/var(--r) var(--r) space padding-box;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+    color: #ffffff;
+    font-weight: 200;
+    }
+    .pos-krishna{
+        margin-left: 16rem;
+        margin-top: -11rem;
+    }
+    .bubble2 {    
+          margin-bottom: 8rem;
+          overflow-wrap: break-word;
+          overflow-y: auto;
+        --r: 25px; /* the radius */
+        --t: 0px; /* the size of the tail */
+        
+        max-width: 260px;
+        max-height: 100px;
+        padding: calc(2*var(--r)/3);
+        -webkit-mask: 
+          radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+          conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+          radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+        color: #ffffff;
+        font-weight: 100;
+      }
+      
+    
+    .bubble2::-webkit-scrollbar {
+        display: none;
+    }
+    
 }
 
 
-@media screen and (min-width: 541px) and (max-width: 767px) {
-    #arjuna-conversation {
-        background-color: antiquewhite;
-        height: 7rem;
-        width: 14rem;
-        position: relative;
-        bottom: 42rem;
-        transform: translateX(-50%);
-        text-align: center;
-        overflow-y: auto;
-        padding: 18px;
+@media screen and (min-width: 541px) and (max-width: 767px) {  /*for tablets screen*/
+    .pos-arjuna{
+        margin-left: 0;
+        margin-top:17rem;
     }
-    #krishna-conversation {
-        background-color: antiquewhite;
-        height: 7rem;
-        width: 18rem;
-        position: relative;
-        bottom: 55rem;
-        transform: translateX(-50%); 
-        text-align: center;
-        overflow-y: auto;
-        padding: 18px;
+    
+    .bubble1 {
+        overflow-wrap: break-word;
+          overflow-y: auto;
+     --r: 20px; /* the radius */
+    --t: 10px; /* the size of the tail */
+    
+    max-width: 150px;
+    max-height: 100px;
+    padding: calc(2*var(--r)/3);
+    -webkit-mask: 
+      radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+        var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+      conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+        calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+      radial-gradient(50% 50%,#000 98%,#0000 101%) 
+        0 0/var(--r) var(--r) space padding-box;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+    color: #ffffff;
+    font-weight: 200;
+    }
+    .pos-krishna{
+        margin-left: 20rem;
+        margin-top: -11rem;
+    }
+    .bubble2 {    
+          margin-bottom: 8rem;
+          overflow-wrap: break-word;
+          overflow-y: auto;
+        --r: 25px; /* the radius */
+        --t: 0px; /* the size of the tail */
+        
+        max-width: 300px;
+        max-height: 100px;
+        padding: calc(2*var(--r)/3);
+        -webkit-mask: 
+          radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+          conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+          radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+        color: #ffffff;
+        font-weight: 100;
+      }
+      
+    
+    .bubble2::-webkit-scrollbar {
+        display: none;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 912px) {
-    #arjuna-conversation {
-        background-color: antiquewhite;
-        height: 7rem;
-        width: 14rem;
-        position: relative;
-        bottom: 38rem;
-        transform: translateX(-50%);
-        text-align: center;
-        overflow-y: auto;
-        padding: 18px;
+@media screen and (min-width: 768px) and (max-width: 950px) {  /*for bigger tablets*/
+    .pos-arjuna{
+        margin-left: 5rem;
+        margin-top:7rem;
     }
-    #krishna-conversation {
-        background-color: antiquewhite;
-        height: 7rem;
-        width: 18rem;
-        position: relative;
-        bottom: 56rem;
-        transform: translateX(-50%); 
-        text-align: center;
-        overflow-y: auto;
-        padding: 18px;
+    
+    .bubble1 {
+        overflow-wrap: break-word;
+          overflow-y: auto;
+     --r: 20px; /* the radius */
+    --t: 10px; /* the size of the tail */
+    
+    max-width: 200px;
+    max-height: 100px;
+    padding: calc(2*var(--r)/3);
+    -webkit-mask: 
+      radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+        var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+      conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+        calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+      radial-gradient(50% 50%,#000 98%,#0000 101%) 
+        0 0/var(--r) var(--r) space padding-box;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+    color: #ffffff;
+    font-weight: 300;
+    }
+    .pos-krishna{
+        margin-left: 36rem;
+        margin-top: -11rem;
+    }
+    .bubble2 {    
+          margin-bottom: 8rem;
+          overflow-wrap: break-word;
+          overflow-y: auto;
+        --r: 25px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        
+        max-width: 260px;
+        max-height: 150px;
+        padding: calc(2*var(--r)/3);
+        -webkit-mask: 
+          radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+          conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+          radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+        color: #ffffff;
+        font-weight: 300;
+      }
+      
+    
+    .bubble2::-webkit-scrollbar {
+        display: none;
     }
 }
-@media screen and (max-width: 320px){
+/* @media screen and (max-width: 320px){
     #arjuna-conversation {
         transform: scale(0.7);
         left: -8%;
@@ -328,7 +470,66 @@ background-size: cover;
         left: 12%;
         bottom:37rem
     }
+} */
+@media screen and (min-width:1440px) and (max-width: 1900px) {  /*for desktop screen*/
+    .pos-arjuna{
+        margin-left: 10rem;
+        margin-top:24rem;
+    }
+    
+    .bubble1 {
+        overflow-wrap: break-word;
+          overflow-y: auto;
+     --r: 20px; /* the radius */
+    --t: 10px; /* the size of the tail */
+    
+    max-width: 300px;
+    max-height: 100px;
+    padding: calc(2*var(--r)/3);
+    -webkit-mask: 
+      radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+        var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+      conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+        calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+      radial-gradient(50% 50%,#000 98%,#0000 101%) 
+        0 0/var(--r) var(--r) space padding-box;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+    color: #ffffff;
+    font-weight: 500;
+    }
+    .pos-krishna{
+        margin-left: 56rem;
+        margin-top: -18rem;
+    }
+    .bubble2 {    
+          margin-bottom: 8rem;
+          overflow-wrap: break-word;
+          overflow-y: auto;
+        --r: 25px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        
+        max-width: 480px;
+        max-height: 250px;
+        padding: calc(2*var(--r)/3);
+        -webkit-mask: 
+          radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+          conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+          radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+        color: #ffffff;
+        font-weight: 500;
+      }
+      
+    
+    .bubble2::-webkit-scrollbar {
+        display: none;
+    }
 }
+
+
 #play,
 #pause {
 	float: left;
