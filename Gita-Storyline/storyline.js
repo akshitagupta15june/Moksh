@@ -88,10 +88,12 @@ right.addEventListener("click", () => {
 });
 
 showQuestion();
+
 function toggleAudio() {
-  var audioElement = document.getElementById('player')
-  var soundOn = document.getElementById('play')
-  var soundOff = document.getElementById('pause')
+  var audioElement = document.getElementById('player');
+  var soundOn = document.getElementById('play');
+  var soundOff = document.getElementById('pause');
+
   if (audioElement.paused) {
     audioElement.play();
     $(soundOn).show();
@@ -101,4 +103,9 @@ function toggleAudio() {
     $(soundOn).hide();
     $(soundOff).show();
   }
-} 
+}
+
+$(document).ready(function () {
+  $('#play').hide();
+  $('#pause').show();
+});
