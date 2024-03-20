@@ -151,6 +151,50 @@ footer {
 }
 }
 
+.flex {
+  display: flex;
+}
+
+.input-field {
+  flex: 1; /* Take remaining space */
+  background-color: transparent;
+  border: 1px solid #34D399; /* Emerald color */
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.subscribeBtn {
+  background-color: #34D399; /* Emerald color */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6EE7B7; /* Light green */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popuptext {
+  color: #fff;
+  font-size: 14px;
+}
 
 #bttbutton {
   position: fixed;
