@@ -103,3 +103,35 @@
     object-fit: contain;
   }
 }
+
+#google_translate_element {
+  position: fixed;
+  top: 60px; /* Adjust top distance as needed */
+  right: 50px; /* Adjust right distance as needed */
+  z-index: 9999; /* Ensure it's above other content */
+  background-color: #00ff44; /* Background color */
+  border-radius: 0 !important; /* Border radius */
+  border: 1px solid #ccc; /* Border */
+  padding: 10px; /* Padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Styling for the translate button */
+#google_translate_element .goog-te-menu-value {
+  font-size: 16px; /* Adjust font size */
+  padding: 6px 12px; /* Adjust padding */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Border radius */
+  background-color: #ccc; /* Background color */
+}
+
+/* Styling for the language dropdown */
+#google_translate_element select.goog-te-combo {
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 6px 12px; /* Adjust padding */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Border radius */
+  background-color: #f8f8f8; /* Background color */
+}
