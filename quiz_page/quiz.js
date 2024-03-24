@@ -11,7 +11,6 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 const infm=quiz_box.querySelector(".info");
-
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo");
 }
@@ -37,6 +36,7 @@ let counterLine;
 let widthValue = 0;
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
+
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); 
     result_box.classList.remove("activeResult"); 
@@ -51,19 +51,13 @@ restart_quiz.onclick = ()=>{
     clearInterval(counterLine); 
     startTimer(timeValue); 
     startTimerLine(widthValue);
-    timeText.textContent = "Time Left";
+    timeText.textContent = "Time Left"; 
     next_btn.classList.remove("show"); 
 }
 
 quit_quiz.onclick = ()=>{
     window.location.reload(); 
 }
-
-const quit_btn = document.querySelector("footer .quit_btn");
-quit_btn.onclick = ()=>{
-    quiz_box.classList.remove("activeQuiz"); 
-}
-
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
