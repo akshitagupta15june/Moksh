@@ -474,12 +474,13 @@ background-size: cover;
 @media screen and (min-width:1440px) and (max-width: 1900px) {  /*for desktop screen*/
     .pos-arjuna{
         margin-left: 10rem;
-        margin-top:24rem;
+        margin-top:18rem;
     }
     
     .bubble1 {
+          margin-bottom: 8rem;
         overflow-wrap: break-word;
-          overflow-y: auto;
+          overflow-y: scroll;
      --r: 20px; /* the radius */
     --t: 10px; /* the size of the tail */
     
@@ -497,19 +498,22 @@ background-size: cover;
     color: #ffffff;
     font-weight: 500;
     }
+    .bubble1::-webkit-scrollbar {
+        display: none;
+    }
     .pos-krishna{
-        margin-left: 56rem;
-        margin-top: -18rem;
+        margin-left: 62rem;
+        margin-top: -20rem;
     }
     .bubble2 {    
           margin-bottom: 8rem;
           overflow-wrap: break-word;
-          overflow-y: auto;
+          overflow-y: scroll;
         --r: 25px; /* the radius */
         --t: 20px; /* the size of the tail */
         
         max-width: 480px;
-        max-height: 250px;
+        /* max-height: 230px; */
         padding: calc(2*var(--r)/3);
         -webkit-mask: 
           radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
@@ -525,7 +529,7 @@ background-size: cover;
       
     
     .bubble2::-webkit-scrollbar {
-        display: none;
+        /* display: none; */
     }
 }
 
