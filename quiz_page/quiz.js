@@ -58,6 +58,12 @@ restart_quiz.onclick = ()=>{
 quit_quiz.onclick = ()=>{
     window.location.reload(); 
 }
+
+const quit_btn = document.querySelector("footer .quit_btn");
+quit_btn.onclick = ()=>{
+    quiz_box.classList.remove("activeQuiz"); 
+}
+
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
