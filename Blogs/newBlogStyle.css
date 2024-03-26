@@ -108,7 +108,7 @@
   position: fixed;
   top: 60px; /* Adjust top distance as needed */
   right: 50px; /* Adjust right distance as needed */
-  z-index: 9999; /* Ensure it's above other content */
+  z-index: 0; /* Ensure it's above other content */
   background-color: #00ff44; /* Background color */
   border-radius: 0 !important; /* Border radius */
   border: 1px solid #ccc; /* Border */
