@@ -157,12 +157,13 @@ footer {
 
 .input-field {
   flex: 1; /* Take remaining space */
-  background-color: transparent;
+  background-color: white;
   border: 1px solid #34D399; /* Emerald color */
   padding: 8px;
   border-radius: 4px 0 0 4px;
   font-size: 14px;
   outline: none;
+  color: black;
 }
 
 .subscribeBtn {
