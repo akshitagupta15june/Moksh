@@ -380,3 +380,35 @@ footer button.show{
     object-fit: cover;
   }
   
+
+  /* This CSS styles a "quit" button, including its position, size, color, and hover effect. */
+.quit_btn{
+    position: absolute;
+    left:30rem;
+    bottom: 1.3rem;
+}
+
+footer .quit_btn{
+    position: relative;
+    height: 40px;
+    padding: 0 13px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: #ff0000;
+    border: 1px solid #ff0000;
+    line-height: 10px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+footer .quit_btn:hover{
+    background: #ca0202 !important;
+}
