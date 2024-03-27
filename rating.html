@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rating Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4ced71;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 10%;
+    background-color: #fafffa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rating-container {
+    text-align: center;
+  }
+  
+  .stars {
+    cursor: pointer;
+    font-size: 36px;
+    color: #ddd;
+  }
+  
+  .stars:hover,
+  .stars.active {
+    color: #ffc107;
+  }
+  
+  #comment {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    resize: vertical;
+  }
+  
+  #submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .back-arrow {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a href="#" class="back-arrow" onclick="goBack()">&#8592; Back</a>
+  <h2><center>Rate Us!</center></h2>
+  <div class="rating-container">
+    <span class="stars" data-value="1">★</span>
+    <span class="stars" data-value="2">★</span>
+    <span class="stars" data-value="3">★</span>
+    <span class="stars" data-value="4">★</span>
+    <span class="stars" data-value="5">★</span>
+  </div>
+  <textarea id="comment" placeholder="Write your comment..."></textarea>
+  <button id="submit-btn">Submit</button>
+</div>
+
+<script>
+  const stars = document.querySelectorAll('.stars');
+  const commentInput = document.getElementById('comment');
+  const submitButton = document.getElementById('submit-btn');
+  
+  let rating = 0;
+  
+  // Add event listeners to stars
+  stars.forEach(star => {
+    star.addEventListener('mouseover', () => {
+      highlightStars(star.dataset.value);
+    });
+    
+    star.addEventListener('mouseleave', () => {
+      highlightStars(rating);
+    });
+    
+    star.addEventListener('click', () => {
+      rating = parseInt(star.dataset.value);
+      highlightStars(rating);
+    });
+  });
+  
+  // Function to highlight stars up to a certain rating
+  function highlightStars(num) {
+    stars.forEach(star => {
+      if (parseInt(star.dataset.value) <= num) {
+        star.classList.add('active');
+      } else {
+        star.classList.remove('active');
+      }
+    });
+  }
+  
+  // Function to handle comment submission
+  submitButton.addEventListener('click', () => {
+    if (rating !== 0) {
+      // Show pop-up with rating comment and emoji
+      showRatingPopup(rating);
+      // Clear the comment input
+      commentInput.value = '';
+    } else {
+      alert('Please select a rating.');
+    }
+  });
+  
+  // Function to show pop-up with rating comment and emoji
+  function showRatingPopup(rating) {
+    alert(`Thank you for giving us ${rating} star(s)!`);
+  }
+
+  // Function to go back to the previous page
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+</body>
+</html>

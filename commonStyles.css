@@ -158,7 +158,7 @@ footer {
 .input-field {
   flex: 1; /* Take remaining space */
   background-color: transparent;
-  border: 1px solid #34D399; /* Emerald color */
+  border: 1px solid #06f39c; /* Emerald color */
   padding: 8px;
   border-radius: 4px 0 0 4px;
   font-size: 14px;
@@ -180,7 +180,7 @@ footer {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #6EE7B7; /* Light green */
+  background-color: #00ff0d; /* Light green */
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -251,5 +251,51 @@ footer {
   }
   .size{
     width: 2rem;
+  }
+}
+
+.rating-rectangle {
+  position: fixed;
+  top: 85%;
+  right: 2.5%;
+  transform: translateY(-50%);
+  z-index: 999;
+  overflow: hidden;
+}
+
+.rectangle-link {
+  position: relative;
+  display: block;
+  width: 235px;
+  height: 50px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.rectangle-link span {
+  position: absolute;
+  top: 0;
+  left: 100;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  animation: moveText 5s linear infinite;
+}
+
+.rectangle-link:hover {
+  background-color: darkgreen;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
