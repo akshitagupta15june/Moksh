@@ -94,7 +94,7 @@ If there are any doubts, you can ask here on Discord. <br>Join your Discord serv
 
 👉 AR Meditation integration:
 
-- [Echo-AR](https://www.echo3d.com)
+- [Echo-3D](https://www.echo3d.com)
 
 👉 Nearest Event Finder:
 
