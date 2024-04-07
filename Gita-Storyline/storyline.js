@@ -1,6 +1,6 @@
 const arjunaConversation = document.querySelector(".arjuna-conversation");   // making this two classes arjuna and krishna
 const krishnaConversation = document.querySelector(".krishna-conversation");
-
+var bubble2 = document.querySelector('.bubble2');
 const question = [
   {
     Arjuna: "What should one do when parents don't understand him/her? ",
@@ -61,8 +61,13 @@ function showQuestion(){
   let currentQuestion = question[currentQuestionIndex];
   arjunaConversation.innerText = currentQuestion.Arjuna;
   krishnaConversation.innerText = currentQuestion.Krishna;
+  
 }
-
+function initialize_scroll(){
+  
+  bubble2.scrollTop=0;
+  
+}
 document.addEventListener('keydown',(e)=>{
   if(e.keyCode == 37) {
     currentQuestionIndex = (currentQuestionIndex - 1 + question.length) % question.length;
@@ -77,14 +82,19 @@ document.addEventListener('keydown',(e)=>{
 let left=document.getElementById("left")
 let right=document.getElementById('right')
 
+
 left.addEventListener("click", () => {
+  
   currentQuestionIndex = (currentQuestionIndex - 1 + question.length) % question.length;
   showQuestion();
+  initialize_scroll();
+
 });
 
 right.addEventListener("click", () => {
   currentQuestionIndex = (currentQuestionIndex + 1) % question.length;
   showQuestion();
+  initialize_scroll();
 });
 
 showQuestion();

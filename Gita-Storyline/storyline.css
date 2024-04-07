@@ -218,7 +218,7 @@ background-size: cover;
 .bubble1 {
     --r: 25px; /* the radius */
     --t: 40px; /* the size of the tail */
-    
+     
     max-width: 300px;
     max-height: 200px;
     padding: calc(2*var(--r)/3);
@@ -248,10 +248,17 @@ background-size: cover;
     margin-top: -11rem;
 }
 .bubble2 {    
-    
+      
+      
+      scrollbar-color: blue orange;
+      scrollbar-width: thin;
+      scroll-margin-top: 0;
+      
       margin-bottom: 8rem;
       overflow-wrap: break-word;
-      overflow-y: auto;
+      overflow-y: scroll;
+      
+      
     --r: 25px; /* the radius */
     --t: 40px; /* the size of the tail */
     
@@ -276,6 +283,7 @@ background-size: cover;
 .bubble2::-webkit-scrollbar {
     display: none;
 }
+
   .left {
     --_d: 0%;
     border-left: var(--t) solid #0000;
