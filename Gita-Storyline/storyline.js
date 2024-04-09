@@ -61,7 +61,7 @@ function showQuestion(){
   let currentQuestion = question[currentQuestionIndex];
   arjunaConversation.innerText = currentQuestion.Arjuna;
   krishnaConversation.innerText = currentQuestion.Krishna;
-  
+  initialize_scroll();
 }
 function initialize_scroll(){
   
@@ -87,14 +87,13 @@ left.addEventListener("click", () => {
   
   currentQuestionIndex = (currentQuestionIndex - 1 + question.length) % question.length;
   showQuestion();
-  initialize_scroll();
 
 });
 
 right.addEventListener("click", () => {
   currentQuestionIndex = (currentQuestionIndex + 1) % question.length;
   showQuestion();
-  initialize_scroll();
+  
 });
 
 showQuestion();
