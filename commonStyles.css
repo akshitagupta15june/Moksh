@@ -244,6 +244,11 @@ footer {
   }
 }
 
+
+.sign-up-sec{
+  margin-left: -310px;
+}
+
 @media (max-width: 767px) {
   #bttbutton {
     right: 5px; 
