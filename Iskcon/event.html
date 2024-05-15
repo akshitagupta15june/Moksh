@@ -111,12 +111,14 @@
           </h1>
 
           <!-- Iskcon cards data start -->
-          <div class="search-container mt-4 flex items-center justify-center space-x-4">
-            <input type="text" id="search-bar" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search by state">
+           <div class="search-container relative mt-4 flex items-center justify-center space-x-4">
+            <input type="text" id="search-bar" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
             <button id="search-button" class="px-4 py-2 bg-emerald-400 text-white uppercase tracking-widest rounded-md hover:bg-indigo-900 transition duration-300 ease-in-out">
               Search
             </button>
+            <div class="absolute max-h-80 min-w-80 bg-white top-12 right-16 overflow-y-scroll overflow-x-hidden" id="search-results"></div>
           </div>
+          
           
           <div
                class="cards my-8 w-full justify-center place-items-center">
