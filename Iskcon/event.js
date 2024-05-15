@@ -1,3 +1,4 @@
+const search=[{name:"Tirupati",place:"Tirupati, Andhra Pradesh"},{name:"Varanasi",place:"Varanasi, Uttar Pradesh"},{name:"Rameswaram",place:"Rameswaram, Tamil Nadu"},{name:"Vaishno Devi",place:"Katra, Jammu and Kashmir"},{name:"Kedarnath",place:"Kedarnath, Uttarakhand"},{name:"Somnath",place:"Prabhas Patan, Gujarat"},{name:"Amarnath",place:"Anantnag, Jammu and Kashmir"},{name:"Badrinath",place:"Badrinath, Uttarakhand"},{name:"Shirdi Sai Baba",place:"Shirdi, Maharashtra"},{name:"Jagannath",place:"Puri, Odisha"},{name:"Mahakaleshwar",place:"Ujjain, Madhya Pradesh"},{name:"Kashi Vishwanath",place:"Varanasi, Uttar Pradesh"},{name:"Kamakhya",place:"Guwahati, Assam"},{name:"Golden Temple",place:"Amritsar, Punjab"},{name:"Meenakshi",place:"Madurai, Tamil Nadu"},{name:"Siddhivinayak",place:"Mumbai, Maharashtra"},{name:"Sri Venkateswara",place:"Tirumala, Andhra Pradesh"},{name:"Lingaraj",place:"Bhubaneswar, Odisha"},{name:"Sri Padmanabhaswamy",place:"Thiruvananthapuram, Kerala"},{name:"Dwarkadhish",place:"Dwarka, Gujarat"},{name:"Kumbakonam",place:"Kumbakonam, Tamil Nadu"},{name:"Guruvayur",place:"Guruvayur, Kerala"},{name:"Kamakshi Amman",place:"Kanchipuram, Tamil Nadu"},{name:"Chamundeshwari",place:"Mysuru, Karnataka"},{name:"Ranganathaswamy",place:"Srirangam, Tamil Nadu"},{name:"Ramanathaswamy",place:"Rameswaram, Tamil Nadu"},{name:"Mookambika",place:"Kollur, Karnataka"},{name:"Brihadeeswarar",place:"Thanjavur, Tamil Nadu"},{name:"Ayyappan",place:"Sabarimala, Kerala"},{name:"Ghati Subramanya",place:"Doddaballapura, Karnataka"},{name:"Tulja Bhavani",place:"Tuljapur, Maharashtra"},{name:"Srisailam",place:"Srisailam, Andhra Pradesh"},{name:"Udupi Krishna",place:"Udupi, Karnataka"},{name:"Kollur Mookambika",place:"Kollur, Karnataka"},{name:"Chidambaram",place:"Chidambaram, Tamil Nadu"},{name:"Thiruvanaikaval",place:"Tiruchirappalli, Tamil Nadu"},{name:"Kashi Vishwanath",place:"Varanasi, Uttar Pradesh"},{name:"Kotilingeshwara",place:"Bangarapet, Karnataka"},{name:"Arunachalesvara",place:"Tiruvannamalai, Tamil Nadu"},{name:"Kanaka Durga",place:"Vijayawada, Andhra Pradesh"},{name:"Sri Ranganathaswamy",place:"Srirangapatna, Karnataka"},{name:"Srisailam Mallikarjuna",place:"Srisailam, Andhra Pradesh"},{name:"Kalighat Kali",place:"Kolkata, West Bengal"},{name:"Pashupatinath",place:"Kathmandu, Nepal"},{name:"Kapaleeshwarar",place:"Chennai, Tamil Nadu"},{name:"Gangotri",place:"Gangotri, Uttarakhand"},{name:"Yogeshwari Devi",place:"Amravati, Maharashtra"},{name:"Mangalagauri",place:"Gaya, Bihar"},{name:"Har Ki Pauri",place:"Haridwar, Uttarakhand"},{name:"Nataraja",place:"Chidambaram, Tamil Nadu"},{name:"Sri Chakra",place:"Vellore, Tamil Nadu"},{name:"Kukke Subramanya",place:"Subramanya, Karnataka"}];
 function fetchData() {
   return fetch('data.json')
     .then(response => response.json())
@@ -28,13 +29,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const searchInput = document.querySelector('#search-bar');
   const searchButton = document.querySelector('#search-button');
-
+  const searchResults=document.getElementById('search-results')
+  function removeChilds(parentNode) {
+    while (parentNode.firstChild) {
+        parentNode.removeChild(parentNode.firstChild);
+    }
+}
   function handleSearch() {
     const searchText = searchInput.value.toLowerCase();
-    const filteredEvents = eventData.filter(event => event.state.toLowerCase().includes(searchText));
-    updateEventCards(filteredEvents, swiper);
+    if(searchText.length>0){
+    removeChilds(searchResults)
+     let filters=search.filter(item =>item.name.toLowerCase().includes(searchText.toLowerCase()))
+     filters.map((item,index)=>{
+     let div=document.createElement('div')
+     let p=document.createElement('p')
+     let span=document.createElement('span')
+     p.textContent=item.name
+     span.textContent=item.place
+     p.style.fontSize="1.3rem"
+     span.style.fontSize="0.8rem"
+     div.appendChild(p)
+     div.appendChild(span)
+     div.style.padding="0.5rem 1rem"
+     div.style.borderBottom="0.1rem solid black"
+     div.setAttribute('key',index)
+     searchResults.appendChild(div)
+    })
+    }
+    else{
+      removeChilds(searchResults)
+    }
   }
-
   searchInput.addEventListener('input', handleSearch);
   searchButton.addEventListener('click', handleSearch);
 });
