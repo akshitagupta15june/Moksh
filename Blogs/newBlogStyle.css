@@ -24,7 +24,8 @@
 .read-button {
   position: relative;
   padding: 10px 20px;
-  background: linear-gradient(107deg, rgba(255, 255, 255, 1) 0%, rgba(128, 128, 128, 1) 72%);
+  /* background: linear-gradient(107deg, rgba(255, 255, 255, 1) 0%, rgba(128, 128, 128, 1) 72%); */
+  background-color: #353686;
   color: #353686;
   text-decoration: none;
   border: 2px solid transparent;
