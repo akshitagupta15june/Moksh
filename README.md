@@ -16,7 +16,7 @@
 ### _Unlock your potential and achieve true balance in life with Moksh!_
 
 <p align="center">
-  <a href="https://discord.com/invite/Jmc97prqjb">
+  <a href="https://discord.gg/QapWBRZbVe">
     <img alt="Static Badge" src="https://img.shields.io/badge/Discord-blue?style=for-the-badge&logo=discord&label=%20Join%20Official%20">
   </a>
 </p>
