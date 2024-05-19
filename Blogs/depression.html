@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,12 @@
     <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" href="../index.html" />
     <link rel="stylesheet" href="newBlogStyle.css">
     <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-
+    <!-- 
     <style>
         #google_element {
             display: flex;
         }
-        
+
         .VIpgJd-ZVi9od-l4eHX-hSRGPd {
             display: flex;
         }
@@ -39,10 +40,11 @@
                 min-width: 300px;
             }
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
+
     <div class="blogWrapper h-screen overflow-hidden relative">
 
         <!-- Site Menu Links  -->
@@ -58,7 +60,7 @@
 
                 <!-- Navbar   -->
                 <div
-                    class="fixed navbar text-indigo-700 top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
+                    class="navbar fixed top-0 px-4 py-3 ease-in-out text-white duration-300 flex z-40 items-center justify-between w-full left-0 ">
                     <div class="leftSection">
                         <a class="flex items-center" href="../index.html" <img src="../Images/New_Logo_2.webp"
                             alt="Moksh Logo" class="w-16 h-16" />
@@ -134,7 +136,7 @@
                     <img src="../Images/depression2.webp" alt="blogImage" class="center">
                 </div>
 
-                <div id="google_element"></div>
+                <div id="google_translate_element"></div>
 
                 <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
                     <p class="mb-4">
@@ -478,7 +480,7 @@
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
                 includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,fr,ja,ko,ar,id,it,de',
-            }, 'google_element');
+            }, 'google_translate_element');
         }
     </script>
 
