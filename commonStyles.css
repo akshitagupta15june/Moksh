@@ -6,7 +6,23 @@
   box-sizing: border-box;
   outline: none;
 }
-
+@media only screen and (max-width:500px){
+  #wheel{
+    display: none !important;
+  }
+  #arrow{
+    color: white;
+  }
+}
+@media only screen and (min-width:500px){
+  #wheel{
+    color: white;
+  }
+  #arrow{
+    display: none !important;
+    
+  }
+}
 .projectName {
   font-family: 'Arizonia', cursive;
   text-shadow: 2px 3px 2px rgba(0,0,0,0.4);

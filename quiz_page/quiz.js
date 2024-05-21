@@ -202,11 +202,11 @@ function startTimer(time){
     }
 }
 function startTimerLine(time){
-    counterLine = setInterval(timer, 29);
+    counterLine = setInterval(timer, 100);
     function timer(){
-        time += 1;
+        time += 4.9;
         time_line.style.width = time + "px"; 
-        if(time > 549){ 
+        if(time > 745){ 
             clearInterval(counterLine); 
         }
     }
