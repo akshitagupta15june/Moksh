@@ -1,308 +1,308 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <title>Blog- Strength</title>
-    <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
-    <link rel="stylesheet" href="newBlogStyle.css" />
-    <link rel="stylesheet" href="../commonStyles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <title>Blog- Strength</title>
+  <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
+  <link rel="stylesheet" href="newBlogStyle.css" />
+  <link rel="stylesheet" href="../commonStyles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 
 
-  </head>
+</head>
 
-  <body>
-    <div class="blogWrapper h-screen overflow-hidden relative">
-      <!-- Scroll to top button-->
-      <div class="md:pr-8 hover-effect">
-        <button id="bttbutton" title="Back to Top">
-          <img src="./image.svg" class="size md:w-10 md:object-left" alt="Scroll to Top">
-        </button>
-      </div>
-      <!-- Site Menu Links  -->
+<body>
+  <script>
+    // Load the function at the start for faster loading and response time
+    function loadGoogleTranslate() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,fr,ja,ko,ar,id,it,de',
+      }, 'google_translate_element');
+    }
+  </script>
+  <div class="blogWrapper h-screen overflow-hidden relative">
+    <!-- Scroll to top button-->
+    <div class="md:pr-8 hover-effect">
+      <button id="bttbutton" title="Back to Top">
+        <img src="./image.svg" class="size md:w-10 md:object-left" alt="Scroll to Top">
+      </button>
+    </div>
+    <!-- Site Menu Links  -->
+    <div
+      class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] bg-white w-screen sm:w-1/2 p-8">
+    </div>
+
+    <div class="contentWrapper h-full overflow-y-auto flex flex-col justify-between">
+      <!-- Hero Section & Navbar  -->
       <div
-           class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] bg-white w-screen sm:w-1/2 p-8">
-      </div>
-
-      <div class="contentWrapper h-full overflow-y-auto flex flex-col justify-between">
-        <!-- Hero Section & Navbar  -->
+        class="heroSection bg-[#4E88BD] h-auto flex px-12 text-2xl sm:text-lg flex-col justify-center bg-[url('../Images/blog-vices.webp')] bg-no-repeat bg-contain bg-right">
+        <!-- Navbar   -->
         <div
-             class="heroSection bg-[#4E88BD] h-auto flex px-12 text-2xl sm:text-lg flex-col justify-center bg-[url('../Images/blog-vices.webp')] bg-no-repeat bg-contain bg-right">
-          <!-- Navbar   -->
-          <div
-               class="fixed navbar text-indigo-700 top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
+          class="navbar fixed top-0 px-4 py-3 ease-in-out text-white duration-300 flex z-40 items-center justify-between w-full left-0 ">
 
-            <div class="leftSection">
+          <div class="leftSection">
 
-              <a href="./Blog.html" class="blogPageArrow fs-3 text-decoration-none" style="position: fixed;
+            <a href="./Blog.html" class="blogPageArrow fs-3 text-decoration-none" style="position: fixed;
             top: 20px;
             left: 20px; 
             z-index: 30;">
-                <img width="50" height="50"
-                     src="https://img.icons8.com/external-solid-adri-ansyah/64/228BE6/external-ui-basic-ui-solid-adri-ansyah-26.png"
-                     alt="external-ui-basic-ui-solid-adri-ansyah-26" />
-              </a>
+              <img width="50" height="50"
+                src="https://img.icons8.com/external-solid-adri-ansyah/64/228BE6/external-ui-basic-ui-solid-adri-ansyah-26.png"
+                alt="external-ui-basic-ui-solid-adri-ansyah-26" />
+            </a>
 
 
-            </div>
-            <div class="rightSection">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                   stroke="currentColor"
-                   class="openDropDown h-10 w-10 text-indigo-600 cursor-pointer ease-in-out duration-300 p-2 hover:text-slate-900">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-              </svg>
-            </div>
+          </div>
+          <div class="rightSection">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor"
+              class="openDropDown h-10 w-10 text-indigo-600 cursor-pointer ease-in-out duration-300 p-2 hover:text-slate-900">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
           </div>
         </div>
-
-        <div class="blogWrapper mt-28 py-8 h-auto flex flex-col">
-          <div> <a href="../Blogs/Blog.html"><img src="https://cdn-icons-png.flaticon.com/512/8636/8636668.png"/ height="50px" width="50px" class="image1"> </a></div> 
-          <div class="title px-3 flex flex-col items-center w-full">
-            <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold titleBlog">
-              <span class="pb-1 border-double border-b-4 border-b-indigo-600">Strength</span>
-            </h1>
-
-            <p class="tagline text-xs font-semibold text-slate-800 italic">
-              Weakness is death,
-              Strength
-              is life.
-            </p>
-
-            <!-- Social Share links  -->
-            <div class="social-share mt-4 flex items-center justify-between w-2/3 md:w-1/6">
-              <a href="#" title="Share" onclick="copyLink()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                     class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
-                  <path fill-rule="evenodd"
-                        d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
-                        clip-rule="evenodd" />
-                </svg>
-              </a>
-
-              <a href="#" title="Save">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                     stroke="currentColor"
-                     class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-                </svg>
-              </a>
-
-              <a href="./Strength.html" title="Download" id="download" onclick="generateAndDownloadPDF()" download>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                     stroke="currentColor"
-                     class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
-                </svg>
-              </a>
-
-              <a href="#" title="Print" onclick="initiatePrint()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                     stroke="currentColor"
-                     class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z" />
-                </svg>
-              </a>
-            </div>
-            <p id="copyMessage" class="text-xs text-green-500"></p>
-
-            <p class="pulishedOn font-semibold text-center mt-8 uppercase text-slate-500 text-[11px]">
-              Published on: 26-05-2023
-            </p>
-          </div>
-
-          <div class="blogImage my-3 center">
-            <img src="../Images/blogImage2.webp" alt="blogImage" />
-          </div>
-
-          <div id="google_element" style="margin-left: 45%;"></div>
-          <script>
-            function loadGoogleTranslate() {
-              new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,fr,ja,ko,ar,id,it,de',
-              }, 'google_element');
-            }
-          </script>
-          <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
-            <p class="mb-4">
-              <span class="firstWord font-bold text-3xl text-indigo-800">S</span>
-              truggle to Fit In: Navigating Pressure and Identity
-            </p>
-            <p class="mb-4">
-              Some
-              children attend international schools while others go to regular schools. Some parents celebrate
-              birthdays
-              in a grand manner, while others don't.
-              These
-              contrasting experiences have a significant impact on both the child and the parent. Comparisons among
-              children arise, such as academic performance,
-              which
-              affects the child's mindset as all these factors accumulate in their mind. Nowadays, every child is
-              focused
-              on their career and aspiring to go
-              abroad. They
-              often leave their homes to live in hostels, where they are exposed to shocking differences. They
-              struggle to
-              comprehend seeing other children with
-              iPhones,
-              laptops, and extravagant spending habits, appearing intelligent, confident, and multi-talented. This
-              hypocrisy is difficult for them to digest,
-              including the
-              prevalence of romantic relationships. The pressure to fit in leads some into depression, negativity,
-              and
-              jealousy. They may resort to negative
-              habits like
-              smoking and gambling, further spiraling into a state of depression.
-            </p>
-            <p class="mb-4">
-              <b>Embrace Individuality, Resist Peer Pressure for Personal Growth</b> <br />
-              In such situations, it becomes challenging for youngsters to stand up for the truth. While they are
-              aware of
-              the wrongness of smoking or drinking,
-              they lack the
-              strength to resist peer pressure. Here, Dadaji comes into their lives as a brave role model who guides
-              them
-              towards the path of truth. In college,
-              they
-              encounter numerous temptations, face ridicule if they don't participate, and feel lonely if they
-              choose
-              to
-              stand apart. It's essential to consider
-              the long-term
-              consequences of succumbing to negative influences, as it not only affects the individual but also
-              their
-              entire family. The aim of life should be
-              peace of mind,
-              not just money. It's crucial to seek peace in positive and protective environments, surround oneself
-              with
-              courageous people, and never feel alone.
-              Sometimes,
-              going against the majority is the right path to take for one's career and personal growth.
-            </p>
-            <p class="mb-4">
-              <b>Faith as a Guiding Light: Embracing Divine Support and Inner Strength</b> <br />
-
-              <b><i>"God is with you."</i></b> When you believe that He is there with you, watching over you, how
-              can
-              you
-              do something wrong? How can you follow
-              the wrong
-              path? The feeling
-              of support is there with you, supporting you. Your Guru will be there, and your own family will send
-              support
-              for you. Small temptations that come
-              your way...
-              Swami Vivekananda has said, 'Stand up, be brave, be bold. You are the creator of your own destiny, so
-              you
-              have to create your own destination. Your
-              entire life
-              is in your hands. As you sow, so shall you reap. If you get into bad company, you are ruining your
-              whole
-              life. If you stay in the company of good
-              people, you
-              will make your life successful. Don't hesitate to open up and speak up about any doubts or questions
-              in
-              your
-              mind. If you don't communicate, you
-              will keep
-              overthinking, and you won't know whether you are right or wrong in your decisions. Open up and speak
-              up
-              to
-              your friends or family. You can manage to
-              speak to
-              them, or we will show you the right path. You will not be betrayed. You may feel tempted when you see
-              your
-              friends having boyfriends or girlfriends
-              while you
-              don't, and someone tells you that you are outdated. You feel low about it, out of place, uncomfortable
-              going
-              for outings or parties. But don't you
-              realize that
-              the majority consists of fools? You are on the right path, so why assume that you are wrong? You are,
-              in
-              fact, right. Stand by what is right, be
-              bold, and don't
-              be scared. We are scared of rejection, but if our friends reject us, they were not meant to join us in
-              our
-              party. We will be left alone, but don't
-              worry. God is
-              with you, and your family is here. You can enjoy them. Dadaji, wants all youngsters as of all, the
-              soldier,
-              has to always be brave.we cannot be
-              depressed, we
-              cannot be unhappy. You have to be strong, brave, ever ready, shining, sparkling like the sun. Dadaji
-              tells
-              us that we are sons of Lord Suraj Devta,
-              so we should
-              always be shining and happy. The sun always shines, sparks always cover up the darkness. So we, as
-              sons
-              of
-              God, sons of Surya Devta, should also
-              spread light in
-              the universe. All the darkness inside us will vanish if we carry the Guru's teachings with us. It is
-              possible."
-
-            </p>
-
-          </div>
-
-          <a href="../Blogs/Blog.html"
-             class="center my-5 p-6 rounded-md uppercase font-semibold bg-rose-600 text-white ease-in-out duration-300 hover:bg-gray-900">Back
-            to Blogs</a>
-        </div>
-
-        <!-- Footer  -->
-        <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col"></footer>
-
       </div>
+
+      <div class="blogWrapper mt-28 py-8 h-auto flex flex-col">
+        <div> <a href="../Blogs/Blog.html"><img src="https://cdn-icons-png.flaticon.com/512/8636/8636668.png" /
+              height="50px" width="50px" class="image1"> </a></div>
+        <div class="title px-3 flex flex-col items-center w-full">
+          <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold titleBlog">
+            <span class="pb-1 border-double border-b-4 border-b-indigo-600">Strength</span>
+          </h1>
+
+          <p class="tagline text-xs font-semibold text-slate-800 italic">
+            Weakness is death,
+            Strength
+            is life.
+          </p>
+
+          <!-- Social Share links  -->
+          <div class="social-share mt-4 flex items-center justify-between w-2/3 md:w-1/6">
+            <a href="#" title="Share" onclick="copyLink()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                <path fill-rule="evenodd"
+                  d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="#" title="Save">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+              </svg>
+            </a>
+
+            <a href="./Strength.html" title="Download" id="download" onclick="generateAndDownloadPDF()" download>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+              </svg>
+            </a>
+
+            <a href="#" title="Print" onclick="initiatePrint()">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z" />
+              </svg>
+            </a>
+          </div>
+          <p id="copyMessage" class="text-xs text-green-500"></p>
+
+          <p class="pulishedOn font-semibold text-center mt-8 uppercase text-slate-500 text-[11px]">
+            Published on: 26-05-2023
+          </p>
+        </div>
+
+        <div class="blogImage my-3 center">
+          <img src="../Images/blogImage2.webp" alt="blogImage" />
+        </div>
+
+        <div id="google_translate_element"></div>
+
+        <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
+          <p class="mb-4">
+            <span class="firstWord font-bold text-3xl text-indigo-800">S</span>
+            truggle to Fit In: Navigating Pressure and Identity
+          </p>
+          <p class="mb-4">
+            Some
+            children attend international schools while others go to regular schools. Some parents celebrate
+            birthdays
+            in a grand manner, while others don't.
+            These
+            contrasting experiences have a significant impact on both the child and the parent. Comparisons among
+            children arise, such as academic performance,
+            which
+            affects the child's mindset as all these factors accumulate in their mind. Nowadays, every child is
+            focused
+            on their career and aspiring to go
+            abroad. They
+            often leave their homes to live in hostels, where they are exposed to shocking differences. They
+            struggle to
+            comprehend seeing other children with
+            iPhones,
+            laptops, and extravagant spending habits, appearing intelligent, confident, and multi-talented. This
+            hypocrisy is difficult for them to digest,
+            including the
+            prevalence of romantic relationships. The pressure to fit in leads some into depression, negativity,
+            and
+            jealousy. They may resort to negative
+            habits like
+            smoking and gambling, further spiraling into a state of depression.
+          </p>
+          <p class="mb-4">
+            <b>Embrace Individuality, Resist Peer Pressure for Personal Growth</b> <br />
+            In such situations, it becomes challenging for youngsters to stand up for the truth. While they are
+            aware of
+            the wrongness of smoking or drinking,
+            they lack the
+            strength to resist peer pressure. Here, Dadaji comes into their lives as a brave role model who guides
+            them
+            towards the path of truth. In college,
+            they
+            encounter numerous temptations, face ridicule if they don't participate, and feel lonely if they
+            choose
+            to
+            stand apart. It's essential to consider
+            the long-term
+            consequences of succumbing to negative influences, as it not only affects the individual but also
+            their
+            entire family. The aim of life should be
+            peace of mind,
+            not just money. It's crucial to seek peace in positive and protective environments, surround oneself
+            with
+            courageous people, and never feel alone.
+            Sometimes,
+            going against the majority is the right path to take for one's career and personal growth.
+          </p>
+          <p class="mb-4">
+            <b>Faith as a Guiding Light: Embracing Divine Support and Inner Strength</b> <br />
+
+            <b><i>"God is with you."</i></b> When you believe that He is there with you, watching over you, how
+            can
+            you
+            do something wrong? How can you follow
+            the wrong
+            path? The feeling
+            of support is there with you, supporting you. Your Guru will be there, and your own family will send
+            support
+            for you. Small temptations that come
+            your way...
+            Swami Vivekananda has said, 'Stand up, be brave, be bold. You are the creator of your own destiny, so
+            you
+            have to create your own destination. Your
+            entire life
+            is in your hands. As you sow, so shall you reap. If you get into bad company, you are ruining your
+            whole
+            life. If you stay in the company of good
+            people, you
+            will make your life successful. Don't hesitate to open up and speak up about any doubts or questions
+            in
+            your
+            mind. If you don't communicate, you
+            will keep
+            overthinking, and you won't know whether you are right or wrong in your decisions. Open up and speak
+            up
+            to
+            your friends or family. You can manage to
+            speak to
+            them, or we will show you the right path. You will not be betrayed. You may feel tempted when you see
+            your
+            friends having boyfriends or girlfriends
+            while you
+            don't, and someone tells you that you are outdated. You feel low about it, out of place, uncomfortable
+            going
+            for outings or parties. But don't you
+            realize that
+            the majority consists of fools? You are on the right path, so why assume that you are wrong? You are,
+            in
+            fact, right. Stand by what is right, be
+            bold, and don't
+            be scared. We are scared of rejection, but if our friends reject us, they were not meant to join us in
+            our
+            party. We will be left alone, but don't
+            worry. God is
+            with you, and your family is here. You can enjoy them. Dadaji, wants all youngsters as of all, the
+            soldier,
+            has to always be brave.we cannot be
+            depressed, we
+            cannot be unhappy. You have to be strong, brave, ever ready, shining, sparkling like the sun. Dadaji
+            tells
+            us that we are sons of Lord Suraj Devta,
+            so we should
+            always be shining and happy. The sun always shines, sparks always cover up the darkness. So we, as
+            sons
+            of
+            God, sons of Surya Devta, should also
+            spread light in
+            the universe. All the darkness inside us will vanish if we carry the Guru's teachings with us. It is
+            possible."
+
+          </p>
+
+        </div>
+
+        <a href="../Blogs/Blog.html"
+          class="center my-5 p-6 rounded-md uppercase font-semibold bg-rose-600 text-white ease-in-out duration-300 hover:bg-gray-900">Back
+          to Blogs</a>
+      </div>
+
+      <!-- Footer  -->
+      <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col"></footer>
+
     </div>
+  </div>
 
-    <script>
-      function initiatePrint ()
-      {
-        window.print()
-      }
-      function copyLink ()
-      {
-        var dummy = document.createElement( "textarea" );
-        document.body.appendChild( dummy );
-        dummy.value = window.location.href;
-        dummy.select();
-        document.execCommand( "copy" );
-        document.body.removeChild( dummy );
-        document.getElementById( "copyMessage" ).textContent = "Link copied!";
+  <script>
+    function initiatePrint() {
+      window.print()
+    }
+    function copyLink() {
+      var dummy = document.createElement("textarea");
+      document.body.appendChild(dummy);
+      dummy.value = window.location.href;
+      dummy.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+      document.getElementById("copyMessage").textContent = "Link copied!";
 
 
-        var copyMessage = document.getElementById( "copyMessage" );
-        copyMessage.textContent = "Link copied!";
-        copyMessage.classList.add( "fade-out" );
-        setTimeout( function ()
-        {
-          copyMessage.textContent = "";
-          copyMessage.classList.remove( "fade-out" );
-        }, 1000 );
+      var copyMessage = document.getElementById("copyMessage");
+      copyMessage.textContent = "Link copied!";
+      copyMessage.classList.add("fade-out");
+      setTimeout(function () {
+        copyMessage.textContent = "";
+        copyMessage.classList.remove("fade-out");
+      }, 1000);
 
-      }
+    }
 
-    </script>
+  </script>
 
 
 
-    <script src="./blogs.js"></script>
-    <script src="../commonScript.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-    <script src="./download.js"></script>
+  <script src="./blogs.js"></script>
+  <script src="../commonScript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+  <script src="./download.js"></script>
 
 
-  </body>
+</body>
 
 </html>
