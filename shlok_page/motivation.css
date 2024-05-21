@@ -119,6 +119,8 @@ p:hover {
 .common-button:hover {
   transform: scale(1.1);
   border: none;
+  border: 4px solid rgb(6, 93, 6);
+  color: rgb(0, 0, 0);
 }
 
 
@@ -172,16 +174,21 @@ p:hover {
 }
 
 .text {
-  font-family: 'Open Sans Condensed', sans-serif;
+  /* font-family: 'krishna','yuvasanskrit','Open Sans Condensed', sans-serif; */
   font-size: 2rem;
-  font-weight: 600;
+  /* font-weight: 600; */
   padding-left: 10px;
   transition: 0.5s;
   transition-timing-function: ease-in;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'laila','Roboto', sans-serif; */
   color: #050350;
   -webkit-background-clip: text;
+  font-family: "Laila", serif;
+  font-weight: 500;
+  font-style: normal;
 }
+
+
 
 .quote {
   transition: 0.5s;
@@ -201,7 +208,7 @@ p:hover {
 
 .new-quote:hover {
   transform: scale(1.1);
-  border: none;
+
 }
 .text-center {
   text-align: center;
