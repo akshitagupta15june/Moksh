@@ -98,3 +98,33 @@ footer {
   transform: scale(1.1);
 }
 
+
+  body {
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 70px white;
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+.heroSections .top{
+  animation: fadeup 1s 1;
+}
+.heroSections .bottom{
+  animation: fadeup 1s 1;
+}
+
+/* Navbar CSS */
+.projectName{
+  color: rgb(255, 255, 255);
+}
+
+a{
+  text-decoration: none;
+}
+
+.relative{
+  color:black
+}

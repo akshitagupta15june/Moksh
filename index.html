@@ -151,14 +151,15 @@
     <div class="contentWrapper h-full overflow-y-auto overflow-x-hidden flex flex-col justify-between">
 
       <!-- Hero Section & Navbar  -->
+      <!-- made the z-index-0 for the hero section so that menu button works for small screens  -->
       <div
-           class="heroSection h-[100vh] flex px-0  text-2xl lg:text-lg flex-col items-center bg-[url('./Images/HeroSection.webp')] bg-top bg-no-repeat bg-cover" >
+           class="heroSection h-[100vh] flex px-0  text-2xl lg:text-lg flex-col items-center bg-[url('./Images/HeroSection.webp')] bg-top bg-no-repeat bg-cover z-0" >
 
         <!-- Navbar  -->
         <div
              class="indexNavbar fixed top-0 px-4 py-2 ease-in-out text-white duration-300 flex z-30 items-center justify-between w-full left-0 bg-gradient-to-l from-[#009933] to-[#c4e327]">
           <div class="leftSection">
-            <a class="flex items-center" href="./index.html">
+            <a class="text-white flex items-center" href="./index.html">
               <img src="./Images/New_Logo_2.webp" alt="Moksh Logo" class="w-[4rem] h-[4rem] rounded-full" />
           
               <span
