@@ -287,4 +287,124 @@ let questions = [
     ],
     inf:"One who performs his duty without attachment, surrendering the results unto the Supreme Lord, is unaffected.- Gita"
   },
+  {
+    numb: 26,
+    question: "Who is the speaker of the Bhagavad Gita?",
+    answer: "Lord Krishna",
+    options: [
+      "Arjuna",
+      "Lord Krishna",
+      "Dhritarashtra",
+      "Duryodhana"
+    ],
+    inf: "The Bhagavad Gita is a 700-verse Hindu scripture that is part of the Indian epic Mahabharata. It is a conversation between prince Arjuna and the god Krishna, who serves as his charioteer."
+  },
+  {
+    numb: 27,
+    question: "What does the term 'Bhagavad Gita' mean?",
+    answer: "The Song of God",
+    options: [
+      "The Song of God",
+      "The Story of Arjuna",
+      "The Epic of Mahabharata",
+      "The Tale of Krishna"
+    ],
+    inf: "Bhagavad Gita translates to 'The Song of God'. It is a 700-verse text that is part of the Indian epic Mahabharata."
+  },
+  {
+    numb: 28,
+    question: "In which chapter of the Bhagavad Gita does Krishna reveal his universal form?",
+    answer: "Chapter 11",
+    options: [
+      "Chapter 9",
+      "Chapter 10",
+      "Chapter 11",
+      "Chapter 12"
+    ],
+    inf: "In Chapter 11 of the Bhagavad Gita, Krishna reveals his universal form to Arjuna."
+  },
+  {
+    numb: 29,
+    question: "What is the main teaching of the Bhagavad Gita?",
+    answer: "The path of selfless action",
+    options: [
+      "The path of knowledge",
+      "The path of devotion",
+      "The path of selfless action",
+      "The path of meditation"
+    ],
+    inf: "While the Bhagavad Gita discusses many paths to spiritual realization, its main teaching is the path of selfless action - to perform one's duty without attachment to the results."
+  },
+  {
+    numb: 30,
+    question: "Who was the charioteer of Arjuna during the Kurukshetra war?",
+    answer: "Lord Krishna",
+    options: [
+      "Bhishma",
+      "Drona",
+      "Lord Krishna",
+      "Karna"
+    ],
+    inf: "During the Kurukshetra war, Lord Krishna served as the charioteer of Arjuna and delivered the teachings of the Bhagavad Gita."
+  },
+  {
+    numb: 31,
+    question: "What is the total number of verses in the Bhagavad Gita?",
+    answer: "700",
+    options: [
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    inf: "The Bhagavad Gita consists of 700 verses."
+  },
+  {
+    numb: 32,
+    question: "In which language was the Bhagavad Gita originally written?",
+    answer: "Sanskrit",
+    options: [
+      "Hindi",
+      "Sanskrit",
+      "Pali",
+      "Prakrit"
+    ],
+    inf: "The Bhagavad Gita was originally written in Sanskrit."
+  },
+  {
+    numb: 33,
+    question: "Which chapter of the Bhagavad Gita is known as the Yoga of Knowledge?",
+    answer: "Chapter 4",
+    options: [
+      "Chapter 2",
+      "Chapter 3",
+      "Chapter 4",
+      "Chapter 5"
+    ],
+    inf: "Chapter 4 of the Bhagavad Gita is known as the Yoga of Knowledge."
+  },
+  {
+    numb: 34,
+    question: "Who narrated the Bhagavad Gita to King Dhritarashtra?",
+    answer: "Sanjaya",
+    options: [
+      "Ved Vyasa",
+      "Sanjaya",
+      "Drona",
+      "Bhishma"
+    ],
+    inf: "Sanjaya, who was granted divine vision, narrated the Bhagavad Gita to King Dhritarashtra."
+  },
+  {
+    numb: 35,
+    question: "What does Arjuna represent in the Bhagavad Gita?",
+    answer: "The individual soul",
+    options: [
+      "The individual soul",
+      "The supreme soul",
+      "The material world",
+      "The cycle of birth and death"
+    ],
+    inf: "In the Bhagavad Gita, Arjuna represents the individual soul."
+  }
 ];
