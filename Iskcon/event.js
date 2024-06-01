@@ -47,11 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
      p.textContent=item.name
      span.textContent=item.place
      p.style.fontSize="1.3rem"
+     p.style.zIndex="99999"
+     p.style.position="relative"
      span.style.fontSize="0.8rem"
+     span.style.zIndex="99999"
+     span.style.position="relative"
      div.appendChild(p)
      div.appendChild(span)
      div.style.padding="0.5rem 1rem"
      div.style.borderBottom="0.1rem solid black"
+     div.style.zIndex="99999"
+     div.style.position="relative"
+     div.style.backgroundColor="#fff"
+     div.style.padding=" 0.8rem"
+
      div.setAttribute('key',index)
      searchResults.appendChild(div)
     })
