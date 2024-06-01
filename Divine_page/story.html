@@ -36,10 +36,140 @@
 
   <body>
     <div class="blogWrapper h-screen overflow-hidden relative">
-      <!-- Site Menu Links  -->
+
+      <!-- drop menu links  or the links that appear after clicking on the hamburger icon-->
       <div
-        class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-screen"
-      ></div>
+      class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-screen ">
+   <!-- Row - 1  -->
+   <div class="row-1 flex items-center justify-between text-black ">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+          class="w-6 h-6 closeDropDown cursor-pointer ease-in-out duration-300 hover:text-black">
+       <path fill-rule="evenodd"
+             d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
+             clip-rule="evenodd" />
+     </svg>
+     <h1 class="text-xs uppercase font-semibold tracking-widest">Menu</h1>
+   </div>
+
+   <img src="../Images/logoBgRemoved.webp" alt="" class="h-36 w-36 mx-auto" />
+
+   <!-- Row - 2  -->
+   <div class="">
+     <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+        href="../index.html">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="h-3 w-3 group-hover:text-black">
+         <path fill-rule="evenodd"
+               d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
+               clip-rule="evenodd" />
+       </svg>
+       <span class="text-md p-3 group-hover:text-black">Mental Health Problems</span>
+     </a>
+
+     <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+        href="../Blogs/Blog.html">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="h-3 w-3 group-hover:text-black">
+         <path fill-rule="evenodd"
+               d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
+               clip-rule="evenodd" />
+       </svg>
+       <span class="text-md p-3 group-hover:text-black">Power of Knowledge Blogs</span>
+     </a>
+
+     <div class="features flex flex-col">
+       <a href="#" class="flex items-center font-semibold ease-in-out duration-300 p-2">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
+           <path fill-rule="evenodd"
+                 d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z"
+                 clip-rule="evenodd" />
+         </svg>
+         <span class="text-md p-3">Features</span>
+       </a>
+
+       <!-- Nested Links for features  -->
+       <div class="nestedLinks flex flex-col ml-4">
+         <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+            href="../AR_Meditate/meditation.html">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-black">
+             <path fill-rule="evenodd"
+                   d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                   clip-rule="evenodd" />
+           </svg>
+           <span class="text-sm p-3 group-hover:text-black">Augmented Reality Meditation</span>
+         </a>
+
+         <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+            href="../Iskcon/event.html">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-black">
+             <path fill-rule="evenodd"
+                   d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                   clip-rule="evenodd" />
+           </svg>
+           <span class="text-sm p-3 group-hover:text-black">Iskcon Events</span>
+         </a>
+
+         <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+            href="../Divine_page/story.html">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-black">
+             <path fill-rule="evenodd"
+                   d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                   clip-rule="evenodd" />
+           </svg>
+           <span class="text-sm p-3 group-hover:text-black">Divine Activities for all Generation
+           </span>
+         </a>
+
+         <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+            href="../Pomodro_page/reward.html">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-black">
+             <path fill-rule="evenodd"
+                   d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                   clip-rule="evenodd" />
+           </svg>
+           <span class="text-sm p-3 group-hover:text-black">Pomodoro Spiritual Break</span>
+         </a>
+
+         <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+            href="../shlok_page/motivation.html">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-black">
+             <path fill-rule="evenodd"
+                   d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                   clip-rule="evenodd" />
+           </svg>
+           <span class="text-sm p-3 group-hover:text-black">Read a Shlok</span>
+         </a>
+         <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+            href="../Gita-Storyline/storyline.html">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-black">
+             <path fill-rule="evenodd"
+                   d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                   clip-rule="evenodd" />
+           </svg>
+           <span class="text-sm p-3 group-hover:text-black">Gita StoryLine</span>
+         </a>
+         <a class="flex group items-center relative font-semibold ease-in-out duration-300 pb relative after:content-[''] after:bottom-0 after:h-1 after:w-0 after:left-0 after:absolute after:bg-black hover:after:w-full after:ease-in-out after:duration-300 "
+            href="../Rejuvenate_page/rejuvenate.html">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="h-3 w-3 group-hover:text-black">
+             <path fill-rule="evenodd"
+                   d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                   clip-rule="evenodd" />
+           </svg>
+           <span class="text-sm p-3 group-hover:text-black">Rejuvenate</span>
+         </a>
+         <div id="google_translate_element" class=""></div>
+       </div>
+     </div>
+   </div>
+ </div>
+
 
       <div class="contentWrapper h-full overflow-y-auto">
         <!-- Scroll to top -->
@@ -52,7 +182,7 @@
       </div>
     <!-- Scroll to top -->
         <div
-          class="heroSection w-full h-auto md:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg bg-gradient-to-r from-yellow-50 to-rose-100"
+          class="heroSection w-full h-auto md:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg bg-gradient-to-r from-yellow-50 to-rose-100 z-0"
         >
           <!-- Navbar   -->
           <div class="navbar fixed top-0 h-14 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-30 items-center justify-between w-full left-0  bg-gradient-to-r from-yellow-50 to-rose-100  ">
@@ -425,6 +555,8 @@
       })
       contentWrapper.addEventListener("scroll", scrollUp);
     </script>
+    <script src="../script.js"></script>
+    <script src="../commonScript.js"></script>
 
   <!-- Copyright Year js file -->
   <script src="../copyrightYear.js"></script>

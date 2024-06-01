@@ -1,13 +1,17 @@
 let dropMenuLinks = document.querySelector('.dropMenuLinks');
 let indexOpenDropDown = document.querySelector('.indexOpenDropDown');
 let closeDropDown = document.querySelector('.closeDropDown');
+let heroSection = document.querySelector('.heroSection');
 
 indexOpenDropDown.onclick = () => {
   dropMenuLinks.style.right = 0;
+  heroSection.style.zIndex = `1`;
 }
 
 closeDropDown.onclick = () => {
-  dropMenuLinks.style.right = '-2000px';
+  dropMenuLinks.style.right = `-2000px`;
+  heroSection.style.zIndex = `50`;
+
 }
 
 function subscribe() {
