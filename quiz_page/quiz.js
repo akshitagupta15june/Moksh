@@ -149,15 +149,29 @@ function showResult(){
        
         let scoreTag = '<span>and congrats! , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  
+        const attemptSummary = document.createElement('div');
+        attemptSummary.innerHTML = `<p>Note: First Load questions then Click The Print Button </p>`;
+   scoreText.appendChild(attemptSummary);
     }
     else if(userScore > 1){ 
         let scoreTag = '<span>and nice , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
+        const attemptSummary = document.createElement('div');
+        attemptSummary.innerHTML = `<p style="color: red;">Note: First Load questions then Click The Print Button</p>`;
+
+   scoreText.appendChild(attemptSummary);
     }
     else{ 
         let scoreTag = '<span>and sorry , You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
+        const attemptSummary = document.createElement('div');
+        attemptSummary.innerHTML = `<p style="color: red;">Note: First Load questions then Click The Print Button</p>`;
+
+   scoreText.appendChild(attemptSummary);
     }
+
+  
+
 }
 function startTimer(time){
     counter = setInterval(timer, 1000);
@@ -188,11 +202,11 @@ function startTimer(time){
     }
 }
 function startTimerLine(time){
-    counterLine = setInterval(timer, 29);
+    counterLine = setInterval(timer, 100);
     function timer(){
-        time += 1;
+        time += 4.9;
         time_line.style.width = time + "px"; 
-        if(time > 549){ 
+        if(time > 745){ 
             clearInterval(counterLine); 
         }
     }
@@ -202,3 +216,98 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  
 }
+////////////
+document.getElementById("print-btn").onclick = () => {
+    // Create a div element to hold the printable content
+    const printableContent = document.createElement("div");
+    printableContent.id = "printable-content";
+    printableContent.style.padding = "20px";
+    printableContent.style.fontFamily = "Arial, sans-serif";
+
+    // Loop through each question and create HTML structure
+    questions.forEach(question => {
+        const questionDiv = document.createElement("div");
+        questionDiv.classList.add("question");
+        questionDiv.style.marginBottom = "20px";
+
+        const questionText = document.createElement("p");
+        questionText.textContent = `${question.numb}. ${question.question}`;
+        questionDiv.appendChild(questionText);
+
+        question.options.forEach(option => {
+            const optionText = document.createElement("p");
+            optionText.textContent = option;
+            questionDiv.appendChild(optionText);
+        });
+
+        const answerText = document.createElement("p");
+        answerText.textContent = `Correct Answer: ${question.answer}`;
+        questionDiv.appendChild(answerText);
+
+        const infoText = document.createElement("p");
+        infoText.textContent = `Info: ${question.inf}`;
+        questionDiv.appendChild(infoText);
+
+        printableContent.appendChild(questionDiv);
+    });
+
+    // Append the printable content to the body (invisible)
+    document.body.appendChild(printableContent);
+    
+    // Use html2canvas to create a canvas of the printable content
+    html2canvas(printableContent).then(canvas => {
+        const imgData = canvas.toDataURL("image/png");
+        const pdf = new jsPDF("p", "pt", "a4");
+        const imgProps = pdf.getImageProperties(imgData);
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+
+        pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+        pdf.save("quiz.pdf");
+
+        // Remove the printable content from the body
+        document.body.removeChild(printableContent);
+    });
+
+     // Initialize variables to count attempted questions and correct answers
+   let attemptedQuestions = 0;
+   //let correctAnswers = 0;
+   
+
+   // Create a variable to store the HTML content for displaying questions, chosen answers, correct answers, and correctness
+   let userAnswersHTML = '';
+
+   // Loop through each question
+   questions.forEach((question, index) => {
+       // Increment attempted questions count
+       attemptedQuestions++;
+
+       // Add question text
+       userAnswersHTML += `<div class="user-answer"><span>${question.numb}. ${question.question}</span>`;
+
+       // Get the index of the chosen answer
+       const selectedOption = option_list.querySelector('.selected');
+       let userSelectedAnswer;
+       if (selectedOption) {
+           const selectedOptionText = selectedOption.textContent.trim();
+           const optionIndex = question.options.findIndex(option => option === selectedOptionText);
+           userSelectedAnswer = question.options[optionIndex];
+          }
+    
+       userAnswersHTML += `<div class="correct-answer"><span>Correct Answer: ${question.answer}</span></div>`;
+
+       userAnswersHTML += `</div>`; // Close user-answer div
+       let total_time=5;
+       let msg=document.querySelector(".complete_text");
+       msg.innerText=`Congratulations! You've completed the Quiz in Given time`;
+   });
+
+   // Display the HTML content
+   scoreText.innerHTML = userAnswersHTML;
+
+   // Display the number of attempted questions out of the total
+   const attemptSummary = document.createElement('div');
+   attemptSummary.innerHTML = `<p>Attempted ${attemptedQuestions} out of ${questions.length} questions.</p>`;
+   scoreText.appendChild(attemptSummary);
+   
+};

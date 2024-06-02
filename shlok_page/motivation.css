@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
 }
 
 #display {
-  color: black;
+  color: rgb(95, 7, 73);
   font-size: 1.2em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 
 #date {
   width: 250px;
-  color: black;
+  color: rgb(95, 7, 73);
   margin-bottom: 70px;
   font-size: 1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -113,13 +113,14 @@ p:hover {
   padding: 8px 12px;
   margin-top: 5px;
   transition: all 0.2s ease-in-out;
-
-  background-color: #2980b9;
+  background-color: #ff61277a;
 }
 
 .common-button:hover {
   transform: scale(1.1);
   border: none;
+  border: 4px solid rgb(6, 93, 6);
+  color: rgb(0, 0, 0);
 }
 
 
@@ -136,6 +137,10 @@ p:hover {
 .hold {
   width: 100%;
   text-align: left;
+}
+
+.quote{
+  background-color:#db964d33;
 }
 
 .buttons {
@@ -169,16 +174,21 @@ p:hover {
 }
 
 .text {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  padding-left: 10px;
+  /* font-family: 'krishna','yuvasanskrit','Open Sans Condensed', sans-serif; */
+  font-size: 1.5rem;
+  /* font-weight: 600; */
+  padding-left: 10%;
   transition: 0.5s;
   transition-timing-function: ease-in;
-  font-family: 'Roboto', sans-serif;
-  color: #14486b;
+  /* font-family: 'laila','Roboto', sans-serif; */
+  color: #050350;
   -webkit-background-clip: text;
+  font-family: "Laila", serif;
+  font-weight: 2%;
+  font-style: normal;
 }
+
+
 
 .quote {
   transition: 0.5s;
@@ -192,13 +202,13 @@ p:hover {
   cursor: pointer;
   padding: 8px 12px;
   margin-top: 5px;
-  background-color: #2980b9;
+  background-color: #ff61277a;
   transition: all 0.2s ease-in-out;
 }
 
 .new-quote:hover {
   transform: scale(1.1);
-  border: none;
+
 }
 .text-center {
   text-align: center;
@@ -226,7 +236,7 @@ p:hover {
   transition: 0.5s;
   transition-timing-function: ease-in;
   font-family: 'Open Sans Condensed', sans-serif;
-  color: rgb(105, 104, 104);
+  color: rgb(54, 2, 90,50%);
   -webkit-background-clip: text;
 }
 
@@ -237,7 +247,7 @@ p:hover {
   backface-visibility: hidden;
   box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.47);
   border-radius: 0.5rem;
-  background-color: transparent;
+  background-color:  #e98f2b38 ;
   opacity: 1;
 }
 .block{
@@ -393,7 +403,6 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, rgb(0, 13, 6));
-
 }
  @media (min-width:320px) and (max-width:400px)  { 
   .footer{
@@ -427,3 +436,4 @@ section {
     margin-top:0%
   }
  } 
+

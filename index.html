@@ -10,6 +10,8 @@
   <link rel="icon" type="image/x-icon" href="Images/logoBgRemoved.webp" />
   <link rel="stylesheet" href="commonStyles.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -17,7 +19,7 @@
 
     <!-- Site Menu Links  (for small screens)-->
     <div
-         class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-screen ">
+         class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-[70%] rounded-md	">
       <!-- Row - 1  -->
       <div class="row-1 flex items-center justify-between text-black ">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -151,14 +153,15 @@
     <div class="contentWrapper h-full overflow-y-auto overflow-x-hidden flex flex-col justify-between">
 
       <!-- Hero Section & Navbar  -->
+      <!-- made the z-index-0 for the hero section so that menu button works for small screens  -->
       <div
-           class="heroSection h-[100vh] flex px-0  text-2xl lg:text-lg flex-col items-center bg-[url('./Images/HeroSection.webp')] bg-top bg-no-repeat bg-cover" >
+           class="heroSection h-[100vh] flex px-0  text-2xl lg:text-lg flex-col items-center bg-[url('./Images/HeroSection.webp')] bg-top bg-no-repeat bg-cover z-0" >
 
         <!-- Navbar  -->
         <div
              class="indexNavbar fixed top-0 px-4 py-2 ease-in-out text-white duration-300 flex z-30 items-center justify-between w-full left-0 bg-gradient-to-l from-[#009933] to-[#c4e327]">
           <div class="leftSection">
-            <a class="flex items-center" href="./index.html">
+            <a class="text-white flex items-center" href="./index.html">
               <img src="./Images/New_Logo_2.webp" alt="Moksh Logo" class="w-[4rem] h-[4rem] rounded-full" />
           
               <span
@@ -251,7 +254,8 @@
             </p>
         
             <div class="scrollDown w-fit mt-4 circle border-2 border-white p-2 rounded-full flex items-center h-12 ease-in-out duration-300 hover:border-black group absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-12 sm:-translate-y-0">
-              <span class="h-2/4 w-2 inline-block rounded-full bg-white group-hover:bg-black animate-bounce"></span>
+              <span class="h-2/4 w-2 inline-block rounded-full bg-white group-hover:bg-black animate-bounce" id="wheel"></span>
+              <i class="fas fa-arrow-down animate-bounce "  id="arrow"></i>
             </div>
           </div>
         </div>
@@ -385,7 +389,7 @@
                     This feature promotes spiritual learning and work-life
                     balance by allowing users to set a Pomodoro timer and
                     receive alerts to take a break and read a Bhagavad Gita
-                    shloka from the website.This feature on the website
+                    shloka from the website. This feature on the website
                     supports users in their journey towards personal growth
                     and well-being.
                   </p>
@@ -409,11 +413,7 @@
 
                 <div class="card-description flex flex-col grow justify-between py-4 font-medium items-center ">
                   <p class="text-justify px-8 sm:px-4">
-                    <span class="word-spacing">Meaningful</span>
-                    <span class="word-spacing">and</span>
-                    <span class="word-spacing">motivational</span>
-                    <span class="word-spacing">quotations</span>
-                    can help spark
+                    Meaningful and motivational quotations can help spark
                     inspiration and create a sense of purpose. This feature
                     enables users to read several thought-provoking spiritual
                     quotes, which can provide a sense of comfort as well as
