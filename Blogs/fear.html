@@ -11,16 +11,26 @@
     <link rel="stylesheet" href="../commonStyles.css">
     <script type="text/javascript"
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </head>
 
 <body>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
+            }, 'google_translate_element');
+
+        }
+    </script>
     <div class="blogWrapper h-screen overflow-hidden relative">
         <!-- Scroll to top button-->
-      <div class="md:pr-8 hover-effect">
-        <button id="bttbutton" title="Back to Top">
-          <img src="./image.svg" class="size md:w-10 md:object-left" alt="Scroll to Top">
-        </button>
-      </div>
+        <div class="md:pr-8 hover-effect">
+            <button id="bttbutton" title="Back to Top">
+                <img src="./image.svg" class="size md:w-10 md:object-left" alt="Scroll to Top">
+            </button>
+        </div>
 
         <!-- Site Menu Links  -->
         <div
@@ -35,7 +45,7 @@
 
                 <!-- Navbar   -->
                 <div
-                    class="fixed navbar text-indigo-700 top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
+                    class="navbar fixed top-0 px-4 py-3 ease-in-out text-white duration-300 flex z-40 items-center justify-between w-full left-0 ">
                     <div class="leftSection">
                         <a class="flex items-center" href="../index.html">
                             <img src="../Images/logoBgRemoved.webp" alt="Moksh Logo" class="w-16 h-16" />
@@ -110,63 +120,112 @@
                     <img src="../Images/fear.png" alt="blogImage" class="rounded-md center">
                 </div>
 
-                <div id="google_element" style="margin-left: 45%;"></div>
+                <div id="google_translate_element"></div>
 
                 <!-- Add the script for initializing the translation widget -->
 
                 <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
                     <p class="mb-4">
                         <span class=" firstWord font-bold text-3xl text-indigo-800">C</span>
-                        oming straight to the topic of fear, it's an emotion similar to happiness, sadness, and anger. However, one of the core emotions we are born with is fear. But what is fear? Fear is the response of our sympathetic nervous system to situations we are not prepared for. When faced with something new, fear arises. So, is fear bad?
+                        oming straight to the topic of fear, it's an emotion similar to happiness, sadness, and anger.
+                        However, one of the core emotions we are born with is fear. But what is fear? Fear is the
+                        response of our sympathetic nervous system to situations we are not prepared for. When faced
+                        with something new, fear arises. So, is fear bad?
                     </p>
                     <p class="mb-4">
-                        The brain has an alarm system that activates whenever there seems to be any sort of danger. This alarm system is fear, which makes us alert. When confronted with fear, we have two options: to fight it or to flee, which means running away from the fear. The decision to face or run away from fear depends on acknowledging and analyzing the situation. We must consider if running away will save us, or if facing the situation will lead to danger or growth. Fear often hinders our personal growth as we are scared to speak or venture beyond our comfort zones.
+                        The brain has an alarm system that activates whenever there seems to be any sort of danger. This
+                        alarm system is fear, which makes us alert. When confronted with fear, we have two options: to
+                        fight it or to flee, which means running away from the fear. The decision to face or run away
+                        from fear depends on acknowledging and analyzing the situation. We must consider if running away
+                        will save us, or if facing the situation will lead to danger or growth. Fear often hinders our
+                        personal growth as we are scared to speak or venture beyond our comfort zones.
 
                     </p>
 
                     <img src="../images/butterfly.jpg" alt="">
                     <p class="mb-4">
-                        The most important thing is the power of knowledge. Knowledge guides us to make decisions. Why does the brain cause fear? Because fear triggers a survival mode. Just like a mosquito flies away to survive when we try to kill it, all of us have this fear ingrained in us to ensure our survival. Imagine if the mosquito didn't fly away, it would die easily and won't be able to survive. Similarly, in our case, we have to decide when to fly or when to fight.
+                        The most important thing is the power of knowledge. Knowledge guides us to make decisions. Why
+                        does the brain cause fear? Because fear triggers a survival mode. Just like a mosquito flies
+                        away to survive when we try to kill it, all of us have this fear ingrained in us to ensure our
+                        survival. Imagine if the mosquito didn't fly away, it would die easily and won't be able to
+                        survive. Similarly, in our case, we have to decide when to fly or when to fight.
 
 
                     </p>
                     <p class="mb-4">
-                        Sometimes fear is magnified in our minds, making the problem seem bigger and scarier than it actually is. However, you just have to face it, and often you'll realize it was just a piece of cake. Remember the tagline of Mountain Dew: "Dar ke aage Jeet hai" (Beyond fear lies victory). Whenever you face your fear, you overcome it and find success. Avoiding trying due to fear makes success impossible, but if you make an effort, there's a 90% chance you will succeed.
+                        Sometimes fear is magnified in our minds, making the problem seem bigger and scarier than it
+                        actually is. However, you just have to face it, and often you'll realize it was just a piece of
+                        cake. Remember the tagline of Mountain Dew: "Dar ke aage Jeet hai" (Beyond fear lies victory).
+                        Whenever you face your fear, you overcome it and find success. Avoiding trying due to fear makes
+                        success impossible, but if you make an effort, there's a 90% chance you will succeed.
 
                     </p>
                     <p class="mb-4">
-                        You can overcome fear with faith. Believe that you'll be alright, and have the confidence to face your fears, knowing that your higher power is taking care of you. Fear is an emotion, but being afraid is a choice. If you allow your mind to magnify the fear, you'll be scared, but if you can rationalize and calm yourself down, you'll realize that the situation might not be as serious as your mind portrays it.
+                        You can overcome fear with faith. Believe that you'll be alright, and have the confidence to
+                        face your fears, knowing that your higher power is taking care of you. Fear is an emotion, but
+                        being afraid is a choice. If you allow your mind to magnify the fear, you'll be scared, but if
+                        you can rationalize and calm yourself down, you'll realize that the situation might not be as
+                        serious as your mind portrays it.
 
                     </p>
                     <p class="mb-4">
-                        Fear is not always a negative emotion; it can be a good thing when it protects you from harm. However, overcoming fear and reaching new heights is also commendable. It's essential to think before reacting, and there are different kinds of fear throughout life. As children, we fear whether we are loved by our parents, and as we grow older, we fear exam results. Often, some fears are not worth worrying about and can make us sick. Nervousness and low self-esteem arise from fears of judgment and exclusion, leading to depression and even trauma in the long run.
+                        Fear is not always a negative emotion; it can be a good thing when it protects you from harm.
+                        However, overcoming fear and reaching new heights is also commendable. It's essential to think
+                        before reacting, and there are different kinds of fear throughout life. As children, we fear
+                        whether we are loved by our parents, and as we grow older, we fear exam results. Often, some
+                        fears are not worth worrying about and can make us sick. Nervousness and low self-esteem arise
+                        from fears of judgment and exclusion, leading to depression and even trauma in the long run.
 
 
                     <p class="mb-4">
-                        There is a very common term, FOMO, which stands for "fear of missing out." It is one of the greatest fears prevalent nowadays. The desire to experience everything makes me want to be aware of every event. However, it's alright not to know everything since it's impossible to be perfect at everything. We shouldn't try to be a "Jack of all trades and master of none," as we can't excel in every aspect of life.
-                        Instead, it's essential to remain calm, relax, and take life as it comes. Having a Guru in life serves a purpose. A Guru imparts two vital qualities: fearlessness (Nirbhayta) and humility (Namrata). They teach us to have control, say no when necessary, and develop inner strength through humility.
+                        There is a very common term, FOMO, which stands for "fear of missing out." It is one of the
+                        greatest fears prevalent nowadays. The desire to experience everything makes me want to be aware
+                        of every event. However, it's alright not to know everything since it's impossible to be perfect
+                        at everything. We shouldn't try to be a "Jack of all trades and master of none," as we can't
+                        excel in every aspect of life.
+                        Instead, it's essential to remain calm, relax, and take life as it comes. Having a Guru in life
+                        serves a purpose. A Guru imparts two vital qualities: fearlessness (Nirbhayta) and humility
+                        (Namrata). They teach us to have control, say no when necessary, and develop inner strength
+                        through humility.
 
                     </p>
                     <p class="mb-4">
-                        Fear resides at the subconscious level, arising from past memories and the unknown future. We worry about what might happen if we fail or face certain situations. However, in satsang, we learn to live in the present, which is the main cause of fear. By consciously bringing ourselves into the present, we can confront our fears more effectively.
+                        Fear resides at the subconscious level, arising from past memories and the unknown future. We
+                        worry about what might happen if we fail or face certain situations. However, in satsang, we
+                        learn to live in the present, which is the main cause of fear. By consciously bringing ourselves
+                        into the present, we can confront our fears more effectively.
 
 
                     </p>
                     <p class="mb-4">
-                        Every time you experience something negative in your past, a cellular memory is created. It influences how you deal with similar situations in the future. For example, if you have a strong fear of water, you'll always feel afraid to swim. However, you can rewrite this memory and overcome your fear by taking small steps and facing it consciously.
-                        When confronting your fear, you'll likely realize that it's not as daunting as you imagined. There are different types of fears to overcome. One significant fear is based on events that haven't happened yet, like driving in the rain and worrying about accidents. These are creations of the mind, and reminding yourself that you are safe can help diminish these fears. Shedding light on your fears and bringing them into consciousness is crucial for overcoming them.
+                        Every time you experience something negative in your past, a cellular memory is created. It
+                        influences how you deal with similar situations in the future. For example, if you have a strong
+                        fear of water, you'll always feel afraid to swim. However, you can rewrite this memory and
+                        overcome your fear by taking small steps and facing it consciously.
+                        When confronting your fear, you'll likely realize that it's not as daunting as you imagined.
+                        There are different types of fears to overcome. One significant fear is based on events that
+                        haven't happened yet, like driving in the rain and worrying about accidents. These are creations
+                        of the mind, and reminding yourself that you are safe can help diminish these fears. Shedding
+                        light on your fears and bringing them into consciousness is crucial for overcoming them.
 
 
                     </p>
                     <p class="mb-4">
-                        In times of uncertainty, people often succumb to fear, but having faith and willpower can save you. Auto-suggestion is another helpful technique. Remind yourself that perfection isn't necessary every time, and detaching yourself from the outcome can alleviate unnecessary anxiety.
+                        In times of uncertainty, people often succumb to fear, but having faith and willpower can save
+                        you. Auto-suggestion is another helpful technique. Remind yourself that perfection isn't
+                        necessary every time, and detaching yourself from the outcome can alleviate unnecessary anxiety.
 
 
                     </p>
                     <p class="mb-4">
-                        Practicing breathing techniques and meditation can slow down your mind and calm your fears. Remember, God is always with you, and surrendering to that belief can bring confidence and peace. Drop excessive desires, as they often lead to fear of failure. Trust in God's presence, and fear will lose its hold on you.
+                        Practicing breathing techniques and meditation can slow down your mind and calm your fears.
+                        Remember, God is always with you, and surrendering to that belief can bring confidence and
+                        peace. Drop excessive desires, as they often lead to fear of failure. Trust in God's presence,
+                        and fear will lose its hold on you.
 
-                        You are a child of God, and with courage, you can face any fear. God is always by your side, so there's no reason to fear. Have unwavering faith, and you'll find strength and protection in difficult times. Be brave, and nothing can harm you.
+                        You are a child of God, and with courage, you can face any fear. God is always by your side, so
+                        there's no reason to fear. Have unwavering faith, and you'll find strength and protection in
+                        difficult times. Be brave, and nothing can harm you.
 
 
 
@@ -228,15 +287,7 @@
         </div>
 
     </div>
-    <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur',
-            }, 'google_element');
 
-        }
-    </script>
     <script src="./blogs.js"></script>
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <script src="../commonScript.js"></script>
