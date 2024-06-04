@@ -403,5 +403,37 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, rgb(0, 13, 6));
-
 }
+ @media (min-width:320px) and (max-width:400px)  { 
+  .footer{
+    margin-top: 80%;
+  }
+ }
+ @media (min-width:481px)  { 
+   .footer{
+     margin-top:20%;
+    }
+  }
+  /*
+@media (min-width:641px)  { 
+  .footer{
+    margin-top: 0%;
+  }
+ }
+@media (min-width:961px)  { 
+  .footer{
+    margin-top:0%;
+  }
+ }
+*/
+@media (min-width:1024px) { 
+  .footer{
+    margin-top:8%;
+  }
+ }
+@media (min-width:1281px) { 
+  .footer{
+    margin-top:0%
+  }
+ } 
+
