@@ -564,6 +564,43 @@
                       class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Power
                   of Knowledge blogs</span>
               </a>
+              <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Blue Lines</title>
+    <style>
+        .site--links {
+            display: grid;
+            gap: 1rem; /* Adjust spacing between items */
+        }
+        .site--links a {
+            text-align: center;
+        }
+        .site--links a span {
+            position: relative;
+            font-weight: 600;
+            padding-top: 0.5rem; /* Adjust this value to reduce padding-top */
+            padding-bottom: 1rem;
+            display: inline-block;
+            transition: color 0.3s ease-in-out;
+        }
+        .site--links a span::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px;
+            width: 0;
+            background-color: #4f46e5; /* Indigo-600 */
+            transition: width 0.3s ease-in-out;
+        }
+        .site--links a:hover span {
+            color: #4f46e5; /* Indigo-600 */
+        }
+        .site--links a:hover span::after {
+            width: 100%;
+        }
+    </style>
 
               <a href=" ./AR_Meditate/meditation.html"
                  class="w-full text-center lg:text-left">
