@@ -59,12 +59,12 @@
           </h1>
 
           <p class="tagline text-xs font-semibold text-slate-800 italic">
-            Power of Knowledge Group .
+            Power of Knowledge Group.
           </p>
 
           <!-- Social Share links  -->
           <div class="social-share my-4 flex items-center justify-between w-2/3 md:w-1/6">
-            <a href="#" title="Share">
+            <a href="#" title="Share" onclick="copyLink()">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                 class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
                 <path fill-rule="evenodd"
@@ -91,7 +91,7 @@
               </svg>
             </a>
 
-            <a href="#" title="Print">
+            <a href="#" title="Print" onclick="initiatePrint()">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor"
                 class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
@@ -333,6 +333,29 @@
             "google_translate_element"
           );
         }
+
+        function initiatePrint() {
+          window.print()
+        }
+        function copyLink() {
+          var dummy = document.createElement("textarea");
+          document.body.appendChild(dummy);
+          dummy.value = window.location.href;
+          dummy.select();
+          document.execCommand("copy");
+          document.body.removeChild(dummy);
+          document.getElementById("copyMessage").textContent = "Link copied!";
+
+
+          var copyMessage = document.getElementById("copyMessage");
+          copyMessage.textContent = "Link copied!";
+          copyMessage.classList.add("fade-out");
+          setTimeout(function () {
+            copyMessage.textContent = "";
+            copyMessage.classList.remove("fade-out");
+          }, 1000);
+        }
+
       </script>
 
 
