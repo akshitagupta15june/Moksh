@@ -1,10 +1,9 @@
-let customFooter = document.querySelector( ".customFooter" ),
-  dropMenuLinks = document.querySelector( '.dropMenuLinks' ),
-  contentWrapper = document.querySelector( '.contentWrapper' ),
-  navbar = document.querySelector( '.navbar' );
+let customFooter = document.querySelector(".customFooter"),
+  dropMenuLinks = document.querySelector(".dropMenuLinks"),
+  contentWrapper = document.querySelector(".contentWrapper"),
+  navbar = document.querySelector(".navbar");
 
-( () =>
-{
+(() => {
   let dropMenuLinksContent = `
      <!-- Row - 1  -->
         <div class="row-1 flex items-center justify-between text-indigo-600 ">
@@ -137,8 +136,8 @@ let customFooter = document.querySelector( ".customFooter" ),
             </div>
           </div>
         </div>
-  `
-  dropMenuLinks.innerHTML = dropMenuLinksContent
+  `;
+  dropMenuLinks.innerHTML = dropMenuLinksContent;
 
   let navbarContent = `
        <div class="leftSection">
@@ -200,8 +199,8 @@ let customFooter = document.querySelector( ".customFooter" ),
                   d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
               </svg>
             </div>
-  `
-  navbar.innerHTML = navbarContent
+  `;
+  navbar.innerHTML = navbarContent;
 
   let footerContent = `
     <!-- NewsLetter  -->
@@ -267,20 +266,20 @@ let customFooter = document.querySelector( ".customFooter" ),
               <a href="../index.html"
                  class="w-full text-center lg:text-left">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Home</span>
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 footer-link-text">Home</span>
               </a>
 
               <a href="../Blogs/Blog.html"
                  class="w-full text-center lg:text-right">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Power
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 footer-link-text">Power
                   of Knowledge blogs</span>
               </a>
 
               <a href=" ../AR_Meditate/meditation.html"
                  class="w-full text-center lg:text-left">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Augmented
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 footer-link-text">Augmented
                   Reality
                   Meditation</span>
               </a>
@@ -288,14 +287,14 @@ let customFooter = document.querySelector( ".customFooter" ),
               <a href=" ../Iskcon/event.html"
                  class="w-full text-center lg:text-right">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Iskon
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 footer-link-text">Iskon
                   Events</span>
               </a>
 
               <a href=" ../Divine_page/story.html"
                  class="w-full text-center lg:text-left">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Divine
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 footer-link-text">Divine
                   Activities for all
                   Generation
                 </span>
@@ -304,7 +303,7 @@ let customFooter = document.querySelector( ".customFooter" ),
               <a href=" ../Pomodro_page/reward.html"
                  class="w-full text-center lg:text-right">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Pomodoro
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 footer-link-text">Pomodoro
                   Spiritual
                   Break</span>
               </a>
@@ -312,12 +311,12 @@ let customFooter = document.querySelector( ".customFooter" ),
               <a href=" ../shlok_page/motivation.html"
                  class="w-full text-center lg:text-left">
                 <span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Read
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 footer-link-text">Read
                   a Shlok</span> </a>
 
               <a href=" ../Rejuvenate_page/rejuvenate.html"
                  class="w-full text-center lg:text-right"><span
-                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300">Rejuvenate</span></a>
+                      class="relative font-semibold ease-in-out duration-300 pb-1 relative after:content-[''] after:bottom-0 after:h-[2px] after:w-0 after:left-0 after:absolute after:bg-indigo-600 hover:text-indigo-600 hover:after:w-full after:ease-in-out after:duration-300 footer-link-text">Rejuvenate</span></a>
 
             </div>
 
@@ -330,57 +329,51 @@ let customFooter = document.querySelector( ".customFooter" ),
               &copy; <span id="copyright-year"></span> Moksh. All rights reserved.
             </p>
           </div>
-  `
+  `;
   customFooter.innerHTML = footerContent;
   let copyRightYear = document.getElementById("copyright-year");
   let currentDate = new Date();
   let currentYear = currentDate.getFullYear();
   copyRightYear.innerText = currentYear;
+})();
 
-} )()
+contentWrapper.onscroll = () => {
+  contentWrapper.scrollTop > 5
+    ? navbar.classList.add("bg-slate-100", "shadow-2xl")
+    : navbar.classList.remove("bg-slate-100", "shadow-2xl");
+};
 
-contentWrapper.onscroll = () =>
-{
-  contentWrapper.scrollTop > 5 ? navbar.classList.add( 'bg-slate-100', 'shadow-2xl' ) : navbar.classList.remove( 'bg-slate-100', 'shadow-2xl' )
-}
+let subscribeBtn = document.querySelector(".subscribeBtn");
+subscribeBtn.onclick = () => {
+  alert("It will be functional soon!!");
+};
 
-let subscribeBtn = document.querySelector( '.subscribeBtn' )
-subscribeBtn.onclick = () =>
-{
-  alert( 'It will be functional soon!!' )
-}
+let indexOpenDropDown = document.querySelector(".indexOpenDropDown");
+indexOpenDropDown.onclick = () => {
+  dropMenuLinks.style.right = 0;
+};
 
-let indexOpenDropDown = document.querySelector( '.indexOpenDropDown' )
-indexOpenDropDown.onclick = () =>
-{
-  dropMenuLinks.style.right = 0
-}
-
-let closeDropDown = document.querySelector( ".closeDropDown" )
-closeDropDown.onclick = () =>
-{
-  dropMenuLinks.style.right = '-2000px'
-}
-
-
+let closeDropDown = document.querySelector(".closeDropDown");
+closeDropDown.onclick = () => {
+  dropMenuLinks.style.right = "-2000px";
+};
 
 const topButton = document.getElementById("bttbutton");
-      
 
-      function scrollUp() {
-        if (contentWrapper.scrollTop > 100) {
-          topButton.style.display = "block";
-        } else {
-          topButton.style.display = "none";
-        }
-      }
+function scrollUp() {
+  if (contentWrapper.scrollTop > 100) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
 
-      function getTop() {
-        contentWrapper.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
+function getTop() {
+  contentWrapper.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
 
-      contentWrapper.addEventListener("scroll", scrollUp);
-      topButton.addEventListener("click", getTop);
+contentWrapper.addEventListener("scroll", scrollUp);
+topButton.addEventListener("click", getTop);
