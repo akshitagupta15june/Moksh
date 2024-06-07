@@ -113,7 +113,10 @@
   background: linear-gradient(transparent, rgb(0, 13, 6));
 
 }
-
+#google_translate_element {
+  top: 15vh;
+  right: 5vw;
+}
 
 /* Media Queries */
 
@@ -125,8 +128,8 @@
 
 #google_translate_element {
   position: fixed;
-  top: 15vh; /* Adjust top distance as needed */
-  right: 5vw; /* Adjust right distance as needed */
+  /* top: 15vh; Adjust top distance as needed */
+  /* right: 5vw; Adjust right distance as needed */
   /* Ensure it's above other content */
   z-index: 10;
   background-color: #ffffff; /* Background color */
@@ -183,3 +186,19 @@ body > .skiptranslate {
 .blogCards{
   z-index: -100;
 }
+
+@media (max-width : 680px) {
+  #google_translate_element {
+    position: fixed;
+    width: -webkit-fill-available;
+    height: 10vh;
+    top:90vh;
+    right: 0vw;
+    /* right: 5vw; */
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 0;
+    border: 1px solid black;
+    /* color: black; */
+    padding: 10px;
+}}
