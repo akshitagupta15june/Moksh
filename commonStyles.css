@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   outline: none;
 }
-@media only screen and (max-width:500px){
-  #wheel{
+@media only screen and (max-width: 500px) {
+  #wheel {
     display: none !important;
   }
-  #arrow{
+  #arrow {
     color: white;
   }
 }
-@media only screen and (min-width:500px){
-  #wheel{
+@media only screen and (min-width: 500px) {
+  #wheel {
     color: white;
   }
-  #arrow{
+  #arrow {
     display: none !important;
-    
   }
 }
 .projectName {
-  font-family: 'Arizonia', cursive;
-  text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
+  font-family: "Arizonia", cursive;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* Footer  */
@@ -42,7 +41,6 @@ footer {
   font-size: 18px;
   font-weight: 900;
 }
-
 
 .footer-list {
   display: flex;
@@ -75,12 +73,12 @@ footer {
 }
 
 .footer-items::after {
-  content: '';
+  content: "";
   display: block;
   height: 4px;
   width: 0;
   background: blue;
-  transition: all .5
+  transition: all 0.5;
 }
 
 .footer-divide {
@@ -108,7 +106,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
+.customFooter .footer-link-text {
+  color: rgb(203 213 225 / 1);
+}
 .made-by {
   text-align: center;
   font-weight: 500;
@@ -136,8 +136,8 @@ footer {
   }
 }
 
-.md\:hover\:scale-95:hover{
-  box-shadow: 5px 4px 20px 0px rgba(0,0,0,0.5);
+.md\:hover\:scale-95:hover {
+  box-shadow: 5px 4px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 /*From line 126 to 142 is the code contributed to style the scrollbar*/
@@ -150,21 +150,20 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #04AA6D );
+  background: linear-gradient(transparent, #04aa6d);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, rgb(0, 13, 6));
-
 }
 
 @media (min-width: 700px) {
-  .md\:flex{
-  display: flex;
-  margin-left: 40px;
-  text-align: center;
-}
+  .md\:flex {
+    display: flex;
+    margin-left: 40px;
+    text-align: center;
+  }
 }
 
 .flex {
@@ -174,7 +173,7 @@ footer {
 .input-field {
   flex: 1; /* Take remaining space */
   background-color: white;
-  border: 1px solid #34D399; /* Emerald color */
+  border: 1px solid #34d399; /* Emerald color */
   padding: 8px;
   border-radius: 4px 0 0 4px;
   font-size: 14px;
@@ -183,7 +182,7 @@ footer {
 }
 
 .subscribeBtn {
-  background-color: #34D399; /* Emerald color */
+  background-color: #34d399; /* Emerald color */
   color: #fff;
   padding: 8px 16px;
   border: none;
@@ -197,7 +196,7 @@ footer {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #6EE7B7; /* Light green */
+  background-color: #6ee7b7; /* Light green */
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -232,41 +231,46 @@ footer {
   opacity: 0.75;
 }
 
-.size{
+.size {
   width: 1.5rem;
 }
 
-.heroSection{
+.heroSection {
   background-attachment: fixed;
   box-shadow: inset 0px -50px 70px white;
   z-index: 999;
 }
-.heroSection .top{
+.heroSection .top {
   animation: fadeup 1s 1;
 }
-.heroSection .bottom{
+.heroSection .bottom {
   animation: fadeup 1s 1;
 }
 
+.hover-image:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+}
+
 @keyframes fadeup {
-  0%{
+  0% {
     opacity: 0;
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
 @media (max-width: 767px) {
   #bttbutton {
-    right: 5px; 
+    right: 5px;
     bottom: 11px;
     width: 50px;
   }
-  .size{
+  .size {
     width: 2rem;
   }
 }

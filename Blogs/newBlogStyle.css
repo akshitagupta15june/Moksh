@@ -4,8 +4,22 @@
 * {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+ 
 }
 
+.navbar{
+  background: rgb(210,222,0);
+  background: linear-gradient(93deg, rgba(210,222,0,1) 0%, rgba(11,178,0,1) 100%);
+  box-shadow: -3px 18px 15px -22px rgba(159,255,0,0.83);
+  -webkit-box-shadow: -3px 18px 15px -22px rgba(159,255,0,0.83);
+  -moz-box-shadow: -3px 18px 15px -22px rgba(159,255,0,0.83);
+
+ z-index: 10000;
+}
+
+/* .navbar:hover{
+
+} */
 .projectName {
   font-family: 'Arizonia', cursive;
 }
@@ -24,37 +38,41 @@
 .read-button {
   position: relative;
   padding: 10px 20px;
-  background: linear-gradient(107deg, rgba(255, 255, 255, 1) 0%, rgba(128, 128, 128, 1) 72%);
-  color: #353686;
   text-decoration: none;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: background-color 0.3s, transform 0.3s;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 0.75rem; 
+  margin-top: 0.75rem; 
+  border-radius: 0.375rem; 
+  z-index: 20;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
- .read-button:hover {
-  background-color: #353686;
-  color: white;
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  
-} 
-
-.read-button:hover::before {
+.read-button::after {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
+  left: 0;
   height: 100%;
-  background: linear-gradient(107deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 72%);
-  transition: left 0.3s;
-  }
+  width: 0;
+  background-color: white;
+  z-index: -10;
+  transition: width 0.3s ease-in-out;
+  border-radius: 0; 
+}
 
-  .read-button:hover::before {
-    left: 100%;
-  }
+.read-button:hover {
+  color: black;
+}
+
+.read-button:hover::after {
+  width: 100%;
+}
+
   
 .previous {
   background-color: #f1f1f1;
@@ -79,22 +97,26 @@
 /*From line 13 to 29 is the code contributed to style the scrollbar*/
 ::-webkit-scrollbar {
   width: 12px;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(7, 31, 48);
+  background: rgb(250, 250, 250);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #09a0f1);
+  background: linear-gradient(transparent, #04AA6D );
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(transparent, antiquewhite);
+  background: linear-gradient(transparent, rgb(0, 13, 6));
 
 }
-
+#google_translate_element {
+  top: 15vh;
+  right: 5vw;
+}
 
 /* Media Queries */
 
@@ -106,19 +128,26 @@
 
 #google_translate_element {
   position: fixed;
-  top: 60px; /* Adjust top distance as needed */
-  right: 50px; /* Adjust right distance as needed */
-  z-index: 0; /* Ensure it's above other content */
-  background-color: #00ff44; /* Background color */
-  border-radius: 0 !important; /* Border radius */
-  border: 1px solid #ccc; /* Border */
+  /* top: 15vh; Adjust top distance as needed */
+  /* right: 5vw; Adjust right distance as needed */
+  /* Ensure it's above other content */
+  z-index: 10;
+  background-color: #ffffff; /* Background color */
+  border-radius: 0; /* Border radius */
+   border: 1px solid black;  /*Border */
+  /* color:black; */
   padding: 10px; /* Padding */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Box shadow */
+
+  /* box-shadow: -2px 1px 41px -18px rgba(159,255,0,0.83);
+  -webkit-box-shadow: -2px 1px 41px -18px rgba(159,255,0,0.83);
+  -moz-box-shadow: -2px 1px 41px -18px rgba(159,255,0,0.83); */
 }
 
 /* Styling for the translate button */
 #google_translate_element .goog-te-menu-value {
   font-size: 16px; /* Adjust font size */
+  overflow: hidden;
   padding: 6px 12px; /* Adjust padding */
   border: 1px solid #ccc; /* Border color */
   border-radius: 4px; /* Border radius */
@@ -130,8 +159,46 @@
   appearance: none; /* Remove default appearance */
   -webkit-appearance: none;
   -moz-appearance: none;
+ 
+  overflow: hidden;
   padding: 6px 12px; /* Adjust padding */
   border: 1px solid #ccc; /* Border color */
   border-radius: 4px; /* Border radius */
   background-color: #f8f8f8; /* Background color */
 }
+
+
+/* .translation-container{
+  margin-left: 43vw;
+
+  margin-top: 5vh;
+
+
+} */
+/* Hiding the overlapping google translate banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body > .skiptranslate {
+  display: none;
+}
+
+.blogCards{
+  z-index: -100;
+}
+
+@media (max-width : 680px) {
+  #google_translate_element {
+    position: fixed;
+    width: -webkit-fill-available;
+    height: 10vh;
+    top:90vh;
+    right: 0vw;
+    /* right: 5vw; */
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 0;
+    border: 1px solid black;
+    /* color: black; */
+    padding: 10px;
+}}

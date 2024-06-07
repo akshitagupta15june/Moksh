@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <div class="blogWrapper h-screen overflow-hidden relative">
     <!-- Scroll to top button-->
     <div class="md:pr-8 hover-effect">
@@ -35,7 +36,7 @@
 
         <!-- Navbar   -->
         <div
-          class="fixed navbar text-indigo-700 top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
+          class="navbar fixed top-0 px-4 py-3 ease-in-out text-white duration-300 flex z-40 items-center justify-between w-full left-0  ">
           <div class="leftSection">
             <a class="flex items-center" href="../index.html">
               <img src="../Images/New_Logo_2.webp" alt="Moksh Logo" class="w-16 h-16" />
@@ -63,7 +64,7 @@
 
           <!-- Social Share links  -->
           <div class="social-share my-4 flex items-center justify-between w-2/3 md:w-1/6">
-            <a href="#" title="Share">
+            <a href="#" title="Share" onclick="copyLink()">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                 class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
                 <path fill-rule="evenodd"
@@ -90,7 +91,7 @@
               </svg>
             </a>
 
-            <a href="#" title="Print">
+            <a href="#" title="Print" onclick="initiatePrint()">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor"
                 class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
@@ -111,8 +112,8 @@
             alt="blogImage" class="rounded-md center">
         </div>
         <!-- <div> -->
-        <div id="google_element" style="margin-left: 45%;" class="translation-container"></div>
-  
+        <div id="google_translate_element"></div>
+
         <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
           <p class="mb-4">
             <span class=" firstWord font-bold text-3xl text-indigo-800">T</span>
@@ -325,7 +326,37 @@
           Blogs</a>
 
       </div>
+      <script>
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            { pageLanguage: "en" },
+            "google_translate_element"
+          );
+        }
 
+        function initiatePrint() {
+          window.print()
+        }
+        function copyLink() {
+          var dummy = document.createElement("textarea");
+          document.body.appendChild(dummy);
+          dummy.value = window.location.href;
+          dummy.select();
+          document.execCommand("copy");
+          document.body.removeChild(dummy);
+          document.getElementById("copyMessage").textContent = "Link copied!";
+
+
+          var copyMessage = document.getElementById("copyMessage");
+          copyMessage.textContent = "Link copied!";
+          copyMessage.classList.add("fade-out");
+          setTimeout(function () {
+            copyMessage.textContent = "";
+            copyMessage.classList.remove("fade-out");
+          }, 1000);
+        }
+
+      </script>
 
 
       <!-- Footer  -->
@@ -337,22 +368,10 @@
   <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        { pageLanguage: "en" },
-        "google_translate_element"
-      );
-    }
-  </script>
+
   <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
   <script>
-    function loadGoogleTranslate() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,ur,zh-CN,fr,ja,ko,ar',
-      }, 'google_element');
-    }
+
   </script>
   <script src="./blogs.js"></script>
   <script src="../commonScript.js"></script>

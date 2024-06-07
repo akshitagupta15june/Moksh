@@ -1,334 +1,339 @@
 <!doctype html>
 <html>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <title>Blog</title>
-    <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
-    <link rel="stylesheet" href="../commonStyles.css">
-    <link rel="stylesheet" href="newBlogStyle.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <title>Blog</title>
+  <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" />
+  <link rel="stylesheet" href="../commonStyles.css">
+  <link rel="stylesheet" href="newBlogStyle.css">
+</head>
 
-  <body>
-    <!-- Google Translate Widget Container -->
-    <div id="google_translate_element"></div>
+<body>
+  <!-- LOAD THE FUNCTION AT FIRST FOR FASTER RESPONSE TIME AND EXECUTION -->
+  <!-- Import Google Translate JavaScript -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: "en" },
+        "google_translate_element"
+      );
+    }
+  </script>
+  <!-- Google Translate Widget Container -->
+  <div id="google_translate_element"></div>
 
-    <div class="blogWrapper h-screen overflow-hidden relative">
+  <div class="blogWrapper h-screen overflow-hidden relative">
 
-      <div class="md:pr-8 hover-effect">
-        <button id="bttbutton" title="Back to Top">
-          <img src="./image.svg" class="size md:w-10 md:object-left" alt="Scroll to Top">
-        </button>
-      </div>
-      <!-- Site Menu Links  -->
-      <div
-           class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-screen ">
-      </div>
-
-      <div class="contentWrapper h-full overflow-y-auto">
-
-
-        <!-- Hero Section & Navbar  -->
-        <div
-             class="heroSection h-fit md:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg flex-col bg-no-repeat items-center bg-contain md:bg-right">
-
-          <!-- Navbar   -->
-          <div
-               class="navbar fixed top-0 px-4 py-3 ease-in-out text-indigo-600 duration-300 flex z-40 items-center justify-between w-full left-0 ">
-          </div>
-
-          <!-- Featured Blog  -->
-          <div
-               class="featuredBlog grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-0 mt-24 h-auto md:h-[calc(100vh-70px)] w-full text-slate-900 ">
-
-            <div class="featuredBlogWrapper order-2 md:order-1 px-4 flex flex-col justify-center">
-              <div class="uppercase text-xs font-semibold flex items-center">
-                <span class="tracking-widest">Featured</span>
-                <div class="stars flex items-center ml-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                       class="w-3 h-3 text-rose-600">
-                    <path fill-rule="evenodd"
-                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                          clip-rule="evenodd" />
-                  </svg>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                       class="w-3 h-3 text-rose-600">
-                    <path fill-rule="evenodd"
-                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                          clip-rule="evenodd" />
-                  </svg>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                       class="w-3 h-3 text-rose-600">
-                    <path fill-rule="evenodd"
-                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                          clip-rule="evenodd" />
-                  </svg>
-
-                </div>
-              </div>
-
-              <div class="title w-full mb-5">
-                <p class="sm:text-3xl text-2xl uppercase my-3">Karma</p>
-                <span class="sm:text-xs text-sm text-justify font-semibold block w-2/3">
-                  Today, we are addressing one of the most confusing topics: karma. Many people are confused about its
-                  very
-                  basic
-                  definition or foundation...
-                </span>
-
-              </div>
-
-              <a href="./karma.html"
-                 class="w-fit text-xs py-3 px-4 sm:py-2 sm:px-3 rounded-md uppercase bg-indigo-600 text-white font-semibold tracking-widest ease-in-out duration-300 sm:hover:bg-gray-900">Read
-                more</a>
-
-              <!-- Social Share links  -->
-              <div class="social-share my-4 flex items-center justify-between w-2/3 md:w-1/3">
-                <a href="#" title="Share" onclick="copyLink()">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                       class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
-                    <path fill-rule="evenodd"
-                          d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
-                          clip-rule="evenodd" />
-                  </svg>
-                </a>
-
-                <a href="#" title="Save">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                       stroke="currentColor"
-                       class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-                  </svg>
-                </a>
-
-                <a href="./karma.html" download title="Download" onclick="generateAndDownloadPDF()" download>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                       stroke="currentColor"
-                       class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
-                  </svg>
-                </a>
-
-                <a href="#" title="Print" onclick="initiatePrint()">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                       stroke="currentColor"
-                       class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z" />
-                  </svg>
-                </a>
-
-              </div>
-              <p id="copyMessage" class="text-xs text-green-500"></p>
-
-
-            </div>
-            <div class="flex justify-center items-center h-screen mt-2"> <!-- Reduced top margin -->
-              <img src="../Images/Karma.png" alt="background-image" class="md:h-[calc(100vh-200px)] my-auto md:rounded-md w-full order-2 md:order-2 karma_image" style="margin: auto;height: fit-content;padding: 5px;">
-              </div>
-
-
-
-
-          </div>
-
-        </div>
-
-        <!-- Blog Cards  -->
-        <div class="blogCards h-fit flex items-center sm:justify-center flex-col py-16 bg-slate-50">
-
-          <h1
-              class="font-semibold text-indigo-600 text-2xl uppercase tracking-widest border-double border-b-4 border-indigo-600 pb-2">
-            Articles</h1>
-
-          <!--All Cards-->
-          <div
-               class="cards p-10 gap-10 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 justify-items-center ">
-
-            <!-- Card - Life  -->
-            <div
-                 class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/lifeBlog.jpg')] bg-center bg-bottom">
-
-              <!-- Card Content  -->
-              <div
-                   class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
-
-                <!-- Heading  -->
-                <div class="heading text-white">
-                  <p class="uppercase text-sm">
-                    Life
-                  </p>
-                  <p class="uppercase">26-06-2023</p>
-                </div>
-                <a href="./life.html"
-                   class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
-              </div>
-
-            </div>
-
-            <!-- Card - DEPRESSION & SUICIDE -->
-            <div
-                 class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/depression2.webp')] bg-center bg-bottom">
-
-              <!-- Card Content  -->
-              <div
-                   class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
-
-                <!-- Heading  -->
-                <div class="heading text-white">
-                  <p class="uppercase text-sm">
-                    depression <br> &amp; suicide
-                  </p>
-                  <p class="uppercase text-xs">20-06-2023</p>
-                </div>
-                <a href="./depression.html"
-                   class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
-              </div>
-
-            </div>
-
-            <!-- Card - 5 cardinal vices  -->
-            <div
-                 class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blog-vices.webp')] bg-center bg-bottom">
-
-              <!-- Card Content  -->
-              <div
-                   class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
-
-                <!-- Heading  -->
-                <div class="heading text-white">
-                  <p class="uppercase text-left">
-                    5 cardinal vices
-                  </p>
-                  <p class="uppercase text-xs">20-06-2023</p>
-                </div>
-                <a href="./cardinalVices.html"
-                   class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
-              </div>
-
-            </div>
-
-            <!-- Card - WEAKNESS IS DEATH, STRENGTH IS LIFE -->
-            <div
-                 class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blogImage2.webp')] bg-center bg-bottom">
-
-              <!-- Card Content  -->
-              <div
-                   class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
-
-                <!-- Heading  -->
-                <div class="heading text-white">
-                  <p class="uppercase text-left text-xs">
-                    WEAKNESS IS DEATH, STRENGTH IS LIFE.
-                  </p>
-                  <p class="uppercase text-xs">31-05-2023</p>
-                </div>
-                <a href="./Strength.html"
-                   class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
-              </div>
-
-            </div>
-
-            <!-- Card - power of words -->
-            <div
-                 class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blogImage1.webp')] bg-center bg-bottom">
-
-              <!-- Card Content  -->
-              <div
-                   class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
-
-                <!-- Heading  -->
-                <div class="heading text-white">
-                  <p class="uppercase text-left">
-                    power of words
-                  </p>
-                  <p class="uppercase text-xs">30-05-2023</p>
-                </div>
-                <a href="./Words.html"
-                   class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
-              </div>
-
-            </div>
-
-
-            <!-- Card - Fear -->
-            <div
-            class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/fear.png')] bg-no-repeat bg-center bg-bottom">
-
-         <!-- Card Content  -->
-         <div
-              class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
-
-           <!-- Heading  -->
-           <div class="heading text-white">
-             <p class="uppercase text-left">
-               Fear
-             </p>
-             <p class="uppercase text-xs">28-08-2023</p>
-           </div>
-           <a href="./fear.html"
-              class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
-         </div>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-        <!-- Footer  -->
-        <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col"></footer>
-
-      </div>
+    <div class="md:pr-8 hover-effect">
+      <button id="bttbutton" title="Back to Top">
+        <img src="./image.svg" class="size md:w-10 md:object-left" alt="Scroll to Top">
+      </button>
+    </div>
+    <!-- Site Menu Links  -->
+    <div
+      class="dropMenuLinks ease-in-out duration-300 flex flex-col justify-between overflow-y-auto h-screen z-50 absolute top-0 -right-[2000px] backdrop-blur-sm sm:p-12 p-8 bg-white/90 w-screen ">
     </div>
 
-    <!-- Import Google Translate JavaScript -->
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-          new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,es,fr,de,it,pt,ru,zh-CN,zh-TW,ja,ko,ar,hi,bn,ur,tr,nl,el,sv,pl,vi,th,id,ms,fil,fi,da,no,hu,cs,sk,ro,bg,hr,sr,sl,uk,he,fa,ta,te,kn,ml', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-      }
+    <div class="contentWrapper h-full overflow-y-auto">
+
+
+      <!-- Hero Section & Navbar  -->
+      <div
+        class="heroSection h-fit md:h-[100vh] flex px-0 md:px-4 text-2xl sm:text-lg flex-col bg-no-repeat items-center bg-contain md:bg-right ">
+        <!-- class="indexNavbar fixed top-0 px-4 py-2 ease-in-out text-white duration-300 flex z-30 items-center justify-between w-full left-0 bg-gradient-to-l from-[#009933] to-[#c4e327]" -->
+        <!-- Navbar   -->
+        <div
+          class="navbar fixed top-0 px-4 py-3 ease-in-out text-white duration-300 flex z-40 items-center justify-between w-full left-0 ">
+        </div>
+
+        <!-- Featured Blog  -->
+        <div
+          class="featuredBlog grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-0 mt-24 md:mt-10  h-auto md:h-[calc(100vh-70px)] w-full text-slate-900 ">
+
+          <div class="featuredBlogWrapper order-2 md:order-1 px-4 flex flex-col justify-center items-center md:items-start ">
+            <div class="uppercase md:justify-center text-xs font-semibold flex items-center">
+              <span class="tracking-widest ">Featured</span>
+              <div class="stars flex items-center ml-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                  class="w-3 h-3 text-rose-600">
+                  <path fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                    clip-rule="evenodd" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                  class="w-3 h-3 text-rose-600">
+                  <path fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                    clip-rule="evenodd" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                  class="w-3 h-3 text-rose-600">
+                  <path fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                    clip-rule="evenodd" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="title w-full mb-5">
+              <p class="sm:text-3xl text-2xl uppercase my-3 text-center md:text-left">Karma</p>
+              <div class="sm:text-xs text-sm text-justify font-semibold block w-auto md:w-2/3 text-center md:text-left">
+                Today, we are addressing one of the most confusing topics: karma. Many people are confused about its
+                very
+                basic
+                definition or foundation...
+              </div>
+
+            </div>
+
+            <a href="./karma.html"
+              class="w-fit text-xs py-3 px-4 sm:py-2 sm:px-3 rounded-md uppercase hover:text-white ease-in-out border-2 border-black duration-300 py-3 text-xs mt-3 bg-transparent rounded-md after:rounded-none z-20 text-black uppercase tracking-widest relative font-semibold after:content-[''] after:top-0 after:h-full after:w-0 after:left-0 after:absolute after:bg-black after:-z-10 hover:after:w-full after:ease-in-out after:duration-300">Read
+              more</a>
+
+            <!-- Social Share links  -->
+            <div class="social-share my-4 flex items-center justify-between w-2/3 md:w-1/3">
+              <a href="#" title="Share" onclick="copyLink()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                  class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                  <path fill-rule="evenodd"
+                    d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+
+              <a href="#" title="Save">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                </svg>
+              </a>
+
+              <a href="./karma.html" download title="Download" onclick="generateAndDownloadPDF()" download>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+                </svg>
+              </a>
+
+              <a href="#" title="Print" onclick="initiatePrint()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8 rounded-full bg-gray-100 p-2 ease-in-out duration-300 hover:bg-indigo-600 hover:text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z" />
+                </svg>
+              </a>
+
+            </div>
+            <p id="copyMessage" class="text-xs text-green-500"></p>
+
+
+          </div>
+          <div class="flex justify-center items-center h-auto"> 
+            <!-- Reduced top margin -->
+            <img src="../Images/Karma.png" alt="background-image"
+              class="md:h-[calc(100vh-200px)] my-auto md:rounded-md w-full order-2 md:order-2 karma_image"
+              style="margin: auto;height: fit-content;padding: 5px;">
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+      <!-- Blog Cards  -->
+      <div class="blogCards h-fit flex items-center sm:justify-center flex-col py-16 bg-slate-50">
+
+        <h1
+          class="font-semibold text-gray-900 text-2xl uppercase tracking-widest border-double border-b-4 border-gray-900 pb-2">
+          Articles</h1>
+
+        <!--All Cards-->
+        <div class="cards p-10 gap-10 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 justify-items-center ">
+
+          <!-- Card - Life  -->
+          <div
+            class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/lifeBlog.jpg')] bg-center bg-bottom">
+
+            <!-- Card Content  -->
+            <div
+              class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
+
+              <!-- Heading  -->
+              <div class="heading text-white">
+                <p class="uppercase text-sm">
+                  Life
+                </p>
+                <p class="uppercase">26-06-2023</p>
+              </div>
+              <a href="./life.html"
+                class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
+            </div>
+
+          </div>
+
+          <!-- Card - DEPRESSION & SUICIDE -->
+          <div
+            class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/depression2.webp')] bg-center bg-bottom">
+
+            <!-- Card Content  -->
+            <div
+              class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
+
+              <!-- Heading  -->
+              <div class="heading text-white">
+                <p class="uppercase text-sm">
+                  DEPRESSION & SUICIDE
+                </p>
+                <p class="uppercase text-xs">20-06-2023</p>
+              </div>
+              <a href="./depression.html"
+                class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
+            </div>
+
+          </div>
+
+          <!-- Card - 5 cardinal vices  -->
+          <div
+            class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blog-vices.webp')] bg-center bg-bottom">
+
+            <!-- Card Content  -->
+            <div
+              class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
+
+              <!-- Heading  -->
+              <div class="heading text-white">
+                <p class="uppercase text-left">
+                  5 cardinal vices
+                </p>
+                <p class="uppercase text-xs">20-06-2023</p>
+              </div>
+              <a href="./cardinalVices.html"
+                class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
+            </div>
+
+          </div>
+
+          <!-- Card - WEAKNESS IS DEATH, STRENGTH IS LIFE -->
+          <div
+            class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 rounded-[30px] flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blogImage2.webp')] bg-center bg-bottom">
+
+            <!-- Card Content  -->
+            <div
+              class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
+
+              <!-- Heading  -->
+              <div class="heading text-white">
+                <p class="uppercase text-left text-xs">
+                  WEAKNESS IS DEATH, STRENGTH IS LIFE.
+                </p>
+                <p class="uppercase text-xs">31-05-2023</p>
+              </div>
+              <a href="./Strength.html"
+                class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
+            </div>
+
+          </div>
+
+          <!-- Card - power of words -->
+          <div
+            class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/blogImage1.webp')] bg-center bg-bottom">
+
+            <!-- Card Content  -->
+            <div
+              class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
+
+              <!-- Heading  -->
+              <div class="heading text-white">
+                <p class="uppercase text-left">
+                  power of words
+                </p>
+                <p class="uppercase text-xs">30-05-2023</p>
+              </div>
+              <a href="./Words.html"
+                class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
+            </div>
+
+          </div>
+
+
+          <!-- Card - Fear -->
+          <div
+            class="card-1 h-[550px] w-[310px] relative bg-white ease-in-out duration-300 rounded-md group ease-in-out duration-500 flex flex-col justify-end hover:-translate-y-2 hover:shadow-2xl bg-[url('../Images/fear.png')] bg-no-repeat bg-center bg-bottom">
+
+            <!-- Card Content  -->
+            <div
+              class="w-full bg-slate-900 opacity-90 rounded-b-md flex justify-between items-center text-justify px-4 py-6 text-xs flex ">
+
+              <!-- Heading  -->
+              <div class="heading text-white">
+                <p class="uppercase text-left">
+                  Fear
+                </p>
+                <p class="uppercase text-xs">28-08-2023</p>
+              </div>
+              <a href="./fear.html"
+                class="read-button uppercase px-6 py-3 bg-indigo-900 text-white font-semibold text-center rounded-md">Read</a>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Footer  -->
+      <footer class="customFooter bg-slate-900 py-4 px-8 lg:px-24 flex flex-col"></footer>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function initiatePrint() {
+      window.print()
+    }
+    function copyLink() {
+      var dummy = document.createElement("textarea");
+      document.body.appendChild(dummy);
+      dummy.value = window.location.href;
+      dummy.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+      document.getElementById("copyMessage").textContent = "Link copied!";
+
+
+      var copyMessage = document.getElementById("copyMessage");
+      copyMessage.textContent = "Link copied!";
+      copyMessage.classList.add("fade-out");
+      setTimeout(function () {
+        copyMessage.textContent = "";
+        copyMessage.classList.remove("fade-out");
+      }, 1000);
+    }
+
   </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script>
-      function initiatePrint ()
-      {
-        window.print()
-      }
-      function copyLink ()
-      {
-        var dummy = document.createElement( "textarea" );
-        document.body.appendChild( dummy );
-        dummy.value = window.location.href;
-        dummy.select();
-        document.execCommand( "copy" );
-        document.body.removeChild( dummy );
-        document.getElementById( "copyMessage" ).textContent = "Link copied!";
+  <script src="../commonScript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+  <script src="./download.js"></script>
 
-
-        var copyMessage = document.getElementById( "copyMessage" );
-        copyMessage.textContent = "Link copied!";
-        copyMessage.classList.add( "fade-out" );
-        setTimeout( function ()
-        {
-          copyMessage.textContent = "";
-          copyMessage.classList.remove( "fade-out" );
-        }, 1000 );
-      }
-
-    </script>
-    <script src="../commonScript.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-    <script src="./download.js"></script>
-
-  </body>
+</body>
 
 </html>

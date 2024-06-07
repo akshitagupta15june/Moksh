@@ -29,11 +29,7 @@
 ## 🐦 Latest Tweet
 
 
-<p>
-  <a href="https://www.twitter.com/ExperienceMoksh">
-    <img src="https://gtce.itsvg.in/api?username=ExperienceMoksh" alt="Latest Tweet">
-  </a>
-</p>
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/ExperienceMoksh)
 
 
 ## About The Project 💫

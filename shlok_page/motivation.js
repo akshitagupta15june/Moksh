@@ -190,10 +190,19 @@ const authorBack = authors[1];
 
 const buttonFront = button[0];
 const buttonBack = button[1];
-let quote = '';
-let author = '';
+
+//Initialize quote and author to be same as the one in html
+let quote = 'For the soul there is neither birth nor death at any time. He has not come into being, does not come into being, and will not come into being. He is unborn, eternal, ever-existing, and primeval. He is not slain when the body is slain.';
+let author = '- Lord Sri Krishna - Bhagavad-gita 2.20';
+
 const genQuote = () => {
   var randNum = Math.floor(Math.random() * quotes.length);
+
+  // Preventing repeating the same quote
+  while (quote === quotes[randNum].text) {
+    randNum = Math.floor(Math.random() * quotes.length);
+  }
+
   // Stores the quote present at the randomly generated index
   quote = quotes[randNum].text;
 

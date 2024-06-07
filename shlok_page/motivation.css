@@ -175,16 +175,16 @@ p:hover {
 
 .text {
   /* font-family: 'krishna','yuvasanskrit','Open Sans Condensed', sans-serif; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   /* font-weight: 600; */
-  padding-left: 10px;
+  padding-left: 10%;
   transition: 0.5s;
   transition-timing-function: ease-in;
   /* font-family: 'laila','Roboto', sans-serif; */
   color: #050350;
   -webkit-background-clip: text;
   font-family: "Laila", serif;
-  font-weight: 500;
+  font-weight: 2%;
   font-style: normal;
 }
 
@@ -403,5 +403,37 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, rgb(0, 13, 6));
-
 }
+ @media (min-width:320px) and (max-width:400px)  { 
+  .footer{
+    margin-top: 80%;
+  }
+ }
+ @media (min-width:481px)  { 
+   .footer{
+     margin-top:20%;
+    }
+  }
+  /*
+@media (min-width:641px)  { 
+  .footer{
+    margin-top: 0%;
+  }
+ }
+@media (min-width:961px)  { 
+  .footer{
+    margin-top:0%;
+  }
+ }
+*/
+@media (min-width:1024px) { 
+  .footer{
+    margin-top:8%;
+  }
+ }
+@media (min-width:1281px) { 
+  .footer{
+    margin-top:0%
+  }
+ } 
+
