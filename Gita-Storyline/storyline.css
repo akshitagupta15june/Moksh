@@ -83,7 +83,7 @@ background-size: cover;
 #arjuna-image {
     z-index: 2;
     position: absolute;
-    top: calc(50% + 24%);
+    top: calc(50% + 26%);
     left: calc(50% - 20%);
     transform: translateY(-50%);
 }
@@ -150,7 +150,7 @@ background-size: cover;
     }
 
     #arjuna-image {
-        top: 69%; /* Move the krishna image top by 15% */
+        top: 72%; /* Move the krishna image top by 15% */
         left: 27%; /* Move the krishna image right by 15% */
     }
 
@@ -181,12 +181,12 @@ background-size: cover;
 
     #krishna-image {
         top: 70%; /* Move the krishna image top by 15% */
-        left: 65%; /* Move the krishna image right by 15% */
+        left: 55%; /* Move the krishna image right by 15% */
     }
 
     #arjuna-image {
-        top: 70%; /* Move the krishna image top by 15% */
-        left: 12%; /* Move the krishna image right by 15% */
+        top: 75%; /* Move the krishna image top by 15% */
+        left: 22%; /* Move the krishna image right by 15% */
     }
 
     #left-arrow,
@@ -328,7 +328,7 @@ background-size: cover;
           overflow-wrap: break-word;
           overflow-y: auto;
         --r: 25px; /* the radius */
-        --t: 0px; /* the size of the tail */
+        --t: 10px; /* the size of the tail */
         
         max-width: 260px;
         max-height: 100px;
@@ -388,7 +388,7 @@ background-size: cover;
           overflow-wrap: break-word;
           overflow-y: auto;
         --r: 25px; /* the radius */
-        --t: 0px; /* the size of the tail */
+        --t: 10px; /* the size of the tail */
         
         max-width: 300px;
         max-height: 100px;
@@ -486,7 +486,7 @@ background-size: cover;
     }
     
     .bubble1 {
-          margin-bottom: 8rem;
+          /* margin-bottom: 8rem; */
         overflow-wrap: break-word;
           overflow-y: scroll;
      --r: 20px; /* the radius */
