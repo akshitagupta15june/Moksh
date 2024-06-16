@@ -865,3 +865,20 @@ footer {
     line-height: 50px;
   }
 }
+@media (max-width: 767px) {
+  .button-75 {
+    font-size: 14px;
+    height: 70px;
+  }
+
+  .button-75 span {
+    line-height: 50px;
+  } 
+  .top-header{
+    font-size: 30px;
+  }
+  .bottom-header{
+    font-size: 30px;
+  }
+  
+}
