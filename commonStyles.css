@@ -121,8 +121,8 @@ footer {
   position: relative;
   height: 18vh;
   width: 11vw;
-  left: 40vw;
-  bottom: 5vh;
+  left: 42vw;
+  bottom: -3vh;
 
   margin-right: 30px;
 }
@@ -133,6 +133,7 @@ footer {
     height: 100px;
     width: 100px;
     left: 40vw;
+    bottom: 5vh;
   }
 }
 
